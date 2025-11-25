@@ -121,13 +121,17 @@ export default function Home() {
             <div className="container mx-auto px-6">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="text-white">
+                  <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
+                    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                    <span className="text-sm font-medium">Trusted by 50+ Medical Tourism Clinics</span>
+                  </div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                    AI-Powered Marketing & Automation for Clinics and Businesses
+                    The #1 AI Marketing Agency for Medical Tourism Clinics
                   </h1>
                   <p className="text-lg md:text-xl mb-8 text-white/90">
-                    Webimot builds intelligent systems that bring you more leads, book more consultations, and automate your operations — 24/7.
+                    We help clinics attract international patients, handle inquiries 24/7 with AI, and convert more leads into booked consultations — automatically.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-4 mb-8">
                     <Link href="/book-consultation">
                       <Button
                         data-testid="button-hero-strategy-call"
@@ -148,6 +152,20 @@ export default function Home() {
                       </Button>
                     </Link>
                   </div>
+                  <div className="flex flex-wrap gap-3">
+                    <span className="inline-flex items-center gap-1.5 text-sm text-white/80 bg-white/10 rounded-full px-3 py-1">
+                      <CheckCircle className="w-4 h-4" /> Hair Transplant Clinics
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-sm text-white/80 bg-white/10 rounded-full px-3 py-1">
+                      <CheckCircle className="w-4 h-4" /> Dental Clinics
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-sm text-white/80 bg-white/10 rounded-full px-3 py-1">
+                      <CheckCircle className="w-4 h-4" /> Cosmetic Surgery
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-sm text-white/80 bg-white/10 rounded-full px-3 py-1">
+                      <CheckCircle className="w-4 h-4" /> IVF & Fertility
+                    </span>
+                  </div>
                 </div>
                 <div className="relative">
                   <img
@@ -165,9 +183,13 @@ export default function Home() {
           <section className="py-16 md:py-24 bg-muted/30">
             <div className="container mx-auto px-6">
               <div className="text-center mb-6">
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-1.5 mb-4">
+                  <Bot className="w-4 h-4" />
+                  <span className="text-sm font-medium">Built for Medical Tourism</span>
+                </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core AI Products</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  We build AI systems that work for you around the clock — handling leads, creating content, and analyzing your marketing performance so you can focus on what matters most: running your business.
+                  We build AI systems specifically designed for clinics — handling patient inquiries in multiple languages, evaluating before/after photos, and booking consultations while you sleep.
                 </p>
               </div>
               

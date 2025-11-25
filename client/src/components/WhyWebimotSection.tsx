@@ -17,26 +17,26 @@ export default function WhyWebimotSection() {
   const coreValues = [
     {
       icon: Target,
-      title: "Convert Leads to Sales",
-      description: "We don't just bring you leads — we build systems that turn inquiries into paying customers with proven conversion strategies.",
-      stats: "60% higher conversion rate"
+      title: "Convert Patients to Bookings",
+      description: "We don't just bring you inquiries — we build systems that turn patient questions into confirmed consultations and procedures.",
+      stats: "60% higher booking rate"
     },
     {
       icon: TrendingUp,
-      title: "Increase Your Revenue",
-      description: "Strategic marketing plans designed specifically for your clinic or agency to maximize ROI and grow your bottom line.",
-      stats: "3x average revenue growth"
+      title: "Grow International Patients",
+      description: "Attract patients from UK, Germany, USA and beyond with multilingual marketing strategies built for medical tourism clinics.",
+      stats: "3x more international leads"
     },
     {
       icon: Rocket,
-      title: "Optimize Your Website",
-      description: "Transform your website into a lead-generating machine with conversion-optimized design, fast loading, and compelling CTAs.",
-      stats: "40% more inquiries"
+      title: "24/7 Patient Response",
+      description: "Never miss an inquiry again. Our AI handles patient questions, evaluates photos, and books consultations even while you sleep.",
+      stats: "100% response rate"
     },
     {
       icon: BarChart3,
-      title: "Data-Driven Strategies",
-      description: "Every decision backed by analytics. We track, measure, and optimize your campaigns for continuous improvement.",
+      title: "Track Every Patient Journey",
+      description: "Know exactly where your patients come from, which campaigns work, and how to get more bookings with detailed analytics.",
       stats: "Weekly performance reports"
     }
   ];
@@ -44,23 +44,23 @@ export default function WhyWebimotSection() {
   const processSteps = [
     {
       step: "01",
-      title: "Analyze Your Business",
-      description: "We study your current leads, website, and sales process to identify improvement opportunities."
+      title: "Audit Your Clinic",
+      description: "We analyze your patient flow, website, and current marketing to find growth opportunities."
     },
     {
       step: "02", 
-      title: "Create Custom Strategy",
-      description: "Tailored marketing plan designed for your specific clinic or agency goals and target audience."
+      title: "Build Your AI System",
+      description: "Custom WhatsApp agent, multilingual campaigns, and automated booking tailored to your clinic."
     },
     {
       step: "03",
-      title: "Implement & Optimize",
-      description: "Launch campaigns, automate lead handling, and continuously improve based on real results."
+      title: "Launch & Monitor",
+      description: "Go live with 24/7 patient response and track every inquiry from first message to booked procedure."
     },
     {
       step: "04",
-      title: "Scale Your Growth",
-      description: "Once we find what works, we scale it to maximize your leads, conversions, and revenue."
+      title: "Scale Internationally",
+      description: "Expand to new markets — UK, Germany, Gulf countries — and grow your international patient base."
     }
   ];
 
@@ -70,16 +70,15 @@ export default function WhyWebimotSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
             <Lightbulb className="h-4 w-4" />
-            Why Choose Us
+            Medical Tourism Specialists
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            We Help You Turn Leads Into Sales
+            We Help Clinics Get More Patients
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Most agencies bring you traffic. We focus on what actually matters — 
-            <span className="font-semibold text-foreground"> converting that traffic into revenue</span>. 
-            With tailored strategies for clinics and agencies, we improve your website, 
-            optimize your lead flow, and increase your sales.
+            Most agencies bring you clicks. We focus on what actually matters for your clinic — 
+            <span className="font-semibold text-foreground"> turning inquiries into booked procedures</span>. 
+            With AI-powered systems built specifically for hair transplant, dental, cosmetic, and IVF clinics.
           </p>
         </div>
 
@@ -105,29 +104,29 @@ export default function WhyWebimotSection() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Your Growth Partner, Not Just Another Agency
+                Your Clinic's Growth Partner
               </h3>
               <p className="text-muted-foreground mb-6">
-                We work as an extension of your team, understanding your unique challenges 
-                in medical tourism, aesthetics, or real estate. Our job isn't done until 
-                your leads become paying customers.
+                We understand medical tourism inside and out. From handling patient inquiries 
+                in Arabic, German, and English to evaluating before/after photos — we know 
+                what it takes to convert international patients into booked procedures.
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Custom strategies tailored to your clinic or agency</span>
+                  <span>Multilingual patient communication (EN, DE, AR, RU)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Website optimization for maximum conversions</span>
+                  <span>AI photo evaluation for hair, dental & cosmetic procedures</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Lead nurturing systems that close more sales</span>
+                  <span>Automated consultation booking & calendar sync</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Ongoing optimization based on real performance data</span>
+                  <span>Patient journey tracking from inquiry to procedure</span>
                 </li>
               </ul>
               <Link href="/book-consultation">
