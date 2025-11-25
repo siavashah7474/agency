@@ -8,6 +8,8 @@ The application is a full-stack React + Express web application featuring a mark
 
 ## Recent Changes
 
+- **Why Webimot Section**: Redesigned to focus on lead-to-sale conversion with 4 value propositions, 4-step growth process, and emphasis on improving website quality and increasing sales
+- **Services Page Redesign**: Categorized services into 4 beautiful sections (AI Automation, Traffic & Visibility, Conversion Optimization, Brand & Content) with improved UI/UX
 - **Portfolio Section**: Added "Projects We're Proud Of" section on homepage showcasing 6 client projects with expandable cards showing key features and creative elements
 - **Exit-Intent Popup**: Added popup to capture visitors about to leave with a free marketing audit offer (uses sessionStorage to prevent repeated popups)
 - **Case Studies Section**: Added Case Studies page with 4 detailed success stories showing metrics, testimonials, and outcomes (Challenge → Solution → Results structure)

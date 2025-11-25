@@ -7,18 +7,12 @@ import AIProductCard from "@/components/AIProductCard";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import PortfolioSection from "@/components/PortfolioSection";
+import WhyWebimotSection from "@/components/WhyWebimotSection";
 import SEO from "@/components/SEO";
 import { Bot, Globe, MessageSquare, TrendingUp, Zap, FileText, BarChart, Target, Users, Clock, CheckCircle, ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.png";
 
 export default function Home() {
-  const features = [
-    { icon: Bot, title: "AI Automation", description: "Intelligent systems working 24/7 to handle your business operations automatically" },
-    { icon: Globe, title: "Medical Tourism Expertise", description: "Specialized solutions for clinics and healthcare providers worldwide" },
-    { icon: MessageSquare, title: "24/7 WhatsApp AI Agent", description: "Never miss a lead with instant, intelligent responses in multiple languages" },
-    { icon: TrendingUp, title: "Real Results", description: "Data-driven strategies that deliver measurable ROI and business growth" },
-  ];
-
   const aiProducts = [
     {
       title: "WhatsApp AI Agent",
@@ -166,21 +160,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="py-16 md:py-24">
-            <div className="container mx-auto px-6">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Webimot</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  We combine cutting-edge AI technology with deep industry expertise to deliver results that matter
-                </p>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {features.map((feature, index) => (
-                  <FeatureCard key={index} {...feature} />
-                ))}
-              </div>
-            </div>
-          </section>
+          <WhyWebimotSection />
 
           <section className="py-16 md:py-24 bg-muted/30">
             <div className="container mx-auto px-6">
