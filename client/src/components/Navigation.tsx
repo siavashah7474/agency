@@ -32,15 +32,15 @@ export default function Navigation() {
 
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a
-                  data-testid={`link-nav-${link.label.toLowerCase()}`}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    location === link.href ? "text-primary" : "text-muted-foreground"
-                  }`}
-                >
-                  {link.label}
-                </a>
+              <Link
+                key={link.href}
+                href={link.href}
+                data-testid={`link-nav-${link.label.toLowerCase()}`}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  location === link.href ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                {link.label}
               </Link>
             ))}
           </nav>
@@ -67,16 +67,16 @@ export default function Navigation() {
         <div className="md:hidden border-t">
           <nav className="container mx-auto px-6 py-4 flex flex-col gap-3">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a
-                  data-testid={`link-mobile-${link.label.toLowerCase()}`}
-                  className={`block py-2 text-sm font-medium ${
-                    location === link.href ? "text-primary" : "text-muted-foreground"
-                  }`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
+              <Link
+                key={link.href}
+                href={link.href}
+                data-testid={`link-mobile-${link.label.toLowerCase()}`}
+                className={`block py-2 text-sm font-medium ${
+                  location === link.href ? "text-primary" : "text-muted-foreground"
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
               </Link>
             ))}
             <Link href="/book-consultation">
