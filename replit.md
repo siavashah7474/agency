@@ -8,6 +8,11 @@ The application is a full-stack React + Express web application featuring a mark
 
 ## Recent Changes
 
+- **Exit-Intent Popup**: Added popup to capture visitors about to leave with a free marketing audit offer (uses sessionStorage to prevent repeated popups)
+- **Case Studies Section**: Added Case Studies page with 4 detailed success stories showing metrics, testimonials, and outcomes (Challenge → Solution → Results structure)
+- **Blog Category Filtering**: Added category filter buttons to the blog page with memoized filtering for performance
+- **Breadcrumb Navigation**: Added breadcrumb component to service detail and case study pages for better UX and SEO
+- **Legal Compliance Pages**: Added Privacy Policy and Terms of Service pages with comprehensive content and footer links
 - **Performance Optimization**: Added lazy loading for all pages using React.lazy and Suspense
 - **SEO Enhancement**: Enhanced SEO component with:
   - Open Graph and Twitter card support
@@ -32,11 +37,14 @@ Preferred communication style: Simple, everyday language.
 |----------------|---------------|
 | Services content | `client/src/data/servicesData.ts` |
 | Blog posts | `client/src/data/blogData.ts` |
+| Case studies | `client/src/data/caseStudiesData.ts` |
 | Chatbot config | `client/src/data/chatbotConfig.ts` |
 | Colors/branding | `client/src/index.css` |
 | Navigation | `client/src/components/Navigation.tsx` |
 | Footer | `client/src/components/Footer.tsx` |
 | Homepage | `client/src/pages/Home.tsx` |
+| Privacy Policy | `client/src/pages/PrivacyPolicy.tsx` |
+| Terms of Service | `client/src/pages/TermsOfService.tsx` |
 | Site metadata | `client/index.html` |
 
 ## System Architecture
@@ -79,6 +87,7 @@ Preferred communication style: Simple, everyday language.
 **Content is stored in TypeScript files for type safety:**
 - `client/src/data/servicesData.ts` - All 11 services
 - `client/src/data/blogData.ts` - Blog posts with full content
+- `client/src/data/caseStudiesData.ts` - Case studies with metrics and testimonials
 - `client/src/data/chatbotConfig.ts` - Chatbot configuration
 
 ### External Dependencies
