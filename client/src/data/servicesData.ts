@@ -6,13 +6,6 @@ interface ServiceData {
   benefits: string[];
   deliverables: string[];
   process: { title: string; description: string }[];
-  pricing: {
-    name: string;
-    price: string;
-    description: string;
-    features: string[];
-    highlighted?: boolean;
-  }[];
   faqs: { question: string; answer: string }[];
 }
 
@@ -51,50 +44,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Testing", description: "Comprehensive testing with real scenarios to ensure perfect responses" },
       { title: "Launch & Monitor", description: "Go live with continuous monitoring and optimization for 30 days" },
       { title: "Ongoing Support", description: "Regular updates, performance reviews, and AI improvements" }
-    ],
-    pricing: [
-      {
-        name: "Starter",
-        price: "$499",
-        description: "Perfect for small clinics",
-        features: [
-          "500 conversations/month",
-          "Basic lead qualification",
-          "Voice transcription",
-          "Photo evaluation",
-          "Calendar integration",
-          "Email support"
-        ]
-      },
-      {
-        name: "Growth",
-        price: "$999",
-        description: "Most popular for growing businesses",
-        features: [
-          "2,000 conversations/month",
-          "Advanced lead scoring",
-          "Multi-language support",
-          "CRM integration",
-          "Custom workflows",
-          "Priority support",
-          "Monthly optimization"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Elite",
-        price: "$1,999",
-        description: "For high-volume operations",
-        features: [
-          "Unlimited conversations",
-          "Multi-agent support",
-          "Custom AI training",
-          "Advanced analytics",
-          "API access",
-          "Dedicated account manager",
-          "Weekly optimization calls"
-        ]
-      }
     ],
     faqs: [
       {
@@ -154,50 +103,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Launch", description: "Activate automated publishing with your approved schedule" },
       { title: "Optimization", description: "Monitor performance and refine content strategy monthly" }
     ],
-    pricing: [
-      {
-        name: "Starter",
-        price: "$399",
-        description: "Great for new blogs",
-        features: [
-          "10 blog posts/month",
-          "Basic SEO optimization",
-          "1 language",
-          "Auto-publishing",
-          "Performance reports",
-          "Email support"
-        ]
-      },
-      {
-        name: "Growth",
-        price: "$699",
-        description: "Most popular option",
-        features: [
-          "20 blog posts/month",
-          "Advanced SEO optimization",
-          "Internal linking system",
-          "2 languages",
-          "Custom content templates",
-          "Priority support",
-          "Monthly strategy calls"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Elite",
-        price: "$1,299",
-        description: "Maximum content volume",
-        features: [
-          "40 blog posts/month",
-          "Premium SEO tools",
-          "3+ languages",
-          "Video content ideas",
-          "Social media distribution",
-          "Dedicated strategist",
-          "Weekly optimization"
-        ]
-      }
-    ],
     faqs: [
       {
         question: "Is the content original?",
@@ -255,50 +160,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Report Customization", description: "Customize report format, frequency, and recipients" },
       { title: "Go Live", description: "Start receiving weekly automated reports and alerts" },
       { title: "Continuous Learning", description: "AI improves recommendations based on your actions and results" }
-    ],
-    pricing: [
-      {
-        name: "Starter",
-        price: "$299",
-        description: "Essential analytics",
-        features: [
-          "Weekly reports",
-          "3 data sources",
-          "Basic KPI tracking",
-          "Email delivery",
-          "Problem alerts",
-          "Email support"
-        ]
-      },
-      {
-        name: "Growth",
-        price: "$599",
-        description: "Complete analytics suite",
-        features: [
-          "Daily + weekly reports",
-          "Unlimited data sources",
-          "Advanced insights",
-          "Competitor monitoring",
-          "Custom dashboards",
-          "Priority support",
-          "Monthly strategy calls"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Elite",
-        price: "$1,199",
-        description: "Enterprise analytics",
-        features: [
-          "Real-time reporting",
-          "Predictive analytics",
-          "Custom AI models",
-          "API access",
-          "White-label reports",
-          "Dedicated analyst",
-          "Weekly consultation"
-        ]
-      }
     ],
     faqs: [
       {
@@ -358,50 +219,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Optimization", description: "Daily monitoring and adjustments for maximum performance" },
       { title: "Scaling", description: "Gradually increase budget on winning campaigns while maintaining ROI" }
     ],
-    pricing: [
-      {
-        name: "Starter",
-        price: "$499",
-        description: "For small budgets",
-        features: [
-          "Ad spend: $500-2,000/month",
-          "2 campaigns",
-          "Basic targeting",
-          "5 ad variants",
-          "Weekly reports",
-          "Email support"
-        ]
-      },
-      {
-        name: "Growth",
-        price: "$999",
-        description: "Most businesses",
-        features: [
-          "Ad spend: $2,000-10,000/month",
-          "5 campaigns",
-          "Advanced targeting",
-          "10 ad variants",
-          "Daily optimization",
-          "Dedicated manager",
-          "Weekly calls"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Elite",
-        price: "$1,999",
-        description: "Scale your growth",
-        features: [
-          "Ad spend: $10,000+/month",
-          "Unlimited campaigns",
-          "Premium creative",
-          "Video ads",
-          "Influencer integration",
-          "Priority support",
-          "Bi-weekly strategy"
-        ]
-      }
-    ],
     faqs: [
       {
         question: "What's the minimum ad spend?",
@@ -459,50 +276,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Tracking Setup", description: "Implement conversion tracking and analytics" },
       { title: "Launch & Monitor", description: "Go live and monitor performance closely" },
       { title: "Optimize", description: "Continuous testing and optimization for better results" }
-    ],
-    pricing: [
-      {
-        name: "Starter",
-        price: "$599",
-        description: "Get started with Google Ads",
-        features: [
-          "Ad spend: $500-2,000/month",
-          "Search campaigns",
-          "50 keywords",
-          "5 ad variants",
-          "Basic tracking",
-          "Email support"
-        ]
-      },
-      {
-        name: "Growth",
-        price: "$1,199",
-        description: "Comprehensive campaigns",
-        features: [
-          "Ad spend: $2,000-10,000/month",
-          "Search + Display",
-          "Unlimited keywords",
-          "10+ ad variants",
-          "Advanced tracking",
-          "Dedicated manager",
-          "Weekly optimization"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Elite",
-        price: "$2,499",
-        description: "Maximum performance",
-        features: [
-          "Ad spend: $10,000+/month",
-          "All campaign types",
-          "YouTube ads",
-          "Shopping campaigns",
-          "Premium support",
-          "Quarterly strategy",
-          "Executive reporting"
-        ]
-      }
     ],
     faqs: [
       {
@@ -562,50 +335,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Testing", description: "Test on all devices and browsers for quality" },
       { title: "Launch", description: "Deploy your website and provide training" }
     ],
-    pricing: [
-      {
-        name: "Landing Page",
-        price: "$999",
-        description: "Single page site",
-        features: [
-          "1 custom page design",
-          "Mobile responsive",
-          "Contact form",
-          "Basic SEO",
-          "2 weeks delivery",
-          "1 month support"
-        ]
-      },
-      {
-        name: "Business Site",
-        price: "$2,999",
-        description: "Multi-page website",
-        features: [
-          "5-10 custom pages",
-          "CMS integration",
-          "Blog system",
-          "Advanced SEO",
-          "Forms & integrations",
-          "4 weeks delivery",
-          "3 months support"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Custom",
-        price: "Custom",
-        description: "Complex projects",
-        features: [
-          "Unlimited pages",
-          "Custom features",
-          "E-commerce",
-          "API integrations",
-          "Multi-language",
-          "Timeline varies",
-          "6 months support"
-        ]
-      }
-    ],
     faqs: [
       {
         question: "How long does it take?",
@@ -663,50 +392,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "On-Page", description: "Optimize pages, content, and metadata" },
       { title: "Link Building", description: "Build high-quality backlinks to increase authority" },
       { title: "Monitor & Refine", description: "Track rankings and continuously optimize" }
-    ],
-    pricing: [
-      {
-        name: "Local SEO",
-        price: "$699",
-        description: "For local businesses",
-        features: [
-          "Google Business optimization",
-          "Local keyword targeting",
-          "Citation building",
-          "Review management",
-          "Monthly reports",
-          "Email support"
-        ]
-      },
-      {
-        name: "National SEO",
-        price: "$1,499",
-        description: "Scale your reach",
-        features: [
-          "National keyword targeting",
-          "Technical SEO",
-          "Content optimization",
-          "Link building",
-          "Competitor analysis",
-          "Dedicated manager",
-          "Monthly strategy calls"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Enterprise SEO",
-        price: "$2,999",
-        description: "Maximum visibility",
-        features: [
-          "Large-scale optimization",
-          "International SEO",
-          "Advanced link building",
-          "Content production",
-          "API access",
-          "Quarterly strategy",
-          "Priority support"
-        ]
-      }
     ],
     faqs: [
       {
@@ -766,50 +451,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Scheduling", description: "Schedule posts for optimal engagement times" },
       { title: "Management", description: "Monitor performance and engage with audience" }
     ],
-    pricing: [
-      {
-        name: "Starter",
-        price: "$499",
-        description: "Basic social presence",
-        features: [
-          "1 platform",
-          "15 posts/month",
-          "Graphics included",
-          "Hashtag research",
-          "Monthly calendar",
-          "Email support"
-        ]
-      },
-      {
-        name: "Growth",
-        price: "$999",
-        description: "Multi-platform management",
-        features: [
-          "3 platforms",
-          "30 posts/month",
-          "Custom graphics",
-          "Video content",
-          "Community management",
-          "Monthly reports",
-          "Strategy calls"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Elite",
-        price: "$1,999",
-        description: "Premium content",
-        features: [
-          "5+ platforms",
-          "60 posts/month",
-          "Professional photography",
-          "Video production",
-          "Influencer outreach",
-          "Dedicated manager",
-          "Weekly optimization"
-        ]
-      }
-    ],
     faqs: [
       {
         question: "What platforms do you manage?",
@@ -867,50 +508,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Refinement", description: "Refine chosen concept based on feedback" },
       { title: "System Development", description: "Develop complete visual identity system" },
       { title: "Guidelines", description: "Create comprehensive brand guidelines" }
-    ],
-    pricing: [
-      {
-        name: "Essentials",
-        price: "$1,499",
-        description: "Core brand identity",
-        features: [
-          "Logo design",
-          "Color palette",
-          "Basic guidelines",
-          "Business card",
-          "2 revisions",
-          "2 weeks delivery"
-        ]
-      },
-      {
-        name: "Complete",
-        price: "$2,999",
-        description: "Full brand system",
-        features: [
-          "Complete identity",
-          "Brand strategy",
-          "Comprehensive guidelines",
-          "Social media kit",
-          "Unlimited revisions",
-          "4 weeks delivery",
-          "3 months support"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Premium",
-        price: "$5,999",
-        description: "Enterprise branding",
-        features: [
-          "Full brand development",
-          "Market research",
-          "Competitor analysis",
-          "Website design",
-          "Marketing materials",
-          "6 weeks delivery",
-          "6 months support"
-        ]
-      }
     ],
     faqs: [
       {
@@ -970,52 +567,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Testing", description: "Test entire funnel flow and fix any issues" },
       { title: "Optimize", description: "Launch and optimize based on conversion data" }
     ],
-    pricing: [
-      {
-        name: "Starter",
-        price: "$1,499",
-        description: "Simple funnel",
-        features: [
-          "1 landing page",
-          "5 email sequence",
-          "Basic automation",
-          "Form integration",
-          "Email support",
-          "2 weeks delivery"
-        ]
-      },
-      {
-        name: "Growth",
-        price: "$2,999",
-        description: "Complete funnel system",
-        features: [
-          "3 landing pages",
-          "10 email sequence",
-          "Advanced automation",
-          "CRM integration",
-          "A/B testing",
-          "Dedicated manager",
-          "4 weeks delivery",
-          "30 days optimization"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Elite",
-        price: "$5,999",
-        description: "Multi-step funnel",
-        features: [
-          "Unlimited pages",
-          "Multi-stage sequences",
-          "Advanced segmentation",
-          "SMS integration",
-          "Webinar funnels",
-          "Priority support",
-          "6 weeks delivery",
-          "90 days optimization"
-        ]
-      }
-    ],
     faqs: [
       {
         question: "What platforms do you build funnels on?",
@@ -1073,49 +624,6 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Response", description: "Respond professionally to all reviews" },
       { title: "Generation", description: "Implement system to generate new positive reviews" },
       { title: "Maintenance", description: "Ongoing monitoring and reputation building" }
-    ],
-    pricing: [
-      {
-        name: "Basic",
-        price: "$399",
-        description: "Essential monitoring",
-        features: [
-          "Google & Facebook monitoring",
-          "Monthly review requests",
-          "Review responses",
-          "Monthly reports",
-          "Email support"
-        ]
-      },
-      {
-        name: "Professional",
-        price: "$799",
-        description: "Complete reputation management",
-        features: [
-          "Multi-platform monitoring",
-          "Weekly review requests",
-          "Negative review management",
-          "Social media monitoring",
-          "Dedicated manager",
-          "Weekly reports",
-          "Strategy calls"
-        ],
-        highlighted: true
-      },
-      {
-        name: "Enterprise",
-        price: "$1,499",
-        description: "Maximum protection",
-        features: [
-          "Comprehensive monitoring",
-          "Crisis management",
-          "Legal review removal",
-          "Competitor monitoring",
-          "PR coordination",
-          "Priority support",
-          "Real-time alerts"
-        ]
-      }
     ],
     faqs: [
       {

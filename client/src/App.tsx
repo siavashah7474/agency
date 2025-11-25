@@ -11,6 +11,7 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import Clients from "@/pages/Clients";
 import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import BookConsultation from "@/pages/BookConsultation";
 import NotFound from "@/pages/not-found";
 
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/clients" component={Clients} />
       <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/book-consultation" component={BookConsultation} />
       <Route component={NotFound} />
     </Switch>
