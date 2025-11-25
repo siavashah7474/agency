@@ -8,12 +8,22 @@ The application is a full-stack React + Express web application featuring a mark
 
 ## Recent Changes
 
-- **SEO Integration**: Added SEO meta tags to all main pages (Home, About, Services, Contact, ServiceDetail) using a custom SEO component for Open Graph and Twitter cards
-- **Campaign Screenshot Frames**: Added "Campaign Performance Preview" sections with screenshot placeholder frames to Meta Ads and Google Ads service detail pages
-- **About Page Sections**: Updated About page with dedicated focus sections for Medical Tourism/Healthcare Clinics and Real Estate/E-commerce businesses, emphasizing lead and sales generation
-- **Responsive Design**: Verified mobile (390x844) and tablet (768x1024) layouts work correctly with single-column stacking on mobile and adaptive grids
-- **Footer Fix**: Fixed nested anchor tag warnings by using wouter's Link component correctly
-- **Visual Enhancements**: Unique gradient icons for each service, "AI Powered" badges, hover animations, and enhanced pricing cards
+- **Chatbot with Questionnaire**: Added a customizable chatbot (Chatbot.tsx) with:
+  - 5-question questionnaire to identify customer needs (industry, goals, challenges, budget, timeline)
+  - Smart recommendation engine that scores and suggests top 3 matching services
+  - WhatsApp integration for lead handoff with pre-filled message
+  - Configurable via chatbotConfig.ts for custom questions, messages, and recommendations
+  - Agent name "Mia" with floating button and animated tooltip
+- **Pricing Removed**: Removed all pricing packages from all 11 services to focus on consultation-based approach
+- **Consultation CTAs**: Service pages now emphasize "Book Free Strategy Call" messaging for high conversion
+- **Blog Content Complete**: All 10 blog posts have full article content with:
+  - Multiple sections with headers
+  - Detailed paragraphs and practical conclusions
+  - Read time display (5-12 minutes)
+- **SEO Integration**: Added SEO meta tags to all main pages using custom SEO component for Open Graph and Twitter cards
+- **Campaign Screenshot Frames**: Added "Campaign Performance Preview" sections with screenshot placeholder frames
+- **About Page Sections**: Updated About page with dedicated focus sections for Medical Tourism/Healthcare and Real Estate/E-commerce
+- **Responsive Design**: Verified mobile (390x844) and tablet (768x1024) layouts work correctly
 
 ## User Preferences
 

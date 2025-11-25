@@ -14,6 +14,7 @@ import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import BookConsultation from "@/pages/BookConsultation";
 import NotFound from "@/pages/not-found";
+import Chatbot from "@/components/Chatbot";
 
 function Router() {
   return (
@@ -38,6 +39,7 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Router />
+        <Chatbot />
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>
