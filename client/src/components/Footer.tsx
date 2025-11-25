@@ -24,20 +24,20 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link href="/services/whatsapp-ai-agent"><a data-testid="link-footer-whatsapp" className="text-sm text-muted-foreground hover:text-primary">WhatsApp AI Agent</a></Link></li>
-              <li><Link href="/services/seo-blog-generator"><a data-testid="link-footer-seo" className="text-sm text-muted-foreground hover:text-primary">SEO Blog Generator</a></Link></li>
-              <li><Link href="/services/ai-marketing-analyst"><a data-testid="link-footer-analyst" className="text-sm text-muted-foreground hover:text-primary">AI Marketing Analyst</a></Link></li>
-              <li><Link href="/services"><a data-testid="link-footer-all-services" className="text-sm text-muted-foreground hover:text-primary">All Services</a></Link></li>
+              <li><Link href="/services/whatsapp-ai-agent" data-testid="link-footer-whatsapp" className="text-sm text-muted-foreground hover:text-primary">WhatsApp AI Agent</Link></li>
+              <li><Link href="/services/seo-blog-generator" data-testid="link-footer-seo" className="text-sm text-muted-foreground hover:text-primary">SEO Blog Generator</Link></li>
+              <li><Link href="/services/ai-marketing-analyst" data-testid="link-footer-analyst" className="text-sm text-muted-foreground hover:text-primary">AI Marketing Analyst</Link></li>
+              <li><Link href="/services" data-testid="link-footer-all-services" className="text-sm text-muted-foreground hover:text-primary">All Services</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><Link href="/about"><a data-testid="link-footer-about" className="text-sm text-muted-foreground hover:text-primary">About Us</a></Link></li>
-              <li><Link href="/clients"><a data-testid="link-footer-clients" className="text-sm text-muted-foreground hover:text-primary">Our Clients</a></Link></li>
-              <li><Link href="/blog"><a data-testid="link-footer-blog" className="text-sm text-muted-foreground hover:text-primary">Blog</a></Link></li>
-              <li><Link href="/contact"><a data-testid="link-footer-contact" className="text-sm text-muted-foreground hover:text-primary">Contact</a></Link></li>
+              <li><Link href="/about" data-testid="link-footer-about" className="text-sm text-muted-foreground hover:text-primary">About Us</Link></li>
+              <li><Link href="/clients" data-testid="link-footer-clients" className="text-sm text-muted-foreground hover:text-primary">Our Clients</Link></li>
+              <li><Link href="/blog" data-testid="link-footer-blog" className="text-sm text-muted-foreground hover:text-primary">Blog</Link></li>
+              <li><Link href="/contact" data-testid="link-footer-contact" className="text-sm text-muted-foreground hover:text-primary">Contact</Link></li>
             </ul>
           </div>
 
