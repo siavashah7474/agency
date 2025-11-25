@@ -1,0 +1,326 @@
+YOU ARE AN ADVANCED WEBSITE CREATOR.
+CREATE A COMPLETE MULTI-PAGE WEBSITE FOR A DIGITAL MARKETING & AI AUTOMATION AGENCY CALLED “WEBIMOT”.
+
+Follow these instructions EXACTLY.
+
+⸻
+
+🔵 1. COMPANY SUMMARY
+
+Webimot is a digital marketing + AI automation agency specialising in medical tourism clinics, real estate, and service-based businesses.
+
+Main languages: English & Turkish.
+
+Webimot’s unique angle:
+We provide AI-powered systems, automation, WhatsApp agents, SEO blog generators, and AI-driven reporting in addition to normal digital marketing services.
+
+⸻
+
+🟦 2. BRANDING & STYLE
+
+Brand name: Webimot
+
+Slogan: “Smart Marketing. Smart Automation.”
+
+Color palette:
+	•	Navy Blue (primary)
+	•	Royal Blue / Cyan (secondary)
+	•	White (base)
+	•	Light Grey (for sections)
+
+Design style:
+	•	Clean, modern, premium
+	•	High-tech + trustworthy
+	•	Subtle gradients (blue → navy)
+	•	Rounded corners
+	•	Minimal icons
+	•	Clear spacing
+	•	High-quality illustrations (AI, automation, chatbots, dashboards)
+
+Font style:
+	•	Modern, sans-serif (Poppins / Inter / Montserrat)
+
+⸻
+
+🔵 3. WEBSITE STRUCTURE
+
+Create the following pages fully:
+
+✔️ HOME
+
+✔️ SERVICES (with sub-pages auto-generated)
+
+✔️ AI SOLUTIONS (core Webimot products)
+
+✔️ ABOUT
+
+✔️ CONTACT
+
+✔️ CLIENTS
+
+✔️ BLOG
+
+✔️ BOOK CONSULTATION (AI-powered booking system description)
+
+⸻
+
+🟦 4. HOMEPAGE REQUIREMENTS (VERY IMPORTANT)
+
+Create a homepage with these exact sections:
+
+⸻
+
+1️⃣ HERO SECTION
+	•	Headline: “AI-Powered Marketing & Automation for Clinics and Businesses”
+	•	Subline:
+“Webimot builds intelligent systems that bring you more leads, book more consultations, and automate your operations — 24/7.”
+	•	CTA buttons:
+	•	Get Free Strategy Call
+	•	See Our AI Solutions
+	•	Background: clean navy/blue gradient + AI/automation illustrations.
+
+⸻
+
+2️⃣ WHY WEBIMOT (Value Proposition)
+
+3–4 columns:
+	•	AI Automation
+	•	Medical Tourism Expertise
+	•	24/7 WhatsApp AI Agent
+	•	Ads + SEO + Funnels
+	•	Real Results
+
+Short texts for each.
+
+⸻
+
+3️⃣ MAIN AI PRODUCTS (Your Core 3)
+
+Show these as cards:
+
+1. WhatsApp AI Agent (Flagship Product)
+	•	Instant lead replies
+	•	Voice → text
+	•	Photo evaluation (Vision AI)
+	•	Lead scoring
+	•	Booking automation
+	•	Follow-up engine
+	•	Supervisor escalation
+	•	Multi-language
+
+2. SEO Blog Generator AI System
+	•	Auto content farming
+	•	SEO-optimized blog generation
+	•	Auto internal linking
+	•	Auto scheduling
+
+3. AI Marketing Analyst Agent
+	•	Auto weekly reports
+	•	Analyzes SEO, ads, reach
+	•	Identifies problems
+	•	Sends summary to your inbox
+
+⸻
+
+4️⃣ SERVICES OVERVIEW
+
+List of categories:
+	•	Meta Ads
+	•	Google Ads
+	•	SEO
+	•	Website development
+	•	Content creation
+	•	Branding
+	•	Funnel building
+	•	Reputation management
+
+Each with 2–3 lines.
+
+⸻
+
+5️⃣ AUTOMATION FEATURES
+
+Show automation features:
+	•	Lead → Sheet → WhatsApp agent
+	•	Auto-follow-ups
+	•	Booking calendar automation
+	•	Photo + voice processing
+	•	CRM integration
+	•	Dashboard reporting
+
+⸻
+
+6️⃣ TESTIMONIALS
+
+Create mock testimonials.
+
+⸻
+
+7️⃣ CTA SECTION
+
+A big blue block:
+
+“Ready to Automate Your Clinic or Business?”
+CTA: Book Your Free Strategy Call
+
+⸻
+
+🟦 5. SERVICES PAGE
+
+Create a page with these sections:
+
+⭐ “Our Services”
+
+Grid with service cards.
+
+⭐ Individual Service Pages (auto-generate):
+	1.	WhatsApp AI Agent (Main Page)
+	2.	SEO Blog Generator
+	3.	AI Marketing Analyst
+	4.	Meta Ads
+	5.	Google Ads
+	6.	Website Development
+	7.	SEO Packages
+	8.	Social Media Content
+	9.	Branding & Identity
+	10.	Funnel Automation
+	11.	Reputation Management
+
+Each page must include:
+	•	What the service is
+	•	Why it’s important
+	•	Benefits
+	•	Deliverables
+	•	Process
+	•	Pricing blocks (Starter / Growth / Elite)
+	•	FAQ
+
+⸻
+
+🟦 6. AI SOLUTIONS PAGE (DETAILED)
+
+This is the MOST IMPORTANT PAGE.
+
+Create a full section for each:
+
+⸻
+
+⭐ 1. WHATSAPP AI AGENT (Flagship)
+
+Include:
+	•	Text routing
+	•	Voice → Whisper → text
+	•	Image → Vision → evaluation
+	•	Lead intake → Sheets
+	•	AI conversation
+	•	Lead scoring
+	•	Supervisor alert system
+	•	Booking automation
+	•	Feedback system
+	•	Multi-language
+	•	Dashboard
+	•	Full automation diagram
+
+⸻
+
+⭐ 2. SEO BLOG GENERATOR
+
+Explain:
+	•	Auto content
+	•	RSS farming
+	•	Auto-meta tags
+	•	Auto-publish schedule
+	•	Internal linking
+	•	Translation
+	•	Performance monitoring
+
+⸻
+
+⭐ 3. AI MARKETING ANALYST
+
+Explain:
+	•	Weekly analytics overview
+	•	SEO changes
+	•	Ranking drops
+	•	Ads performance
+	•	Recommendations
+
+⸻
+
+🟦 7. ABOUT PAGE
+
+Include:
+	•	Vision
+	•	Mission
+	•	Why we focus on clinics
+	•	Why AI is the future
+	•	What makes Webimot different
+	•	Your founder section (Sia / Görkem if you want)
+
+⸻
+
+🟦 8. CONTACT PAGE
+	•	WhatsApp button
+	•	Email
+	•	Contact form
+	•	Address (Istanbul + Netherlands)
+	•	CTA section
+
+⸻
+
+🟦 9. BLOG PAGE
+
+Auto-generate 10 sample blog posts:
+	•	“Why Clinics Must Automate Their Lead Handling”
+	•	“Best Digital Marketing Strategies for Medical Tourism Clinics”
+	•	“How WhatsApp AI Agents Increase Conversions”
+	•	“SEO for Clinics: The Complete Guide”
+
+⸻
+
+🟦 10. BOOK CONSULTATION PAGE
+
+Add:
+	•	Calendly-style booking embed
+	•	OR booking explanation
+	•	CTA: “Book Your Free 20-Minute Strategy Session”
+
+⸻
+
+🟦 11. GENERAL REQUIREMENTS
+
+✔ Must be clean and fast
+
+✔ WordPress + Elementor friendly
+
+✔ Mobile-first responsive
+
+✔ Include all text content from this prompt
+
+✔ Use your color palette
+
+✔ Include icons and modern UI
+
+✔ Write all content in website-ready format
+
+✔ Provide section headings + paragraphs + bullet points
+
+⸻
+
+⭐ FINAL OUTPUT FORMAT REQUIRED
+
+Deliver the entire website in these formats:
+
+1. Page-by-page website content
+
+2. HTML block suggestions for each section
+
+3. Elementor structure recommendation
+
+4. Suggested images/icons for each block
+
+⸻
+
+⭐ END OF PROMPT
+
+This is the full master prompt — copy & paste this into any “AI website builder” or use it as your content map to build Webimot on WordPress + Elementor step-by-step.
