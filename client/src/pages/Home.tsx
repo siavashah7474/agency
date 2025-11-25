@@ -6,6 +6,7 @@ import FeatureCard from "@/components/FeatureCard";
 import AIProductCard from "@/components/AIProductCard";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
+import PortfolioSection from "@/components/PortfolioSection";
 import SEO from "@/components/SEO";
 import { Bot, Globe, MessageSquare, TrendingUp, Zap, FileText, BarChart, Target, Users, Clock, CheckCircle, ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.png";
@@ -220,6 +221,8 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <PortfolioSection />
 
           <section className="py-16 md:py-24 bg-muted/30">
             <div className="container mx-auto px-6">

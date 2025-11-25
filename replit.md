@@ -8,6 +8,7 @@ The application is a full-stack React + Express web application featuring a mark
 
 ## Recent Changes
 
+- **Portfolio Section**: Added "Projects We're Proud Of" section on homepage showcasing 6 client projects with expandable cards showing key features and creative elements
 - **Exit-Intent Popup**: Added popup to capture visitors about to leave with a free marketing audit offer (uses sessionStorage to prevent repeated popups)
 - **Case Studies Section**: Added Case Studies page with 4 detailed success stories showing metrics, testimonials, and outcomes (Challenge → Solution → Results structure)
 - **Blog Category Filtering**: Added category filter buttons to the blog page with memoized filtering for performance
@@ -38,6 +39,7 @@ Preferred communication style: Simple, everyday language.
 | Services content | `client/src/data/servicesData.ts` |
 | Blog posts | `client/src/data/blogData.ts` |
 | Case studies | `client/src/data/caseStudiesData.ts` |
+| Portfolio projects | `client/src/data/portfolioData.ts` |
 | Chatbot config | `client/src/data/chatbotConfig.ts` |
 | Colors/branding | `client/src/index.css` |
 | Navigation | `client/src/components/Navigation.tsx` |
