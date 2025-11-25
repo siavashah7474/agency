@@ -31,10 +31,13 @@ export interface ChatbotConfig {
 }
 
 export const chatbotConfig: ChatbotConfig = {
+  // ========================================
+  // CUSTOMIZE THESE VALUES FOR YOUR BUSINESS
+  // ========================================
   welcomeMessage: "Hi there! I'm here to help you find the perfect marketing solution for your business. Let me ask you a few quick questions to understand your needs better.",
-  companyName: "Webimot",
-  agentName: "Mia",
-  whatsappNumber: "905551234567",
+  companyName: "Webimot",           // Your company name
+  agentName: "Mia",                 // Name shown in chat header
+  whatsappNumber: "905551234567",   // Format: country code + number (no + or spaces)
   whatsappMessage: "Hi! I just completed the questionnaire on your website and I'm interested in learning more about your services.",
   closingMessage: "Based on your answers, I've found the perfect solutions for you! Our team would love to discuss how we can help grow your business.",
   ctaText: "Chat with Our Team on WhatsApp",

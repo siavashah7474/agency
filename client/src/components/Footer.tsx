@@ -17,7 +17,7 @@ export default function Footer() {
               Smart Marketing. Smart Automation.
             </p>
             <p className="text-sm text-muted-foreground">
-              AI-powered solutions for medical tourism, real estate, and service businesses.
+              Marketing solutions for medical tourism, real estate, and service businesses.
             </p>
           </div>
 

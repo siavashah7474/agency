@@ -3,34 +3,49 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Home from "@/pages/Home";
-import Services from "@/pages/Services";
-import ServiceDetail from "@/pages/ServiceDetail";
-import AISolutions from "@/pages/AISolutions";
-import About from "@/pages/About";
-import Contact from "@/pages/Contact";
-import Clients from "@/pages/Clients";
-import Blog from "@/pages/Blog";
-import BlogPost from "@/pages/BlogPost";
-import BookConsultation from "@/pages/BookConsultation";
-import NotFound from "@/pages/not-found";
-import Chatbot from "@/components/Chatbot";
+import { lazy, Suspense } from "react";
+
+const Home = lazy(() => import("@/pages/Home"));
+const Services = lazy(() => import("@/pages/Services"));
+const ServiceDetail = lazy(() => import("@/pages/ServiceDetail"));
+const AISolutions = lazy(() => import("@/pages/AISolutions"));
+const About = lazy(() => import("@/pages/About"));
+const Contact = lazy(() => import("@/pages/Contact"));
+const Clients = lazy(() => import("@/pages/Clients"));
+const Blog = lazy(() => import("@/pages/Blog"));
+const BlogPost = lazy(() => import("@/pages/BlogPost"));
+const BookConsultation = lazy(() => import("@/pages/BookConsultation"));
+const NotFound = lazy(() => import("@/pages/not-found"));
+const Chatbot = lazy(() => import("@/components/Chatbot"));
+
+function PageLoader() {
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="animate-pulse flex flex-col items-center gap-4">
+        <div className="h-12 w-12 rounded-lg bg-primary/20"></div>
+        <div className="h-4 w-24 rounded bg-muted"></div>
+      </div>
+    </div>
+  );
+}
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/services" component={Services} />
-      <Route path="/services/:slug" component={ServiceDetail} />
-      <Route path="/ai-solutions" component={AISolutions} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/clients" component={Clients} />
-      <Route path="/blog" component={Blog} />
-      <Route path="/blog/:slug" component={BlogPost} />
-      <Route path="/book-consultation" component={BookConsultation} />
-      <Route component={NotFound} />
-    </Switch>
+    <Suspense fallback={<PageLoader />}>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/services" component={Services} />
+        <Route path="/services/:slug" component={ServiceDetail} />
+        <Route path="/ai-solutions" component={AISolutions} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/clients" component={Clients} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/blog/:slug" component={BlogPost} />
+        <Route path="/book-consultation" component={BookConsultation} />
+        <Route component={NotFound} />
+      </Switch>
+    </Suspense>
   );
 }
 
@@ -39,7 +54,9 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Router />
-        <Chatbot />
+        <Suspense fallback={null}>
+          <Chatbot />
+        </Suspense>
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>
