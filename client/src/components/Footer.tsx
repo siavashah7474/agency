@@ -35,6 +35,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li><Link href="/about" data-testid="link-footer-about" className="text-sm text-muted-foreground hover:text-primary">About Us</Link></li>
+              <li><Link href="/case-studies" data-testid="link-footer-case-studies" className="text-sm text-muted-foreground hover:text-primary">Case Studies</Link></li>
               <li><Link href="/clients" data-testid="link-footer-clients" className="text-sm text-muted-foreground hover:text-primary">Our Clients</Link></li>
               <li><Link href="/blog" data-testid="link-footer-blog" className="text-sm text-muted-foreground hover:text-primary">Blog</Link></li>
               <li><Link href="/contact" data-testid="link-footer-contact" className="text-sm text-muted-foreground hover:text-primary">Contact</Link></li>
@@ -60,8 +61,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+        <div className="mt-8 pt-8 border-t flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Webimot. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy-policy" data-testid="link-footer-privacy" className="hover:text-primary">Privacy Policy</Link>
+            <Link href="/terms-of-service" data-testid="link-footer-terms" className="hover:text-primary">Terms of Service</Link>
+          </div>
         </div>
       </div>
     </footer>

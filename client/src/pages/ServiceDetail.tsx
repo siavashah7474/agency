@@ -1,6 +1,7 @@
 import { useRoute } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -49,7 +50,12 @@ export default function ServiceDetail() {
             <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl" />
           </div>
-          <div className="container mx-auto px-6 text-center text-white">
+          <div className="container mx-auto px-6 text-white">
+            <Breadcrumbs items={[
+              { label: "Services", href: "/services" },
+              { label: service.title }
+            ]} />
+            <div className="text-center">
             <div className={`h-20 w-20 rounded-2xl bg-gradient-to-br ${iconConfig.gradient} flex items-center justify-center mx-auto mb-6 shadow-2xl`}>
               <Icon className="h-10 w-10 text-white" />
             </div>
@@ -65,6 +71,7 @@ export default function ServiceDetail() {
             <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
               {service.tagline}
             </p>
+            </div>
           </div>
         </section>
 

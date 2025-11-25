@@ -15,8 +15,13 @@ const Clients = lazy(() => import("@/pages/Clients"));
 const Blog = lazy(() => import("@/pages/Blog"));
 const BlogPost = lazy(() => import("@/pages/BlogPost"));
 const BookConsultation = lazy(() => import("@/pages/BookConsultation"));
+const CaseStudies = lazy(() => import("@/pages/CaseStudies"));
+const CaseStudyDetail = lazy(() => import("@/pages/CaseStudyDetail"));
+const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 const Chatbot = lazy(() => import("@/components/Chatbot"));
+const ExitIntentPopup = lazy(() => import("@/components/ExitIntentPopup"));
 
 function PageLoader() {
   return (
@@ -43,6 +48,10 @@ function Router() {
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogPost} />
         <Route path="/book-consultation" component={BookConsultation} />
+        <Route path="/case-studies" component={CaseStudies} />
+        <Route path="/case-studies/:slug" component={CaseStudyDetail} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-of-service" component={TermsOfService} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
@@ -56,6 +65,7 @@ export default function App() {
         <Router />
         <Suspense fallback={null}>
           <Chatbot />
+          <ExitIntentPopup />
         </Suspense>
         <Toaster />
       </TooltipProvider>
