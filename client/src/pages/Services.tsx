@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
+import SEO from "@/components/SEO";
 import { MessageSquare, FileText, BarChart, Target, TrendingUp, Globe, Zap, Users, Award, Megaphone, PenTool, Sparkles } from "lucide-react";
 
 export default function Services() {
@@ -88,10 +89,15 @@ export default function Services() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navigation />
-      
-      <main className="flex-1">
+    <>
+      <SEO 
+        title="Digital Marketing & AI Automation Services" 
+        description="Explore Webimot's 11 professional services including WhatsApp AI Agent, SEO Blog Generator, Meta Ads, Google Ads, and more for your clinic or business."
+      />
+      <div className="min-h-screen flex flex-col">
+        <Navigation />
+        
+        <main className="flex-1">
         <section className="relative py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10"></div>
           <div className="absolute inset-0 opacity-10 -z-10">
@@ -141,7 +147,8 @@ export default function Services() {
         </section>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }

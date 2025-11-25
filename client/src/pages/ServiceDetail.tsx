@@ -5,9 +5,10 @@ import PricingCard from "@/components/PricingCard";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, MessageSquare, FileText, BarChart, Target, TrendingUp, Globe, Zap, Users, Award, Megaphone, PenTool, ArrowRight, Sparkles, Package, ListChecks, HelpCircle } from "lucide-react";
+import { Check, MessageSquare, FileText, BarChart, Target, TrendingUp, Globe, Zap, Users, Award, Megaphone, PenTool, ArrowRight, Sparkles, Package, ListChecks, HelpCircle, ImageIcon } from "lucide-react";
 import { serviceData } from "@/data/servicesData";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 
 const serviceIcons: Record<string, { icon: typeof MessageSquare; gradient: string; bgGradient: string }> = {
   "whatsapp-ai-agent": { icon: MessageSquare, gradient: "from-green-500 to-emerald-600", bgGradient: "from-green-500/20 to-emerald-600/20" },
@@ -31,17 +32,23 @@ export default function ServiceDetail() {
   const Icon = iconConfig.icon;
 
   const isAIService = ["whatsapp-ai-agent", "seo-blog-generator", "ai-marketing-analyst"].includes(slug);
+  const isAdsService = ["meta-ads", "google-ads"].includes(slug);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navigation />
-      
-      <main className="flex-1">
+    <>
+      <SEO 
+        title={`${service.title} - Webimot AI Marketing Services`}
+        description={service.tagline}
+      />
+      <div className="min-h-screen flex flex-col">
+        <Navigation />
+        
+        <main className="flex-1">
         <section className="relative py-20 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10" />
           <div className="absolute inset-0 opacity-10 -z-10">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+            <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl" />
           </div>
           <div className="container mx-auto px-6 text-center text-white">
             <div className={`h-20 w-20 rounded-2xl bg-gradient-to-br ${iconConfig.gradient} flex items-center justify-center mx-auto mb-6 shadow-2xl`}>
@@ -98,6 +105,45 @@ export default function ServiceDetail() {
               </div>
             </div>
 
+            {isAdsService && (
+              <div className="mb-16">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className={`h-10 w-10 rounded-lg bg-gradient-to-br ${iconConfig.gradient} flex items-center justify-center`}>
+                    <BarChart className="h-5 w-5 text-white" />
+                  </div>
+                  <h2 className="text-3xl font-bold">Real Campaign Results</h2>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="overflow-hidden">
+                    <CardContent className="p-0">
+                      <div className="aspect-video bg-gradient-to-br from-muted/50 to-muted flex flex-col items-center justify-center border-2 border-dashed border-muted-foreground/20 m-4 rounded-lg">
+                        <ImageIcon className="h-12 w-12 text-muted-foreground/40 mb-3" />
+                        <p className="text-sm text-muted-foreground font-medium">Campaign Dashboard Screenshot</p>
+                        <p className="text-xs text-muted-foreground/60 mt-1">Replace with your real campaign metrics</p>
+                      </div>
+                      <div className="px-4 pb-4">
+                        <h3 className="font-semibold mb-1">Campaign Overview</h3>
+                        <p className="text-sm text-muted-foreground">Monthly performance metrics and KPIs</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  <Card className="overflow-hidden">
+                    <CardContent className="p-0">
+                      <div className="aspect-video bg-gradient-to-br from-muted/50 to-muted flex flex-col items-center justify-center border-2 border-dashed border-muted-foreground/20 m-4 rounded-lg">
+                        <ImageIcon className="h-12 w-12 text-muted-foreground/40 mb-3" />
+                        <p className="text-sm text-muted-foreground font-medium">ROI & Conversions Screenshot</p>
+                        <p className="text-xs text-muted-foreground/60 mt-1">Replace with your real conversion data</p>
+                      </div>
+                      <div className="px-4 pb-4">
+                        <h3 className="font-semibold mb-1">Conversion Metrics</h3>
+                        <p className="text-sm text-muted-foreground">Leads, sales, and return on ad spend</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            )}
+
             <div className="mb-16">
               <div className="flex items-center gap-3 mb-6">
                 <div className={`h-10 w-10 rounded-lg bg-gradient-to-br ${iconConfig.gradient} flex items-center justify-center`}>
@@ -146,7 +192,7 @@ export default function ServiceDetail() {
                 <h2 className="text-3xl font-bold">Our Process</h2>
               </div>
               <div className="relative">
-                <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent hidden md:block"></div>
+                <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent hidden md:block" />
                 <div className="space-y-6">
                   {service.process.map((step, index) => (
                     <div key={index} className="flex gap-6 items-start">
@@ -237,7 +283,8 @@ export default function ServiceDetail() {
         </section>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }

@@ -6,6 +6,7 @@ import FeatureCard from "@/components/FeatureCard";
 import AIProductCard from "@/components/AIProductCard";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
+import SEO from "@/components/SEO";
 import { Bot, Globe, MessageSquare, TrendingUp, Zap, FileText, BarChart, Target, Users, Clock, CheckCircle, ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.png";
 
@@ -109,167 +110,173 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navigation />
-      
-      <main className="flex-1">
-        <section className="relative py-20 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10"></div>
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 -z-10"></div>
-          
-          <div className="container mx-auto px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="text-white">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  AI-Powered Marketing & Automation for Clinics and Businesses
-                </h1>
-                <p className="text-lg md:text-xl mb-8 text-white/90">
-                  Webimot builds intelligent systems that bring you more leads, book more consultations, and automate your operations — 24/7.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/book-consultation">
-                    <Button
-                      data-testid="button-hero-strategy-call"
-                      size="lg"
-                      className="bg-white text-primary hover:bg-white/90 border-white"
-                    >
-                      Get Free Strategy Call
-                    </Button>
-                  </Link>
-                  <Link href="/ai-solutions">
-                    <Button
-                      data-testid="button-hero-ai-solutions"
-                      size="lg"
-                      variant="outline"
-                      className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
-                    >
-                      See Our AI Solutions
-                    </Button>
-                  </Link>
+    <>
+      <SEO 
+        title="AI-Powered Marketing & Automation for Medical Tourism" 
+        description="Webimot helps clinics and businesses generate more leads with AI automation, WhatsApp agents, SEO, and digital marketing. Get 24/7 lead handling and increase conversions by 60%."
+      />
+      <div className="min-h-screen flex flex-col">
+        <Navigation />
+        
+        <main className="flex-1">
+          <section className="relative py-20 md:py-32 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10" />
+            <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 -z-10" />
+            
+            <div className="container mx-auto px-6">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="text-white">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    AI-Powered Marketing & Automation for Clinics and Businesses
+                  </h1>
+                  <p className="text-lg md:text-xl mb-8 text-white/90">
+                    Webimot builds intelligent systems that bring you more leads, book more consultations, and automate your operations — 24/7.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link href="/book-consultation">
+                      <Button
+                        data-testid="button-hero-strategy-call"
+                        size="lg"
+                        className="bg-white text-primary hover:bg-white/90 border-white"
+                      >
+                        Get Free Strategy Call
+                      </Button>
+                    </Link>
+                    <Link href="/ai-solutions">
+                      <Button
+                        data-testid="button-hero-ai-solutions"
+                        size="lg"
+                        variant="outline"
+                        className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
+                      >
+                        See Our AI Solutions
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+                <div className="relative">
+                  <img
+                    src={heroImage}
+                    alt="AI Dashboard Interface"
+                    className="rounded-xl shadow-2xl border border-white/20"
+                  />
                 </div>
               </div>
-              <div className="relative">
-                <img
-                  src={heroImage}
-                  alt="AI Dashboard Interface"
-                  className="rounded-xl shadow-2xl border border-white/20"
-                />
+            </div>
+          </section>
+
+          <section className="py-16 md:py-24">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Webimot</h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  We combine cutting-edge AI technology with deep industry expertise to deliver results that matter
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {features.map((feature, index) => (
+                  <FeatureCard key={index} {...feature} />
+                ))}
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Webimot</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                We combine cutting-edge AI technology with deep industry expertise to deliver results that matter
-              </p>
+          <section className="py-16 md:py-24 bg-muted/30">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core AI Products</h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Intelligent automation solutions that transform how you do business
+                </p>
+              </div>
+              <div className="grid lg:grid-cols-3 gap-8">
+                {aiProducts.map((product, index) => (
+                  <AIProductCard key={index} {...product} />
+                ))}
+              </div>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {features.map((feature, index) => (
-                <FeatureCard key={index} {...feature} />
-              ))}
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core AI Products</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Intelligent automation solutions that transform how you do business
-              </p>
+          <section className="py-16 md:py-24">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Comprehensive digital marketing solutions tailored to your needs
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {services.map((service, index) => (
+                  <ServiceCard key={index} {...service} />
+                ))}
+              </div>
+              <div className="text-center mt-12">
+                <Link href="/services">
+                  <Button data-testid="button-view-all-services" variant="outline" size="lg">
+                    View All Services
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
             </div>
-            <div className="grid lg:grid-cols-3 gap-8">
-              {aiProducts.map((product, index) => (
-                <AIProductCard key={index} {...product} />
-              ))}
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive digital marketing solutions tailored to your needs
+          <section className="py-16 md:py-24 bg-muted/30">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Automation Features</h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Powerful integrations that work seamlessly together
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {automationFeatures.map((feature, index) => (
+                  <FeatureCard key={index} {...feature} />
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 md:py-24">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Real results from real businesses
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {testimonials.map((testimonial, index) => (
+                  <TestimonialCard key={index} {...testimonial} />
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="relative py-20 md:py-32 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary -z-10" />
+            <div className="container mx-auto px-6 text-center text-white">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Ready to Automate Your Clinic or Business?
+              </h2>
+              <p className="text-lg md:text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+                Let's discuss how AI automation can transform your operations and drive growth
               </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((service, index) => (
-                <ServiceCard key={index} {...service} />
-              ))}
-            </div>
-            <div className="text-center mt-12">
-              <Link href="/services">
-                <Button data-testid="button-view-all-services" variant="outline" size="lg">
-                  View All Services
-                  <ArrowRight className="ml-2 h-4 w-4" />
+              <Link href="/book-consultation">
+                <Button
+                  data-testid="button-cta-book-call"
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90"
+                >
+                  Book Your Free Strategy Call
                 </Button>
               </Link>
             </div>
-          </div>
-        </section>
+          </section>
+        </main>
 
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Automation Features</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Powerful integrations that work seamlessly together
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {automationFeatures.map((feature, index) => (
-                <FeatureCard key={index} {...feature} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Real results from real businesses
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {testimonials.map((testimonial, index) => (
-                <TestimonialCard key={index} {...testimonial} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="relative py-20 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary -z-10"></div>
-          <div className="container mx-auto px-6 text-center text-white">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Ready to Automate Your Clinic or Business?
-            </h2>
-            <p className="text-lg md:text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-              Let's discuss how AI automation can transform your operations and drive growth
-            </p>
-            <Link href="/book-consultation">
-              <Button
-                data-testid="button-cta-book-call"
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90"
-              >
-                Book Your Free Strategy Call
-              </Button>
-            </Link>
-          </div>
-        </section>
-      </main>
-
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
