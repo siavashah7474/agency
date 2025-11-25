@@ -164,12 +164,37 @@ export default function Home() {
 
           <section className="py-16 md:py-24 bg-muted/30">
             <div className="container mx-auto px-6">
-              <div className="text-center mb-12">
+              <div className="text-center mb-6">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core AI Products</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Intelligent automation solutions that transform how you do business
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  We build AI systems that work for you around the clock — handling leads, creating content, and analyzing your marketing performance so you can focus on what matters most: running your business.
                 </p>
               </div>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
+                <div className="text-center p-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Clock className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold mb-1">Save 20+ Hours Weekly</h3>
+                  <p className="text-sm text-muted-foreground">Automate repetitive tasks and free up your team</p>
+                </div>
+                <div className="text-center p-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Bot className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold mb-1">24/7 Lead Handling</h3>
+                  <p className="text-sm text-muted-foreground">Never miss a potential customer, even at 3 AM</p>
+                </div>
+                <div className="text-center p-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <TrendingUp className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold mb-1">Data-Driven Decisions</h3>
+                  <p className="text-sm text-muted-foreground">Get insights that help you grow smarter, not harder</p>
+                </div>
+              </div>
+
               <div className="grid lg:grid-cols-3 gap-8">
                 {aiProducts.map((product, index) => (
                   <AIProductCard key={index} {...product} />
