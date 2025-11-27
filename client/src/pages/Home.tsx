@@ -8,6 +8,7 @@ import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import PortfolioSection from "@/components/PortfolioSection";
 import WhyWebimotSection from "@/components/WhyWebimotSection";
+import ClientResultsSection from "@/components/ClientResultsSection";
 import SEO from "@/components/SEO";
 import { Bot, Globe, MessageSquare, TrendingUp, Zap, FileText, BarChart, Target, Users, Clock, CheckCircle, ArrowRight } from "lucide-react";
 import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.png";
@@ -224,6 +225,8 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <ClientResultsSection />
 
           <section className="py-16 md:py-24">
             <div className="container mx-auto px-6">
