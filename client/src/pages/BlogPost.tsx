@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, ArrowLeft, ArrowRight, MessageSquare, Phone } from "lucide-react";
+const WHATSAPP_LINK = "https://wa.me/31628753175";
 
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
@@ -38,8 +39,11 @@ export default function BlogPost() {
   return (
     <>
       <SEO 
-        title={`${post.title} | Webimot Blog`}
+        title={`${post.title} | Medical Tourism Marketing Blog`}
         description={post.excerpt}
+        keywords={`${post.category.toLowerCase()}, medical tourism marketing, lead generation, clinic marketing, ${post.category.toLowerCase()} tips, medical tourism blog, healthcare marketing, Turkey medical tourism, clinic lead generation, patient acquisition, medical tourism strategies`}
+        canonicalUrl={`https://webimot.com/blog/${post.slug}`}
+        ogType="article"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
@@ -131,9 +135,9 @@ export default function BlogPost() {
                             Book Free Strategy Call
                           </Button>
                         </Link>
-                        <a 
-                          href="https://wa.me/1234567890" 
-                          target="_blank" 
+                        <a
+                          href={WHATSAPP_LINK}
+                          target="_blank"
                           rel="noopener noreferrer"
                         >
                           <Button data-testid="button-blog-whatsapp" variant="outline" className="w-full">
@@ -204,7 +208,7 @@ export default function BlogPost() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                   <Button
                     data-testid="button-blog-footer-whatsapp"
                     size="lg"

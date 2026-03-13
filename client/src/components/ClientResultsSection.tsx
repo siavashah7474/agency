@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { 
+import {
   TrendingUp, 
   Clock, 
   Users, 
@@ -13,6 +13,7 @@ import {
   BarChart3,
   MessageSquare
 } from "lucide-react";
+import { caseStudies } from "@/data/caseStudiesData";
 
 interface ClientResult {
   name: string;
@@ -35,68 +36,57 @@ interface ClientResult {
   caseStudyLink?: string;
 }
 
-const clientResults: ClientResult[] = [
-  {
-    name: "Istanbul Dental Excellence",
-    industry: "Dental Clinic",
-    gradient: "from-cyan-500 to-blue-600",
-    stats: [
-      { label: "Response Time", before: "4-6 hours", after: "30 seconds", icon: Clock },
-      { label: "Lead Conversion", before: "18%", after: "65%", icon: Target },
-      { label: "Staff Hours Saved", before: "0", after: "120+ hrs/mo", icon: Users }
-    ],
-    bigStat: { value: "+340%", label: "More Patient Inquiries" },
-    quote: "The AI agent handles 80% of our inquiries without any human intervention. Our conversion rate skyrocketed.",
-    quoteName: "Dr. Mehmet Yilmaz",
-    quoteRole: "Founder",
-    caseStudyLink: "/case-studies/istanbul-dental-clinic-leads"
-  },
-  {
-    name: "Capilia Hair Clinic",
-    industry: "Hair Transplant",
-    gradient: "from-purple-500 to-violet-600",
-    stats: [
-      { label: "Google Ranking", before: "Page 5+", after: "Top 3", icon: TrendingUp },
-      { label: "Organic Traffic", before: "2,400/mo", after: "6,700/mo", icon: Users },
-      { label: "Cost Per Lead", before: "$45", after: "$20", icon: DollarSign }
-    ],
-    bigStat: { value: "+180%", label: "Organic Traffic Growth" },
-    quote: "We went from being invisible to ranking #1 for 'best hair transplant Turkey'. Our organic leads now exceed paid leads.",
-    quoteName: "Ahmet Kaya",
-    quoteRole: "Marketing Director",
-    caseStudyLink: "/case-studies/hair-transplant-seo-growth"
-  },
-  {
-    name: "Aesthetic Istanbul",
-    industry: "Cosmetic Surgery",
-    gradient: "from-pink-500 to-rose-600",
-    stats: [
-      { label: "ROAS", before: "2x", after: "8.5x", icon: BarChart3 },
-      { label: "Cost Per Lead", before: "$85", after: "$32", icon: DollarSign },
-      { label: "Booked Surgeries", before: "12/mo", after: "45/mo", icon: Target }
-    ],
-    bigStat: { value: "8.5x", label: "Return on Ad Spend" },
-    quote: "We now get 4x more qualified consultations with the same ad spend, and our surgery bookings are up 45%.",
-    quoteName: "Dr. Aylin Ozturk",
-    quoteRole: "Medical Director",
-    caseStudyLink: "/case-studies/cosmetic-surgery-meta-ads"
-  },
-  {
-    name: "Prime Properties Istanbul",
-    industry: "Real Estate",
-    gradient: "from-amber-500 to-orange-600",
-    stats: [
-      { label: "Lead Response", before: "45%", after: "100%", icon: MessageSquare },
-      { label: "Qualified Leads", before: "120/mo", after: "220/mo", icon: Users },
-      { label: "Sales Cycle", before: "45 days", after: "27 days", icon: Clock }
-    ],
-    bigStat: { value: "+120%", label: "Revenue Growth" },
-    quote: "Our revenue more than doubled while our team stayed the same size. The AI qualifies every lead perfectly.",
-    quoteName: "Elif Demir",
-    quoteRole: "CEO",
-    caseStudyLink: "/case-studies/real-estate-lead-automation"
-  }
-];
+const iconMap: Record<string, typeof TrendingUp> = {
+  "Lead Response": Clock,
+  "Lead Response Time": Clock,
+  "Response Time": Clock,
+  "Lead Conversion": Target,
+  "Organic Traffic": Users,
+  "Cost Per Lead": DollarSign,
+  "ROAS": BarChart3,
+  "Booked Surgeries": Target,
+  "Sales Cycle": Clock,
+  "Staff Hours Saved": Users,
+  "Qualified Leads": Users,
+  "Revenue": DollarSign
+};
+
+// Map caseStudies -> ClientResult so the "Proven Results" section reflects the canonical caseStudies data
+const clientResults: ClientResult[] = caseStudies.map((s) => {
+  // create 3 stats mapped from the case study results (with safe fallbacks)
+  const stats = s.results.slice(0, 3).map((r) => ({
+    label: r.metric,
+    before: r.description ?? "",
+    after: r.value,
+    icon: iconMap[r.metric] ?? TrendingUp
+  }));
+
+  // choose a primary result to display as the big stat (prefer index 1 else fallback to 0)
+  const primaryIndex = s.results[1] ? 1 : 0;
+  const big = s.results[primaryIndex] ?? s.results[0] ?? { metric: "", value: "" };
+
+  // create a color gradient mapping per industry (fallback to default)
+  const industryGradientMap: Record<string, string> = {
+    "Medical Tourism - Dental": "from-cyan-500 to-blue-600",
+    "Medical Tourism - Hair Transplant": "from-purple-500 to-violet-600",
+    "Medical Tourism - Cosmetic Surgery": "from-pink-500 to-rose-600",
+    "Real Estate": "from-amber-500 to-orange-600",
+  };
+
+  const slugSafe = s.slug.trim().replace(/\s+/g, "-");
+
+  return {
+    name: s.client,
+    industry: s.industry,
+    gradient: industryGradientMap[s.industry] ?? "from-primary to-secondary",
+    stats,
+    bigStat: { value: big.value, label: big.metric },
+    quote: s.testimonial.quote,
+    quoteName: s.testimonial.name,
+    quoteRole: s.testimonial.role,
+    caseStudyLink: `/case-studies/${slugSafe}`,
+  } as ClientResult;
+});
 
 function StatComparison({ stat }: { stat: ClientResult['stats'][0] }) {
   const Icon = stat.icon;

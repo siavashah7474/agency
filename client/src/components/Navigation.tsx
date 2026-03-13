@@ -2,10 +2,12 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 
 export default function Navigation() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { openModal } = useBookingModal();
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -46,17 +48,21 @@ export default function Navigation() {
           </nav>
 
           <div className="hidden md:flex items-center gap-2">
-            <Link href="/book-consultation">
-              <Button data-testid="button-book-consultation" variant="default">
-                Book Strategy Call
-              </Button>
-            </Link>
+            <Button 
+              data-testid="button-book-consultation" 
+              variant="default"
+              onClick={() => openModal()}
+            >
+              Book Strategy Call
+            </Button>
           </div>
 
           <button
             data-testid="button-mobile-menu"
             className="md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -79,16 +85,17 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/book-consultation">
-              <Button
-                data-testid="button-mobile-book"
-                variant="default"
-                className="w-full"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Book Strategy Call
-              </Button>
-            </Link>
+            <Button
+              data-testid="button-mobile-book"
+              variant="default"
+              className="w-full"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                openModal();
+              }}
+            >
+              Book Strategy Call
+            </Button>
           </nav>
         </div>
       )}

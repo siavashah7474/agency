@@ -20,9 +20,9 @@ export const portfolioProjects: PortfolioProject[] = [
     tagline: "Premium Aesthetics, Elevated Experience",
     description: "A luxury cosmetic surgery clinic requiring a sophisticated digital presence that conveys trust, expertise, and transformative results for international patients.",
     highlights: [
-      "Custom patient journey mapping with personalized touchpoints",
-      "Before/after gallery with privacy-first design",
-      "Multilingual WhatsApp automation in 6 languages",
+      "Custom AI Assistant content creation for SEO and blogs writing",
+      "Meta Ads optimized lead generation funnel",
+      "Multilingual WhatsApp AI Agent automation in 6 languages that increase their sales by 15%",
       "VIP consultation booking system with concierge features"
     ],
     creativeElements: [
@@ -36,15 +36,15 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: "clinish-aesthetic-agency",
-    name: "ClinishAesthetic Agency",
+    name: "Clinish Aesthetic Agency",
     industry: "Medical Tourism Agency",
     tagline: "Connecting Patients to World-Class Care",
     description: "A medical tourism agency matching international patients with top clinics across Turkey, requiring a platform that builds trust and simplifies the complex decision-making process.",
     highlights: [
       "Clinic comparison tool with verified ratings",
-      "AI-powered treatment recommendation engine",
-      "End-to-end patient journey coordinator",
-      "Multi-clinic WhatsApp routing system"
+      "AI-powered SEO Blog Creator for health topics and articles",
+      "AI Powered What's app Lead Convertor 24/7",
+      "Multi-Language WhatsApp AI Assistant"
     ],
     creativeElements: [
       "Trust-building design with verified clinic badges",
@@ -98,8 +98,8 @@ export const portfolioProjects: PortfolioProject[] = [
     icon: Plane
   },
   {
-    id: "smile-dental-istanbul",
-    name: "SmileDental Istanbul",
+    id: "clinish-dental-istanbul",
+    name: "Clinish",
     industry: "Dental Tourism",
     tagline: "Your Perfect Smile Awaits",
     description: "A premier dental clinic specializing in smile makeovers, veneers, and full mouth restorations for international patients seeking affordable excellence in dental care.",

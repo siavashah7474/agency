@@ -9,15 +9,15 @@ import { FileText } from "lucide-react";
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
-  
+
   const categories = useMemo(() => {
-    const cats = Array.from(new Set(blogPosts.map(post => post.category)));
+    const cats = Array.from(new Set(blogPosts.map((post) => post.category)));
     return ["All", ...cats];
   }, []);
 
   const filteredPosts = useMemo(() => {
     if (selectedCategory === "All") return blogPosts;
-    return blogPosts.filter(post => post.category === selectedCategory);
+    return blogPosts.filter((post) => post.category === selectedCategory);
   }, [selectedCategory]);
 
   const featuredPost = filteredPosts[0];
@@ -25,14 +25,15 @@ export default function Blog() {
 
   return (
     <>
-      <SEO 
-        title="Blog - Marketing & Automation Insights"
-        description="Expert insights on AI automation, digital marketing strategies, and growing your medical tourism, real estate, or service business."
-        keywords="marketing blog, AI automation tips, medical tourism marketing, digital marketing strategies"
+      <SEO
+        title="Blog - Marketing & Automation Insights for Medical Tourism Clinics"
+        description="Expert insights on AI automation, lead generation, website design, SEO, and digital marketing strategies for medical tourism clinics in Turkey. Learn how to grow your clinic with proven marketing tactics."
+        keywords="medical tourism marketing blog, lead generation tips, clinic marketing strategies, AI automation blog, website design tips, SEO blog, digital marketing blog, medical tourism SEO, clinic lead generation tips, healthcare marketing blog, Turkey medical tourism blog, AI agent blog, blog generator, patient acquisition strategies, medical tourism content marketing"
+        canonicalUrl="https://webimot.com/blog"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
-        
+
         <main className="flex-1">
           <section className="relative py-20 md:py-32 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10"></div>
@@ -45,7 +46,8 @@ export default function Blog() {
                 Blog
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                Insights on AI automation, digital marketing, and growing your business
+                Insights on AI automation, digital marketing, and growing your
+                business
               </p>
             </div>
           </section>
@@ -53,19 +55,30 @@ export default function Blog() {
           <section className="py-8 border-b">
             <div className="container mx-auto px-6">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-sm font-medium text-muted-foreground mr-2">Filter by:</span>
+                <span className="text-sm font-medium text-muted-foreground mr-2">
+                  Filter by:
+                </span>
                 {categories.map((category) => (
                   <Button
                     key={category}
-                    variant={selectedCategory === category ? "default" : "outline"}
+                    variant={
+                      selectedCategory === category ? "default" : "outline"
+                    }
                     size="sm"
                     onClick={() => setSelectedCategory(category)}
-                    data-testid={`button-category-${category.toLowerCase().replace(/\s+/g, '-')}`}
+                    data-testid={`button-category-${category
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
                   >
                     {category}
                     {category !== "All" && (
                       <span className="ml-1 text-xs opacity-70">
-                        ({blogPosts.filter(p => p.category === category).length})
+                        (
+                        {
+                          blogPosts.filter((p) => p.category === category)
+                            .length
+                        }
+                        )
                       </span>
                     )}
                   </Button>
@@ -78,14 +91,18 @@ export default function Blog() {
             <div className="container mx-auto px-6">
               {filteredPosts.length === 0 ? (
                 <div className="text-center py-12">
-                  <p className="text-muted-foreground">No posts found in this category.</p>
+                  <p className="text-muted-foreground">
+                    No posts found in this category.
+                  </p>
                 </div>
               ) : (
                 <>
                   {featuredPost && (
                     <div className="mb-16">
                       <h2 className="text-2xl font-bold mb-6">
-                        {selectedCategory === "All" ? "Featured Post" : `${selectedCategory} Articles`}
+                        {selectedCategory === "All"
+                          ? "Featured Post"
+                          : `${selectedCategory} Articles`}
                       </h2>
                       <div className="max-w-4xl">
                         <BlogCard {...featuredPost} />
@@ -96,7 +113,9 @@ export default function Blog() {
                   {otherPosts.length > 0 && (
                     <div>
                       <h2 className="text-2xl font-bold mb-6">
-                        {selectedCategory === "All" ? "Latest Articles" : "More Articles"}
+                        {selectedCategory === "All"
+                          ? "Latest Articles"
+                          : "More Articles"}
                       </h2>
                       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {otherPosts.map((post, index) => (

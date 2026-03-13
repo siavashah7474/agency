@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
+  const whatsappLink = "https://wa.me/31628753175";
   return (
     <footer className="border-t bg-muted/30">
       <div className="container mx-auto px-6 py-12">
@@ -55,7 +56,9 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <a href="https://wa.me/1234567890" className="hover:text-primary">WhatsApp Us</a>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+                  WhatsApp Us
+                </a>
               </li>
             </ul>
           </div>

@@ -1,11 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { X, Gift, ArrowRight } from "lucide-react";
-import { Link } from "wouter";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
+  const { openModal } = useBookingModal();
 
   const handleMouseLeave = useCallback((e: MouseEvent) => {
     if (e.clientY <= 0 && !hasShown) {
@@ -40,6 +41,7 @@ export default function ExitIntentPopup() {
           onClick={handleClose}
           className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
           data-testid="button-close-exit-popup"
+          aria-label="Close popup"
         >
           <X className="h-5 w-5" />
         </button>
@@ -58,16 +60,18 @@ export default function ExitIntentPopup() {
           </p>
 
           <div className="space-y-3">
-            <Link href="/book-consultation" onClick={handleClose}>
-              <Button 
-                data-testid="button-exit-popup-cta" 
-                size="lg" 
-                className="w-full"
-              >
-                Get My Free Audit
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+            <Button 
+              data-testid="button-exit-popup-cta" 
+              size="lg" 
+              className="w-full"
+              onClick={() => {
+                handleClose();
+                openModal();
+              }}
+            >
+              Get My Free Audit
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
             
             <button
               onClick={handleClose}

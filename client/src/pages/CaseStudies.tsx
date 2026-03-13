@@ -5,7 +5,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { caseStudies } from "@/data/caseStudiesData";
-import { ArrowRight, TrendingUp, Building, Stethoscope, Home as HomeIcon } from "lucide-react";
+import {
+  ArrowRight,
+  TrendingUp,
+  Building,
+  Stethoscope,
+  Home as HomeIcon,
+} from "lucide-react";
 
 const industryIcons: Record<string, typeof TrendingUp> = {
   "Medical Tourism - Dental": Stethoscope,
@@ -17,14 +23,15 @@ const industryIcons: Record<string, typeof TrendingUp> = {
 export default function CaseStudies() {
   return (
     <>
-      <SEO 
-        title="Case Studies - Real Results for Real Businesses"
-        description="See how we've helped medical tourism clinics, real estate agencies, and service businesses generate more leads and grow revenue. Detailed success stories with metrics."
-        keywords="case studies, marketing results, lead generation success, medical tourism marketing, real estate marketing"
+      <SEO
+        title="Case Studies - Real Results for Medical Tourism Clinics | Lead Generation Success"
+        description="See how we've helped medical tourism clinics in Turkey generate more leads and grow revenue with AI automation, website design, SEO, and digital marketing. Detailed success stories with real metrics and results."
+        keywords="medical tourism case studies, clinic marketing case studies, lead generation case studies, medical tourism success stories, clinic lead generation results, healthcare marketing case studies, Turkey medical tourism case studies, AI automation case studies, website design case studies, SEO case studies, patient acquisition case studies, medical tourism ROI, clinic marketing results"
+        canonicalUrl="https://webimot.com/case-studies"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
-        
+
         <main className="flex-1">
           <section className="relative py-20 md:py-32 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10" />
@@ -37,7 +44,8 @@ export default function CaseStudies() {
                 Case Studies
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                Real success stories from businesses that transformed their lead generation with our solutions
+                Real success stories from businesses that transformed their lead
+                generation with our solutions
               </p>
             </div>
           </section>
@@ -48,7 +56,11 @@ export default function CaseStudies() {
                 {caseStudies.map((study, index) => {
                   const Icon = industryIcons[study.industry] || TrendingUp;
                   return (
-                    <Card key={study.slug} className="overflow-hidden hover-elevate" data-testid={`card-case-study-${index}`}>
+                    <Card
+                      key={study.slug}
+                      className="overflow-hidden hover-elevate"
+                      data-testid={`card-case-study-${index}`}
+                    >
                       <CardContent className="p-0">
                         <div className="grid lg:grid-cols-3 gap-0">
                           <div className="p-8 lg:col-span-2">
@@ -57,20 +69,22 @@ export default function CaseStudies() {
                                 <Icon className="h-3 w-3" />
                                 {study.industry}
                               </span>
-                              <span className="text-xs text-muted-foreground">{study.location}</span>
+                              <span className="text-xs text-muted-foreground">
+                                {study.location}
+                              </span>
                             </div>
-                            
+
                             <h2 className="text-xl md:text-2xl font-bold mb-3">
                               {study.title}
                             </h2>
-                            
+
                             <p className="text-muted-foreground mb-6 line-clamp-3">
                               {study.challenge}
                             </p>
 
                             <div className="flex flex-wrap gap-2 mb-6">
                               {study.services.map((service) => (
-                                <span 
+                                <span
                                   key={service}
                                   className="px-2 py-1 bg-muted rounded text-xs font-medium"
                                 >
@@ -80,7 +94,9 @@ export default function CaseStudies() {
                             </div>
 
                             <Link href={`/case-studies/${study.slug}`}>
-                              <Button data-testid={`button-read-case-study-${index}`}>
+                              <Button
+                                data-testid={`button-read-case-study-${index}`}
+                              >
                                 Read Full Case Study
                                 <ArrowRight className="ml-2 h-4 w-4" />
                               </Button>
@@ -119,7 +135,8 @@ export default function CaseStudies() {
                 Ready to Become Our Next Success Story?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Let's discuss how we can help you achieve similar results for your business
+                Let's discuss how we can help you achieve similar results for
+                your business
               </p>
               <Link href="/book-consultation">
                 <Button data-testid="button-case-studies-cta" size="lg">

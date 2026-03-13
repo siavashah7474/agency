@@ -22,8 +22,9 @@ export default function SEO({
   articleAuthor
 }: SEOProps) {
   useEffect(() => {
-    document.title = `${title} | Webimot`;
-    
+    const brandedTitle = title.includes("Webimot") ? title : `${title} | Webimot`;
+    document.title = brandedTitle;
+
     const setMeta = (name: string, content: string, isProperty = false) => {
       const attr = isProperty ? "property" : "name";
       let meta = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement;
@@ -37,18 +38,20 @@ export default function SEO({
 
     setMeta("description", description);
     if (keywords) setMeta("keywords", keywords);
-    
-    setMeta("og:title", title, true);
+
+    setMeta("og:title", brandedTitle, true);
     setMeta("og:description", description, true);
     setMeta("og:type", ogType, true);
     setMeta("og:image", ogImage, true);
     setMeta("og:site_name", "Webimot", true);
-    
+    setMeta("og:locale", "en_US", true);
+    if (canonicalUrl) setMeta("og:url", canonicalUrl, true);
+
     setMeta("twitter:card", "summary_large_image");
-    setMeta("twitter:title", title);
+    setMeta("twitter:title", brandedTitle);
     setMeta("twitter:description", description);
     setMeta("twitter:image", ogImage);
-    
+
     if (articlePublishedTime) {
       setMeta("article:published_time", articlePublishedTime, true);
     }

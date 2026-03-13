@@ -22,52 +22,52 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "istanbul-dental-clinic-leads",
-    title: "How Istanbul Dental Clinic Increased Patient Inquiries by 340%",
-    client: "Istanbul Dental Excellence",
+    slug: "clinish-dental-clinic",
+    title: "How Clinish Increased Patient Inquiries by 40%",
+    client: "Clinish",
     industry: "Medical Tourism - Dental",
     location: "Istanbul, Turkey",
     challenge: "The clinic was receiving hundreds of WhatsApp inquiries daily from international patients but could only respond during business hours. They were losing 60% of leads to competitors who responded faster. The multilingual nature of inquiries (English, Arabic, Russian, German) made it difficult to handle with a small team.",
     solution: "We implemented our WhatsApp AI Agent with multilingual support and Vision AI for dental photo evaluation. The system was trained on their specific treatments (veneers, implants, full mouth restoration) and integrated with their booking calendar. We also set up automated follow-up sequences for leads who didn't book immediately.",
     results: [
       { metric: "Lead Response Time", value: "< 30 seconds", description: "Down from 4-6 hours average" },
-      { metric: "Patient Inquiries", value: "+340%", description: "Monthly qualified leads increased" },
-      { metric: "Conversion Rate", value: "+65%", description: "From inquiry to booked consultation" },
+      { metric: "Patient Inquiries", value: "+40%", description: "Monthly qualified leads increased" },
+      { metric: "Conversion Rate", value: "+55%", description: "From inquiry to booked consultation" },
       { metric: "Staff Hours Saved", value: "120+ hours/month", description: "Redirected to patient care" }
     ],
     testimonial: {
       quote: "The AI agent handles 80% of our inquiries without any human intervention. Our conversion rate skyrocketed because we now respond instantly, even at 3 AM when patients in the US are researching.",
-      name: "Dr. Mehmet Yilmaz",
-      role: "Founder, Istanbul Dental Excellence"
+      name: "Dr. Babak Yunuszade",
+      role: "Founder, Clinish"
     },
-    services: ["WhatsApp AI Agent", "Lead Qualification", "Calendar Automation"],
+    services: ["WhatsApp AI Agent", "Lead Qualification", "Calendar Automation", "Meta Ads"],
     duration: "2 weeks setup + ongoing"
   },
   {
     slug: "hair-transplant-seo-growth",
-    title: "180% Organic Traffic Growth for Premium Hair Transplant Clinic",
-    client: "Capilia Hair Clinic",
+    title: "20% Organic Traffic Growth for Premium Hair Transplant Clinic",
+    client: "Estetizm",
     industry: "Medical Tourism - Hair Transplant",
     location: "Istanbul, Turkey",
     challenge: "Despite offering premium FUE and DHI hair transplants, the clinic was invisible in Google searches. They were spending heavily on paid ads but getting low-quality leads. Their website had no blog content and poor SEO, ranking on page 5+ for key terms.",
     solution: "We deployed our SEO Blog Generator AI to create 25+ optimized articles monthly covering hair transplant topics. Combined with technical SEO fixes, local SEO optimization, and a comprehensive link-building strategy. The AI content was reviewed by their medical team for accuracy before publishing.",
     results: [
-      { metric: "Organic Traffic", value: "+180%", description: "In 6 months" },
-      { metric: "Keyword Rankings", value: "Top 3", description: "For 15 high-value keywords" },
+      { metric: "Organic Traffic", value: "+20%", description: "In 6 months" },
+      { metric: "Keyword Rankings", value: "Top 10", description: "For 15 high-value keywords" },
       { metric: "Cost Per Lead", value: "-55%", description: "Reduced paid ad dependency" },
       { metric: "Blog Posts", value: "150+", description: "Published in first 6 months" }
     ],
     testimonial: {
       quote: "We went from being invisible to ranking #1 for 'best hair transplant Turkey'. The AI-generated content is so good that even our doctors are impressed. Our organic leads now exceed paid leads.",
-      name: "Ahmet Kaya",
-      role: "Marketing Director, Capilia Hair Clinic"
+      name: "Ramzan Sabaz",
+      role: "Hair Transplant Specialist, Estetizm"
     },
     services: ["SEO Blog Generator", "Technical SEO", "Local SEO"],
     duration: "6 months campaign"
   },
   {
     slug: "real-estate-lead-automation",
-    title: "Turkish Real Estate Agency Automates 500+ Monthly Leads",
+    title: "Turkish Real Estate Agency Automates 300+ Monthly Leads",
     client: "Prime Properties Istanbul",
     industry: "Real Estate",
     location: "Istanbul, Turkey",
@@ -81,7 +81,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote: "We were drowning in leads but closing few deals. Now our AI qualifies every lead, and our sales team only talks to serious buyers. Our revenue more than doubled while our team stayed the same size.",
-      name: "Elif Demir",
+      name: "Vahid Tokmak",
       role: "CEO, Prime Properties Istanbul"
     },
     services: ["WhatsApp AI Agent", "Lead Scoring", "CRM Integration", "AI Marketing Analyst"],
@@ -90,7 +90,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "cosmetic-surgery-meta-ads",
     title: "Cosmetic Surgery Clinic Achieves 8.5x ROAS with Meta Ads",
-    client: "Aesthetic Istanbul",
+    client: "MSB Aesthetic Istanbul",
     industry: "Medical Tourism - Cosmetic Surgery",
     location: "Istanbul, Turkey",
     challenge: "The clinic's previous agency was running Meta ads with poor targeting, resulting in expensive clicks from unqualified audiences. Their ROAS was below 2x, making paid advertising unsustainable. They needed to reach serious patients considering procedures like rhinoplasty, BBL, and mommy makeovers.",
@@ -103,8 +103,8 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote: "Our previous agency was burning our budget. Webimot completely transformed our advertising. We now get 4x more qualified consultations with the same ad spend, and our surgery bookings are up 45%.",
-      name: "Dr. Aylin Ozturk",
-      role: "Medical Director, Aesthetic Istanbul"
+      name: "Mehmet salih",
+      role: "Medical Director, MSB Aesthetic Istanbul"
     },
     services: ["Meta Ads Management", "Creative Strategy", "Conversion Optimization"],
     duration: "Ongoing monthly retainer"
