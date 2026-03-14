@@ -360,6 +360,12 @@ export default function Home() {
                       <CheckCircle className="w-4 h-4" /> IVF & Fertility
                     </span>
                     <span className="inline-flex items-center gap-1.5 text-sm text-white/80 bg-white/10 rounded-full px-3 py-1">
+                      <CheckCircle className="w-4 h-4" /> eCommerce Stores
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-sm text-white/80 bg-white/10 rounded-full px-3 py-1">
+                      <CheckCircle className="w-4 h-4" /> Shopify Brands
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-sm text-white/80 bg-white/10 rounded-full px-3 py-1">
                       <CheckCircle className="w-4 h-4" /> Real Estate Agencies
                     </span>
                   </div>
