@@ -25,7 +25,7 @@ export default function TermsOfService() {
 
             <div className="prose prose-gray dark:prose-invert max-w-none">
               <p className="text-muted-foreground mb-6">
-                Last updated: November 2025
+                Last updated: March 2026
               </p>
 
               <section className="mb-8">

@@ -31,6 +31,7 @@ import {
   CheckCircle,
   ArrowRight,
   HelpCircle,
+  ShoppingCart,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.png";
 import { useEffect } from "react";
@@ -222,6 +223,13 @@ export default function Home() {
       description:
         "Monitor and enhance your online reputation across all platforms",
       href: "/services/reputation-management",
+    },
+    {
+      icon: ShoppingCart,
+      title: "Shopify & eCommerce Automation",
+      description:
+        "AI finds winning products, automates inventory, pricing, and email flows — your store runs itself",
+      href: "/services/shopify-ecommerce-automation",
     },
   ];
 

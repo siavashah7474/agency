@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "wouter";
 
 // Google Analytics Measurement ID
-// Replace with your actual GA4 Measurement ID (format: G-XXXXXXXXXX)
-const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || "";
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || "G-FV6M9N8FQ3";
 
 // Initialize Google Analytics
 export function initializeGA() {

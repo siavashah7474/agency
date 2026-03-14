@@ -102,6 +102,11 @@ const serviceIcons: Record<
     gradient: "from-slate-500 to-gray-600",
     bgGradient: "from-slate-500/20 to-gray-600/20",
   },
+  "shopify-ecommerce-automation": {
+    icon: Package,
+    gradient: "from-emerald-500 to-teal-600",
+    bgGradient: "from-emerald-500/20 to-teal-600/20",
+  },
 };
 
 function GoogleAdsDashboard() {

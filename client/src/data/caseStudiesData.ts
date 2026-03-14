@@ -37,7 +37,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote: "The AI agent handles 80% of our inquiries without any human intervention. Our conversion rate skyrocketed because we now respond instantly, even at 3 AM when patients in the US are researching.",
-      name: "Dr. Babak Yunuszade",
+      name: "Dr Babak Yunuszade",
       role: "Founder, Clinish"
     },
     services: ["WhatsApp AI Agent", "Lead Qualification", "Calendar Automation", "Meta Ads"],
@@ -59,7 +59,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote: "We went from being invisible to ranking #1 for 'best hair transplant Turkey'. The AI-generated content is so good that even our doctors are impressed. Our organic leads now exceed paid leads.",
-      name: "Ramzan Sabaz",
+      name: "Ramazan Sabaz",
       role: "Hair Transplant Specialist, Estetizm"
     },
     services: ["SEO Blog Generator", "Technical SEO", "Local SEO"],
@@ -103,7 +103,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     testimonial: {
       quote: "Our previous agency was burning our budget. Webimot completely transformed our advertising. We now get 4x more qualified consultations with the same ad spend, and our surgery bookings are up 45%.",
-      name: "Mehmet salih",
+      name: "Mehmet Salih",
       role: "Medical Director, MSB Aesthetic Istanbul"
     },
     services: ["Meta Ads Management", "Creative Strategy", "Conversion Optimization"],

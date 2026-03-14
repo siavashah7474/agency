@@ -647,5 +647,67 @@ export const serviceData: Record<string, ServiceData> = {
         answer: "Results vary, but most clients see rating improvements within 2-3 months as new positive reviews accumulate."
       }
     ]
+  },
+  "shopify-ecommerce-automation": {
+    title: "Shopify & eCommerce Automation",
+    tagline: "Find Winning Products, Automate Operations, Scale Revenue",
+    what: "We build end-to-end AI automation systems for Shopify and eCommerce stores — from finding profitable products before your competitors do, to running inventory, pricing, email flows, and fulfillment on autopilot. Whether you're launching a new store or scaling an existing one, we turn your eCommerce operation into a machine that runs itself.",
+    why: "Most eCommerce store owners spend 80% of their time on tasks a machine could do — restocking inventory, writing product descriptions, chasing abandoned carts, monitoring competitor prices. Our automation systems eliminate all of that, giving you back your time while your store generates revenue around the clock. Stores we automate typically see 2-4× revenue growth within 90 days.",
+    benefits: [
+      "AI finds winning products before they go viral — first-mover advantage",
+      "Inventory auto-managed: reorders triggered before you run out",
+      "Dynamic pricing adjusts in real-time based on competitor data",
+      "Abandoned cart flows recover 15-25% of lost revenue automatically",
+      "Bulk AI-written product descriptions — 100 products in hours, not weeks",
+      "Supplier sourcing automation with margin analysis built in",
+      "Order routing and fulfillment handled without manual input",
+      "Weekly revenue dashboards delivered straight to your inbox"
+    ],
+    deliverables: [
+      "AI product research system (trend + competition + margin analysis)",
+      "Shopify store audit & conversion rate optimization",
+      "Inventory management automation with reorder rules",
+      "Dynamic pricing engine with competitor tracking",
+      "Abandoned cart & post-purchase email/SMS flows",
+      "Bulk AI product description generator",
+      "Supplier sourcing workflow with profit margin calculator",
+      "Order fulfillment & dropshipping automation",
+      "Customer review collection automation",
+      "Weekly revenue & performance dashboard"
+    ],
+    process: [
+      { title: "Store Audit", description: "We audit your current store, identify revenue leaks, and map the highest-impact automation opportunities" },
+      { title: "Product Research Setup", description: "Deploy AI tools to scan trending products across TikTok, Amazon, AliExpress, and competitor stores daily" },
+      { title: "Automation Build", description: "Set up inventory rules, pricing engine, email flows, and order routing tailored to your business" },
+      { title: "AI Content Engine", description: "Generate SEO-optimized product titles, descriptions, and meta tags for your entire catalog" },
+      { title: "Launch & Test", description: "Go live with all automations running, test edge cases, and monitor closely for 2 weeks" },
+      { title: "Scale", description: "Monthly performance reviews, add new automations as you grow, optimize ad feeds and product mix" }
+    ],
+    faqs: [
+      {
+        question: "Does this work for dropshipping stores?",
+        answer: "Yes — dropshipping stores benefit most from our product research and order routing automations. We connect directly to your suppliers and automate the full fulfillment chain."
+      },
+      {
+        question: "How does the AI find winning products?",
+        answer: "We use AI to monitor trending hashtags, TikTok ads, Amazon bestseller movements, AliExpress order volumes, and competitor store updates daily. Products with rising demand and low competition are surfaced to you with margin analysis included."
+      },
+      {
+        question: "What platforms do you support?",
+        answer: "We specialize in Shopify and Shopify Plus, but also work with WooCommerce and custom stores. Shopify is our strongest integration."
+      },
+      {
+        question: "Can you help with existing stores or only new ones?",
+        answer: "Both. For existing stores, we audit what's working, fix conversion killers, and layer automations on top. For new stores, we build the right foundation from day one."
+      },
+      {
+        question: "How long before I see results?",
+        answer: "Abandoned cart flows and email sequences start recovering revenue within the first week. Product research and pricing automation compound over time — most stores see meaningful revenue uplift within 30-60 days."
+      },
+      {
+        question: "Do I need to know how to code?",
+        answer: "No. We handle all the technical setup. You get a dashboard and weekly reports — no code, no complicated tools to manage yourself."
+      }
+    ]
   }
 };

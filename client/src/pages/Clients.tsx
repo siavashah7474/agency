@@ -40,14 +40,14 @@ export default function Clients() {
       role: "Hair Transplant specialist",
       company: "Estetizm",
       content:
-        "Webimot understood our unique needs in the medical tourism space. Their AI solutions are specifically designed for our industry, and it shows. Lead response time went from hours to seconds. now we have better qaulity leads ",
+        "Webimot understood our unique needs in the medical tourism space. Their AI solutions are specifically designed for our industry, and it shows. Lead response time went from hours to seconds. now we have better quality leads ",
     },
     {
       name: "Dr Babak Yunuszade",
       role: "Dentist",
       company: "Clinish",
       content:
-        "The combination of AI automation and traditional marketing services is perfect. Now we have better qaulity patints and our website qaulity has improved with their services and professional strategies, We get the best of both worlds - cutting-edge technology with human expertise and strategy.",
+        "The combination of AI automation and traditional marketing services is perfect. Now we have better quality patients and our website quality has improved with their services and professional strategies, we get the best of both worlds - cutting-edge technology with human expertise and strategy.",
     },
   ];
 

@@ -25,6 +25,12 @@ import {
   MousePointerClick,
   Clock,
   Star,
+  Package,
+  ShoppingCart,
+  Search,
+  RefreshCcw,
+  DollarSign,
+  BarChart2,
 } from "lucide-react";
 
 interface ServiceCardProps {
@@ -442,6 +448,57 @@ export default function Services() {
               {brandingServices.map((service, index) => (
                 <ServiceCard key={index} {...service} />
               ))}
+            </div>
+          </CategorySection>
+
+          <CategorySection
+            icon={ShoppingCart}
+            title="Shopify & eCommerce Automation"
+            subtitle="New Specialty"
+            gradient="from-emerald-500 to-teal-600"
+            description="We turn Shopify stores into revenue machines — finding winning products with AI before your competitors do, automating inventory and pricing, and running email flows that recover lost sales 24/7. From first product to full-scale operation, we automate every part of your eCommerce stack."
+            stats={[
+              { value: "2-4×", label: "Revenue Growth" },
+              { value: "25%", label: "Cart Recovery Rate" },
+              { value: "90%", label: "Tasks Automated" },
+            ]}
+            bgClass="bg-muted/30"
+          >
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              {[
+                {
+                  icon: Search,
+                  title: "AI Product Research",
+                  description: "Find winning products before they go viral. Our AI scans TikTok trends, Amazon bestsellers, AliExpress data, and competitor stores daily — with margin analysis built in.",
+                  href: "/services/shopify-ecommerce-automation",
+                  gradient: "from-emerald-500 to-teal-600",
+                  tag: "Most Requested",
+                },
+                {
+                  icon: RefreshCcw,
+                  title: "Inventory & Fulfillment Automation",
+                  description: "Auto-reorders triggered before you run out of stock. Order routing, supplier management, and dropshipping fulfillment handled without manual input.",
+                  href: "/services/shopify-ecommerce-automation",
+                  gradient: "from-emerald-500 to-teal-600",
+                },
+                {
+                  icon: DollarSign,
+                  title: "Dynamic Pricing & Recovery Flows",
+                  description: "Real-time competitor price tracking with automatic adjustments. Abandoned cart and post-purchase email/SMS flows that recover 15-25% of lost revenue.",
+                  href: "/services/shopify-ecommerce-automation",
+                  gradient: "from-emerald-500 to-teal-600",
+                },
+              ].map((service, index) => (
+                <ServiceCard key={index} {...service} />
+              ))}
+            </div>
+            <div className="text-center">
+              <Link href="/services/shopify-ecommerce-automation">
+                <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity">
+                  See Full eCommerce Automation Package
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              </Link>
             </div>
           </CategorySection>
 
