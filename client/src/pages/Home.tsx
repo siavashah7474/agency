@@ -268,14 +268,14 @@ export default function Home() {
         "The WhatsApp AI agent completely transformed our lead handling. We went from missing 40% of inquiries to responding to 100% within seconds. Our conversion rate doubled in just 3 months.",
     },
     {
-      name: "Pouyan azizpour",
+      name: "Pouyan Azizpour",
       role: "CEO",
       company: "Wavemed.io",
       content:
         "Webimot's SEO Blog Generator has been a game-changer. We publish 20 optimized posts per month without any manual work. Our organic traffic increased by 20% in 6 months.",
     },
     {
-      name: "Hamed Gholami",
+      name: "Dr. Hamed Gholami",
       role: "Owner of Novin Ariana ",
       company: "Novin Ariana Health Group",
       content:
@@ -309,12 +309,12 @@ export default function Home() {
                     </span>
                   </div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                    AI Automation for Medical Tourism & Real Estate Businesses
+                    AI Automation for Businesses
                   </h1>
                   <p className="text-lg md:text-xl mb-8 text-white/90">
-                    We started in medical tourism — now we digitalize
-                    high-value businesses. From patient inquiries to property
-                    leads, our AI handles it 24/7 so you never miss a sale.
+                    We build AI systems that handle your leads, follow-ups,
+                    content, and reporting — 24/7, automatically. Stop losing
+                    sales to slow response times and manual processes.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 mb-8">
                     <Button
@@ -378,13 +378,12 @@ export default function Home() {
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Our Core AI Products
+                  Our Core AI Automation Products
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  We build AI systems that digitalize high-value businesses —
-                  handling inquiries in multiple languages, qualifying leads
-                  automatically, and booking meetings while you sleep. Proven
-                  in medical tourism and real estate.
+                  Purpose-built AI tools that work around the clock — qualifying
+                  leads, publishing content, and reporting on performance so your
+                  team can focus on closing deals instead of chasing tasks.
                 </p>
               </div>
 
@@ -432,11 +431,11 @@ export default function Home() {
             <div className="container mx-auto px-6">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Our Services
+                  AI-Powered Services for Your Business
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Comprehensive digital marketing solutions tailored to your
-                  needs
+                  From ads and SEO to full AI automation — everything you need
+                  to grow faster with less manual effort
                 </p>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -465,10 +464,11 @@ export default function Home() {
             <div className="container mx-auto px-6">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Automation Features
+                  AI Automation Features
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Powerful integrations that work seamlessly together
+                  Powerful automations that connect your tools, eliminate manual
+                  work, and keep your business running 24/7
                 </p>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -530,7 +530,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary -z-10" />
             <div className="container mx-auto px-6 text-center text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Ready to Digitalize Your Business with AI?
+                Ready to Automate Your Business with AI?
               </h2>
               <p className="text-lg md:text-xl mb-8 text-white/90 max-w-2xl mx-auto">
                 Medical tourism clinic or real estate agency — let's build the

@@ -1,16 +1,15 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import express from "express";
-import helmet from "helmet";
-import rateLimit from "express-rate-limit";
 import nodemailer from "nodemailer";
-import DOMPurify from "dompurify";
-import { JSDOM } from "jsdom";
 
-const window = new JSDOM("").window;
-const purify = DOMPurify(window as unknown as Window & typeof globalThis);
-
+// Simple HTML-tag stripper (no jsdom needed in serverless)
 function sanitizeInput(input: string): string {
-  return purify.sanitize(input, { ALLOWED_TAGS: [], ALLOWED_ATTR: [] });
+  return input
+    .replace(/<[^>]*>/g, "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;")
+    .trim();
 }
 
 const LEAD_NOTIFICATION_EMAIL =
@@ -33,7 +32,10 @@ const transporter =
     : null;
 
 async function sendLeadEmail(subject: string, html: string) {
-  if (!transporter) return;
+  if (!transporter) {
+    console.warn("SMTP not configured. Set SMTP_HOST, SMTP_USER, SMTP_PASS env vars.");
+    return;
+  }
   await transporter.sendMail({
     from: smtpUser,
     to: LEAD_NOTIFICATION_EMAIL,
@@ -43,13 +45,6 @@ async function sendLeadEmail(subject: string, html: string) {
 }
 
 const app = express();
-
-app.use(
-  helmet({
-    contentSecurityPolicy: false,
-    crossOriginEmbedderPolicy: false,
-  })
-);
 
 // CSRF origin check
 app.use((req, res, next) => {
@@ -68,18 +63,11 @@ app.use((req, res, next) => {
   next();
 });
 
-const formLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 5,
-  message: "Too many form submissions, please try again later.",
-  standardHeaders: true,
-  legacyHeaders: false,
-});
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.post("/api/booking", formLimiter, async (req, res) => {
+// Booking form
+app.post("/api/booking", async (req, res) => {
   try {
     const { name, email, phone, service } = req.body;
     if (!name || !email || !phone || !service) {
@@ -111,12 +99,14 @@ app.post("/api/booking", formLimiter, async (req, res) => {
     );
 
     res.status(200).json({ message: "Booking request received successfully", success: true });
-  } catch {
+  } catch (err) {
+    console.error("Booking error:", err);
     res.status(500).json({ message: "Internal server error" });
   }
 });
 
-app.post("/api/contact", formLimiter, async (req, res) => {
+// Contact form
+app.post("/api/contact", async (req, res) => {
   try {
     const { name, email, phone, message } = req.body;
     if (!name || !email || !message) {
@@ -149,7 +139,8 @@ app.post("/api/contact", formLimiter, async (req, res) => {
     );
 
     res.status(200).json({ message: "Message sent successfully", success: true });
-  } catch {
+  } catch (err) {
+    console.error("Contact error:", err);
     res.status(500).json({ message: "Internal server error" });
   }
 });
