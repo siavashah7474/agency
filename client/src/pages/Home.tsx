@@ -305,16 +305,17 @@ export default function Home() {
                   <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                     <span className="text-sm font-medium">
-                      Proven in Medical Tourism & Real Estate
+                      Trusted by clinics & agencies across 12+ countries
                     </span>
                   </div>
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                    AI Automation for Businesses
+                    Stop Losing Leads at 2AM.{" "}
+                    <span className="text-yellow-300">Let AI Close Them for You.</span>
                   </h1>
                   <p className="text-lg md:text-xl mb-8 text-white/90">
-                    We build AI systems that handle your leads, follow-ups,
-                    content, and reporting — 24/7, automatically. Stop losing
-                    sales to slow response times and manual processes.
+                    We deploy AI that replies to every inquiry, qualifies leads,
+                    and books meetings automatically — 24/7, in any language.
+                    Most clients close <strong>3× more deals</strong> within 60 days.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 mb-8">
                     <Button
@@ -378,12 +379,12 @@ export default function Home() {
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Our Core AI Automation Products
+                  The AI Stack That Works While You Sleep
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Purpose-built AI tools that work around the clock — qualifying
-                  leads, publishing content, and reporting on performance so your
-                  team can focus on closing deals instead of chasing tasks.
+                  Three purpose-built tools handling the parts of your business
+                  that cost you the most time and money — lead response, content,
+                  and analytics. No hiring. No training. Just results.
                 </p>
               </div>
 
@@ -431,11 +432,11 @@ export default function Home() {
             <div className="container mx-auto px-6">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  AI-Powered Services for Your Business
+                  Everything You Need to Dominate Your Market
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  From ads and SEO to full AI automation — everything you need
-                  to grow faster with less manual effort
+                  Ads, SEO, AI automation, and content — fully managed so you
+                  focus on delivering results, not chasing them
                 </p>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -464,11 +465,11 @@ export default function Home() {
             <div className="container mx-auto px-6">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  AI Automation Features
+                  Set It Up Once. Let It Run Forever.
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Powerful automations that connect your tools, eliminate manual
-                  work, and keep your business running 24/7
+                  Our automations connect your WhatsApp, CRM, calendar, and ad
+                  accounts into one system that never takes a day off
                 </p>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -483,10 +484,11 @@ export default function Home() {
             <div className="container mx-auto px-6">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  What Our Clients Say
+                  Don't Take Our Word for It
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Real results from real businesses
+                  Real businesses. Real numbers. Here's what happened when they
+                  stopped doing it manually.
                 </p>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -505,10 +507,10 @@ export default function Home() {
                   <span className="text-sm font-medium">FAQ</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Frequently Asked Questions
+                  Questions We Get Every Day
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Everything you need to know before getting started
+                  Straight answers — no jargon, no fluff
                 </p>
               </div>
               <Accordion type="single" collapsible className="w-full">
@@ -530,12 +532,12 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary -z-10" />
             <div className="container mx-auto px-6 text-center text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Ready to Automate Your Business with AI?
+                Your Competitors Won't Wait. Neither Should You.
               </h2>
               <p className="text-lg md:text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-                Medical tourism clinic or real estate agency — let's build the
-                AI system that handles your leads 24/7 and converts them into
-                revenue
+                Book a free 30-minute strategy call. We'll show you exactly
+                which automations will make the biggest impact on your revenue —
+                no fluff, no hard sell, just a clear plan.
               </p>
               <Button
                 data-testid="button-cta-book-call"
