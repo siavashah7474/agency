@@ -10,7 +10,7 @@ export default function TermsOfService() {
         title="Terms of Service - Webimot Service Agreement"
         description="Webimot terms of service and conditions for using our website and marketing services. Read our service agreement, payment terms, intellectual property policies, and client responsibilities for medical tourism marketing services."
         keywords="terms of service, service agreement, terms and conditions, medical tourism marketing terms, clinic marketing agreement, service contract, client agreement, payment terms, service policies"
-        canonicalUrl="https://webimot.com/terms-of-service"
+        canonicalUrl="https://webimotagency.com/terms-of-service"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

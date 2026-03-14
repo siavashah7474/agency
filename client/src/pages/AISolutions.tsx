@@ -158,10 +158,10 @@ export default function AISolutions() {
   return (
     <>
       <SEO
-        title="AI Automation Solutions for Medical Tourism & Real Estate | Webimot"
-        description="AI-powered automation for medical tourism clinics and real estate agencies. WhatsApp AI Agent, SEO Blog Generator, and AI Marketing Analyst — automate lead handling, multilingual inquiries, and booking management 24/7."
-        keywords="AI agent, WhatsApp AI agent, AI automation, medical tourism AI, real estate AI agent, business digitalization, automated lead generation, AI chatbot, WhatsApp automation, AI marketing analyst, SEO blog generator, clinic AI automation, real estate lead automation, property inquiry AI, multilingual AI agent"
-        canonicalUrl="https://webimot.com/ai-solutions"
+        title="AI Automation Solutions for Businesses | Webimot Agency"
+        description="Deploy AI that works 24/7 for your business. WhatsApp AI Agent answers leads instantly, SEO Blog Generator publishes content automatically, AI Marketing Analyst delivers weekly insights. No manual work — just growth."
+        keywords="AI automation solutions, WhatsApp AI agent, AI chatbot for business, SEO automation, automated lead generation, AI marketing analyst, business automation software, Shopify AI automation, eCommerce AI, marketing automation tool, AI for small business, automated content creation, AI lead qualification, multilingual AI agent"
+        canonicalUrl="https://webimotagency.com/ai-solutions"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

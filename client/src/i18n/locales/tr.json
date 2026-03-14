@@ -1,0 +1,340 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "aiSolutions": "AI Çözümleri",
+    "about": "Hakkımızda",
+    "clients": "Müşteriler",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "bookCall": "Strateji Görüşmesi"
+  },
+  "footer": {
+    "tagline": "Akıllı Pazarlama. Akıllı Otomasyon.",
+    "description": "Tıp turizmi, gayrimenkul ve hizmet işletmeleri için pazarlama çözümleri.",
+    "services": "Hizmetler",
+    "company": "Şirket",
+    "contact": "İletişim",
+    "aboutUs": "Hakkımızda",
+    "caseStudies": "Vaka Çalışmaları",
+    "ourClients": "Müşterilerimiz",
+    "allServices": "Tüm Hizmetler",
+    "whatsappUs": "WhatsApp'tan Yazın",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Koşulları",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "common": {
+    "bookFreeStrategyCall": "Ücretsiz Strateji Görüşmesi Yapın",
+    "bookStrategyCall": "Strateji Görüşmesi",
+    "getStarted": "Başlayın",
+    "learnMore": "Daha Fazla",
+    "viewAllServices": "Tüm Hizmetleri Görüntüle",
+    "viewAllCaseStudies": "Tüm Vaka Çalışmalarını Görüntüle",
+    "fullStory": "Tam Hikaye",
+    "getFreePlan": "Ücretsiz Büyüme Planınızı Alın"
+  },
+  "home": {
+    "trustBadge": "12'den fazla ülkede klinikler ve ajanslar tarafından güvenilen",
+    "heroTitle1": "2'de Müşteri Kaybetmeyi Bırakın.",
+    "heroTitle2": "AI Onları Sizin İçin Kapatsın.",
+    "heroSubtitle": "Her sorguya cevap veren, müşteri adaylarını niteleyen ve toplantıları otomatik olarak ayarlayan AI sistemleri kuruyoruz — 7/24, her dilde. Müşterilerimizin çoğu 60 gün içinde <strong>3 kat daha fazla anlaşma</strong> kapatıyor.",
+    "heroCta1": "Ücretsiz Strateji Görüşmesi",
+    "heroCta2": "AI Çözümlerimizi Görün",
+    "industries": {
+      "hairTransplant": "Saç Ekimi Klinikleri",
+      "dental": "Diş Klinikleri",
+      "cosmetic": "Estetik Cerrahi",
+      "ivf": "IVF & Tüp Bebek",
+      "realEstate": "Gayrimenkul Ajansları"
+    },
+    "aiStackBadge": "Tıp Turizmi & Gayrimenkulde Kanıtlanmış",
+    "aiStackTitle": "Siz Uyurken Çalışan AI Yığını",
+    "aiStackSubtitle": "İşinizin en çok zaman ve para harcattığı kısımları yöneten üç özel araç — müşteri adayı yanıtı, içerik ve analitik. İşe alım yok. Eğitim yok. Sadece sonuçlar.",
+    "benefits": {
+      "hours": { "title": "Haftada 20+ Saat Kazanın", "desc": "Tekrar eden görevleri otomatikleştirin ve ekibinizi serbest bırakın" },
+      "lead247": { "title": "7/24 Müşteri Adayı Yönetimi", "desc": "Sabah 3'te bile potansiyel bir müşteriyi kaçırmayın" },
+      "data": { "title": "Veri Odaklı Kararlar", "desc": "Daha akıllı, daha güçlü büyümenize yardımcı olan içgörüler edinin" }
+    },
+    "aiProducts": [
+      {
+        "title": "WhatsApp AI Ajansı",
+        "tagline": "7/24 Akıllı Müşteri Adayı Yönetimi & Rezervasyon Otomasyonu",
+        "description": "Artık hiçbir müşteri adayını kaçırmayın. WhatsApp AI Ajanımız gelen mesajları anında işler, müşteri adaylarını niteler, Vision AI ile fotoğrafları değerlendirir ve konsültasyonları otomatik olarak kaydeder.",
+        "features": [
+          "Birden fazla dilde anında müşteri adayı yanıtları",
+          "Sesli mesaj → metin dönüşümü",
+          "Vision AI ile fotoğraf değerlendirme",
+          "Müşteri adayı puanlama ve nitelendirme",
+          "Otomatik rezervasyon takvim entegrasyonu",
+          "Karmaşık sorgular için süpervizör yönlendirme",
+          "Takip otomasyon motoru",
+          "Gerçek zamanlı kontrol paneli ve analitik"
+        ]
+      },
+      {
+        "title": "SEO Blog Üreteci AI",
+        "tagline": "Otomatik İçerik Oluşturma & Yayınlama",
+        "description": "İçerik pazarlamanızı zahmetsizce ölçeklendirin. AI'mız SEO optimize edilmiş blog yazıları oluşturur, yayın planlar ve dahili bağlantıları otomatik yönetir.",
+        "features": [
+          "RSS beslemelerinden otomatik içerik oluşturma",
+          "Meta etiketlerle SEO optimizasyonu",
+          "Otomatik planlama ve yayınlama",
+          "Dahili bağlantı sistemi",
+          "Çok dilli çeviri",
+          "Performans izleme ve analitik"
+        ]
+      },
+      {
+        "title": "AI Pazarlama Analisti",
+        "tagline": "Otomatik Haftalık Performans Raporları",
+        "description": "Manuel çalışma olmadan akıllı içgörüler edinin. AI'mız pazarlama performansınızı analiz eder, sorunları tespit eder ve uygulanabilir öneriler sunar.",
+        "features": [
+          "Haftalık otomatik analitik raporlar",
+          "SEO sıralama değişikliği tespiti",
+          "Reklam performans analizi",
+          "Trafik ve dönüşüm içgörüleri",
+          "Sorun tespiti ve uyarılar",
+          "Gelen kutunuza teslim edilen uygulanabilir öneriler"
+        ]
+      }
+    ],
+    "servicesTitle": "Pazarınıza Hâkim Olmak İçin İhtiyacınız Olan Her Şey",
+    "servicesSubtitle": "Reklamlar, SEO, AI otomasyonu ve içerik — sonuçlar sunmaya odaklanmanız için tamamen yönetilir",
+    "services": [
+      { "title": "Meta Reklamları", "description": "Nitelikli müşteri adayları getiren uzman Facebook & Instagram reklam kampanyaları" },
+      { "title": "Google Reklamları", "description": "Maksimum yatırım getirisi için optimize edilmiş arama ve görüntülü reklamcılık" },
+      { "title": "SEO", "description": "Veri odaklı optimizasyon stratejileriyle arama sonuçlarında daha üst sıralara çıkın" },
+      { "title": "Web Sitesi Geliştirme", "description": "İşletmeniz için oluşturulmuş hızlı, güzel, dönüşüm odaklı web siteleri" },
+      { "title": "İçerik Oluşturma", "description": "Hedef kitlenizle örtüşen ve harekete geçiren ilgi çekici içerik" },
+      { "title": "Markalaşma", "description": "Pazarınızda öne çıkan unutulmaz bir marka kimliği oluşturun" },
+      { "title": "Huni Oluşturma", "description": "Optimize edilmiş satış hunileriyle daha fazla ziyaretçiyi müşteriye dönüştürün" },
+      { "title": "İtibar Yönetimi", "description": "Tüm platformlarda çevrimiçi itibarınızı izleyin ve geliştirin" }
+    ],
+    "automationTitle": "Bir Kez Kurun. Sonsuza Kadar Çalışsın.",
+    "automationSubtitle": "Otomasyonlarımız WhatsApp'ınızı, CRM'inizi, takviminizi ve reklam hesaplarınızı hiç izin almayan tek bir sistemde birleştirir",
+    "automationFeatures": [
+      { "title": "Müşteri Adayından Tabloya ve WhatsApp'a", "description": "Müşteri adaylarını otomatik olarak yakalayın ve AI ajanınıza yönlendirin" },
+      { "title": "Otomatik Takipler", "description": "Akıllı otomasyon ile hiçbir takibi unutmayın" },
+      { "title": "Rezervasyon Takvim Otomasyonu", "description": "Konsültasyonları doğrudan takviminizle senkronize edin" },
+      { "title": "Fotoğraf & Ses İşleme", "description": "Multimedya mesajların AI destekli analizi" },
+      { "title": "CRM Entegrasyonu", "description": "Mevcut araçlarınızla sorunsuz bağlantı" },
+      { "title": "Kontrol Paneli Raporlaması", "description": "Tüm otomasyonlarınıza gerçek zamanlı içgörüler" }
+    ],
+    "testimonialsTitle": "Sadece Bizim Sözümüze Güvenmeyin",
+    "testimonialsSubtitle": "Gerçek işletmeler. Gerçek rakamlar. Manuel yapmayı bıraktıklarında ne oldu.",
+    "testimonials": [
+      { "name": "Dr. Gorkem Atsal", "role": "Klinik Sahibi", "company": "Gorkem Atsal Kliniği", "content": "WhatsApp AI ajanı müşteri adayı yönetimimizi tamamen dönüştürdü. Soruların %40'ını kaçırmaktan saniyeler içinde %100'üne yanıt vermeye geçtik. Dönüşüm oranımız sadece 3 ayda ikiye katlandı." },
+      { "name": "Pouyan Azizpour", "role": "CEO", "company": "Wavemed.io", "content": "Webimot'un SEO Blog Üreteci oyunun kurallarını değiştirdi. Manuel çalışma olmadan ayda 20 optimize edilmiş yazı yayınlıyoruz. Organik trafiğimiz 6 ayda %20 arttı." },
+      { "name": "Dr. Hamed Gholami", "role": "Novin Ariana Sahibi", "company": "Novin Ariana Sağlık Grubu", "content": "AI Pazarlama Analisti bize her hafta 10+ saat kazandırıyor. Doğrudan gelen kutumuza teslim edilen uygulanabilir içgörülerle detaylı raporlar alıyoruz. Özel bir analistin kadromuzda bulunması gibi." }
+    ],
+    "faqBadge": "SSS",
+    "faqTitle": "Her Gün Aldığımız Sorular",
+    "faqSubtitle": "Doğrudan yanıtlar — jargon yok, gereksiz söz yok",
+    "faqs": [
+      { "question": "WhatsApp AI Ajanı nedir ve nasıl çalışır?", "answer": "WhatsApp AI Ajanımız, WhatsApp Business hesabınıza bağlı otomatik bir sistemdir. Gelen hasta sorgularına anında yanıt verir — birden fazla dilde — günde 24 saat. Vision AI kullanarak fotoğrafları değerlendirebilir, sesli mesajları yazıya çevirebilir, müşteri adaylarını puanlayıp nitelendirebilir ve takviminize otomatik olarak konsültasyon kaydedebilir. Rutin konuşmalar için insan müdahalesine gerek yoktur." },
+      { "question": "Hangi sektörlerle çalışıyorsunuz?", "answer": "İki temel uzmanlık alanımız tıp turizmi ve gayrimenkulüdür. Tıp turizminde Türkiye'deki kliniklerle çalışıyoruz: saç ekimi (FUE/DHI), diş ve gülüş tasarımı, estetik ve plastik cerrahi, IVF ve tüp bebek, sağlık turizmi ajansları. Gayrimenkulde, AI müşteri adayı yönetimi, WhatsApp otomasyonu ve hedefli reklamcılık kullanarak ajansların uluslararası alıcılara mülk satmasına yardımcı oluyoruz." },
+      { "question": "Her şey ne kadar sürede kurulabilir?", "answer": "WhatsApp AI Ajanı genellikle 2 hafta içinde canlıya alınır. Bu süreçte WhatsApp Business API bağlantısı, AI'nın özel hizmetleriniz ve fiyatlandırmanız üzerine eğitimi, rezervasyon takviminizle entegrasyonu ve testler yer alır. SEO ve reklam kampanyaları genellikle aynı ilk ay içinde başlatılır." },
+      { "question": "AI ajanı hangi dilleri destekliyor?", "answer": "AI ajanı İngilizce, Türkçe, Arapça, Rusça, Almanca, Fransızca ve diğer birçok dilde akıcı iletişim kurabilir. Hastanın dilini otomatik olarak tespit eder ve buna göre yanıt verir, böylece ilk temas desteği için çok dilli personel istihdam etmeniz gerekmez." },
+      { "question": "SEO Blog Üreteci AI nasıl çalışır?", "answer": "AI'mız RSS beslemeleri ve sektör kaynaklarından ilgili konuları çeker, tam SEO optimize edilmiş makaleler yazar, meta başlıklar ve açıklamalar ekler, dahili bağlantıları kurar ve bir programa göre yayınlar — tamamen otomatik olarak. Müşteriler genellikle manuel çalışma olmadan ayda 20-30 makale yayınlar." },
+      { "question": "Google Reklamları ve Meta Reklamlarını yönetiyor musunuz?", "answer": "Evet. Google Arama, Google Display, Facebook ve Instagram'da tam ücretli reklam kampanyaları kuruyoruz ve yönetiyoruz. Bu; hedef kitle araştırmasını, reklam kreatif stratejisini, öncesi/sonrası içerikleri, yeniden hedefleme hunilerini ve WhatsApp müşteri adayı hattınızla entegre dönüşüm takibini kapsar." },
+      { "question": "Araçlarınızı kullanmak için teknik bilgiye ihtiyacım var mı?", "answer": "Hayır. Tam teknik kurulumu biz yapıyoruz — API bağlantıları, entegrasyonlar, kontrol paneli yapılandırması ve süregelen optimizasyon. Sadece bir WhatsApp Business hesabına ve büyümeye istekli olmaya ihtiyacınız var." },
+      { "question": "Gerçekçi olarak ne tür sonuçlar bekleyebilirim?", "answer": "Mevcut müşterilerimize göre: yanıt süresi saatlerden 30 saniyenin altına düşüyor, müşteri adayı dönüşüm oranları tipik olarak %40-60 artıyor, organik trafik tutarlı SEO ile 6 ay içinde %20'den fazla büyüyor ve ücretli reklam ROAS 8,5x'e kadar ulaştı." },
+      { "question": "Maliyeti ne kadar?", "answer": "Fiyatlandırma, ihtiyaç duyduğunuz hizmetlere ve klinik operasyonlarınızın kapsamına bağlıdır. Bağımsız AI ürünleri ve tam hizmet aylık retainer'lar sunuyoruz. Ücretsiz bir strateji görüşmesi ayarlayın, şeffaf fiyatlandırmayla özelleştirilmiş bir teklif hazırlayalım." },
+      { "question": "Onboarding süreci nasıl işliyor?", "answer": "Strateji görüşmesinin ardından kısa bir onboarding anketi gönderiyoruz. Ardından tüm teknik kurulumu yapıyor, bir test ortamı sunuyor, geri bildirimlerinizi alıyor ve canlıya alıyoruz. Müşterilerin çoğu 2-3 hafta içinde tam olarak entegre edilir." }
+    ],
+    "ctaTitle": "Rakipleriniz Beklemeyecek. Siz de Beklemeyin.",
+    "ctaSubtitle": "Ücretsiz 30 dakikalık strateji görüşmesi yapın. Hangi otomasyonların gelirinize en büyük etkiyi yapacağını tam olarak göstereceğiz — gereksiz söz yok, satış baskısı yok, sadece net bir plan.",
+    "ctaButton": "Ücretsiz Strateji Görüşmesi Yapın"
+  },
+  "about": {
+    "badge": "Müşteri Adayı ve Satış Uzmanları",
+    "title": "Webimot Hakkında",
+    "subtitle": "İşletmeniz için müşteri adayları oluşturmak ve satışları artırmak için AI otomasyonunu kanıtlanmış dijital pazarlama stratejileriyle birleştiriyoruz",
+    "focusTitle": "Odak Noktamız: Müşteri Adayları & Satış",
+    "focusP1": "Biz sadece bir pazarlama ajansı değiliz. Müşteri adayı oluşturma ve satış ivmelendirme ortağıyız. Her strateji, her otomasyon, her kampanya tek bir hedefle tasarlanır: nitelikli müşteri adayları oluşturmak ve bunları müşterilere dönüştürmek.",
+    "focusP2": "AI destekli sistemlerimiz, satış ekibinizin anlaşmaları kapatmaya odaklanabilmesi için 7/24 müşteri adaylarını yakalar, niteler ve besler.",
+    "deliverTitle": "Neler Sunuyoruz",
+    "deliver": [
+      "Satış ekibiniz için daha fazla nitelikli müşteri adayı",
+      "AI otomasyonuyla daha hızlı yanıt süreleri",
+      "Besleme yoluyla daha yüksek dönüşüm oranları",
+      "Her kampanyada ölçülebilir yatırım getirisi"
+    ],
+    "stats": [
+      { "number": "15+", "label": "Hizmet Verilen Müşteri" },
+      { "number": "%60", "label": "Ort. Trafik Büyümesi" },
+      { "number": "7/24", "label": "AI Otomasyonu" },
+      { "number": "25+", "label": "Desteklenen Dil" }
+    ],
+    "medBadge": "Birincil Odak",
+    "medTitle": "Tıp Turizmi & Klinikler",
+    "medSubtitle": "Tıp turizmi, AI otomasyonunun mükemmel çözümler sunduğu kendine özgü zorluklarıyla 100 milyar doların üzerinde bir sektördür. Bu bizim uzmanlık alanımız.",
+    "specialties": [
+      { "title": "Diş Klinikleri", "desc": "İmplantlar, veneerler, tam ağız restorasyonu" },
+      { "title": "Saç Ekimi", "desc": "FUE, DHI ve sakal ekimi" },
+      { "title": "Estetik Cerrahi", "desc": "Rinoplasti, BBL, kilo kaybı cerrahisi" }
+    ],
+    "challengesTitle": "Sektör Zorlukları",
+    "challenges": [
+      "Müşteri adayları farklı saat dilimlerinden 7/24 geliyor",
+      "Birden fazla dil ve iletişim engelleri",
+      "Konsültasyonlar için fotoğraf değerlendirmeleri gerekli",
+      "Sürekli takip gerektiren uzun satış döngüleri",
+      "Sürekli kapsama için yüksek personel maliyetleri"
+    ],
+    "solutionTitle": "AI Çözümümüz",
+    "solutions": [
+      "AI ajanı herhangi bir saat diliminde anında yanıt verir",
+      "50'den fazla dilde otomatik çeviri",
+      "Vision AI fotoğrafları otomatik değerlendirir",
+      "Otomatik takip dizileri",
+      "Personel maliyetlerinde %70 azalma"
+    ],
+    "reBadge": "İkinci Temel Uzmanlık",
+    "reTitle": "Gayrimenkul & Daha Fazlası",
+    "reSubtitle": "Gayrimenkul ikinci kanıtlanmış niş alanımızdır — aynı yüksek değerli müşteri adayı dijitalleştirmesine ihtiyaç duyan hizmet işletmeleriyle de çalışıyoruz",
+    "realEstate": {
+      "title": "Gayrimenkul",
+      "subtitle": "Mülk satış ve yatırım ajansları",
+      "items": [
+        "Uluslararası alıcılar için WhatsApp AI ajanı",
+        "Lüks ve yatırım amaçlı mülk pazarlaması",
+        "Çok dilli müşteri adayı nitelendirme",
+        "Otomatik takipler ve görüntüleme planlaması",
+        "Mülk alıcıları için Meta & Google Reklamları"
+      ]
+    },
+    "serviceB": {
+      "title": "Hizmet İşletmeleri",
+      "subtitle": "AI dijitalleştirmeye ihtiyaç duyan her işletme",
+      "items": [
+        "7/24 AI müşteri adayı yönetimi ve nitelendirme",
+        "Otomatik rezervasyon ve randevu sistemleri",
+        "SEO içerik oluşturma ve yayınlama",
+        "Hedefli reklam kampanyaları ve huni otomasyonu"
+      ]
+    },
+    "teamTitle": "Ekibimiz",
+    "teamP": "Webimot, işletmelerin müşteri adayı oluşturma biçimini dönüştürmek için bir fırsat gören dijital pazarlama ve AI uzmanları tarafından kuruldu. İstanbul ve Amsterdam'daki ofislerimizle dünya genelinde müşterilere hizmet veriyoruz.",
+    "teamItems": [
+      "Dijital pazarlama ve SEO uzmanları",
+      "AI ve otomasyon uzmanları",
+      "Tıp turizmi ve gayrimenkul sektörü deneyimlileri",
+      "Müşteri adayı oluşturma ve satış profesyonelleri"
+    ],
+    "teamCta": "Hedeflerinizi Konuşalım"
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "subtitle": "İşinizi AI otomasyonuyla dönüştürmeye hazır mısınız? Hedeflerinizi konuşalım.",
+    "whatsapp": { "title": "WhatsApp", "desc": "Ekibimizden anında yanıtlar alın", "button": "WhatsApp'tan Yazın" },
+    "email": { "title": "E-posta", "desc": "Bize detaylı bir sorgu gönderin" },
+    "phone": { "title": "Telefon", "desc": "Mesai saatlerinde bizi arayın" },
+    "formTitle": "Bize Mesaj Gönderin",
+    "formDesc": "Formu doldurun, 24 saat içinde size geri döneceğiz",
+    "name": "Ad Soyad *",
+    "emailLabel": "E-posta *",
+    "phoneLabel": "Telefon",
+    "messageLabel": "Mesaj *",
+    "send": "Mesaj Gönder",
+    "sending": "Gönderiliyor...",
+    "successTitle": "Mesaj gönderildi!",
+    "successDesc": "24 saat içinde size geri döneceğiz.",
+    "office": "Amsterdam Ofisi",
+    "hours": {
+      "title": "Çalışma Saatleri",
+      "weekdays": "Pazartesi - Cuma: 09:00 - 18:00 (CET)",
+      "saturday": "Cumartesi: 10:00 - 14:00 (CET)",
+      "sunday": "Pazar: Kapalı",
+      "note": "* AI sistemlerimiz kapalı olduğumuzda bile 7/24 çalışır!"
+    },
+    "ctaTitle": "Başlamaya Hazır mısınız?",
+    "ctaSubtitle": "AI otomasyonunun işinizi nasıl dönüştürebileceğini konuşmak için ücretsiz 20 dakikalık bir strateji görüşmesi yapın",
+    "ctaButton": "Ücretsiz Strateji Görüşmesi Yapın"
+  },
+  "clients": {
+    "title": "Müşterilerimiz",
+    "subtitle": "Tıp turizmi, gayrimenkul ve hizmet sektörlerindeki gerçek işletmelerden gerçek sonuçlar",
+    "successTitle": "Başarı Hikayeleri",
+    "metrics": [
+      { "value": "%100", "label": "Müşteri Adayı Yanıt Oranı", "desc": "Tüm sorgulara anında yanıt verildi" },
+      { "value": "3x", "label": "Daha Fazla Dönüşüm", "desc": "Müşteriler genelinde ortalama gelişme" },
+      { "value": "%60", "label": "Trafik Büyümesi", "desc": "Ortalama organik trafik artışı" }
+    ],
+    "testimonialsTitle": "Müşterilerimiz Ne Diyor",
+    "industriesTitle": "Hizmet Verdiğimiz Sektörler",
+    "ctaTitle": "Başarı Hikayelerimize Katılın",
+    "ctaSubtitle": "İşletmeniz için benzer sonuçlar görmek ister misiniz?",
+    "ctaButton": "Ücretsiz Strateji Görüşmesi Yapın"
+  },
+  "whyWebimot": {
+    "badge": "Tıp Turizmi Uzmanları",
+    "title": "Kliniklerin Daha Fazla Hasta Almasına Yardımcı Oluyoruz",
+    "subtitle": "Çoğu ajans size tıklama getirir. Biz klinik için gerçekten önemli olana odaklanıyoruz — sorguları rezervasyona dönüştürmek. Saç ekimi, diş, estetik ve IVF klinikleri için özel olarak geliştirilmiş AI sistemleriyle.",
+    "coreValues": [
+      { "title": "Hastaları Rezervasyona Dönüştürün", "description": "Sadece sorgu getirmiyoruz — hasta sorularını onaylı konsültasyonlara ve operasyonlara dönüştüren sistemler kuruyoruz.", "stats": "%60 daha yüksek rezervasyon oranı" },
+      { "title": "Uluslararası Hasta Sayısını Artırın", "description": "Tıp turizmi klinikleri için geliştirilmiş çok dilli pazarlama stratejileriyle İngiltere, Almanya, ABD ve ötesinden hasta çekin.", "stats": "3x daha fazla uluslararası hasta" },
+      { "title": "7/24 Hasta Yanıtı", "description": "Artık hiçbir sorguyu kaçırmayın. AI'mız siz uyurken bile hasta sorularını ele alır, fotoğrafları değerlendirir ve konsültasyonları kaydeder.", "stats": "%100 yanıt oranı" },
+      { "title": "Her Hasta Yolculuğunu Takip Edin", "description": "Hastalarınızın nereden geldiğini, hangi kampanyaların işe yaradığını ve detaylı analizlerle nasıl daha fazla rezervasyon alabileceğinizi tam olarak bilin.", "stats": "Haftalık performans raporları" }
+    ],
+    "partnerTitle": "Kliniğinizin Büyüme Ortağı",
+    "partnerDesc": "Tıp turizmini içten dışa kadar anlıyoruz. Arapça, Almanca ve İngilizcede hasta sorgularını yönetmekten öncesi/sonrası fotoğraflarını değerlendirmeye kadar — uluslararası hastaları rezervasyona dönüştürmek için ne gerektiğini biliyoruz.",
+    "partnerItems": [
+      "Çok dilli hasta iletişimi (EN, DE, AR, RU)",
+      "Saç, diş ve estetik prosedürler için AI fotoğraf değerlendirme",
+      "Otomatik konsültasyon rezervasyonu & takvim senkronizasyonu",
+      "İlk sorgulardan operasyona kadar hasta yolculuğu takibi"
+    ],
+    "processTitle": "Kanıtlanmış Sürecimiz",
+    "steps": [
+      { "step": "01", "title": "Kliniğinizi Denetleyin", "description": "Büyüme fırsatları bulmak için hasta akışınızı, web sitenizi ve mevcut pazarlama faaliyetlerinizi analiz ediyoruz." },
+      { "step": "02", "title": "AI Sisteminizi Kurun", "description": "Kliniğinize özel WhatsApp ajanı, çok dilli kampanyalar ve otomatik rezervasyon." },
+      { "step": "03", "title": "Başlatın & İzleyin", "description": "7/24 hasta yanıtıyla canlıya alın ve ilk mesajdan rezervasyona kadar her sorguyu takip edin." },
+      { "step": "04", "title": "Uluslararası Ölçeklendirin", "description": "Yeni pazarlara genişleyin — İngiltere, Almanya, Körfez ülkeleri — ve uluslararası hasta tabanınızı büyütün." }
+    ],
+    "cta": "Ücretsiz Büyüme Planınızı Alın"
+  },
+  "clientResults": {
+    "badge": "Kanıtlanmış Sonuçlar",
+    "title": "Gerçek Kliniklerden Gerçek Sonuçlar",
+    "subtitle": "Sadece bizim sözümüze güvenmeyin. AI otomasyonu ve dijital pazarlama ile büyümesine yardımcı olduğumuz klinik ve işletmelerin gerçek öncesi/sonrası metriklerini görün.",
+    "viewAll": "Tüm Vaka Çalışmalarını Görüntüle"
+  },
+  "exitPopup": {
+    "title": "Bekleyin! Eli Boş Gitmeyin",
+    "desc": "Ücretsiz bir <strong>pazarlama denetimi</strong> alın ve daha fazla müşteri adayı oluşturmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez.",
+    "cta": "Ücretsiz Denetimimi Alın",
+    "dismiss": "Hayır teşekkürler, ücretsiz tavsiyeleri pas geçeceğim",
+    "trust": "Pazarlama ihtiyaçları için Webimot'a güvenen 200'den fazla işletmeye katılın"
+  },
+  "caseStudies": {
+    "title": "Vaka Çalışmaları",
+    "subtitle": "Çözümlerimizle müşteri adayı oluşturmayı dönüştüren işletmelerden gerçek başarı hikayeleri",
+    "ctaTitle": "Bir Sonraki Başarı Hikayemiz Olmaya Hazır mısınız?",
+    "ctaButton": "Ücretsiz Strateji Görüşmesi Yapın"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "AI otomasyonu, dijital pazarlama ve işinizi büyütme hakkında içgörüler",
+    "filterLabel": "Filtrele:"
+  },
+  "bookConsultation": {
+    "title": "Ücretsiz Strateji Görüşmenizi Yapın",
+    "subtitle": "AI otomasyonunun iş operasyonlarınızı nasıl dönüştürebileceğini ve büyümeyi nasıl sağlayabileceğini konuşalım",
+    "ctaButton": "Ücretsiz Aramanızı Şimdi Yapın",
+    "noCredit": "Kredi kartı gerekmez • Yükümlülük yok"
+  },
+  "notFound": {
+    "title": "404 Sayfa Bulunamadı",
+    "message": "Aradığınız sayfa mevcut değil veya taşınmış. Lütfen URL'yi kontrol edin veya ana sayfamıza dönün.",
+    "goHome": "Ana Sayfaya Git",
+    "goBack": "Geri Git"
+  },
+  "services": {
+    "title": "İşletmenizi Dijitalleştiren ve Büyüten Hizmetler",
+    "subtitle": "AI otomasyonu, hedefli reklamlar, SEO ve dijital pazarlama — tıp turizmi klinikleri ve gayrimenkul ajansları için geliştirilmiş.",
+    "ctaTitle": "Pazarınıza Hâkim Olmaya Hazır mısınız?",
+    "ctaSubtitle": "Daha fazla müşteri adayı oluşturmak, daha hızlı yanıt vermek ve daha fazla anlaşma kapatmak için Webimot'u kullanan tıp turizmi klinikleri ve gayrimenkul ajanslarına katılın."
+  }
+}

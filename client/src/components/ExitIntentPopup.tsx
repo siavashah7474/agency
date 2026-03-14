@@ -2,11 +2,13 @@ import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { X, Gift, ArrowRight } from "lucide-react";
 import { useBookingModal } from "@/hooks/use-booking-modal";
+import { useTranslation } from "react-i18next";
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
   const { openModal } = useBookingModal();
+  const { t } = useTranslation();
 
   const handleMouseLeave = useCallback((e: MouseEvent) => {
     if (e.clientY <= 0 && !hasShown) {
@@ -52,39 +54,39 @@ export default function ExitIntentPopup() {
           </div>
           
           <h2 className="text-2xl font-bold mb-3">
-            Wait! Don't Leave Empty-Handed
+            {t("exitPopup.title")}
           </h2>
-          
-          <p className="text-muted-foreground mb-6">
-            Get a <span className="font-semibold text-foreground">free marketing audit</span> and discover how we can help you generate more leads. No commitment required.
-          </p>
+
+          <p className="text-muted-foreground mb-6"
+            dangerouslySetInnerHTML={{ __html: t("exitPopup.desc") }}
+          />
 
           <div className="space-y-3">
-            <Button 
-              data-testid="button-exit-popup-cta" 
-              size="lg" 
+            <Button
+              data-testid="button-exit-popup-cta"
+              size="lg"
               className="w-full"
               onClick={() => {
                 handleClose();
                 openModal();
               }}
             >
-              Get My Free Audit
+              {t("exitPopup.cta")}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            
+
             <button
               onClick={handleClose}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               data-testid="button-exit-popup-dismiss"
             >
-              No thanks, I'll pass on free advice
+              {t("exitPopup.dismiss")}
             </button>
           </div>
 
           <div className="mt-6 pt-6 border-t">
             <p className="text-xs text-muted-foreground">
-              Join 200+ businesses who trust Webimot for their marketing needs
+              {t("exitPopup.trust")}
             </p>
           </div>
         </div>

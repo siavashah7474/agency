@@ -29,7 +29,7 @@ export default function Blog() {
         title="Blog - Marketing & Automation Insights for Medical Tourism Clinics"
         description="Expert insights on AI automation, lead generation, website design, SEO, and digital marketing strategies for medical tourism clinics in Turkey. Learn how to grow your clinic with proven marketing tactics."
         keywords="medical tourism marketing blog, lead generation tips, clinic marketing strategies, AI automation blog, website design tips, SEO blog, digital marketing blog, medical tourism SEO, clinic lead generation tips, healthcare marketing blog, Turkey medical tourism blog, AI agent blog, blog generator, patient acquisition strategies, medical tourism content marketing"
-        canonicalUrl="https://webimot.com/blog"
+        canonicalUrl="https://webimotagency.com/blog"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

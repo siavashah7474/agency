@@ -282,27 +282,41 @@ export default function ServiceDetail() {
 
   const seoKeywords = [
     service.title.toLowerCase(),
+    "AI automation agency",
+    "digital marketing agency",
     "lead generation",
-    "medical tourism",
-    "Turkey medical tourism",
-    `${service.title.toLowerCase()} Turkey`,
-    "clinic marketing",
-    "patient lead generation",
-    "healthcare marketing",
-    "medical tourism clinics",
+    "business automation",
+    "Shopify automation",
+    "eCommerce automation",
+    `${service.title.toLowerCase()} service`,
+    "marketing automation",
+    "AI marketing",
     ...serviceKeywords,
-    "digital marketing",
+    "digital marketing services",
     "medical tourism marketing",
-    "clinic lead generation",
+    "real estate marketing",
   ].join(", ");
 
   return (
     <>
       <SEO
-        title={`${service.title} - Medical Tourism Lead Generation & Marketing Services`}
+        title={`${service.title} | AI Automation & Digital Marketing | Webimot Agency`}
         description={service.tagline}
         keywords={seoKeywords}
-        canonicalUrl={`https://webimot.com/services/${slug}`}
+        canonicalUrl={`https://webimotagency.com/services/${slug}`}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": service.title,
+          "description": service.what,
+          "provider": {
+            "@type": "Organization",
+            "name": "Webimot Agency",
+            "url": "https://webimotagency.com"
+          },
+          "url": `https://webimotagency.com/services/${slug}`,
+          "areaServed": "Worldwide",
+        }}
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

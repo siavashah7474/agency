@@ -12,7 +12,7 @@ export default function NotFound() {
       <SEO
         title="404 - Page Not Found | Webimot"
         description="The page you're looking for doesn't exist. Return to Webimot homepage or browse our medical tourism marketing services, AI automation solutions, and lead generation services."
-        canonicalUrl="https://webimot.com/404"
+        canonicalUrl="https://webimotagency.com/404"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

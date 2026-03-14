@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         title="Privacy Policy - Webimot Data Protection & Privacy"
         description="Webimot privacy policy. Learn how we collect, use, and protect your personal information. GDPR-compliant data handling for medical tourism marketing services. Your privacy matters to us."
         keywords="privacy policy, data protection, GDPR, medical tourism privacy, clinic data privacy, healthcare marketing privacy, data security, personal information protection, privacy rights, data collection policy"
-        canonicalUrl="https://webimot.com/privacy-policy"
+        canonicalUrl="https://webimotagency.com/privacy-policy"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

@@ -1,7 +1,9 @@
 import { Link } from "wouter";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   const whatsappLink = "https://wa.me/31628753175";
   return (
     <footer className="border-t bg-muted/30">
@@ -14,37 +16,33 @@ export default function Footer() {
               </div>
               <span className="font-bold text-xl">Webimot</span>
             </div>
-            <p className="text-sm text-muted-foreground mb-4">
-              Smart Marketing. Smart Automation.
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Marketing solutions for medical tourism, real estate, and service businesses.
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">{t("footer.tagline")}</p>
+            <p className="text-sm text-muted-foreground">{t("footer.description")}</p>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
+            <h3 className="font-semibold mb-4">{t("footer.services")}</h3>
             <ul className="space-y-2">
               <li><Link href="/services/whatsapp-ai-agent" data-testid="link-footer-whatsapp" className="text-sm text-muted-foreground hover:text-primary">WhatsApp AI Agent</Link></li>
               <li><Link href="/services/seo-blog-generator" data-testid="link-footer-seo" className="text-sm text-muted-foreground hover:text-primary">SEO Blog Generator</Link></li>
               <li><Link href="/services/ai-marketing-analyst" data-testid="link-footer-analyst" className="text-sm text-muted-foreground hover:text-primary">AI Marketing Analyst</Link></li>
-              <li><Link href="/services" data-testid="link-footer-all-services" className="text-sm text-muted-foreground hover:text-primary">All Services</Link></li>
+              <li><Link href="/services" data-testid="link-footer-all-services" className="text-sm text-muted-foreground hover:text-primary">{t("footer.allServices")}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Company</h3>
+            <h3 className="font-semibold mb-4">{t("footer.company")}</h3>
             <ul className="space-y-2">
-              <li><Link href="/about" data-testid="link-footer-about" className="text-sm text-muted-foreground hover:text-primary">About Us</Link></li>
-              <li><Link href="/case-studies" data-testid="link-footer-case-studies" className="text-sm text-muted-foreground hover:text-primary">Case Studies</Link></li>
-              <li><Link href="/clients" data-testid="link-footer-clients" className="text-sm text-muted-foreground hover:text-primary">Our Clients</Link></li>
-              <li><Link href="/blog" data-testid="link-footer-blog" className="text-sm text-muted-foreground hover:text-primary">Blog</Link></li>
-              <li><Link href="/contact" data-testid="link-footer-contact" className="text-sm text-muted-foreground hover:text-primary">Contact</Link></li>
+              <li><Link href="/about" data-testid="link-footer-about" className="text-sm text-muted-foreground hover:text-primary">{t("footer.aboutUs")}</Link></li>
+              <li><Link href="/case-studies" data-testid="link-footer-case-studies" className="text-sm text-muted-foreground hover:text-primary">{t("footer.caseStudies")}</Link></li>
+              <li><Link href="/clients" data-testid="link-footer-clients" className="text-sm text-muted-foreground hover:text-primary">{t("footer.ourClients")}</Link></li>
+              <li><Link href="/blog" data-testid="link-footer-blog" className="text-sm text-muted-foreground hover:text-primary">{t("nav.blog")}</Link></li>
+              <li><Link href="/contact" data-testid="link-footer-contact" className="text-sm text-muted-foreground hover:text-primary">{t("nav.contact")}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
+            <h3 className="font-semibold mb-4">{t("footer.contact")}</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
@@ -57,7 +55,7 @@ export default function Footer() {
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 flex-shrink-0" />
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-                  WhatsApp Us
+                  {t("footer.whatsappUs")}
                 </a>
               </li>
             </ul>
@@ -65,10 +63,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Webimot. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Webimot. {t("footer.rights")}</p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" data-testid="link-footer-privacy" className="hover:text-primary">Privacy Policy</Link>
-            <Link href="/terms-of-service" data-testid="link-footer-terms" className="hover:text-primary">Terms of Service</Link>
+            <Link href="/privacy-policy" data-testid="link-footer-privacy" className="hover:text-primary">{t("footer.privacyPolicy")}</Link>
+            <Link href="/terms-of-service" data-testid="link-footer-terms" className="hover:text-primary">{t("footer.termsOfService")}</Link>
           </div>
         </div>
       </div>

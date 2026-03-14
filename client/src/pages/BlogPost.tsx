@@ -42,7 +42,7 @@ export default function BlogPost() {
         title={`${post.title} | Medical Tourism Marketing Blog`}
         description={post.excerpt}
         keywords={`${post.category.toLowerCase()}, medical tourism marketing, lead generation, clinic marketing, ${post.category.toLowerCase()} tips, medical tourism blog, healthcare marketing, Turkey medical tourism, clinic lead generation, patient acquisition, medical tourism strategies`}
-        canonicalUrl={`https://webimot.com/blog/${post.slug}`}
+        canonicalUrl={`https://webimotagency.com/blog/${post.slug}`}
         ogType="article"
       />
       <div className="min-h-screen flex flex-col">

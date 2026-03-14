@@ -73,10 +73,10 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact Us - Book Your Free Strategy Call | Medical Tourism Lead Generation"
-        description="Contact Webimot for expert lead generation and marketing services for medical tourism clinics. Book a free strategy call to discuss AI automation, website design, SEO, and digital marketing solutions for your clinic in Turkey."
-        keywords="contact medical tourism marketing, lead generation consultation, clinic marketing consultation, medical tourism agency contact, Turkey medical tourism services, AI automation consultation, website design consultation, SEO consultation, digital marketing consultation, medical tourism lead generation, clinic lead generation, patient acquisition consultation"
-        canonicalUrl="https://webimot.com/contact"
+        title="Contact Webimot Agency — Book Your Free Strategy Call"
+        description="Book a free 30-minute strategy call with Webimot Agency. We'll map out exactly which AI automations and marketing strategies will grow your business fastest. No fluff, no hard sell."
+        keywords="contact AI automation agency, book strategy call, digital marketing consultation, AI automation consultation, free marketing audit, Shopify automation consultation, eCommerce marketing help, WhatsApp AI agent setup, SEO consultation, business automation consultation"
+        canonicalUrl="https://webimotagency.com/contact"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

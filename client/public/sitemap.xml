@@ -3,188 +3,193 @@
 
   <!-- Core pages -->
   <url>
-    <loc>https://webimot.com/</loc>
+    <loc>https://webimotagency.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services</loc>
+    <loc>https://webimotagency.com/services</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webimot.com/ai-solutions</loc>
+    <loc>https://webimotagency.com/ai-solutions</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webimot.com/about</loc>
+    <loc>https://webimotagency.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/contact</loc>
+    <loc>https://webimotagency.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/clients</loc>
+    <loc>https://webimotagency.com/clients</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/case-studies</loc>
+    <loc>https://webimotagency.com/case-studies</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog</loc>
+    <loc>https://webimotagency.com/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimot.com/book-consultation</loc>
+    <loc>https://webimotagency.com/book-consultation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimot.com/privacy-policy</loc>
+    <loc>https://webimotagency.com/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://webimot.com/terms-of-service</loc>
+    <loc>https://webimotagency.com/terms-of-service</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- Service pages -->
   <url>
-    <loc>https://webimot.com/services/whatsapp-ai-agent</loc>
+    <loc>https://webimotagency.com/services/whatsapp-ai-agent</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/seo-blog-generator</loc>
+    <loc>https://webimotagency.com/services/seo-blog-generator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/ai-marketing-analyst</loc>
+    <loc>https://webimotagency.com/services/ai-marketing-analyst</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/meta-ads</loc>
+    <loc>https://webimotagency.com/services/meta-ads</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/google-ads</loc>
+    <loc>https://webimotagency.com/services/google-ads</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/seo</loc>
+    <loc>https://webimotagency.com/services/seo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/website-development</loc>
+    <loc>https://webimotagency.com/services/website-development</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/content-creation</loc>
+    <loc>https://webimotagency.com/services/content-creation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/branding</loc>
+    <loc>https://webimotagency.com/services/branding</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/funnel-automation</loc>
+    <loc>https://webimotagency.com/services/funnel-automation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/services/reputation-management</loc>
+    <loc>https://webimotagency.com/services/reputation-management</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/services/shopify-ecommerce-automation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Case studies -->
   <url>
-    <loc>https://webimot.com/case-studies/clinish-dental-clinic</loc>
+    <loc>https://webimotagency.com/case-studies/clinish-dental-clinic</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/case-studies/hair-transplant-seo-growth</loc>
+    <loc>https://webimotagency.com/case-studies/hair-transplant-seo-growth</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/case-studies/real-estate-lead-automation</loc>
+    <loc>https://webimotagency.com/case-studies/real-estate-lead-automation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webimot.com/case-studies/cosmetic-surgery-meta-ads</loc>
+    <loc>https://webimotagency.com/case-studies/cosmetic-surgery-meta-ads</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog posts -->
   <url>
-    <loc>https://webimot.com/blog/why-clinics-must-automate-lead-handling</loc>
+    <loc>https://webimotagency.com/blog/why-clinics-must-automate-lead-handling</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/best-digital-marketing-strategies-medical-tourism</loc>
+    <loc>https://webimotagency.com/blog/best-digital-marketing-strategies-medical-tourism</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/how-whatsapp-ai-agents-increase-conversions</loc>
+    <loc>https://webimotagency.com/blog/how-whatsapp-ai-agents-increase-conversions</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/seo-for-clinics-complete-guide</loc>
+    <loc>https://webimotagency.com/blog/seo-for-clinics-complete-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/cost-comparison-ai-vs-human-customer-service</loc>
+    <loc>https://webimotagency.com/blog/cost-comparison-ai-vs-human-customer-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/multi-language-marketing-medical-tourism</loc>
+    <loc>https://webimotagency.com/blog/multi-language-marketing-medical-tourism</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/google-ads-medical-tourism-2025</loc>
+    <loc>https://webimotagency.com/blog/google-ads-medical-tourism-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/social-media-strategy-healthcare-providers</loc>
+    <loc>https://webimotagency.com/blog/social-media-strategy-healthcare-providers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/vision-ai-photo-evaluation-medical-tourism</loc>
+    <loc>https://webimotagency.com/blog/vision-ai-photo-evaluation-medical-tourism</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimot.com/blog/building-trust-online-medical-tourism</loc>
+    <loc>https://webimotagency.com/blog/building-trust-online-medical-tourism</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

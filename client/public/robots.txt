@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://webimot.com/sitemap.xml
+# Block admin or API paths
+Disallow: /api/
+
+Sitemap: https://webimotagency.com/sitemap.xml

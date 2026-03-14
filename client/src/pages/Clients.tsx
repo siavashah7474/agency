@@ -81,7 +81,7 @@ export default function Clients() {
         title="Our Clients - Medical Tourism Clinics We Serve | Success Stories"
         description="See how medical tourism clinics in Turkey have grown with Webimot's lead generation and marketing services. Real testimonials from hair transplant, dental, cosmetic, and IVF clinics."
         keywords="medical tourism clients, clinic testimonials, medical tourism success stories, Turkey medical tourism clients, clinic case studies, healthcare marketing clients, medical tourism agency clients, lead generation clients, clinic marketing success, patient acquisition success, medical tourism testimonials"
-        canonicalUrl="https://webimot.com/clients"
+        canonicalUrl="https://webimotagency.com/clients"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

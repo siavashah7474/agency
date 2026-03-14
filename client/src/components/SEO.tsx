@@ -9,20 +9,22 @@ interface SEOProps {
   ogType?: "website" | "article";
   articlePublishedTime?: string;
   articleAuthor?: string;
+  schema?: object;
 }
 
-export default function SEO({ 
-  title, 
-  description, 
+export default function SEO({
+  title,
+  description,
   keywords,
   canonicalUrl,
   ogImage = "/og-image.png",
   ogType = "website",
   articlePublishedTime,
-  articleAuthor
+  articleAuthor,
+  schema,
 }: SEOProps) {
   useEffect(() => {
-    const brandedTitle = title.includes("Webimot") ? title : `${title} | Webimot`;
+    const brandedTitle = title.includes("Webimot") ? title : `${title} | Webimot Agency`;
     document.title = brandedTitle;
 
     const setMeta = (name: string, content: string, isProperty = false) => {
@@ -68,7 +70,22 @@ export default function SEO({
       }
       canonical.setAttribute("href", canonicalUrl);
     }
-  }, [title, description, keywords, canonicalUrl, ogImage, ogType, articlePublishedTime, articleAuthor]);
+
+    // Inject page-specific JSON-LD schema
+    if (schema) {
+      const id = "page-schema-ld";
+      document.getElementById(id)?.remove();
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = id;
+      script.text = JSON.stringify(schema);
+      document.head.appendChild(script);
+    }
+
+    return () => {
+      document.getElementById("page-schema-ld")?.remove();
+    };
+  }, [title, description, keywords, canonicalUrl, ogImage, ogType, articlePublishedTime, articleAuthor, schema]);
 
   return null;
 }

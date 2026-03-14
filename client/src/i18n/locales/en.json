@@ -1,0 +1,385 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "aiSolutions": "AI Solutions",
+    "about": "About",
+    "clients": "Clients",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookCall": "Book Strategy Call"
+  },
+  "footer": {
+    "tagline": "Smart Marketing. Smart Automation.",
+    "description": "Marketing solutions for medical tourism, real estate, and service businesses.",
+    "services": "Services",
+    "company": "Company",
+    "contact": "Contact",
+    "aboutUs": "About Us",
+    "caseStudies": "Case Studies",
+    "ourClients": "Our Clients",
+    "allServices": "All Services",
+    "whatsappUs": "WhatsApp Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "bookFreeStrategyCall": "Book Your Free Strategy Call",
+    "bookStrategyCall": "Book Strategy Call",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "viewAllServices": "View All Services",
+    "viewAllCaseStudies": "View All Case Studies",
+    "fullStory": "Full Story",
+    "getFreePlan": "Get Your Free Growth Plan"
+  },
+  "home": {
+    "trustBadge": "Trusted by clinics & agencies across 12+ countries",
+    "heroTitle1": "Stop Losing Leads at 2AM.",
+    "heroTitle2": "Let AI Close Them for You.",
+    "heroSubtitle": "We deploy AI that replies to every inquiry, qualifies leads, and books meetings automatically — 24/7, in any language. Most clients close <strong>3× more deals</strong> within 60 days.",
+    "heroCta1": "Get Free Strategy Call",
+    "heroCta2": "See Our AI Solutions",
+    "industries": {
+      "hairTransplant": "Hair Transplant Clinics",
+      "dental": "Dental Clinics",
+      "cosmetic": "Cosmetic Surgery",
+      "ivf": "IVF & Fertility",
+      "realEstate": "Real Estate Agencies"
+    },
+    "aiStackBadge": "Proven in Medical Tourism & Real Estate",
+    "aiStackTitle": "The AI Stack That Works While You Sleep",
+    "aiStackSubtitle": "Three purpose-built tools handling the parts of your business that cost you the most time and money — lead response, content, and analytics. No hiring. No training. Just results.",
+    "benefits": {
+      "hours": { "title": "Save 20+ Hours Weekly", "desc": "Automate repetitive tasks and free up your team" },
+      "lead247": { "title": "24/7 Lead Handling", "desc": "Never miss a potential customer, even at 3 AM" },
+      "data": { "title": "Data-Driven Decisions", "desc": "Get insights that help you grow smarter, not harder" }
+    },
+    "aiProducts": [
+      {
+        "title": "WhatsApp AI Agent",
+        "tagline": "24/7 Intelligent Lead Handling & Booking Automation",
+        "description": "Never miss a lead again. Our WhatsApp AI Agent handles incoming messages instantly, qualifies leads, evaluates photos with Vision AI, and books consultations automatically.",
+        "features": [
+          "Instant lead replies in multiple languages",
+          "Voice message → text transcription",
+          "Photo evaluation with Vision AI",
+          "Lead scoring and qualification",
+          "Automated booking calendar integration",
+          "Supervisor escalation for complex queries",
+          "Follow-up automation engine",
+          "Real-time dashboard and analytics"
+        ]
+      },
+      {
+        "title": "SEO Blog Generator AI",
+        "tagline": "Automated Content Creation & Publishing",
+        "description": "Scale your content marketing effortlessly. Our AI generates SEO-optimized blog posts, schedules publication, and manages internal linking automatically.",
+        "features": [
+          "Automated content generation from RSS feeds",
+          "SEO optimization with meta tags",
+          "Auto-scheduling and publishing",
+          "Internal linking system",
+          "Multi-language translation",
+          "Performance monitoring and analytics"
+        ]
+      },
+      {
+        "title": "AI Marketing Analyst",
+        "tagline": "Automated Weekly Performance Reports",
+        "description": "Get intelligent insights without the manual work. Our AI analyzes your marketing performance, identifies issues, and delivers actionable recommendations.",
+        "features": [
+          "Weekly automated analytics reports",
+          "SEO ranking change detection",
+          "Ad performance analysis",
+          "Traffic and conversion insights",
+          "Problem identification and alerts",
+          "Actionable recommendations delivered to your inbox"
+        ]
+      }
+    ],
+    "servicesTitle": "Everything You Need to Dominate Your Market",
+    "servicesSubtitle": "Ads, SEO, AI automation, and content — fully managed so you focus on delivering results, not chasing them",
+    "services": [
+      { "title": "Meta Ads", "description": "Expert Facebook & Instagram advertising campaigns that drive qualified leads" },
+      { "title": "Google Ads", "description": "Search and display advertising optimized for maximum ROI" },
+      { "title": "SEO", "description": "Rank higher in search results with data-driven optimization strategies" },
+      { "title": "Website Development", "description": "Fast, beautiful, conversion-optimized websites built for your business" },
+      { "title": "Content Creation", "description": "Engaging content that resonates with your audience and drives action" },
+      { "title": "Branding", "description": "Build a memorable brand identity that stands out in your market" },
+      { "title": "Funnel Building", "description": "Convert more visitors into customers with optimized sales funnels" },
+      { "title": "Reputation Management", "description": "Monitor and enhance your online reputation across all platforms" }
+    ],
+    "automationTitle": "Set It Up Once. Let It Run Forever.",
+    "automationSubtitle": "Our automations connect your WhatsApp, CRM, calendar, and ad accounts into one system that never takes a day off",
+    "automationFeatures": [
+      { "title": "Lead to Sheet to WhatsApp", "description": "Automatically capture leads and route them to your AI agent" },
+      { "title": "Auto Follow-ups", "description": "Never forget a follow-up with intelligent automation" },
+      { "title": "Booking Calendar Automation", "description": "Sync consultations directly to your calendar" },
+      { "title": "Photo & Voice Processing", "description": "AI-powered analysis of multimedia messages" },
+      { "title": "CRM Integration", "description": "Seamlessly connect with your existing tools" },
+      { "title": "Dashboard Reporting", "description": "Real-time insights into all your automations" }
+    ],
+    "testimonialsTitle": "Don't Take Our Word for It",
+    "testimonialsSubtitle": "Real businesses. Real numbers. Here's what happened when they stopped doing it manually.",
+    "testimonials": [
+      {
+        "name": "Dr. Gorkem Atsal",
+        "role": "Owner of the clinic",
+        "company": "Gorkem Atsal clinic",
+        "content": "The WhatsApp AI agent completely transformed our lead handling. We went from missing 40% of inquiries to responding to 100% within seconds. Our conversion rate doubled in just 3 months."
+      },
+      {
+        "name": "Pouyan Azizpour",
+        "role": "CEO",
+        "company": "Wavemed.io",
+        "content": "Webimot's SEO Blog Generator has been a game-changer. We publish 20 optimized posts per month without any manual work. Our organic traffic increased by 20% in 6 months."
+      },
+      {
+        "name": "Dr. Hamed Gholami",
+        "role": "Owner of Novin Ariana",
+        "company": "Novin Ariana Health Group",
+        "content": "The AI Marketing Analyst saves us 10+ hours every week. We get detailed reports with actionable insights delivered straight to our inbox. It's like having a dedicated analyst on staff."
+      }
+    ],
+    "faqBadge": "FAQ",
+    "faqTitle": "Questions We Get Every Day",
+    "faqSubtitle": "Straight answers — no jargon, no fluff",
+    "faqs": [
+      {
+        "question": "What is a WhatsApp AI Agent and how does it work?",
+        "answer": "Our WhatsApp AI Agent is an automated system connected to your WhatsApp Business account. It replies to incoming patient inquiries instantly — in multiple languages — 24 hours a day. It can evaluate photos using Vision AI, transcribe voice messages, score and qualify leads, and automatically book consultations in your calendar. No human is needed for routine conversations."
+      },
+      {
+        "question": "Which industries do you work with?",
+        "answer": "Our two core specialisations are medical tourism and real estate. In medical tourism, we work with clinics in Turkey including hair transplant (FUE/DHI), dental and smile makeover, cosmetic and plastic surgery, IVF and fertility, and health tourism agencies. In real estate, we help agencies sell property to international buyers using AI lead handling, WhatsApp automation, and targeted advertising. We also work with service businesses that need 24/7 lead management and digital growth."
+      },
+      {
+        "question": "How quickly can everything be set up?",
+        "answer": "The WhatsApp AI Agent is typically live within 2 weeks. That includes connecting your WhatsApp Business API, training the AI on your specific services and pricing, integrating with your booking calendar, and testing. SEO and ad campaigns usually launch within the same first month."
+      },
+      {
+        "question": "What languages does the AI agent support?",
+        "answer": "The AI agent can communicate fluently in English, Turkish, Arabic, Russian, German, French, and many other languages. It automatically detects the patient's language and responds accordingly, so you never need to hire multilingual staff for first-contact support."
+      },
+      {
+        "question": "How does the SEO Blog Generator AI work?",
+        "answer": "Our AI pulls relevant topics from RSS feeds and industry sources, writes fully SEO-optimised articles, adds meta titles and descriptions, sets up internal links, and publishes them on a schedule — all automatically. Your medical team can optionally review posts before they go live. Clients typically publish 20–30 articles per month without any manual effort."
+      },
+      {
+        "question": "Do you manage Google Ads and Meta Ads?",
+        "answer": "Yes. We build and manage complete paid advertising campaigns on Google Search, Google Display, Facebook, and Instagram. This includes audience research, ad creative strategy, before/after content, retargeting funnels, and conversion tracking integrated with your WhatsApp lead pipeline."
+      },
+      {
+        "question": "Do I need any technical knowledge to use your tools?",
+        "answer": "No. We handle the full technical setup — API connections, integrations, dashboard configuration, and ongoing optimisation. You just need a WhatsApp Business account and a willingness to grow. We provide training and documentation so your team can monitor performance without needing a technical background."
+      },
+      {
+        "question": "What results can I realistically expect?",
+        "answer": "Based on our existing clients: response time drops from hours to under 30 seconds, lead conversion rates typically increase by 40–60%, organic traffic grows 20%+ within 6 months of consistent SEO, and paid ad ROAS has reached as high as 8.5x. Results vary by clinic, market, and starting point — we discuss realistic targets during the free strategy call."
+      },
+      {
+        "question": "How much does it cost?",
+        "answer": "Pricing depends on which services you need and the scope of your clinic's operations. We offer standalone AI products (WhatsApp Agent, SEO Blog Generator, AI Marketing Analyst) as well as full-service monthly retainers. Book a free strategy call and we'll put together a tailored proposal with transparent pricing."
+      },
+      {
+        "question": "What does onboarding look like?",
+        "answer": "After the strategy call we send a short onboarding questionnaire covering your services, pricing, target markets, and branding. We then handle all the technical setup, present you with a testing environment, gather your feedback, and go live. Most clients are fully onboarded within 2–3 weeks."
+      }
+    ],
+    "ctaTitle": "Your Competitors Won't Wait. Neither Should You.",
+    "ctaSubtitle": "Book a free 30-minute strategy call. We'll show you exactly which automations will make the biggest impact on your revenue — no fluff, no hard sell, just a clear plan.",
+    "ctaButton": "Book Your Free Strategy Call"
+  },
+  "about": {
+    "badge": "Lead & Sales Generation Experts",
+    "title": "About Webimot",
+    "subtitle": "We combine AI automation with proven digital marketing strategies to generate leads and drive sales for your business",
+    "focusTitle": "Our Focus: Leads & Sales",
+    "focusP1": "We're not just a marketing agency. We're a lead generation and sales acceleration partner. Every strategy, every automation, every campaign is designed with one goal: generating qualified leads and converting them into customers.",
+    "focusP2": "Our AI-powered systems work 24/7 to capture, qualify, and nurture leads so your sales team can focus on closing deals.",
+    "deliverTitle": "What We Deliver",
+    "deliver": [
+      "More qualified leads for your sales team",
+      "Faster response times with AI automation",
+      "Higher conversion rates through nurturing",
+      "Measurable ROI on every campaign"
+    ],
+    "stats": [
+      { "number": "15+", "label": "Clients Served" },
+      { "number": "60%", "label": "Avg. Traffic Growth" },
+      { "number": "24/7", "label": "AI Automation" },
+      { "number": "25+", "label": "Languages Supported" }
+    ],
+    "medBadge": "Primary Focus",
+    "medTitle": "Medical Tourism & Clinics",
+    "medSubtitle": "Medical tourism is a $100+ billion industry with unique challenges that AI automation solves perfectly. This is where we specialize.",
+    "specialties": [
+      { "title": "Dental Clinics", "desc": "Implants, veneers, full mouth restoration" },
+      { "title": "Hair Transplant", "desc": "FUE, DHI, and beard transplants" },
+      { "title": "Cosmetic Surgery", "desc": "Rhinoplasty, BBL, weight loss surgery" }
+    ],
+    "challengesTitle": "The Industry Challenges",
+    "challenges": [
+      "Leads come in 24/7 from different time zones",
+      "Multiple languages and communication barriers",
+      "Photo evaluations needed for consultations",
+      "Long sales cycles requiring constant follow-up",
+      "High staff costs for round-the-clock coverage"
+    ],
+    "solutionTitle": "Our AI Solution",
+    "solutions": [
+      "AI agent responds instantly in any time zone",
+      "Automatic translation in 50+ languages",
+      "Vision AI evaluates photos automatically",
+      "Automated follow-up sequences",
+      "70% reduction in staffing costs"
+    ],
+    "reBadge": "Second Core Specialisation",
+    "reTitle": "Real Estate & Beyond",
+    "reSubtitle": "Real estate is our second proven niche — and we also work with service businesses that need the same high-value lead digitalization",
+    "realEstate": {
+      "title": "Real Estate",
+      "subtitle": "Property sales & investment agencies",
+      "items": [
+        "WhatsApp AI agent for international buyers",
+        "Luxury and investment property marketing",
+        "Multi-language lead qualification",
+        "Automated follow-ups and viewing scheduling",
+        "Meta & Google Ads for property buyers"
+      ]
+    },
+    "serviceB": {
+      "title": "Service Businesses",
+      "subtitle": "Any business that needs AI digitalization",
+      "items": [
+        "24/7 AI lead handling and qualification",
+        "Automated booking and appointment systems",
+        "SEO content generation and publishing",
+        "Targeted ad campaigns and funnel automation"
+      ]
+    },
+    "teamTitle": "Our Team",
+    "teamP": "Webimot was founded by digital marketing and AI experts who saw an opportunity to transform how businesses generate leads. With offices in Istanbul and Amsterdam, we serve clients worldwide.",
+    "teamItems": [
+      "Digital marketing and SEO experts",
+      "AI and automation specialists",
+      "Medical tourism & real estate industry veterans",
+      "Lead generation and sales professionals"
+    ],
+    "teamCta": "Let's Discuss Your Goals"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to transform your business with AI automation? Let's talk about your goals.",
+    "whatsapp": { "title": "WhatsApp", "desc": "Get instant replies from our team", "button": "Chat on WhatsApp" },
+    "email": { "title": "Email", "desc": "Send us a detailed inquiry" },
+    "phone": { "title": "Phone", "desc": "Call us during business hours" },
+    "formTitle": "Send Us a Message",
+    "formDesc": "Fill out the form and we'll get back to you within 24 hours",
+    "name": "Name *",
+    "emailLabel": "Email *",
+    "phoneLabel": "Phone",
+    "messageLabel": "Message *",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message sent!",
+    "successDesc": "We'll get back to you within 24 hours.",
+    "office": "Amsterdam Office",
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM (CET)",
+      "saturday": "Saturday: 10:00 AM - 2:00 PM (CET)",
+      "sunday": "Sunday: Closed",
+      "note": "* Our AI systems work 24/7, even when we are closed!"
+    },
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Book a free 20-minute strategy call to discuss how AI automation can transform your business",
+    "ctaButton": "Book Your Free Strategy Call"
+  },
+  "clients": {
+    "title": "Our Clients",
+    "subtitle": "Real results from real businesses across medical tourism, real estate, and service industries",
+    "successTitle": "Success Stories",
+    "metrics": [
+      { "value": "100%", "label": "Lead Response Rate", "desc": "All inquiries answered instantly" },
+      { "value": "3x", "label": "More Conversions", "desc": "Average improvement across clients" },
+      { "value": "60%", "label": "Traffic Growth", "desc": "Average organic traffic increase" }
+    ],
+    "testimonialsTitle": "What Our Clients Say",
+    "industriesTitle": "Industries We Serve",
+    "ctaTitle": "Join Our Success Stories",
+    "ctaSubtitle": "Ready to see similar results for your business?",
+    "ctaButton": "Book Your Free Strategy Call"
+  },
+  "whyWebimot": {
+    "badge": "Medical Tourism Specialists",
+    "title": "We Help Clinics Get More Patients",
+    "subtitle": "Most agencies bring you clicks. We focus on what actually matters for your clinic — turning inquiries into booked procedures. With AI-powered systems built specifically for hair transplant, dental, cosmetic, and IVF clinics.",
+    "coreValues": [
+      { "title": "Convert Patients to Bookings", "description": "We don't just bring you inquiries — we build systems that turn patient questions into confirmed consultations and procedures.", "stats": "60% higher booking rate" },
+      { "title": "Grow International Patients", "description": "Attract patients from UK, Germany, USA and beyond with multilingual marketing strategies built for medical tourism clinics.", "stats": "3x more international leads" },
+      { "title": "24/7 Patient Response", "description": "Never miss an inquiry again. Our AI handles patient questions, evaluates photos, and books consultations even while you sleep.", "stats": "100% response rate" },
+      { "title": "Track Every Patient Journey", "description": "Know exactly where your patients come from, which campaigns work, and how to get more bookings with detailed analytics.", "stats": "Weekly performance reports" }
+    ],
+    "partnerTitle": "Your Clinic's Growth Partner",
+    "partnerDesc": "We understand medical tourism inside and out. From handling patient inquiries in Arabic, German, and English to evaluating before/after photos — we know what it takes to convert international patients into booked procedures.",
+    "partnerItems": [
+      "Multilingual patient communication (EN, DE, AR, RU)",
+      "AI photo evaluation for hair, dental & cosmetic procedures",
+      "Automated consultation booking & calendar sync",
+      "Patient journey tracking from inquiry to procedure"
+    ],
+    "processTitle": "Our Proven Process",
+    "steps": [
+      { "step": "01", "title": "Audit Your Clinic", "description": "We analyze your patient flow, website, and current marketing to find growth opportunities." },
+      { "step": "02", "title": "Build Your AI System", "description": "Custom WhatsApp agent, multilingual campaigns, and automated booking tailored to your clinic." },
+      { "step": "03", "title": "Launch & Monitor", "description": "Go live with 24/7 patient response and track every inquiry from first message to booked procedure." },
+      { "step": "04", "title": "Scale Internationally", "description": "Expand to new markets — UK, Germany, Gulf countries — and grow your international patient base." }
+    ],
+    "cta": "Get Your Free Growth Plan"
+  },
+  "clientResults": {
+    "badge": "Proven Results",
+    "title": "Real Results from Real Clinics",
+    "subtitle": "Don't just take our word for it. See the actual before/after metrics from clinics and businesses we've helped grow with AI automation and digital marketing.",
+    "viewAll": "View All Case Studies"
+  },
+  "exitPopup": {
+    "title": "Wait! Don't Leave Empty-Handed",
+    "desc": "Get a <strong>free marketing audit</strong> and discover how we can help you generate more leads. No commitment required.",
+    "cta": "Get My Free Audit",
+    "dismiss": "No thanks, I'll pass on free advice",
+    "trust": "Join 200+ businesses who trust Webimot for their marketing needs"
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "subtitle": "Real success stories from businesses that transformed their lead generation with our solutions",
+    "ctaTitle": "Ready to Become Our Next Success Story?",
+    "ctaButton": "Book Your Free Strategy Call"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights on AI automation, digital marketing, and growing your business",
+    "filterLabel": "Filter by:"
+  },
+  "bookConsultation": {
+    "title": "Book Your Free Strategy Call",
+    "subtitle": "Let's discuss how AI automation can transform your business operations and drive growth",
+    "ctaButton": "Book Your Free Call Now",
+    "noCredit": "No credit card required • No obligation"
+  },
+  "notFound": {
+    "title": "404 Page Not Found",
+    "message": "The page you're looking for doesn't exist or has been moved. Please check the URL or return to our homepage.",
+    "goHome": "Go to Homepage",
+    "goBack": "Go Back"
+  },
+  "services": {
+    "title": "Services That Digitalize & Grow Your Business",
+    "subtitle": "AI automation, targeted ads, SEO, and digital marketing — built for medical tourism clinics and real estate agencies.",
+    "ctaTitle": "Ready to Dominate Your Market?",
+    "ctaSubtitle": "Join medical tourism clinics and real estate agencies that use Webimot to generate more leads, respond faster, and close more deals."
+  }
+}

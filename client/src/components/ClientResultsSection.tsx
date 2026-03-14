@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import {
   TrendingUp, 
   Clock, 
@@ -108,6 +109,7 @@ function StatComparison({ stat }: { stat: ClientResult['stats'][0] }) {
 }
 
 function ClientCard({ client, index }: { client: ClientResult; index: number }) {
+  const { t } = useTranslation();
   return (
     <Card className="overflow-hidden hover-elevate h-full" data-testid={`card-client-result-${index}`}>
       <CardContent className="p-0">
@@ -149,7 +151,7 @@ function ClientCard({ client, index }: { client: ClientResult; index: number }) 
               {client.caseStudyLink && (
                 <Link href={client.caseStudyLink}>
                   <Button variant="ghost" size="sm" className="text-primary">
-                    Full Story <ArrowRight className="ml-1 h-3 w-3" />
+                    {t("common.fullStory")} <ArrowRight className="ml-1 h-3 w-3" />
                   </Button>
                 </Link>
               )}
@@ -162,20 +164,20 @@ function ClientCard({ client, index }: { client: ClientResult; index: number }) 
 }
 
 export default function ClientResultsSection() {
+  const { t } = useTranslation();
   return (
     <section className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
             <Zap className="h-4 w-4" />
-            Proven Results
+            {t("clientResults.badge")}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Real Results from Real Clinics
+            {t("clientResults.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Don't just take our word for it. See the actual before/after metrics from clinics 
-            and businesses we've helped grow with AI automation and digital marketing.
+            {t("clientResults.subtitle")}
           </p>
         </div>
 
@@ -188,7 +190,7 @@ export default function ClientResultsSection() {
         <div className="text-center">
           <Link href="/case-studies">
             <Button data-testid="button-view-case-studies" size="lg" variant="outline">
-              View All Case Studies
+              {t("clientResults.viewAll")}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>

@@ -304,10 +304,10 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="AI Automation & Digital Marketing for Medical Tourism & Real Estate | Webimot"
-        description="AI-powered lead generation and digital marketing for medical tourism clinics and real estate agencies. WhatsApp AI Agent, SEO, website design, Meta Ads, Google Ads — proven to convert international clients into booked consultations and property sales."
-        keywords="AI automation services, medical tourism marketing, real estate marketing, lead generation, WhatsApp AI agent, website development, SEO services, Meta Ads, Google Ads, blog generator, business digitalization, clinic marketing, real estate lead generation, Turkey medical tourism, international property buyers, AI chatbot, digital marketing agency"
-        canonicalUrl="https://webimot.com/services"
+        title="AI Automation & Digital Marketing Services | Webimot Agency"
+        description="Full-service AI automation and digital marketing agency. WhatsApp AI agent, Shopify eCommerce automation, SEO, Meta Ads, Google Ads, website development, and more. We automate your growth — 24/7."
+        keywords="AI automation services, digital marketing services, Shopify automation services, eCommerce automation, WhatsApp AI agent, SEO services, Meta Ads management, Google Ads agency, lead generation services, marketing automation, business automation services, AI chatbot, website development, content creation, medical tourism marketing, real estate marketing"
+        canonicalUrl="https://webimotagency.com/services"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

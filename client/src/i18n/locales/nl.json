@@ -1,0 +1,340 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "aiSolutions": "AI Oplossingen",
+    "about": "Over ons",
+    "clients": "Klanten",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookCall": "Strategiegesprek"
+  },
+  "footer": {
+    "tagline": "Slimme Marketing. Slimme Automatisering.",
+    "description": "Marketingoplossingen voor medisch toerisme, vastgoed en servicebedrijven.",
+    "services": "Diensten",
+    "company": "Bedrijf",
+    "contact": "Contact",
+    "aboutUs": "Over ons",
+    "caseStudies": "Casestudies",
+    "ourClients": "Onze Klanten",
+    "allServices": "Alle Diensten",
+    "whatsappUs": "WhatsApp ons",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfService": "Servicevoorwaarden",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "common": {
+    "bookFreeStrategyCall": "Boek uw gratis strategiegesprek",
+    "bookStrategyCall": "Strategiegesprek",
+    "getStarted": "Aan de slag",
+    "learnMore": "Meer weten",
+    "viewAllServices": "Alle diensten bekijken",
+    "viewAllCaseStudies": "Alle casestudies bekijken",
+    "fullStory": "Volledig verhaal",
+    "getFreePlan": "Ontvang uw gratis groeiplan"
+  },
+  "home": {
+    "trustBadge": "Vertrouwd door klinieken en bureaus in 12+ landen",
+    "heroTitle1": "Stop met leads verliezen om 2 uur 's nachts.",
+    "heroTitle2": "Laat AI ze voor u sluiten.",
+    "heroSubtitle": "Wij implementeren AI die op elke aanvraag reageert, leads kwalificeert en vergaderingen automatisch boekt — 24/7, in elke taal. De meeste klanten sluiten binnen 60 dagen <strong>3× meer deals</strong>.",
+    "heroCta1": "Gratis strategiegesprek",
+    "heroCta2": "Bekijk onze AI-oplossingen",
+    "industries": {
+      "hairTransplant": "Haartransplantatieklinieken",
+      "dental": "Tandheelkundige klinieken",
+      "cosmetic": "Cosmetische chirurgie",
+      "ivf": "IVF & Vruchtbaarheid",
+      "realEstate": "Vastgoedbureaus"
+    },
+    "aiStackBadge": "Bewezen in medisch toerisme & vastgoed",
+    "aiStackTitle": "De AI-stack die werkt terwijl u slaapt",
+    "aiStackSubtitle": "Drie speciaal gebouwde tools die de delen van uw bedrijf afhandelen die u de meeste tijd en geld kosten — leadrespons, content en analytics. Geen inhuur. Geen training. Alleen resultaten.",
+    "benefits": {
+      "hours": { "title": "Bespaar 20+ uur per week", "desc": "Automatiseer repetitieve taken en bevrijd uw team" },
+      "lead247": { "title": "24/7 leadafhandeling", "desc": "Mis nooit een potentiële klant, zelfs niet om 3 uur 's nachts" },
+      "data": { "title": "Datagedreven beslissingen", "desc": "Krijg inzichten die u helpen slimmer te groeien, niet harder" }
+    },
+    "aiProducts": [
+      {
+        "title": "WhatsApp AI-agent",
+        "tagline": "24/7 intelligente leadafhandeling & boekingsautomatisering",
+        "description": "Mis nooit meer een lead. Onze WhatsApp AI-agent verwerkt inkomende berichten direct, kwalificeert leads, evalueert foto's met Vision AI en boekt consultaties automatisch.",
+        "features": [
+          "Directe leadreacties in meerdere talen",
+          "Spraakbericht → teksttranscriptie",
+          "Fotoevaluatie met Vision AI",
+          "Leadscoring en -kwalificatie",
+          "Geautomatiseerde boekingskalenderintegratie",
+          "Supervisoreskalatie voor complexe vragen",
+          "Follow-up automatiseringsengine",
+          "Realtime dashboard en analytics"
+        ]
+      },
+      {
+        "title": "SEO Blog Generator AI",
+        "tagline": "Geautomatiseerde contentcreatie & publicatie",
+        "description": "Schaal uw contentmarketing moeiteloos op. Onze AI genereert SEO-geoptimaliseerde blogposts, plant publicatie en beheert interne links automatisch.",
+        "features": [
+          "Geautomatiseerde contentgeneratie vanuit RSS-feeds",
+          "SEO-optimalisatie met metatags",
+          "Automatisch plannen en publiceren",
+          "Intern linksysteem",
+          "Meertalige vertaling",
+          "Prestatiemonitoring en analytics"
+        ]
+      },
+      {
+        "title": "AI Marketing Analyst",
+        "tagline": "Geautomatiseerde wekelijkse prestatierapportages",
+        "description": "Krijg intelligente inzichten zonder handmatig werk. Onze AI analyseert uw marketingprestaties, identificeert problemen en levert bruikbare aanbevelingen.",
+        "features": [
+          "Wekelijkse geautomatiseerde analyticsrapporten",
+          "SEO-rangschikwijzigingsdetectie",
+          "Advertentieprestatie-analyse",
+          "Verkeers- en conversieinzichten",
+          "Probleemidentificatie en waarschuwingen",
+          "Bruikbare aanbevelingen rechtstreeks in uw inbox"
+        ]
+      }
+    ],
+    "servicesTitle": "Alles wat u nodig heeft om uw markt te domineren",
+    "servicesSubtitle": "Advertenties, SEO, AI-automatisering en content — volledig beheerd zodat u zich kunt richten op het leveren van resultaten",
+    "services": [
+      { "title": "Meta Advertenties", "description": "Professionele Facebook & Instagram advertentiecampagnes die gekwalificeerde leads genereren" },
+      { "title": "Google Advertenties", "description": "Zoek- en displayadvertising geoptimaliseerd voor maximale ROI" },
+      { "title": "SEO", "description": "Hoger scoren in zoekresultaten met datagedreven optimalisatiestrategieën" },
+      { "title": "Website Ontwikkeling", "description": "Snelle, mooie, conversiegerichte websites gebouwd voor uw bedrijf" },
+      { "title": "Contentcreatie", "description": "Aantrekkelijke content die aansluit bij uw doelgroep en aanzet tot actie" },
+      { "title": "Branding", "description": "Bouw een gedenkwaardige merkidentiteit die opvalt in uw markt" },
+      { "title": "Funnelbouw", "description": "Converteer meer bezoekers naar klanten met geoptimaliseerde verkooptunnels" },
+      { "title": "Reputatiebeheer", "description": "Monitor en verbeter uw online reputatie op alle platforms" }
+    ],
+    "automationTitle": "Eenmalig instellen. Voor altijd laten draaien.",
+    "automationSubtitle": "Onze automatiseringen verbinden uw WhatsApp, CRM, agenda en advertentieaccounts in één systeem dat nooit een dag vrij neemt",
+    "automationFeatures": [
+      { "title": "Lead naar Sheet naar WhatsApp", "description": "Leg leads automatisch vast en route ze naar uw AI-agent" },
+      { "title": "Automatische follow-ups", "description": "Vergeet nooit meer een follow-up met intelligente automatisering" },
+      { "title": "Boekingskalenderautomatisering", "description": "Synchroniseer consultaties rechtstreeks met uw agenda" },
+      { "title": "Foto- en spraakverwerking", "description": "AI-gestuurde analyse van multimediaberichten" },
+      { "title": "CRM-integratie", "description": "Naadloze verbinding met uw bestaande tools" },
+      { "title": "Dashboardrapportage", "description": "Realtime inzichten in al uw automatiseringen" }
+    ],
+    "testimonialsTitle": "Geloof ons niet zomaar op ons woord",
+    "testimonialsSubtitle": "Echte bedrijven. Echte cijfers. Dit is wat er gebeurde toen ze stopten met handmatig werken.",
+    "testimonials": [
+      { "name": "Dr. Gorkem Atsal", "role": "Eigenaar van de kliniek", "company": "Gorkem Atsal kliniek", "content": "De WhatsApp AI-agent heeft onze leadafhandeling volledig getransformeerd. We zijn gegaan van het missen van 40% van de aanvragen naar het beantwoorden van 100% binnen seconden. Ons conversiepercentage verdubbelde in slechts 3 maanden." },
+      { "name": "Pouyan Azizpour", "role": "CEO", "company": "Wavemed.io", "content": "Webimot's SEO Blog Generator is een gamechanger geweest. We publiceren 20 geoptimaliseerde berichten per maand zonder enig handmatig werk. Ons organisch verkeer steeg in 6 maanden met 20%." },
+      { "name": "Dr. Hamed Gholami", "role": "Eigenaar van Novin Ariana", "company": "Novin Ariana Health Group", "content": "De AI Marketing Analyst bespaart ons elke week 10+ uur. We ontvangen gedetailleerde rapporten met bruikbare inzichten rechtstreeks in onze inbox. Het is alsof we een toegewijde analist in dienst hebben." }
+    ],
+    "faqBadge": "FAQ",
+    "faqTitle": "Vragen die we elke dag krijgen",
+    "faqSubtitle": "Directe antwoorden — geen jargon, geen overbodige tekst",
+    "faqs": [
+      { "question": "Wat is een WhatsApp AI-agent en hoe werkt het?", "answer": "Onze WhatsApp AI-agent is een geautomatiseerd systeem gekoppeld aan uw WhatsApp Business-account. Het beantwoordt inkomende patiëntenvragen direct — in meerdere talen — 24 uur per dag. Het kan foto's evalueren met Vision AI, spraakberichten transcriberen, leads scoren en kwalificeren, en automatisch consultaties boeken in uw agenda. Voor routinegesprekken is geen mens nodig." },
+      { "question": "Met welke sectoren werkt u?", "answer": "Onze twee kernspecialisaties zijn medisch toerisme en vastgoed. In medisch toerisme werken we met klinieken in Turkije, waaronder haartransplantatie (FUE/DHI), tandheelkunde en glimlachontwerp, cosmetische en plastische chirurgie, IVF en vruchtbaarheid, en gezondheidstoerismeagentschappen. In vastgoed helpen we bureaus onroerend goed te verkopen aan internationale kopers." },
+      { "question": "Hoe snel kan alles worden opgezet?", "answer": "De WhatsApp AI-agent is doorgaans binnen 2 weken live. Dit omvat het verbinden van uw WhatsApp Business API, het trainen van de AI op uw specifieke diensten en prijzen, het integreren met uw boekingsagenda en testen. SEO- en advertentiecampagnes worden gewoonlijk in dezelfde eerste maand gelanceerd." },
+      { "question": "Welke talen ondersteunt de AI-agent?", "answer": "De AI-agent kan vloeiend communiceren in het Engels, Turks, Arabisch, Russisch, Duits, Frans en vele andere talen. Het detecteert automatisch de taal van de patiënt en reageert dienovereenkomstig, zodat u nooit meertalig personeel hoeft in te huren voor eerste contactondersteuning." },
+      { "question": "Hoe werkt de SEO Blog Generator AI?", "answer": "Onze AI haalt relevante onderwerpen uit RSS-feeds en branchebronnen, schrijft volledig SEO-geoptimaliseerde artikelen, voegt metatitels en -beschrijvingen toe, stelt interne links in en publiceert ze op een schema — allemaal automatisch. Klanten publiceren doorgaans 20-30 artikelen per maand zonder enige handmatige inspanning." },
+      { "question": "Beheert u Google Ads en Meta Ads?", "answer": "Ja. We bouwen en beheren complete betaalde advertentiecampagnes op Google Zoeken, Google Display, Facebook en Instagram. Dit omvat doelgroeponderzoek, advertentiecreatieve strategie, voor/na-content, retargetingfunnels en conversietracking." },
+      { "question": "Heb ik technische kennis nodig om uw tools te gebruiken?", "answer": "Nee. We verzorgen de volledige technische installatie — API-verbindingen, integraties, dashboardconfiguratie en doorlopende optimalisatie. U heeft alleen een WhatsApp Business-account en de wil om te groeien." },
+      { "question": "Welke resultaten kan ik realistisch verwachten?", "answer": "Op basis van onze bestaande klanten: responstijd daalt van uren naar minder dan 30 seconden, leadconversiepercentages stijgen doorgaans met 40-60%, organisch verkeer groeit meer dan 20% binnen 6 maanden van consistente SEO, en betaalde advertentie ROAS heeft 8,5x bereikt." },
+      { "question": "Hoeveel kost het?", "answer": "De prijsstelling hangt af van welke diensten u nodig heeft en de omvang van de activiteiten van uw kliniek. We bieden zowel zelfstandige AI-producten als full-service maandelijkse retainers. Boek een gratis strategiegesprek voor een op maat gemaakt voorstel." },
+      { "question": "Hoe ziet onboarding eruit?", "answer": "Na het strategiegesprek sturen we een korte onboarding-vragenlijst. Vervolgens verzorgen we alle technische installatie, presenteren we u een testomgeving, verzamelen we uw feedback en gaan we live. De meeste klanten zijn binnen 2-3 weken volledig onboarded." }
+    ],
+    "ctaTitle": "Uw concurrenten wachten niet. U ook niet.",
+    "ctaSubtitle": "Boek een gratis 30-minuten strategiegesprek. We laten u precies zien welke automatiseringen de grootste impact op uw omzet zullen hebben — geen overbodige informatie, geen harde verkoop, alleen een duidelijk plan.",
+    "ctaButton": "Boek uw gratis strategiegesprek"
+  },
+  "about": {
+    "badge": "Lead & Verkoop Generatie Experts",
+    "title": "Over Webimot",
+    "subtitle": "We combineren AI-automatisering met bewezen digitale marketingstrategieën om leads te genereren en de verkoop voor uw bedrijf te stimuleren",
+    "focusTitle": "Onze focus: Leads & Verkoop",
+    "focusP1": "We zijn niet zomaar een marketingbureau. We zijn een leadgeneratie- en verkoopversnellingspartner. Elke strategie, elke automatisering, elke campagne is ontworpen met één doel: gekwalificeerde leads genereren en deze omzetten in klanten.",
+    "focusP2": "Onze AI-systemen werken 24/7 om leads te vangen, te kwalificeren en te koesteren, zodat uw verkoopteam zich kan richten op het sluiten van deals.",
+    "deliverTitle": "Wat wij leveren",
+    "deliver": [
+      "Meer gekwalificeerde leads voor uw verkoopteam",
+      "Snellere responstijden met AI-automatisering",
+      "Hogere conversiepercentages door nurturing",
+      "Meetbare ROI op elke campagne"
+    ],
+    "stats": [
+      { "number": "15+", "label": "Bediende klanten" },
+      { "number": "60%", "label": "Gem. verkeersgroei" },
+      { "number": "24/7", "label": "AI-automatisering" },
+      { "number": "25+", "label": "Ondersteunde talen" }
+    ],
+    "medBadge": "Primaire focus",
+    "medTitle": "Medisch toerisme & klinieken",
+    "medSubtitle": "Medisch toerisme is een industrie van meer dan $100 miljard met unieke uitdagingen die AI-automatisering perfect oplost. Dit is waar wij ons in specialiseren.",
+    "specialties": [
+      { "title": "Tandheelkundige klinieken", "desc": "Implantaten, veneers, volledige mondrestauratie" },
+      { "title": "Haartransplantatie", "desc": "FUE, DHI en baardtransplantaties" },
+      { "title": "Cosmetische chirurgie", "desc": "Rhinoplastiek, BBL, gewichtsverlieschirurgie" }
+    ],
+    "challengesTitle": "De uitdagingen in de sector",
+    "challenges": [
+      "Leads komen 24/7 binnen vanuit verschillende tijdzones",
+      "Meerdere talen en communicatiebarrières",
+      "Fotoevaluaties nodig voor consultaties",
+      "Lange verkoopcycli die constante follow-up vereisen",
+      "Hoge personeelskosten voor continue dekking"
+    ],
+    "solutionTitle": "Onze AI-oplossing",
+    "solutions": [
+      "AI-agent reageert direct in elke tijdzone",
+      "Automatische vertaling in 50+ talen",
+      "Vision AI evalueert foto's automatisch",
+      "Geautomatiseerde follow-up sequences",
+      "70% verlaging van personeelskosten"
+    ],
+    "reBadge": "Tweede kernspecialisatie",
+    "reTitle": "Vastgoed & meer",
+    "reSubtitle": "Vastgoed is onze tweede bewezen niche — en we werken ook met servicebedrijven die dezelfde hoogwaardige leaddigitalisering nodig hebben",
+    "realEstate": {
+      "title": "Vastgoed",
+      "subtitle": "Vastgoed verkoop & investeringsbureaus",
+      "items": [
+        "WhatsApp AI-agent voor internationale kopers",
+        "Luxe en investeringsvastgoed marketing",
+        "Meertalige leadkwalificatie",
+        "Geautomatiseerde follow-ups en bezichtigingsplanning",
+        "Meta & Google Ads voor vastgoedkopers"
+      ]
+    },
+    "serviceB": {
+      "title": "Servicebedrijven",
+      "subtitle": "Elk bedrijf dat AI-digitalisering nodig heeft",
+      "items": [
+        "24/7 AI-leadafhandeling en -kwalificatie",
+        "Geautomatiseerde boekings- en afsprakensystemen",
+        "SEO-contentgeneratie en -publicatie",
+        "Gerichte advertentiecampagnes en funnelautomatisering"
+      ]
+    },
+    "teamTitle": "Ons team",
+    "teamP": "Webimot werd opgericht door digitale marketing- en AI-experts die een kans zagen om de manier waarop bedrijven leads genereren te transformeren. Met kantoren in Istanbul en Amsterdam bedienen we klanten wereldwijd.",
+    "teamItems": [
+      "Digitale marketing- en SEO-experts",
+      "AI- en automatiseringsspecialisten",
+      "Veteranen in de medisch toerisme- en vastgoedsector",
+      "Leadgeneratie- en verkoopprofessionals"
+    ],
+    "teamCta": "Laten we uw doelen bespreken"
+  },
+  "contact": {
+    "title": "Neem contact op",
+    "subtitle": "Klaar om uw bedrijf te transformeren met AI-automatisering? Laten we het over uw doelen hebben.",
+    "whatsapp": { "title": "WhatsApp", "desc": "Ontvang directe antwoorden van ons team", "button": "Chat op WhatsApp" },
+    "email": { "title": "E-mail", "desc": "Stuur ons een gedetailleerde aanvraag" },
+    "phone": { "title": "Telefoon", "desc": "Bel ons tijdens kantooruren" },
+    "formTitle": "Stuur ons een bericht",
+    "formDesc": "Vul het formulier in en we nemen binnen 24 uur contact met u op",
+    "name": "Naam *",
+    "emailLabel": "E-mail *",
+    "phoneLabel": "Telefoon",
+    "messageLabel": "Bericht *",
+    "send": "Bericht versturen",
+    "sending": "Verzenden...",
+    "successTitle": "Bericht verzonden!",
+    "successDesc": "We nemen binnen 24 uur contact met u op.",
+    "office": "Amsterdam Kantoor",
+    "hours": {
+      "title": "Openingstijden",
+      "weekdays": "Maandag - vrijdag: 9:00 - 18:00 (CET)",
+      "saturday": "Zaterdag: 10:00 - 14:00 (CET)",
+      "sunday": "Zondag: Gesloten",
+      "note": "* Onze AI-systemen werken 24/7, ook wanneer wij gesloten zijn!"
+    },
+    "ctaTitle": "Klaar om te beginnen?",
+    "ctaSubtitle": "Boek een gratis 20-minuten strategiegesprek om te bespreken hoe AI-automatisering uw bedrijf kan transformeren",
+    "ctaButton": "Boek uw gratis strategiegesprek"
+  },
+  "clients": {
+    "title": "Onze klanten",
+    "subtitle": "Echte resultaten van echte bedrijven in medisch toerisme, vastgoed en servicebranches",
+    "successTitle": "Succesverhalen",
+    "metrics": [
+      { "value": "100%", "label": "Leadresponspercentage", "desc": "Alle aanvragen direct beantwoord" },
+      { "value": "3x", "label": "Meer conversies", "desc": "Gemiddelde verbetering bij klanten" },
+      { "value": "60%", "label": "Verkeersgroei", "desc": "Gemiddelde stijging organisch verkeer" }
+    ],
+    "testimonialsTitle": "Wat onze klanten zeggen",
+    "industriesTitle": "Sectoren die wij bedienen",
+    "ctaTitle": "Word onderdeel van onze succesverhalen",
+    "ctaSubtitle": "Klaar om vergelijkbare resultaten voor uw bedrijf te zien?",
+    "ctaButton": "Boek uw gratis strategiegesprek"
+  },
+  "whyWebimot": {
+    "badge": "Specialisten in medisch toerisme",
+    "title": "Wij helpen klinieken meer patiënten te krijgen",
+    "subtitle": "De meeste bureaus brengen u klikken. Wij focussen op wat echt belangrijk is voor uw kliniek — aanvragen omzetten in geboekte procedures. Met AI-systemen speciaal gebouwd voor haartransplantatie-, tand-, cosmetische en IVF-klinieken.",
+    "coreValues": [
+      { "title": "Patiënten omzetten in boekingen", "description": "Wij brengen u niet alleen aanvragen — wij bouwen systemen die patiëntenvragen omzetten in bevestigde consultaties en procedures.", "stats": "60% hogere boekingsrate" },
+      { "title": "Internationale patiënten laten groeien", "description": "Trek patiënten aan uit het VK, Duitsland, VS en verder met meertalige marketingstrategieën gebouwd voor klinieken voor medisch toerisme.", "stats": "3x meer internationale leads" },
+      { "title": "24/7 patiëntrespons", "description": "Mis nooit meer een aanvraag. Onze AI behandelt patiëntenvragen, evalueert foto's en boekt consultaties zelfs terwijl u slaapt.", "stats": "100% responspercentage" },
+      { "title": "Volg elke patiëntreis", "description": "Weet precies waar uw patiënten vandaan komen, welke campagnes werken en hoe u meer boekingen kunt krijgen met gedetailleerde analytics.", "stats": "Wekelijkse prestatierapporten" }
+    ],
+    "partnerTitle": "De groeiparter van uw kliniek",
+    "partnerDesc": "We begrijpen medisch toerisme van binnen en van buiten. Van het afhandelen van patiëntenvragen in het Arabisch, Duits en Engels tot het evalueren van voor/na-foto's — we weten wat er nodig is om internationale patiënten te converteren naar geboekte procedures.",
+    "partnerItems": [
+      "Meertalige patiëntcommunicatie (EN, DE, AR, RU)",
+      "AI-fotoevaluatie voor haar-, tand- & cosmetische procedures",
+      "Geautomatiseerde consultatieboeking & agendaSync",
+      "Patiëntreistracking van aanvraag tot procedure"
+    ],
+    "processTitle": "Ons bewezen proces",
+    "steps": [
+      { "step": "01", "title": "Audit uw kliniek", "description": "We analyseren uw patiëntenstroom, website en huidige marketing om groeikansen te vinden." },
+      { "step": "02", "title": "Bouw uw AI-systeem", "description": "Aangepaste WhatsApp-agent, meertalige campagnes en geautomatiseerde boeking op maat voor uw kliniek." },
+      { "step": "03", "title": "Lanceren & monitoren", "description": "Ga live met 24/7 patiëntrespons en volg elke aanvraag van eerste bericht tot geboekte procedure." },
+      { "step": "04", "title": "Internationaal opschalen", "description": "Uitbreiden naar nieuwe markten — VK, Duitsland, Golfstaten — en uw internationale patiëntenbasis laten groeien." }
+    ],
+    "cta": "Ontvang uw gratis groeiplan"
+  },
+  "clientResults": {
+    "badge": "Bewezen resultaten",
+    "title": "Echte resultaten van echte klinieken",
+    "subtitle": "Geloof ons niet zomaar op ons woord. Bekijk de werkelijke voor/na-statistieken van klinieken en bedrijven die we hebben geholpen te groeien met AI-automatisering en digitale marketing.",
+    "viewAll": "Alle casestudies bekijken"
+  },
+  "exitPopup": {
+    "title": "Wacht! Ga niet met lege handen weg",
+    "desc": "Ontvang een <strong>gratis marketingaudit</strong> en ontdek hoe wij u kunnen helpen meer leads te genereren. Geen verplichting.",
+    "cta": "Mijn gratis audit ontvangen",
+    "dismiss": "Nee bedankt, ik sla het gratis advies over",
+    "trust": "Sluit u aan bij 200+ bedrijven die Webimot vertrouwen voor hun marketingbehoeften"
+  },
+  "caseStudies": {
+    "title": "Casestudies",
+    "subtitle": "Echte succesverhalen van bedrijven die hun leadgeneratie transformeerden met onze oplossingen",
+    "ctaTitle": "Klaar om ons volgende succesverhaal te worden?",
+    "ctaButton": "Boek uw gratis strategiegesprek"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Inzichten over AI-automatisering, digitale marketing en het laten groeien van uw bedrijf",
+    "filterLabel": "Filter op:"
+  },
+  "bookConsultation": {
+    "title": "Boek uw gratis strategiegesprek",
+    "subtitle": "Laten we bespreken hoe AI-automatisering uw bedrijfsactiviteiten kan transformeren en groei kan stimuleren",
+    "ctaButton": "Boek nu uw gratis gesprek",
+    "noCredit": "Geen creditcard vereist • Geen verplichting"
+  },
+  "notFound": {
+    "title": "404 Pagina niet gevonden",
+    "message": "De pagina die u zoekt bestaat niet of is verplaatst. Controleer de URL of ga terug naar onze homepage.",
+    "goHome": "Naar de homepage",
+    "goBack": "Terug"
+  },
+  "services": {
+    "title": "Diensten die uw bedrijf digitaliseren en laten groeien",
+    "subtitle": "AI-automatisering, gerichte advertenties, SEO en digitale marketing — gebouwd voor klinieken voor medisch toerisme en vastgoedbureaus.",
+    "ctaTitle": "Klaar om uw markt te domineren?",
+    "ctaSubtitle": "Sluit u aan bij klinieken voor medisch toerisme en vastgoedbureaus die Webimot gebruiken om meer leads te genereren, sneller te reageren en meer deals te sluiten."
+  }
+}
