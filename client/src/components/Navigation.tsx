@@ -42,16 +42,14 @@ export default function Navigation() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-secondary/10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" style={{ boxShadow: '0 1px 0 0 hsl(221 91% 60% / 0.08)' }}>
       <div className="container mx-auto px-6">
         <div className="flex h-16 items-center justify-between gap-4">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-white font-bold text-lg">W</span>
-              </div>
-              <span className="font-bold text-xl">Webimot</span>
+          <Link href="/" className="flex items-center gap-2">
+            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+              <span className="text-white font-bold text-lg">W</span>
             </div>
+            <span className="font-bold text-xl">Webimot</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">

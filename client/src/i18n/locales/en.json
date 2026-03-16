@@ -46,8 +46,26 @@
       "dental": "Dental Clinics",
       "cosmetic": "Cosmetic Surgery",
       "ivf": "IVF & Fertility",
-      "realEstate": "Real Estate Agencies"
+      "realEstate": "Real Estate Agencies",
+      "ecommerce": "Shopify & eCommerce"
     },
+    "ecommerceBadge": "Shopify & eCommerce Specialty",
+    "ecommerceTitle": "Scale Your Online Store with AI Automation",
+    "ecommerceSubtitle": "From abandoned cart recovery to AI-powered customer support — we automate the entire eCommerce journey so your Shopify store sells on autopilot.",
+    "ecommerceStats": [
+      { "value": "3×", "label": "Average Revenue Increase" },
+      { "value": "70%", "label": "Less Manual Work" },
+      { "value": "24/7", "label": "Automated Customer Support" }
+    ],
+    "ecommerceFeatures": [
+      { "title": "Abandoned Cart Recovery", "description": "Re-engage shoppers automatically with personalized WhatsApp & email sequences that bring them back to checkout" },
+      { "title": "AI Customer Support", "description": "Instant AI responses to order status, returns, and product FAQs — 24/7, in any language" },
+      { "title": "Order & Fulfillment Automation", "description": "Sync orders, inventory, and shipping updates across your store without lifting a finger" },
+      { "title": "AI Product Recommendations", "description": "Dynamic upsell and cross-sell suggestions powered by customer behavior and purchase history" },
+      { "title": "Shopify Ads & SEO", "description": "Meta Ads, Google Shopping, and SEO strategies all connected and optimized for your Shopify store" },
+      { "title": "eCommerce Analytics", "description": "Weekly automated reports on ROAS, LTV, conversion rates, and store performance delivered to your inbox" }
+    ],
+    "ecommerceCta": "Automate My Store",
     "aiStackBadge": "Proven in Medical Tourism & Real Estate",
     "aiStackTitle": "The AI Stack That Works While You Sleep",
     "aiStackSubtitle": "Three purpose-built tools handling the parts of your business that cost you the most time and money — lead response, content, and analytics. No hiring. No training. Just results.",

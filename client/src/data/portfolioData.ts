@@ -1,4 +1,4 @@
-import { Stethoscope, Sparkles, Leaf, Plane, SmilePlus, Scissors } from "lucide-react";
+import { Stethoscope, Sparkles, Leaf, Plane, SmilePlus, Scissors, ShoppingBag } from "lucide-react";
 
 export interface PortfolioProject {
   id: string;
@@ -117,6 +117,27 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
     gradient: "from-sky-500 to-blue-600",
     icon: SmilePlus
+  },
+  {
+    id: "luxe-skincare-shopify",
+    name: "Luxe Skincare Co.",
+    industry: "eCommerce / Shopify",
+    tagline: "Skincare That Sells on Autopilot",
+    description: "A premium Shopify skincare brand scaling from €20k to €80k/month with AI-powered abandoned cart recovery, automated customer support, and a full-funnel Meta & Google Ads strategy.",
+    highlights: [
+      "Abandoned cart WhatsApp sequences recovering 28% of lost carts",
+      "AI customer support handling 400+ order/returns queries monthly",
+      "Meta & Google Shopping ads delivering 6.4× ROAS",
+      "Automated post-purchase upsell flows increasing AOV by 35%"
+    ],
+    creativeElements: [
+      "Minimalist luxury aesthetic with soft cream and gold tones",
+      "Product story sections with ingredient transparency",
+      "Shoppable Instagram feed integration",
+      "Mobile-first checkout optimized for impulse purchases"
+    ],
+    gradient: "from-pink-500 to-rose-600",
+    icon: ShoppingBag
   },
   {
     id: "prime-hair-group",
