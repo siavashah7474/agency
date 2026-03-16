@@ -87,9 +87,11 @@ export default function Clients() {
         <Navigation />
 
         <main className="flex-1">
-          <section className="relative py-20 md:py-32 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10"></div>
-            <div className="container mx-auto px-6 text-center text-white">
+          <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
+            <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
+            <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 text-center text-white relative z-10">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 Our Clients
               </h1>
@@ -222,8 +224,9 @@ export default function Clients() {
             </div>
           </section>
 
-          <section className="py-16 md:py-24 bg-gradient-to-br from-primary to-secondary">
-            <div className="container mx-auto px-6 text-center text-white">
+          <section className="relative py-16 md:py-24 bg-[#020817] overflow-hidden">
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 text-center text-white relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Join Our Success Stories
               </h2>

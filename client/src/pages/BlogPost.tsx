@@ -49,9 +49,11 @@ export default function BlogPost() {
         <Navigation />
         
         <main className="flex-1">
-          <section className="relative py-16 md:py-24 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10" />
-            <div className="container mx-auto px-6">
+          <section className="relative py-16 md:py-24 overflow-hidden bg-[#020817]">
+            <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
+            <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 relative z-10">
               <Link href="/blog" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
                 <ArrowLeft className="h-4 w-4" />
                 Back to Blog
@@ -189,8 +191,9 @@ export default function BlogPost() {
             </div>
           </section>
 
-          <section className="py-16 md:py-24 bg-gradient-to-br from-primary to-secondary">
-            <div className="container mx-auto px-6 text-center text-white">
+          <section className="relative py-16 md:py-24 bg-[#020817] overflow-hidden">
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 text-center text-white relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Ready to Transform Your Business?
               </h2>

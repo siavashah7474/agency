@@ -413,21 +413,121 @@ export default function ServiceDetail() {
               </div>
 
               {isAdsService && (
-                <div className="mb-16">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div
-                      className={`h-10 w-10 rounded-lg bg-gradient-to-br ${iconConfig.gradient} flex items-center justify-center`}
-                    >
-                      <BarChart className="h-5 w-5 text-white" />
+                <>
+                  {/* Research → Target → Solution */}
+                  <div className="mb-16 rounded-2xl bg-slate-950 border border-white/8 overflow-hidden relative">
+                    <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
+                    <div className="relative z-10 p-8 md:p-10">
+                      <div className="text-center mb-10">
+                        <div className="inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 text-secondary rounded-full px-4 py-1.5 mb-4">
+                          <Target className="w-4 h-4" />
+                          <span className="text-sm font-medium">Our {slug === "google-ads" ? "Google Ads" : "Meta Ads"} Methodology</span>
+                        </div>
+                        <h2 className="text-2xl md:text-3xl font-bold text-white">We Don't Guess. We Research, Target, Then Convert.</h2>
+                        <p className="text-white/50 mt-2 max-w-xl mx-auto">Every campaign starts with deep research — not assumptions. Here's exactly how we find and convert your ideal patients.</p>
+                      </div>
+
+                      <div className="grid md:grid-cols-3 gap-0 relative">
+                        {/* Connector line */}
+                        <div className="hidden md:block absolute top-10 left-1/3 right-1/3 h-0.5 bg-gradient-to-r from-secondary/40 via-accent/40 to-emerald-500/40 z-0" />
+
+                        {[
+                          {
+                            step: "01",
+                            label: "Deep Research",
+                            icon: TrendingUp,
+                            color: "text-secondary",
+                            borderColor: "border-secondary/30",
+                            bgColor: "bg-secondary/10",
+                            points: slug === "google-ads" ? [
+                              "Keyword intent mapping (buyer vs browser)",
+                              "Competitor ad audit — what they spend & on what",
+                              "Search volume by country & language",
+                              "Negative keyword list to stop wasted budget",
+                            ] : [
+                              "Audience interest & behaviour research",
+                              "Competitor ad library analysis",
+                              "Winning creative formats in your niche",
+                              "Platform algorithm timing & placement study",
+                            ],
+                          },
+                          {
+                            step: "02",
+                            label: "Find Your Target",
+                            icon: Users,
+                            color: "text-accent",
+                            borderColor: "border-accent/30",
+                            bgColor: "bg-accent/10",
+                            points: slug === "google-ads" ? [
+                              "High-intent patient search segments",
+                              "Geo-targeting: Germany, UK, UAE & more",
+                              "Device & time-of-day bid adjustments",
+                              "Custom audience lists from past visitors",
+                            ] : [
+                              "Lookalike audiences from top patients",
+                              "Country-level targeting: DE, NL, UK, Gulf",
+                              "Age, income & interest layering",
+                              "Retargeting warm audiences who visited",
+                            ],
+                          },
+                          {
+                            step: "03",
+                            label: "Get Your Leads",
+                            icon: TrendingDown,
+                            color: "text-emerald-400",
+                            borderColor: "border-emerald-500/30",
+                            bgColor: "bg-emerald-500/10",
+                            points: slug === "google-ads" ? [
+                              "A/B tested ad copy in 3+ languages",
+                              "Landing pages built for conversion",
+                              "WhatsApp & call tracking per campaign",
+                              "Weekly ROAS reporting & bid optimisation",
+                            ] : [
+                              "Scroll-stopping video & image creatives",
+                              "Lead form ads with instant WhatsApp follow-up",
+                              "AI-powered budget scaling on winners",
+                              "Monthly creative refresh to beat ad fatigue",
+                            ],
+                          },
+                        ].map(({ step, label, icon: StepIcon, color, borderColor, bgColor, points }) => (
+                          <div key={step} className={`relative z-10 p-6 md:p-8 border-b md:border-b-0 md:border-r ${borderColor} last:border-0`}>
+                            <div className={`w-12 h-12 rounded-xl ${bgColor} border ${borderColor} flex items-center justify-center mb-4`}>
+                              <StepIcon className={`w-6 h-6 ${color}`} />
+                            </div>
+                            <div className={`text-xs font-mono font-bold ${color} mb-1`}>STEP {step}</div>
+                            <h3 className="text-lg font-bold text-white mb-4">{label}</h3>
+                            <ul className="space-y-2.5">
+                              {points.map((p) => (
+                                <li key={p} className="flex items-start gap-2 text-sm text-white/55">
+                                  <CheckCircle2 className={`w-4 h-4 ${color} flex-shrink-0 mt-0.5`} />
+                                  {p}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div className="mt-8 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <p className="text-sm text-white/40 font-mono">Avg. time to first qualified lead: <span className="text-secondary font-bold">7 days</span></p>
+                        <Button size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" onClick={() => openModal(slug)}>
+                          Start Your Campaign <ArrowRight className="ml-2 h-3.5 w-3.5" />
+                        </Button>
+                      </div>
                     </div>
-                    <h2 className="text-3xl font-bold">Real Campaign Results</h2>
                   </div>
-                  {slug === "google-ads" ? (
-                    <GoogleAdsDashboard />
-                  ) : (
-                    <MetaAdsResults />
-                  )}
-                </div>
+
+                  {/* Real Campaign Results */}
+                  <div className="mb-16">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className={`h-10 w-10 rounded-lg bg-gradient-to-br ${iconConfig.gradient} flex items-center justify-center`}>
+                        <BarChart className="h-5 w-5 text-white" />
+                      </div>
+                      <h2 className="text-3xl font-bold">Real Campaign Results</h2>
+                    </div>
+                    {slug === "google-ads" ? <GoogleAdsDashboard /> : <MetaAdsResults />}
+                  </div>
+                </>
               )}
 
               <div className="mb-16">

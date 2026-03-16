@@ -313,13 +313,11 @@ export default function Services() {
         <Navigation />
 
         <main className="flex-1">
-          <section className="relative py-20 md:py-32 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10" />
-            <div className="absolute inset-0 opacity-10 -z-10">
-              <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
-              <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl" />
-            </div>
-            <div className="container mx-auto px-6 text-center text-white">
+          <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
+            <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
+            <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 text-center text-white relative z-10">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm font-medium mb-6 backdrop-blur-sm border border-white/20">
                 <Sparkles className="h-4 w-4" />
                 <span>Specialized in Medical Tourism & Real Estate</span>
@@ -502,8 +500,9 @@ export default function Services() {
             </div>
           </CategorySection>
 
-          <section className="py-16 md:py-24 bg-gradient-to-br from-primary to-secondary">
-            <div className="container mx-auto px-6">
+          <section className="relative py-16 md:py-24 bg-[#020817] overflow-hidden">
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 relative z-10">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="text-white">
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
