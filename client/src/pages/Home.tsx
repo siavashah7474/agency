@@ -102,24 +102,33 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="AI Automation & Digital Marketing Agency for Clinics | Webimot Agency"
-        description="Webimot Agency helps clinics & medical tourism businesses grow with AI automation — WhatsApp AI agents, SEO, Meta Ads, and Shopify eCommerce. Trusted by 50+ businesses across Germany, UK, UAE, Netherlands & 12+ countries."
-        keywords="AI automation agency, digital marketing for clinics, medical tourism marketing, hair transplant marketing agency, dental clinic marketing, cosmetic surgery marketing, WhatsApp AI agent for clinics, Shopify eCommerce automation, SEO for medical tourism, Meta Ads for clinics, Google Ads for medical tourism, lead generation for clinics, AI chatbot for clinics, clinic marketing Germany, clinic marketing Netherlands, clinic marketing UAE, clinic marketing UK, marketing agency Istanbul, marketing agency Amsterdam"
+        title="AI Agent for Clinics & Medical Tourism | AI Receptionist | Webimot Agency"
+        description="Webimot Agency builds AI agents for clinics and medical tourism businesses — an AI receptionist that replies 24/7 in Arabic, German, Russian & 12 languages, an automated SEO blog generator, and AI marketing analytics. Trusted by 50+ businesses across Germany, UK, UAE & 12+ countries."
+        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, AI receptionist medical tourism, automated SEO blog, automated SEO blog generator, AI marketing analytics, AI financial analytics, WhatsApp AI agent for clinic, AI lead automation clinic, medical tourism AI automation, hair transplant clinic AI agent, dental clinic AI receptionist, cosmetic surgery lead automation, IVF clinic marketing automation, Shopify eCommerce AI, clinic marketing Germany, clinic marketing Netherlands, clinic marketing UAE"
         canonicalUrl="https://webimotagency.com/"
         schema={{
           "@context": "https://schema.org",
-          "@type": "LocalBusiness",
+          "@type": "MedicalBusiness",
           "name": "Webimot Agency",
-          "description": "AI automation and digital marketing agency specializing in clinics, medical tourism, and eCommerce businesses.",
+          "description": "Webimot Agency is an AI automation agency building AI agents for clinics, AI receptionists for medical tourism, automated SEO blog generators, and AI marketing analytics. Serving hair transplant, dental, cosmetic surgery, and IVF clinics in Turkey and worldwide.",
           "url": "https://webimotagency.com",
           "logo": "https://webimotagency.com/logo.png",
           "address": [
             { "@type": "PostalAddress", "addressLocality": "Istanbul", "addressCountry": "TR" },
             { "@type": "PostalAddress", "addressLocality": "Amsterdam", "addressCountry": "NL" }
           ],
-          "areaServed": ["DE","GB","NL","FR","BE","SA","AE","KW","QA","US","AU","CA","TR"],
-          "serviceType": ["AI Automation","Digital Marketing","Medical Tourism Marketing","WhatsApp AI Agent","SEO","Meta Ads","Google Ads","Shopify eCommerce Automation"],
-          "sameAs": ["https://webimotagency.com"]
+          "areaServed": ["DE","GB","NL","FR","BE","SA","AE","KW","QA","US","AU","CA","TR","RU","IQ","SE","NO","DK"],
+          "knowsAbout": ["AI agent for clinics","AI receptionist medical tourism","automated SEO blog","AI marketing analytics","WhatsApp AI agent","lead qualification automation"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "AI Automation Services for Clinics",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agent for Clinics", "description": "24/7 AI receptionist for clinics — replies on WhatsApp in any language, qualifies leads, evaluates photos, books consultations automatically." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automated SEO Blog Generator", "description": "AI that writes and publishes 20-30 SEO-optimized blog posts per month for clinics and medical tourism websites — fully automated." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Marketing Analytics", "description": "Automated weekly performance reports covering SEO, Google Ads, Meta Ads, and conversion analytics — delivered to your inbox." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agent for Medical Tourism", "description": "Multilingual AI automation for medical tourism businesses targeting patients from Germany, UK, UAE, Netherlands, Saudi Arabia, and 10+ countries." } }
+            ]
+          }
         }}
       />
       <div className="min-h-screen flex flex-col">

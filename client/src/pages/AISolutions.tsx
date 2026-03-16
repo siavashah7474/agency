@@ -158,10 +158,43 @@ export default function AISolutions() {
   return (
     <>
       <SEO
-        title="AI Automation Solutions for Businesses | Webimot Agency"
-        description="Deploy AI that works 24/7 for your business. WhatsApp AI Agent answers leads instantly, SEO Blog Generator publishes content automatically, AI Marketing Analyst delivers weekly insights. No manual work — just growth."
-        keywords="AI automation solutions, WhatsApp AI agent, AI chatbot for business, SEO automation, automated lead generation, AI marketing analyst, business automation software, Shopify AI automation, eCommerce AI, marketing automation tool, AI for small business, automated content creation, AI lead qualification, multilingual AI agent"
+        title="AI Agent for Clinics | AI Receptionist & Automated SEO Blog | Webimot Agency"
+        description="Webimot Agency's AI solutions: AI agent for clinics that replies 24/7 on WhatsApp, automated SEO blog generator that publishes itself, and AI marketing analytics with weekly reports. Built for hair transplant, dental, cosmetic, IVF, and medical tourism businesses."
+        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, automated SEO blog generator, AI marketing analytics, AI financial analytics for agencies, WhatsApp AI agent for hair transplant clinic, WhatsApp AI agent for dental clinic, AI chatbot for cosmetic surgery, AI lead qualification clinic, automated content creation for clinics, multilingual AI agent clinic, AI automation for medical tourism"
         canonicalUrl="https://webimotagency.com/ai-solutions"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "AI Agent for Clinics & Medical Tourism — Webimot Agency",
+          "description": "AI agent and AI receptionist solutions for clinics and medical tourism businesses. Includes WhatsApp AI agent, automated SEO blog generator, and AI marketing analytics.",
+          "url": "https://webimotagency.com/ai-solutions",
+          "mainEntity": [
+            {
+              "@type": "SoftwareApplication",
+              "name": "AI Agent for Clinics — WhatsApp AI Receptionist",
+              "applicationCategory": "BusinessApplication",
+              "description": "A 24/7 AI receptionist for clinics on WhatsApp. Handles patient inquiries, qualifies leads, evaluates photos with Vision AI, and books consultations automatically in Arabic, German, English, Russian, Dutch, French, and 40+ languages.",
+              "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" },
+              "provider": { "@type": "Organization", "name": "Webimot Agency" }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Automated SEO Blog Generator for Clinics",
+              "applicationCategory": "BusinessApplication",
+              "description": "AI-powered automated SEO blog generator. Writes, optimizes, and publishes 20-30 SEO articles per month for clinics and medical tourism websites with zero manual effort.",
+              "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" },
+              "provider": { "@type": "Organization", "name": "Webimot Agency" }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "AI Marketing Analytics — Automated Weekly Reports",
+              "applicationCategory": "BusinessApplication",
+              "description": "Automated AI marketing analytics delivering weekly SEO, Google Ads, Meta Ads, and conversion reports. Saves clinic owners 10+ hours of manual reporting per week.",
+              "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" },
+              "provider": { "@type": "Organization", "name": "Webimot Agency" }
+            }
+          ]
+        }}
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
