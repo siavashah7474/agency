@@ -15,13 +15,21 @@ export default function PrivacyPolicy() {
       <div className="min-h-screen flex flex-col">
         <Navigation />
 
-        <main className="flex-1 py-16">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <Breadcrumbs items={[{ label: "Privacy Policy" }]} />
+        <main className="flex-1">
+          <section className="relative py-16 md:py-24 overflow-hidden bg-[#020817]">
+            <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
+            <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 max-w-4xl relative z-10">
+              <Breadcrumbs items={[{ label: "Privacy Policy" }]} />
+              <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white">
+                Privacy Policy
+              </h1>
+            </div>
+          </section>
 
-            <h1 className="text-3xl md:text-4xl font-bold mb-8">
-              Privacy Policy
-            </h1>
+          <div className="py-12">
+          <div className="container mx-auto px-6 max-w-4xl">
 
             <div className="prose prose-gray dark:prose-invert max-w-none">
               <p className="text-muted-foreground mb-6">
@@ -197,6 +205,7 @@ export default function PrivacyPolicy() {
                 </p>
               </section>
             </div>
+          </div>
           </div>
         </main>
 

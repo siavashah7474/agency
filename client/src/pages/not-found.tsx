@@ -16,17 +16,20 @@ export default function NotFound() {
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
-        <main className="flex-1 flex items-center justify-center bg-gray-50 p-4">
-          <Card className="w-full max-w-md mx-4">
+        <main className="flex-1 flex items-center justify-center bg-[#020817] p-4 relative overflow-hidden">
+          <div className="absolute inset-0 neural-grid pointer-events-none" />
+          <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-primary/20 rounded-full blur-3xl animate-float-orb pointer-events-none" />
+          <div className="absolute bottom-1/4 left-1/6 w-[300px] h-[300px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
+          <Card className="w-full max-w-md mx-4 relative z-10 bg-white/4 border border-white/8">
             <CardContent className="pt-6">
               <div className="flex mb-4 gap-2">
-                <AlertCircle className="h-8 w-8 text-red-500" />
-                <h1 className="text-2xl font-bold text-gray-900">
+                <AlertCircle className="h-8 w-8 text-red-400" />
+                <h1 className="text-2xl font-bold text-white">
                   404 Page Not Found
                 </h1>
               </div>
 
-              <p className="mt-4 text-sm text-gray-600 mb-6">
+              <p className="mt-4 text-sm text-white/70 mb-6">
                 The page you're looking for doesn't exist or has been moved.
                 Please check the URL or return to our homepage.
               </p>

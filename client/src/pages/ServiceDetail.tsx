@@ -322,13 +322,12 @@ export default function ServiceDetail() {
         <Navigation />
 
         <main className="flex-1">
-          <section className="relative py-20 md:py-32 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary -z-10" />
-            <div className="absolute inset-0 opacity-10 -z-10">
-              <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
-              <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl" />
-            </div>
-            <div className="container mx-auto px-6 text-white">
+          <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
+            <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
+            <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
+            <div className="absolute top-2/3 right-1/6 w-64 h-64 bg-accent/10 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 text-white relative z-10">
               <Breadcrumbs
                 items={[
                   { label: "Services", href: "/services" },
@@ -747,8 +746,9 @@ export default function ServiceDetail() {
             </div>
           </section>
 
-          <section className="py-16 md:py-24 bg-gradient-to-br from-primary to-secondary">
-            <div className="container mx-auto px-6 text-center text-white">
+          <section className="relative py-16 md:py-24 bg-[#020817] overflow-hidden">
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 text-center text-white relative z-10">
               <div className="h-16 w-16 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-6 backdrop-blur-sm">
                 <Icon className="h-8 w-8 text-white" />
               </div>
