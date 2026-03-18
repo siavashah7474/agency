@@ -15,18 +15,15 @@ function sanitizeInput(input: string): string {
 const LEAD_NOTIFICATION_EMAIL =
   process.env.LEAD_NOTIFICATION_EMAIL || "webimot.info@gmail.com";
 
-const smtpHost = process.env.SMTP_HOST;
-const smtpPort = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : 587;
-const smtpUser = process.env.SMTP_USER;
-const smtpPass = process.env.SMTP_PASS;
-const smtpSecure = process.env.SMTP_SECURE === "true";
+const smtpUser = process.env.GMAIL_USER || process.env.SMTP_USER;
+const smtpPass = process.env.GMAIL_APP_PASSWORD || process.env.SMTP_PASS;
 
 const transporter =
-  smtpHost && smtpUser && smtpPass
+  smtpUser && smtpPass
     ? nodemailer.createTransport({
-        host: smtpHost,
-        port: smtpPort,
-        secure: smtpSecure,
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false,
         auth: { user: smtpUser, pass: smtpPass },
       })
     : null;
