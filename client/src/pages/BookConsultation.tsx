@@ -140,7 +140,7 @@ export default function BookConsultation() {
                         with all the details.
                       </p>
                       <a
-                        href="https://calendly.com/webimot/strategy-call"
+                        href="https://wa.me/31628753175?text=Hi%2C%20I%20want%20to%20book%20a%20free%20strategy%20call"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block"

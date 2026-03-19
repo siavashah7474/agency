@@ -44,6 +44,16 @@ async function sendLeadEmail(subject: string, html: string) {
 const app = express();
 
 // CSRF origin check
+// Security headers
+app.use((_req, res, next) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+  res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+  next();
+});
+
+// CSRF: require and validate Origin header on all mutating requests
 app.use((req, res, next) => {
   if (["POST", "PUT", "DELETE", "PATCH"].includes(req.method)) {
     const origin = req.headers.origin;
@@ -53,7 +63,7 @@ app.use((req, res, next) => {
     )
       .split(",")
       .map((o) => o.trim());
-    if (origin && !allowedOrigins.includes(origin)) {
+    if (!origin || !allowedOrigins.includes(origin)) {
       return res.status(403).json({ message: "Forbidden" });
     }
   }

@@ -57,9 +57,9 @@ export default function ExitIntentPopup() {
             {t("exitPopup.title")}
           </h2>
 
-          <p className="text-muted-foreground mb-6"
-            dangerouslySetInnerHTML={{ __html: t("exitPopup.desc") }}
-          />
+          <p className="text-muted-foreground mb-6">
+            Get a <strong>free marketing audit</strong> and discover how we can help you generate more leads. No commitment required.
+          </p>
 
           <div className="space-y-3">
             <Button

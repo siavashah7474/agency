@@ -156,10 +156,9 @@ export default function Home() {
                     {t("home.heroTitle1")}{" "}
                     <span className="text-yellow-300">{t("home.heroTitle2")}</span>
                   </h1>
-                  <p
-                    className="text-lg md:text-xl mb-8 text-white/75"
-                    dangerouslySetInnerHTML={{ __html: t("home.heroSubtitle") }}
-                  />
+                  <p className="text-lg md:text-xl mb-8 text-white/75">
+                    We deploy AI that replies to every inquiry, qualifies leads, and books meetings automatically — 24/7, in any language. Most clients close <strong>3× more deals</strong> within 60 days.
+                  </p>
                   <div className="flex flex-col sm:flex-row gap-4 mb-8">
                     <Button
                       data-testid="button-hero-strategy-call"

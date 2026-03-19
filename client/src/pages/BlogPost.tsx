@@ -233,29 +233,38 @@ export default function BlogPost() {
   );
 }
 
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+
 function formatContent(content: string): string {
   return content
     .split('\n')
     .map(line => {
       if (line.startsWith('## ')) {
-        return `<h2>${line.slice(3)}</h2>`;
+        return `<h2>${escapeHtml(line.slice(3))}</h2>`;
       }
       if (line.startsWith('### ')) {
-        return `<h3>${line.slice(4)}</h3>`;
+        return `<h3>${escapeHtml(line.slice(4))}</h3>`;
       }
       if (line.startsWith('**') && line.endsWith('**')) {
-        return `<p><strong>${line.slice(2, -2)}</strong></p>`;
+        return `<p><strong>${escapeHtml(line.slice(2, -2))}</strong></p>`;
       }
       if (line.startsWith('- ')) {
-        return `<li>${formatInlineMarkdown(line.slice(2))}</li>`;
+        return `<li>${formatInlineMarkdown(escapeHtml(line.slice(2)))}</li>`;
       }
       if (line.startsWith('| ')) {
-        return line;
+        return escapeHtml(line);
       }
       if (line.trim() === '') {
         return '';
       }
-      return `<p>${formatInlineMarkdown(line)}</p>`;
+      return `<p>${formatInlineMarkdown(escapeHtml(line))}</p>`;
     })
     .join('\n')
     .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`);
