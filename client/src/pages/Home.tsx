@@ -38,7 +38,7 @@ import {
   RotateCcw,
   ShoppingBag,
 } from "lucide-react";
-import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.png";
+import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.webp";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 

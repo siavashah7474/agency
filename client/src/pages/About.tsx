@@ -7,7 +7,7 @@ import {
   Target, Users, Zap, Globe, Award, TrendingUp,
   Stethoscope, Building, ShoppingCart, ArrowRight, Heart, Sparkles,
 } from "lucide-react";
-import teamImage from "@assets/generated_images/about_page_team_photo.png";
+import teamImage from "@assets/generated_images/about_page_team_photo.webp";
 import { useTranslation } from "react-i18next";
 
 export default function About() {

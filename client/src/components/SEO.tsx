@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 interface SEOProps {
   title: string;
@@ -17,75 +17,44 @@ export default function SEO({
   description,
   keywords,
   canonicalUrl,
-  ogImage = "/og-image.png",
+  ogImage = "https://webimotagency.com/og-image.png",
   ogType = "website",
   articlePublishedTime,
   articleAuthor,
   schema,
 }: SEOProps) {
-  useEffect(() => {
-    const brandedTitle = title.includes("Webimot") ? title : `${title} | Webimot Agency`;
-    document.title = brandedTitle;
+  const brandedTitle = title.includes("Webimot") ? title : `${title} | Webimot Agency`;
 
-    const setMeta = (name: string, content: string, isProperty = false) => {
-      const attr = isProperty ? "property" : "name";
-      let meta = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement;
-      if (!meta) {
-        meta = document.createElement("meta");
-        meta.setAttribute(attr, name);
-        document.head.appendChild(meta);
-      }
-      meta.setAttribute("content", content);
-    };
+  return (
+    <Helmet>
+      <title>{brandedTitle}</title>
+      <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
+      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 
-    setMeta("description", description);
-    if (keywords) setMeta("keywords", keywords);
+      {/* Open Graph */}
+      <meta property="og:title" content={brandedTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:site_name" content="Webimot Agency" />
+      <meta property="og:locale" content="en_US" />
+      {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
 
-    setMeta("og:title", brandedTitle, true);
-    setMeta("og:description", description, true);
-    setMeta("og:type", ogType, true);
-    setMeta("og:image", ogImage, true);
-    setMeta("og:site_name", "Webimot", true);
-    setMeta("og:locale", "en_US", true);
-    if (canonicalUrl) setMeta("og:url", canonicalUrl, true);
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={brandedTitle} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
 
-    setMeta("twitter:card", "summary_large_image");
-    setMeta("twitter:title", brandedTitle);
-    setMeta("twitter:description", description);
-    setMeta("twitter:image", ogImage);
+      {/* Article specific */}
+      {articlePublishedTime && <meta property="article:published_time" content={articlePublishedTime} />}
+      {articleAuthor && <meta property="article:author" content={articleAuthor} />}
 
-    if (articlePublishedTime) {
-      setMeta("article:published_time", articlePublishedTime, true);
-    }
-    if (articleAuthor) {
-      setMeta("article:author", articleAuthor, true);
-    }
-
-    if (canonicalUrl) {
-      let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-      if (!canonical) {
-        canonical = document.createElement("link");
-        canonical.setAttribute("rel", "canonical");
-        document.head.appendChild(canonical);
-      }
-      canonical.setAttribute("href", canonicalUrl);
-    }
-
-    // Inject page-specific JSON-LD schema
-    if (schema) {
-      const id = "page-schema-ld";
-      document.getElementById(id)?.remove();
-      const script = document.createElement("script");
-      script.type = "application/ld+json";
-      script.id = id;
-      script.text = JSON.stringify(schema);
-      document.head.appendChild(script);
-    }
-
-    return () => {
-      document.getElementById("page-schema-ld")?.remove();
-    };
-  }, [title, description, keywords, canonicalUrl, ogImage, ogType, articlePublishedTime, articleAuthor, schema]);
-
-  return null;
+      {/* JSON-LD Schema */}
+      {schema && (
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      )}
+    </Helmet>
+  );
 }

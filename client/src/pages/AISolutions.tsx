@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Check, ArrowRight, TrendingUp, TrendingDown, AlertTriangle, Clock, CheckCircle2, FileText, BarChart2, Globe } from "lucide-react";
 import SEO from "@/components/SEO";
-import whatsappImage from "@assets/generated_images/whatsapp_ai_agent_chat.png";
+import whatsappImage from "@assets/generated_images/whatsapp_ai_agent_chat.webp";
 
 function SeoBlogDashboard() {
   const articles = [

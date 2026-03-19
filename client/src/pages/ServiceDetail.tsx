@@ -192,9 +192,9 @@ function GoogleAdsDashboard() {
 
 function MetaAdsResults() {
   const screenshots = [
-    { src: "/1.png", alt: "Meta Ads campaign dashboard", label: "Campaign Dashboard", sub: "Reach, clicks, and lead volume" },
-    { src: "/2.png", alt: "Meta Ads ROAS and conversions", label: "ROAS & Conversions", sub: "Return on ad spend and booking rate" },
-    { src: "/3.png", alt: "Meta Ads audience and targeting", label: "Audience & Targeting", sub: "Demographic breakdown and ad sets" },
+    { src: "/1.webp", alt: "Meta Ads campaign dashboard", label: "Campaign Dashboard", sub: "Reach, clicks, and lead volume" },
+    { src: "/2.webp", alt: "Meta Ads ROAS and conversions", label: "ROAS & Conversions", sub: "Return on ad spend and booking rate" },
+    { src: "/3.webp", alt: "Meta Ads audience and targeting", label: "Audience & Targeting", sub: "Demographic breakdown and ad sets" },
   ];
 
   return (
