@@ -3,39 +3,31 @@ Allow: /
 Disallow: /api/
 
 # ===== AI SEARCH CRAWLERS =====
-# Allow OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 
-# Allow Anthropic / Claude
 User-agent: ClaudeBot
 Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
-# Allow Perplexity
 User-agent: PerplexityBot
 Allow: /
 
-# Allow Google AI (Bard / Gemini extended crawl)
 User-agent: Google-Extended
 Allow: /
 
-# Allow Meta AI
 User-agent: FacebookBot
 Allow: /
 
-# Allow Common Crawl (used to train LLMs)
 User-agent: CCBot
 Allow: /
 
-# Allow Bing / Copilot
 User-agent: Bingbot
 Allow: /
 
-# Allow you.com AI
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://webimotagency.com/sitemap.xml
-Sitemap: https://webimotagency.com/llms.txt
+Sitemap: https://www.webimotagency.com/sitemap.xml
