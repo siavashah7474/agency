@@ -30,4 +30,4 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://www.webimotagency.com/sitemap.xml
+Sitemap: https://webimotagency.com/sitemap.xml

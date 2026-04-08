@@ -42,8 +42,14 @@ export default function Contact() {
       });
 
       if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || "Failed to send message");
+        let errorMessage = "Failed to send message";
+        try {
+          const error = await response.json();
+          errorMessage = error.message || errorMessage;
+        } catch {
+          // non-JSON error body (e.g. 502 HTML) — use default message
+        }
+        throw new Error(errorMessage);
       }
 
       // Track form submission in Google Analytics
@@ -79,7 +85,7 @@ export default function Contact() {
       <div className="min-h-screen flex flex-col">
         <Navigation />
 
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
             <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
             <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
@@ -266,7 +272,6 @@ export default function Contact() {
                             Amsterdam Office
                           </CardTitle>
                           <p className="text-muted-foreground text-sm">
-                            <br />
                             Amsterdam
                             <br />
                             Netherlands

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "wouter";
 
 // Google Analytics Measurement ID
@@ -59,19 +59,19 @@ export function trackEvent(
   });
 }
 
-// Component to initialize and track page views
+// Component to track page views on route change.
+// GA is already initialized by the inline script in index.html — this component
+// only fires trackPageView for subsequent SPA navigations (skips the first render
+// to avoid double-counting the initial pageview already fired by index.html).
 export default function GoogleAnalytics() {
   const [location] = useLocation();
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
-    // Initialize GA on mount
-    if (!(window as any).gtag) {
-      initializeGA();
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
     }
-  }, []);
-
-  useEffect(() => {
-    // Track page views on route change
     if ((window as any).gtag) {
       trackPageView(location);
     }

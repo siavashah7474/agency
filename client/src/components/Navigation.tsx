@@ -21,14 +21,26 @@ export default function Navigation() {
 
   const currentLang = LANGUAGES.find((l) => l.code === i18n.language) ?? LANGUAGES[0];
 
+  // Close mobile menu on route change (e.g. browser back button)
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location]);
+
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (langRef.current && !langRef.current.contains(e.target as Node)) {
         setLangMenuOpen(false);
       }
     }
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setLangMenuOpen(false);
+    }
     document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   const navLinks = [
@@ -42,6 +54,13 @@ export default function Navigation() {
   ];
 
   return (
+    <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
     <header className="sticky top-0 z-50 w-full border-b border-secondary/10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" style={{ boxShadow: '0 1px 0 0 hsl(221 91% 60% / 0.08)' }}>
       <div className="container mx-auto px-6">
         <div className="flex h-16 items-center justify-between gap-4">
@@ -74,16 +93,20 @@ export default function Navigation() {
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
                 className="flex items-center gap-1 px-2 py-1.5 rounded-md text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted transition-colors"
                 aria-label="Change language"
+                aria-haspopup="listbox"
+                aria-expanded={langMenuOpen}
               >
                 <Globe className="h-4 w-4" />
                 <span>{currentLang.label}</span>
                 <ChevronDown className="h-3 w-3" />
               </button>
               {langMenuOpen && (
-                <div className="absolute right-0 top-full mt-1 w-36 rounded-md border bg-background shadow-lg z-50">
+                <div role="listbox" aria-label="Select language" className="absolute right-0 top-full mt-1 w-36 rounded-md border bg-background shadow-lg z-50">
                   {LANGUAGES.map((lang) => (
                     <button
                       key={lang.code}
+                      role="option"
+                      aria-selected={i18n.language === lang.code}
                       onClick={() => {
                         i18n.changeLanguage(lang.code);
                         setLangMenuOpen(false);
@@ -174,5 +197,6 @@ export default function Navigation() {
         </div>
       )}
     </header>
+    </>
   );
 }

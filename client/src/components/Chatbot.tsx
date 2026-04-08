@@ -22,6 +22,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [answeredQuestions, setAnsweredQuestions] = useState<Set<string>>(new Set());
   const [isTyping, setIsTyping] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
   const [showPulse, setShowPulse] = useState(true);
@@ -46,6 +47,11 @@ export default function Chatbot() {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  // Clear all pending timeouts when the component unmounts
+  useEffect(() => {
+    return () => clearAllTimeouts();
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -117,6 +123,8 @@ export default function Chatbot() {
       setSelectedTags(prev => [...prev, ...selectedOption.tags!]);
     }
 
+    setAnsweredQuestions(prev => { const next = new Set(prev); next.add(question.id); return next; });
+
     const nextIndex = currentQuestionIndex + 1;
     addTimeout(() => {
       askQuestion(nextIndex);
@@ -169,6 +177,7 @@ export default function Chatbot() {
     setMessages([]);
     setCurrentQuestionIndex(0);
     setSelectedTags([]);
+    setAnsweredQuestions(new Set());
     setHasStarted(false);
     setIsTyping(false);
   };
@@ -283,18 +292,23 @@ export default function Chatbot() {
 
                           {message.options && (
                             <div className="pl-9 space-y-2 mt-2">
-                              {message.options.map((option) => (
-                                <Button
-                                  key={option.value}
-                                  variant="outline"
-                                  size="sm"
-                                  className="w-full justify-start text-left h-auto py-2 px-3"
-                                  onClick={() => handleOptionSelect(option.value)}
-                                  data-testid={`button-option-${option.value}`}
-                                >
-                                  {option.label}
-                                </Button>
-                              ))}
+                              {message.options.map((option) => {
+                                const questionId = message.id.startsWith("q-") ? message.id.slice(2) : "";
+                                const isAnswered = answeredQuestions.has(questionId);
+                                return (
+                                  <Button
+                                    key={option.value}
+                                    variant="outline"
+                                    size="sm"
+                                    className="w-full justify-start text-left h-auto py-2 px-3"
+                                    onClick={() => !isAnswered && handleOptionSelect(option.value)}
+                                    disabled={isAnswered}
+                                    data-testid={`button-option-${option.value}`}
+                                  >
+                                    {option.label}
+                                  </Button>
+                                );
+                              })}
                             </div>
                           )}
 
@@ -372,6 +386,7 @@ export default function Chatbot() {
         }`}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
+        aria-label={isOpen ? "Close chat" : "Open chat"}
         data-testid="button-toggle-chatbot"
       >
         {isOpen ? (

@@ -1,4 +1,4 @@
-import { useRoute, Link } from "wouter";
+import { useRoute, Link, useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -11,6 +11,7 @@ const WHATSAPP_LINK = "https://wa.me/31628753175";
 
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
+  const [, navigate] = useLocation();
   const slug = params?.slug;
   
   const post = blogPosts.find(p => p.slug === slug);
@@ -48,7 +49,7 @@ export default function BlogPost() {
       <div className="min-h-screen flex flex-col">
         <Navigation />
         
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           <section className="relative py-16 md:py-24 overflow-hidden bg-[#020817]">
             <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
             <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
@@ -178,7 +179,12 @@ export default function BlogPost() {
                         <h3 className="font-bold text-lg mb-4">Categories</h3>
                         <div className="flex flex-wrap gap-2">
                           {Array.from(new Set(blogPosts.map(p => p.category))).map((category) => (
-                            <Badge key={category} variant="outline" className="cursor-pointer hover:bg-primary/10">
+                            <Badge
+                              key={category}
+                              variant={post.category === category ? "default" : "outline"}
+                              className="cursor-pointer hover:bg-primary/10"
+                              onClick={() => navigate(`/blog?category=${encodeURIComponent(category)}`)}
+                            >
                               {category}
                             </Badge>
                           ))}
@@ -259,7 +265,10 @@ function formatContent(content: string): string {
         return `<li>${formatInlineMarkdown(escapeHtml(line.slice(2)))}</li>`;
       }
       if (line.startsWith('| ')) {
-        return escapeHtml(line);
+        // Skip separator rows (| --- | --- |)
+        if (/^\|[\s\-:|]+\|$/.test(line.trim())) return '';
+        const cells = line.split('|').filter(c => c.trim() !== '').map(c => `<td>${escapeHtml(c.trim())}</td>`).join('');
+        return `<tr>${cells}</tr>`;
       }
       if (line.trim() === '') {
         return '';
@@ -267,7 +276,8 @@ function formatContent(content: string): string {
       return `<p>${formatInlineMarkdown(escapeHtml(line))}</p>`;
     })
     .join('\n')
-    .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`);
+    .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`)
+    .replace(/(<tr>.*<\/tr>\n?)+/g, (match) => `<table class="w-full border-collapse my-4">${match}</table>`);
 }
 
 function formatInlineMarkdown(text: string): string {

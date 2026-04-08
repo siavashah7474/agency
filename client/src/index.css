@@ -335,3 +335,11 @@
     width: max-content;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker,
+  .animate-float-orb,
+  .animate-float-orb-2 {
+    animation: none;
+  }
+}

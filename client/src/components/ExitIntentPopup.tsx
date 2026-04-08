@@ -10,20 +10,37 @@ export default function ExitIntentPopup() {
   const { openModal } = useBookingModal();
   const { t } = useTranslation();
 
-  const handleMouseLeave = useCallback((e: MouseEvent) => {
-    if (e.clientY <= 0 && !hasShown) {
-      const dismissed = sessionStorage.getItem("exitPopupDismissed");
-      if (!dismissed) {
-        setIsVisible(true);
-        setHasShown(true);
-      }
+  const showPopup = useCallback(() => {
+    if (hasShown) return;
+    const dismissed = sessionStorage.getItem("exitPopupDismissed");
+    if (!dismissed) {
+      setIsVisible(true);
+      setHasShown(true);
     }
   }, [hasShown]);
+
+  const handleMouseLeave = useCallback((e: MouseEvent) => {
+    if (e.clientY <= 0) showPopup();
+  }, [showPopup]);
 
   useEffect(() => {
     document.addEventListener("mouseleave", handleMouseLeave);
     return () => document.removeEventListener("mouseleave", handleMouseLeave);
   }, [handleMouseLeave]);
+
+  // On touch devices the mouseleave event never fires — trigger instead when
+  // the user rapidly scrolls back toward the top (common "about to leave" signal).
+  useEffect(() => {
+    if (!("ontouchstart" in window)) return;
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (lastScrollY > 300 && currentScrollY < 50) showPopup();
+      lastScrollY = currentScrollY;
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [showPopup]);
 
   const handleClose = () => {
     setIsVisible(false);

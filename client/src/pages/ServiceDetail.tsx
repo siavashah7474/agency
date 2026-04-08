@@ -219,7 +219,26 @@ function MetaAdsResults() {
 export default function ServiceDetail() {
   const [, params] = useRoute("/services/:slug");
   const slug = params?.slug || "whatsapp-ai-agent";
-  const service = serviceData[slug] || serviceData["whatsapp-ai-agent"];
+
+  if (slug && !serviceData[slug]) {
+    return (
+      <div className="min-h-screen flex flex-col">
+        <Navigation />
+        <main className="flex-1 flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
+            <p className="text-muted-foreground mb-6">The service you're looking for doesn't exist.</p>
+            <Link href="/services">
+              <Button>View All Services</Button>
+            </Link>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  const service = serviceData[slug];
   const iconConfig = serviceIcons[slug] || serviceIcons["whatsapp-ai-agent"];
   const Icon = iconConfig.icon;
   const { openModal } = useBookingModal();
@@ -321,7 +340,7 @@ export default function ServiceDetail() {
       <div className="min-h-screen flex flex-col">
         <Navigation />
 
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
             <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
             <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />

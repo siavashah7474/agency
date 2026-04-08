@@ -81,6 +81,8 @@ export default function Home() {
   const ecommerceFeatures = t("home.ecommerceFeatures", { returnObjects: true }) as Array<{ title: string; description: string }>;
   const ecommerceStats = t("home.ecommerceStats", { returnObjects: true }) as Array<{ value: string; label: string }>;
 
+  // Use a stable dep key so this only re-runs when FAQ content actually changes
+  const faqsKey = JSON.stringify(faqs);
   useEffect(() => {
     const schema = {
       "@context": "https://schema.org",
@@ -91,13 +93,16 @@ export default function Home() {
         acceptedAnswer: { "@type": "Answer", text: faq.answer },
       })),
     };
+    const existing = document.getElementById("faq-schema");
+    if (existing) existing.remove();
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.id = "faq-schema";
     script.text = JSON.stringify(schema);
     document.head.appendChild(script);
     return () => { document.getElementById("faq-schema")?.remove(); };
-  }, [faqs]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [faqsKey]);
 
   return (
     <>
@@ -134,7 +139,7 @@ export default function Home() {
       <div className="min-h-screen flex flex-col">
         <Navigation />
 
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           {/* Hero */}
           <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
             <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
@@ -156,9 +161,7 @@ export default function Home() {
                     {t("home.heroTitle1")}{" "}
                     <span className="text-yellow-300">{t("home.heroTitle2")}</span>
                   </h1>
-                  <p className="text-lg md:text-xl mb-8 text-white/75">
-                    We deploy AI that replies to every inquiry, qualifies leads, and books meetings automatically — 24/7, in any language. Most clients close <strong>3× more deals</strong> within 60 days.
-                  </p>
+                  <p className="text-lg md:text-xl mb-8 text-white/75" dangerouslySetInnerHTML={{ __html: t("home.heroSubtitle") }} />
                   <div className="flex flex-col sm:flex-row gap-4 mb-8">
                     <Button
                       data-testid="button-hero-strategy-call"

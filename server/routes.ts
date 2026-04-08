@@ -108,8 +108,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       const timestamp = new Date().toISOString();
 
-      // Send booking lead email
-      await sendLeadEmail(
+      // Fire email in background — don't block the response or lose the lead
+      // if SMTP is temporarily unavailable.
+      sendLeadEmail(
         `New Booking Request from ${sanitizedName}`,
         `
           <h2>New Booking Request</h2>
@@ -119,7 +120,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
           <p><strong>Service:</strong> ${sanitizedService}</p>
           <p><strong>Received at:</strong> ${timestamp}</p>
         `
-      );
+      ).catch((err) => {
+        console.error("Failed to send booking lead email:", err);
+      });
 
       // TODO: Implement actual storage
       // await storage.insertBooking({ name: sanitizedName, email: sanitizedEmail, phone: sanitizedPhone, service: sanitizedService });
@@ -189,8 +192,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       const timestamp = new Date().toISOString();
 
-      // Send contact lead email
-      await sendLeadEmail(
+      // Fire email in background — don't block the response or lose the lead
+      // if SMTP is temporarily unavailable.
+      sendLeadEmail(
         `New Contact Message from ${sanitizedName}`,
         `
           <h2>New Contact Message</h2>
@@ -201,7 +205,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
           <p>${sanitizedMessage}</p>
           <p><strong>Received at:</strong> ${timestamp}</p>
         `
-      );
+      ).catch((err) => {
+        console.error("Failed to send contact lead email:", err);
+      });
 
       // TODO: Implement actual storage
       // await storage.insertContact({ name: sanitizedName, email: sanitizedEmail, phone: sanitizedPhone, message: sanitizedMessage });

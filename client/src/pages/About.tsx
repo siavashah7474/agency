@@ -33,7 +33,7 @@ export default function About() {
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
 
           {/* Hero */}
           <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
@@ -189,7 +189,7 @@ export default function About() {
             <div className="container mx-auto px-6 relative z-10">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <img src={teamImage} alt="Webimot Team" className="rounded-xl shadow-2xl border border-white/10" />
+                  <img src={teamImage} alt="Webimot Team" loading="lazy" className="rounded-xl shadow-2xl border border-white/10" />
                 </div>
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">{t("about.teamTitle")}</h2>

@@ -86,7 +86,14 @@ export default function BookingModal({
       });
 
       if (!response.ok) {
-        throw new Error("Failed to submit booking");
+        let errorMessage = "Failed to submit booking";
+        try {
+          const error = await response.json();
+          errorMessage = error.message || errorMessage;
+        } catch {
+          // non-JSON error body — use default message
+        }
+        throw new Error(errorMessage);
       }
 
       // Track form submission in Google Analytics
@@ -194,7 +201,7 @@ export default function BookingModal({
                   <FormLabel>Service of Interest *</FormLabel>
                   <Select
                     onValueChange={field.onChange}
-                    defaultValue={field.value}
+                    value={field.value}
                     disabled={isSubmitting}
                   >
                     <FormControl>

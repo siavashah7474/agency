@@ -41,7 +41,7 @@ export default function CaseStudyDetail() {
       <div className="min-h-screen flex flex-col">
         <Navigation />
         
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           <section className="relative py-20 md:py-28 overflow-hidden bg-[#020817]">
             <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
             <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
