@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Check, ArrowRight, TrendingUp, TrendingDown, AlertTriangle, Clock, CheckCircle2, FileText, BarChart2, Globe } from "lucide-react";
+import { Check, ArrowRight, Clock, CheckCircle2, FileText, Globe, Mail, Users, CalendarCheck, AlertCircle, RefreshCw } from "lucide-react";
 import SEO from "@/components/SEO";
 import whatsappImage from "@assets/generated_images/whatsapp_ai_agent_chat.webp";
 
@@ -77,21 +77,13 @@ function SeoBlogDashboard() {
   );
 }
 
-function MarketingAnalystDashboard() {
-  const bars = [
-    { day: "Mon", leads: 38, height: 60 },
-    { day: "Tue", leads: 52, height: 82 },
-    { day: "Wed", leads: 45, height: 71 },
-    { day: "Thu", leads: 61, height: 96 },
-    { day: "Fri", leads: 57, height: 90 },
-    { day: "Sat", leads: 29, height: 46 },
-    { day: "Sun", leads: 22, height: 35 },
-  ];
-
-  const recommendations = [
-    { icon: TrendingUp, color: "text-emerald-600 bg-emerald-50", text: "Scale Instagram Reels — 3.2x lower CPL vs feed ads" },
-    { icon: TrendingDown, color: "text-red-500 bg-red-50", text: "Pause Ad Set #4 — CPL 78% above target this week" },
-    { icon: AlertTriangle, color: "text-amber-600 bg-amber-50", text: "3 blog pages lost rankings — content refresh needed" },
+function OpsAutopilotDashboard() {
+  const tasks = [
+    { icon: Mail, color: "text-blue-600 bg-blue-50", label: "Invoice #1042 payment reminder", status: "sent", time: "09:00" },
+    { icon: Users, color: "text-purple-600 bg-purple-50", label: "HR: onboarding checklist sent to new hire", status: "done", time: "09:15" },
+    { icon: CalendarCheck, color: "text-emerald-600 bg-emerald-50", label: "Weekly planning agenda prepared & shared", status: "done", time: "08:55" },
+    { icon: AlertCircle, color: "text-amber-600 bg-amber-50", label: "Overdue task escalated → Maria (Manager)", status: "escalated", time: "10:02" },
+    { icon: RefreshCw, color: "text-indigo-600 bg-indigo-50", label: "Monthly contract renewal reminder queued", status: "scheduled", time: "14:00" },
   ];
 
   return (
@@ -99,56 +91,55 @@ function MarketingAnalystDashboard() {
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/40">
         <div className="flex items-center gap-2">
-          <BarChart2 className="w-4 h-4 text-primary" />
-          <span className="font-semibold text-sm">Weekly Performance Report</span>
+          <RefreshCw className="w-4 h-4 text-primary" />
+          <span className="font-semibold text-sm">Ops Autopilot</span>
         </div>
-        <span className="text-xs text-muted-foreground">Mar 3 – Mar 9, 2026 · ✉ Sent</span>
+        <span className="flex items-center gap-1.5 text-xs text-emerald-600 font-medium bg-emerald-50 px-2 py-0.5 rounded-full">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          Live · 12 workflows running
+        </span>
       </div>
 
-      {/* KPI row */}
-      <div className="grid grid-cols-4 divide-x border-b">
+      {/* Stats row */}
+      <div className="grid grid-cols-3 divide-x border-b">
         {[
-          { label: "Total Leads", value: "304", up: true },
-          { label: "Conv. Rate", value: "62%", up: true },
-          { label: "Cost / Lead", value: "€4.20", up: false },
-          { label: "ROAS", value: "8.5×", up: true },
-        ].map((k) => (
-          <div key={k.label} className="px-3 py-3 text-center">
-            <div className={`text-base font-bold ${k.up ? "text-emerald-600" : "text-red-500"}`}>{k.value}</div>
-            <div className="text-xs text-muted-foreground leading-tight mt-0.5">{k.label}</div>
+          { label: "Tasks Today", value: "34" },
+          { label: "Hours Saved", value: "6.2h" },
+          { label: "On-Time Rate", value: "100%" },
+        ].map((s) => (
+          <div key={s.label} className="px-4 py-3 text-center">
+            <div className="text-lg font-bold text-primary">{s.value}</div>
+            <div className="text-xs text-muted-foreground">{s.label}</div>
           </div>
         ))}
       </div>
 
-      {/* Bar chart */}
-      <div className="px-4 py-3 border-b">
-        <p className="text-xs font-medium text-muted-foreground mb-2">Daily Leads This Week</p>
-        <div className="flex items-end gap-1.5 h-20">
-          {bars.map((b) => (
-            <div key={b.day} className="flex-1 flex flex-col items-center gap-1">
-              <div
-                className="w-full rounded-sm bg-primary/80"
-                style={{ height: `${b.height}%` }}
-              />
-              <span className="text-[10px] text-muted-foreground">{b.day}</span>
+      {/* Task list */}
+      <div className="divide-y">
+        {tasks.map((t, i) => (
+          <div key={i} className="flex items-center gap-3 px-4 py-2.5">
+            <span className={`p-1.5 rounded ${t.color} shrink-0`}>
+              <t.icon className="w-3 h-3" />
+            </span>
+            <div className="flex-1 min-w-0">
+              <p className="truncate text-xs font-medium">{t.label}</p>
+              <p className="text-xs text-muted-foreground">{t.time}</p>
             </div>
-          ))}
-        </div>
+            <span className={`text-xs px-2 py-0.5 rounded-full shrink-0 font-medium ${
+              t.status === "done" || t.status === "sent" ? "bg-emerald-50 text-emerald-700"
+              : t.status === "escalated" ? "bg-amber-50 text-amber-700"
+              : "bg-blue-50 text-blue-600"
+            }`}>
+              {t.status === "done" ? "Done" : t.status === "sent" ? "Sent" : t.status === "escalated" ? "Escalated" : "Scheduled"}
+            </span>
+          </div>
+        ))}
       </div>
 
-      {/* Recommendations */}
-      <div className="px-4 py-3">
-        <p className="text-xs font-semibold mb-2">AI Recommendations</p>
-        <div className="space-y-2">
-          {recommendations.map((r, i) => (
-            <div key={i} className="flex items-start gap-2">
-              <span className={`p-1 rounded ${r.color} shrink-0`}>
-                <r.icon className="w-3 h-3" />
-              </span>
-              <p className="text-xs text-muted-foreground leading-snug">{r.text}</p>
-            </div>
-          ))}
-        </div>
+      {/* Footer */}
+      <div className="px-4 py-2.5 border-t bg-muted/30 flex items-center justify-between">
+        <span className="text-xs text-muted-foreground">Next: Invoice batch · Today 14:00</span>
+        <span className="text-xs font-medium text-primary">View all →</span>
       </div>
     </div>
   );
@@ -159,14 +150,14 @@ export default function AISolutions() {
     <>
       <SEO
         title="AI Agent for Clinics | AI Receptionist & Automated SEO Blog | Webimot Agency"
-        description="Webimot Agency's AI solutions: AI agent for clinics that replies 24/7 on WhatsApp, automated SEO blog generator that publishes itself, and AI marketing analytics with weekly reports. Built for hair transplant, dental, cosmetic, IVF, and medical tourism businesses."
-        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, automated SEO blog generator, AI marketing analytics, AI financial analytics for agencies, WhatsApp AI agent for hair transplant clinic, WhatsApp AI agent for dental clinic, AI chatbot for cosmetic surgery, AI lead qualification clinic, automated content creation for clinics, multilingual AI agent clinic, AI automation for medical tourism"
+        description="Webimot Agency's AI solutions: AI agent for clinics that replies 24/7 on WhatsApp, automated SEO blog generator that publishes itself, and AI Operations Autopilot that handles invoice emails, HR tasks, and internal workflows automatically."
+        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, automated SEO blog generator, AI operations automation, AI workflow automation, AI back office automation, invoice automation AI, HR task automation, internal task automation AI, WhatsApp AI agent for hair transplant clinic, WhatsApp AI agent for dental clinic, AI chatbot for cosmetic surgery, AI lead qualification clinic, automated content creation for clinics, multilingual AI agent clinic, AI automation for medical tourism"
         canonicalUrl="https://webimotagency.com/ai-solutions"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "AI Agent for Clinics & Medical Tourism — Webimot Agency",
-          "description": "AI agent and AI receptionist solutions for clinics and medical tourism businesses. Includes WhatsApp AI agent, automated SEO blog generator, and AI marketing analytics.",
+          "description": "AI agent and AI receptionist solutions for clinics and medical tourism businesses. Includes WhatsApp AI agent, automated SEO blog generator, and AI Operations Autopilot for internal workflow automation.",
           "url": "https://webimotagency.com/ai-solutions",
           "mainEntity": [
             {
@@ -187,9 +178,9 @@ export default function AISolutions() {
             },
             {
               "@type": "SoftwareApplication",
-              "name": "AI Marketing Analytics — Automated Weekly Reports",
+              "name": "AI Operations Autopilot — Internal Workflow Automation",
               "applicationCategory": "BusinessApplication",
-              "description": "Automated AI marketing analytics delivering weekly SEO, Google Ads, Meta Ads, and conversion reports. Saves clinic owners 10+ hours of manual reporting per week.",
+              "description": "AI-powered internal operations automation. Handles invoice emails, HR reminders, task coordination, escalations, and recurring admin workflows — saving teams 15-25 hours per week.",
               "offers": { "@type": "Offer", "availability": "https://schema.org/InStock" },
               "provider": { "@type": "Organization", "name": "Webimot Agency" }
             }
@@ -264,6 +255,7 @@ export default function AISolutions() {
                   <img
                     src={whatsappImage}
                     alt="WhatsApp AI Agent Interface"
+                    loading="lazy"
                     className="rounded-xl shadow-2xl border"
                   />
                 </div>
@@ -316,25 +308,26 @@ export default function AISolutions() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                    AI Marketing Analyst
+                    AI Operations Autopilot
                   </h2>
                   <p className="text-lg text-muted-foreground mb-6">
-                    Get intelligent insights without the manual work. Our AI
-                    analyzes your marketing performance across all channels,
-                    identifies problems automatically, and delivers actionable
-                    recommendations to your inbox every week.
+                    Stop spending hours on tasks that follow a pattern. Our AI
+                    Operations Autopilot handles your internal workflows
+                    automatically — invoice emails, HR reminders, task
+                    coordination, planning reports, and escalations — all
+                    running in the background so your team focuses on real work.
                   </p>
                   <div className="space-y-3 mb-8">
                     {[
-                      "Weekly automated analytics reports",
-                      "SEO ranking change detection",
-                      "Ad performance analysis (Meta & Google)",
-                      "Traffic and conversion insights",
-                      "Automatic problem identification",
-                      "Actionable recommendations",
-                      "Trend forecasting",
-                      "Competitor monitoring (optional)",
-                      "Custom KPI tracking",
+                      "Automated invoice & payment reminder emails",
+                      "HR onboarding checklists and contract reminders",
+                      "Internal task planning with AI-assigned priorities",
+                      "Overdue task escalation to managers",
+                      "Recurring admin workflows on auto-schedule",
+                      "Meeting agenda preparation and distribution",
+                      "Weekly internal status reports auto-generated",
+                      "Integrates with email, Slack, Notion, Google Workspace",
+                      "Save 15-25 staff hours per week",
                     ].map((feature, index) => (
                       <div key={index} className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -342,7 +335,7 @@ export default function AISolutions() {
                       </div>
                     ))}
                   </div>
-                  <Link href="/services/ai-marketing-analyst">
+                  <Link href="/services/ai-ops-autopilot">
                     <Button
                       data-testid="button-analyst-details"
                       size="lg"
@@ -354,7 +347,7 @@ export default function AISolutions() {
                   </Link>
                 </div>
                 <div>
-                  <MarketingAnalystDashboard />
+                  <OpsAutopilotDashboard />
                 </div>
               </div>
             </div>

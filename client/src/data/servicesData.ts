@@ -126,61 +126,61 @@ export const serviceData: Record<string, ServiceData> = {
       }
     ]
   },
-  "ai-marketing-analyst": {
-    title: "AI Marketing Analyst",
-    tagline: "Automated Weekly Performance Reports & Insights",
-    what: "Our AI Marketing Analyst is an intelligent reporting system that analyzes your marketing performance across all channels - SEO, ads, social media, and website traffic. Every week, it generates comprehensive reports with insights, identifies problems, and provides actionable recommendations delivered straight to your inbox.",
-    why: "Marketing analytics is critical but time-consuming. Agencies charge $2,000-5,000/month for reporting. Our AI analyst works 24/7, never misses a trend, and delivers the same insights for a fraction of the cost. It's like having a dedicated analyst on your team who never sleeps.",
+  "ai-ops-autopilot": {
+    title: "AI Operations Autopilot",
+    tagline: "Plan, Coordinate & Automate Your Internal Business Operations",
+    what: "AI Operations Autopilot is an end-to-end internal automation system that handles the repetitive work that drains your team's time every day. From automatically sending invoice emails and payment reminders to managing HR onboarding checklists, scheduling internal meetings, and flagging overdue tasks — the system coordinates your back-office operations around the clock. It integrates with your existing tools (email, Google Workspace, Notion, Slack, HR platforms) and acts as a tireless operations coordinator that never misses a deadline.",
+    why: "The average team wastes 20+ hours per week on administrative tasks that follow a predictable pattern — chasing invoices, sending reminder emails, assigning recurring tasks, updating spreadsheets, and manually escalating overdue items. These tasks don't require judgment; they require consistency. Our AI handles all of it automatically, freeing your team to focus on work that actually moves the business forward. Clients typically recover 15-25 hours of staff time per week within the first month.",
     benefits: [
-      "Weekly automated performance reports",
-      "Cross-channel analytics (SEO, Ads, Social)",
-      "Automatic problem detection",
-      "Actionable improvement recommendations",
-      "Trend identification and forecasting",
-      "Competitor monitoring (optional)",
-      "Custom metrics and KPIs",
-      "Save 10+ hours per week on reporting"
+      "Automated invoice generation and payment reminder emails",
+      "HR task automation — onboarding checklists, contract reminders, holiday tracking",
+      "Internal task planning with AI-assigned priorities and deadlines",
+      "Escalation workflows — overdue items automatically flagged to managers",
+      "Recurring admin tasks handled on schedule without manual intervention",
+      "Meeting scheduling and agenda preparation automation",
+      "Weekly internal status reports generated and distributed automatically",
+      "Save 15-25 hours of staff time per week"
     ],
     deliverables: [
-      "Connected analytics integrations (GA4, Google Ads, Meta, etc.)",
-      "Custom KPI dashboard",
-      "Weekly email reports",
-      "Problem alert system",
-      "Trend analysis engine",
-      "Recommendation system",
-      "Historical data archive",
-      "Mobile-friendly reports",
-      "Training documentation",
-      "Monthly strategy sessions"
+      "Business operations audit and workflow mapping",
+      "Automated invoice email system with follow-up sequences",
+      "HR automation workflows (onboarding, reminders, document collection)",
+      "Internal task management automation with priority scoring",
+      "Escalation and notification system for overdue items",
+      "Recurring task scheduler (daily, weekly, monthly)",
+      "Meeting and planning automation (agendas, summaries, action items)",
+      "Weekly internal report generation and distribution",
+      "Integration with email, Slack, Notion, Google Workspace, or equivalent",
+      "Training documentation and 30 days of optimization support"
     ],
     process: [
-      { title: "Integration Setup", description: "Connect all your marketing platforms and analytics tools" },
-      { title: "KPI Definition", description: "Define your key metrics, goals, and what matters most to your business" },
-      { title: "Baseline Analysis", description: "AI analyzes historical data to understand normal patterns" },
-      { title: "Report Customization", description: "Customize report format, frequency, and recipients" },
-      { title: "Go Live", description: "Start receiving weekly automated reports and alerts" },
-      { title: "Continuous Learning", description: "AI improves recommendations based on your actions and results" }
+      { title: "Operations Audit", description: "We map every recurring task your team does manually — emails, reports, reminders, checklists, and escalations" },
+      { title: "Workflow Design", description: "We design automation workflows for each task, defining triggers, conditions, and output actions" },
+      { title: "AI Configuration", description: "We configure the AI to draft, send, and track communications and tasks using your tone and templates" },
+      { title: "Tool Integration", description: "Connect your email, Slack, HR platform, project management tools, and accounting software" },
+      { title: "Testing & Handover", description: "Test every workflow with real scenarios, then run in parallel with your team before full handover" },
+      { title: "Ongoing Optimization", description: "Monthly reviews to add new automations as your operations grow and evolve" }
     ],
     faqs: [
       {
-        question: "What platforms can you integrate with?",
-        answer: "We integrate with Google Analytics, Google Ads, Meta Ads, LinkedIn Ads, SEMrush, Ahrefs, Google Search Console, and most major marketing platforms."
+        question: "What kinds of tasks can this automate?",
+        answer: "Anything that follows a repeatable pattern: invoice emails, payment chasers, HR onboarding steps, contract renewal reminders, recurring meeting prep, internal status updates, task assignment, deadline escalations, and more."
       },
       {
-        question: "How does the AI identify problems?",
-        answer: "The AI learns your normal patterns and uses statistical analysis to detect anomalies like traffic drops, conversion rate changes, ranking losses, or budget overspending."
+        question: "What tools does it integrate with?",
+        answer: "We integrate with Gmail, Outlook, Google Workspace, Slack, Notion, Trello, Asana, ClickUp, QuickBooks, Xero, HubSpot, and most major business tools via API or automation middleware."
       },
       {
-        question: "Can I customize what's in the reports?",
-        answer: "Yes, you can fully customize metrics, charts, report sections, and even the format and branding of reports."
+        question: "Do we need to change how we currently work?",
+        answer: "No. We build automations around your existing tools and workflows. Your team keeps using the same platforms — the AI just handles the repetitive parts in the background."
       },
       {
-        question: "How accurate are the recommendations?",
-        answer: "The AI bases recommendations on industry best practices, your historical data, and proven patterns. Clients typically see 20-30% improvement by implementing suggestions."
+        question: "How long until we see the time savings?",
+        answer: "Most clients see meaningful time savings within the first week as invoice and reminder automations go live. Full automation of all workflows typically takes 3-4 weeks."
       },
       {
-        question: "Do you offer human analyst support?",
-        answer: "Yes, the Growth and Elite plans include monthly strategy calls with human analysts to discuss the AI's findings and plan next steps."
+        question: "Can the AI handle different departments — finance, HR, and operations?",
+        answer: "Yes. We build department-specific workflows. Finance gets invoice and payment automation, HR gets onboarding and compliance reminders, and operations gets task coordination and escalation workflows — all running in parallel."
       }
     ]
   },

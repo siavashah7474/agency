@@ -72,7 +72,7 @@ export const caseStudies: CaseStudy[] = [
     industry: "Real Estate",
     location: "Istanbul, Turkey",
     challenge: "The agency was overwhelmed with leads from multiple sources (website, portals, social media) but had no system to qualify them. Sales agents were wasting time on unqualified leads while hot prospects went cold. They needed a way to handle inquiries 24/7 for international investors in different time zones.",
-    solution: "We built a complete lead automation system: WhatsApp AI Agent for instant response, automated lead scoring based on budget/timeline/preferences, CRM integration for pipeline management, and the AI Marketing Analyst for weekly performance insights. The AI was trained on Turkish property law basics and investment visa requirements.",
+    solution: "We built a complete lead automation system: WhatsApp AI Agent for instant response, automated lead scoring based on budget/timeline/preferences, CRM integration for pipeline management, and the AI Operations Autopilot for coordinating internal workflows and weekly performance reporting. The AI was trained on Turkish property law basics and investment visa requirements.",
     results: [
       { metric: "Lead Response", value: "100%", description: "All leads responded within 1 minute" },
       { metric: "Qualified Leads", value: "+85%", description: "Increase in sales-ready leads" },
@@ -84,7 +84,7 @@ export const caseStudies: CaseStudy[] = [
       name: "Vahid Tokmak",
       role: "CEO, Prime Properties Istanbul"
     },
-    services: ["WhatsApp AI Agent", "Lead Scoring", "CRM Integration", "AI Marketing Analyst"],
+    services: ["WhatsApp AI Agent", "Lead Scoring", "CRM Integration", "AI Operations Autopilot"],
     duration: "3 weeks setup + ongoing"
   },
   {

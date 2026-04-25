@@ -164,11 +164,11 @@ export const chatbotConfig: ChatbotConfig = {
       tags: ["branding", "awareness", "medium", "long"]
     },
     {
-      serviceSlug: "ai-marketing-analyst",
-      serviceName: "AI Marketing Analyst",
-      description: "Data-driven insights to optimize your marketing",
+      serviceSlug: "ai-ops-autopilot",
+      serviceName: "AI Operations Autopilot",
+      description: "Automate internal tasks, workflows, and business operations",
       matchScore: 0,
-      tags: ["analytics", "ai", "reporting", "scale", "enterprise"]
+      tags: ["automation", "ai", "operations", "admin", "hr", "invoices", "workflows", "scale", "enterprise"]
     },
     {
       serviceSlug: "reputation-management",

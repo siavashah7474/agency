@@ -68,11 +68,11 @@
     "ecommerceCta": "Automate My Store",
     "aiStackBadge": "Proven in Medical Tourism & Real Estate",
     "aiStackTitle": "The AI Stack That Works While You Sleep",
-    "aiStackSubtitle": "Three purpose-built tools handling the parts of your business that cost you the most time and money — lead response, content, and analytics. No hiring. No training. Just results.",
+    "aiStackSubtitle": "Three purpose-built tools handling the parts of your business that cost you the most time and money — lead response, content, and internal operations. No hiring. No training. Just results.",
     "benefits": {
       "hours": { "title": "Save 20+ Hours Weekly", "desc": "Automate repetitive tasks and free up your team" },
       "lead247": { "title": "24/7 Lead Handling", "desc": "Never miss a potential customer, even at 3 AM" },
-      "data": { "title": "Data-Driven Decisions", "desc": "Get insights that help you grow smarter, not harder" }
+      "data": { "title": "Ops on Autopilot", "desc": "Automate internal workflows so your team focuses on real work, not admin" }
     },
     "aiProducts": [
       {
@@ -104,16 +104,16 @@
         ]
       },
       {
-        "title": "AI Marketing Analyst",
-        "tagline": "Automated Weekly Performance Reports",
-        "description": "Get intelligent insights without the manual work. Our AI analyzes your marketing performance, identifies issues, and delivers actionable recommendations.",
+        "title": "AI Operations Autopilot",
+        "tagline": "Automate Internal Tasks, Workflows & Business Operations",
+        "description": "Stop spending hours on tasks that follow a pattern. Our AI handles invoice emails, HR reminders, task coordination, and recurring admin — saving your team 15-25 hours every week.",
         "features": [
-          "Weekly automated analytics reports",
-          "SEO ranking change detection",
-          "Ad performance analysis",
-          "Traffic and conversion insights",
-          "Problem identification and alerts",
-          "Actionable recommendations delivered to your inbox"
+          "Automated invoice and payment reminder emails",
+          "HR onboarding checklists and contract reminders",
+          "Internal task planning with AI-assigned priorities",
+          "Overdue task escalation to managers",
+          "Meeting agenda preparation and distribution",
+          "Weekly internal status reports auto-generated"
         ]
       }
     ],
@@ -158,7 +158,7 @@
         "name": "Dr. Hamed Gholami",
         "role": "Owner of Novin Ariana",
         "company": "Novin Ariana Health Group",
-        "content": "The AI Marketing Analyst saves us 10+ hours every week. We get detailed reports with actionable insights delivered straight to our inbox. It's like having a dedicated analyst on staff."
+        "content": "The AI Operations Autopilot saves us 20+ hours every week. Invoice reminders, HR checklists, planning reports — all handled automatically. Our team finally focuses on real work instead of admin."
       }
     ],
     "faqBadge": "FAQ",
@@ -199,7 +199,7 @@
       },
       {
         "question": "How much does it cost?",
-        "answer": "Pricing depends on which services you need and the scope of your clinic's operations. We offer standalone AI products (WhatsApp Agent, SEO Blog Generator, AI Marketing Analyst) as well as full-service monthly retainers. Book a free strategy call and we'll put together a tailored proposal with transparent pricing."
+        "answer": "Pricing depends on which services you need and the scope of your clinic's operations. We offer standalone AI products (WhatsApp Agent, SEO Blog Generator, AI Operations Autopilot) as well as full-service monthly retainers. Book a free strategy call and we'll put together a tailored proposal with transparent pricing."
       },
       {
         "question": "What does onboarding look like?",

@@ -51,15 +51,19 @@ const tickerItems = [
   "Shopify cart recovered — +€340 revenue",
   "Lead scored & qualified — Dubai",
   "Blog post auto-published — 2min ago",
+  "Invoice reminder sent — 12 clients notified",
   "Vision AI: photo evaluated — lead qualified",
+  "HR onboarding checklist dispatched — new hire",
   "Booking confirmed via AI — Amsterdam",
   "CRM updated — 0 manual steps",
+  "Overdue task escalated → Manager — auto",
   "Google Ads optimized — ROAS 6.2×",
+  "Planning report generated & sent — Monday 08:00",
   "WhatsApp campaign sent — 847 contacts",
   "eCommerce order synced — Shopify",
 ];
 
-const productHrefs = ["/services/whatsapp-ai-agent", "/services/seo-blog-generator", "/services/ai-marketing-analyst"];
+const productHrefs = ["/services/whatsapp-ai-agent", "/services/seo-blog-generator", "/services/ai-ops-autopilot"];
 const productFlagships = [true, false, false];
 const serviceHrefs = [
   "/services/meta-ads", "/services/google-ads", "/services/seo",
@@ -108,14 +112,14 @@ export default function Home() {
     <>
       <SEO
         title="AI Agent for Clinics & Medical Tourism | AI Receptionist | Webimot Agency"
-        description="Webimot Agency builds AI agents for clinics and medical tourism businesses — an AI receptionist that replies 24/7 in Arabic, German, Russian & 12 languages, an automated SEO blog generator, and AI marketing analytics. Trusted by 50+ businesses across Germany, UK, UAE & 12+ countries."
-        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, AI receptionist medical tourism, automated SEO blog, automated SEO blog generator, AI marketing analytics, AI financial analytics, WhatsApp AI agent for clinic, AI lead automation clinic, medical tourism AI automation, hair transplant clinic AI agent, dental clinic AI receptionist, cosmetic surgery lead automation, IVF clinic marketing automation, Shopify eCommerce AI, clinic marketing Germany, clinic marketing Netherlands, clinic marketing UAE"
+        description="Webimot Agency builds AI agents for clinics and medical tourism businesses — an AI receptionist that replies 24/7 in Arabic, German, Russian & 12 languages, an automated SEO blog generator, and an AI Operations Autopilot that handles invoices, HR, and internal workflows. Trusted by 50+ businesses across Germany, UK, UAE & 12+ countries."
+        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, AI receptionist medical tourism, automated SEO blog, automated SEO blog generator, AI operations automation, AI workflow automation, invoice automation AI, HR automation AI, WhatsApp AI agent for clinic, AI lead automation clinic, medical tourism AI automation, hair transplant clinic AI agent, dental clinic AI receptionist, cosmetic surgery lead automation, IVF clinic marketing automation, Shopify eCommerce AI, clinic marketing Germany, clinic marketing Netherlands, clinic marketing UAE"
         canonicalUrl="https://webimotagency.com/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalBusiness",
           "name": "Webimot Agency",
-          "description": "Webimot Agency is an AI automation agency building AI agents for clinics, AI receptionists for medical tourism, automated SEO blog generators, and AI marketing analytics. Serving hair transplant, dental, cosmetic surgery, and IVF clinics in Turkey and worldwide.",
+          "description": "Webimot Agency is an AI automation agency building AI agents for clinics, AI receptionists for medical tourism, automated SEO blog generators, and AI Operations Autopilot systems for internal workflow automation. Serving hair transplant, dental, cosmetic surgery, and IVF clinics in Turkey and worldwide.",
           "url": "https://webimotagency.com",
           "logo": "https://webimotagency.com/logo.png",
           "address": [
@@ -123,14 +127,14 @@ export default function Home() {
             { "@type": "PostalAddress", "addressLocality": "Amsterdam", "addressCountry": "NL" }
           ],
           "areaServed": ["DE","GB","NL","FR","BE","SA","AE","KW","QA","US","AU","CA","TR","RU","IQ","SE","NO","DK"],
-          "knowsAbout": ["AI agent for clinics","AI receptionist medical tourism","automated SEO blog","AI marketing analytics","WhatsApp AI agent","lead qualification automation"],
+          "knowsAbout": ["AI agent for clinics","AI receptionist medical tourism","automated SEO blog","AI operations automation","WhatsApp AI agent","lead qualification automation","invoice automation","HR workflow automation"],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "AI Automation Services for Clinics",
             "itemListElement": [
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agent for Clinics", "description": "24/7 AI receptionist for clinics — replies on WhatsApp in any language, qualifies leads, evaluates photos, books consultations automatically." } },
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automated SEO Blog Generator", "description": "AI that writes and publishes 20-30 SEO-optimized blog posts per month for clinics and medical tourism websites — fully automated." } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Marketing Analytics", "description": "Automated weekly performance reports covering SEO, Google Ads, Meta Ads, and conversion analytics — delivered to your inbox." } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Operations Autopilot", "description": "AI-powered internal workflow automation — handles invoice emails, HR reminders, task coordination, escalations, and recurring admin tasks automatically." } },
               { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agent for Medical Tourism", "description": "Multilingual AI automation for medical tourism businesses targeting patients from Germany, UK, UAE, Netherlands, Saudi Arabia, and 10+ countries." } }
             ]
           }
@@ -193,7 +197,7 @@ export default function Home() {
 
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-accent/15 rounded-2xl blur-2xl scale-105 pointer-events-none" />
-                  <img src={heroImage} alt="AI Dashboard Interface" className="relative rounded-xl shadow-2xl border border-white/10" />
+                  <img src={heroImage} alt="AI Dashboard Interface" fetchPriority="high" className="relative rounded-xl shadow-2xl border border-white/10" />
                   <div className="absolute -top-3 -right-3 hidden md:flex items-center gap-2 bg-slate-900/95 border border-secondary/30 rounded-lg px-3 py-2 backdrop-blur-sm" style={{ boxShadow: '0 0 16px hsl(221 91% 60% / 0.15)' }}>
                     <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
                     <span className="text-xs text-white/80 font-mono">leads.qualified += 3</span>

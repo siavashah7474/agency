@@ -61,7 +61,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/services/whatsapp-ai-agent" data-testid="link-footer-whatsapp" className="text-sm text-white/65 hover:text-secondary transition-colors">WhatsApp AI Agent</Link></li>
               <li><Link href="/services/seo-blog-generator" data-testid="link-footer-seo" className="text-sm text-white/65 hover:text-secondary transition-colors">SEO Blog Generator</Link></li>
-              <li><Link href="/services/ai-marketing-analyst" data-testid="link-footer-analyst" className="text-sm text-white/65 hover:text-secondary transition-colors">AI Marketing Analyst</Link></li>
+              <li><Link href="/services/ai-ops-autopilot" data-testid="link-footer-analyst" className="text-sm text-white/65 hover:text-secondary transition-colors">AI Operations Autopilot</Link></li>
               <li><Link href="/services" data-testid="link-footer-all-services" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.allServices")}</Link></li>
             </ul>
           </div>

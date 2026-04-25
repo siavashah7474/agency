@@ -50,11 +50,11 @@
     },
     "aiStackBadge": "Bewezen in medisch toerisme & vastgoed",
     "aiStackTitle": "De AI-stack die werkt terwijl u slaapt",
-    "aiStackSubtitle": "Drie speciaal gebouwde tools die de delen van uw bedrijf afhandelen die u de meeste tijd en geld kosten — leadrespons, content en analytics. Geen inhuur. Geen training. Alleen resultaten.",
+    "aiStackSubtitle": "Drie speciaal gebouwde tools die de delen van uw bedrijf afhandelen die u de meeste tijd en geld kosten — leadrespons, content en interne bedrijfsprocessen. Geen inhuur. Geen training. Alleen resultaten.",
     "benefits": {
       "hours": { "title": "Bespaar 20+ uur per week", "desc": "Automatiseer repetitieve taken en bevrijd uw team" },
       "lead247": { "title": "24/7 leadafhandeling", "desc": "Mis nooit een potentiële klant, zelfs niet om 3 uur 's nachts" },
-      "data": { "title": "Datagedreven beslissingen", "desc": "Krijg inzichten die u helpen slimmer te groeien, niet harder" }
+      "data": { "title": "Ops op Automatische Piloot", "desc": "Automatiseer interne werkstromen zodat uw team zich richt op echt werk, niet op administratie" }
     },
     "aiProducts": [
       {
@@ -86,16 +86,16 @@
         ]
       },
       {
-        "title": "AI Marketing Analyst",
-        "tagline": "Geautomatiseerde wekelijkse prestatierapportages",
-        "description": "Krijg intelligente inzichten zonder handmatig werk. Onze AI analyseert uw marketingprestaties, identificeert problemen en levert bruikbare aanbevelingen.",
+        "title": "AI Operations Autopilot",
+        "tagline": "Automatiseer interne taken, werkstromen en bedrijfsprocessen",
+        "description": "Stop met het verspillen van uren aan taken die een vast patroon volgen. Onze AI verwerkt factuurmails, HR-herinneringen, taakafstemming en terugkerende administratie — bespaart uw team 15-25 uur per week.",
         "features": [
-          "Wekelijkse geautomatiseerde analyticsrapporten",
-          "SEO-rangschikwijzigingsdetectie",
-          "Advertentieprestatie-analyse",
-          "Verkeers- en conversieinzichten",
-          "Probleemidentificatie en waarschuwingen",
-          "Bruikbare aanbevelingen rechtstreeks in uw inbox"
+          "Geautomatiseerde factuur- en betalingsherinneringsmails",
+          "HR-onboarding checklists en contractherinneringen",
+          "Interne taakplanning met door AI toegewezen prioriteiten",
+          "Escalatie van achterstallige taken naar managers",
+          "Voorbereiding en verspreiding van vergaderagenda's",
+          "Wekelijkse interne statusrapporten automatisch gegenereerd"
         ]
       }
     ],
@@ -126,7 +126,7 @@
     "testimonials": [
       { "name": "Dr. Gorkem Atsal", "role": "Eigenaar van de kliniek", "company": "Gorkem Atsal kliniek", "content": "De WhatsApp AI-agent heeft onze leadafhandeling volledig getransformeerd. We zijn gegaan van het missen van 40% van de aanvragen naar het beantwoorden van 100% binnen seconden. Ons conversiepercentage verdubbelde in slechts 3 maanden." },
       { "name": "Pouyan Azizpour", "role": "CEO", "company": "Wavemed.io", "content": "Webimot's SEO Blog Generator is een gamechanger geweest. We publiceren 20 geoptimaliseerde berichten per maand zonder enig handmatig werk. Ons organisch verkeer steeg in 6 maanden met 20%." },
-      { "name": "Dr. Hamed Gholami", "role": "Eigenaar van Novin Ariana", "company": "Novin Ariana Health Group", "content": "De AI Marketing Analyst bespaart ons elke week 10+ uur. We ontvangen gedetailleerde rapporten met bruikbare inzichten rechtstreeks in onze inbox. Het is alsof we een toegewijde analist in dienst hebben." }
+      { "name": "Dr. Hamed Gholami", "role": "Eigenaar van Novin Ariana", "company": "Novin Ariana Health Group", "content": "De AI Operations Autopilot bespaart ons elke week 20+ uur. Factuurherinneringen, HR-checklists, planningsrapporten — allemaal automatisch afgehandeld. Ons team richt zich eindelijk op echt werk in plaats van administratie." }
     ],
     "faqBadge": "FAQ",
     "faqTitle": "Vragen die we elke dag krijgen",

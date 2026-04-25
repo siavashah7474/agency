@@ -213,10 +213,10 @@ export default function Services() {
     },
     {
       icon: BarChart,
-      title: "AI Marketing Analyst",
+      title: "AI Operations Autopilot",
       description:
-        "Weekly automated reports analyzing SEO, ads, traffic, and conversions with actionable recommendations.",
-      href: "/services/ai-marketing-analyst",
+        "Automate invoice emails, HR reminders, internal task planning, and recurring admin workflows — saving 15-25 staff hours per week.",
+      href: "/services/ai-ops-autopilot",
       gradient: "from-blue-500 to-cyan-600",
     },
   ];

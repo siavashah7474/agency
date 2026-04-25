@@ -26,7 +26,7 @@ export default function Clients() {
       role: "Owner of Novin Ariana ",
       company: "Novin Ariana Health Group",
       content:
-        "The AI Marketing Analyst saves us 10+ hours every week. We get detailed reports with actionable insights delivered straight to our inbox. It's like having a dedicated analyst on staff.",
+        "The AI Operations Autopilot saves us 20+ hours every week. Invoice reminders, HR checklists, planning reports — all handled automatically. Our team finally focuses on real work instead of admin.",
     },
     {
       name: "Mehmet Salih",

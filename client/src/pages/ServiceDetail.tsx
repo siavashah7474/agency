@@ -57,7 +57,7 @@ const serviceIcons: Record<
     gradient: "from-purple-500 to-violet-600",
     bgGradient: "from-purple-500/20 to-violet-600/20",
   },
-  "ai-marketing-analyst": {
+  "ai-ops-autopilot": {
     icon: BarChart,
     gradient: "from-blue-500 to-cyan-600",
     bgGradient: "from-blue-500/20 to-cyan-600/20",
@@ -204,6 +204,7 @@ function MetaAdsResults() {
           <img
             src={s.src}
             alt={s.alt}
+            loading="lazy"
             className="w-full object-cover"
           />
           <div className="px-4 pb-4 pt-3">
@@ -246,7 +247,7 @@ export default function ServiceDetail() {
   const isAIService = [
     "whatsapp-ai-agent",
     "seo-blog-generator",
-    "ai-marketing-analyst",
+    "ai-ops-autopilot",
   ].includes(slug);
   const isAdsService = ["meta-ads", "google-ads"].includes(slug);
 
