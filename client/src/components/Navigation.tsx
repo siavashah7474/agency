@@ -9,6 +9,7 @@ const LANGUAGES = [
   { code: "en", label: "EN", name: "English" },
   { code: "tr", label: "TR", name: "Türkçe" },
   { code: "nl", label: "NL", name: "Nederlands" },
+  { code: "es", label: "ES", name: "Español" },
 ];
 
 export default function Navigation() {

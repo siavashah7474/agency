@@ -267,7 +267,7 @@ function formatContent(content: string): string {
       if (line.startsWith('| ')) {
         // Skip separator rows (| --- | --- |)
         if (/^\|[\s\-:|]+\|$/.test(line.trim())) return '';
-        const cells = line.split('|').filter(c => c.trim() !== '').map(c => `<td>${escapeHtml(c.trim())}</td>`).join('');
+        const cells = line.split('|').filter(c => c.trim() !== '').map(c => `<td>${formatInlineMarkdown(escapeHtml(c.trim()))}</td>`).join('');
         return `<tr>${cells}</tr>`;
       }
       if (line.trim() === '') {
@@ -282,6 +282,7 @@ function formatContent(content: string): string {
 
 function formatInlineMarkdown(text: string): string {
   return text
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="font-medium underline underline-offset-2 text-primary hover:text-primary/80">$1</a>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*]+)\*/g, '<em>$1</em>');
 }

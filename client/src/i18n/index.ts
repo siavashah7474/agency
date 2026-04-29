@@ -5,6 +5,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import en from "./locales/en.json";
 import tr from "./locales/tr.json";
 import nl from "./locales/nl.json";
+import es from "./locales/es.json";
 
 i18n
   .use(LanguageDetector)
@@ -14,9 +15,10 @@ i18n
       en: { translation: en },
       tr: { translation: tr },
       nl: { translation: nl },
+      es: { translation: es },
     },
     fallbackLng: "en",
-    supportedLngs: ["en", "tr", "nl"],
+    supportedLngs: ["en", "tr", "nl", "es"],
     detection: {
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],

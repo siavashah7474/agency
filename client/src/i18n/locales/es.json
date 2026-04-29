@@ -1,0 +1,403 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "aiSolutions": "Soluciones IA",
+    "about": "Nosotros",
+    "clients": "Clientes",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "bookCall": "Reservar Llamada"
+  },
+  "footer": {
+    "tagline": "Marketing Inteligente. Automatización Inteligente.",
+    "description": "Soluciones de marketing para turismo médico, bienes raíces y empresas de servicios.",
+    "services": "Servicios",
+    "company": "Empresa",
+    "contact": "Contacto",
+    "aboutUs": "Sobre Nosotros",
+    "caseStudies": "Casos de Éxito",
+    "ourClients": "Nuestros Clientes",
+    "allServices": "Todos los Servicios",
+    "whatsappUs": "WhatsApp",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "bookFreeStrategyCall": "Reserva Tu Llamada Estratégica Gratis",
+    "bookStrategyCall": "Reservar Llamada Estratégica",
+    "getStarted": "Empezar",
+    "learnMore": "Saber Más",
+    "viewAllServices": "Ver Todos los Servicios",
+    "viewAllCaseStudies": "Ver Todos los Casos",
+    "fullStory": "Historia Completa",
+    "getFreePlan": "Obtén Tu Plan de Crecimiento Gratis"
+  },
+  "home": {
+    "trustBadge": "Confiado por clínicas y agencias en más de 12 países",
+    "heroTitle1": "Deja de Perder Leads a las 2AM.",
+    "heroTitle2": "Deja que la IA los Cierre por Ti.",
+    "heroSubtitle": "Desplegamos IA que responde a cada consulta, califica leads y agenda reuniones automáticamente — 24/7, en cualquier idioma. La mayoría de clientes cierran <strong>3× más negocios</strong> en 60 días.",
+    "heroCta1": "Llamada Estratégica Gratis",
+    "heroCta2": "Ver Nuestras Soluciones IA",
+    "industries": {
+      "hairTransplant": "Clínicas de Trasplante Capilar",
+      "dental": "Clínicas Dentales",
+      "cosmetic": "Cirugía Estética",
+      "ivf": "FIV y Fertilidad",
+      "realEstate": "Agencias Inmobiliarias",
+      "ecommerce": "Shopify y eCommerce"
+    },
+    "ecommerceBadge": "Especialidad Shopify y eCommerce",
+    "ecommerceTitle": "Escala Tu Tienda Online con Automatización IA",
+    "ecommerceSubtitle": "Desde la recuperación de carritos abandonados hasta el soporte al cliente impulsado por IA — automatizamos todo el recorrido eCommerce para que tu tienda Shopify venda en piloto automático.",
+    "ecommerceStats": [
+      { "value": "3×", "label": "Aumento Medio de Ingresos" },
+      { "value": "70%", "label": "Menos Trabajo Manual" },
+      { "value": "24/7", "label": "Soporte al Cliente Automatizado" }
+    ],
+    "ecommerceFeatures": [
+      { "title": "Recuperación de Carritos Abandonados", "description": "Re-engancha compradores automáticamente con secuencias personalizadas de WhatsApp y email que los traen de vuelta al checkout" },
+      { "title": "Soporte al Cliente IA", "description": "Respuestas IA instantáneas sobre estado de pedidos, devoluciones y FAQs de productos — 24/7, en cualquier idioma" },
+      { "title": "Automatización de Pedidos y Fulfillment", "description": "Sincroniza pedidos, inventario y actualizaciones de envío en tu tienda sin levantar un dedo" },
+      { "title": "Recomendaciones de Productos IA", "description": "Sugerencias dinámicas de upsell y cross-sell basadas en el comportamiento del cliente e historial de compras" },
+      { "title": "Anuncios y SEO para Shopify", "description": "Meta Ads, Google Shopping y estrategias SEO conectados y optimizados para tu tienda Shopify" },
+      { "title": "Analítica eCommerce", "description": "Informes semanales automatizados de ROAS, LTV, tasas de conversión y rendimiento de la tienda en tu bandeja de entrada" }
+    ],
+    "ecommerceCta": "Automatizar Mi Tienda",
+    "aiStackBadge": "Probado en Turismo Médico e Inmobiliaria",
+    "aiStackTitle": "El Stack IA Que Trabaja Mientras Duermes",
+    "aiStackSubtitle": "Tres herramientas diseñadas para las partes de tu negocio que más tiempo y dinero te cuestan — respuesta de leads, contenido y operaciones internas. Sin contratar. Sin formar. Solo resultados.",
+    "benefits": {
+      "hours": { "title": "Ahorra 20+ Horas Semanales", "desc": "Automatiza tareas repetitivas y libera a tu equipo" },
+      "lead247": { "title": "Gestión de Leads 24/7", "desc": "Nunca pierdas un cliente potencial, ni a las 3 AM" },
+      "data": { "title": "Operaciones en Piloto Automático", "desc": "Automatiza flujos de trabajo internos para que tu equipo se centre en trabajo real, no en administración" }
+    },
+    "aiProducts": [
+      {
+        "title": "Agente IA para WhatsApp",
+        "tagline": "Gestión Inteligente de Leads y Automatización de Reservas 24/7",
+        "description": "Nunca pierdas un lead. Nuestro Agente IA para WhatsApp maneja mensajes entrantes al instante, califica leads, evalúa fotos con Vision IA y agenda consultas automáticamente.",
+        "features": [
+          "Respuestas instantáneas en múltiples idiomas",
+          "Transcripción de mensajes de voz a texto",
+          "Evaluación de fotos con Vision IA",
+          "Puntuación y calificación de leads",
+          "Integración con calendario de reservas automatizado",
+          "Escalado a supervisor para consultas complejas",
+          "Motor de seguimiento automatizado",
+          "Panel de control y analítica en tiempo real"
+        ]
+      },
+      {
+        "title": "Generador de Blog SEO con IA",
+        "tagline": "Creación y Publicación Automatizada de Contenido",
+        "description": "Escala tu marketing de contenidos sin esfuerzo. Nuestra IA genera artículos de blog optimizados para SEO, programa publicaciones y gestiona el enlazado interno automáticamente.",
+        "features": [
+          "Generación automática de contenido desde feeds RSS",
+          "Optimización SEO con meta etiquetas",
+          "Programación y publicación automática",
+          "Sistema de enlazado interno",
+          "Traducción multilingüe",
+          "Monitoreo de rendimiento y analítica"
+        ]
+      },
+      {
+        "title": "Piloto Automático de Operaciones IA",
+        "tagline": "Automatiza Tareas Internas, Flujos de Trabajo y Operaciones Empresariales",
+        "description": "Deja de invertir horas en tareas que siguen un patrón. Nuestra IA gestiona emails de facturas, recordatorios de RRHH, coordinación de tareas y administración recurrente — ahorrando a tu equipo 15-25 horas cada semana.",
+        "features": [
+          "Emails automatizados de facturas y recordatorios de pago",
+          "Checklists de incorporación de RRHH y recordatorios de contratos",
+          "Planificación de tareas internas con prioridades asignadas por IA",
+          "Escalado de tareas vencidas a managers",
+          "Preparación y distribución de agendas de reuniones",
+          "Informes de estado interno semanales generados automáticamente"
+        ]
+      }
+    ],
+    "servicesTitle": "Todo lo Que Necesitas para Dominar Tu Mercado",
+    "servicesSubtitle": "Anuncios, SEO, automatización IA y contenido — totalmente gestionado para que te centres en ofrecer resultados, no en perseguirlos",
+    "services": [
+      { "title": "Meta Ads", "description": "Campañas expertas de publicidad en Facebook e Instagram que generan leads cualificados" },
+      { "title": "Google Ads", "description": "Publicidad de búsqueda y display optimizada para máximo ROI" },
+      { "title": "SEO", "description": "Posiciona más alto en buscadores con estrategias de optimización basadas en datos" },
+      { "title": "Desarrollo Web", "description": "Sitios web rápidos, atractivos y optimizados para conversión, construidos para tu negocio" },
+      { "title": "Creación de Contenido", "description": "Contenido atractivo que conecta con tu audiencia y genera acción" },
+      { "title": "Branding", "description": "Construye una identidad de marca memorable que destaque en tu mercado" },
+      { "title": "Construcción de Funnels", "description": "Convierte más visitantes en clientes con embudos de ventas optimizados" },
+      { "title": "Gestión de Reputación", "description": "Monitorea y mejora tu reputación online en todas las plataformas" }
+    ],
+    "automationTitle": "Configúralo Una Vez. Déjalo Funcionar Para Siempre.",
+    "automationSubtitle": "Nuestras automatizaciones conectan tu WhatsApp, CRM, calendario y cuentas publicitarias en un sistema que nunca descansa",
+    "automationFeatures": [
+      { "title": "Lead a Hoja a WhatsApp", "description": "Captura leads automáticamente y redirígelos a tu agente IA" },
+      { "title": "Seguimientos Automáticos", "description": "Nunca olvides un seguimiento con automatización inteligente" },
+      { "title": "Automatización de Calendario de Reservas", "description": "Sincroniza consultas directamente en tu calendario" },
+      { "title": "Procesamiento de Fotos y Voz", "description": "Análisis de mensajes multimedia impulsado por IA" },
+      { "title": "Integración CRM", "description": "Conéctate perfectamente con tus herramientas existentes" },
+      { "title": "Informes del Panel", "description": "Información en tiempo real de todas tus automatizaciones" }
+    ],
+    "testimonialsTitle": "No Tomes Nuestra Palabra",
+    "testimonialsSubtitle": "Negocios reales. Números reales. Esto es lo que pasó cuando dejaron de hacerlo manualmente.",
+    "testimonials": [
+      {
+        "name": "Dr. Gorkem Atsal",
+        "role": "Propietario de la clínica",
+        "company": "Clínica Gorkem Atsal",
+        "content": "El agente IA de WhatsApp transformó completamente nuestra gestión de leads. Pasamos de perder el 40% de las consultas a responder al 100% en segundos. Nuestra tasa de conversión se duplicó en solo 3 meses."
+      },
+      {
+        "name": "Pouyan Azizpour",
+        "role": "CEO",
+        "company": "Wavemed.io",
+        "content": "El Generador de Blog SEO de Webimot ha sido un cambio de juego. Publicamos 20 posts optimizados al mes sin ningún trabajo manual. Nuestro tráfico orgánico aumentó un 20% en 6 meses."
+      },
+      {
+        "name": "Dr. Hamed Gholami",
+        "role": "Propietario de Novin Ariana",
+        "company": "Grupo de Salud Novin Ariana",
+        "content": "El Piloto Automático de Operaciones IA nos ahorra 20+ horas cada semana. Recordatorios de facturas, checklists de RRHH, informes de planificación — todo gestionado automáticamente. Nuestro equipo finalmente se centra en trabajo real en vez de administración."
+      }
+    ],
+    "faqBadge": "FAQ",
+    "faqTitle": "Preguntas Que Recibimos Cada Día",
+    "faqSubtitle": "Respuestas directas — sin tecnicismos, sin relleno",
+    "faqs": [
+      {
+        "question": "¿Qué es un Agente IA de WhatsApp y cómo funciona?",
+        "answer": "Nuestro Agente IA de WhatsApp es un sistema automatizado conectado a tu cuenta de WhatsApp Business. Responde a las consultas entrantes de pacientes al instante — en múltiples idiomas — 24 horas al día. Puede evaluar fotos usando Vision IA, transcribir mensajes de voz, puntuar y calificar leads, y reservar consultas automáticamente en tu calendario. No se necesita ningún humano para conversaciones rutinarias."
+      },
+      {
+        "question": "¿Con qué industrias trabajáis?",
+        "answer": "Nuestras dos especializaciones principales son el turismo médico y los bienes raíces. En turismo médico, trabajamos con clínicas en Turquía incluyendo trasplante capilar (FUE/DHI), dental y diseño de sonrisa, cirugía estética y plástica, FIV y fertilidad, y agencias de turismo de salud. En bienes raíces, ayudamos a agencias a vender propiedades a compradores internacionales usando gestión de leads con IA, automatización de WhatsApp y publicidad dirigida. También trabajamos con empresas de servicios que necesitan gestión de leads 24/7 y crecimiento digital."
+      },
+      {
+        "question": "¿Cuánto tiempo lleva la configuración?",
+        "answer": "El Agente IA de WhatsApp generalmente está en vivo en 2 semanas. Eso incluye conectar tu API de WhatsApp Business, entrenar la IA con tus servicios y precios específicos, integrar con tu calendario de reservas y hacer pruebas. Las campañas de SEO y publicidad generalmente se lanzan en el mismo primer mes."
+      },
+      {
+        "question": "¿Qué idiomas soporta el agente IA?",
+        "answer": "El agente IA puede comunicarse fluidamente en inglés, turco, árabe, ruso, alemán, francés y muchos otros idiomas. Detecta automáticamente el idioma del paciente y responde en consecuencia, por lo que nunca necesitas contratar personal multilingüe para el soporte de primer contacto."
+      },
+      {
+        "question": "¿Cómo funciona el Generador de Blog SEO con IA?",
+        "answer": "Nuestra IA extrae temas relevantes de feeds RSS y fuentes del sector, escribe artículos totalmente optimizados para SEO, añade títulos y descripciones meta, configura enlaces internos y los publica según un calendario — todo automáticamente. Tu equipo médico puede opcionalmente revisar los posts antes de publicarlos. Los clientes típicamente publican 20-30 artículos al mes sin ningún esfuerzo manual."
+      },
+      {
+        "question": "¿Gestionáis Google Ads y Meta Ads?",
+        "answer": "Sí. Construimos y gestionamos campañas publicitarias completas en Google Search, Google Display, Facebook e Instagram. Esto incluye investigación de audiencias, estrategia creativa de anuncios, contenido de antes/después, funnels de retargeting y seguimiento de conversiones integrado con tu pipeline de leads de WhatsApp."
+      },
+      {
+        "question": "¿Necesito conocimientos técnicos para usar vuestras herramientas?",
+        "answer": "No. Nosotros nos encargamos de toda la configuración técnica — conexiones API, integraciones, configuración del panel de control y optimización continua. Solo necesitas una cuenta de WhatsApp Business y voluntad de crecer. Proporcionamos formación y documentación para que tu equipo pueda monitorear el rendimiento sin necesitar conocimientos técnicos."
+      },
+      {
+        "question": "¿Qué resultados puedo esperar de manera realista?",
+        "answer": "Basándonos en nuestros clientes existentes: el tiempo de respuesta cae de horas a menos de 30 segundos, las tasas de conversión de leads típicamente aumentan un 40-60%, el tráfico orgánico crece más de un 20% en 6 meses de SEO consistente, y el ROAS de publicidad de pago ha alcanzado hasta 8.5x. Los resultados varían según la clínica, el mercado y el punto de partida — discutimos objetivos realistas durante la llamada estratégica gratuita."
+      },
+      {
+        "question": "¿Cuánto cuesta?",
+        "answer": "El precio depende de qué servicios necesitas y el alcance de las operaciones de tu clínica. Ofrecemos productos IA independientes (Agente WhatsApp, Generador de Blog SEO, Piloto Automático de Operaciones IA) así como retenciones mensuales de servicio completo. Reserva una llamada estratégica gratuita y prepararemos una propuesta personalizada con precios transparentes."
+      },
+      {
+        "question": "¿Cómo es el proceso de incorporación?",
+        "answer": "Después de la llamada estratégica enviamos un breve cuestionario de incorporación que cubre tus servicios, precios, mercados objetivo y branding. Luego nos encargamos de toda la configuración técnica, te presentamos un entorno de pruebas, recopilamos tus comentarios y entramos en funcionamiento. La mayoría de clientes están completamente incorporados en 2-3 semanas."
+      }
+    ],
+    "ctaTitle": "Tus Competidores No Esperarán. Tú Tampoco Deberías.",
+    "ctaSubtitle": "Reserva una llamada estratégica gratuita de 30 minutos. Te mostraremos exactamente qué automatizaciones tendrán el mayor impacto en tus ingresos — sin relleno, sin presión de ventas, solo un plan claro.",
+    "ctaButton": "Reserva Tu Llamada Estratégica Gratis"
+  },
+  "about": {
+    "badge": "Expertos en Generación de Leads y Ventas",
+    "title": "Sobre Webimot",
+    "subtitle": "Combinamos automatización IA con estrategias de marketing digital probadas para generar leads e impulsar ventas para tu negocio",
+    "focusTitle": "Nuestro Enfoque: Leads y Ventas",
+    "focusP1": "No somos solo una agencia de marketing. Somos un socio de generación de leads y aceleración de ventas. Cada estrategia, cada automatización, cada campaña está diseñada con un objetivo: generar leads cualificados y convertirlos en clientes.",
+    "focusP2": "Nuestros sistemas impulsados por IA trabajan 24/7 para capturar, calificar y nutrir leads para que tu equipo de ventas pueda centrarse en cerrar negocios.",
+    "deliverTitle": "Lo Que Entregamos",
+    "deliver": [
+      "Más leads cualificados para tu equipo de ventas",
+      "Tiempos de respuesta más rápidos con automatización IA",
+      "Mayores tasas de conversión mediante nurturing",
+      "ROI medible en cada campaña"
+    ],
+    "stats": [
+      { "number": "15+", "label": "Clientes Atendidos" },
+      { "number": "60%", "label": "Crecimiento Medio de Tráfico" },
+      { "number": "24/7", "label": "Automatización IA" },
+      { "number": "25+", "label": "Idiomas Soportados" }
+    ],
+    "medBadge": "Enfoque Principal",
+    "medTitle": "Turismo Médico y Clínicas",
+    "medSubtitle": "El turismo médico es una industria de más de $100 mil millones con desafíos únicos que la automatización IA resuelve perfectamente. Aquí es donde nos especializamos.",
+    "specialties": [
+      { "title": "Clínicas Dentales", "desc": "Implantes, carillas, restauración completa de boca" },
+      { "title": "Trasplante Capilar", "desc": "FUE, DHI y trasplantes de barba" },
+      { "title": "Cirugía Estética", "desc": "Rinoplastia, BBL, cirugía de pérdida de peso" }
+    ],
+    "challengesTitle": "Los Desafíos del Sector",
+    "challenges": [
+      "Los leads llegan 24/7 desde diferentes zonas horarias",
+      "Múltiples idiomas y barreras de comunicación",
+      "Se necesitan evaluaciones de fotos para consultas",
+      "Largos ciclos de ventas que requieren seguimiento constante",
+      "Altos costes de personal para cobertura las 24 horas"
+    ],
+    "solutionTitle": "Nuestra Solución IA",
+    "solutions": [
+      "El agente IA responde instantáneamente en cualquier zona horaria",
+      "Traducción automática en 50+ idiomas",
+      "Vision IA evalúa fotos automáticamente",
+      "Secuencias de seguimiento automatizadas",
+      "70% de reducción en costes de personal"
+    ],
+    "reBadge": "Segunda Especialización Principal",
+    "reTitle": "Inmobiliaria y Más",
+    "reSubtitle": "La inmobiliaria es nuestro segundo nicho probado — y también trabajamos con empresas de servicios que necesitan la misma digitalización de leads de alto valor",
+    "realEstate": {
+      "title": "Inmobiliaria",
+      "subtitle": "Agencias de venta e inversión inmobiliaria",
+      "items": [
+        "Agente IA de WhatsApp para compradores internacionales",
+        "Marketing de propiedades de lujo e inversión",
+        "Calificación de leads multilingüe",
+        "Seguimientos automáticos y programación de visitas",
+        "Meta y Google Ads para compradores de propiedades"
+      ]
+    },
+    "serviceB": {
+      "title": "Empresas de Servicios",
+      "subtitle": "Cualquier negocio que necesite digitalización con IA",
+      "items": [
+        "Gestión y calificación de leads 24/7 con IA",
+        "Sistemas automatizados de reservas y citas",
+        "Generación y publicación de contenido SEO",
+        "Campañas publicitarias dirigidas y automatización de funnels"
+      ]
+    },
+    "teamTitle": "Nuestro Equipo",
+    "teamP": "Webimot fue fundado por expertos en marketing digital e IA que vieron una oportunidad de transformar cómo las empresas generan leads. Con oficinas en Estambul y Ámsterdam, servimos a clientes en todo el mundo.",
+    "teamItems": [
+      "Expertos en marketing digital y SEO",
+      "Especialistas en IA y automatización",
+      "Veteranos del sector de turismo médico e inmobiliaria",
+      "Profesionales de generación de leads y ventas"
+    ],
+    "teamCta": "Hablemos de Tus Objetivos"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "¿Listo para transformar tu negocio con automatización IA? Hablemos de tus objetivos.",
+    "whatsapp": { "title": "WhatsApp", "desc": "Recibe respuestas instantáneas de nuestro equipo", "button": "Chatear en WhatsApp" },
+    "email": { "title": "Email", "desc": "Envíanos una consulta detallada" },
+    "phone": { "title": "Teléfono", "desc": "Llámanos en horario laboral" },
+    "formTitle": "Envíanos un Mensaje",
+    "formDesc": "Rellena el formulario y te responderemos en 24 horas",
+    "name": "Nombre *",
+    "emailLabel": "Email *",
+    "phoneLabel": "Teléfono",
+    "messageLabel": "Mensaje *",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successTitle": "¡Mensaje enviado!",
+    "successDesc": "Te responderemos en 24 horas.",
+    "office": "Oficina en Ámsterdam",
+    "hours": {
+      "title": "Horario de Atención",
+      "weekdays": "Lunes - Viernes: 9:00 AM - 6:00 PM (CET)",
+      "saturday": "Sábado: 10:00 AM - 2:00 PM (CET)",
+      "sunday": "Domingo: Cerrado",
+      "note": "* ¡Nuestros sistemas IA funcionan 24/7, incluso cuando estamos cerrados!"
+    },
+    "ctaTitle": "¿Listo para Empezar?",
+    "ctaSubtitle": "Reserva una llamada estratégica gratuita de 20 minutos para hablar sobre cómo la automatización IA puede transformar tu negocio",
+    "ctaButton": "Reserva Tu Llamada Estratégica Gratis"
+  },
+  "clients": {
+    "title": "Nuestros Clientes",
+    "subtitle": "Resultados reales de negocios reales en turismo médico, inmobiliaria e industrias de servicios",
+    "successTitle": "Historias de Éxito",
+    "metrics": [
+      { "value": "100%", "label": "Tasa de Respuesta a Leads", "desc": "Todas las consultas respondidas al instante" },
+      { "value": "3x", "label": "Más Conversiones", "desc": "Mejora media entre clientes" },
+      { "value": "60%", "label": "Crecimiento de Tráfico", "desc": "Aumento medio de tráfico orgánico" }
+    ],
+    "testimonialsTitle": "Lo Que Dicen Nuestros Clientes",
+    "industriesTitle": "Industrias que Atendemos",
+    "ctaTitle": "Únete a Nuestras Historias de Éxito",
+    "ctaSubtitle": "¿Listo para ver resultados similares para tu negocio?",
+    "ctaButton": "Reserva Tu Llamada Estratégica Gratis"
+  },
+  "whyWebimot": {
+    "badge": "Especialistas en Turismo Médico",
+    "title": "Ayudamos a Clínicas a Conseguir Más Pacientes",
+    "subtitle": "La mayoría de agencias te traen clics. Nosotros nos centramos en lo que realmente importa para tu clínica — convertir consultas en procedimientos reservados. Con sistemas impulsados por IA construidos específicamente para clínicas de trasplante capilar, dental, estética y FIV.",
+    "coreValues": [
+      { "title": "Convertir Pacientes en Reservas", "description": "No solo te traemos consultas — construimos sistemas que convierten preguntas de pacientes en consultas y procedimientos confirmados.", "stats": "60% mayor tasa de reservas" },
+      { "title": "Aumentar Pacientes Internacionales", "description": "Atrae pacientes del Reino Unido, Alemania, EE.UU. y más allá con estrategias de marketing multilingüe construidas para clínicas de turismo médico.", "stats": "3x más leads internacionales" },
+      { "title": "Respuesta a Pacientes 24/7", "description": "Nunca pierdas una consulta. Nuestra IA gestiona preguntas de pacientes, evalúa fotos y reserva consultas incluso mientras duermes.", "stats": "100% tasa de respuesta" },
+      { "title": "Seguir Cada Recorrido del Paciente", "description": "Sabe exactamente de dónde vienen tus pacientes, qué campañas funcionan y cómo conseguir más reservas con analítica detallada.", "stats": "Informes de rendimiento semanales" }
+    ],
+    "partnerTitle": "El Socio de Crecimiento de Tu Clínica",
+    "partnerDesc": "Entendemos el turismo médico de cabo a rabo. Desde gestionar consultas de pacientes en árabe, alemán e inglés hasta evaluar fotos de antes/después — sabemos lo que se necesita para convertir pacientes internacionales en procedimientos reservados.",
+    "partnerItems": [
+      "Comunicación multilingüe con pacientes (EN, DE, AR, RU)",
+      "Evaluación IA de fotos para procedimientos capilares, dentales y estéticos",
+      "Reserva de consultas automatizada y sincronización de calendario",
+      "Seguimiento del recorrido del paciente desde la consulta hasta el procedimiento"
+    ],
+    "processTitle": "Nuestro Proceso Probado",
+    "steps": [
+      { "step": "01", "title": "Auditar Tu Clínica", "description": "Analizamos tu flujo de pacientes, sitio web y marketing actual para encontrar oportunidades de crecimiento." },
+      { "step": "02", "title": "Construir Tu Sistema IA", "description": "Agente WhatsApp personalizado, campañas multilingües y reservas automatizadas adaptadas a tu clínica." },
+      { "step": "03", "title": "Lanzar y Monitorear", "description": "Entra en funcionamiento con respuesta a pacientes 24/7 y sigue cada consulta desde el primer mensaje hasta el procedimiento reservado." },
+      { "step": "04", "title": "Escalar Internacionalmente", "description": "Expándete a nuevos mercados — Reino Unido, Alemania, países del Golfo — y aumenta tu base de pacientes internacionales." }
+    ],
+    "cta": "Obtén Tu Plan de Crecimiento Gratis"
+  },
+  "clientResults": {
+    "badge": "Resultados Probados",
+    "title": "Resultados Reales de Clínicas Reales",
+    "subtitle": "No tomes solo nuestra palabra. Mira las métricas reales de antes/después de clínicas y negocios que hemos ayudado a crecer con automatización IA y marketing digital.",
+    "viewAll": "Ver Todos los Casos de Éxito"
+  },
+  "exitPopup": {
+    "title": "¡Espera! No Te Vayas con las Manos Vacías",
+    "desc": "Obtén una <strong>auditoría de marketing gratuita</strong> y descubre cómo podemos ayudarte a generar más leads. Sin compromiso.",
+    "cta": "Obtener Mi Auditoría Gratuita",
+    "dismiss": "No gracias, paso del consejo gratuito",
+    "trust": "Únete a más de 200 negocios que confían en Webimot para sus necesidades de marketing"
+  },
+  "caseStudies": {
+    "title": "Casos de Éxito",
+    "subtitle": "Historias de éxito reales de negocios que transformaron su generación de leads con nuestras soluciones",
+    "ctaTitle": "¿Listo para Ser Nuestro Próximo Caso de Éxito?",
+    "ctaButton": "Reserva Tu Llamada Estratégica Gratis"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights sobre automatización IA, marketing digital y cómo hacer crecer tu negocio",
+    "filterLabel": "Filtrar por:"
+  },
+  "bookConsultation": {
+    "title": "Reserva Tu Llamada Estratégica Gratis",
+    "subtitle": "Hablemos sobre cómo la automatización IA puede transformar las operaciones de tu negocio e impulsar el crecimiento",
+    "ctaButton": "Reserva Tu Llamada Gratuita Ahora",
+    "noCredit": "Sin tarjeta de crédito • Sin compromiso"
+  },
+  "notFound": {
+    "title": "404 Página No Encontrada",
+    "message": "La página que buscas no existe o ha sido movida. Por favor verifica la URL o vuelve a nuestra página de inicio.",
+    "goHome": "Ir al Inicio",
+    "goBack": "Volver Atrás"
+  },
+  "services": {
+    "title": "Servicios que Digitalizan y Hacen Crecer Tu Negocio",
+    "subtitle": "Automatización IA, anuncios dirigidos, SEO y marketing digital — construido para clínicas de turismo médico y agencias inmobiliarias.",
+    "ctaTitle": "¿Listo para Dominar Tu Mercado?",
+    "ctaSubtitle": "Únete a clínicas de turismo médico y agencias inmobiliarias que usan Webimot para generar más leads, responder más rápido y cerrar más negocios."
+  }
+}
