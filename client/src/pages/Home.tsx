@@ -10,6 +10,9 @@ import TestimonialCard from "@/components/TestimonialCard";
 import PortfolioSection from "@/components/PortfolioSection";
 import WhyWebimotSection from "@/components/WhyWebimotSection";
 import ClientResultsSection from "@/components/ClientResultsSection";
+import WhoWeHelpSection from "@/components/WhoWeHelpSection";
+import ConsultingTiersSection from "@/components/ConsultingTiersSection";
+import PricingPackagesSection from "@/components/PricingPackagesSection";
 import SEO from "@/components/SEO";
 import {
   Accordion,
@@ -65,6 +68,39 @@ const tickerItems = [
 
 const productHrefs = ["/services/whatsapp-ai-agent", "/services/seo-blog-generator", "/services/ai-ops-autopilot"];
 const productFlagships = [true, false, false];
+
+const newProducts = [
+  {
+    title: "⚡ LeadFire", tagline: "Speed to Lead Automation",
+    description: "When a lead comes in from a form, ad, or website — LeadFire replies in under 60 seconds. AI qualifies them, answers their first questions, and books a call automatically. No manual work. No missed leads.",
+    features: ["Instant reply to every form fill and ad lead", "AI-personalized first message — not a generic autoresponder", "Smart qualification questions to score the lead", "Auto-books appointments directly to your calendar", "Real-time notifications to your sales team", "Works across WhatsApp, email, and SMS"],
+    href: "/products/leadfire",
+  },
+  {
+    title: "📄 DocuMind", tagline: "Document Processing Automation",
+    description: "Upload any document — invoice, contract, intake form, or medical record. DocuMind reads it, extracts the data, fills your CRM, and flags anything missing. Hours of manual work done in seconds.",
+    features: ["Reads PDFs, Word docs, forms, invoices, and contracts", "Extracts and structures key data automatically", "Auto-fills your CRM or internal database", "Flags incomplete or incorrect information", "Routes documents to the right person or department", "Summarises long documents into key points"],
+    href: "/products/documind",
+  },
+  {
+    title: "🔁 NurtureLoop", tagline: "Follow-Up Automation System",
+    description: "Most leads go cold because nobody followed up at the right time. NurtureLoop runs intelligent multi-channel sequences across email, SMS, and WhatsApp — automatically, and stops the moment they respond.",
+    features: ["Sequences across email, SMS, and WhatsApp", "Switches channels if a lead doesn't respond", "AI-personalised messages for each lead", "Automatically stops when lead replies or books", "Tracks open rates, reply rates, and conversions", "Works with your existing CRM"],
+    href: "/products/nurtureloop",
+  },
+  {
+    title: "💎 ReviveIQ", tagline: "Database Reactivation",
+    description: "You already have a list of old leads, past clients, or cold contacts sitting unused. ReviveIQ sends AI-personalised reactivation messages and hands you back the ones who are ready to buy — right now.",
+    features: ["Import any CRM export, spreadsheet, or contact list", "AI segments and personalises messages per contact", "Runs across email, SMS, and WhatsApp", "Scores responses to identify hot leads", "Available as a one-time campaign or recurring quarterly", "Full report on responses and re-engaged leads"],
+    href: "/products/reviveiq",
+  },
+  {
+    title: "📊 ClearDesk", tagline: "Internal Reporting Automation",
+    description: "Every Monday morning, ClearDesk sends your team a clear performance report across all your tools — plain English, no spreadsheets, no analysts. Just the numbers that matter and what they mean.",
+    features: ["Connects to your CRM, ads, website analytics, and spreadsheets", "Auto-generates weekly and monthly performance reports", "Plain-English AI summary of what's working and what's not", "Tracks KPIs across sales, marketing, and operations", "Delivered to email, Slack, or a live dashboard", "Fully customisable to your business metrics"],
+    href: "/products/cleardesk",
+  },
+];
 const serviceHrefs = [
   "/services/meta-ads", "/services/google-ads", "/services/seo",
   "/services/website-development", "/services/content-creation",
@@ -111,9 +147,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="AI Agent for Clinics & Medical Tourism | AI Receptionist | Webimot Agency"
-        description="Webimot Agency builds AI agents for clinics and medical tourism businesses — an AI receptionist that replies 24/7 in Arabic, German, Russian & 12 languages, an automated SEO blog generator, and an AI Operations Autopilot that handles invoices, HR, and internal workflows. Trusted by 50+ businesses across Germany, UK, UAE & 12+ countries."
-        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, AI receptionist medical tourism, automated SEO blog, automated SEO blog generator, AI operations automation, AI workflow automation, invoice automation AI, HR automation AI, WhatsApp AI agent for clinic, AI lead automation clinic, medical tourism AI automation, hair transplant clinic AI agent, dental clinic AI receptionist, cosmetic surgery lead automation, IVF clinic marketing automation, Shopify eCommerce AI, clinic marketing Germany, clinic marketing Netherlands, clinic marketing UAE"
+        title="Webimot Agency | AI Consulting & Automation for Business"
+        description="We build AI systems that respond to leads, process documents, reactivate old contacts, and report your results — 24/7. Trusted by 50+ businesses in 12+ countries."
+        keywords="AI automation agency, AI consulting, lead automation, document processing, WhatsApp AI, business automation, AI agency Europe, AI agency Turkey"
         canonicalUrl="https://webimotagency.com/"
         schema={{
           "@context": "https://schema.org",
@@ -231,8 +267,12 @@ export default function Home() {
 
           <WhyWebimotSection />
 
+          <WhoWeHelpSection />
+
+          <ConsultingTiersSection />
+
           {/* AI Stack */}
-          <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
+          <section id="ai-stack" className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
             <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-secondary/40 to-transparent" />
             <div className="container mx-auto px-6 relative z-10">
@@ -262,15 +302,14 @@ export default function Home() {
 
               <div className="grid lg:grid-cols-3 gap-8">
                 {aiProducts.map((product, index) => (
-                  <AIProductCard
-                    key={index}
-                    title={product.title}
-                    tagline={product.tagline}
-                    description={product.description}
-                    features={product.features}
-                    href={productHrefs[index]}
-                    flagship={productFlagships[index]}
-                  />
+                  <AIProductCard key={index} title={product.title} tagline={product.tagline}
+                    description={product.description} features={product.features}
+                    href={productHrefs[index]} flagship={productFlagships[index]} />
+                ))}
+                {newProducts.map((product) => (
+                  <AIProductCard key={product.href} title={product.title} tagline={product.tagline}
+                    description={product.description} features={product.features}
+                    href={product.href} flagship={false} />
                 ))}
               </div>
             </div>
@@ -449,6 +488,8 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <PricingPackagesSection />
 
           {/* FAQ */}
           <section className="py-16 md:py-24 bg-muted/30">

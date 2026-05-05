@@ -7,13 +7,14 @@ export default function Footer() {
   const whatsappLink = "https://wa.me/31628753175";
   return (
     <footer className="border-t border-white/8 bg-[#020817] relative overflow-hidden">
-      {/* Subtle neural grid */}
       <div className="absolute inset-0 neural-grid pointer-events-none opacity-60" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[1px] bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
 
       <div className="container mx-auto px-6 py-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+          {/* Brand */}
+          <div className="lg:col-span-1">
             <div className="mb-4 flex items-center gap-2">
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <span className="text-white font-bold text-lg">W</span>
@@ -29,7 +30,6 @@ export default function Footer() {
             <div className="mt-5">
               <p className="text-[10px] font-mono text-white/35 uppercase tracking-widest mb-2">Certified Partners</p>
               <div className="flex flex-wrap gap-2">
-                {/* Google Partner Badge */}
                 <div className="flex items-center gap-2.5 bg-white rounded-lg px-3 py-2 shadow-sm">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -42,7 +42,6 @@ export default function Footer() {
                     <p className="text-[11px] font-bold text-gray-800 leading-tight">Partner</p>
                   </div>
                 </div>
-                {/* Meta Business Partner Badge */}
                 <div className="flex items-center gap-2.5 bg-white rounded-lg px-3 py-2 shadow-sm">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" fill="#1877F2"/>
@@ -56,19 +55,37 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Products */}
           <div>
-            <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">{t("footer.services")}</h3>
+            <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">Products</h3>
             <ul className="space-y-2">
-              <li><Link href="/services/whatsapp-ai-agent" data-testid="link-footer-whatsapp" className="text-sm text-white/65 hover:text-secondary transition-colors">WhatsApp AI Agent</Link></li>
-              <li><Link href="/services/seo-blog-generator" data-testid="link-footer-seo" className="text-sm text-white/65 hover:text-secondary transition-colors">SEO Blog Generator</Link></li>
-              <li><Link href="/services/ai-ops-autopilot" data-testid="link-footer-analyst" className="text-sm text-white/65 hover:text-secondary transition-colors">AI Operations Autopilot</Link></li>
-              <li><Link href="/services" data-testid="link-footer-all-services" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.allServices")}</Link></li>
+              <li><Link href="/products/leadfire" className="text-sm text-white/65 hover:text-secondary transition-colors">⚡ LeadFire</Link></li>
+              <li><Link href="/products/documind" className="text-sm text-white/65 hover:text-secondary transition-colors">📄 DocuMind</Link></li>
+              <li><Link href="/products/nurtureloop" className="text-sm text-white/65 hover:text-secondary transition-colors">🔁 NurtureLoop</Link></li>
+              <li><Link href="/products/reviveiq" className="text-sm text-white/65 hover:text-secondary transition-colors">💎 ReviveIQ</Link></li>
+              <li><Link href="/products/cleardesk" className="text-sm text-white/65 hover:text-secondary transition-colors">📊 ClearDesk</Link></li>
+              <li><Link href="/products/seo-blog-ai" className="text-sm text-white/65 hover:text-secondary transition-colors">✍️ SEO Blog AI</Link></li>
+              <li><Link href="/products/whatsapp-ai" className="text-sm text-white/65 hover:text-secondary transition-colors">💬 WhatsApp AI</Link></li>
             </ul>
           </div>
 
+          {/* Industries */}
+          <div>
+            <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">Industries</h3>
+            <ul className="space-y-2">
+              <li><Link href="/industries/healthcare" className="text-sm text-white/65 hover:text-secondary transition-colors">Healthcare</Link></li>
+              <li><Link href="/industries/ecommerce" className="text-sm text-white/65 hover:text-secondary transition-colors">eCommerce</Link></li>
+              <li><Link href="/industries/finance-legal" className="text-sm text-white/65 hover:text-secondary transition-colors">Finance & Legal</Link></li>
+              <li><Link href="/industries/small-business" className="text-sm text-white/65 hover:text-secondary transition-colors">Small Business</Link></li>
+              <li><Link href="/industries/real-estate" className="text-sm text-white/65 hover:text-secondary transition-colors">Real Estate</Link></li>
+            </ul>
+          </div>
+
+          {/* Company */}
           <div>
             <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">{t("footer.company")}</h3>
             <ul className="space-y-2">
+              <li><Link href="/services" className="text-sm text-white/65 hover:text-secondary transition-colors">Services</Link></li>
               <li><Link href="/about" data-testid="link-footer-about" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.aboutUs")}</Link></li>
               <li><Link href="/case-studies" data-testid="link-footer-case-studies" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.caseStudies")}</Link></li>
               <li><Link href="/clients" data-testid="link-footer-clients" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.ourClients")}</Link></li>
@@ -77,6 +94,7 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Contact */}
           <div>
             <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">{t("footer.contact")}</h3>
             <ul className="space-y-3">

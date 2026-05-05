@@ -23,6 +23,13 @@ const CaseStudyDetail = lazy(() => import("@/pages/CaseStudyDetail"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 const NotFound = lazy(() => import("@/pages/not-found"));
+const LeadFirePage = lazy(() => import("@/pages/products/LeadFire"));
+const DocuMindPage = lazy(() => import("@/pages/products/DocuMind"));
+const NurtureLoopPage = lazy(() => import("@/pages/products/NurtureLoop"));
+const ReviveIQPage = lazy(() => import("@/pages/products/ReviveIQ"));
+const ClearDeskPage = lazy(() => import("@/pages/products/ClearDesk"));
+const SEOBlogAIPage = lazy(() => import("@/pages/products/SEOBlogAI"));
+const WhatsAppAIPage = lazy(() => import("@/pages/products/WhatsAppAI"));
 const Chatbot = lazy(() => import("@/components/Chatbot"));
 const ExitIntentPopup = lazy(() => import("@/components/ExitIntentPopup"));
 
@@ -55,6 +62,13 @@ function Router() {
         <Route path="/case-studies/:slug" component={CaseStudyDetail} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
+        <Route path="/products/leadfire" component={LeadFirePage} />
+        <Route path="/products/documind" component={DocuMindPage} />
+        <Route path="/products/nurtureloop" component={NurtureLoopPage} />
+        <Route path="/products/reviveiq" component={ReviveIQPage} />
+        <Route path="/products/cleardesk" component={ClearDeskPage} />
+        <Route path="/products/seo-blog-ai" component={SEOBlogAIPage} />
+        <Route path="/products/whatsapp-ai" component={WhatsAppAIPage} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
