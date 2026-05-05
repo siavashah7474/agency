@@ -124,8 +124,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.error("Failed to send booking lead email:", err);
       });
 
-      // TODO: Implement actual storage
-      // await storage.insertBooking({ name: sanitizedName, email: sanitizedEmail, phone: sanitizedPhone, service: sanitizedService });
+      await storage.insertBooking({
+        name: sanitizedName,
+        email: sanitizedEmail,
+        phone: sanitizedPhone,
+        service: sanitizedService,
+      });
 
       res.status(200).json({
         message: "Booking request received successfully",
@@ -209,8 +213,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.error("Failed to send contact lead email:", err);
       });
 
-      // TODO: Implement actual storage
-      // await storage.insertContact({ name: sanitizedName, email: sanitizedEmail, phone: sanitizedPhone, message: sanitizedMessage });
+      await storage.insertContact({
+        name: sanitizedName,
+        email: sanitizedEmail,
+        phone: sanitizedPhone ?? undefined,
+        message: sanitizedMessage,
+      });
 
       res.status(200).json({
         message: "Message sent successfully",
