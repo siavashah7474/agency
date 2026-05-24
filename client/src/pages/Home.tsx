@@ -69,38 +69,7 @@ const tickerItems = [
 const productHrefs = ["/services/whatsapp-ai-agent", "/services/seo-blog-generator", "/services/ai-ops-autopilot"];
 const productFlagships = [true, false, false];
 
-const newProducts = [
-  {
-    title: "⚡ LeadFire", tagline: "Speed to Lead Automation",
-    description: "When a lead comes in from a form, ad, or website — LeadFire replies in under 60 seconds. AI qualifies them, answers their first questions, and books a call automatically. No manual work. No missed leads.",
-    features: ["Instant reply to every form fill and ad lead", "AI-personalized first message — not a generic autoresponder", "Smart qualification questions to score the lead", "Auto-books appointments directly to your calendar", "Real-time notifications to your sales team", "Works across WhatsApp, email, and SMS"],
-    href: "/products/leadfire",
-  },
-  {
-    title: "📄 DocuMind", tagline: "Document Processing Automation",
-    description: "Upload any document — invoice, contract, intake form, or medical record. DocuMind reads it, extracts the data, fills your CRM, and flags anything missing. Hours of manual work done in seconds.",
-    features: ["Reads PDFs, Word docs, forms, invoices, and contracts", "Extracts and structures key data automatically", "Auto-fills your CRM or internal database", "Flags incomplete or incorrect information", "Routes documents to the right person or department", "Summarises long documents into key points"],
-    href: "/products/documind",
-  },
-  {
-    title: "🔁 NurtureLoop", tagline: "Follow-Up Automation System",
-    description: "Most leads go cold because nobody followed up at the right time. NurtureLoop runs intelligent multi-channel sequences across email, SMS, and WhatsApp — automatically, and stops the moment they respond.",
-    features: ["Sequences across email, SMS, and WhatsApp", "Switches channels if a lead doesn't respond", "AI-personalised messages for each lead", "Automatically stops when lead replies or books", "Tracks open rates, reply rates, and conversions", "Works with your existing CRM"],
-    href: "/products/nurtureloop",
-  },
-  {
-    title: "💎 ReviveIQ", tagline: "Database Reactivation",
-    description: "You already have a list of old leads, past clients, or cold contacts sitting unused. ReviveIQ sends AI-personalised reactivation messages and hands you back the ones who are ready to buy — right now.",
-    features: ["Import any CRM export, spreadsheet, or contact list", "AI segments and personalises messages per contact", "Runs across email, SMS, and WhatsApp", "Scores responses to identify hot leads", "Available as a one-time campaign or recurring quarterly", "Full report on responses and re-engaged leads"],
-    href: "/products/reviveiq",
-  },
-  {
-    title: "📊 ClearDesk", tagline: "Internal Reporting Automation",
-    description: "Every Monday morning, ClearDesk sends your team a clear performance report across all your tools — plain English, no spreadsheets, no analysts. Just the numbers that matter and what they mean.",
-    features: ["Connects to your CRM, ads, website analytics, and spreadsheets", "Auto-generates weekly and monthly performance reports", "Plain-English AI summary of what's working and what's not", "Tracks KPIs across sales, marketing, and operations", "Delivered to email, Slack, or a live dashboard", "Fully customisable to your business metrics"],
-    href: "/products/cleardesk",
-  },
-];
+
 const serviceHrefs = [
   "/services/meta-ads", "/services/google-ads", "/services/seo",
   "/services/website-development", "/services/content-creation",
@@ -149,7 +118,7 @@ export default function Home() {
       <SEO
         title="Webimot Agency | AI Consulting & Automation for Business"
         description="We build AI systems that respond to leads, process documents, reactivate old contacts, and report your results — 24/7. Trusted by 50+ businesses in 12+ countries."
-        keywords="AI automation agency, AI consulting, lead automation, document processing, WhatsApp AI, business automation, AI agency Europe, AI agency Turkey"
+        keywords="AI automation agency, AI consulting, lead automation, document processing, WhatsApp AI, business automation, AI agency Europe, AI agency Turkey, medical tourism AI system, medical tourism marketing, AI agent for clinics, clinic AI system, AI receptionist for clinics, AI automation for medical tourism, clinic automation software, hair transplant clinic AI, dental clinic AI agent, medical tourism lead generation, AI patient intake system, clinic WhatsApp automation"
         canonicalUrl="https://webimotagency.com/"
         schema={{
           "@context": "https://schema.org",
@@ -306,11 +275,14 @@ export default function Home() {
                     description={product.description} features={product.features}
                     href={productHrefs[index]} flagship={productFlagships[index]} />
                 ))}
-                {newProducts.map((product) => (
-                  <AIProductCard key={product.href} title={product.title} tagline={product.tagline}
-                    description={product.description} features={product.features}
-                    href={product.href} flagship={false} />
-                ))}
+              </div>
+              <div className="text-center mt-10">
+                <Link href="/ai-solutions">
+                  <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white">
+                    See All AI Products
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-secondary/20 to-transparent" />

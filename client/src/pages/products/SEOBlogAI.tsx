@@ -3,8 +3,8 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function SEOBlogAIPage() {
   return (
     <ProductPageLayout
-      seoTitle="SEO Blog AI | Publish SEO content on autopilot. Every week — Webimot Agency"
-      seoDescription="Most businesses know they need content but never have time to create it. SEO Blog AI writes, optimises, and publishes posts automatically — so your site ranks while you focus on clients."
+      seoTitle="SEO Blog AI | Medical Tourism Marketing on Autopilot — Webimot Agency"
+      seoDescription="The medical tourism marketing tool that writes itself. SEO Blog AI publishes optimised content for your clinic every week automatically — so you rank for the patients who matter most."
       emoji="✍️"
       name="SEO Blog AI"
       tagline="Publish SEO content on autopilot. Every week."

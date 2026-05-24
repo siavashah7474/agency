@@ -31,3 +31,8 @@ User-agent: YouBot
 Allow: /
 
 Sitemap: https://webimotagency.com/sitemap.xml
+
+# ===== AI LLM REFERENCE FILES =====
+# Structured content for AI search engines and LLMs
+# https://webimotagency.com/llms.txt
+# https://webimotagency.com/llms-full.txt

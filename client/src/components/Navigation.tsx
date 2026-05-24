@@ -173,7 +173,7 @@ export default function Navigation() {
             <nav className="container mx-auto px-6 py-4 flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href} data-testid={`link-mobile-${link.href.replace("/", "") || "home"}`}
-                  className={`block py-2 text-sm font-medium ${location === link.href ? "text-primary" : "text-muted-foreground"}`}
+                  className={`block py-3 text-sm font-medium border-b border-muted/30 last:border-0 ${location === link.href ? "text-primary" : "text-muted-foreground"}`}
                   onClick={() => setMobileMenuOpen(false)}>
                   {link.label}
                 </Link>
@@ -185,10 +185,10 @@ export default function Navigation() {
                   Products <ChevronDown className={`h-3 w-3 transition-transform ${mobileProductsOpen ? "rotate-180" : ""}`} />
                 </button>
                 {mobileProductsOpen && (
-                  <div className="pl-4 flex flex-col gap-1 mt-1">
+                  <div className="pl-4 flex flex-col mt-1">
                     {PRODUCTS.map((p) => (
                       <Link key={p.href} href={p.href}
-                        className="flex items-center gap-2 py-1.5 text-sm text-muted-foreground hover:text-primary"
+                        className="flex items-center gap-2 py-3 text-sm text-muted-foreground hover:text-primary border-b border-muted/40 last:border-0"
                         onClick={() => setMobileMenuOpen(false)}>
                         <span>{p.emoji}</span><span>{p.label}</span>
                       </Link>
@@ -203,10 +203,10 @@ export default function Navigation() {
                   Industries <ChevronDown className={`h-3 w-3 transition-transform ${mobileIndustriesOpen ? "rotate-180" : ""}`} />
                 </button>
                 {mobileIndustriesOpen && (
-                  <div className="pl-4 flex flex-col gap-1 mt-1">
+                  <div className="pl-4 flex flex-col mt-1">
                     {INDUSTRIES.map((ind) => (
                       <Link key={ind.href} href={ind.href}
-                        className="flex items-center gap-2 py-1.5 text-sm text-muted-foreground hover:text-primary"
+                        className="flex items-center gap-2 py-3 text-sm text-muted-foreground hover:text-primary border-b border-muted/40 last:border-0"
                         onClick={() => setMobileMenuOpen(false)}>
                         <span>{ind.emoji}</span><span>{ind.label}</span>
                       </Link>

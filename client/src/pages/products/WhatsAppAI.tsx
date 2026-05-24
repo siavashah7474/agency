@@ -3,8 +3,8 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function WhatsAppAIPage() {
   return (
     <ProductPageLayout
-      seoTitle="WhatsApp AI | 24/7 intelligent lead handling on WhatsApp — Webimot Agency"
-      seoDescription="WhatsApp is where your customers are — but you can't staff it 24/7. Our WhatsApp AI handles every message, qualifies every lead, and books every appointment automatically, in any language."
+      seoTitle="WhatsApp AI | AI Agent for Clinics & Medical Tourism — Webimot Agency"
+      seoDescription="Our clinic AI system handles every WhatsApp message 24/7 — qualifying leads, evaluating photos, and booking appointments automatically. The #1 medical tourism AI system for hair transplant, dental, and cosmetic clinics."
       emoji="💬"
       name="WhatsApp AI"
       tagline="24/7 intelligent lead handling on WhatsApp."

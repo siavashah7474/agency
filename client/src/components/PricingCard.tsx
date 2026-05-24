@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Sparkles, ArrowRight } from "lucide-react";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 
 interface PricingCardProps {
   name: string;
@@ -11,6 +12,7 @@ interface PricingCardProps {
 }
 
 export default function PricingCard({ name, price, description, features, highlighted = false }: PricingCardProps) {
+  const { openModal } = useBookingModal();
   return (
     <Card className={`h-full flex flex-col relative overflow-hidden hover-elevate transition-all duration-300 ${
       highlighted 
@@ -52,6 +54,7 @@ export default function PricingCard({ name, price, description, features, highli
           variant={highlighted ? "default" : "outline"}
           className={`w-full group ${highlighted ? 'shadow-lg' : ''}`}
           size="lg"
+          onClick={() => openModal()}
         >
           Choose {name}
           <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

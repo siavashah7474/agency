@@ -1,14 +1,15 @@
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { useBookingModal } from "@/hooks/use-booking-modal";
-import { Link } from "wouter";
 
 export interface ProductPageProps {
   seoTitle: string;
   seoDescription: string;
+  seoKeywords?: string;
   emoji: string;
   name: string;
   tagline: string;
@@ -20,12 +21,37 @@ export interface ProductPageProps {
   ctaHeadline: string;
 }
 
-export default function ProductPageLayout({ seoTitle, seoDescription, emoji, name, tagline, heroBrief, problemParagraphs, howItWorksSteps, features, whoItsFor, ctaHeadline }: ProductPageProps) {
+const BASE_KEYWORDS = "medical tourism AI system, AI agent for clinics, clinic AI system, medical tourism marketing, AI automation agency, business automation, lead generation, WhatsApp AI, AI receptionist for clinics, clinic automation software";
+
+export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, problemParagraphs, howItWorksSteps, features, whoItsFor, ctaHeadline }: ProductPageProps) {
   const { openModal } = useBookingModal();
+  const [pathname] = useLocation();
+  const canonicalUrl = `https://webimotagency.com${pathname}`;
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": name,
+    "description": seoDescription,
+    "url": canonicalUrl,
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "url": canonicalUrl
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Webimot Agency",
+      "url": "https://webimotagency.com"
+    },
+    "featureList": features
+  };
 
   return (
     <>
-      <SEO title={seoTitle} description={seoDescription} />
+      <SEO title={seoTitle} description={seoDescription} keywords={seoKeywords ? `${seoKeywords}, ${BASE_KEYWORDS}` : BASE_KEYWORDS} canonicalUrl={canonicalUrl} schema={productSchema} />
       <div className="min-h-screen flex flex-col">
         <Navigation />
         <main id="main-content" className="flex-1">
@@ -46,10 +72,8 @@ export default function ProductPageLayout({ seoTitle, seoDescription, emoji, nam
               <p className="text-xl md:text-2xl font-semibold text-yellow-300 mb-6">{tagline}</p>
               <p className="text-lg text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed">{heroBrief}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>Book Free Demo</Button>
-                <Link href="/#pricing">
-                  <Button size="lg" variant="outline" className="bg-white/8 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm">See Pricing</Button>
-                </Link>
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>Book Free Strategy Call</Button>
+                <Button size="lg" variant="outline" className="bg-white/8 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm" onClick={() => openModal()}>See Pricing</Button>
               </div>
             </div>
           </section>

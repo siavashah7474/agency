@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
 import { Link } from "wouter";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 import {
   MessageSquare,
   FileText,
@@ -193,6 +194,7 @@ function CategorySection({
 }
 
 export default function Services() {
+  const { openModal } = useBookingModal();
   const aiServices = [
     {
       icon: MessageSquare,
@@ -347,16 +349,15 @@ export default function Services() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/book-consultation">
-                  <Button
-                    data-testid="button-services-hero-cta"
-                    size="lg"
-                    className="bg-white text-primary hover:bg-white/90 border-white"
-                  >
-                    Get Free Strategy Call
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
+                <Button
+                  data-testid="button-services-hero-cta"
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90 border-white"
+                  onClick={() => openModal()}
+                >
+                  Book Free Strategy Call
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
               </div>
             </div>
           </section>
@@ -531,16 +532,15 @@ export default function Services() {
                     20-minute call to discuss how AI and digital marketing can
                     accelerate your clinic or property business
                   </p>
-                  <Link href="/book-consultation">
-                    <Button
-                      data-testid="button-services-bottom-cta"
-                      size="lg"
-                      className="w-full bg-white text-primary hover:bg-white/90 border-white"
-                    >
-                      Book Free Strategy Call
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
+                  <Button
+                    data-testid="button-services-bottom-cta"
+                    size="lg"
+                    className="w-full bg-white text-primary hover:bg-white/90 border-white"
+                    onClick={() => openModal()}
+                  >
+                    Book Free Strategy Call
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
                   <p className="text-xs text-white/60 mt-4">
                     No commitment required. Let's just talk about your clinic.
                   </p>

@@ -257,7 +257,14 @@ export default function ServiceDetail() {
     serviceKeywords.push(
       "WhatsApp AI agent",
       "AI assistant",
-      "WhatsApp automation"
+      "WhatsApp automation",
+      "medical tourism AI system",
+      "AI agent for clinics",
+      "clinic AI system",
+      "medical tourism marketing",
+      "AI receptionist for clinics",
+      "clinic WhatsApp automation",
+      "AI patient intake system"
     );
   }
   if (slug.includes("seo") && slug.includes("blog")) {
@@ -265,13 +272,25 @@ export default function ServiceDetail() {
       "SEO blog generator",
       "AI blog generator",
       "content marketing",
-      "SEO services"
+      "SEO services",
+      "medical tourism marketing",
+      "clinic SEO automation"
     );
   } else if (slug.includes("seo")) {
     serviceKeywords.push(
       "SEO optimization",
       "search engine optimization",
-      "medical tourism SEO"
+      "medical tourism SEO",
+      "medical tourism marketing"
+    );
+  }
+  if (slug.includes("ai-ops") || slug.includes("autopilot")) {
+    serviceKeywords.push(
+      "clinic AI system",
+      "medical tourism AI system",
+      "AI agent for clinics",
+      "clinic automation software",
+      "medical tourism marketing"
     );
   }
   if (slug.includes("ai-marketing")) {
@@ -314,6 +333,9 @@ export default function ServiceDetail() {
     ...serviceKeywords,
     "digital marketing services",
     "medical tourism marketing",
+    "medical tourism AI system",
+    "AI agent for clinics",
+    "clinic AI system",
     "real estate marketing",
   ].join(", ");
 
@@ -423,7 +445,7 @@ export default function ServiceDetail() {
                         size="lg"
                         onClick={() => openModal(slug)}
                       >
-                        Book Strategy Call
+                        Book Free Strategy Call
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </CardContent>
@@ -700,7 +722,7 @@ export default function ServiceDetail() {
                             className="w-full mb-3"
                             onClick={() => openModal(slug)}
                           >
-                            Schedule Now
+                            Book Free Strategy Call
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </Button>
                           <a

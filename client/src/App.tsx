@@ -32,6 +32,11 @@ const SEOBlogAIPage = lazy(() => import("@/pages/products/SEOBlogAI"));
 const WhatsAppAIPage = lazy(() => import("@/pages/products/WhatsAppAI"));
 const Chatbot = lazy(() => import("@/components/Chatbot"));
 const ExitIntentPopup = lazy(() => import("@/components/ExitIntentPopup"));
+const HealthcarePage = lazy(() => import("@/pages/industries/Healthcare"));
+const EcommercePage = lazy(() => import("@/pages/industries/Ecommerce"));
+const FinanceLegalPage = lazy(() => import("@/pages/industries/FinanceLegal"));
+const SmallBusinessPage = lazy(() => import("@/pages/industries/SmallBusiness"));
+const RealEstatePage = lazy(() => import("@/pages/industries/RealEstate"));
 
 function PageLoader() {
   return (
@@ -69,6 +74,11 @@ function Router() {
         <Route path="/products/cleardesk" component={ClearDeskPage} />
         <Route path="/products/seo-blog-ai" component={SEOBlogAIPage} />
         <Route path="/products/whatsapp-ai" component={WhatsAppAIPage} />
+        <Route path="/industries/healthcare" component={HealthcarePage} />
+        <Route path="/industries/ecommerce" component={EcommercePage} />
+        <Route path="/industries/finance-legal" component={FinanceLegalPage} />
+        <Route path="/industries/small-business" component={SmallBusinessPage} />
+        <Route path="/industries/real-estate" component={RealEstatePage} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

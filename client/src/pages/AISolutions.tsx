@@ -5,6 +5,40 @@ import { Link } from "wouter";
 import { Check, ArrowRight, Clock, CheckCircle2, FileText, Globe, Mail, Users, CalendarCheck, AlertCircle, RefreshCw } from "lucide-react";
 import SEO from "@/components/SEO";
 import whatsappImage from "@assets/generated_images/whatsapp_ai_agent_chat.webp";
+import AIProductCard from "@/components/AIProductCard";
+
+const additionalProducts = [
+  {
+    title: "⚡ LeadFire", tagline: "Speed to Lead Automation",
+    description: "When a lead comes in from a form, ad, or website — LeadFire replies in under 60 seconds. AI qualifies them, answers their first questions, and books a call automatically. No manual work. No missed leads.",
+    features: ["Instant reply to every form fill and ad lead", "AI-personalized first message — not a generic autoresponder", "Smart qualification questions to score the lead", "Auto-books appointments directly to your calendar", "Real-time notifications to your sales team", "Works across WhatsApp, email, and SMS"],
+    href: "/products/leadfire",
+  },
+  {
+    title: "📄 DocuMind", tagline: "Document Processing Automation",
+    description: "Upload any document — invoice, contract, intake form, or medical record. DocuMind reads it, extracts the data, fills your CRM, and flags anything missing. Hours of manual work done in seconds.",
+    features: ["Reads PDFs, Word docs, forms, invoices, and contracts", "Extracts and structures key data automatically", "Auto-fills your CRM or internal database", "Flags incomplete or incorrect information", "Routes documents to the right person or department", "Summarises long documents into key points"],
+    href: "/products/documind",
+  },
+  {
+    title: "🔁 NurtureLoop", tagline: "Follow-Up Automation System",
+    description: "Most leads go cold because nobody followed up at the right time. NurtureLoop runs intelligent multi-channel sequences across email, SMS, and WhatsApp — automatically, and stops the moment they respond.",
+    features: ["Sequences across email, SMS, and WhatsApp", "Switches channels if a lead doesn't respond", "AI-personalised messages for each lead", "Automatically stops when lead replies or books", "Tracks open rates, reply rates, and conversions", "Works with your existing CRM"],
+    href: "/products/nurtureloop",
+  },
+  {
+    title: "💎 ReviveIQ", tagline: "Database Reactivation",
+    description: "You already have a list of old leads, past clients, or cold contacts sitting unused. ReviveIQ sends AI-personalised reactivation messages and hands you back the ones who are ready to buy — right now.",
+    features: ["Import any CRM export, spreadsheet, or contact list", "AI segments and personalises messages per contact", "Runs across email, SMS, and WhatsApp", "Scores responses to identify hot leads", "Available as a one-time campaign or recurring quarterly", "Full report on responses and re-engaged leads"],
+    href: "/products/reviveiq",
+  },
+  {
+    title: "📊 ClearDesk", tagline: "Internal Reporting Automation",
+    description: "Every Monday morning, ClearDesk sends your team a clear performance report across all your tools — plain English, no spreadsheets, no analysts. Just the numbers that matter and what they mean.",
+    features: ["Connects to your CRM, ads, website analytics, and spreadsheets", "Auto-generates weekly and monthly performance reports", "Plain-English AI summary of what's working and what's not", "Tracks KPIs across sales, marketing, and operations", "Delivered to email, Slack, or a live dashboard", "Fully customisable to your business metrics"],
+    href: "/products/cleardesk",
+  },
+];
 
 function SeoBlogDashboard() {
   const articles = [
@@ -151,7 +185,7 @@ export default function AISolutions() {
       <SEO
         title="AI Agent for Clinics | AI Receptionist & Automated SEO Blog | Webimot Agency"
         description="Webimot Agency's AI solutions: AI agent for clinics that replies 24/7 on WhatsApp, automated SEO blog generator that publishes itself, and AI Operations Autopilot that handles invoice emails, HR tasks, and internal workflows automatically."
-        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, automated SEO blog generator, AI operations automation, AI workflow automation, AI back office automation, invoice automation AI, HR task automation, internal task automation AI, WhatsApp AI agent for hair transplant clinic, WhatsApp AI agent for dental clinic, AI chatbot for cosmetic surgery, AI lead qualification clinic, automated content creation for clinics, multilingual AI agent clinic, AI automation for medical tourism"
+        keywords="AI agent for clinic, AI receptionist for clinic, AI agent for medical tourism, automated SEO blog generator, AI operations automation, AI workflow automation, AI back office automation, invoice automation AI, HR task automation, internal task automation AI, WhatsApp AI agent for hair transplant clinic, WhatsApp AI agent for dental clinic, AI chatbot for cosmetic surgery, AI lead qualification clinic, automated content creation for clinics, multilingual AI agent clinic, AI automation for medical tourism, medical tourism AI system, medical tourism marketing, clinic AI system, AI patient management system, AI for hair transplant clinics, AI for dental clinics, AI for IVF clinics, clinic lead automation, medical tourism lead generation AI, AI booking system for clinics, clinic WhatsApp AI agent"
         canonicalUrl="https://webimotagency.com/ai-solutions"
         schema={{
           "@context": "https://schema.org",
@@ -349,6 +383,22 @@ export default function AISolutions() {
                 <div>
                   <OpsAutopilotDashboard />
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 md:py-24 bg-slate-950">
+            <div className="container mx-auto px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">More AI Products</h2>
+                <p className="text-lg text-white/50 max-w-2xl mx-auto">Specialised automation tools that handle every part of your business — from first contact to final report.</p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {additionalProducts.map((product) => (
+                  <AIProductCard key={product.href} title={product.title} tagline={product.tagline}
+                    description={product.description} features={product.features}
+                    href={product.href} flagship={false} />
+                ))}
               </div>
             </div>
           </section>
