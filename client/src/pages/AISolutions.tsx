@@ -278,7 +278,7 @@ export default function AISolutions() {
                       </div>
                     ))}
                   </div>
-                  <Link href="/services/whatsapp-ai-agent">
+                  <Link href="/products/whatsapp-ai">
                     <Button data-testid="button-whatsapp-details" size="lg">
                       View Full Details
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -326,7 +326,7 @@ export default function AISolutions() {
                       </div>
                     ))}
                   </div>
-                  <Link href="/services/seo-blog-generator">
+                  <Link href="/products/seo-blog-ai">
                     <Button
                       data-testid="button-seo-details"
                       size="lg"
@@ -371,7 +371,7 @@ export default function AISolutions() {
                   </div>
                   <Link href="/services/ai-ops-autopilot">
                     <Button
-                      data-testid="button-analyst-details"
+                      data-testid="button-aiops-details"
                       size="lg"
                       variant="outline"
                     >

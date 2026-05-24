@@ -66,7 +66,7 @@ const tickerItems = [
   "eCommerce order synced — Shopify",
 ];
 
-const productHrefs = ["/services/whatsapp-ai-agent", "/services/seo-blog-generator", "/services/ai-ops-autopilot"];
+const productHrefs = ["/products/whatsapp-ai", "/products/seo-blog-ai", "/services/ai-ops-autopilot"];
 const productFlagships = [true, false, false];
 
 

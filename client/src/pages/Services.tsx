@@ -201,7 +201,7 @@ export default function Services() {
       title: "WhatsApp AI Agent",
       description:
         "24/7 automated lead handling with instant replies, photo evaluation, voice processing, and booking automation.",
-      href: "/services/whatsapp-ai-agent",
+      href: "/products/whatsapp-ai",
       gradient: "from-green-500 to-emerald-600",
       tag: "Most Popular",
     },
@@ -210,7 +210,7 @@ export default function Services() {
       title: "SEO Blog Generator",
       description:
         "Automated content creation system that generates SEO-optimized blog posts and manages publishing schedules.",
-      href: "/services/seo-blog-generator",
+      href: "/products/seo-blog-ai",
       gradient: "from-purple-500 to-violet-600",
     },
     {
