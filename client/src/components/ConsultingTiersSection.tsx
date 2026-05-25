@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, CalendarCheck } from "lucide-react";
 import { useBookingModal } from "@/hooks/use-booking-modal";
-import { Link } from "wouter";
 
 const tiers = [
   {
@@ -23,9 +22,8 @@ const tiers = [
       "ROI estimate per opportunity",
       "Clear implementation roadmap",
     ],
-    cta: "Book Your Free Audit",
-    ctaType: "modal" as const,
-    ctaStyle: "primary" as const,
+    cta: "Claim My Free AI Audit",
+    ctaNote: "No credit card · Results in 3 days",
   },
   {
     step: 2,
@@ -46,9 +44,8 @@ const tiers = [
       "Testing and go-live support",
       "Handover training for your team",
     ],
-    cta: "Start Your Build",
-    ctaType: "modal" as const,
-    ctaStyle: "primary" as const,
+    cta: "Book My Free Build Session",
+    ctaNote: "Free 30-min call · We scope it together",
   },
   {
     step: 3,
@@ -69,10 +66,8 @@ const tiers = [
       "Priority support",
       "New automation rollouts each month",
     ],
-    cta: "View Monthly Plans",
-    ctaType: "link" as const,
-    ctaStyle: "outline" as const,
-    ctaHref: "#pricing",
+    cta: "Book My Free Growth Call",
+    ctaNote: "Free strategy call · No commitment",
   },
 ];
 
@@ -161,20 +156,14 @@ export default function ConsultingTiersSection() {
                   ))}
                 </div>
 
-                {tier.ctaType === "modal" ? (
-                  <Button
-                    className="w-full"
-                    onClick={() => openModal()}
-                  >
-                    {tier.cta} <ArrowRight className="ml-2 h-4 w-4" />
+                <div className="space-y-2">
+                  <Button className="w-full gap-2" onClick={() => openModal()}>
+                    <CalendarCheck className="h-4 w-4 flex-shrink-0" />
+                    {tier.cta}
+                    <ArrowRight className="h-4 w-4 flex-shrink-0 ml-auto" />
                   </Button>
-                ) : (
-                  <Link href={tier.ctaHref!}>
-                    <Button className="w-full" variant="outline">
-                      {tier.cta} <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                )}
+                  <p className="text-center text-[10px] text-white/30 tracking-wide">{tier.ctaNote}</p>
+                </div>
               </div>
             </div>
           ))}
