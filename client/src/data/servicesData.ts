@@ -1,6 +1,7 @@
 interface ServiceData {
   title: string;
   tagline: string;
+  metaDescription: string;
   what: string;
   why: string;
   benefits: string[];
@@ -13,6 +14,7 @@ export const serviceData: Record<string, ServiceData> = {
   "whatsapp-ai-agent": {
     title: "WhatsApp AI Agent",
     tagline: "24/7 Intelligent Lead Handling & Booking Automation",
+    metaDescription: "AI WhatsApp agent for clinics that answers patient inquiries 24/7, qualifies leads, evaluates photos with Vision AI, and books consultations automatically.",
     what: "Our WhatsApp AI Agent is a sophisticated automation system that handles incoming messages on WhatsApp 24/7. It uses advanced AI to understand customer inquiries, qualify leads, evaluate photos with Vision AI, transcribe voice messages, and automatically book consultations. The system integrates with your calendar, CRM, and provides real-time dashboards for monitoring performance.",
     why: "In the medical tourism and service industries, speed is everything. Studies show that leads contacted within 5 minutes are 21x more likely to convert. Our AI agent ensures you never miss a lead, responds instantly in multiple languages, and books consultations automatically - even when your team is asleep. This means more conversions, better customer experience, and significant cost savings.",
     benefits: [
@@ -71,6 +73,7 @@ export const serviceData: Record<string, ServiceData> = {
   "seo-blog-generator": {
     title: "SEO Blog Generator AI",
     tagline: "Automated Content Creation & Publishing System",
+    metaDescription: "Automated SEO blog generator that writes, optimizes, and publishes 20-30 keyword-targeted posts per month on autopilot — no manual writing needed.",
     what: "Our SEO Blog Generator AI is an automated content marketing system that generates SEO-optimized blog posts based on your industry, keywords, and RSS feed sources. It handles everything from content generation to meta tag optimization, internal linking, scheduling, and publishing - all without manual intervention.",
     why: "Content marketing is essential for SEO but extremely time-consuming. Manual blog creation takes 4-6 hours per post. Our AI system generates 20-30 SEO-optimized posts monthly for the cost of one freelance writer, helping you dominate search rankings and drive organic traffic at scale.",
     benefits: [
@@ -129,6 +132,7 @@ export const serviceData: Record<string, ServiceData> = {
   "ai-ops-autopilot": {
     title: "AI Operations Autopilot",
     tagline: "Plan, Coordinate & Automate Your Internal Business Operations",
+    metaDescription: "AI automation for business operations — handles invoices, HR tasks, meeting prep, and recurring admin on autopilot. Save 15-25 staff hours per week.",
     what: "AI Operations Autopilot is an end-to-end internal automation system that handles the repetitive work that drains your team's time every day. From automatically sending invoice emails and payment reminders to managing HR onboarding checklists, scheduling internal meetings, and flagging overdue tasks — the system coordinates your back-office operations around the clock. It integrates with your existing tools (email, Google Workspace, Notion, Slack, HR platforms) and acts as a tireless operations coordinator that never misses a deadline.",
     why: "The average team wastes 20+ hours per week on administrative tasks that follow a predictable pattern — chasing invoices, sending reminder emails, assigning recurring tasks, updating spreadsheets, and manually escalating overdue items. These tasks don't require judgment; they require consistency. Our AI handles all of it automatically, freeing your team to focus on work that actually moves the business forward. Clients typically recover 15-25 hours of staff time per week within the first month.",
     benefits: [
@@ -187,6 +191,7 @@ export const serviceData: Record<string, ServiceData> = {
   "meta-ads": {
     title: "Meta Ads Management",
     tagline: "Expert Facebook & Instagram Advertising",
+    metaDescription: "Expert Meta Ads management for clinics and medical tourism businesses. We run Facebook and Instagram campaigns that lower your cost per lead by 30-50%.",
     what: "Professional management of your Facebook and Instagram advertising campaigns. We handle everything from strategy and creative to targeting, optimization, and reporting. Our team uses advanced techniques and AI tools to maximize your return on ad spend.",
     why: "Meta's advertising platform is powerful but complex. Without expertise, businesses waste 30-50% of their ad budget. Our proven strategies and continuous optimization ensure every dollar works harder, delivering qualified leads at the lowest possible cost.",
     benefits: [
@@ -245,6 +250,7 @@ export const serviceData: Record<string, ServiceData> = {
   "google-ads": {
     title: "Google Ads Management",
     tagline: "Search & Display Advertising That Converts",
+    metaDescription: "Google Ads management for medical tourism clinics. We target high-intent patients in Germany, UK, and UAE — lower cost per lead and higher ROAS.",
     what: "Professional Google Ads management including Search, Display, and YouTube advertising. We create data-driven campaigns that put your business in front of customers actively searching for your services. From keyword research to ad creation and optimization, we handle everything.",
     why: "Google processes 8.5 billion searches per day. Your potential customers are searching right now. Without expert Google Ads management, you're leaving money on the table. Our certified specialists ensure you appear at the top of search results for high-intent keywords that drive conversions.",
     benefits: [
@@ -303,6 +309,7 @@ export const serviceData: Record<string, ServiceData> = {
   "website-development": {
     title: "Website Development",
     tagline: "Fast, Beautiful, Conversion-Optimized Websites",
+    metaDescription: "Custom website design for clinics and medical tourism businesses. Fast, mobile-ready, SEO-optimized sites built to convert visitors into booked patients.",
     what: "We build modern, responsive websites that look stunning and convert visitors into customers. Using the latest technologies and best practices, we create fast-loading, mobile-friendly websites optimized for search engines and user experience. From simple landing pages to complex multi-page sites.",
     why: "Your website is often the first impression customers have of your business. A slow, outdated, or confusing website drives customers away. Our conversion-focused approach ensures your website not only looks professional but actually drives business results.",
     benefits: [
@@ -361,6 +368,7 @@ export const serviceData: Record<string, ServiceData> = {
   "seo": {
     title: "SEO Services",
     tagline: "Rank Higher & Drive Organic Traffic",
+    metaDescription: "Comprehensive SEO services for medical tourism clinics and businesses. Technical SEO, content strategy, and link building to rank higher and drive organic leads.",
     what: "Comprehensive search engine optimization services to improve your website's visibility in Google and other search engines. We handle technical SEO, on-page optimization, content strategy, link building, and local SEO to help you rank higher for valuable keywords.",
     why: "75% of users never scroll past the first page of search results. If you're not ranking on page one, you're invisible to most potential customers. Our proven SEO strategies help you climb the rankings, drive qualified organic traffic, and reduce your dependence on paid advertising.",
     benefits: [
@@ -419,6 +427,7 @@ export const serviceData: Record<string, ServiceData> = {
   "content-creation": {
     title: "Social Media Content Creation",
     tagline: "Engaging Content That Drives Results",
+    metaDescription: "Professional social media content creation for clinics and businesses. Strategy, graphics, copywriting, and daily scheduling handled for you.",
     what: "Professional social media content creation and management services. We create compelling posts, graphics, videos, and stories for your social media channels. From strategy to creation to scheduling, we handle everything to keep your brand active and engaging online.",
     why: "Consistent, quality social media content is essential for building brand awareness and engaging customers. But creating content daily is time-consuming. Our team ensures your channels stay active with professional content that resonates with your audience and drives engagement.",
     benefits: [
@@ -477,6 +486,7 @@ export const serviceData: Record<string, ServiceData> = {
   "branding": {
     title: "Branding & Identity",
     tagline: "Build a Memorable Brand That Stands Out",
+    metaDescription: "Complete brand identity design for clinics and businesses. Logo, color palette, typography, and brand guidelines that build patient trust and stand out.",
     what: "Complete brand identity development services including logo design, color palette, typography, brand guidelines, and visual assets. We help you create a cohesive, professional brand that resonates with your target audience and differentiates you from competitors.",
     why: "Your brand is more than a logo - it's how customers perceive your business. A strong brand builds trust, commands premium pricing, and makes marketing more effective. Our strategic approach ensures your brand accurately reflects your values and appeals to your ideal customers.",
     benefits: [
@@ -535,6 +545,7 @@ export const serviceData: Record<string, ServiceData> = {
   "funnel-automation": {
     title: "Funnel Automation",
     tagline: "Convert More Visitors Into Customers",
+    metaDescription: "Sales funnel automation for clinics and businesses. Landing pages, email sequences, and CRM workflows that turn visitors into paying patients automatically.",
     what: "Complete sales funnel development and automation. We build high-converting landing pages, email sequences, and automation workflows that guide prospects from first click to paying customer. Integration with CRM, email marketing, and payment systems included.",
     why: "Most businesses lose 90% of website visitors because they lack proper follow-up systems. Automated funnels ensure every lead is nurtured, educated, and guided toward purchase - even while you sleep. This dramatically increases conversion rates and revenue per visitor.",
     benefits: [
@@ -593,6 +604,7 @@ export const serviceData: Record<string, ServiceData> = {
   "reputation-management": {
     title: "Reputation Management",
     tagline: "Monitor & Enhance Your Online Reputation",
+    metaDescription: "Online reputation management for clinics and businesses. Monitor reviews, respond professionally, and build 5-star ratings on Google, Facebook, and Trustpilot.",
     what: "Comprehensive online reputation monitoring and management. We track mentions of your brand across review sites, social media, and the web. Respond to reviews, address negative feedback, and build a positive online presence that attracts new customers.",
     why: "88% of consumers trust online reviews as much as personal recommendations. A single negative review can cost you dozens of customers. Our proactive reputation management ensures your online presence accurately reflects the quality of your service.",
     benefits: [
@@ -651,6 +663,7 @@ export const serviceData: Record<string, ServiceData> = {
   "shopify-ecommerce-automation": {
     title: "Shopify & eCommerce Automation",
     tagline: "Find Winning Products, Automate Operations, Scale Revenue",
+    metaDescription: "Shopify and eCommerce automation that finds winning products, manages inventory, automates pricing, and recovers abandoned carts — all on autopilot.",
     what: "We build end-to-end AI automation systems for Shopify and eCommerce stores — from finding profitable products before your competitors do, to running inventory, pricing, email flows, and fulfillment on autopilot. Whether you're launching a new store or scaling an existing one, we turn your eCommerce operation into a machine that runs itself.",
     why: "Most eCommerce store owners spend 80% of their time on tasks a machine could do — restocking inventory, writing product descriptions, chasing abandoned carts, monitoring competitor prices. Our automation systems eliminate all of that, giving you back your time while your store generates revenue around the clock. Stores we automate typically see 2-4× revenue growth within 90 days.",
     benefits: [
