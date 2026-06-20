@@ -18,6 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -36,6 +37,7 @@ const bookingSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().min(10, "Please enter a valid phone number"),
   service: z.string().min(1, "Please select a service"),
+  message: z.string().optional(),
 });
 
 type BookingFormValues = z.infer<typeof bookingSchema>;
@@ -61,6 +63,7 @@ export default function BookingModal({
       email: "",
       phone: "",
       service: defaultService || "",
+      message: "",
     },
   });
 
@@ -72,6 +75,7 @@ export default function BookingModal({
         email: "",
         phone: "",
         service: defaultService || "",
+        message: "",
       });
     }
   }, [open, defaultService, form]);
@@ -100,8 +104,8 @@ export default function BookingModal({
       trackEvent("form_submission", "booking", data.service);
 
       toast({
-        title: "Booking request submitted!",
-        description: "We'll contact you within 24 hours to schedule your call.",
+        title: "Done! Check your inbox.",
+        description: "We'll send you a calendar link shortly so you can pick a time that works for you.",
       });
 
       form.reset();
@@ -128,10 +132,9 @@ export default function BookingModal({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle>Book Your Free Strategy Call</DialogTitle>
+          <DialogTitle>Book Your Free AI Audit</DialogTitle>
           <DialogDescription>
-            Fill out the form below and we'll contact you within 24 hours to
-            schedule your free 20-minute strategy call.
+            Fill in the form — we'll send you a calendar link within a few hours so you can pick a time that works for you.
           </DialogDescription>
         </DialogHeader>
 
@@ -217,6 +220,25 @@ export default function BookingModal({
                       ))}
                     </SelectContent>
                   </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="message"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>What's your main challenge? <span className="text-muted-foreground font-normal">(optional)</span></FormLabel>
+                  <FormControl>
+                    <Textarea
+                      placeholder="e.g. We get leads from Facebook Ads but respond too slowly and lose them to competitors..."
+                      rows={3}
+                      {...field}
+                      disabled={isSubmitting}
+                    />
+                  </FormControl>
                   <FormMessage />
                 </FormItem>
               )}

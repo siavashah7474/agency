@@ -36,6 +36,8 @@ const tiers = [
     timeframe: "Live in 2–4 weeks",
     title: "Build & Deploy",
     subtitle: "We build and launch your AI systems",
+    pricing: "From €1,497",
+    pricingNote: "one-time setup",
     description:
       "We implement the exact products your business needs — responding to leads instantly, processing documents, or reactivating your database. You own the system. We build it right.",
     items: [
@@ -58,6 +60,8 @@ const tiers = [
     timeframe: "Ongoing retainer",
     title: "Manage & Scale",
     subtitle: "We run it and keep growing it for you",
+    pricing: "From €497/mo",
+    pricingNote: "ongoing retainer",
     description:
       "On a monthly retainer, we monitor performance, optimise your AI systems, and roll out new automations as your business grows. You focus on the business — we handle the AI.",
     items: [
@@ -135,7 +139,13 @@ export default function ConsultingTiersSection() {
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-1">{tier.title}</h3>
-                <p className="text-sm text-white/50 mb-4 leading-snug">{tier.subtitle}</p>
+                <p className="text-sm text-white/50 mb-3 leading-snug">{tier.subtitle}</p>
+                {"pricing" in tier && (
+                  <div className="flex items-baseline gap-1.5">
+                    <span className={`text-lg font-bold ${tier.accentColor}`}>{(tier as any).pricing}</span>
+                    <span className="text-xs text-white/30">{(tier as any).pricingNote}</span>
+                  </div>
+                )}
               </div>
 
               {/* Divider */}

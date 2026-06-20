@@ -269,20 +269,45 @@ export default function Home() {
                 })}
               </div>
 
-              <div className="grid lg:grid-cols-3 gap-8">
-                {aiProducts.map((product, index) => (
-                  <AIProductCard key={index} title={product.title} tagline={product.tagline}
-                    description={product.description} features={product.features}
-                    href={productHrefs[index]} flagship={productFlagships[index]} />
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+                {[
+                  { emoji: "💬", name: "WhatsApp AI", tagline: "24/7 AI receptionist on WhatsApp", desc: "Replies to leads in any language, evaluates photos, books consultations — in under 2 seconds.", href: "/products/whatsapp-ai", flagship: true },
+                  { emoji: "⚡", name: "LeadFire", tagline: "Contact every lead in under 60 seconds", desc: "Instant reply, AI qualification, and automatic calendar booking the moment a lead comes in.", href: "/products/leadfire" },
+                  { emoji: "✍️", name: "SEO Blog AI", tagline: "Publish SEO content on autopilot", desc: "20–30 keyword-targeted blog posts published to your site every month — automatically.", href: "/products/seo-blog-ai" },
+                  { emoji: "🔁", name: "NurtureLoop", tagline: "Never let a lead go cold again", desc: "Multi-channel follow-up sequences across email, SMS, and WhatsApp — stops when they respond.", href: "/products/nurtureloop" },
+                ].map((p) => (
+                  <Link key={p.href} href={p.href}>
+                    <div className={`group bg-slate-900 rounded-xl border flex flex-col h-full p-5 hover:border-secondary/30 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer ${p.flagship ? "border-secondary/30 ring-1 ring-secondary/20" : "border-white/6"}`}>
+                      {p.flagship && <span className="text-[10px] font-bold tracking-widest uppercase text-secondary mb-2">Flagship</span>}
+                      <div className="text-2xl mb-3">{p.emoji}</div>
+                      <div className="text-sm font-bold text-white mb-1">{p.name}</div>
+                      <div className="text-xs text-secondary/80 mb-2 font-medium">{p.tagline}</div>
+                      <div className="text-xs text-white/45 leading-relaxed flex-1">{p.desc}</div>
+                      <div className="flex items-center gap-1 text-xs text-white/30 group-hover:text-secondary mt-3 transition-colors">
+                        Explore <ArrowRight className="h-3 w-3" />
+                      </div>
+                    </div>
+                  </Link>
                 ))}
               </div>
-              <div className="text-center mt-10">
-                <Link href="/ai-solutions">
-                  <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white">
-                    See All AI Products
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
+              <div className="grid sm:grid-cols-3 gap-4">
+                {[
+                  { emoji: "💎", name: "ReviveIQ", tagline: "Reactivate your cold contact database", desc: "AI-personalised campaigns that turn old leads and past clients into active pipeline.", href: "/products/reviveiq" },
+                  { emoji: "📊", name: "ClearDesk", tagline: "Business report delivered every Monday", desc: "Plain-English performance summary across your CRM, ads, and sales pipeline — automatically.", href: "/products/cleardesk" },
+                  { emoji: "📄", name: "DocuMind", tagline: "Turn paperwork into data in seconds", desc: "Reads invoices, intake forms, and contracts — extracts every field and fills your CRM.", href: "/products/documind" },
+                ].map((p) => (
+                  <Link key={p.href} href={p.href}>
+                    <div className="group bg-slate-900 rounded-xl border border-white/6 flex flex-col h-full p-5 hover:border-secondary/30 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
+                      <div className="text-2xl mb-3">{p.emoji}</div>
+                      <div className="text-sm font-bold text-white mb-1">{p.name}</div>
+                      <div className="text-xs text-secondary/80 mb-2 font-medium">{p.tagline}</div>
+                      <div className="text-xs text-white/45 leading-relaxed flex-1">{p.desc}</div>
+                      <div className="flex items-center gap-1 text-xs text-white/30 group-hover:text-secondary mt-3 transition-colors">
+                        Explore <ArrowRight className="h-3 w-3" />
+                      </div>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-secondary/20 to-transparent" />
