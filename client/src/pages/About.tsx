@@ -26,9 +26,9 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Webimot Agency — AI Automation & Digital Marketing Experts"
-        description="Webimot Agency is an AI automation and digital marketing agency trusted by 50+ businesses in 12+ countries. We specialize in WhatsApp AI agents, Shopify automation, SEO, and paid ads — turning businesses into revenue machines."
-        keywords="about Webimot Agency, AI automation agency team, digital marketing agency about, AI marketing experts, Shopify automation agency, eCommerce marketing agency, business automation company, AI lead generation agency, marketing automation experts"
+        title="About Webimot Agency — AI Consultant Agency for Digital Transformation"
+        description="Webimot is an AI consultant agency specialising in digital transformation for medical tourism clinics, real estate agencies, and small businesses. Trusted by 50+ businesses in 12+ countries."
+        keywords="AI consultant agency, digital transformation agency, AI consultancy medical tourism, real estate AI consultant, small business digital transformation, AI automation consultancy, Webimot Agency about, AI business transformation"
         canonicalUrl="https://webimotagency.com/about"
       />
       <div className="min-h-screen flex flex-col">

@@ -50,20 +50,20 @@ const automationIcons = [Zap, Clock, CheckCircle, MessageSquare, BarChart, FileT
 const ecommerceIcons = [RotateCcw, Headphones, Package, Star, ShoppingBag, BarChart];
 
 const tickerItems = [
-  "WhatsApp replied in 0.8s — Istanbul",
-  "Shopify cart recovered — +€340 revenue",
-  "Lead scored & qualified — Dubai",
-  "Blog post auto-published — 2min ago",
-  "Invoice reminder sent — 12 clients notified",
-  "Vision AI: photo evaluated — lead qualified",
-  "HR onboarding checklist dispatched — new hire",
-  "Booking confirmed via AI — Amsterdam",
-  "CRM updated — 0 manual steps",
-  "Overdue task escalated → Manager — auto",
-  "Google Ads optimized — ROAS 6.2×",
-  "Planning report generated & sent — Monday 08:00",
-  "WhatsApp campaign sent — 847 contacts",
-  "eCommerce order synced — Shopify",
+  "Hair transplant patient booked — Germany → Istanbul · 0 human steps",
+  "Property viewing scheduled — London · AI replied in 52s",
+  "WhatsApp replied in 0.8s — Dubai clinic",
+  "Small business report delivered — Monday 08:00",
+  "Dental lead qualified — Netherlands → Turkey",
+  "Real estate CRM updated — 0 manual steps",
+  "Vision AI: hair loss photo evaluated — lead qualified",
+  "Follow-up sent — day 7 of 14 · lead reengaged",
+  "IVF enquiry handled in Arabic — 24/7",
+  "Old leads reactivated — 18 replies from dead database",
+  "Google Ads optimized — ROAS 6.2× · medical tourism",
+  "Viewing booked automatically — Dubai real estate",
+  "SEO blog published — 'hair transplant Turkey cost 2026'",
+  "Cosmetic surgery consultation confirmed — UK patient",
 ];
 
 const productHrefs = ["/products/whatsapp-ai", "/products/seo-blog-ai", "/services/ai-ops-autopilot"];
@@ -180,7 +180,7 @@ export default function Home() {
                     >
                       {t("home.heroCta1")}
                     </Button>
-                    <Link href="/ai-solutions">
+                    <Link href="/about">
                       <Button
                         data-testid="button-hero-ai-solutions"
                         size="lg"

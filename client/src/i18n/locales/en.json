@@ -35,19 +35,19 @@
     "getFreePlan": "Get Your Free Growth Plan"
   },
   "home": {
-    "trustBadge": "Trusted by clinics & agencies across 12+ countries",
-    "heroTitle1": "Save Hours Every Day.",
-    "heroTitle2": "AI Automation & Optimization That Works for You.",
-    "heroSubtitle": "We deploy AI that responds to every lead, processes documents, reactivates old contacts, and reports your results — automatically, 24/7, for any business.",
-    "heroCta1": "Get Free Strategy Call",
-    "heroCta2": "See Our AI Solutions",
+    "trustBadge": "AI Consultant Agency · 50+ Businesses Transformed",
+    "heroTitle1": "AI Consultants for",
+    "heroTitle2": "Digital Business Transformation.",
+    "heroSubtitle": "We design and deploy AI systems that transform how <strong>medical tourism clinics</strong>, <strong>real estate agencies</strong>, and <strong>small businesses</strong> attract clients, handle leads, and run operations — 24/7, without adding headcount.",
+    "heroCta1": "Book Your Free AI Audit",
+    "heroCta2": "See How We Transform Businesses",
     "industries": {
-      "hairTransplant": "Hair Transplant Clinics",
-      "dental": "eCommerce & Shopify",
-      "cosmetic": "Finance & Legal",
-      "ivf": "Small Business",
-      "realEstate": "Real Estate Agencies",
-      "ecommerce": "Any Business"
+      "hairTransplant": "Medical Tourism Clinics",
+      "dental": "Real Estate Agencies",
+      "cosmetic": "Small Businesses",
+      "ivf": "eCommerce Stores",
+      "realEstate": "Finance & Legal",
+      "ecommerce": "Any Business with Leads"
     },
     "ecommerceBadge": "Shopify & eCommerce Specialty",
     "ecommerceTitle": "Scale Your Online Store with AI Automation",
@@ -211,12 +211,12 @@
     "ctaButton": "Book Your Free Strategy Call"
   },
   "about": {
-    "badge": "Lead & Sales Generation Experts",
-    "title": "About Webimot",
-    "subtitle": "We combine AI automation with proven digital marketing strategies to generate leads and drive sales for your business",
-    "focusTitle": "Our Focus: Leads & Sales",
-    "focusP1": "We're not just a marketing agency. We're a lead generation and sales acceleration partner. Every strategy, every automation, every campaign is designed with one goal: generating qualified leads and converting them into customers.",
-    "focusP2": "Our AI-powered systems work 24/7 to capture, qualify, and nurture leads so your sales team can focus on closing deals.",
+    "badge": "AI Consultant Agency",
+    "title": "We Transform Businesses with AI",
+    "subtitle": "Webimot is an AI consultancy specialising in digital transformation for medical tourism clinics, real estate agencies, and small businesses — replacing manual work with intelligent systems that scale.",
+    "focusTitle": "Our Focus: Digital Transformation Through AI",
+    "focusP1": "We're not a SaaS tool or a generic marketing agency. We're AI consultants who design, build, and manage complete digital transformation systems tailored to your specific industry, workflows, and growth goals.",
+    "focusP2": "Our three core verticals — medical tourism, real estate, and small business — share a common problem: too much manual work, too slow to respond to leads, and no visibility into what's actually working. We solve all three with AI.",
     "deliverTitle": "What We Deliver",
     "deliver": [
       "More qualified leads for your sales team",
