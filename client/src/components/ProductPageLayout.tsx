@@ -6,6 +6,13 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 
+export interface ScenarioStep {
+  time: string;
+  event: string;
+  detail: string;
+  highlight?: boolean;
+}
+
 export interface ProductPageProps {
   seoTitle: string;
   seoDescription: string;
@@ -14,16 +21,19 @@ export interface ProductPageProps {
   name: string;
   tagline: string;
   heroBrief: string;
+  results?: { value: string; label: string; context: string }[];
   problemParagraphs: string[];
   howItWorksSteps: { title: string; description: string; emoji: string }[];
+  scenario?: { heading: string; description: string; steps: ScenarioStep[] };
   features: string[];
+  featureDetails?: { title: string; description: string }[];
   whoItsFor: { emoji: string; industry: string; useCase: string }[];
   ctaHeadline: string;
 }
 
 const BASE_KEYWORDS = "medical tourism AI system, AI agent for clinics, clinic AI system, medical tourism marketing, AI automation agency, business automation, lead generation, WhatsApp AI, AI receptionist for clinics, clinic automation software";
 
-export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, problemParagraphs, howItWorksSteps, features, whoItsFor, ctaHeadline }: ProductPageProps) {
+export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, results, problemParagraphs, howItWorksSteps, scenario, features, featureDetails, whoItsFor, ctaHeadline }: ProductPageProps) {
   const { openModal } = useBookingModal();
   const [pathname] = useLocation();
   const canonicalUrl = `https://webimotagency.com${pathname}`;
@@ -78,6 +88,23 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
             </div>
           </section>
 
+          {/* Results Bar */}
+          {results && (
+            <section className="py-12 bg-slate-900 border-y border-white/6 relative overflow-hidden">
+              <div className="container mx-auto px-6">
+                <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                  {results.map((r, i) => (
+                    <div key={i} className="text-center">
+                      <div className="text-4xl md:text-5xl font-bold text-gradient-ai mb-1">{r.value}</div>
+                      <div className="text-sm font-semibold text-white mb-1">{r.label}</div>
+                      <div className="text-xs text-white/40">{r.context}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
           {/* Problem */}
           <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
             <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
@@ -117,30 +144,83 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
             </div>
           </section>
 
+          {/* Real Example / Scenario */}
+          {scenario && (
+            <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
+              <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
+              <div className="container mx-auto px-6 relative z-10 max-w-3xl">
+                <div className="text-center mb-10">
+                  <div className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/20 text-yellow-400 rounded-full px-4 py-1.5 mb-4">
+                    <span className="text-sm font-medium">Real Example</span>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-white">{scenario.heading}</h2>
+                  <p className="mt-4 text-white/50 text-base leading-relaxed">{scenario.description}</p>
+                </div>
+                <div className="relative">
+                  {/* Timeline line */}
+                  <div className="absolute left-5 top-4 bottom-4 w-px bg-white/8 hidden sm:block" />
+                  <div className="space-y-4">
+                    {scenario.steps.map((step, i) => (
+                      <div key={i} className={`relative flex gap-4 sm:gap-6 rounded-xl p-4 border transition-colors ${step.highlight ? "bg-secondary/8 border-secondary/25" : "bg-white/3 border-white/6"}`}>
+                        {/* Dot */}
+                        <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-xs font-bold border ${step.highlight ? "bg-secondary/20 border-secondary/40 text-secondary" : "bg-white/6 border-white/12 text-white/40"}`}>
+                          {String(i + 1).padStart(2, "0")}
+                        </div>
+                        <div className="flex-1 min-w-0 pt-1">
+                          <div className="flex flex-wrap items-center gap-2 mb-1">
+                            <span className={`text-[11px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full ${step.highlight ? "bg-secondary/20 text-secondary" : "bg-white/8 text-white/40"}`}>{step.time}</span>
+                            <span className="text-sm font-semibold text-white">{step.event}</span>
+                          </div>
+                          <p className="text-sm text-white/55 leading-relaxed">{step.detail}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+          )}
+
           {/* Features */}
-          <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
-            <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
-            <div className="container mx-auto px-6 relative z-10 max-w-3xl">
+          <section className="py-16 md:py-24 bg-[#020817] relative overflow-hidden">
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
+            <div className="container mx-auto px-6 relative z-10 max-w-4xl">
               <div className="text-center mb-10">
                 <div className="inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 text-secondary rounded-full px-4 py-1.5 mb-4">
                   <span className="text-sm font-medium">Features</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white">Everything included</h2>
               </div>
-              <div className="grid sm:grid-cols-2 gap-3">
-                {features.map((feature, i) => (
-                  <div key={i} className="flex items-start gap-3 bg-white/4 border border-white/8 rounded-xl p-4">
-                    <Check className="h-4 w-4 text-secondary flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-white/75">{feature}</span>
-                  </div>
-                ))}
-              </div>
+              {featureDetails ? (
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {featureDetails.map((f, i) => (
+                    <div key={i} className="flex gap-4 bg-white/4 border border-white/8 rounded-xl p-5 hover:border-secondary/25 transition-colors">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-secondary/15 border border-secondary/25 flex items-center justify-center mt-0.5">
+                        <Check className="h-4 w-4 text-secondary" />
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-white mb-1">{f.title}</div>
+                        <div className="text-xs text-white/50 leading-relaxed">{f.description}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="grid sm:grid-cols-2 gap-3">
+                  {features.map((feature, i) => (
+                    <div key={i} className="flex items-start gap-3 bg-white/4 border border-white/8 rounded-xl p-4">
+                      <Check className="h-4 w-4 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-white/75">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </section>
 
           {/* Who It's For */}
-          <section className="py-16 md:py-24 bg-[#020817] relative overflow-hidden">
-            <div className="absolute inset-0 neural-grid pointer-events-none" />
+          <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
+            <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
             <div className="container mx-auto px-6 relative z-10">
               <div className="text-center mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-white">Built for businesses like yours</h2>
@@ -158,8 +238,8 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
           </section>
 
           {/* Pricing Note */}
-          <section className="py-16 md:py-20 bg-slate-950 relative overflow-hidden">
-            <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
+          <section className="py-16 md:py-20 bg-[#020817] relative overflow-hidden">
+            <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="container mx-auto px-6 relative z-10 text-center max-w-2xl">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Simple, transparent pricing</h2>
               <p className="text-white/60 mb-8 leading-relaxed">
