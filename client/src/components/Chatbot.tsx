@@ -400,7 +400,7 @@ export default function Chatbot() {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="fixed bottom-8 right-24 z-40 bg-card border shadow-lg rounded-lg px-4 py-2 max-w-[200px]"
+          className="fixed bottom-8 right-24 z-40 hidden sm:block bg-card border shadow-lg rounded-lg px-4 py-2 max-w-[200px]"
         >
           <p className="text-sm">Need help? Chat with us!</p>
           <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-card"></div>
