@@ -24,8 +24,8 @@ export default function CaseStudies() {
   return (
     <>
       <SEO
-        title="Case Studies - Real Results for Medical Tourism Clinics | Lead Generation Success"
-        description="See how we've helped medical tourism clinics in Turkey generate more leads and grow revenue with AI automation, website design, SEO, and digital marketing. Detailed success stories with real metrics and results."
+        title="Case Studies — AI Automation Results"
+        description="Real results from businesses that automated with Webimot: faster lead response, more bookings, lower cost per lead and hours of manual work saved every week."
         keywords="medical tourism case studies, clinic marketing case studies, lead generation case studies, medical tourism success stories, clinic lead generation results, healthcare marketing case studies, Turkey medical tourism case studies, AI automation case studies, website design case studies, SEO case studies, patient acquisition case studies, medical tourism ROI, clinic marketing results"
         canonicalUrl="https://webimotagency.com/case-studies"
       />

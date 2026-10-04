@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { isPrerendering } from "@/lib/prerender";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   BarChart3,
@@ -42,7 +43,7 @@ export default function AIOpsHub() {
   const [step, setStep] = useState(0);
 
   useEffect(() => {
-    if (reduceMotion) return;
+    if (reduceMotion || isPrerendering) return;
     const id = window.setInterval(() => setStep((s) => s + 1), INTERVAL_MS);
     return () => window.clearInterval(id);
   }, [reduceMotion]);

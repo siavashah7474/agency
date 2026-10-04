@@ -342,7 +342,7 @@ export default function ServiceDetail() {
   return (
     <>
       <SEO
-        title={`${service.title} | AI Automation & Digital Marketing | Webimot Agency`}
+        title={service.title}
         description={service.metaDescription}
         keywords={seoKeywords}
         canonicalUrl={`https://webimotagency.com/services/${slug}`}

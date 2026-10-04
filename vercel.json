@@ -1,9 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "vite build",
+  "buildCommand": "npm run build:static",
   "outputDirectory": "dist/public",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.ts" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.ts"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/app-shell.html"
+    }
   ]
 }

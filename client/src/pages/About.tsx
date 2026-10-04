@@ -26,7 +26,7 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Webimot Agency — AI Consultant Agency for Digital Transformation"
+        title="About Webimot — AI Consultants for Digital Transformation"
         description="Webimot is an AI consultant agency specialising in digital transformation for medical tourism clinics, real estate agencies, and small businesses. Trusted by 50+ businesses in 12+ countries."
         keywords="AI consultant agency, digital transformation agency, AI consultancy medical tourism, real estate AI consultant, small business digital transformation, AI automation consultancy, Webimot Agency about, AI business transformation"
         canonicalUrl="https://webimotagency.com/about"

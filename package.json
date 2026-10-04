@@ -8,7 +8,9 @@
     "build": "vite build && esbuild server/index-prod.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "build:static": "vite build && node scripts/prerender.mjs",
+    "deploy": "vercel pull --yes --environment=production && vercel build --prod && vercel deploy --prebuilt --prod"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -112,6 +114,7 @@
     "drizzle-kit": "^0.31.4",
     "esbuild": "^0.25.0",
     "postcss": "^8.4.47",
+    "puppeteer-core": "^23.11.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.20.5",

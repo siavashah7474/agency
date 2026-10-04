@@ -1,6 +1,6 @@
 # Webimot Agency — Complete AI Knowledge Base for LLMs
 # llms-full.txt — Full structured reference for AI search engines
-# Last updated: 2026-05-24
+# Last updated: 2026-10-04
 # Source: https://webimotagency.com
 
 ---
@@ -9,17 +9,27 @@
 
 **Name:** Webimot Agency
 **Also known as:** Webimot, Webimot AI Agency
-**Type:** AI Automation & Digital Marketing Agency
+**Type:** AI consulting, business process automation and digital transformation agency
 **Founded:** Amsterdam, Netherlands
 **Offices:** Amsterdam (Netherlands) and Istanbul (Turkey)
 **Email:** info@webimot.com
 **WhatsApp:** +31628753175
 **Website:** https://webimotagency.com
 
-Webimot Agency helps clinics, eCommerce stores, real estate agencies, finance firms, legal firms, and small businesses replace manual work with AI automation. The agency is best known for its AI agents for medical tourism clinics, but also builds lead automation, follow-up systems, document processing, and automated reporting for any industry.
+Webimot Agency helps businesses digitalise how they run. We start by mapping a company's workflows, then design, build and operate AI systems where they save the most time and money: AI agents for daily tasks (invoices, documents, data entry, HR and internal follow-ups), WhatsApp AI agents that answer and qualify leads 24/7 in 50+ languages, automated weekly reporting, lead follow-up and reactivation, and SEO content automation. Clients include clinics and medical tourism providers, real estate agencies, e-commerce stores, finance and legal firms and small businesses — 50+ businesses in 12+ countries.
 
-**Clients:** 50+ businesses across 12+ countries
-**Top markets served:** Germany, United Kingdom, Netherlands, UAE, Saudi Arabia, France, Russia, Iraq, United States, Scandinavia
+## What We Do (four core services)
+
+1. **Workflow digitalisation & AI audit** — We map how the team works, find repetitive manual steps and redesign them with AI. The free AI audit delivers the top 5 automation opportunities with ROI estimates in 3 days. https://webimotagency.com/solutions
+2. **AI agents for daily tasks (AI Operations Autopilot, DocuMind, NurtureLoop)** — Documents and invoices processed, systems updated, reminders and follow-ups sent automatically. Typical result: 15+ hours saved per team per week. https://webimotagency.com/services/ai-ops-autopilot
+3. **WhatsApp AI agent for leads (WhatsApp AI, LeadFire)** — Every enquiry answered 24/7 in the customer's language, qualified and booked. https://webimotagency.com/products/whatsapp-ai
+4. **Automated reporting and insights (ClearDesk)** — A plain-English report on sales, leads and team performance every Monday morning. https://webimotagency.com/products/cleardesk
+
+## How an Engagement Works
+
+1. Free AI audit — 3 days, no credit card, no commitment
+2. Build & deploy — 2–4 weeks, integrated with existing tools, with go-live support and team training; the client owns the system
+3. Manage & scale — monthly retainer: monitoring, optimisation and new automations
 
 ---
 

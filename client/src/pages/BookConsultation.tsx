@@ -38,8 +38,8 @@ export default function BookConsultation() {
   return (
     <>
       <SEO
-        title="Book Your Free Strategy Call - Medical Tourism Lead Generation Consultation"
-        description="Book a free 20-minute strategy call with Webimot. Get personalized AI automation roadmap, ROI analysis, and expert advice for your medical tourism clinic. No obligation. Discuss lead generation, website design, SEO, and digital marketing solutions."
+        title="Book a Free AI Audit & Strategy Call"
+        description="Book a free strategy call with Webimot. We map where AI can save your business time and money and send a clear roadmap with expected ROI. No commitment."
         keywords="free strategy call, medical tourism consultation, lead generation consultation, clinic marketing consultation, AI automation consultation, medical tourism marketing consultation, Turkey medical tourism, website design consultation, SEO consultation, digital marketing consultation, patient acquisition consultation"
         canonicalUrl="https://webimotagency.com/book-consultation"
       />

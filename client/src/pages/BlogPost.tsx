@@ -37,14 +37,48 @@ export default function BlogPost() {
     );
   }
 
+  const published = new Date(post.date);
+  const publishedIso = [published.getFullYear(), published.getMonth() + 1, published.getDate()]
+    .map((n) => String(n).padStart(2, "0"))
+    .join("-");
+
   return (
     <>
-      <SEO 
-        title={`${post.title} | Medical Tourism Marketing Blog`}
+      <SEO
+        title={post.title}
         description={post.excerpt}
-        keywords={`${post.category.toLowerCase()}, medical tourism marketing, lead generation, clinic marketing, ${post.category.toLowerCase()} tips, medical tourism blog, healthcare marketing, Turkey medical tourism, clinic lead generation, patient acquisition, medical tourism strategies`}
+        keywords={`${post.category.toLowerCase()}, AI automation, business automation, AI agents, Webimot blog`}
         canonicalUrl={`https://webimotagency.com/blog/${post.slug}`}
         ogType="article"
+        articlePublishedTime={publishedIso}
+        articleAuthor="Webimot Agency"
+        schema={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BlogPosting",
+              "headline": post.title,
+              "description": post.excerpt,
+              "articleSection": post.category,
+              "datePublished": publishedIso,
+              "dateModified": publishedIso,
+              "inLanguage": "en",
+              "url": `https://webimotagency.com/blog/${post.slug}`,
+              "mainEntityOfPage": `https://webimotagency.com/blog/${post.slug}`,
+              "image": "https://webimotagency.com/og-image.png",
+              "author": { "@type": "Organization", "name": "Webimot Agency", "url": "https://webimotagency.com/" },
+              "publisher": { "@id": "https://webimotagency.com/#organization" },
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://webimotagency.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://webimotagency.com/blog" },
+                { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://webimotagency.com/blog/${post.slug}` },
+              ],
+            },
+          ],
+        }}
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

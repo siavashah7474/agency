@@ -71,8 +71,8 @@ export default function Solutions() {
   return (
     <>
       <SEO
-        title="AI Solutions | Webimot Agency"
-        description="Seven AI systems that capture leads, follow up automatically, cut admin work, and grow organic traffic — grouped by the outcome they deliver."
+        title="AI Solutions for Business Automation"
+        description="Seven AI systems that capture and answer leads, follow up automatically, process documents, report on your numbers and publish SEO content — built and run by Webimot."
         keywords="AI automation solutions, AI agency products, lead automation, WhatsApp AI, document automation, SEO automation"
         canonicalUrl="https://webimotagency.com/solutions"
       />

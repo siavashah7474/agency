@@ -4,42 +4,131 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { BookingModalProvider } from "@/hooks/use-booking-modal";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, type ComponentType } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { isPrerendering } from "@/lib/prerender";
 
-const Home = lazy(() => import("@/pages/Home"));
-const Solutions = lazy(() => import("@/pages/Solutions"));
-const WhoWeHelp = lazy(() => import("@/pages/WhoWeHelp"));
-const Pricing = lazy(() => import("@/pages/Pricing"));
-const Services = lazy(() => import("@/pages/Services"));
-const ServiceDetail = lazy(() => import("@/pages/ServiceDetail"));
-const AISolutions = lazy(() => import("@/pages/AISolutions"));
-const About = lazy(() => import("@/pages/About"));
-const Contact = lazy(() => import("@/pages/Contact"));
-const Clients = lazy(() => import("@/pages/Clients"));
-const Blog = lazy(() => import("@/pages/Blog"));
-const BlogPost = lazy(() => import("@/pages/BlogPost"));
-const BookConsultation = lazy(() => import("@/pages/BookConsultation"));
-const CaseStudies = lazy(() => import("@/pages/CaseStudies"));
-const CaseStudyDetail = lazy(() => import("@/pages/CaseStudyDetail"));
-const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
-const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
-const NotFound = lazy(() => import("@/pages/not-found"));
-const LeadFirePage = lazy(() => import("@/pages/products/LeadFire"));
-const DocuMindPage = lazy(() => import("@/pages/products/DocuMind"));
-const NurtureLoopPage = lazy(() => import("@/pages/products/NurtureLoop"));
-const ReviveIQPage = lazy(() => import("@/pages/products/ReviveIQ"));
-const ClearDeskPage = lazy(() => import("@/pages/products/ClearDesk"));
-const SEOBlogAIPage = lazy(() => import("@/pages/products/SEOBlogAI"));
-const WhatsAppAIPage = lazy(() => import("@/pages/products/WhatsAppAI"));
-const Chatbot = lazy(() => import("@/components/Chatbot"));
-const ExitIntentPopup = lazy(() => import("@/components/ExitIntentPopup"));
-const HealthcarePage = lazy(() => import("@/pages/industries/Healthcare"));
-const EcommercePage = lazy(() => import("@/pages/industries/Ecommerce"));
-const FinanceLegalPage = lazy(() => import("@/pages/industries/FinanceLegal"));
-const SmallBusinessPage = lazy(() => import("@/pages/industries/SmallBusiness"));
-const RealEstatePage = lazy(() => import("@/pages/industries/RealEstate"));
+type PreloadableComponent = ComponentType<any> & { preload: () => Promise<unknown> };
+
+// Like React.lazy, but once preload() has finished the page renders synchronously.
+// main.tsx preloads the first page so pre-rendered HTML is swapped for the live app
+// in a single render, without flashing the loading placeholder.
+function lazyWithPreload(factory: () => Promise<{ default: ComponentType<any> }>): PreloadableComponent {
+  let loaded: ComponentType<any> | null = null;
+  const LazyComponent = lazy(factory);
+  const Component = ((props: Record<string, unknown>) => {
+    const Resolved = loaded ?? LazyComponent;
+    return <Resolved {...props} />;
+  }) as PreloadableComponent;
+  Component.preload = () => factory().then((mod) => { loaded = mod.default; return mod; });
+  return Component;
+}
+
+const importHome = () => import("@/pages/Home");
+const Home = lazyWithPreload(importHome);
+const importSolutions = () => import("@/pages/Solutions");
+const Solutions = lazyWithPreload(importSolutions);
+const importWhoWeHelp = () => import("@/pages/WhoWeHelp");
+const WhoWeHelp = lazyWithPreload(importWhoWeHelp);
+const importPricing = () => import("@/pages/Pricing");
+const Pricing = lazyWithPreload(importPricing);
+const importServices = () => import("@/pages/Services");
+const Services = lazyWithPreload(importServices);
+const importServiceDetail = () => import("@/pages/ServiceDetail");
+const ServiceDetail = lazyWithPreload(importServiceDetail);
+const importAISolutions = () => import("@/pages/AISolutions");
+const AISolutions = lazyWithPreload(importAISolutions);
+const importAbout = () => import("@/pages/About");
+const About = lazyWithPreload(importAbout);
+const importContact = () => import("@/pages/Contact");
+const Contact = lazyWithPreload(importContact);
+const importClients = () => import("@/pages/Clients");
+const Clients = lazyWithPreload(importClients);
+const importBlog = () => import("@/pages/Blog");
+const Blog = lazyWithPreload(importBlog);
+const importBlogPost = () => import("@/pages/BlogPost");
+const BlogPost = lazyWithPreload(importBlogPost);
+const importBookConsultation = () => import("@/pages/BookConsultation");
+const BookConsultation = lazyWithPreload(importBookConsultation);
+const importCaseStudies = () => import("@/pages/CaseStudies");
+const CaseStudies = lazyWithPreload(importCaseStudies);
+const importCaseStudyDetail = () => import("@/pages/CaseStudyDetail");
+const CaseStudyDetail = lazyWithPreload(importCaseStudyDetail);
+const importPrivacyPolicy = () => import("@/pages/PrivacyPolicy");
+const PrivacyPolicy = lazyWithPreload(importPrivacyPolicy);
+const importTermsOfService = () => import("@/pages/TermsOfService");
+const TermsOfService = lazyWithPreload(importTermsOfService);
+const importNotFound = () => import("@/pages/not-found");
+const NotFound = lazyWithPreload(importNotFound);
+const importLeadFirePage = () => import("@/pages/products/LeadFire");
+const LeadFirePage = lazyWithPreload(importLeadFirePage);
+const importDocuMindPage = () => import("@/pages/products/DocuMind");
+const DocuMindPage = lazyWithPreload(importDocuMindPage);
+const importNurtureLoopPage = () => import("@/pages/products/NurtureLoop");
+const NurtureLoopPage = lazyWithPreload(importNurtureLoopPage);
+const importReviveIQPage = () => import("@/pages/products/ReviveIQ");
+const ReviveIQPage = lazyWithPreload(importReviveIQPage);
+const importClearDeskPage = () => import("@/pages/products/ClearDesk");
+const ClearDeskPage = lazyWithPreload(importClearDeskPage);
+const importSEOBlogAIPage = () => import("@/pages/products/SEOBlogAI");
+const SEOBlogAIPage = lazyWithPreload(importSEOBlogAIPage);
+const importWhatsAppAIPage = () => import("@/pages/products/WhatsAppAI");
+const WhatsAppAIPage = lazyWithPreload(importWhatsAppAIPage);
+const importChatbot = () => import("@/components/Chatbot");
+const Chatbot = lazyWithPreload(importChatbot);
+const importExitIntentPopup = () => import("@/components/ExitIntentPopup");
+const ExitIntentPopup = lazyWithPreload(importExitIntentPopup);
+const importHealthcarePage = () => import("@/pages/industries/Healthcare");
+const HealthcarePage = lazyWithPreload(importHealthcarePage);
+const importEcommercePage = () => import("@/pages/industries/Ecommerce");
+const EcommercePage = lazyWithPreload(importEcommercePage);
+const importFinanceLegalPage = () => import("@/pages/industries/FinanceLegal");
+const FinanceLegalPage = lazyWithPreload(importFinanceLegalPage);
+const importSmallBusinessPage = () => import("@/pages/industries/SmallBusiness");
+const SmallBusinessPage = lazyWithPreload(importSmallBusinessPage);
+const importRealEstatePage = () => import("@/pages/industries/RealEstate");
+const RealEstatePage = lazyWithPreload(importRealEstatePage);
+
+// Route → page chunk, used to load the first page before React takes over pre-rendered HTML.
+const routeImporters: [string, PreloadableComponent][] = [
+  ["/", Home],
+  ["/solutions", Solutions],
+  ["/who-we-help", WhoWeHelp],
+  ["/pricing", Pricing],
+  ["/services", Services],
+  ["/services/:slug", ServiceDetail],
+  ["/ai-solutions", AISolutions],
+  ["/about", About],
+  ["/contact", Contact],
+  ["/clients", Clients],
+  ["/blog", Blog],
+  ["/blog/:slug", BlogPost],
+  ["/book-consultation", BookConsultation],
+  ["/case-studies", CaseStudies],
+  ["/case-studies/:slug", CaseStudyDetail],
+  ["/privacy-policy", PrivacyPolicy],
+  ["/terms-of-service", TermsOfService],
+  ["/products/leadfire", LeadFirePage],
+  ["/products/documind", DocuMindPage],
+  ["/products/nurtureloop", NurtureLoopPage],
+  ["/products/reviveiq", ReviveIQPage],
+  ["/products/cleardesk", ClearDeskPage],
+  ["/products/seo-blog-ai", SEOBlogAIPage],
+  ["/products/whatsapp-ai", WhatsAppAIPage],
+  ["/industries/healthcare", HealthcarePage],
+  ["/industries/ecommerce", EcommercePage],
+  ["/industries/finance-legal", FinanceLegalPage],
+  ["/industries/small-business", SmallBusinessPage],
+  ["/industries/real-estate", RealEstatePage],
+];
+
+export function preloadRoute(pathname: string): Promise<unknown> {
+  const match = routeImporters.find(([pattern]) =>
+    new RegExp("^" + pattern.replace(/:[^/]+/g, "[^/]+") + "/?$").test(pathname),
+  );
+  return (match ? match[1] : NotFound).preload();
+}
 
 function PageLoader() {
   return (
@@ -116,10 +205,12 @@ export default function App() {
           <BookingModalProvider>
             <GoogleAnalytics />
             <Router />
-            <Suspense fallback={null}>
-              <Chatbot />
-              <ExitIntentPopup />
-            </Suspense>
+            {!isPrerendering && (
+              <Suspense fallback={null}>
+                <Chatbot />
+                <ExitIntentPopup />
+              </Suspense>
+            )}
             <WhatsAppButton />
             <Toaster />
           </BookingModalProvider>

@@ -7,45 +7,43 @@
       content="width=device-width, initial-scale=1.0"
     />
 
-    <!-- ===== PRIMARY SEO ===== -->
-    <title>AI Agent for Clinics & Medical Tourism | AI Receptionist | Webimot Agency</title>
+    <!-- ===== PRIMARY SEO (defaults; each page's pre-rendered HTML sets its own) ===== -->
+    <title>Webimot Agency | AI Consulting & Automation for Business</title>
     <meta
       name="description"
-      content="Webimot Agency builds AI agents for clinics, medical tourism businesses, and eCommerce stores. Our AI receptionist handles leads 24/7, automated SEO blog publishes content on autopilot, and AI marketing analytics delivers weekly performance reports. Trusted by 50+ businesses in 12+ countries."
-    />
-    <meta
-      name="keywords"
-      content="AI agent for clinic, AI agent for clinics, AI receptionist for clinic, AI receptionist medical tourism, AI agent for medical tourism, automated SEO blog, automated SEO blog generator, AI financial analytics, AI marketing analytics, WhatsApp AI agent for clinic, AI lead automation clinic, medical tourism AI automation, clinic lead generation AI, AI chatbot for clinic, AI automation agency, digital marketing for clinics, hair transplant clinic marketing, dental clinic AI agent, cosmetic surgery marketing, Shopify eCommerce automation, meta ads for clinics, google ads medical tourism, marketing automation agency, business automation Istanbul, marketing agency Amsterdam"
+      content="Webimot is an AI consulting agency that digitalises how businesses run — AI agents for daily tasks, WhatsApp AI for leads, document processing and automated reporting. Trusted by 50+ businesses in 12+ countries."
     />
     <meta name="author" content="Webimot Agency" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="google-site-verification" content="x0XMHgAlnybshqZbFgFDaIEzd8Os90UEAEfiGagZkYA" />
+    <meta name="theme-color" content="#0f172a" />
 
-    <!-- Geo tags -->
-    <meta name="geo.region" content="NL" />
-    <meta name="geo.placename" content="Amsterdam" />
-    <meta name="language" content="English" />
-    <meta name="revisit-after" content="7 days" />
-
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Webimot Agency" />
-    <meta property="og:title" content="AI Agent for Clinics & Medical Tourism | AI Receptionist | Webimot Agency" />
-    <meta property="og:description" content="AI receptionist for clinics that replies in any language 24/7, automated SEO blog that publishes itself, and AI marketing analytics — all built by Webimot Agency. Trusted by 50+ clinics and businesses." />
-    <meta property="og:url" content="https://webimotagency.com/" />
+    <meta property="og:title" content="Webimot Agency | AI Consulting & Automation for Business" />
+    <meta property="og:description" content="We design and deploy AI systems that digitalise how your business runs — from sales and customer service to documents, reporting and team operations." />
     <meta property="og:image" content="https://webimotagency.com/og-image.png" />
     <meta property="og:locale" content="en_US" />
-
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AI Agent for Clinics & Medical Tourism | AI Receptionist | Webimot Agency" />
-    <meta name="twitter:description" content="AI receptionist for clinics, automated SEO blog generator, and AI marketing analytics — all on autopilot. Built by Webimot Agency." />
+    <meta name="twitter:title" content="Webimot Agency | AI Consulting & Automation for Business" />
+    <meta name="twitter:description" content="AI agents, WhatsApp AI, document processing and automated reporting — designed, built and run for your business." />
     <meta name="twitter:image" content="https://webimotagency.com/og-image.png" />
+
+    <!-- AI crawlers: plain-text summaries of the site -->
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary" />
+
+    <!-- Home page follows the visitor's time of day: dark from 19:00 to 07:00 -->
+    <script>
+      (function () {
+        var h = new Date().getHours();
+        if (location.pathname === "/" && (h < 7 || h >= 19)) document.documentElement.classList.add("dark");
+      })();
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/logo1.png" />
     <link rel="apple-touch-icon" href="/logo1.png" />
-    <link rel="canonical" href="https://webimotagency.com/" />
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV6M9N8FQ3"></script>
@@ -68,201 +66,62 @@
       rel="stylesheet"
     />
 
-    <!-- ===== SCHEMA: Organization / ProfessionalService ===== -->
+    <!-- ===== SCHEMA: Organization + WebSite (site-wide) ===== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Webimot Agency",
-      "alternateName": ["Webimot", "Webimot AI Agency"],
-      "description": "Webimot Agency is an AI automation agency that builds AI agents for clinics and medical tourism businesses. Our services include AI receptionist for clinics, WhatsApp AI agent, automated SEO blog generator, AI marketing analytics, Shopify eCommerce automation, Meta Ads, and Google Ads management.",
-      "url": "https://webimotagency.com",
-      "logo": "https://webimotagency.com/logo.png",
-      "image": "https://webimotagency.com/og-image.png",
-      "priceRange": "$$",
-      "areaServed": "Worldwide",
-      "knowsAbout": [
-        "AI agent for clinics",
-        "AI receptionist for medical tourism",
-        "Automated SEO blog generation",
-        "AI marketing analytics",
-        "WhatsApp AI automation",
-        "Lead qualification automation",
-        "Shopify eCommerce automation",
-        "Medical tourism marketing"
-      ],
-      "serviceType": [
-        "AI Agent for Clinics",
-        "AI Receptionist for Medical Tourism",
-        "WhatsApp AI Agent",
-        "Automated SEO Blog Generator",
-        "AI Marketing Analytics",
-        "AI Lead Automation",
-        "Shopify eCommerce Automation",
-        "Meta Ads Management",
-        "Google Ads Management",
-        "Medical Tourism Marketing Automation"
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/company/webimot",
-        "https://twitter.com/webimot"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "availableLanguage": ["English", "Turkish", "Arabic", "German", "Dutch", "Russian", "French"]
-      },
-      "address": [
+      "@graph": [
         {
-          "@type": "PostalAddress",
-          "addressLocality": "Amsterdam",
-          "addressCountry": "NL"
+          "@type": "ProfessionalService",
+          "@id": "https://webimotagency.com/#organization",
+          "name": "Webimot Agency",
+          "alternateName": ["Webimot", "Webimot AI Agency"],
+          "description": "Webimot Agency is an AI consulting and automation agency that helps businesses digitalise their operations. It maps how a business works, then designs, builds and runs AI systems: AI agents for daily tasks such as invoices, data entry and HR workflows, WhatsApp AI agents that answer and qualify leads 24/7, document processing, automated reporting and SEO content automation. Clients include clinics and medical tourism providers, real estate agencies, e-commerce stores, finance and legal firms and small businesses in 12+ countries.",
+          "slogan": "AI consultants for digital business transformation",
+          "url": "https://webimotagency.com/",
+          "logo": "https://webimotagency.com/logo.png",
+          "image": "https://webimotagency.com/og-image.png",
+          "email": "info@webimot.com",
+          "telephone": "+31628753175",
+          "priceRange": "$$",
+          "areaServed": "Worldwide",
+          "address": [
+            { "@type": "PostalAddress", "addressLocality": "Amsterdam", "addressCountry": "NL" },
+            { "@type": "PostalAddress", "addressLocality": "Istanbul", "addressCountry": "TR" }
+          ],
+          "knowsAbout": [
+            "AI consulting",
+            "Digital transformation",
+            "Business process automation",
+            "AI agents",
+            "Workflow automation",
+            "WhatsApp AI agent",
+            "Document processing automation",
+            "Automated business reporting",
+            "Lead qualification automation",
+            "SEO content automation",
+            "AI for medical tourism clinics",
+            "AI for real estate agencies"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "info@webimot.com",
+            "telephone": "+31628753175",
+            "availableLanguage": ["English", "Dutch", "Turkish", "Spanish", "German", "Arabic"]
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/webimot",
+            "https://twitter.com/webimot"
+          ]
         },
         {
-          "@type": "PostalAddress",
-          "addressLocality": "Istanbul",
-          "addressCountry": "TR"
-        }
-      ]
-    }
-    </script>
-
-    <!-- ===== SCHEMA: WebSite with SearchAction ===== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Webimot Agency",
-      "url": "https://webimotagency.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://webimotagency.com/blog?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
-    <!-- ===== SCHEMA: Services (ItemList) ===== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "AI Automation Services for Clinics and Medical Tourism",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "Service",
-            "name": "AI Agent for Clinics",
-            "alternateName": "AI Receptionist for Clinics",
-            "description": "A 24/7 AI agent for clinics that automatically replies to patient inquiries on WhatsApp, qualifies leads, evaluates photos with Vision AI, and books consultations. Works for hair transplant, dental, cosmetic surgery, IVF, and medical tourism clinics.",
-            "url": "https://webimotagency.com/services/whatsapp-ai-agent",
-            "provider": { "@type": "Organization", "name": "Webimot Agency" },
-            "areaServed": "Worldwide",
-            "audience": { "@type": "Audience", "audienceType": "Medical clinics, Medical tourism businesses" }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Service",
-            "name": "Automated SEO Blog Generator",
-            "alternateName": "AI SEO Blog Automation",
-            "description": "An automated SEO blog generator that uses AI to write, optimize, and publish SEO-targeted blog posts on autopilot. Generates 20-30 posts per month with zero manual effort. Includes keyword research, meta tags, internal linking, and multi-language support.",
-            "url": "https://webimotagency.com/services/seo-blog-generator",
-            "provider": { "@type": "Organization", "name": "Webimot Agency" },
-            "areaServed": "Worldwide"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "Service",
-            "name": "AI Marketing Analytics",
-            "alternateName": "AI Financial Analytics for Agencies",
-            "description": "Automated AI marketing analytics that delivers weekly performance reports covering SEO rankings, ad ROAS, traffic trends, and conversion insights. Identifies problems and sends actionable recommendations to your inbox automatically.",
-            "url": "https://webimotagency.com/services/ai-marketing-analyst",
-            "provider": { "@type": "Organization", "name": "Webimot Agency" },
-            "areaServed": "Worldwide"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "Service",
-            "name": "AI Agent for Medical Tourism",
-            "alternateName": "Medical Tourism AI Receptionist",
-            "description": "AI automation system for medical tourism businesses. Handles multilingual patient inquiries 24/7, qualifies leads from Germany, UK, UAE, Netherlands, and 10+ other source markets, and automates the entire patient journey from first contact to booked consultation.",
-            "url": "https://webimotagency.com/ai-solutions",
-            "provider": { "@type": "Organization", "name": "Webimot Agency" },
-            "areaServed": "Worldwide",
-            "audience": { "@type": "Audience", "audienceType": "Medical tourism agencies, International clinics" }
-          }
-        }
-      ]
-    }
-    </script>
-
-    <!-- ===== SCHEMA: FAQ — Keyword-targeted Q&A ===== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is an AI agent for clinics?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "An AI agent for clinics is an automated system connected to your WhatsApp Business account that handles all incoming patient inquiries 24/7 — replying instantly in multiple languages, qualifying leads, evaluating photos with Vision AI, and booking consultations directly in your calendar. It acts as an AI receptionist for your clinic, so no inquiry ever goes unanswered, even at 3AM. Webimot Agency builds and deploys AI agents for hair transplant, dental, cosmetic surgery, IVF, and medical tourism clinics."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is an AI receptionist for medical tourism?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "An AI receptionist for medical tourism is an AI-powered chatbot and automation system that manages the entire patient intake process for medical tourism clinics. It replies to inquiries from international patients in their native language (Arabic, German, Russian, Dutch, French, English), qualifies them automatically, and schedules consultations without any human involvement. Webimot Agency's AI receptionist handles patients from Germany, UK, UAE, Saudi Arabia, Netherlands, and 10+ other source markets."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does an automated SEO blog generator work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "An automated SEO blog generator uses AI to research keywords, write fully SEO-optimized articles, add meta titles and descriptions, set up internal links, and publish posts on a schedule — all automatically. Webimot Agency's SEO Blog Generator AI produces 20-30 targeted articles per month for medical tourism clinics and businesses without any manual writing effort. It supports multi-language publishing and tracks performance automatically."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is AI marketing analytics?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AI marketing analytics is an automated reporting system that collects data from your SEO rankings, Google Ads, Meta Ads, and website traffic, then uses AI to identify trends, detect problems, and deliver actionable recommendations. Webimot Agency's AI Marketing Analyst sends weekly reports to your inbox automatically — saving 10+ hours of manual analysis per week."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which countries does Webimot Agency serve for medical tourism marketing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Webimot Agency targets the top medical tourism source markets: Germany (hair transplant, dental), United Kingdom (cosmetic surgery, dental veneers), UAE and Gulf countries (oncology, cosmetic), Saudi Arabia (cosmetic surgery, IVF), Russia and CIS (hair transplant, dental), Netherlands (hair transplant, IVF), France (cosmetic surgery), Iraq and Levant (hair transplant, dental), Scandinavia (dental veneers), and the United States (bariatric surgery, dental). Our AI receptionist handles inquiries in all relevant languages 24/7."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does an AI agent for a clinic cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The cost of an AI agent for a clinic depends on the scope — number of languages, integrations, and monthly inquiry volume. Webimot Agency offers standalone AI products (WhatsApp AI Agent, SEO Blog Generator, AI Marketing Analyst) and full-service monthly retainers. Book a free strategy call to get a tailored proposal with transparent pricing."
-          }
+          "@type": "WebSite",
+          "@id": "https://webimotagency.com/#website",
+          "name": "Webimot Agency",
+          "url": "https://webimotagency.com/",
+          "publisher": { "@id": "https://webimotagency.com/#organization" },
+          "inLanguage": "en"
         }
       ]
     }

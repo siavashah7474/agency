@@ -39,6 +39,13 @@ export default function Home() {
   const { t } = useTranslation();
   const theme = useTimeOfDayTheme();
 
+  // The home page follows the visitor's time of day; index.html applies the class before
+  // first paint so pre-rendered HTML shows the right theme. Other pages stay light.
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+    return () => document.documentElement.classList.remove("dark");
+  }, [theme]);
+
   const faqs = t("home.faqs", { returnObjects: true }) as Array<{ question: string; answer: string }>;
   const testimonials = t("home.testimonials", { returnObjects: true }) as Array<{ name: string; role: string; company: string; content: string }>;
 
@@ -74,30 +81,19 @@ export default function Home() {
         canonicalUrl="https://webimotagency.com/"
         schema={{
           "@context": "https://schema.org",
-          "@type": "MedicalBusiness",
-          "name": "Webimot Agency",
-          "description": "Webimot Agency is an AI automation agency building AI agents for clinics, AI receptionists for medical tourism, automated SEO blog generators, and AI Operations Autopilot systems for internal workflow automation. Serving hair transplant, dental, cosmetic surgery, and IVF clinics in Turkey and worldwide.",
-          "url": "https://webimotagency.com",
-          "logo": "https://webimotagency.com/logo.png",
-          "address": [
-            { "@type": "PostalAddress", "addressLocality": "Istanbul", "addressCountry": "TR" },
-            { "@type": "PostalAddress", "addressLocality": "Amsterdam", "addressCountry": "NL" }
-          ],
-          "areaServed": ["DE","GB","NL","FR","BE","SA","AE","KW","QA","US","AU","CA","TR","RU","IQ","SE","NO","DK"],
-          "knowsAbout": ["AI agent for clinics","AI receptionist medical tourism","automated SEO blog","AI operations automation","WhatsApp AI agent","lead qualification automation","invoice automation","HR workflow automation"],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "AI Automation Services for Clinics",
-            "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agent for Clinics", "description": "24/7 AI receptionist for clinics — replies on WhatsApp in any language, qualifies leads, evaluates photos, books consultations automatically." } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automated SEO Blog Generator", "description": "AI that writes and publishes 20-30 SEO-optimized blog posts per month for clinics and medical tourism websites — fully automated." } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Operations Autopilot", "description": "AI-powered internal workflow automation — handles invoice emails, HR reminders, task coordination, escalations, and recurring admin tasks automatically." } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Agent for Medical Tourism", "description": "Multilingual AI automation for medical tourism businesses targeting patients from Germany, UK, UAE, Netherlands, Saudi Arabia, and 10+ countries." } }
-            ]
-          }
+          "@type": "OfferCatalog",
+          "@id": "https://webimotagency.com/#services",
+          "name": "AI digitalisation services by Webimot Agency",
+          "provider": { "@id": "https://webimotagency.com/#organization" },
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workflow digitalisation & AI audit", "description": "We map how your team works, find repetitive manual steps, and redesign them with AI. A free AI audit delivers your top 5 automation opportunities with expected ROI in 3 days.", "url": "https://webimotagency.com/solutions" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI agents for daily business tasks", "description": "AI agents that process invoices and documents, handle data entry, update business systems and send reminders and follow-ups automatically.", "url": "https://webimotagency.com/services/ai-ops-autopilot" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WhatsApp AI agent for leads", "description": "A WhatsApp AI agent that answers every enquiry 24/7 in 50+ languages, qualifies leads and books appointments automatically.", "url": "https://webimotagency.com/products/whatsapp-ai" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automated reporting and business insights", "description": "AI that pulls data from your tools and delivers a plain-English report on sales, leads and team performance every Monday morning.", "url": "https://webimotagency.com/products/cleardesk" } }
+          ]
         }}
       />
-      <div className={`min-h-screen flex flex-col bg-background text-foreground ${theme === "dark" ? "dark" : ""}`}>
+      <div className="min-h-screen flex flex-col bg-background text-foreground">
         <Navigation />
 
         <main id="main-content" className="flex-1">

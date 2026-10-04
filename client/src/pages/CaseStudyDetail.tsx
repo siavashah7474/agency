@@ -33,7 +33,7 @@ export default function CaseStudyDetail() {
   return (
     <>
       <SEO 
-        title={`${study.title} - Medical Tourism Marketing Case Study`}
+        title={study.title}
         description={study.challenge.substring(0, 160)}
         keywords={`medical tourism case study, ${study.industry} case study, ${study.services.join(', ')}, lead generation case study, clinic marketing success, medical tourism results, ${study.industry} marketing, patient acquisition case study, healthcare marketing case study, Turkey medical tourism case study`}
         canonicalUrl={`https://webimotagency.com/case-studies/${study.slug}`}
