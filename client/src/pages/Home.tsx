@@ -9,6 +9,12 @@ import ClientResultsSection from "@/components/ClientResultsSection";
 import WhoWeHelpSection from "@/components/WhoWeHelpSection";
 import ConsultingTiersSection from "@/components/ConsultingTiersSection";
 import SEO from "@/components/SEO";
+import LiveLeadsCard from "@/components/LiveLeadsCard";
+import StatsStrip from "@/components/StatsStrip";
+import IntegrationsSection from "@/components/IntegrationsSection";
+import RiskFreeStartSection from "@/components/RiskFreeStartSection";
+import SectionEyebrow from "@/components/SectionEyebrow";
+import { useTimeOfDayTheme } from "@/hooks/use-time-of-day-theme";
 import {
   Accordion,
   AccordionContent,
@@ -16,7 +22,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import {
-  Bot,
   TrendingUp,
   Zap,
   FileText,
@@ -25,26 +30,14 @@ import {
   HelpCircle,
   RotateCcw,
 } from "lucide-react";
-import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.webp";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const tickerItems = [
-  "WhatsApp replied in 0.8s — clinic lead qualified",
-  "Property viewing scheduled — London · AI replied in 52s",
-  "Small business report delivered — Monday 08:00",
-  "Real estate CRM updated — 0 manual steps",
-  "Follow-up sent — day 7 of 14 · lead reengaged",
-  "Old leads reactivated — 18 replies from dead database",
-  "Abandoned cart recovered — Shopify store, 0 human steps",
-  "SEO blog published — automatically, on schedule",
-  "Invoice processed and logged — 4 seconds",
-  "Enquiry handled in Arabic — 24/7",
-];
 
 export default function Home() {
   const { openModal } = useBookingModal();
   const { t } = useTranslation();
+  const theme = useTimeOfDayTheme();
 
   const faqs = t("home.faqs", { returnObjects: true }) as Array<{ question: string; answer: string }>;
   const testimonials = t("home.testimonials", { returnObjects: true }) as Array<{ name: string; role: string; company: string; content: string }>;
@@ -104,111 +97,79 @@ export default function Home() {
           }
         }}
       />
-      <div className="min-h-screen flex flex-col">
+      <div className={`min-h-screen flex flex-col bg-background text-foreground ${theme === "dark" ? "dark" : ""}`}>
         <Navigation />
 
         <main id="main-content" className="flex-1">
           {/* Hero */}
-          <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
-            <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
-            <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
-            <div className="absolute top-2/3 right-1/6 w-64 h-64 bg-accent/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="absolute inset-0 neural-grid pointer-events-none" />
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#020817] to-transparent pointer-events-none" />
+          <section className="relative overflow-hidden bg-gradient-to-b from-sky-50 via-white to-white py-20 md:py-28 dark:from-[#020817] dark:via-[#020817] dark:to-[#020817]">
+            <div className="absolute top-0 right-0 h-[600px] w-[600px] rounded-full bg-secondary/10 blur-3xl animate-float-orb pointer-events-none dark:bg-primary/25" />
+            <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-accent/10 blur-3xl animate-float-orb-2 pointer-events-none dark:bg-secondary/15" />
+            <div className="absolute inset-0 neural-grid-adaptive pointer-events-none" />
 
-            <div className="container mx-auto px-6 relative z-10">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="text-white">
-                  <div className="inline-flex items-center gap-2 bg-white/8 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-6">
-                    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                    <span className="text-xs font-bold tracking-widest text-green-400 uppercase">System Online</span>
-                    <span className="text-white/30 text-xs">·</span>
-                    <span className="text-sm text-white/60">{t("home.trustBadge")}</span>
+            <div className="container relative z-10 mx-auto px-6">
+              <div className="grid items-center gap-14 lg:grid-cols-2">
+                <div className="min-w-0">
+                  <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-4 py-1.5 backdrop-blur-sm dark:border-white/15 dark:bg-white/5">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="font-mono text-xs font-semibold uppercase tracking-[0.15em] text-slate-600 dark:text-white/60">{t("home.trustBadge")}</span>
                   </div>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                  <h1 className="mb-6 text-4xl font-bold leading-[1.05] tracking-tight text-slate-900 md:text-5xl lg:text-6xl dark:text-white">
                     {t("home.heroTitle1")}{" "}
-                    <span className="text-yellow-300">{t("home.heroTitle2")}</span>
+                    <span className="text-gradient-ai">{t("home.heroTitle2")}</span>
                   </h1>
-                  <p className="text-lg md:text-xl mb-8 text-white/75" dangerouslySetInnerHTML={{ __html: t("home.heroSubtitle") }} />
-                  <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                  <p className="mb-8 text-lg text-slate-600 md:text-xl dark:text-white/70" dangerouslySetInnerHTML={{ __html: t("home.heroSubtitle") }} />
+                  <div className="mb-8 flex flex-col gap-3 sm:flex-row">
                     <Button
                       data-testid="button-hero-strategy-call"
                       size="lg"
-                      className="bg-white text-primary hover:bg-white/90"
+                      className="rounded-full bg-slate-900 px-7 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-white/90"
                       onClick={() => openModal()}
                     >
-                      {t("home.heroCta1")}
+                      {t("home.heroCta1")} <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                     <Link href="/about">
                       <Button
                         data-testid="button-hero-ai-solutions"
                         size="lg"
                         variant="outline"
-                        className="bg-white/8 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm"
+                        className="w-full rounded-full border-slate-300 bg-white/70 px-7 text-slate-900 hover:bg-white sm:w-auto dark:border-white/15 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
                       >
                         {t("home.heroCta2")}
                       </Button>
                     </Link>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {(["hairTransplant", "dental", "cosmetic", "ivf", "realEstate", "ecommerce"] as const).map((key) => (
-                      <span key={key} className="inline-flex items-center gap-1.5 text-xs text-white/60 bg-white/6 border border-white/10 rounded-full px-3 py-1">
-                        <CheckCircle className="w-3 h-3 text-secondary" /> {t(`home.industries.${key}`)}
-                      </span>
+                  <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600 dark:text-white/60">
+                    {["Google Partner", "Meta Business Partner", "Free audit in 3 days", "No credit card needed"].map((item) => (
+                      <li key={item} className="inline-flex items-center gap-1.5">
+                        <CheckCircle className="h-4 w-4 text-emerald-600 dark:text-emerald-400" /> {item}
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
 
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-accent/15 rounded-2xl blur-2xl scale-105 pointer-events-none" />
-                  <img src={heroImage} alt="AI Dashboard Interface" {...{ fetchpriority: "high" }} className="relative rounded-xl shadow-2xl border border-white/10" />
-                  <div className="absolute -top-3 -right-3 hidden md:flex items-center gap-2 bg-slate-900/95 border border-secondary/30 rounded-lg px-3 py-2 backdrop-blur-sm" style={{ boxShadow: '0 0 16px hsl(221 91% 60% / 0.15)' }}>
-                    <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
-                    <span className="text-xs text-white/80 font-mono">leads.qualified += 3</span>
-                  </div>
-                  <div className="absolute -bottom-3 -left-3 hidden md:flex items-center gap-2 bg-slate-900/95 border border-accent/30 rounded-lg px-3 py-2 backdrop-blur-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse flex-shrink-0" />
-                    <span className="text-xs text-white/80 font-mono">response_time: 0.8s</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Live automation ticker */}
-              <div className="mt-14 pt-6 border-t border-white/8">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-[10px] font-mono font-bold text-green-400 tracking-widest flex-shrink-0 uppercase">Live Automations</span>
-                  <span className="text-white/20 text-xs flex-shrink-0">//</span>
-                </div>
-                <div className="overflow-hidden">
-                  <div className="flex gap-12 animate-ticker">
-                    {[...tickerItems, ...tickerItems].map((item, i) => (
-                      <span key={i} className="inline-flex items-center gap-2 text-sm text-white/40 whitespace-nowrap font-mono">
-                        <span className="w-1.5 h-1.5 rounded-full bg-green-400/70 flex-shrink-0" />
-                        {item}
-                      </span>
-                    ))}
-                  </div>
+                <div className="min-w-0">
+                  <LiveLeadsCard />
                 </div>
               </div>
             </div>
           </section>
+
+          <StatsStrip />
 
           <ConsultingTiersSection />
 
           <WhyWebimotSection />
 
           {/* Solutions teaser */}
-          <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
-            <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
+          <section className="py-16 md:py-24 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
+            <div className="absolute inset-0 neural-grid-adaptive pointer-events-none" />
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-secondary/40 to-transparent" />
             <div className="container mx-auto px-6 relative z-10">
               <div className="text-center mb-10">
-                <div className="inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 text-secondary rounded-full px-4 py-1.5 mb-4">
-                  <Bot className="w-4 h-4" />
-                  <span className="text-sm font-medium">7 AI systems, one platform</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Solutions for every part of your funnel</h2>
-                <p className="text-lg text-white/50 max-w-2xl mx-auto">Pick the outcome you need most — capture leads, follow up automatically, cut admin work, or grow organic traffic.</p>
+                <SectionEyebrow className="mb-4">7 AI systems, one platform</SectionEyebrow>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Solutions for every part of your funnel</h2>
+                <p className="text-lg text-slate-600 dark:text-white/50 max-w-2xl mx-auto">Pick the outcome you need most — capture leads, follow up automatically, cut admin work, or grow organic traffic.</p>
               </div>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
@@ -218,19 +179,19 @@ export default function Home() {
                   { icon: FileText, label: "Cut the busywork", desc: "Documents and reporting handled automatically, in the background." },
                   { icon: TrendingUp, label: "Get found online", desc: "Consistent SEO content published on autopilot." },
                 ].map((tile) => (
-                  <div key={tile.label} className="bg-white/4 border border-white/8 rounded-xl p-5 hover:border-secondary/25 transition-colors">
+                  <div key={tile.label} className="bg-slate-100 dark:bg-white/[0.04] border border-slate-200 dark:border-white/[0.08] rounded-xl p-5 hover:border-secondary/25 transition-colors">
                     <div className="w-10 h-10 bg-secondary/15 border border-secondary/20 rounded-lg flex items-center justify-center mb-3">
                       <tile.icon className="w-5 h-5 text-secondary" />
                     </div>
-                    <h3 className="font-semibold text-white mb-1.5">{tile.label}</h3>
-                    <p className="text-sm text-white/45 leading-relaxed">{tile.desc}</p>
+                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1.5">{tile.label}</h3>
+                    <p className="text-sm text-slate-600 dark:text-white/45 leading-relaxed">{tile.desc}</p>
                   </div>
                 ))}
               </div>
 
               <div className="text-center">
                 <Link href="/solutions">
-                  <Button data-testid="button-view-solutions" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                  <Button data-testid="button-view-solutions" className="rounded-full bg-slate-900 px-6 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-white/90">
                     Explore All Solutions <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
@@ -239,9 +200,13 @@ export default function Home() {
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-secondary/20 to-transparent" />
           </section>
 
+          <IntegrationsSection />
+
           <WhoWeHelpSection />
 
           <ClientResultsSection />
+
+          <RiskFreeStartSection />
 
           {/* Testimonials */}
           <section className="py-16 md:py-24">
@@ -300,20 +265,19 @@ export default function Home() {
           </section>
 
           {/* Bottom CTA */}
-          <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
-            <div className="absolute inset-0 neural-grid pointer-events-none" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 -z-10" />
-            <div className="container mx-auto px-6 text-center text-white">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">{t("home.ctaTitle")}</h2>
-              <p className="text-lg md:text-xl mb-8 text-white/90 max-w-2xl mx-auto">{t("home.ctaSubtitle")}</p>
+          <section className="relative overflow-hidden bg-slate-50 py-20 md:py-28 dark:bg-[#020817]">
+            <div className="absolute inset-0 neural-grid-adaptive pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-secondary/10 blur-3xl pointer-events-none dark:bg-primary/20" />
+            <div className="container relative mx-auto px-6 text-center">
+              <h2 className="mb-6 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl lg:text-5xl dark:text-white">{t("home.ctaTitle")}</h2>
+              <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-600 md:text-xl dark:text-white/80">{t("home.ctaSubtitle")}</p>
               <Button
                 data-testid="button-cta-book-call"
                 size="lg"
-                className="bg-white text-primary hover:bg-white/90"
+                className="rounded-full bg-slate-900 px-8 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-white/90"
                 onClick={() => openModal()}
               >
-                {t("home.ctaButton")}
+                {t("home.ctaButton")} <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </section>

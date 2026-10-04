@@ -62,7 +62,7 @@ export default function Navigation() {
             <nav className="hidden md:flex items-center gap-7">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href} data-testid={`link-nav-${link.href.replace("/", "") || "home"}`}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${location === link.href ? "text-primary" : "text-muted-foreground"}`}>
+                  className={`text-sm font-medium transition-colors hover:text-primary dark:hover:text-white ${location === link.href ? "text-primary dark:text-white" : "text-muted-foreground"}`}>
                   {link.label}
                 </Link>
               ))}
@@ -71,7 +71,7 @@ export default function Navigation() {
             <div className="hidden md:flex items-center gap-2">
               <div ref={langRef} className="relative">
                 <button onClick={() => setLangMenuOpen(!langMenuOpen)}
-                  className="flex items-center gap-1 px-2 py-1.5 rounded-md text-sm font-medium text-muted-foreground hover:text-primary hover:bg-muted transition-colors"
+                  className="flex items-center gap-1 px-2 py-1.5 rounded-md text-sm font-medium text-muted-foreground hover:text-primary dark:hover:text-white hover:bg-muted transition-colors"
                   aria-label="Change language" aria-haspopup="listbox" aria-expanded={langMenuOpen}>
                   <Globe className="h-4 w-4" /><span>{currentLang.label}</span><ChevronDown className="h-3 w-3" />
                 </button>
@@ -105,7 +105,7 @@ export default function Navigation() {
             <nav className="container mx-auto px-6 py-4 flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href} data-testid={`link-mobile-${link.href.replace("/", "") || "home"}`}
-                  className={`block py-3 text-sm font-medium border-b border-muted/30 last:border-0 ${location === link.href ? "text-primary" : "text-muted-foreground"}`}
+                  className={`block py-3 text-sm font-medium border-b border-muted/30 last:border-0 ${location === link.href ? "text-primary dark:text-white" : "text-muted-foreground"}`}
                   onClick={() => setMobileMenuOpen(false)}>
                   {link.label}
                 </Link>
