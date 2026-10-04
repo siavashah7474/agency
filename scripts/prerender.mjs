@@ -4,7 +4,7 @@
 // the pages that actually exist.
 //
 // Runs after `vite build`. Needs a local Chrome/Chromium; if none is found it skips
-// with a warning and the site still works as a normal SPA.
+// with a warning (local builds) or fails the build (on Vercel).
 
 import http from "node:http";
 import fs from "node:fs/promises";
@@ -139,12 +139,14 @@ function sitemap(routes) {
 
 async function main() {
   const template = await fs.readFile(path.join(DIST, "index.html"), "utf8");
-  // Clean SPA shell for URLs that aren't pre-rendered (vercel.json rewrites to it).
-  // Written even when pre-rendering is skipped, so the rewrite always has a target.
-  await fs.writeFile(path.join(DIST, "app-shell.html"), template);
 
   const chrome = findChrome();
   if (!chrome) {
+    // On Vercel, unknown URLs get a real 404 and every page must exist as a file, so
+    // deploying without pre-rendering would break the site. Fail the build instead.
+    if (process.env.VERCEL) {
+      throw new Error("No Chrome/Chromium found. Deploy with `npm run deploy` from a machine with Chrome.");
+    }
     console.warn("[prerender] No Chrome/Chromium found — skipping. Set CHROME_PATH to enable.");
     return;
   }
@@ -194,6 +196,18 @@ async function main() {
         }),
       );
     }
+  } catch (err) {
+    await browser.close();
+    server.close();
+    throw err;
+  }
+
+  // Pre-render the 404 page; Vercel serves 404.html with a 404 status for unknown URLs.
+  try {
+    const notFound = await capture(browser, origin, "/__page-not-found__");
+    await fs.writeFile(path.join(DIST, "404.html"), buildHtml(template, notFound));
+  } catch (err) {
+    problems.push(`404 page: ${err.message}`);
   } finally {
     await browser.close();
     server.close();
