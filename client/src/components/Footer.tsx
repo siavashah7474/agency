@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Mail, MapPin, Phone, Zap } from "lucide-react";
+import { SiInstagram } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
@@ -113,6 +114,12 @@ export default function Footer() {
                 <Phone className="h-4 w-4 flex-shrink-0 text-white/50" />
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">
                   {t("footer.whatsappUs")}
+                </a>
+              </li>
+              <li className="flex items-center gap-2 text-sm text-white/65">
+                <SiInstagram className="h-4 w-4 flex-shrink-0 text-white/50" />
+                <a href="https://www.instagram.com/webimotagency/" target="_blank" rel="noopener noreferrer me" className="hover:text-secondary transition-colors">
+                  @webimotagency
                 </a>
               </li>
             </ul>
