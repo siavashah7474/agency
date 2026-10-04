@@ -4,7 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { BookingModalProvider } from "@/hooks/use-booking-modal";
-import { lazy, Suspense, type ComponentType } from "react";
+import { lazy, Suspense, useEffect, useState, type ComponentType } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { isPrerendering } from "@/lib/prerender";
@@ -181,13 +181,25 @@ function Router() {
 }
 
 function WhatsAppButton() {
+  // On phones the button would sit on top of the hero content, so it appears once
+  // the visitor scrolls past the first screen. On larger screens it's always shown.
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 300);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <a
       href="https://wa.me/31628753175"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
-      className="fixed bottom-24 right-4 z-50 w-13 h-13 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform"
+      className={`fixed bottom-24 right-4 z-50 w-13 h-13 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-all duration-300 ${
+        scrolled ? "opacity-100" : "pointer-events-none opacity-0 sm:pointer-events-auto sm:opacity-100"
+      }`}
       style={{ width: 52, height: 52, backgroundColor: "#25D366" }}
     >
       <svg viewBox="0 0 24 24" style={{ width: 28, height: 28, fill: "white" }} xmlns="http://www.w3.org/2000/svg">

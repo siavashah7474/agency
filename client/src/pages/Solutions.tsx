@@ -86,10 +86,10 @@ export default function Solutions() {
                 <span className="text-sm text-white/60">7 AI systems, organized by what they solve</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-                Solutions for every part of your funnel
+                AI systems that digitalise every part of your business
               </h1>
               <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-8">
-                Pick the outcome you need most. Every system integrates with your existing tools and can run standalone or together.
+                We start by mapping how your business works, then deploy the AI systems that save the most time: for leads, follow-up, admin, reporting and content. Each one connects to the tools you already use and runs on its own or together.
               </p>
               <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>
                 Book a Free AI Audit

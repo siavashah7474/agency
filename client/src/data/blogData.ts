@@ -1,6 +1,8 @@
 export interface BlogPost {
   slug: string;
   title: string;
+  /** Shorter title for search results and browser tabs; the page headline stays `title`. */
+  seoTitle?: string;
   excerpt: string;
   category: string;
   date: string;
@@ -65,6 +67,7 @@ Ready to see what [Webimot AI automation](https://webimot.com) can do for your c
   {
     slug: "best-digital-marketing-strategies-medical-tourism",
     title: "Best Digital Marketing Strategies for Medical Tourism Clinics",
+    seoTitle: "Digital Marketing Strategies for Medical Tourism Clinics",
     excerpt: "Discover the most effective digital marketing channels and tactics for attracting international patients to your clinic. From SEO to social media, we cover it all.",
     category: "Digital Marketing",
     date: "Nov 18, 2025",
@@ -1317,6 +1320,7 @@ Want help developing a trust-building strategy for your clinic? [Webimot](https:
   {
     slug: "ai-assistant-plastic-surgery-turkey-guide",
     title: "AI Assistant for Plastic Surgery Clinics in Turkey: The Complete 2025 Guide",
+    seoTitle: "AI Assistant for Plastic Surgery Clinics in Turkey: Guide",
     excerpt: "Turkey receives over 1.5 million medical tourists annually. Discover how AI assistants are helping Turkish plastic surgery clinics convert international leads 3x faster — 24/7, in any language.",
     category: "AI Automation",
     date: "Mar 28, 2026",
@@ -1428,6 +1432,7 @@ We handle everything: setup, training the AI on your procedures and pricing, lan
   {
     slug: "medical-tourism-ai-receptionist-germany-uk-gulf",
     title: "How Clinics in Thailand, Mexico & Turkey Use AI Receptionists to Win Patients from Germany, UK & the Gulf",
+    seoTitle: "AI Receptionists for Clinics: Winning Patients From Abroad",
     excerpt: "The world's top medical tourism destinations are racing to adopt AI receptionists. Here's how clinics in Turkey, Thailand, and Mexico are using AI to capture high-value patients from Europe and the Gulf — and how your clinic can do the same.",
     category: "Medical Tourism",
     date: "Mar 28, 2026",
@@ -1578,6 +1583,7 @@ Visit [webimot.com](https://webimot.com) to see exactly how our AI receptionist 
   {
     slug: "ai-internal-workflow-automation-guide-2025",
     title: "5 Internal Workflows Every Business Should Automate with AI in 2025",
+    seoTitle: "5 Internal Workflows to Automate with AI",
     excerpt: "From invoice processing to employee onboarding, AI is eliminating the manual work slowing your team down. Here are the five highest-impact internal workflows to automate first — and what to expect in terms of time and cost savings.",
     category: "AI Automation",
     date: "Apr 22, 2026",
@@ -1737,6 +1743,7 @@ Want to identify which internal workflows in your specific business would delive
   {
     slug: "ai-data-entry-reporting-automation-business",
     title: "How AI Is Eliminating Manual Data Entry and Reporting for Growing Businesses",
+    seoTitle: "How AI Eliminates Manual Data Entry and Reporting",
     excerpt: "Manual data entry is one of the most expensive habits in modern business. AI-powered automation now connects your tools, syncs your data, and generates reports automatically — without a single copy-paste. Here is how it works and what it costs.",
     category: "AI Automation",
     date: "Apr 20, 2026",
@@ -1878,6 +1885,7 @@ Want help identifying and automating the highest-impact data entry workflows in 
   {
     slug: "ai-employee-productivity-internal-communication-automation",
     title: "AI for Internal Team Productivity: Automating Communication, Task Management, and Knowledge Sharing",
+    seoTitle: "AI for Team Productivity: Communication, Tasks & Knowledge",
     excerpt: "Most AI automation focuses on customer-facing processes. But the biggest untapped opportunity is internal — helping your team communicate better, manage tasks automatically, and stop reinventing the wheel on knowledge they already have.",
     category: "AI Automation",
     date: "Apr 18, 2026",
@@ -2067,6 +2075,7 @@ Want a free internal productivity audit for your business? [Book a call with Web
   {
     slug: "rhinoplasty-hair-transplant-turkey-ai-lead-conversion",
     title: "Rhinoplasty & Hair Transplant in Turkey: How AI is Revolutionising Patient Acquisition in 2025",
+    seoTitle: "Hair Transplant & Rhinoplasty in Turkey: AI Lead Conversion",
     excerpt: "Turkish clinics performing rhinoplasty and hair transplants are losing millions in potential revenue to slow response times. Discover how AI-powered lead conversion is changing the game — and which clinics are winning.",
     category: "AI Automation",
     date: "Mar 28, 2026",
@@ -2209,6 +2218,7 @@ No commitment. No fluff. Just a clear roadmap to converting more international p
   {
     slug: "ai-automation-revenue-growth-business-2026",
     title: "AI Automation Is Now Directly Linked to Revenue Growth — 2026 Data Confirms the Gap Is Widening",
+    seoTitle: "AI Automation and Revenue Growth: The 2026 Data",
     excerpt: "New research from McKinsey, Salesforce, and Gartner confirms what early adopters already knew: businesses that automate with AI in 2026 earn significantly more. Here is what the data shows — and what it means for your business.",
     category: "AI Automation",
     date: "May 14, 2026",
@@ -2312,6 +2322,7 @@ The math is not subtle.
   {
     slug: "medical-tourism-ai-patient-acquisition-2026-report",
     title: "Medical Tourism + AI: 2026 Industry Report Reveals Clinics Using AI Agents Are Acquiring 3x More International Patients",
+    seoTitle: "Medical Tourism + AI: 2026 Patient Acquisition Report",
     excerpt: "A 2026 industry analysis of 400+ medical tourism clinics across Turkey, Thailand, and Mexico reveals a stark divide: AI-equipped clinics are capturing the majority of international patient inquiries while traditional clinics fall further behind. Here is what the data shows.",
     category: "Medical Tourism",
     date: "May 10, 2026",
@@ -2460,6 +2471,7 @@ The investment in [Webimot's AI system](https://webimotagency.com) pays back wit
   {
     slug: "ai-operations-automation-sme-revenue-2026",
     title: "How AI Operations Automation Is Adding €50,000–€200,000 in Annual Revenue to SMEs in 2026 — Without Hiring",
+    seoTitle: "How AI Operations Automation Grows SME Revenue in 2026",
     excerpt: "The latest research from Deloitte and the World Economic Forum shows that small and mid-size businesses using AI to automate internal operations are not just cutting costs — they are converting saved hours directly into revenue. Here is the mechanism, the data, and how it applies to your business.",
     category: "Business Strategy",
     date: "May 6, 2026",
@@ -2620,6 +2632,7 @@ Start with the first two — they have the fastest payback and the most direct r
   {
     slug: "ai-agents-vs-chatbots-2026-business-guide",
     title: "AI Agents vs Chatbots: What's the Real Difference in 2026 (And Why It Matters for Your Business)",
+    seoTitle: "AI Agents vs Chatbots: The Real Difference in 2026",
     excerpt: "Everyone is talking about AI agents and chatbots — but most businesses don't know the difference. One answers questions. The other runs your entire lead pipeline. Here's what you actually need.",
     category: "AI Automation",
     date: "May 26, 2026",
@@ -2769,6 +2782,7 @@ The clinics, agencies, and service businesses growing fastest right now are not 
   {
     slug: "how-to-automate-your-business-2026-complete-guide",
     title: "How to Automate Your Business in 2026: The Complete Step-by-Step Guide",
+    seoTitle: "How to Automate Your Business in 2026: Step-by-Step Guide",
     excerpt: "Business automation is no longer just for enterprises. In 2026, any business handling more than 20 leads per week is leaving money on the table without it. Here's exactly where to start, what to automate first, and what results to expect.",
     category: "Business Automation",
     date: "May 26, 2026",
@@ -2930,6 +2944,7 @@ The fastest path to ROI is a focused AI audit — a 30-minute session where you 
   {
     slug: "whatsapp-business-automation-2026-complete-guide",
     title: "WhatsApp Business Automation in 2026: How to Handle 500 Leads a Month Without Hiring More Staff",
+    seoTitle: "WhatsApp Business Automation: Handle 500 Leads a Month",
     excerpt: "WhatsApp is now the #1 sales channel for businesses serving international customers. But manually managing it doesn't scale. Here's how to automate your entire WhatsApp pipeline — from first message to booked appointment.",
     category: "AI Automation",
     date: "May 26, 2026",

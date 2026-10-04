@@ -45,7 +45,7 @@ export default function BlogPost() {
   return (
     <>
       <SEO
-        title={post.title}
+        title={post.seoTitle ?? post.title}
         description={post.excerpt}
         keywords={`${post.category.toLowerCase()}, AI automation, business automation, AI agents, Webimot blog`}
         canonicalUrl={`https://webimotagency.com/blog/${post.slug}`}

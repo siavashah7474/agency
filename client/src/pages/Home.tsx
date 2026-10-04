@@ -164,7 +164,7 @@ export default function Home() {
             <div className="container mx-auto px-6 relative z-10">
               <div className="text-center mb-10">
                 <SectionEyebrow className="mb-4">7 AI systems, one platform</SectionEyebrow>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Solutions for every part of your funnel</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">AI systems for every part of your business</h2>
                 <p className="text-lg text-slate-600 dark:text-white/50 max-w-2xl mx-auto">Pick the outcome you need most — capture leads, follow up automatically, cut admin work, or grow organic traffic.</p>
               </div>
 
