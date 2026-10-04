@@ -296,7 +296,7 @@ export default function AISolutions() {
               </div>
 
               <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
-                <div className="order-2 lg:order-1">
+                <div className="order-2 lg:order-1 min-w-0">
                   <SeoBlogDashboard />
                 </div>
                 <div className="order-1 lg:order-2">
@@ -380,7 +380,7 @@ export default function AISolutions() {
                     </Button>
                   </Link>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <OpsAutopilotDashboard />
                 </div>
               </div>

@@ -9,6 +9,9 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const Home = lazy(() => import("@/pages/Home"));
+const Solutions = lazy(() => import("@/pages/Solutions"));
+const WhoWeHelp = lazy(() => import("@/pages/WhoWeHelp"));
+const Pricing = lazy(() => import("@/pages/Pricing"));
 const Services = lazy(() => import("@/pages/Services"));
 const ServiceDetail = lazy(() => import("@/pages/ServiceDetail"));
 const AISolutions = lazy(() => import("@/pages/AISolutions"));
@@ -54,6 +57,9 @@ function Router() {
     <Suspense fallback={<PageLoader />}>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/solutions" component={Solutions} />
+        <Route path="/who-we-help" component={WhoWeHelp} />
+        <Route path="/pricing" component={Pricing} />
         <Route path="/services" component={Services} />
         <Route path="/services/:slug" component={ServiceDetail} />
         <Route path="/ai-solutions" component={AISolutions} />

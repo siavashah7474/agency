@@ -59,6 +59,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">Products</h3>
             <ul className="space-y-2">
+              <li><Link href="/solutions" className="text-sm text-white font-medium hover:text-secondary transition-colors">All Solutions →</Link></li>
               <li><Link href="/products/leadfire" className="text-sm text-white/65 hover:text-secondary transition-colors">⚡ LeadFire</Link></li>
               <li><Link href="/products/documind" className="text-sm text-white/65 hover:text-secondary transition-colors">📄 DocuMind</Link></li>
               <li><Link href="/products/nurtureloop" className="text-sm text-white/65 hover:text-secondary transition-colors">🔁 NurtureLoop</Link></li>
@@ -73,6 +74,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">Industries</h3>
             <ul className="space-y-2">
+              <li><Link href="/who-we-help" className="text-sm text-white font-medium hover:text-secondary transition-colors">Who We Help →</Link></li>
               <li><Link href="/industries/healthcare" className="text-sm text-white/65 hover:text-secondary transition-colors">Healthcare</Link></li>
               <li><Link href="/industries/ecommerce" className="text-sm text-white/65 hover:text-secondary transition-colors">eCommerce</Link></li>
               <li><Link href="/industries/finance-legal" className="text-sm text-white/65 hover:text-secondary transition-colors">Finance & Legal</Link></li>
@@ -86,6 +88,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">{t("footer.company")}</h3>
             <ul className="space-y-2">
               <li><Link href="/services" className="text-sm text-white/65 hover:text-secondary transition-colors">Services</Link></li>
+              <li><Link href="/pricing" data-testid="link-footer-pricing" className="text-sm text-white/65 hover:text-secondary transition-colors">Pricing</Link></li>
               <li><Link href="/about" data-testid="link-footer-about" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.aboutUs")}</Link></li>
               <li><Link href="/case-studies" data-testid="link-footer-case-studies" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.caseStudies")}</Link></li>
               <li><Link href="/clients" data-testid="link-footer-clients" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.ourClients")}</Link></li>

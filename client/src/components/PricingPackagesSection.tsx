@@ -27,7 +27,8 @@ const packages = [
   },
 ];
 
-export default function PricingPackagesSection() {
+export default function PricingPackagesSection({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
+  const Heading = headingLevel;
   const { openModal } = useBookingModal();
   return (
     <section id="pricing" className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
@@ -38,7 +39,7 @@ export default function PricingPackagesSection() {
           <div className="inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 text-secondary rounded-full px-4 py-1.5 mb-4">
             <span className="text-sm font-medium">Packages</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Simple Packages. Custom Pricing.</h2>
+          <Heading className="text-3xl md:text-4xl font-bold mb-4 text-white">Simple Packages. Custom Pricing.</Heading>
           <p className="text-lg text-white/50 max-w-2xl mx-auto mb-4">
             Every business is different — so we price based on what you actually need. Here's what each package includes. Reach out and we'll give you an exact quote.
           </p>

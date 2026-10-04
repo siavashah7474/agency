@@ -3,16 +3,11 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import Footer from "@/components/Footer";
-import FeatureCard from "@/components/FeatureCard";
-import AIProductCard from "@/components/AIProductCard";
-import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
-import PortfolioSection from "@/components/PortfolioSection";
 import WhyWebimotSection from "@/components/WhyWebimotSection";
 import ClientResultsSection from "@/components/ClientResultsSection";
 import WhoWeHelpSection from "@/components/WhoWeHelpSection";
 import ConsultingTiersSection from "@/components/ConsultingTiersSection";
-import PricingPackagesSection from "@/components/PricingPackagesSection";
 import SEO from "@/components/SEO";
 import {
   Accordion,
@@ -22,58 +17,29 @@ import {
 } from "@/components/ui/accordion";
 import {
   Bot,
-  Globe,
-  MessageSquare,
   TrendingUp,
   Zap,
   FileText,
-  BarChart,
-  Target,
-  Users,
-  Clock,
   CheckCircle,
   ArrowRight,
   HelpCircle,
-  ShoppingCart,
-  Package,
-  Headphones,
-  Star,
   RotateCcw,
-  ShoppingBag,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/hero_ai_dashboard_interface.webp";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const serviceIcons = [MessageSquare, Target, TrendingUp, Globe, FileText, Zap, BarChart, Users];
-const automationIcons = [Zap, Clock, CheckCircle, MessageSquare, BarChart, FileText];
-const ecommerceIcons = [RotateCcw, Headphones, Package, Star, ShoppingBag, BarChart];
-
 const tickerItems = [
-  "Hair transplant patient booked — Germany → Istanbul · 0 human steps",
+  "WhatsApp replied in 0.8s — clinic lead qualified",
   "Property viewing scheduled — London · AI replied in 52s",
-  "WhatsApp replied in 0.8s — Dubai clinic",
   "Small business report delivered — Monday 08:00",
-  "Dental lead qualified — Netherlands → Turkey",
   "Real estate CRM updated — 0 manual steps",
-  "Vision AI: hair loss photo evaluated — lead qualified",
   "Follow-up sent — day 7 of 14 · lead reengaged",
-  "IVF enquiry handled in Arabic — 24/7",
   "Old leads reactivated — 18 replies from dead database",
-  "Google Ads optimized — ROAS 6.2× · medical tourism",
-  "Viewing booked automatically — Dubai real estate",
-  "SEO blog published — 'hair transplant Turkey cost 2026'",
-  "Cosmetic surgery consultation confirmed — UK patient",
-];
-
-const productHrefs = ["/products/whatsapp-ai", "/products/seo-blog-ai", "/services/ai-ops-autopilot"];
-const productFlagships = [true, false, false];
-
-
-const serviceHrefs = [
-  "/services/meta-ads", "/services/google-ads", "/services/seo",
-  "/services/website-development", "/services/content-creation",
-  "/services/branding", "/services/funnel-automation", "/services/reputation-management",
+  "Abandoned cart recovered — Shopify store, 0 human steps",
+  "SEO blog published — automatically, on schedule",
+  "Invoice processed and logged — 4 seconds",
+  "Enquiry handled in Arabic — 24/7",
 ];
 
 export default function Home() {
@@ -81,14 +47,7 @@ export default function Home() {
   const { t } = useTranslation();
 
   const faqs = t("home.faqs", { returnObjects: true }) as Array<{ question: string; answer: string }>;
-  const aiProducts = t("home.aiProducts", { returnObjects: true }) as Array<{
-    title: string; tagline: string; description: string; features: string[];
-  }>;
-  const services = t("home.services", { returnObjects: true }) as Array<{ title: string; description: string }>;
-  const automationFeatures = t("home.automationFeatures", { returnObjects: true }) as Array<{ title: string; description: string }>;
   const testimonials = t("home.testimonials", { returnObjects: true }) as Array<{ name: string; role: string; company: string; content: string }>;
-  const ecommerceFeatures = t("home.ecommerceFeatures", { returnObjects: true }) as Array<{ title: string; description: string }>;
-  const ecommerceStats = t("home.ecommerceStats", { returnObjects: true }) as Array<{ value: string; label: string }>;
 
   // Use a stable dep key so this only re-runs when FAQ content actually changes
   const faqsKey = JSON.stringify(faqs);
@@ -202,7 +161,7 @@ export default function Home() {
 
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-accent/15 rounded-2xl blur-2xl scale-105 pointer-events-none" />
-                  <img src={heroImage} alt="AI Dashboard Interface" fetchPriority="high" className="relative rounded-xl shadow-2xl border border-white/10" />
+                  <img src={heroImage} alt="AI Dashboard Interface" {...{ fetchpriority: "high" }} className="relative rounded-xl shadow-2xl border border-white/10" />
                   <div className="absolute -top-3 -right-3 hidden md:flex items-center gap-2 bg-slate-900/95 border border-secondary/30 rounded-lg px-3 py-2 backdrop-blur-sm" style={{ boxShadow: '0 0 16px hsl(221 91% 60% / 0.15)' }}>
                     <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
                     <span className="text-xs text-white/80 font-mono">leads.qualified += 3</span>
@@ -234,242 +193,55 @@ export default function Home() {
             </div>
           </section>
 
-          <WhyWebimotSection />
-
-          <WhoWeHelpSection />
-
           <ConsultingTiersSection />
 
-          {/* AI Stack */}
-          <section id="ai-stack" className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
+          <WhyWebimotSection />
+
+          {/* Solutions teaser */}
+          <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
             <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-secondary/40 to-transparent" />
             <div className="container mx-auto px-6 relative z-10">
               <div className="text-center mb-10">
                 <div className="inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 text-secondary rounded-full px-4 py-1.5 mb-4">
                   <Bot className="w-4 h-4" />
-                  <span className="text-sm font-medium">{t("home.aiStackBadge")}</span>
+                  <span className="text-sm font-medium">7 AI systems, one platform</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">{t("home.aiStackTitle")}</h2>
-                <p className="text-lg text-white/50 max-w-3xl mx-auto">{t("home.aiStackSubtitle")}</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Solutions for every part of your funnel</h2>
+                <p className="text-lg text-white/50 max-w-2xl mx-auto">Pick the outcome you need most — capture leads, follow up automatically, cut admin work, or grow organic traffic.</p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
-                {(["hours", "lead247", "data"] as const).map((key, i) => {
-                  const Icon = [Clock, Bot, TrendingUp][i];
-                  return (
-                    <div key={key} className="text-center p-5 rounded-xl bg-white/4 border border-white/8">
-                      <div className="w-11 h-11 bg-secondary/15 border border-secondary/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                        <Icon className="w-5 h-5 text-secondary" />
-                      </div>
-                      <h3 className="font-semibold mb-1 text-white">{t(`home.benefits.${key}.title`)}</h3>
-                      <p className="text-sm text-white/40">{t(`home.benefits.${key}.desc`)}</p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+                {[
+                  { icon: Zap, label: "Capture every lead", desc: "Respond in seconds, in any language, any time of day." },
+                  { icon: RotateCcw, label: "Never lose a customer", desc: "Automated follow-up that keeps working long after a human would stop." },
+                  { icon: FileText, label: "Cut the busywork", desc: "Documents and reporting handled automatically, in the background." },
+                  { icon: TrendingUp, label: "Get found online", desc: "Consistent SEO content published on autopilot." },
+                ].map((tile) => (
+                  <div key={tile.label} className="bg-white/4 border border-white/8 rounded-xl p-5 hover:border-secondary/25 transition-colors">
+                    <div className="w-10 h-10 bg-secondary/15 border border-secondary/20 rounded-lg flex items-center justify-center mb-3">
+                      <tile.icon className="w-5 h-5 text-secondary" />
                     </div>
-                  );
-                })}
+                    <h3 className="font-semibold text-white mb-1.5">{tile.label}</h3>
+                    <p className="text-sm text-white/45 leading-relaxed">{tile.desc}</p>
+                  </div>
+                ))}
               </div>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-                {[
-                  { emoji: "💬", name: "WhatsApp AI", tagline: "24/7 AI receptionist on WhatsApp", desc: "Replies to leads in any language, evaluates photos, books consultations — in under 2 seconds.", href: "/products/whatsapp-ai", flagship: true },
-                  { emoji: "⚡", name: "LeadFire", tagline: "Contact every lead in under 60 seconds", desc: "Instant reply, AI qualification, and automatic calendar booking the moment a lead comes in.", href: "/products/leadfire" },
-                  { emoji: "✍️", name: "SEO Blog AI", tagline: "Publish SEO content on autopilot", desc: "20–30 keyword-targeted blog posts published to your site every month — automatically.", href: "/products/seo-blog-ai" },
-                  { emoji: "🔁", name: "NurtureLoop", tagline: "Never let a lead go cold again", desc: "Multi-channel follow-up sequences across email, SMS, and WhatsApp — stops when they respond.", href: "/products/nurtureloop" },
-                ].map((p) => (
-                  <Link key={p.href} href={p.href}>
-                    <div className={`group bg-slate-900 rounded-xl border flex flex-col h-full p-5 hover:border-secondary/30 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer ${p.flagship ? "border-secondary/30 ring-1 ring-secondary/20" : "border-white/6"}`}>
-                      {p.flagship && <span className="text-[10px] font-bold tracking-widest uppercase text-secondary mb-2">Flagship</span>}
-                      <div className="text-2xl mb-3">{p.emoji}</div>
-                      <div className="text-sm font-bold text-white mb-1">{p.name}</div>
-                      <div className="text-xs text-secondary/80 mb-2 font-medium">{p.tagline}</div>
-                      <div className="text-xs text-white/45 leading-relaxed flex-1">{p.desc}</div>
-                      <div className="flex items-center gap-1 text-xs text-white/30 group-hover:text-secondary mt-3 transition-colors">
-                        Explore <ArrowRight className="h-3 w-3" />
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              <div className="grid sm:grid-cols-3 gap-4">
-                {[
-                  { emoji: "💎", name: "ReviveIQ", tagline: "Reactivate your cold contact database", desc: "AI-personalised campaigns that turn old leads and past clients into active pipeline.", href: "/products/reviveiq" },
-                  { emoji: "📊", name: "ClearDesk", tagline: "Business report delivered every Monday", desc: "Plain-English performance summary across your CRM, ads, and sales pipeline — automatically.", href: "/products/cleardesk" },
-                  { emoji: "📄", name: "DocuMind", tagline: "Turn paperwork into data in seconds", desc: "Reads invoices, intake forms, and contracts — extracts every field and fills your CRM.", href: "/products/documind" },
-                ].map((p) => (
-                  <Link key={p.href} href={p.href}>
-                    <div className="group bg-slate-900 rounded-xl border border-white/6 flex flex-col h-full p-5 hover:border-secondary/30 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
-                      <div className="text-2xl mb-3">{p.emoji}</div>
-                      <div className="text-sm font-bold text-white mb-1">{p.name}</div>
-                      <div className="text-xs text-secondary/80 mb-2 font-medium">{p.tagline}</div>
-                      <div className="text-xs text-white/45 leading-relaxed flex-1">{p.desc}</div>
-                      <div className="flex items-center gap-1 text-xs text-white/30 group-hover:text-secondary mt-3 transition-colors">
-                        Explore <ArrowRight className="h-3 w-3" />
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+              <div className="text-center">
+                <Link href="/solutions">
+                  <Button data-testid="button-view-solutions" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                    Explore All Solutions <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-secondary/20 to-transparent" />
           </section>
 
+          <WhoWeHelpSection />
+
           <ClientResultsSection />
-
-          {/* Country × Surgery Spend */}
-          <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
-            <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
-            <div className="container mx-auto px-6 relative z-10">
-              <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 text-secondary rounded-full px-4 py-1.5 mb-4">
-                  <Globe className="w-4 h-4" />
-                  <span className="text-sm font-medium">Global Patient Markets</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Where the Money Is — and What They Come For</h2>
-                <p className="text-white/50 text-lg max-w-2xl mx-auto">Every country has a #1 procedure they travel for. We help clinics capture these high-value patients.</p>
-              </div>
-
-              <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto mb-10">
-                {[
-                  { flag: "🇩🇪", country: "Germany",       topSurgery: "Hair Transplant",       spend: "€1.8B/yr" },
-                  { flag: "🇬🇧", country: "United Kingdom", topSurgery: "Dental Veneers",         spend: "€1.2B/yr" },
-                  { flag: "🇳🇱", country: "Netherlands",    topSurgery: "Rhinoplasty",            spend: "€760M/yr" },
-                  { flag: "🇸🇦", country: "Saudi Arabia",   topSurgery: "Cosmetic Surgery",       spend: "€1.1B/yr" },
-                  { flag: "🇦🇪", country: "UAE",            topSurgery: "Aesthetic Treatments",   spend: "€890M/yr" },
-                  { flag: "🇫🇷", country: "France",         topSurgery: "Breast Augmentation",    spend: "€680M/yr" },
-                  { flag: "🇧🇪", country: "Belgium",        topSurgery: "Dental Implants",        spend: "€390M/yr" },
-                  { flag: "🇰🇼", country: "Kuwait",         topSurgery: "Hair Transplant",        spend: "€510M/yr" },
-                  { flag: "🇶🇦", country: "Qatar",          topSurgery: "IVF & Fertility",        spend: "€340M/yr" },
-                  { flag: "🇺🇸", country: "USA",            topSurgery: "Full Mouth Restoration", spend: "€820M/yr" },
-                  { flag: "🇦🇺", country: "Australia",      topSurgery: "Bariatric Surgery",      spend: "€470M/yr" },
-                  { flag: "🇨🇦", country: "Canada",         topSurgery: "Rhinoplasty",            spend: "€530M/yr" },
-                ].map(({ flag, country, topSurgery, spend }) => (
-                  <div key={country} className="flex items-center gap-3 bg-white/4 border border-white/8 rounded-xl px-4 py-3 hover:bg-white/8 hover:border-secondary/20 transition-all group">
-                    <span className="text-2xl">{flag}</span>
-                    <div>
-                      <p className="text-sm font-semibold text-white/80 group-hover:text-white transition-colors">{country}</p>
-                      <p className="text-xs text-white/40">{topSurgery}</p>
-                      <p className="text-xs text-secondary/70 font-mono">{spend}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="text-center">
-                <p className="text-xs text-white/20 font-mono mb-6">Patient flow estimates · Sources: IMTJ, Patients Beyond Borders, Clinicmentor 2024</p>
-                <Button
-                  size="lg"
-                  className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
-                  onClick={() => openModal()}
-                >
-                  Get Patients From These Markets
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            </div>
-          </section>
-
-          {/* eCommerce section */}
-          <section className="py-16 md:py-24 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20">
-            <div className="container mx-auto px-6">
-              <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400 rounded-full px-4 py-1.5 mb-4">
-                  <ShoppingCart className="w-4 h-4" />
-                  <span className="text-sm font-medium">{t("home.ecommerceBadge")}</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("home.ecommerceTitle")}</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("home.ecommerceSubtitle")}</p>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
-                {ecommerceStats.map((stat, i) => (
-                  <div key={i} className="text-center p-6 bg-white dark:bg-card rounded-xl shadow-sm border border-emerald-100 dark:border-emerald-900/30">
-                    <div className="text-4xl font-bold text-emerald-600 dark:text-emerald-400 mb-1">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                {ecommerceFeatures.map((feature, index) => {
-                  const Icon = ecommerceIcons[index];
-                  return (
-                    <div key={index} className="bg-white dark:bg-card rounded-xl p-6 shadow-sm border border-emerald-100 dark:border-emerald-900/30 hover:shadow-md transition-shadow">
-                      <div className="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/40 rounded-lg flex items-center justify-center mb-4">
-                        <Icon className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-                      </div>
-                      <h3 className="font-semibold mb-2">{feature.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="text-center">
-                <Button
-                  data-testid="button-ecommerce-cta"
-                  size="lg"
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white"
-                  onClick={() => openModal()}
-                >
-                  {t("home.ecommerceCta")}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            </div>
-          </section>
-
-          {/* Services */}
-          <section className="py-16 md:py-24">
-            <div className="container mx-auto px-6">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("home.servicesTitle")}</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("home.servicesSubtitle")}</p>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {services.map((service, index) => (
-                  <ServiceCard
-                    key={index}
-                    icon={serviceIcons[index]}
-                    title={service.title}
-                    description={service.description}
-                    href={serviceHrefs[index]}
-                  />
-                ))}
-              </div>
-              <div className="text-center mt-12">
-                <Link href="/services">
-                  <Button data-testid="button-view-all-services" variant="outline" size="lg">
-                    {t("common.viewAllServices")}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </section>
-
-          <PortfolioSection />
-
-          {/* Automation */}
-          <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
-            <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
-            <div className="container mx-auto px-6 relative z-10">
-              <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 text-accent rounded-full px-4 py-1.5 mb-4">
-                  <Zap className="w-4 h-4" />
-                  <span className="text-sm font-medium">Automation Engine</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">{t("home.automationTitle")}</h2>
-                <p className="text-lg text-white/50 max-w-2xl mx-auto">{t("home.automationSubtitle")}</p>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {automationFeatures.map((feature, index) => (
-                  <FeatureCard key={index} icon={automationIcons[index]} title={feature.title} description={feature.description} />
-                ))}
-              </div>
-            </div>
-          </section>
 
           {/* Testimonials */}
           <section className="py-16 md:py-24">
@@ -486,7 +258,20 @@ export default function Home() {
             </div>
           </section>
 
-          <PricingPackagesSection />
+          {/* Pricing teaser */}
+          <section className="py-16 md:py-20 bg-muted/30">
+            <div className="container mx-auto px-6 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold mb-3">Simple packages. Custom pricing.</h2>
+              <p className="text-muted-foreground max-w-xl mx-auto mb-6">
+                We scope pricing to what your business actually needs — see what's included in each package.
+              </p>
+              <Link href="/pricing">
+                <Button data-testid="button-view-pricing" size="lg" variant="outline">
+                  View Pricing <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+          </section>
 
           {/* FAQ */}
           <section className="py-16 md:py-24 bg-muted/30">

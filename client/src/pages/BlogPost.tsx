@@ -49,14 +49,14 @@ export default function BlogPost() {
       <div className="min-h-screen flex flex-col">
         <Navigation />
         
-        <main id="main-content" className="flex-1">
+        <main id="main-content" className="flex-1 min-w-0">
           <section className="relative py-16 md:py-24 overflow-hidden bg-[#020817]">
             <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
             <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="container mx-auto px-6 relative z-10">
               <Link href="/blog" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
-                <ArrowLeft className="h-4 w-4" />
+                <ArrowLeft className="h-4 w-4 shrink-0" />
                 Back to Blog
               </Link>
               <div className="max-w-4xl">
@@ -86,7 +86,7 @@ export default function BlogPost() {
           <section className="py-12 md:py-16">
             <div className="container mx-auto px-6">
               <div className="grid lg:grid-cols-3 gap-12">
-                <article className="lg:col-span-2">
+                <article className="lg:col-span-2 min-w-0">
                   <div 
                     className="prose prose-lg max-w-none dark:prose-invert
                       prose-headings:font-bold prose-headings:text-foreground
@@ -105,18 +105,18 @@ export default function BlogPost() {
                   <div className="mt-12 pt-8 border-t">
                     <div className="flex flex-col sm:flex-row gap-4 justify-between">
                       {prevPost ? (
-                        <Link href={`/blog/${prevPost.slug}`} className="flex-1">
+                        <Link href={`/blog/${prevPost.slug}`} className="flex-1 min-w-0">
                           <Button variant="outline" className="w-full justify-start gap-2">
-                            <ArrowLeft className="h-4 w-4" />
+                            <ArrowLeft className="h-4 w-4 shrink-0" />
                             <span className="truncate">{prevPost.title}</span>
                           </Button>
                         </Link>
                       ) : <div className="flex-1" />}
                       {nextPost && (
-                        <Link href={`/blog/${nextPost.slug}`} className="flex-1">
+                        <Link href={`/blog/${nextPost.slug}`} className="flex-1 min-w-0">
                           <Button variant="outline" className="w-full justify-end gap-2">
                             <span className="truncate">{nextPost.title}</span>
-                            <ArrowRight className="h-4 w-4" />
+                            <ArrowRight className="h-4 w-4 shrink-0" />
                           </Button>
                         </Link>
                       )}
@@ -277,7 +277,7 @@ function formatContent(content: string): string {
     })
     .join('\n')
     .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`)
-    .replace(/(<tr>.*<\/tr>\n?)+/g, (match) => `<table class="w-full border-collapse my-4">${match}</table>`);
+    .replace(/(<tr>.*<\/tr>\n?)+/g, (match) => `<div class="overflow-x-auto"><table class="w-full border-collapse my-4">${match}</table></div>`);
 }
 
 function formatInlineMarkdown(text: string): string {

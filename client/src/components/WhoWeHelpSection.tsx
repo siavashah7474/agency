@@ -116,7 +116,7 @@ export default function WhoWeHelpSection() {
         </div>
 
         {/* 2 Secondary cards */}
-        <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
           {secondary.map((card) => (
             <Link key={card.title} href={card.href}>
               <div className="group bg-slate-900/60 rounded-xl p-5 hover:bg-slate-900 border border-white/6 hover:border-white/12 transition-all cursor-pointer flex items-start gap-4">
@@ -129,6 +129,12 @@ export default function WhoWeHelpSection() {
               </div>
             </Link>
           ))}
+        </div>
+
+        <div className="text-center">
+          <Link href="/who-we-help" className="inline-flex items-center gap-1.5 text-sm font-medium text-white/50 hover:text-white transition-colors">
+            See all industries we help <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
         </div>
 
       </div>
