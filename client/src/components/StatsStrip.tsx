@@ -2,22 +2,22 @@ const stats = [
   { value: "50+", label: "businesses transformed" },
   { value: "12+", label: "countries served" },
   { value: "50+", label: "languages handled by our AI" },
-  { value: "0.8s", label: "average AI response time" },
+  { value: "15h+", label: "hours saved per team, every week" },
 ];
 
 const useCases = [
-  "Hair transplant (FUE · DHI)",
-  "Dental veneers & implants",
-  "Cosmetic surgery",
-  "IVF clinics",
-  "Real estate agencies",
-  "Shopify stores",
-  "Law & finance firms",
-  "Lead qualification",
+  "Lead response & qualification",
+  "Invoice & document processing",
+  "Automated weekly reporting",
+  "24/7 customer support",
+  "CRM & data entry",
+  "Follow-up sequences",
+  "Team onboarding & HR tasks",
   "Appointment booking",
+  "Internal knowledge Q&A",
+  "SEO content on autopilot",
   "Database reactivation",
-  "Document processing",
-  "SEO blog automation",
+  "E-commerce order automation",
 ];
 
 export default function StatsStrip() {

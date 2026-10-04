@@ -9,7 +9,7 @@ import ClientResultsSection from "@/components/ClientResultsSection";
 import WhoWeHelpSection from "@/components/WhoWeHelpSection";
 import ConsultingTiersSection from "@/components/ConsultingTiersSection";
 import SEO from "@/components/SEO";
-import LiveLeadsCard from "@/components/LiveLeadsCard";
+import AIOpsHub from "@/components/AIOpsHub";
 import StatsStrip from "@/components/StatsStrip";
 import IntegrationsSection from "@/components/IntegrationsSection";
 import RiskFreeStartSection from "@/components/RiskFreeStartSection";
@@ -149,7 +149,7 @@ export default function Home() {
                 </div>
 
                 <div className="min-w-0">
-                  <LiveLeadsCard />
+                  <AIOpsHub />
                 </div>
               </div>
             </div>
