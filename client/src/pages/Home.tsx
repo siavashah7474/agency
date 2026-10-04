@@ -7,7 +7,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import WhyWebimotSection from "@/components/WhyWebimotSection";
 import ClientResultsSection from "@/components/ClientResultsSection";
 import WhoWeHelpSection from "@/components/WhoWeHelpSection";
-import ConsultingTiersSection from "@/components/ConsultingTiersSection";
+import WhatWeDoSection from "@/components/WhatWeDoSection";
 import SEO from "@/components/SEO";
 import AIOpsHub from "@/components/AIOpsHub";
 import StatsStrip from "@/components/StatsStrip";
@@ -157,7 +157,7 @@ export default function Home() {
 
           <StatsStrip />
 
-          <ConsultingTiersSection />
+          <WhatWeDoSection />
 
           <WhyWebimotSection />
 
