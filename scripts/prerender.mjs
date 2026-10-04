@@ -71,7 +71,9 @@ function serve(template) {
 function normalise(href, base) {
   try {
     const url = new URL(href, base);
-    if (url.origin !== new URL(base).origin) return null;
+    // Content sometimes links with the full production URL; treat those as internal too.
+    const internal = url.origin === new URL(base).origin || url.hostname.replace(/^www\./, "") === new URL(SITE).hostname;
+    if (!internal) return null;
     if (/\.[a-z0-9]+$/i.test(url.pathname) || url.pathname.startsWith("/api")) return null;
     return url.pathname.replace(/\/+$/, "") || "/";
   } catch {
