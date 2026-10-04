@@ -125,7 +125,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-sm text-white/65">
                 <FaLinkedin className="h-4 w-4 flex-shrink-0 text-white/50" />
-                <a href="https://www.linkedin.com/company/webimotagency/" target="_blank" rel="noopener noreferrer me" className="hover:text-secondary transition-colors">
+                <a href="https://www.linkedin.com/company/webimot-agency/" target="_blank" rel="noopener noreferrer me" className="hover:text-secondary transition-colors">
                   LinkedIn
                 </a>
               </li>
