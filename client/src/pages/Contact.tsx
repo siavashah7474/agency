@@ -138,10 +138,10 @@ export default function Contact() {
                       Send us a detailed inquiry
                     </p>
                     <a
-                      href="mailto:info@webimot.com"
+                      href="mailto:webimot.info@gmail.com"
                       className="text-primary hover:underline"
                     >
-                      info@webimot.com
+                      webimot.info@gmail.com
                     </a>
                   </CardContent>
                 </Card>

@@ -16,7 +16,7 @@ function sanitizeInput(input: string): string {
 }
 
 const SITE_NAME = "Webimot Agency";
-const REPLY_TO = process.env.REPLY_TO_EMAIL || "info@webimot.com";
+const REPLY_TO = process.env.REPLY_TO_EMAIL || "webimot.info@gmail.com";
 const LEAD_NOTIFICATION_EMAIL =
   process.env.LEAD_NOTIFICATION_EMAIL || "webimot.info@gmail.com";
 

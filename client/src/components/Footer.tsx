@@ -133,7 +133,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5 text-sm">
                 <Mail className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
-                <a href="mailto:info@webimot.com" className={linkClass}>info@webimot.com</a>
+                <a href="mailto:webimot.info@gmail.com" className={linkClass}>webimot.info@gmail.com</a>
               </li>
               <li className="flex items-center gap-2.5 text-sm">
                 <Phone className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />

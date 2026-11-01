@@ -199,7 +199,7 @@ export default function PrivacyPolicy() {
                   data practices, please contact us at:
                 </p>
                 <p className="text-muted-foreground">
-                  Email: info@webimot.com
+                  Email: webimot.info@gmail.com
                   <br />
                   Address: Amsterdam, Netherlands · Istanbul, Turkey
                 </p>

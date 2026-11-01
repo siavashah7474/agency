@@ -210,7 +210,7 @@ export default function TermsOfService() {
                   For questions about these terms, please contact us at:
                 </p>
                 <p className="text-muted-foreground">
-                  Email: info@webimot.com
+                  Email: webimot.info@gmail.com
                   <br />
                   Address: Amsterdam, The Netherlands
                 </p>
