@@ -42,6 +42,11 @@
       "permanent": true
     },
     {
+      "source": "/services/seo",
+      "destination": "/products/seo-blog-ai",
+      "permanent": true
+    },
+    {
       "source": "/services/ai-marketing-analyst",
       "destination": "/products/cleardesk",
       "permanent": true
