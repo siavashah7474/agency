@@ -63,7 +63,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Booking form submission endpoint
   app.post("/api/booking", async (req, res) => {
     try {
-      const { name, email, phone, service } = req.body;
+      const { name, email, phone, service, message } = req.body;
 
       // Basic validation
       if (!name || !email || !phone || !service) {
@@ -77,6 +77,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const sanitizedEmail = sanitizeInput(String(email));
       const sanitizedPhone = sanitizeInput(String(phone));
       const sanitizedService = sanitizeInput(String(service));
+      const sanitizedMessage = message ? sanitizeInput(String(message)) : "";
 
       // Email validation
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -87,7 +88,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       // Phone validation: digits, spaces, +, -, (), min 5 chars
-      const phoneRegex = /^[+\d][\d\s\-().]{4,}$/;
+      const phoneRegex = /^[+\d(][\d\s\-().]{4,}$/;
       if (!phoneRegex.test(sanitizedPhone)) {
         return res.status(400).json({
           message: "Invalid phone number",
@@ -99,7 +100,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         sanitizedName.length > 100 ||
         sanitizedEmail.length > 255 ||
         sanitizedPhone.length > 50 ||
-        sanitizedService.length > 100
+        sanitizedService.length > 100 ||
+        sanitizedMessage.length > 5000
       ) {
         return res.status(400).json({
           message: "Input too long",
@@ -118,6 +120,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
           <p><strong>Email:</strong> ${sanitizedEmail}</p>
           <p><strong>Phone:</strong> ${sanitizedPhone}</p>
           <p><strong>Service:</strong> ${sanitizedService}</p>
+          <p><strong>Message:</strong></p>
+          <p>${sanitizedMessage || "Not provided"}</p>
           <p><strong>Received at:</strong> ${timestamp}</p>
         `
       ).catch((err) => {
@@ -174,7 +178,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Phone validation (optional field)
       if (sanitizedPhone) {
-        const phoneRegex = /^[+\d][\d\s\-().]{4,}$/;
+        const phoneRegex = /^[+\d(][\d\s\-().]{4,}$/;
         if (!phoneRegex.test(sanitizedPhone)) {
           return res.status(400).json({
             message: "Invalid phone number",

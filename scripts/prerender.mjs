@@ -1,7 +1,8 @@
 // Pre-renders every page of the built SPA to static HTML so search engines and AI
 // crawlers (which often don't run JavaScript) see each page's real content, title,
 // description, canonical URL and structured data. Also regenerates sitemap.xml from
-// the pages that actually exist.
+// the pages that actually exist, keeping each page's <lastmod> until its content changes
+// (tracked in scripts/page-lastmod.json — commit it alongside the sitemap).
 //
 // Runs after `vite build`. Needs a local Chrome/Chromium; if none is found it skips
 // with a warning (local builds) or fails the build (on Vercel).
@@ -11,12 +12,14 @@ import fs from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(ROOT, "dist", "public");
 const SITE = "https://webimotagency.com";
 const SEEDS = ["/"];
 const CONCURRENCY = 4;
+const LASTMOD_FILE = path.join(ROOT, "scripts", "page-lastmod.json");
 
 // Head tags owned by react-helmet; the template's defaults for these are dropped
 // whenever the page provides its own.
@@ -112,6 +115,9 @@ async function capture(browser, origin, route) {
         notFound: /404/.test(document.querySelector("h1")?.textContent ?? ""),
         noindex: !!document.querySelector('meta[name="robots"][content*="noindex"]'),
         canonical: document.querySelector('link[rel="canonical"]')?.href ?? null,
+        // Visible text of the page body (not markup, which carries animation state), used
+        // to tell whether the page really changed since the last build.
+        content: (document.querySelector("main") ?? document.getElementById("root")).textContent.replace(/\s+/g, " ").trim(),
       };
     });
   } finally {
@@ -130,11 +136,31 @@ function buildHtml(template, snap) {
   return html.replace('<div id="root"></div>', `<div id="root">${snap.body}</div>`);
 }
 
-function sitemap(routes) {
+// lastmod per route: unchanged content keeps its previous date, changed or new pages get
+// today. Routes missing from the state file fall back to the date in the current sitemap.
+async function lastmods(hashes) {
   const today = new Date().toISOString().slice(0, 10);
+  const prev = JSON.parse(await fs.readFile(LASTMOD_FILE, "utf8").catch(() => "{}"));
+  const oldSitemap = await fs.readFile(path.join(ROOT, "client", "public", "sitemap.xml"), "utf8").catch(() => "");
+  const oldDates = Object.fromEntries(
+    [...oldSitemap.matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)].map(([, loc, d]) => [loc.replace(SITE, "") || "/", d]),
+  );
+  const next = {};
+  for (const [route, hash] of Object.entries(hashes)) {
+    const before = prev[route];
+    if (before?.hash === hash) next[route] = before;
+    else if (!before && oldDates[route]) next[route] = { hash, lastmod: oldDates[route] };
+    else next[route] = { hash, lastmod: today };
+  }
+  const sorted = Object.fromEntries(Object.keys(next).sort().map((k) => [k, next[k]]));
+  await fs.writeFile(LASTMOD_FILE, JSON.stringify(sorted, null, 2) + "\n");
+  return Object.fromEntries(Object.entries(next).map(([r, v]) => [r, v.lastmod]));
+}
+
+function sitemap(routes, dates) {
   const priority = (r) => (r === "/" ? "1.0" : r.split("/").length === 2 ? "0.8" : "0.6");
   const urls = routes
-    .map((r) => `  <url>\n    <loc>${SITE}${r === "/" ? "/" : r}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${priority(r)}</priority>\n  </url>`)
+    .map((r) => `  <url>\n    <loc>${SITE}${r === "/" ? "/" : r}</loc>\n    <lastmod>${dates[r]}</lastmod>\n    <priority>${priority(r)}</priority>\n  </url>`)
     .join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 }
@@ -161,6 +187,7 @@ async function main() {
   const queue = [...SEEDS];
   const seen = new Set(queue);
   const rendered = [];
+  const hashes = {};
   const problems = [];
 
   try {
@@ -189,7 +216,10 @@ async function main() {
           const out = route === "/" ? path.join(DIST, "index.html") : path.join(DIST, route, "index.html");
           await fs.mkdir(path.dirname(out), { recursive: true });
           await fs.writeFile(out, buildHtml(template, snap));
-          if (!snap.noindex) rendered.push(route);
+          if (!snap.noindex) {
+            rendered.push(route);
+            hashes[route] = createHash("sha256").update(snap.content).digest("hex").slice(0, 16);
+          }
           const expected = SITE + (route === "/" ? "/" : route);
           if (snap.canonical && snap.canonical.replace(/\/$/, "") !== expected.replace(/\/$/, "")) {
             problems.push(`${route}: canonical points to ${snap.canonical}`);
@@ -216,7 +246,7 @@ async function main() {
   }
 
   rendered.sort((a, b) => (a === "/" ? -1 : b === "/" ? 1 : a.localeCompare(b)));
-  const xml = sitemap(rendered);
+  const xml = sitemap(rendered, await lastmods(hashes));
   await fs.writeFile(path.join(DIST, "sitemap.xml"), xml);
   await fs.writeFile(path.join(ROOT, "client", "public", "sitemap.xml"), xml);
 

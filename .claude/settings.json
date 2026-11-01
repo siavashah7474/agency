@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \":*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://webimotagency.com/blog/ai-assistant-plastic-surgery-turkey-guide)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://webimotagency.com/blog/medical-tourism-ai-receptionist-germany-uk-gulf)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://webimotagency.com/blog/rhinoplasty-hair-transplant-turkey-ai-lead-conversion)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}

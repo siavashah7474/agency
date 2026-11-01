@@ -7,6 +7,8 @@ function sanitizeInput(input: string): string {
   return input
     .replace(/<[^>]*>/g, "")
     .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#x27;")
     .trim();
@@ -76,7 +78,7 @@ app.use(express.urlencoded({ extended: false }));
 // Booking form
 app.post("/api/booking", async (req, res) => {
   try {
-    const { name, email, phone, service } = req.body;
+    const { name, email, phone, service, message } = req.body;
     if (!name || !email || !phone || !service) {
       return res.status(400).json({ message: "All fields are required" });
     }
@@ -84,14 +86,15 @@ app.post("/api/booking", async (req, res) => {
     const sEmail = sanitizeInput(String(email));
     const sPhone = sanitizeInput(String(phone));
     const sService = sanitizeInput(String(service));
+    const sMessage = message ? sanitizeInput(String(message)) : "";
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sEmail)) {
       return res.status(400).json({ message: "Invalid email address" });
     }
-    if (!/^[+\d][\d\s\-().]{4,}$/.test(sPhone)) {
+    if (!/^[+\d(][\d\s\-().]{4,}$/.test(sPhone)) {
       return res.status(400).json({ message: "Invalid phone number" });
     }
-    if (sName.length > 100 || sEmail.length > 255 || sPhone.length > 50 || sService.length > 100) {
+    if (sName.length > 100 || sEmail.length > 255 || sPhone.length > 50 || sService.length > 100 || sMessage.length > 5000) {
       return res.status(400).json({ message: "Input too long" });
     }
 
@@ -102,6 +105,8 @@ app.post("/api/booking", async (req, res) => {
        <p><strong>Email:</strong> ${sEmail}</p>
        <p><strong>Phone:</strong> ${sPhone}</p>
        <p><strong>Service:</strong> ${sService}</p>
+       <p><strong>Message:</strong></p>
+       <p>${sMessage || "Not provided"}</p>
        <p><strong>Received at:</strong> ${new Date().toISOString()}</p>`
     );
 
@@ -127,7 +132,7 @@ app.post("/api/contact", async (req, res) => {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sEmail)) {
       return res.status(400).json({ message: "Invalid email address" });
     }
-    if (sPhone && !/^[+\d][\d\s\-().]{4,}$/.test(sPhone)) {
+    if (sPhone && !/^[+\d(][\d\s\-().]{4,}$/.test(sPhone)) {
       return res.status(400).json({ message: "Invalid phone number" });
     }
     if (sName.length > 100 || sEmail.length > 255 || (sPhone && sPhone.length > 50) || sMessage.length > 5000) {

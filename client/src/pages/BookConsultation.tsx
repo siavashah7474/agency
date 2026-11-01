@@ -20,7 +20,7 @@ export default function BookConsultation() {
       icon: Calendar,
       title: "Choose Your Time",
       description:
-        "Pick a date and time that works best for you from our calendar",
+        "Message us on WhatsApp and we'll agree a date and time that suits you",
     },
     {
       icon: Video,
@@ -135,9 +135,9 @@ export default function BookConsultation() {
                         Ready to Get Started?
                       </h3>
                       <p className="text-sm mb-6 opacity-90">
-                        Click below to access our calendar and choose a time
-                        that works for you. You'll receive a confirmation email
-                        with all the details.
+                        Click below to message our team on WhatsApp. We'll
+                        reply with a few time slots and confirm the details
+                        once you pick one.
                       </p>
                       <a
                         href="https://wa.me/31628753175?text=Hi%2C%20I%20want%20to%20book%20a%20free%20strategy%20call"

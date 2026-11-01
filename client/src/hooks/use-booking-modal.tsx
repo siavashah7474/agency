@@ -2,6 +2,7 @@ import { createContext, useContext, useState, ReactNode } from "react";
 import BookingModal from "@/components/BookingModal";
 
 interface BookingModalContextType {
+  isOpen: boolean;
   openModal: (service?: string) => void;
   closeModal: () => void;
 }
@@ -25,7 +26,7 @@ export function BookingModalProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <BookingModalContext.Provider value={{ openModal, closeModal }}>
+    <BookingModalContext.Provider value={{ isOpen, openModal, closeModal }}>
       {children}
       <BookingModal
         open={isOpen}

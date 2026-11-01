@@ -7,17 +7,23 @@ import { useTranslation } from "react-i18next";
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
-  const { openModal } = useBookingModal();
+  const { isOpen: bookingOpen, openModal } = useBookingModal();
   const { t } = useTranslation();
 
   const showPopup = useCallback(() => {
-    if (hasShown) return;
-    const dismissed = sessionStorage.getItem("exitPopupDismissed");
+    // Never stack on top of the booking form the visitor is already filling in.
+    if (hasShown || bookingOpen) return;
+    let dismissed: string | null = null;
+    try {
+      dismissed = sessionStorage.getItem("exitPopupDismissed");
+    } catch {
+      // Storage blocked (private mode, strict settings) — fall back to hasShown only.
+    }
     if (!dismissed) {
       setIsVisible(true);
       setHasShown(true);
     }
-  }, [hasShown]);
+  }, [hasShown, bookingOpen]);
 
   const handleMouseLeave = useCallback((e: MouseEvent) => {
     if (e.clientY <= 0) showPopup();
@@ -42,15 +48,28 @@ export default function ExitIntentPopup() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [showPopup]);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setIsVisible(false);
-    sessionStorage.setItem("exitPopupDismissed", "true");
-  };
+    try {
+      sessionStorage.setItem("exitPopupDismissed", "true");
+    } catch {
+      // Storage blocked — hasShown still stops it reopening on this page view.
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") handleClose();
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [isVisible, handleClose]);
 
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="exit-popup-title">
       <div 
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={handleClose}
@@ -70,7 +89,7 @@ export default function ExitIntentPopup() {
             <Gift className="h-8 w-8 text-white" />
           </div>
           
-          <h2 className="text-2xl font-bold mb-3">
+          <h2 id="exit-popup-title" className="text-2xl font-bold mb-3">
             {t("exitPopup.title")}
           </h2>
 

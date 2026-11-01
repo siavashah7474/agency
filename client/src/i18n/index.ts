@@ -28,4 +28,11 @@ i18n
     },
   });
 
+// Keep <html lang> in sync so screen readers and browsers use the right language.
+const syncHtmlLang = () => {
+  document.documentElement.lang = i18n.resolvedLanguage || "en";
+};
+syncHtmlLang();
+i18n.on("languageChanged", syncHtmlLang);
+
 export default i18n;

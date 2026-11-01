@@ -16,7 +16,7 @@ export default function NotFound() {
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
-        <main className="flex-1 flex items-center justify-center bg-[#020817] p-4 relative overflow-hidden">
+        <main id="main-content" className="flex-1 flex items-center justify-center bg-[#020817] p-4 relative overflow-hidden">
           <div className="absolute inset-0 neural-grid pointer-events-none" />
           <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-primary/20 rounded-full blur-3xl animate-float-orb pointer-events-none" />
           <div className="absolute bottom-1/4 left-1/6 w-[300px] h-[300px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />

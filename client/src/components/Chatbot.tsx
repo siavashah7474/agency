@@ -26,6 +26,9 @@ export default function Chatbot() {
   const [isTyping, setIsTyping] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
   const [showPulse, setShowPulse] = useState(true);
+  // Mirrors selectedTags so the delayed showResults call sees the final answer's tags
+  // (it runs from a timeout created before that state update re-rendered).
+  const selectedTagsRef = useRef<string[]>([]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const timeoutRefs = useRef<NodeJS.Timeout[]>([]);
 
@@ -120,7 +123,8 @@ export default function Chatbot() {
     ]);
 
     if (selectedOption.tags) {
-      setSelectedTags(prev => [...prev, ...selectedOption.tags!]);
+      selectedTagsRef.current = [...selectedTagsRef.current, ...selectedOption.tags];
+      setSelectedTags(selectedTagsRef.current);
     }
 
     setAnsweredQuestions(prev => { const next = new Set(prev); next.add(question.id); return next; });
@@ -133,7 +137,7 @@ export default function Chatbot() {
 
   const showResults = () => {
     setIsTyping(true);
-    const recommendations = calculateRecommendations(selectedTags);
+    const recommendations = calculateRecommendations(selectedTagsRef.current);
 
     addTimeout(() => {
       setIsTyping(false);
@@ -176,6 +180,7 @@ export default function Chatbot() {
     clearAllTimeouts();
     setMessages([]);
     setCurrentQuestionIndex(0);
+    selectedTagsRef.current = [];
     setSelectedTags([]);
     setAnsweredQuestions(new Set());
     setHasStarted(false);

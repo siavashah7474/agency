@@ -35,7 +35,12 @@ import { trackEvent } from "@/components/GoogleAnalytics";
 const bookingSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
-  phone: z.string().min(10, "Please enter a valid phone number"),
+  // Same rule the server applies (api/index.ts), so the form never accepts a number the API rejects.
+  phone: z
+    .string()
+    .trim()
+    .regex(/^[+\d(][\d\s\-().]{4,}$/, "Please enter a valid phone number, e.g. +31 6 1234 5678")
+    .refine((v) => v.replace(/\D/g, "").length >= 7, "Please enter a valid phone number, e.g. +31 6 1234 5678"),
   service: z.string().min(1, "Please select a service"),
   message: z.string().optional(),
 });
@@ -114,7 +119,9 @@ export default function BookingModal({
       toast({
         title: "Error",
         description:
-          "Something went wrong. Please try again or contact us directly.",
+          error instanceof Error && error.message !== "Failed to submit booking"
+            ? error.message
+            : "Something went wrong. Please try again or contact us directly.",
         variant: "destructive",
       });
     } finally {
