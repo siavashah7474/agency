@@ -52,6 +52,11 @@
       "permanent": true
     },
     {
+      "source": "/pricing",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
       "source": "/solutions",
       "destination": "/systems",
       "permanent": true

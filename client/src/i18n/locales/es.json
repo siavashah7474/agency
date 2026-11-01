@@ -67,8 +67,7 @@
       "stepLabel": "Paso {{step}}",
       "replaces": "Sustituye",
       "link": "Ver este sistema",
-      "allLink": "Ver los cuatro sistemas",
-      "pricingLink": "Comparar planes"
+      "allLink": "Ver los cuatro sistemas"
     },
     "testimonialsTitle": "No Tomes Nuestra Palabra",
     "testimonialsSubtitle": "Negocios reales. Números reales. Esto es lo que pasó cuando dejaron de hacerlo manualmente.",

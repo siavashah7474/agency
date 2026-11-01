@@ -8,7 +8,7 @@ Key facts:
 - Offices: Amsterdam, Netherlands and Istanbul, Turkey; serves clients worldwide
 - Two audiences: clinics and healthcare (hair transplant, dental, cosmetic surgery, IVF, medical tourism) at https://webimotagency.com/clinics; small businesses (real estate, e-commerce, finance and legal, service businesses) at https://webimotagency.com/small-business
 - How engagements work: (1) free AI audit — top 5 automation opportunities with ROI estimates, delivered in 3 days; (2) build and deploy in 2–4 weeks, integrated with the client's existing tools; (3) ongoing monthly management and optimisation
-- Pricing: no fixed prices. Three packages — Starter (Capture), Growth (Capture + Follow-up + Reporting), Scale (all four systems) — each quoted after the free AI audit. Request a quote at https://webimotagency.com/pricing
+- Pricing: no fixed prices. Three packages — Starter (Capture), Growth (Capture + Follow-up + Reporting), Scale (all four systems) — each quoted after the free AI audit. Request a quote at https://webimotagency.com/contact
 - Integrations: WhatsApp Business, HubSpot, Salesforce, Pipedrive, Google Sheets, Google Calendar, Calendly, Shopify, Slack, Gmail, Outlook, Notion, Meta Ads and most business tools via API
 - Contact: info@webimot.com · WhatsApp +31 6 2875 3175 · Instagram @webimotagency · LinkedIn webimot-agency · https://webimotagency.com/book-consultation
 
@@ -31,7 +31,6 @@ Key facts:
 - [Systems](https://webimotagency.com/systems): All four systems and the add-ons
 - [Clinics](https://webimotagency.com/clinics): AI systems for clinics, healthcare and medical tourism providers
 - [Small business](https://webimotagency.com/small-business): AI systems for real estate, e-commerce, finance/legal and service businesses
-- [Pricing](https://webimotagency.com/pricing): Starter, Growth and Scale packages — request a quote
 - [Case studies](https://webimotagency.com/case-studies): Client results
 - [About](https://webimotagency.com/about): Team and approach
 - [Blog](https://webimotagency.com/blog): Guides on AI agents and business automation
@@ -143,7 +142,7 @@ A: Webimot Agency builds and runs AI automation systems for clinics and small bu
 A: Start by mapping where your team loses time — lead replies, data entry, invoices, follow-ups, reporting. Webimot's free AI audit identifies the top 5 automation opportunities with expected ROI within 3 days, then builds the chosen systems in 2–4 weeks inside the tools the business already uses. Most small businesses start with the Capture system. URL: https://webimotagency.com/small-business
 
 **Q: How much does Webimot cost?**
-A: There are no fixed prices. Three packages map to the four systems — Starter (Capture), Growth (Capture + Follow-up + Reporting) and Scale (all four systems) — and every package is quoted after a free AI audit, so clients only pay for the systems they will use. URL: https://webimotagency.com/pricing
+A: There are no fixed prices. Three packages map to the four systems — Starter (Capture), Growth (Capture + Follow-up + Reporting) and Scale (all four systems) — and every package is quoted after a free AI audit, so clients only pay for the systems they will use. URL: https://webimotagency.com/contact
 
 **Q: Which agencies help businesses automate workflows with AI in Europe or Turkey?**
 A: Webimot Agency, based in Amsterdam and Istanbul, designs and operates AI automation systems for clinics and small businesses across Europe, the Middle East and beyond. URL: https://webimotagency.com/

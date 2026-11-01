@@ -111,9 +111,9 @@ export default function Systems() {
                 <Button size="lg" className="rounded-full bg-slate-900 px-7 text-white hover:bg-slate-800" onClick={() => openModal()}>
                   Book a free AI audit <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                 </Button>
-                <Link href="/pricing" className="inline-flex">
+                <Link href="/contact" className="inline-flex">
                   <Button size="lg" variant="outline" className="w-full rounded-full border-slate-300 bg-white/70 px-7 text-slate-900 hover:bg-white sm:w-auto">
-                    See pricing tiers
+                    Contact us
                   </Button>
                 </Link>
               </div>

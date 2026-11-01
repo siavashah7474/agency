@@ -1,6 +1,6 @@
 // Single source of truth for the site's positioning: one promise, two audiences,
 // four systems. Home, /systems, /clinics, /small-business, navigation, footer,
-// pricing and the booking form all read from here so names and routes never drift.
+// the booking form all read from here so names and routes never drift.
 
 export const PROMISE = {
   headline: "AI automation systems that run your daily work.",
@@ -137,43 +137,6 @@ export const AUDIENCES: AudienceDef[] = [
     description:
       "Real estate agencies, e-commerce stores, finance and legal firms and service businesses that live on WhatsApp, email and spreadsheets.",
     examples: ["Real estate agencies", "E-commerce & Shopify stores", "Finance & legal firms", "Service businesses"],
-  },
-];
-
-// Pricing tiers mapped to the ladder. No prices shown — every tier is "request a quote".
-export interface TierDef {
-  name: string;
-  tagline: string;
-  bestFor: string;
-  systems: SystemId[];
-  popular: boolean;
-  includes: string[];
-}
-
-export const TIERS: TierDef[] = [
-  {
-    name: "Starter",
-    tagline: "Capture every lead",
-    bestFor: "One location, one inbox, first step into AI",
-    systems: ["capture"],
-    popular: false,
-    includes: ["Capture system set up and managed", "WhatsApp Business connected in 1 day", "Weekly summary email", "1 integration (calendar or CRM)", "Onboarding and team training"],
-  },
-  {
-    name: "Growth",
-    tagline: "Capture, follow up and measure",
-    bestFor: "Clinics and SMEs ready to automate the whole lead journey",
-    systems: ["capture", "convert", "measure"],
-    popular: true,
-    includes: ["Capture + Follow-up + Reporting systems", "Bi-weekly optimisation review", "Priority support (reply within 4 hours)", "Unlimited integrations", "Dedicated account manager"],
-  },
-  {
-    name: "Scale",
-    tagline: "Run the business on AI",
-    bestFor: "Multi-location or multi-team businesses",
-    systems: ["capture", "convert", "operate", "measure"],
-    popular: false,
-    includes: ["All four systems set up and managed", "New automations added every month", "Dedicated AI advisor and strategy sessions", "Custom integrations and API connections", "First-priority support (reply within 1 hour)"],
   },
 ];
 

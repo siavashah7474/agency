@@ -68,14 +68,15 @@ export default function Navigation() {
     return () => { document.removeEventListener("mousedown", handleClick); document.removeEventListener("keydown", handleKeyDown); };
   }, []);
 
-  // Six items + CTA is the most that fits on one line at md; Home stays reachable via the logo.
+  // Seven items + CTA need the lg breakpoint to fit on one line; below that the menu button takes over.
   const navLinks = [
+    { href: "/", label: t("nav.home", "Home") },
     { href: "/systems", label: t("nav.systems", "Systems") },
     { href: "/clinics", label: t("nav.clinics", "Clinics") },
     { href: "/small-business", label: t("nav.smallBusiness", "Small Business") },
-    { href: "/pricing", label: t("nav.pricing", "Pricing") },
     { href: "/case-studies", label: t("nav.work", "Work") },
     { href: "/blog", label: t("nav.blog", "Blog") },
+    { href: "/contact", label: t("nav.contact", "Contact") },
   ];
 
   // A link is active on its own route and its child routes (e.g. /case-studies/xyz).
@@ -106,7 +107,7 @@ export default function Navigation() {
               <span className="text-xl font-bold tracking-tight text-slate-900">Webimot</span>
             </Link>
 
-            <nav className="hidden md:flex items-center gap-1" aria-label="Main">
+            <nav className="hidden lg:flex items-center gap-1" aria-label="Main">
               {navLinks.map((link) => {
                 const active = isActive(link.href);
                 return (
@@ -115,7 +116,7 @@ export default function Navigation() {
                     href={link.href}
                     data-testid={`link-nav-${link.href.replace("/", "") || "home"}`}
                     aria-current={active ? "page" : undefined}
-                    className={`relative inline-flex min-h-10 items-center rounded-md px-3 text-sm font-medium transition-colors ${focusRing} ${
+                    className={`relative inline-flex min-h-10 items-center whitespace-nowrap rounded-md px-3 text-sm font-medium transition-colors ${focusRing} ${
                       active ? "text-slate-900" : "text-slate-600 hover:text-slate-900"
                     } after:absolute after:inset-x-3 after:-bottom-[1px] after:h-0.5 after:rounded-full after:bg-secondary after:transition-opacity ${
                       active ? "after:opacity-100" : "after:opacity-0"
@@ -127,7 +128,7 @@ export default function Navigation() {
               })}
             </nav>
 
-            <div className="hidden md:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-2">
               <div ref={langRef} className="relative">
                 <button
                   type="button"
@@ -165,7 +166,7 @@ export default function Navigation() {
             <button
               type="button"
               data-testid="button-mobile-menu"
-              className={`md:hidden -mr-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}
+              className={`lg:hidden -mr-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"} aria-expanded={mobileMenuOpen} aria-controls="mobile-menu"
             >
@@ -178,7 +179,7 @@ export default function Navigation() {
 
       {/* Rendered outside <header>: backdrop-filter on the header would otherwise become the containing block for this fixed panel */}
         {mobileMenuOpen && (
-          <div id="mobile-menu" className="md:hidden fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-slate-200 bg-background">
+          <div id="mobile-menu" className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-slate-200 bg-background">
             <nav className="container mx-auto flex flex-col px-4 py-4 sm:px-6" aria-label="Main">
               {navLinks.map((link) => {
                 const active = isActive(link.href);

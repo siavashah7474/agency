@@ -77,9 +77,6 @@ export default function WhatWeDoSection() {
           <Link href="/systems" className="link-inline inline-flex min-h-11 items-center gap-1.5 rounded-md px-2 text-primary" data-testid="link-all-systems">
             {t("home.ladder.allLink")} <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
-          <Link href="/pricing" className="link-inline inline-flex min-h-11 items-center gap-1.5 rounded-md px-2 text-primary" data-testid="link-pricing-tiers">
-            {t("home.ladder.pricingLink")} <ArrowRight className="h-4 w-4" aria-hidden="true" />
-          </Link>
         </div>
       </div>
     </section>

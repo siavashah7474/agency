@@ -117,7 +117,6 @@ export default function Footer() {
             <h3 className={headingClass}>{t("footer.company")}</h3>
             <ul className="space-y-1.5">
               <li><Link href="/about" data-testid="link-footer-about" className={linkClass}>{t("footer.aboutUs")}</Link></li>
-              <li><Link href="/pricing" data-testid="link-footer-pricing" className={linkClass}>{t("nav.pricing", "Pricing")}</Link></li>
               <li><Link href="/clients" data-testid="link-footer-clients" className={linkClass}>{t("footer.ourClients")}</Link></li>
               <li><Link href="/blog" data-testid="link-footer-blog" className={linkClass}>{t("nav.blog")}</Link></li>
               <li><Link href="/contact" data-testid="link-footer-contact" className={linkClass}>{t("nav.contact")}</Link></li>
