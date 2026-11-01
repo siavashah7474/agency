@@ -4,6 +4,19 @@ export default {
   darkMode: ["class"],
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    // One consistent content width across the site (design_guidelines: max-w-7xl).
+    // Pages still add their own px-6 gutter; this sets the shared max-width and centring.
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1280px",
+      },
+    },
     extend: {
       borderRadius: {
         lg: ".5625rem", /* 9px */

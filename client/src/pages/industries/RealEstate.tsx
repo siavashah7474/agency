@@ -39,7 +39,7 @@ export default function RealEstatePage() {
       ]}
       stats={[
         { value: "60s", label: "Lead response time" },
-        { value: "9×", label: "Higher conversion vs 5-min delay" },
+        { value: "21×", label: "More likely to qualify a lead when you reply in under 5 min" },
         { value: "5–15%", label: "Cold database reactivation" },
         { value: "24/7", label: "Lead coverage — including weekends" },
       ]}

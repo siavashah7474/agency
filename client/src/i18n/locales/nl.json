@@ -127,7 +127,7 @@
     "testimonialsSubtitle": "Echte bedrijven. Echte cijfers. Dit is wat er gebeurde toen ze stopten met handmatig werken.",
     "testimonials": [
       { "name": "Dr. Gorkem Atsal", "role": "Eigenaar van de kliniek", "company": "Gorkem Atsal kliniek", "content": "De WhatsApp AI-agent heeft onze leadafhandeling volledig getransformeerd. We zijn gegaan van het missen van 40% van de aanvragen naar het beantwoorden van 100% binnen seconden. Ons conversiepercentage verdubbelde in slechts 3 maanden." },
-      { "name": "Pouyan Azizpour", "role": "CEO", "company": "Wavemed.io", "content": "Webimot's SEO Blog Generator is een gamechanger geweest. We publiceren 20 geoptimaliseerde berichten per maand zonder enig handmatig werk. Ons organisch verkeer steeg in 6 maanden met 20%." },
+      { "name": "Pouyan Azizpour", "role": "CEO", "company": "Wavemed.io", "content": "Webimot's SEO Blog Generator is een gamechanger geweest. We publiceren 20 geoptimaliseerde berichten per maand zonder enig handmatig werk. Ons organisch verkeer steeg aanzienlijk binnen enkele maanden na de start." },
       { "name": "Dr. Hamed Gholami", "role": "Eigenaar van Novin Ariana", "company": "Novin Ariana Health Group", "content": "De AI Operations Autopilot bespaart ons elke week 20+ uur. Factuurherinneringen, HR-checklists, planningsrapporten — allemaal automatisch afgehandeld. Ons team richt zich eindelijk op echt werk in plaats van administratie." }
     ],
     "faqBadge": "FAQ",
@@ -164,10 +164,10 @@
       "Meetbare ROI op elke campagne"
     ],
     "stats": [
-      { "number": "15+", "label": "Bediende klanten" },
+      { "number": "50+", "label": "Bediende klanten" },
       { "number": "60%", "label": "Gem. verkeersgroei" },
       { "number": "24/7", "label": "AI-automatisering" },
-      { "number": "25+", "label": "Ondersteunde talen" }
+      { "number": "50+", "label": "Ondersteunde talen" }
     ],
     "medBadge": "Primaire focus",
     "medTitle": "Medisch toerisme & klinieken",
@@ -252,7 +252,7 @@
       "note": "* Onze AI-systemen werken 24/7, ook wanneer wij gesloten zijn!"
     },
     "ctaTitle": "Klaar om te beginnen?",
-    "ctaSubtitle": "Boek een gratis 20-minuten strategiegesprek om te bespreken hoe AI-automatisering uw bedrijf kan transformeren",
+    "ctaSubtitle": "Boek een gratis 30-minuten strategiegesprek om te bespreken hoe AI-automatisering uw bedrijf kan transformeren",
     "ctaButton": "Boek uw gratis strategiegesprek"
   },
   "clients": {
@@ -308,7 +308,7 @@
     "desc": "Ontvang een <strong>gratis marketingaudit</strong> en ontdek hoe wij u kunnen helpen meer leads te genereren. Geen verplichting.",
     "cta": "Mijn gratis audit ontvangen",
     "dismiss": "Nee bedankt, ik sla het gratis advies over",
-    "trust": "Sluit u aan bij 200+ bedrijven die Webimot vertrouwen voor hun marketingbehoeften"
+    "trust": "Sluit u aan bij 50+ bedrijven die Webimot vertrouwen voor hun marketingbehoeften"
   },
   "caseStudies": {
     "title": "Casestudies",

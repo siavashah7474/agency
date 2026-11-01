@@ -11,6 +11,11 @@ export interface ChatbotQuestion {
 
 export interface ServiceRecommendation {
   serviceSlug: string;
+  /**
+   * Full path to link to instead of `/services/${serviceSlug}`.
+   * Use for recommendations whose /services/* URL is 301-redirected to a /products/* page.
+   */
+  href?: string;
   serviceName: string;
   description: string;
   matchScore: number;
@@ -80,10 +85,10 @@ export const chatbotConfig: ChatbotConfig = {
       id: "budget",
       question: "What's your monthly marketing budget?",
       options: [
-        { label: "Under $1,000", value: "low", nextQuestion: "timeline", tags: ["starter"] },
-        { label: "$1,000 - $5,000", value: "medium", nextQuestion: "timeline", tags: ["growth"] },
-        { label: "$5,000 - $15,000", value: "high", nextQuestion: "timeline", tags: ["scale"] },
-        { label: "$15,000+", value: "enterprise", nextQuestion: "timeline", tags: ["enterprise"] },
+        { label: "Under €1,000", value: "low", nextQuestion: "timeline", tags: ["starter"] },
+        { label: "€1,000 - €5,000", value: "medium", nextQuestion: "timeline", tags: ["growth"] },
+        { label: "€5,000 - €15,000", value: "high", nextQuestion: "timeline", tags: ["scale"] },
+        { label: "€15,000+", value: "enterprise", nextQuestion: "timeline", tags: ["enterprise"] },
         { label: "Not sure yet", value: "unsure", nextQuestion: "timeline", tags: ["consultation"] }
       ]
     },
@@ -102,6 +107,7 @@ export const chatbotConfig: ChatbotConfig = {
   recommendations: [
     {
       serviceSlug: "whatsapp-ai-agent",
+      href: "/products/whatsapp-ai",
       serviceName: "WhatsApp AI Agent",
       description: "24/7 automated responses to capture and qualify leads instantly",
       matchScore: 0,
@@ -130,6 +136,7 @@ export const chatbotConfig: ChatbotConfig = {
     },
     {
       serviceSlug: "seo-blog-generator",
+      href: "/products/seo-blog-ai",
       serviceName: "AI SEO Blog Generator",
       description: "Automated content creation optimized for search engines",
       matchScore: 0,

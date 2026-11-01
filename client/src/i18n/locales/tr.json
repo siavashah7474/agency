@@ -127,7 +127,7 @@
     "testimonialsSubtitle": "Gerçek işletmeler. Gerçek rakamlar. Manuel yapmayı bıraktıklarında ne oldu.",
     "testimonials": [
       { "name": "Dr. Gorkem Atsal", "role": "Klinik Sahibi", "company": "Gorkem Atsal Kliniği", "content": "WhatsApp AI ajanı müşteri adayı yönetimimizi tamamen dönüştürdü. Soruların %40'ını kaçırmaktan saniyeler içinde %100'üne yanıt vermeye geçtik. Dönüşüm oranımız sadece 3 ayda ikiye katlandı." },
-      { "name": "Pouyan Azizpour", "role": "CEO", "company": "Wavemed.io", "content": "Webimot'un SEO Blog Üreteci oyunun kurallarını değiştirdi. Manuel çalışma olmadan ayda 20 optimize edilmiş yazı yayınlıyoruz. Organik trafiğimiz 6 ayda %20 arttı." },
+      { "name": "Pouyan Azizpour", "role": "CEO", "company": "Wavemed.io", "content": "Webimot'un SEO Blog Üreteci oyunun kurallarını değiştirdi. Manuel çalışma olmadan ayda 20 optimize edilmiş yazı yayınlıyoruz. Organik trafiğimiz başladıktan birkaç ay içinde önemli ölçüde arttı." },
       { "name": "Dr. Hamed Gholami", "role": "Novin Ariana Sahibi", "company": "Novin Ariana Sağlık Grubu", "content": "AI Pazarlama Analisti bize her hafta 10+ saat kazandırıyor. Doğrudan gelen kutumuza teslim edilen uygulanabilir içgörülerle detaylı raporlar alıyoruz. Özel bir analistin kadromuzda bulunması gibi." }
     ],
     "faqBadge": "SSS",
@@ -164,10 +164,10 @@
       "Her kampanyada ölçülebilir yatırım getirisi"
     ],
     "stats": [
-      { "number": "15+", "label": "Hizmet Verilen Müşteri" },
+      { "number": "50+", "label": "Hizmet Verilen Müşteri" },
       { "number": "%60", "label": "Ort. Trafik Büyümesi" },
       { "number": "7/24", "label": "AI Otomasyonu" },
-      { "number": "25+", "label": "Desteklenen Dil" }
+      { "number": "50+", "label": "Desteklenen Dil" }
     ],
     "medBadge": "Birincil Odak",
     "medTitle": "Tıp Turizmi & Klinikler",
@@ -252,7 +252,7 @@
       "note": "* AI sistemlerimiz kapalı olduğumuzda bile 7/24 çalışır!"
     },
     "ctaTitle": "Başlamaya Hazır mısınız?",
-    "ctaSubtitle": "AI otomasyonunun işinizi nasıl dönüştürebileceğini konuşmak için ücretsiz 20 dakikalık bir strateji görüşmesi yapın",
+    "ctaSubtitle": "AI otomasyonunun işinizi nasıl dönüştürebileceğini konuşmak için ücretsiz 30 dakikalık bir strateji görüşmesi yapın",
     "ctaButton": "Ücretsiz Strateji Görüşmesi Yapın"
   },
   "clients": {
@@ -308,7 +308,7 @@
     "desc": "Ücretsiz bir <strong>pazarlama denetimi</strong> alın ve daha fazla müşteri adayı oluşturmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez.",
     "cta": "Ücretsiz Denetimimi Alın",
     "dismiss": "Hayır teşekkürler, ücretsiz tavsiyeleri pas geçeceğim",
-    "trust": "Pazarlama ihtiyaçları için Webimot'a güvenen 200'den fazla işletmeye katılın"
+    "trust": "Pazarlama ihtiyaçları için Webimot'a güvenen 50'den fazla işletmeye katılın"
   },
   "caseStudies": {
     "title": "Vaka Çalışmaları",

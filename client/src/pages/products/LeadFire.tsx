@@ -11,11 +11,11 @@ export default function LeadFirePage() {
       heroBrief="When a lead comes in from a form, ad, or website — LeadFire replies in under 60 seconds. AI qualifies them, answers their first questions, and books a call automatically. No manual work. No missed leads."
       results={[
         { value: "< 60s", label: "Response time", context: "Every lead, every channel, day and night" },
-        { value: "9×", label: "Higher conversion", context: "vs. leads contacted after 5 minutes" },
+        { value: "21×", label: "More likely to qualify a lead", context: "when you reply in under 5 minutes" },
         { value: "100%", label: "Follow-up rate", context: "No lead ever falls through the cracks" },
       ]}
       problemParagraphs={[
-        "Most businesses take 2–6 hours to respond to a new lead. By then, they've already gone to a competitor. Studies show leads contacted within 5 minutes are 9× more likely to convert — and after 30 minutes that window closes permanently.",
+        "Most businesses take 2–6 hours to respond to a new lead. By then, they've already gone to a competitor. Studies show leads contacted within 5 minutes are 21× more likely to qualify — and after 30 minutes that window closes permanently.",
         "Your team is busy, your hours are limited, and leads don't wait. Every hour of delay is revenue walking out the door — to a business that simply replied faster.",
         "LeadFire eliminates this problem entirely. The moment a new lead submits a form, clicks an ad, or messages your website — LeadFire responds in under 60 seconds, qualifies them, and books a call directly into your calendar.",
       ]}
@@ -47,7 +47,7 @@ export default function LeadFirePage() {
           {
             time: "6:45 PM",
             event: "AI qualifies and moves to booking",
-            detail: "LeadFire recognises this is a high-intent, pre-qualified buyer. It replies: \"That's great — being pre-approved puts you in a strong position. Can I book a quick 20-minute call with our team tomorrow to show you 3 current listings that match exactly?\"",
+            detail: "LeadFire recognises this is a high-intent, pre-qualified buyer. It replies: \"That's great — being pre-approved puts you in a strong position. Can I book a quick 30-minute call with our team tomorrow to show you 3 current listings that match exactly?\"",
             highlight: true,
           },
           {

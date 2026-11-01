@@ -4,33 +4,40 @@ import { SiInstagram } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
+// Shared link styles: one look for every footer link, with a visible keyboard focus ring
+const focusRing = "rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-[#020817]";
+const linkClass = `inline-block py-0.5 text-sm text-white/70 transition-colors hover:text-white ${focusRing}`;
+const linkStrongClass = `inline-block py-0.5 text-sm font-medium text-white transition-colors hover:text-secondary ${focusRing}`;
+const headingClass = "mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-white/60";
+
 export default function Footer() {
   const { t } = useTranslation();
   const whatsappLink = "https://wa.me/31628753175";
   return (
-    <footer className="border-t border-white/8 bg-[#020817] relative overflow-hidden">
+    <footer className="relative overflow-hidden border-t border-white/10 bg-[#020817]" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">Footer</h2>
       <div className="absolute inset-0 neural-grid pointer-events-none opacity-60" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[1px] bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
 
-      <div className="container mx-auto px-6 py-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div className="container relative z-10 mx-auto px-4 py-14 sm:px-6 md:py-16">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-6 lg:gap-8">
 
           {/* Brand */}
-          <div className="lg:col-span-1">
-            <div className="mb-4 flex items-center gap-2">
+          <div className="sm:col-span-2 lg:col-span-2 lg:pr-8">
+            <Link href="/" className={`mb-4 inline-flex items-center gap-2 ${focusRing}`} aria-label="Webimot home">
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <span className="text-white font-bold text-lg">W</span>
               </div>
-              <span className="font-bold text-xl text-white">Webimot</span>
+              <span className="text-xl font-bold tracking-tight text-white">Webimot</span>
+            </Link>
+            <p className="mb-3 text-sm font-medium text-white/80">{t("footer.tagline")}</p>
+            <p className="max-w-sm text-sm leading-relaxed text-white/65">{t("footer.description")}</p>
+            <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-3 py-1.5">
+              <Zap className="h-3 w-3 text-secondary" aria-hidden="true" />
+              <span className="font-mono text-[11px] font-semibold tracking-wide text-secondary">Powered by AI Automation</span>
             </div>
-            <p className="text-sm text-white/70 mb-4">{t("footer.tagline")}</p>
-            <p className="text-sm text-white/60">{t("footer.description")}</p>
-            <div className="mt-5 inline-flex items-center gap-2 bg-secondary/8 border border-secondary/15 rounded-full px-3 py-1.5">
-              <Zap className="h-3 w-3 text-secondary" />
-              <span className="text-[11px] font-mono font-semibold text-secondary tracking-wide">Powered by AI Automation</span>
-            </div>
-            <div className="mt-5">
-              <p className="text-[10px] font-mono text-white/35 uppercase tracking-widest mb-2">Certified Partners</p>
+            <div className="mt-6">
+              <p className="mb-2 font-mono text-[11px] uppercase tracking-widest text-white/50">Certified Partners</p>
               <div className="flex flex-wrap gap-2">
                 <div className="flex items-center gap-2.5 bg-white rounded-lg px-3 py-2 shadow-sm">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,73 +66,73 @@ export default function Footer() {
 
           {/* Products */}
           <div>
-            <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">Products</h3>
-            <ul className="space-y-2">
-              <li><Link href="/solutions" className="text-sm text-white font-medium hover:text-secondary transition-colors">All Solutions →</Link></li>
-              <li><Link href="/products/leadfire" className="text-sm text-white/65 hover:text-secondary transition-colors">⚡ LeadFire</Link></li>
-              <li><Link href="/products/documind" className="text-sm text-white/65 hover:text-secondary transition-colors">📄 DocuMind</Link></li>
-              <li><Link href="/products/nurtureloop" className="text-sm text-white/65 hover:text-secondary transition-colors">🔁 NurtureLoop</Link></li>
-              <li><Link href="/products/reviveiq" className="text-sm text-white/65 hover:text-secondary transition-colors">💎 ReviveIQ</Link></li>
-              <li><Link href="/products/cleardesk" className="text-sm text-white/65 hover:text-secondary transition-colors">📊 ClearDesk</Link></li>
-              <li><Link href="/products/seo-blog-ai" className="text-sm text-white/65 hover:text-secondary transition-colors">✍️ SEO Blog AI</Link></li>
-              <li><Link href="/products/whatsapp-ai" className="text-sm text-white/65 hover:text-secondary transition-colors">💬 WhatsApp AI</Link></li>
+            <h3 className={headingClass}>Products</h3>
+            <ul className="space-y-1.5">
+              <li><Link href="/solutions" className={linkStrongClass}>All Solutions →</Link></li>
+              <li><Link href="/products/leadfire" className={linkClass}>⚡ LeadFire</Link></li>
+              <li><Link href="/products/documind" className={linkClass}>📄 DocuMind</Link></li>
+              <li><Link href="/products/nurtureloop" className={linkClass}>🔁 NurtureLoop</Link></li>
+              <li><Link href="/products/reviveiq" className={linkClass}>💎 ReviveIQ</Link></li>
+              <li><Link href="/products/cleardesk" className={linkClass}>📊 ClearDesk</Link></li>
+              <li><Link href="/products/seo-blog-ai" className={linkClass}>✍️ SEO Blog AI</Link></li>
+              <li><Link href="/products/whatsapp-ai" className={linkClass}>💬 WhatsApp AI</Link></li>
             </ul>
           </div>
 
           {/* Industries */}
           <div>
-            <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">Industries</h3>
-            <ul className="space-y-2">
-              <li><Link href="/who-we-help" className="text-sm text-white font-medium hover:text-secondary transition-colors">Who We Help →</Link></li>
-              <li><Link href="/industries/healthcare" className="text-sm text-white/65 hover:text-secondary transition-colors">Healthcare</Link></li>
-              <li><Link href="/industries/ecommerce" className="text-sm text-white/65 hover:text-secondary transition-colors">eCommerce</Link></li>
-              <li><Link href="/industries/finance-legal" className="text-sm text-white/65 hover:text-secondary transition-colors">Finance & Legal</Link></li>
-              <li><Link href="/industries/small-business" className="text-sm text-white/65 hover:text-secondary transition-colors">Small Business</Link></li>
-              <li><Link href="/industries/real-estate" className="text-sm text-white/65 hover:text-secondary transition-colors">Real Estate</Link></li>
+            <h3 className={headingClass}>Industries</h3>
+            <ul className="space-y-1.5">
+              <li><Link href="/who-we-help" className={linkStrongClass}>Who We Help →</Link></li>
+              <li><Link href="/industries/healthcare" className={linkClass}>Healthcare</Link></li>
+              <li><Link href="/industries/ecommerce" className={linkClass}>eCommerce</Link></li>
+              <li><Link href="/industries/finance-legal" className={linkClass}>Finance & Legal</Link></li>
+              <li><Link href="/industries/small-business" className={linkClass}>Small Business</Link></li>
+              <li><Link href="/industries/real-estate" className={linkClass}>Real Estate</Link></li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">{t("footer.company")}</h3>
-            <ul className="space-y-2">
-              <li><Link href="/services" className="text-sm text-white/65 hover:text-secondary transition-colors">Services</Link></li>
-              <li><Link href="/pricing" data-testid="link-footer-pricing" className="text-sm text-white/65 hover:text-secondary transition-colors">Pricing</Link></li>
-              <li><Link href="/about" data-testid="link-footer-about" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.aboutUs")}</Link></li>
-              <li><Link href="/case-studies" data-testid="link-footer-case-studies" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.caseStudies")}</Link></li>
-              <li><Link href="/clients" data-testid="link-footer-clients" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("footer.ourClients")}</Link></li>
-              <li><Link href="/blog" data-testid="link-footer-blog" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("nav.blog")}</Link></li>
-              <li><Link href="/contact" data-testid="link-footer-contact" className="text-sm text-white/65 hover:text-secondary transition-colors">{t("nav.contact")}</Link></li>
+            <h3 className={headingClass}>{t("footer.company")}</h3>
+            <ul className="space-y-1.5">
+              <li><Link href="/services" className={linkClass}>Services</Link></li>
+              <li><Link href="/pricing" data-testid="link-footer-pricing" className={linkClass}>Pricing</Link></li>
+              <li><Link href="/about" data-testid="link-footer-about" className={linkClass}>{t("footer.aboutUs")}</Link></li>
+              <li><Link href="/case-studies" data-testid="link-footer-case-studies" className={linkClass}>{t("footer.caseStudies")}</Link></li>
+              <li><Link href="/clients" data-testid="link-footer-clients" className={linkClass}>{t("footer.ourClients")}</Link></li>
+              <li><Link href="/blog" data-testid="link-footer-blog" className={linkClass}>{t("nav.blog")}</Link></li>
+              <li><Link href="/contact" data-testid="link-footer-contact" className={linkClass}>{t("nav.contact")}</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold mb-4 text-white/80 text-sm uppercase tracking-wider">{t("footer.contact")}</h3>
+            <h3 className={headingClass}>{t("footer.contact")}</h3>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-sm text-white/65">
-                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-white/50" />
+              <li className="flex items-start gap-2.5 text-sm text-white/70">
+                <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
                 <span>Istanbul, Turkey<br />Amsterdam, Netherlands</span>
               </li>
-              <li className="flex items-center gap-2 text-sm text-white/65">
-                <Mail className="h-4 w-4 flex-shrink-0 text-white/50" />
-                <a href="mailto:info@webimot.com" className="hover:text-secondary transition-colors">info@webimot.com</a>
+              <li className="flex items-center gap-2.5 text-sm">
+                <Mail className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
+                <a href="mailto:info@webimot.com" className={linkClass}>info@webimot.com</a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-white/65">
-                <Phone className="h-4 w-4 flex-shrink-0 text-white/50" />
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">
+              <li className="flex items-center gap-2.5 text-sm">
+                <Phone className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={linkClass}>
                   {t("footer.whatsappUs")}
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-white/65">
-                <SiInstagram className="h-4 w-4 flex-shrink-0 text-white/50" />
-                <a href="https://www.instagram.com/webimotagency/" target="_blank" rel="noopener noreferrer me" className="hover:text-secondary transition-colors">
+              <li className="flex items-center gap-2.5 text-sm">
+                <SiInstagram className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
+                <a href="https://www.instagram.com/webimotagency/" target="_blank" rel="noopener noreferrer me" className={linkClass} aria-label="Webimot on Instagram (opens in a new tab)">
                   @webimotagency
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-white/65">
-                <FaLinkedin className="h-4 w-4 flex-shrink-0 text-white/50" />
-                <a href="https://www.linkedin.com/company/webimot-agency/" target="_blank" rel="noopener noreferrer me" className="hover:text-secondary transition-colors">
+              <li className="flex items-center gap-2.5 text-sm">
+                <FaLinkedin className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
+                <a href="https://www.linkedin.com/company/webimot-agency/" target="_blank" rel="noopener noreferrer me" className={linkClass} aria-label="Webimot on LinkedIn (opens in a new tab)">
                   LinkedIn
                 </a>
               </li>
@@ -133,12 +140,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/55">
-          <p>&copy; {new Date().getFullYear()} Webimot. {t("footer.rights")}</p>
-          <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" data-testid="link-footer-privacy" className="hover:text-white/60 transition-colors">{t("footer.privacyPolicy")}</Link>
-            <Link href="/terms-of-service" data-testid="link-footer-terms" className="hover:text-white/60 transition-colors">{t("footer.termsOfService")}</Link>
-          </div>
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-white/60 sm:flex-row">
+          <p className="text-center sm:text-left">&copy; {new Date().getFullYear()} Webimot. {t("footer.rights")}</p>
+          <nav aria-label="Legal" className="flex items-center gap-6">
+            <Link href="/privacy-policy" data-testid="link-footer-privacy" className={`py-1 transition-colors hover:text-white ${focusRing}`}>{t("footer.privacyPolicy")}</Link>
+            <Link href="/terms-of-service" data-testid="link-footer-terms" className={`py-1 transition-colors hover:text-white ${focusRing}`}>{t("footer.termsOfService")}</Link>
+          </nav>
         </div>
       </div>
     </footer>

@@ -63,6 +63,12 @@ export default function Chatbot() {
     return () => clearTimeout(timer);
   }, []);
 
+  // The open chat panel sits where the WhatsApp button is; the button hides via this class.
+  useEffect(() => {
+    document.body.classList.toggle("chat-open", isOpen);
+    return () => document.body.classList.remove("chat-open");
+  }, [isOpen]);
+
   const startChat = () => {
     setHasStarted(true);
     setIsTyping(true);
@@ -320,7 +326,7 @@ export default function Chatbot() {
                           {message.recommendations && (
                             <div className="pl-9 space-y-2 mt-2">
                               {message.recommendations.map((rec) => (
-                                <Link key={rec.serviceSlug} href={`/services/${rec.serviceSlug}`}>
+                                <Link key={rec.serviceSlug} href={rec.href ?? `/services/${rec.serviceSlug}`}>
                                   <Card className="p-3 hover-elevate cursor-pointer">
                                     <div className="flex items-start justify-between gap-2">
                                       <div>

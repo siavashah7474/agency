@@ -154,7 +154,7 @@
         "name": "Pouyan Azizpour",
         "role": "CEO",
         "company": "Wavemed.io",
-        "content": "Webimot's SEO Blog Generator has been a game-changer. We publish 20 optimized posts per month without any manual work. Our organic traffic increased by 20% in 6 months."
+        "content": "Webimot's SEO Blog Generator has been a game-changer. We publish 20 optimized posts per month without any manual work. Our organic traffic increased significantly within months of starting."
       },
       {
         "name": "Dr. Hamed Gholami",
@@ -227,10 +227,10 @@
       "Measurable ROI on every campaign"
     ],
     "stats": [
-      { "number": "15+", "label": "Clients Served" },
+      { "number": "50+", "label": "Clients Served" },
       { "number": "60%", "label": "Avg. Traffic Growth" },
       { "number": "24/7", "label": "AI Automation" },
-      { "number": "25+", "label": "Languages Supported" }
+      { "number": "50+", "label": "Languages Supported" }
     ],
     "medBadge": "Primary Focus",
     "medTitle": "Medical Tourism & Clinics",
@@ -315,7 +315,7 @@
       "note": "* Our AI systems work 24/7, even when we are closed!"
     },
     "ctaTitle": "Ready to Get Started?",
-    "ctaSubtitle": "Book a free 20-minute strategy call to discuss how AI automation can transform your business",
+    "ctaSubtitle": "Book a free 30-minute strategy call to discuss how AI automation can transform your business",
     "ctaButton": "Book Your Free Strategy Call"
   },
   "clients": {
@@ -371,7 +371,7 @@
     "desc": "Get a <strong>free marketing audit</strong> and discover how we can help you generate more leads. No commitment required.",
     "cta": "Get My Free Audit",
     "dismiss": "No thanks, I'll pass on free advice",
-    "trust": "Join 200+ businesses who trust Webimot for their marketing needs"
+    "trust": "Join 50+ businesses who trust Webimot for their marketing needs"
   },
   "caseStudies": {
     "title": "Case Studies",

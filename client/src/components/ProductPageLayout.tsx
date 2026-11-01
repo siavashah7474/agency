@@ -1,6 +1,6 @@
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, ExternalLink } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -29,11 +29,13 @@ export interface ProductPageProps {
   featureDetails?: { title: string; description: string }[];
   whoItsFor: { emoji: string; industry: string; useCase: string }[];
   ctaHeadline: string;
+  // Products that have their own site (e.g. WhatsApp AI at webimot.com) link to it as a reference.
+  referenceLink?: { href: string; label: string };
 }
 
 const BASE_KEYWORDS = "medical tourism AI system, AI agent for clinics, clinic AI system, medical tourism marketing, AI automation agency, business automation, lead generation, WhatsApp AI, AI receptionist for clinics, clinic automation software";
 
-export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, results, problemParagraphs, howItWorksSteps, scenario, features, featureDetails, whoItsFor, ctaHeadline }: ProductPageProps) {
+export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, results, problemParagraphs, howItWorksSteps, scenario, features, featureDetails, whoItsFor, ctaHeadline, referenceLink }: ProductPageProps) {
   const { openModal } = useBookingModal();
   const [pathname] = useLocation();
   const canonicalUrl = `https://webimotagency.com${pathname}`;
@@ -85,6 +87,17 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
                 <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>Book Free Strategy Call</Button>
                 <Button size="lg" variant="outline" className="bg-white/8 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm" onClick={() => openModal()}>See Pricing</Button>
               </div>
+              {referenceLink && (
+                <a
+                  href={referenceLink.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 mt-6 text-sm text-white/80 underline underline-offset-4 hover:text-white"
+                  data-testid="link-product-reference"
+                >
+                  {referenceLink.label} <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              )}
             </div>
           </section>
 
@@ -261,9 +274,18 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
               <p className="text-lg md:text-xl mb-8 text-white/90 max-w-2xl mx-auto">
                 Book a free 30-minute strategy call. We'll show you exactly how {name} will work for your business.
               </p>
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>
-                Book Your Free Strategy Call
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>
+                  Book Your Free Strategy Call
+                </Button>
+                {referenceLink && (
+                  <Button asChild size="lg" variant="outline" className="bg-white/8 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm">
+                    <a href={referenceLink.href} target="_blank" rel="noopener noreferrer">
+                      {referenceLink.label} <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                )}
+              </div>
             </div>
           </section>
 

@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import {
   Target, Users, Zap, Globe, Award, TrendingUp,
@@ -9,9 +8,11 @@ import {
 } from "lucide-react";
 import teamImage from "@assets/generated_images/about_page_team_photo.webp";
 import { useTranslation } from "react-i18next";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 
 export default function About() {
   const { t } = useTranslation();
+  const { openModal } = useBookingModal();
   const stats = t("about.stats", { returnObjects: true }) as Array<{ number: string; label: string }>;
   const deliver = t("about.deliver", { returnObjects: true }) as string[];
   const specialties = t("about.specialties", { returnObjects: true }) as Array<{ title: string; desc: string }>;
@@ -207,12 +208,15 @@ export default function About() {
                       );
                     })}
                   </ul>
-                  <Link href="/book-consultation">
-                    <Button data-testid="button-about-cta" size="lg" className="bg-white text-primary hover:bg-white/90">
-                      {t("about.teamCta")}
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
+                  <Button
+                    data-testid="button-about-cta"
+                    size="lg"
+                    className="bg-white text-primary hover:bg-white/90"
+                    onClick={() => openModal()}
+                  >
+                    {t("about.teamCta")}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
                 </div>
               </div>
             </div>

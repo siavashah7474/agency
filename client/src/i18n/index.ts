@@ -19,8 +19,11 @@ i18n
     },
     fallbackLng: "en",
     supportedLngs: ["en", "tr", "nl", "es"],
+    // Most pages are English-only, so the site stays English unless the visitor picks a
+    // language in the header. Browser-language detection would otherwise give tr/nl/es
+    // visitors a translated header and footer around untranslated pages.
     detection: {
-      order: ["localStorage", "navigator"],
+      order: ["localStorage"],
       caches: ["localStorage"],
     },
     interpolation: {

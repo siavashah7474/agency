@@ -36,6 +36,7 @@ export default function WhatsAppAIPage() {
         { emoji: "🏢", industry: "Any business on WhatsApp", useCase: "Turn every WhatsApp message into a qualified lead without staffing overhead." },
       ]}
       ctaHeadline="Your Competitors Are Replying While You Sleep. Are You?"
+      referenceLink={{ href: "https://webimot.com", label: "See the WhatsApp AI product at webimot.com" }}
     />
   );
 }

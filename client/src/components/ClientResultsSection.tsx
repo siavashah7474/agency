@@ -1,20 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useTranslation } from "react-i18next";
 import {
-  TrendingUp, 
-  Clock, 
-  Users, 
+  TrendingUp,
+  Clock,
+  Users,
   DollarSign,
   ArrowRight,
   Star,
-  Zap,
   Target,
   BarChart3,
-  MessageSquare
 } from "lucide-react";
 import { caseStudies } from "@/data/caseStudiesData";
+import { SectionHeader } from "@/components/SectionEyebrow";
 
 interface ClientResult {
   name: string;
@@ -92,15 +91,15 @@ const clientResults: ClientResult[] = caseStudies.map((s) => {
 function StatComparison({ stat }: { stat: ClientResult['stats'][0] }) {
   const Icon = stat.icon;
   return (
-    <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
-      <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+    <div className="flex items-center gap-3 rounded-lg border border-slate-100 bg-slate-50 p-3">
+      <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10" aria-hidden="true">
         <Icon className="h-4 w-4 text-primary" />
       </div>
-      <div className="flex-1 min-w-0">
-        <p className="text-xs text-muted-foreground mb-1">{stat.label}</p>
+      <div className="min-w-0 flex-1">
+        <p className="mb-1 text-xs font-medium text-slate-600">{stat.label}</p>
         <div className="flex items-center gap-2">
-          <span className="text-sm text-muted-foreground line-through">{stat.before}</span>
-          <ArrowRight className="h-3 w-3 text-primary flex-shrink-0" />
+          <span className="text-sm text-slate-500 line-through">{stat.before}</span>
+          <ArrowRight className="h-3 w-3 flex-shrink-0 text-primary" aria-hidden="true" />
           <span className="text-sm font-bold text-primary">{stat.after}</span>
         </div>
       </div>
@@ -111,17 +110,17 @@ function StatComparison({ stat }: { stat: ClientResult['stats'][0] }) {
 function ClientCard({ client, index }: { client: ClientResult; index: number }) {
   const { t } = useTranslation();
   return (
-    <Card className="overflow-hidden hover-elevate h-full" data-testid={`card-client-result-${index}`}>
+    <Card className="surface-card-interactive h-full overflow-hidden border-card-border" data-testid={`card-client-result-${index}`}>
       <CardContent className="p-0">
         <div className={`h-2 bg-gradient-to-r ${client.gradient}`} />
         
         <div className="p-6">
           <div className="flex items-start justify-between mb-4">
             <div>
-              <div className={`inline-block px-2 py-1 rounded text-xs font-medium bg-gradient-to-r ${client.gradient} text-white mb-2`}>
+              <div className={`mb-2 inline-block rounded-md bg-gradient-to-r px-2 py-1 text-xs font-semibold text-white ${client.gradient}`}>
                 {client.industry}
               </div>
-              <h3 className="font-bold text-lg">{client.name}</h3>
+              <h3 className="text-lg font-bold text-slate-900">{client.name}</h3>
             </div>
           </div>
           
@@ -137,22 +136,20 @@ function ClientCard({ client, index }: { client: ClientResult; index: number }) 
           </div>
           
           <div className="border-t pt-4">
-            <div className="flex gap-1 mb-2">
+            <div className="mb-2 flex gap-1" role="img" aria-label="5 out of 5 stars">
               {[1,2,3,4,5].map(i => (
-                <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
               ))}
             </div>
-            <p className="text-sm text-muted-foreground italic mb-3">"{client.quote}"</p>
+            <p className="mb-3 text-sm leading-relaxed text-slate-600">&ldquo;{client.quote}&rdquo;</p>
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium">{client.quoteName}</p>
-                <p className="text-xs text-muted-foreground">{client.quoteRole}</p>
+                <p className="text-sm font-medium text-slate-900">{client.quoteName}</p>
+                <p className="text-xs text-slate-600">{client.quoteRole}</p>
               </div>
               {client.caseStudyLink && (
-                <Link href={client.caseStudyLink}>
-                  <Button variant="ghost" size="sm" className="text-primary">
-                    {t("common.fullStory")} <ArrowRight className="ml-1 h-3 w-3" />
-                  </Button>
+                <Link href={client.caseStudyLink} className={buttonVariants({ variant: "ghost", size: "sm", className: "text-primary hover:text-primary" })}>
+                  {t("common.fullStory")} <ArrowRight className="h-3 w-3" aria-hidden="true" />
                 </Link>
               )}
             </div>
@@ -166,20 +163,14 @@ function ClientCard({ client, index }: { client: ClientResult; index: number }) 
 export default function ClientResultsSection() {
   const { t } = useTranslation();
   return (
-    <section className="py-16 md:py-24 bg-muted/30">
+    <section className="bg-slate-50 py-16 md:py-24">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
-            <Zap className="h-4 w-4" />
-            {t("clientResults.badge")}
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            {t("clientResults.title")}
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            {t("clientResults.subtitle")}
-          </p>
-        </div>
+        <SectionHeader
+          eyebrow={t("clientResults.badge")}
+          title={t("clientResults.title")}
+          lead={t("clientResults.subtitle")}
+          className="mb-12 lg:max-w-3xl"
+        />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {clientResults.map((client, index) => (
@@ -188,11 +179,9 @@ export default function ClientResultsSection() {
         </div>
 
         <div className="text-center">
-          <Link href="/case-studies">
-            <Button data-testid="button-view-case-studies" size="lg" variant="outline">
-              {t("clientResults.viewAll")}
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+          <Link href="/case-studies" data-testid="button-view-case-studies" className={buttonVariants({ size: "lg", variant: "outline", className: "rounded-full bg-white" })}>
+            {t("clientResults.viewAll")}
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
       </div>

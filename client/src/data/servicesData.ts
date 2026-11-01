@@ -227,7 +227,7 @@ export const serviceData: Record<string, ServiceData> = {
     faqs: [
       {
         question: "What's the minimum ad spend?",
-        answer: "We recommend a minimum of $500/month in ad spend to have enough data for optimization. This is separate from our management fee."
+        answer: "We recommend a minimum of €500/month in ad spend to have enough data for optimization. This is separate from our management fee."
       },
       {
         question: "How long until I see results?",
@@ -286,7 +286,7 @@ export const serviceData: Record<string, ServiceData> = {
     faqs: [
       {
         question: "How much should I spend on Google Ads?",
-        answer: "It depends on your industry and goals. We typically recommend starting with $1,000-2,000/month and scaling up as we prove ROI."
+        answer: "It depends on your industry and goals. We typically recommend starting with €1,000-2,000/month and scaling up as we prove ROI."
       },
       {
         question: "What's the difference between Search and Display?",
@@ -522,7 +522,7 @@ export const serviceData: Record<string, ServiceData> = {
     faqs: [
       {
         question: "How long does branding take?",
-        answer: "Essentials package takes 2 weeks, Complete takes 4 weeks, and Premium takes 6 weeks from kickoff to final delivery."
+        answer: "Starter package takes 2 weeks, Growth takes 4 weeks, and Scale takes 6 weeks from kickoff to final delivery."
       },
       {
         question: "What if I don't like the designs?",

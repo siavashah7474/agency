@@ -33,6 +33,7 @@ Key facts:
 ## AI Products
 
 ### WhatsApp AI — 24/7 AI Agent for Leads (popular with clinics and medical tourism)
+- **Product site:** https://webimot.com (dedicated site for the WhatsApp AI product; agency page: https://webimotagency.com/products/whatsapp-ai)
 - **What it is:** A 24/7 AI receptionist connected to WhatsApp Business that handles all incoming patient inquiries automatically.
 - **Who it's for:** Hair transplant clinics, dental clinics, cosmetic surgery clinics, IVF and fertility centers, medical tourism agencies.
 - **What it does:** Replies to inquiries in any language within 1 second, qualifies leads, evaluates patient photos using Vision AI, books consultations directly into the clinic's calendar, sends automated follow-ups.

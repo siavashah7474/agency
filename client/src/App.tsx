@@ -7,6 +7,7 @@ import { BookingModalProvider } from "@/hooks/use-booking-modal";
 import { lazy, Suspense, useEffect, useState, type ComponentType } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieConsent from "@/components/CookieConsent";
 import { isPrerendering } from "@/lib/prerender";
 
 type PreloadableComponent = ComponentType<any> & { preload: () => Promise<unknown> };
@@ -197,7 +198,7 @@ function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
-      className={`fixed bottom-24 right-4 z-50 w-13 h-13 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-all duration-300 ${
+      className={`fixed bottom-24 right-4 z-50 w-13 h-13 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-all duration-300 [.chat-open_&]:pointer-events-none [.chat-open_&]:opacity-0 ${
         scrolled ? "opacity-100" : "pointer-events-none opacity-0 sm:pointer-events-auto sm:opacity-100"
       }`}
       style={{ width: 52, height: 52, backgroundColor: "#25D366" }}
@@ -223,6 +224,7 @@ export default function App() {
                 <ExitIntentPopup />
               </Suspense>
             )}
+            {!isPrerendering && <CookieConsent />}
             <WhatsAppButton />
             <Toaster />
           </BookingModalProvider>

@@ -21,18 +21,18 @@ export default function TermsOfService() {
             <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="container mx-auto px-6 max-w-4xl relative z-10">
-              <Breadcrumbs items={[{ label: "Terms of Service" }]} />
-              <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white">
+              <Breadcrumbs variant="dark" items={[{ label: "Terms of Service" }]} />
+              <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
                 Terms of Service
               </h1>
             </div>
           </section>
 
-          <div className="py-12">
-          <div className="container mx-auto px-6 max-w-4xl">
+          <div className="bg-white py-12 md:py-16">
+          <div className="container mx-auto max-w-3xl px-6">
 
-            <div className="prose prose-gray dark:prose-invert max-w-none">
-              <p className="text-muted-foreground mb-6">
+            <div className="text-base leading-relaxed [&_h2]:scroll-mt-24 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-slate-900 [&_p]:text-slate-600 [&_li]:text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-800 [&_section]:mb-10">
+              <p className="mb-8 inline-block rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm text-slate-600">
                 Last updated: March 2026
               </p>
 

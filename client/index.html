@@ -33,14 +33,6 @@
     <!-- AI crawlers: plain-text summaries of the site -->
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary" />
 
-    <!-- Home page follows the visitor's time of day: dark from 19:00 to 07:00 -->
-    <script>
-      (function () {
-        var h = new Date().getHours();
-        if (location.pathname === "/" && (h < 7 || h >= 19)) document.documentElement.classList.add("dark");
-      })();
-    </script>
-
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/logo1.png" />
     <link rel="apple-touch-icon" href="/logo1.png" />
@@ -50,6 +42,21 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      // Consent Mode v2: no cookies until the visitor accepts in the cookie banner
+      // (client/src/components/CookieConsent.tsx). A stored "granted" choice is applied here
+      // so returning visitors are measured from the first pageview.
+      (function () {
+        var granted = false;
+        try { granted = localStorage.getItem("cookie-consent") === "granted"; } catch (e) {}
+        var state = granted ? "granted" : "denied";
+        gtag('consent', 'default', {
+          ad_storage: state,
+          ad_user_data: state,
+          ad_personalization: state,
+          analytics_storage: state,
+          wait_for_update: 500
+        });
+      })();
       gtag('js', new Date());
       gtag('config', 'G-FV6M9N8FQ3');
     </script>

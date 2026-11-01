@@ -2,23 +2,39 @@ import { useRoute, Link, useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { blogPosts } from "@/data/blogData";
+import { sortedBlogPosts as blogPosts } from "@/data/blogData";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, ArrowLeft, ArrowRight, MessageSquare, Phone } from "lucide-react";
+import { useBookingModal } from "@/hooks/use-booking-modal";
+import type { MouseEvent } from "react";
 const WHATSAPP_LINK = "https://wa.me/31628753175";
 
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
   const [, navigate] = useLocation();
+  const { openModal } = useBookingModal();
   const slug = params?.slug;
-  
+
+  // blogPosts is sorted newest-first, so "prev" is the newer post and "next" the older one.
   const post = blogPosts.find(p => p.slug === slug);
   const currentIndex = blogPosts.findIndex(p => p.slug === slug);
   const prevPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
   const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
-  
+
+  // Internal links inside the rendered markdown are plain <a> tags; route them
+  // through wouter so they don't trigger a full page reload.
+  const handleContentClick = (e: MouseEvent<HTMLDivElement>) => {
+    const anchor = (e.target as HTMLElement).closest("a");
+    if (!anchor || anchor.target === "_blank") return;
+    const href = anchor.getAttribute("href");
+    if (!href || !href.startsWith("/")) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+    e.preventDefault();
+    navigate(href);
+  };
+
   if (!post) {
     return (
       <div className="min-h-screen flex flex-col">
@@ -133,6 +149,7 @@ export default function BlogPost() {
                       prose-table:my-6
                       prose-th:bg-muted prose-th:p-3 prose-th:text-left
                       prose-td:p-3 prose-td:border-b"
+                    onClick={handleContentClick}
                     dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
                   />
                   
@@ -166,12 +183,14 @@ export default function BlogPost() {
                         <p className="text-sm text-muted-foreground mb-4">
                           Every business is unique. Book a free strategy call to discuss what's best for your specific situation.
                         </p>
-                        <Link href="/book-consultation">
-                          <Button data-testid="button-blog-cta" className="w-full mb-3">
-                            <Phone className="mr-2 h-4 w-4" />
-                            Book Free Strategy Call
-                          </Button>
-                        </Link>
+                        <Button
+                          data-testid="button-blog-cta"
+                          className="w-full mb-3"
+                          onClick={() => openModal()}
+                        >
+                          <Phone className="mr-2 h-4 w-4" />
+                          Book Free Strategy Call
+                        </Button>
                         <a
                           href={WHATSAPP_LINK}
                           target="_blank"
@@ -238,19 +257,18 @@ export default function BlogPost() {
                 Ready to Transform Your Business?
               </h2>
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                Don't guess what works. Book a free 20-minute strategy call and get expert advice tailored to your business.
+                Don't guess what works. Book a free 30-minute strategy call and get expert advice tailored to your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/book-consultation">
-                  <Button
-                    data-testid="button-blog-footer-cta"
-                    size="lg"
-                    className="bg-white text-primary hover:bg-white/90"
-                  >
-                    Book Your Free Strategy Call
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
+                <Button
+                  data-testid="button-blog-footer-cta"
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90"
+                  onClick={() => openModal()}
+                >
+                  Book Your Free Strategy Call
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                   <Button
                     data-testid="button-blog-footer-whatsapp"
@@ -298,6 +316,11 @@ function formatContent(content: string): string {
       if (line.startsWith('- ')) {
         return `<li>${formatInlineMarkdown(escapeHtml(line.slice(2)))}</li>`;
       }
+      const ordered = /^\d+\.\s+(.*)$/.exec(line);
+      if (ordered) {
+        // Temporary tag so ordered items can be grouped separately from bullet items below.
+        return `<oli>${formatInlineMarkdown(escapeHtml(ordered[1]))}</oli>`;
+      }
       if (line.startsWith('| ')) {
         // Skip separator rows (| --- | --- |)
         if (/^\|[\s\-:|]+\|$/.test(line.trim())) return '';
@@ -311,12 +334,26 @@ function formatContent(content: string): string {
     })
     .join('\n')
     .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`)
+    .replace(/(<oli>.*<\/oli>\n?)+/g, (match) => `<ol>${match.replace(/<(\/?)oli>/g, '<$1li>')}</ol>`)
     .replace(/(<tr>.*<\/tr>\n?)+/g, (match) => `<div class="overflow-x-auto"><table class="w-full border-collapse my-4">${match}</table></div>`);
+}
+
+const LINK_CLASS = 'font-medium underline underline-offset-2 text-primary hover:text-primary/80';
+
+function isInternalLink(href: string): boolean {
+  return href.startsWith('/') || href.startsWith('#') || /^https?:\/\/(www\.)?webimotagency\.com(\/|$)/i.test(href);
 }
 
 function formatInlineMarkdown(text: string): string {
   return text
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="font-medium underline underline-offset-2 text-primary hover:text-primary/80">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_m, label: string, href: string) => {
+      if (isInternalLink(href)) {
+        // Internal links: same tab, and strip the absolute domain so wouter can handle them.
+        const path = href.replace(/^https?:\/\/(www\.)?webimotagency\.com/i, '') || '/';
+        return `<a href="${path}" class="${LINK_CLASS}">${label}</a>`;
+      }
+      return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="${LINK_CLASS}">${label}</a>`;
+    })
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*]+)\*/g, '<em>$1</em>');
 }

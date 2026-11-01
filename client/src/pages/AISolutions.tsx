@@ -6,6 +6,7 @@ import { Check, ArrowRight, Clock, CheckCircle2, FileText, Globe, Mail, Users, C
 import SEO from "@/components/SEO";
 import whatsappImage from "@assets/generated_images/whatsapp_ai_agent_chat.webp";
 import AIProductCard from "@/components/AIProductCard";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 
 const additionalProducts = [
   {
@@ -180,6 +181,7 @@ function OpsAutopilotDashboard() {
 }
 
 export default function AISolutions() {
+  const { openModal } = useBookingModal();
   return (
     <>
       <SEO
@@ -445,11 +447,9 @@ export default function AISolutions() {
                     </p>
                   </div>
                 </div>
-                <Link href="/book-consultation">
-                  <Button data-testid="button-book-demo" size="lg">
-                    Book Your Strategy Call
-                  </Button>
-                </Link>
+                <Button data-testid="button-book-demo" size="lg" onClick={() => openModal()}>
+                  Book Your Strategy Call
+                </Button>
               </div>
             </div>
           </section>

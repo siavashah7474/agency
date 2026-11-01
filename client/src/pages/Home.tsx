@@ -14,7 +14,6 @@ import StatsStrip from "@/components/StatsStrip";
 import IntegrationsSection from "@/components/IntegrationsSection";
 import RiskFreeStartSection from "@/components/RiskFreeStartSection";
 import SectionEyebrow from "@/components/SectionEyebrow";
-import { useTimeOfDayTheme } from "@/hooks/use-time-of-day-theme";
 import {
   Accordion,
   AccordionContent,
@@ -37,14 +36,6 @@ import { useTranslation } from "react-i18next";
 export default function Home() {
   const { openModal } = useBookingModal();
   const { t } = useTranslation();
-  const theme = useTimeOfDayTheme();
-
-  // The home page follows the visitor's time of day; index.html applies the class before
-  // first paint so pre-rendered HTML shows the right theme. Other pages stay light.
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-    return () => document.documentElement.classList.remove("dark");
-  }, [theme]);
 
   const faqs = t("home.faqs", { returnObjects: true }) as Array<{ question: string; answer: string }>;
   const testimonials = t("home.testimonials", { returnObjects: true }) as Array<{ name: string; role: string; company: string; content: string }>;

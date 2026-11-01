@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { useBookingModal } from "@/hooks/use-booking-modal";
-import { ArrowRight, Star, TrendingUp, Users, Clock } from "lucide-react";
+import { ArrowRight, Bot, Star, TrendingUp, Users, Clock } from "lucide-react";
 
 const testimonials = [
   {
@@ -20,7 +20,7 @@ const testimonials = [
     company: "Clinish",
     industry: "Dental · Istanbul",
     content: "The AI agent handles 80% of our inquiries without any human intervention. Our conversion rate skyrocketed because we now respond instantly, even at 3am when patients in the US are researching.",
-    result: "+40% consultations booked",
+    result: "+40% patient inquiries",
   },
   {
     name: "Ramazan Sabaz",
@@ -48,8 +48,8 @@ const testimonials = [
   },
   {
     name: "Mehmet Salih",
-    role: "Owner",
-    company: "MSB Aesthetics",
+    role: "Medical Director",
+    company: "MSB Aesthetic Istanbul",
     industry: "Cosmetic Surgery · Istanbul",
     content: "We were sceptical at first, but the results speak for themselves. The AI handles patient inquiries in 8 languages, evaluates photos, and books consultations automatically.",
     result: "8 languages handled — 24/7",
@@ -99,7 +99,7 @@ const stats = [
   { value: "50+", label: "Businesses transformed", icon: Users },
   { value: "12+", label: "Countries served", icon: TrendingUp },
   { value: "< 60s", label: "Avg. lead response time", icon: Clock },
-  { value: "4.9 / 5", label: "Average client rating", icon: Star },
+  { value: "24/7", label: "AI availability", icon: Bot },
 ];
 
 export default function Clients() {

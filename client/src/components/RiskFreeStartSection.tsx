@@ -14,39 +14,41 @@ export default function RiskFreeStartSection() {
   const { openModal } = useBookingModal();
 
   return (
-    <section className="bg-white py-16 md:py-24 dark:bg-[#020817]">
+    <section className="bg-white py-16 md:py-24 dark:bg-[#020817]" aria-labelledby="risk-free-heading">
       <div className="container mx-auto px-6">
-        <div className="rounded-3xl border border-emerald-200 bg-gradient-to-b from-emerald-50 to-white px-6 py-12 md:px-12 md:py-16 dark:border-emerald-500/20 dark:from-emerald-500/10 dark:to-transparent">
+        <div className="rounded-3xl border border-emerald-200 bg-gradient-to-b from-emerald-50 to-white px-5 py-12 sm:px-8 md:px-12 md:py-16 dark:border-emerald-500/20 dark:from-emerald-500/10 dark:to-transparent">
           <div className="mx-auto mb-10 max-w-2xl text-center">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700 dark:border-emerald-500/30 dark:bg-transparent dark:text-emerald-400">
-              <ShieldCheck className="h-3.5 w-3.5" /> Risk-free start
-            </div>
-            <h2 className="mb-4 text-3xl font-bold text-slate-900 md:text-4xl dark:text-white">
+            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-white px-3 py-1 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-emerald-800 md:text-xs dark:border-emerald-500/30 dark:bg-transparent dark:text-emerald-400">
+              <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" /> Risk-free start
+            </p>
+            <h2 id="risk-free-heading" className="mb-4 text-3xl font-bold leading-[1.15] text-slate-900 md:text-4xl dark:text-white">
               See the plan before you spend a cent.
             </h2>
-            <p className="text-lg text-slate-600 dark:text-white/60">
+            <p className="text-lg leading-relaxed text-slate-600 dark:text-white/60">
               Every engagement starts with a free AI audit. You get a clear roadmap with expected ROI, then you decide. The only thing left for you: picking where to start.
             </p>
           </div>
 
-          <div className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {promises.map((p) => (
-              <div key={p.title} className="rounded-2xl border border-emerald-100 bg-white p-6 dark:border-white/10 dark:bg-white/5">
-                <Check className="mb-3 h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+              <li key={p.title} className="surface-card border-emerald-100 p-6 dark:border-white/10 dark:bg-white/5">
+                <span className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-500/15" aria-hidden="true">
+                  <Check className="h-4 w-4 text-emerald-700 dark:text-emerald-400" />
+                </span>
                 <h3 className="mb-1.5 font-semibold text-slate-900 dark:text-white">{p.title}</h3>
                 <p className="text-sm leading-relaxed text-slate-600 dark:text-white/55">{p.desc}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
 
           <div className="mt-10 text-center">
             <Button
               data-testid="button-risk-free-audit"
               size="lg"
-              className="rounded-full bg-emerald-700 px-8 text-white hover:bg-emerald-800"
+              className="rounded-full bg-slate-900 px-8 text-white hover:bg-slate-800"
               onClick={() => openModal()}
             >
-              Claim my free AI audit <ArrowRight className="ml-2 h-4 w-4" />
+              Claim my free AI audit <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Button>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { ArrowRight, BarChart3, Bot, Workflow, type LucideIcon } from "lucide-re
 import { SiWhatsapp } from "react-icons/si";
 import type { IconType } from "react-icons";
 import { Button } from "@/components/ui/button";
-import SectionEyebrow from "@/components/SectionEyebrow";
+import { SectionHeader } from "@/components/SectionEyebrow";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 
 interface Service {
@@ -75,28 +75,25 @@ export default function WhatWeDoSection() {
     <section className="relative overflow-hidden bg-slate-50 py-16 md:py-24 dark:bg-[#020817]">
       <div className="absolute inset-0 neural-grid-adaptive pointer-events-none" />
       <div className="container relative z-10 mx-auto px-6">
-        <div className="mx-auto mb-12 max-w-2xl text-center">
-          <SectionEyebrow className="mb-4">What we do</SectionEyebrow>
-          <h2 className="mb-4 text-3xl font-bold text-slate-900 md:text-4xl dark:text-white">
-            What we do for your business
-          </h2>
-          <p className="text-lg text-slate-600 dark:text-white/50">
-            We start with how your business works, then put AI where it saves the most time and money.
-          </p>
-        </div>
+        <SectionHeader
+          eyebrow="What we do"
+          title="What we do for your business"
+          lead="We start with how your business works, then put AI where it saves the most time and money."
+          className="mb-12"
+        />
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {services.map((s, i) => (
             <div
               key={s.title}
-              className={`relative flex flex-col rounded-2xl border bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl dark:bg-slate-900 dark:hover:shadow-black/30 ${
+              className={`surface-card-interactive relative flex flex-col p-6 dark:bg-slate-900 dark:hover:shadow-black/30 ${
                 s.startsHere
                   ? "border-blue-300 ring-1 ring-blue-200 dark:border-blue-500/40 dark:ring-blue-500/20"
                   : "border-slate-200 dark:border-white/10"
               }`}
             >
               {s.startsHere && (
-                <span className="absolute -top-3 left-6 rounded-full bg-slate-900 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white dark:bg-white dark:text-slate-900">
+                <span className="absolute -top-3 left-6 rounded-full bg-slate-900 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white dark:bg-white dark:text-slate-900">
                   Starts here
                 </span>
               )}
@@ -104,18 +101,18 @@ export default function WhatWeDoSection() {
                 <div className={`flex h-11 w-11 items-center justify-center rounded-xl ${s.iconStyle}`}>
                   <s.icon className="h-5 w-5" />
                 </div>
-                <span className="font-mono text-sm font-semibold text-slate-300 dark:text-white/20">0{i + 1}</span>
+                <span className="font-mono text-sm font-semibold text-slate-300 dark:text-white/20" aria-hidden="true">0{i + 1}</span>
               </div>
 
               <h3 className="mb-3 text-lg font-bold leading-snug text-slate-900 dark:text-white">{s.title}</h3>
 
               <dl className="mb-5 flex-1 space-y-3 text-sm leading-relaxed">
                 <div>
-                  <dt className="mb-0.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-white/35">The problem</dt>
+                  <dt className="mb-0.5 text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-white/45">The problem</dt>
                   <dd className="text-slate-600 dark:text-white/55">{s.problem}</dd>
                 </div>
                 <div>
-                  <dt className="mb-0.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-white/35">What we build</dt>
+                  <dt className="mb-0.5 text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-white/45">What we build</dt>
                   <dd className="text-slate-700 dark:text-white/75">{s.solution}</dd>
                 </div>
               </dl>
@@ -126,18 +123,18 @@ export default function WhatWeDoSection() {
 
               <Link
                 href={s.href}
-                className="group inline-flex items-center gap-1.5 text-sm font-medium text-slate-900 dark:text-white"
+                className="link-inline group inline-flex min-h-10 items-center gap-1.5 rounded-md text-sm text-primary dark:text-white"
               >
                 {s.linkLabel}
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </Link>
             </div>
           ))}
         </div>
 
         {/* How it starts */}
-        <div className="mx-auto mt-14 max-w-4xl rounded-2xl border border-slate-200 bg-white p-6 md:p-8 dark:border-white/10 dark:bg-slate-900/60">
-          <div className="mb-6 text-center text-sm font-semibold text-slate-900 dark:text-white">How it works</div>
+        <div className="surface-card mx-auto mt-14 max-w-4xl p-6 md:p-8 dark:border-white/10 dark:bg-slate-900/60">
+          <h3 className="mb-6 text-center text-base font-semibold text-slate-900 dark:text-white">How it works</h3>
           <ol className="flex flex-col gap-4 md:flex-row md:items-center md:gap-0">
             {steps.map((step, i) => (
               <li key={step.label} className="flex items-center md:flex-1">
@@ -147,7 +144,7 @@ export default function WhatWeDoSection() {
                   </span>
                   <div>
                     <div className="text-sm font-semibold text-slate-900 dark:text-white">{step.label}</div>
-                    <div className="text-xs text-slate-500 dark:text-white/45">{step.time}</div>
+                    <div className="text-sm text-slate-600 dark:text-white/55">{step.time}</div>
                   </div>
                 </div>
                 {i < steps.length - 1 && (
@@ -164,9 +161,9 @@ export default function WhatWeDoSection() {
               className="rounded-full bg-slate-900 px-8 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-white/90"
               onClick={() => openModal()}
             >
-              Start with a free AI audit <ArrowRight className="ml-2 h-4 w-4" />
+              Start with a free AI audit <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Button>
-            <p className="mt-3 text-xs text-slate-500 dark:text-white/40">No credit card · No commitment · Results in 3 days</p>
+            <p className="mt-3 text-sm text-slate-600 dark:text-white/50">No credit card · No commitment · Results in 3 days</p>
           </div>
         </div>
       </div>

@@ -154,7 +154,7 @@
         "name": "Pouyan Azizpour",
         "role": "CEO",
         "company": "Wavemed.io",
-        "content": "El Generador de Blog SEO de Webimot ha sido un cambio de juego. Publicamos 20 posts optimizados al mes sin ningún trabajo manual. Nuestro tráfico orgánico aumentó un 20% en 6 meses."
+        "content": "El Generador de Blog SEO de Webimot ha sido un cambio de juego. Publicamos 20 posts optimizados al mes sin ningún trabajo manual. Nuestro tráfico orgánico aumentó significativamente a los pocos meses de empezar."
       },
       {
         "name": "Dr. Hamed Gholami",
@@ -227,10 +227,10 @@
       "ROI medible en cada campaña"
     ],
     "stats": [
-      { "number": "15+", "label": "Clientes Atendidos" },
+      { "number": "50+", "label": "Clientes Atendidos" },
       { "number": "60%", "label": "Crecimiento Medio de Tráfico" },
       { "number": "24/7", "label": "Automatización IA" },
-      { "number": "25+", "label": "Idiomas Soportados" }
+      { "number": "50+", "label": "Idiomas Soportados" }
     ],
     "medBadge": "Enfoque Principal",
     "medTitle": "Turismo Médico y Clínicas",
@@ -315,7 +315,7 @@
       "note": "* ¡Nuestros sistemas IA funcionan 24/7, incluso cuando estamos cerrados!"
     },
     "ctaTitle": "¿Listo para Empezar?",
-    "ctaSubtitle": "Reserva una llamada estratégica gratuita de 20 minutos para hablar sobre cómo la automatización IA puede transformar tu negocio",
+    "ctaSubtitle": "Reserva una llamada estratégica gratuita de 30 minutos para hablar sobre cómo la automatización IA puede transformar tu negocio",
     "ctaButton": "Reserva Tu Llamada Estratégica Gratis"
   },
   "clients": {
@@ -371,7 +371,7 @@
     "desc": "Obtén una <strong>auditoría de marketing gratuita</strong> y descubre cómo podemos ayudarte a generar más leads. Sin compromiso.",
     "cta": "Obtener Mi Auditoría Gratuita",
     "dismiss": "No gracias, paso del consejo gratuito",
-    "trust": "Únete a más de 200 negocios que confían en Webimot para sus necesidades de marketing"
+    "trust": "Únete a más de 50 negocios que confían en Webimot para sus necesidades de marketing"
   },
   "caseStudies": {
     "title": "Casos de Éxito",

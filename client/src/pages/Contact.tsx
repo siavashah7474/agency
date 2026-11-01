@@ -28,6 +28,8 @@ export default function Contact() {
     email: "",
     phone: "",
     message: "",
+    // Honeypot — hidden from humans; the API drops any submission that fills it in.
+    website: "",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -59,7 +61,7 @@ export default function Contact() {
         title: "Message sent!",
         description: "We'll get back to you within 24 hours.",
       });
-      setFormData({ name: "", email: "", phone: "", message: "" });
+      setFormData({ name: "", email: "", phone: "", message: "", website: "" });
     } catch (error) {
       toast({
         title: "Error",
@@ -174,6 +176,18 @@ export default function Contact() {
                   </CardHeader>
                   <CardContent>
                     <form onSubmit={handleSubmit} className="space-y-4">
+                      <input
+                        type="text"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        aria-hidden="true"
+                        className="absolute -left-[9999px] h-0 w-0 opacity-0"
+                        value={formData.website}
+                        onChange={(e) =>
+                          setFormData({ ...formData, website: e.target.value })
+                        }
+                      />
                       <div>
                         <Label htmlFor="name">Name *</Label>
                         <Input
@@ -308,7 +322,7 @@ export default function Contact() {
                 Ready to Get Started?
               </h2>
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                Book a free 20-minute strategy call to discuss how AI automation
+                Book a free 30-minute strategy call to discuss how AI automation
                 can transform your business
               </p>
               <Link href="/book-consultation">

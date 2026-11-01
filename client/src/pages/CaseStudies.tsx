@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { caseStudies } from "@/data/caseStudiesData";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 import {
   ArrowRight,
   TrendingUp,
@@ -21,6 +22,7 @@ const industryIcons: Record<string, typeof TrendingUp> = {
 };
 
 export default function CaseStudies() {
+  const { openModal } = useBookingModal();
   return (
     <>
       <SEO
@@ -140,12 +142,10 @@ export default function CaseStudies() {
                 Let's discuss how we can help you achieve similar results for
                 your business
               </p>
-              <Link href="/book-consultation">
-                <Button data-testid="button-case-studies-cta" size="lg">
-                  Book Your Free Strategy Call
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <Button data-testid="button-case-studies-cta" size="lg" onClick={() => openModal()}>
+                Book Your Free Strategy Call
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </section>
         </main>

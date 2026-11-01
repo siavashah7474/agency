@@ -8,9 +8,11 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { caseStudies } from "@/data/caseStudiesData";
 import { ArrowRight, Quote, CheckCircle, Clock, MapPin, Building } from "lucide-react";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 
 export default function CaseStudyDetail() {
   const { slug } = useParams<{ slug: string }>();
+  const { openModal } = useBookingModal();
   const study = caseStudies.find(s => s.slug === slug);
 
   if (!study) {
@@ -148,16 +150,15 @@ export default function CaseStudyDetail() {
                       <p className="text-sm opacity-90 mb-4">
                         Let's discuss how we can help your business achieve the same growth.
                       </p>
-                      <Link href="/book-consultation">
-                        <Button 
-                          variant="secondary" 
-                          className="w-full"
-                          data-testid="button-case-study-cta"
-                        >
-                          Book Free Strategy Call
-                          <ArrowRight className="ml-2 h-4 w-4" />
-                        </Button>
-                      </Link>
+                      <Button
+                        variant="secondary"
+                        className="w-full"
+                        data-testid="button-case-study-cta"
+                        onClick={() => openModal()}
+                      >
+                        Book Free Strategy Call
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
                     </CardContent>
                   </Card>
                 </div>

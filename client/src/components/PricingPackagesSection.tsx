@@ -9,7 +9,7 @@ const packages = [
     label: "Great for getting started",
     bestFor: "Small businesses and solo operators",
     popular: false,
-    items: ["1 AI product set up and managed", "Monthly performance report (ClearDesk)", "Email support", "1 integration with your existing tools", "Onboarding and training session"],
+    items: ["1 AI product set up and managed", "Weekly performance report (ClearDesk)", "Email support", "1 integration with your existing tools", "Onboarding and training session"],
   },
   {
     name: "Growth",

@@ -15,6 +15,7 @@ export const bookings = pgTable("bookings", {
   email: text("email").notNull(),
   phone: text("phone").notNull(),
   service: text("service").notNull(),
+  message: text("message"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
@@ -37,6 +38,7 @@ export const insertBookingSchema = createInsertSchema(bookings).pick({
   email: true,
   phone: true,
   service: true,
+  message: true,
 });
 
 export const insertContactSchema = createInsertSchema(contacts).pick({

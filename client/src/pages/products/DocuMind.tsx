@@ -11,7 +11,7 @@ export default function DocuMindPage() {
       heroBrief="Upload any document — invoice, contract, intake form, or medical record. DocuMind reads it, extracts every piece of data, fills your CRM, and flags anything missing. Hours of manual work done in under 30 seconds."
       results={[
         { value: "< 30s", label: "Per document", context: "vs. 5–10 minutes of manual data entry" },
-        { value: "100%", label: "Field accuracy", context: "AI flags anything ambiguous for review" },
+        { value: "Human-verified", label: "Accuracy", context: "AI flags anything ambiguous for review" },
         { value: "40h+", label: "Saved per month", context: "For a clinic processing 300+ documents" },
       ]}
       problemParagraphs={[

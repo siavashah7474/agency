@@ -7,7 +7,7 @@ import SEO from "@/components/SEO";
 
 export default function BookConsultation() {
   const benefits = [
-    "Free 20-minute strategy session",
+    "Free 30-minute strategy session",
     "Personalized AI automation roadmap",
     "ROI analysis for your business",
     "No obligation or pressure",
@@ -68,7 +68,7 @@ export default function BookConsultation() {
                 <div>
                   <h2 className="text-3xl font-bold mb-6">What to Expect</h2>
                   <p className="text-lg text-muted-foreground mb-6">
-                    In this free 20-minute strategy session, we'll analyze your
+                    In this free 30-minute strategy session, we'll analyze your
                     current operations and show you exactly how AI automation
                     can help you:
                   </p>
@@ -88,7 +88,7 @@ export default function BookConsultation() {
                         <div>
                           <h3 className="font-semibold mb-1">Duration</h3>
                           <p className="text-sm text-muted-foreground">
-                            20 minutes
+                            30 minutes
                           </p>
                         </div>
                       </div>

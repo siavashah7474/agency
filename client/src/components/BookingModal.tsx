@@ -43,6 +43,8 @@ const bookingSchema = z.object({
     .refine((v) => v.replace(/\D/g, "").length >= 7, "Please enter a valid phone number, e.g. +31 6 1234 5678"),
   service: z.string().min(1, "Please select a service"),
   message: z.string().optional(),
+  // Honeypot — hidden from humans; the API drops any submission that fills it in.
+  website: z.string().optional(),
 });
 
 type BookingFormValues = z.infer<typeof bookingSchema>;
@@ -88,10 +90,12 @@ export default function BookingModal({
   const onSubmit = async (data: BookingFormValues) => {
     setIsSubmitting(true);
     try {
+      // Send the readable service name, not the URL slug, so the lead email makes sense.
+      const serviceLabel = serviceData[data.service]?.title ?? data.service;
       const response = await fetch("/api/booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, service: serviceLabel }),
       });
 
       if (!response.ok) {
@@ -109,8 +113,8 @@ export default function BookingModal({
       trackEvent("form_submission", "booking", data.service);
 
       toast({
-        title: "Done! Check your inbox.",
-        description: "We'll send you a calendar link shortly so you can pick a time that works for you.",
+        title: "Request received!",
+        description: "We've emailed you a confirmation and will reply within a few hours with available times for your call.",
       });
 
       form.reset();
@@ -141,12 +145,20 @@ export default function BookingModal({
         <DialogHeader>
           <DialogTitle>Book Your Free AI Audit</DialogTitle>
           <DialogDescription>
-            Fill in the form — we'll send you a calendar link within a few hours so you can pick a time that works for you.
+            Fill in the form — we'll reply within a few hours with available times for your free 30-minute strategy call.
           </DialogDescription>
         </DialogHeader>
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <input
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="absolute -left-[9999px] h-0 w-0 opacity-0"
+              {...form.register("website")}
+            />
             <FormField
               control={form.control}
               name="name"
@@ -155,7 +167,7 @@ export default function BookingModal({
                   <FormLabel>Name *</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="John Doe"
+                      placeholder="Your name"
                       {...field}
                       disabled={isSubmitting}
                     />
@@ -174,7 +186,7 @@ export default function BookingModal({
                   <FormControl>
                     <Input
                       type="email"
-                      placeholder="john@example.com"
+                      placeholder="you@company.com"
                       {...field}
                       disabled={isSubmitting}
                     />
@@ -193,7 +205,7 @@ export default function BookingModal({
                   <FormControl>
                     <Input
                       type="tel"
-                      placeholder="+1 234 567 8900"
+                      placeholder="+31 6 1234 5678"
                       {...field}
                       disabled={isSubmitting}
                     />

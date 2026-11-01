@@ -3,7 +3,8 @@ import { ArrowRight, Zap, Repeat, FileStack, TrendingUp } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import SectionEyebrow from "@/components/SectionEyebrow";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 
 interface Product {
@@ -82,16 +83,14 @@ export default function Solutions() {
           <section className="relative py-16 md:py-24 overflow-hidden bg-[#020817]">
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="container mx-auto px-6 relative z-10 text-center">
-              <div className="inline-flex items-center gap-2 bg-white/8 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-white/60">7 AI systems, organized by what they solve</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+              <SectionEyebrow tone="dark" className="mb-6">7 AI systems, organized by what they solve</SectionEyebrow>
+              <h1 className="mx-auto mb-6 max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
                 AI systems that digitalise every part of your business
               </h1>
-              <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-8">
+              <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl">
                 We start by mapping how your business works, then deploy the AI systems that save the most time: for leads, follow-up, admin, reporting and content. Each one connects to the tools you already use and runs on its own or together.
               </p>
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>
+              <Button size="lg" className="rounded-full border-white bg-white text-slate-900 hover:bg-white/90 focus-visible:ring-offset-[#020817]" onClick={() => openModal()}>
                 Book a Free AI Audit
               </Button>
             </div>
@@ -101,7 +100,7 @@ export default function Solutions() {
             const Icon = group.icon;
             const dark = i % 2 === 1;
             return (
-              <section key={group.label} className={`py-16 md:py-20 ${dark ? "bg-slate-950 relative overflow-hidden" : ""}`}>
+              <section key={group.label} className={`py-16 md:py-24 ${dark ? "bg-slate-950 relative overflow-hidden" : "bg-white"}`} aria-labelledby={`solutions-group-${i}`}>
                 {dark && <div className="absolute inset-0 neural-grid-dark pointer-events-none" />}
                 <div className="container mx-auto px-6 relative z-10">
                   <div className="max-w-2xl mb-10">
@@ -109,25 +108,25 @@ export default function Solutions() {
                       <Icon className="w-4 h-4" />
                       <span className="text-sm font-medium">{group.label}</span>
                     </div>
-                    <h2 className={`text-2xl md:text-3xl font-bold mb-3 ${dark ? "text-white" : ""}`}>{group.title}</h2>
-                    <p className={dark ? "text-white/50" : "text-muted-foreground"}>{group.description}</p>
+                    <h2 id={`solutions-group-${i}`} className={`mb-3 text-2xl font-bold md:text-3xl ${dark ? "text-white" : "text-slate-900"}`}>{group.title}</h2>
+                    <p className={`text-base leading-relaxed md:text-lg ${dark ? "text-white/65" : "text-slate-600"}`}>{group.description}</p>
                   </div>
 
                   <div className={`grid gap-6 ${group.products.length > 1 ? "md:grid-cols-2" : "md:grid-cols-2"}`}>
                     {group.products.map((p) => (
-                      <Link key={p.href} href={p.href}>
-                        <div className={`group h-full flex flex-col p-6 rounded-xl border transition-all duration-200 cursor-pointer hover:-translate-y-0.5 ${
+                      <Link key={p.href} href={p.href} className={`group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${dark ? "focus-visible:ring-offset-slate-950" : ""}`}>
+                        <div className={`flex h-full flex-col rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-0.5 ${
                           dark
-                            ? `bg-slate-900 hover:border-secondary/30 ${p.flagship ? "border-secondary/30 ring-1 ring-secondary/20" : "border-white/6"}`
-                            : "bg-card border-border hover:border-primary/30 hover:shadow-md"
+                            ? `bg-slate-900 hover:border-secondary/40 ${p.flagship ? "border-secondary/30 ring-1 ring-secondary/20" : "border-white/10"}`
+                            : "surface-card-interactive"
                         }`}>
-                          {p.flagship && <span className="text-[10px] font-bold tracking-widest uppercase text-secondary mb-2">Flagship</span>}
-                          <div className="text-3xl mb-3">{p.emoji}</div>
-                          <div className={`text-lg font-bold mb-1 ${dark ? "text-white" : ""}`}>{p.name}</div>
-                          <div className={`text-sm mb-3 font-medium ${dark ? "text-secondary/80" : "text-primary"}`}>{p.tagline}</div>
-                          <div className={`text-sm leading-relaxed flex-1 ${dark ? "text-white/45" : "text-muted-foreground"}`}>{p.description}</div>
-                          <div className={`flex items-center gap-1 text-sm mt-4 transition-colors ${dark ? "text-white/30 group-hover:text-secondary" : "text-muted-foreground group-hover:text-primary"}`}>
-                            Explore <ArrowRight className="h-3.5 w-3.5" />
+                          {p.flagship && <span className="mb-2 font-mono text-[11px] font-bold uppercase tracking-widest text-secondary">Flagship</span>}
+                          <div className="mb-3 text-3xl" aria-hidden="true">{p.emoji}</div>
+                          <h3 className={`mb-1 text-lg font-bold ${dark ? "text-white" : "text-slate-900"}`}>{p.name}</h3>
+                          <div className={`mb-3 text-sm font-medium ${dark ? "text-secondary" : "text-primary"}`}>{p.tagline}</div>
+                          <p className={`flex-1 text-sm leading-relaxed ${dark ? "text-white/65" : "text-slate-600"}`}>{p.description}</p>
+                          <div className={`mt-4 flex items-center gap-1 text-sm font-medium transition-colors ${dark ? "text-white/60 group-hover:text-secondary" : "text-primary group-hover:text-slate-900"}`}>
+                            Explore <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                           </div>
                         </div>
                       </Link>
@@ -138,28 +137,26 @@ export default function Solutions() {
             );
           })}
 
-          <section className="py-16 md:py-20 bg-muted/30">
+          <section className="bg-slate-50 py-16 md:py-24">
             <div className="container mx-auto px-6 text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-3">Also need ads, SEO, or a new website?</h2>
-              <p className="text-muted-foreground max-w-xl mx-auto mb-6">
+              <h2 className="mb-3 text-2xl font-bold text-slate-900 md:text-3xl">Also need ads, SEO, or a new website?</h2>
+              <p className="mx-auto mb-6 max-w-xl text-base leading-relaxed text-slate-600 md:text-lg">
                 We also run traditional marketing services — Meta Ads, Google Ads, SEO, website development, branding, and more.
               </p>
-              <Link href="/services">
-                <Button variant="outline" size="lg">
-                  See All Services <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+              <Link href="/services" className={buttonVariants({ variant: "outline", size: "lg", className: "rounded-full bg-white" })}>
+                See All Services <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
           </section>
 
-          <section className="relative py-20 overflow-hidden bg-[#020817]">
+          <section className="relative overflow-hidden bg-[#020817] py-16 md:py-24">
             <div className="absolute inset-0 neural-grid pointer-events-none" />
-            <div className="container mx-auto px-6 text-center text-white relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Not sure which one you need?</h2>
+            <div className="container relative z-10 mx-auto px-6 text-center text-white">
+              <h2 className="mb-4 text-3xl font-bold md:text-4xl">Not sure which one you need?</h2>
               <p className="text-lg text-white/70 max-w-xl mx-auto mb-8">
                 Book a free 30-minute AI audit — we'll map your biggest opportunities and recommend exactly where to start.
               </p>
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>
+              <Button size="lg" className="rounded-full border-white bg-white text-slate-900 hover:bg-white/90 focus-visible:ring-offset-[#020817]" onClick={() => openModal()}>
                 Book My Free AI Audit
               </Button>
             </div>

@@ -1,6 +1,8 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import SectionEyebrow from "@/components/SectionEyebrow";
+import { SectionHeader } from "@/components/SectionEyebrow";
+
+const cardFocus = "block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
 
 const featured = [
   {
@@ -64,32 +66,29 @@ export default function WhoWeHelpSection() {
       <div className="container mx-auto px-6 relative z-10">
 
         {/* Header */}
-        <div className="text-center mb-12">
-          <SectionEyebrow className="mb-4">Industries we transform</SectionEyebrow>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">
-            Three Industries. One Mission.
-          </h2>
-          <p className="text-lg text-slate-600 dark:text-white/50 max-w-2xl mx-auto">
-            We go deep — not wide. Our AI transformation systems are purpose-built for the specific workflows, challenges, and growth levers of each vertical.
-          </p>
-        </div>
+        <SectionHeader
+          eyebrow="Industries we transform"
+          title="Three Industries. One Mission."
+          lead="We go deep — not wide. Our AI transformation systems are purpose-built for the specific workflows, challenges, and growth levers of each vertical."
+          className="mb-12"
+        />
 
         {/* 3 Featured cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-6">
           {featured.map((card) => (
-            <Link key={card.title} href={card.href}>
-              <div className={`group bg-white dark:bg-slate-900 rounded-xl overflow-hidden flex flex-col h-full border border-slate-200 dark:border-white/[0.06] border-t-2 ${card.accentBorder} hover:border-slate-300 dark:hover:border-white/15 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer`}>
+            <Link key={card.title} href={card.href} className={`group ${cardFocus}`} aria-label={`${card.title}: see how we help`}>
+              <div className={`surface-card-interactive flex h-full flex-col overflow-hidden border-t-2 dark:bg-slate-900 dark:border-white/[0.06] ${card.accentBorder}`}>
                 <div className="p-6 flex flex-col flex-1">
                   {/* Label + emoji */}
                   <div className="flex items-center justify-between mb-4">
-                    <span className={`text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full border ${card.labelStyle}`}>
+                    <span className={`text-[11px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full border ${card.labelStyle}`}>
                       {card.label}
                     </span>
-                    <span className="text-3xl">{card.emoji}</span>
+                    <span className="text-3xl" aria-hidden="true">{card.emoji}</span>
                   </div>
 
                   <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">{card.title}</h3>
-                  <p className="text-xs text-slate-600 dark:text-white/45 mb-4 leading-relaxed">{card.subtitle}</p>
+                  <p className="text-sm text-slate-600 dark:text-white/55 mb-4 leading-relaxed">{card.subtitle}</p>
 
                   <div className="h-px bg-slate-100 dark:bg-white/[0.06] mb-4" />
 
@@ -100,13 +99,13 @@ export default function WhoWeHelpSection() {
                     {card.stats.map((stat) => (
                       <div key={stat.label} className="bg-slate-100 dark:bg-white/[0.04] border border-slate-200 dark:border-white/[0.08] rounded-lg p-2.5 text-center">
                         <div className="text-base font-bold text-slate-900 dark:text-white">{stat.value}</div>
-                        <div className="text-[10px] text-slate-500 dark:text-white/40 leading-tight mt-0.5">{stat.label}</div>
+                        <div className="text-[11px] text-slate-600 dark:text-white/50 leading-tight mt-0.5">{stat.label}</div>
                       </div>
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-sm font-medium text-slate-600 dark:text-white/50 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">
-                    See how we help <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                  <div className="flex items-center gap-1.5 text-sm font-medium text-primary dark:text-white/60 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">
+                    See how we help <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                   </div>
                 </div>
               </div>
@@ -117,22 +116,22 @@ export default function WhoWeHelpSection() {
         {/* 2 Secondary cards */}
         <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
           {secondary.map((card) => (
-            <Link key={card.title} href={card.href}>
-              <div className="group bg-white/70 dark:bg-slate-900/60 rounded-xl p-5 hover:bg-white dark:hover:bg-slate-900 border border-slate-200 dark:border-white/[0.06] hover:border-slate-300 dark:hover:border-white/[0.12] transition-all cursor-pointer flex items-start gap-4">
-                <span className="text-2xl flex-shrink-0 mt-0.5">{card.emoji}</span>
+            <Link key={card.title} href={card.href} className={`group ${cardFocus}`}>
+              <div className="surface-card-interactive flex h-full items-start gap-4 p-5 dark:bg-slate-900/60 dark:border-white/[0.06]">
+                <span className="text-2xl flex-shrink-0 mt-0.5" aria-hidden="true">{card.emoji}</span>
                 <div>
-                  <h3 className="text-slate-900 dark:text-white font-semibold text-sm mb-1">{card.title}</h3>
-                  <p className="text-xs text-slate-600 dark:text-white/45 leading-relaxed">{card.description}</p>
+                  <h3 className="text-slate-900 dark:text-white font-semibold text-base mb-1">{card.title}</h3>
+                  <p className="text-sm text-slate-600 dark:text-white/55 leading-relaxed">{card.description}</p>
                 </div>
-                <ArrowRight className="h-4 w-4 text-slate-400 dark:text-white/20 group-hover:text-slate-600 dark:group-hover:text-white/50 flex-shrink-0 mt-0.5 ml-auto transition-colors" />
+                <ArrowRight className="h-4 w-4 text-slate-400 dark:text-white/20 group-hover:text-primary dark:group-hover:text-white/50 flex-shrink-0 mt-0.5 ml-auto transition-colors" aria-hidden="true" />
               </div>
             </Link>
           ))}
         </div>
 
         <div className="text-center">
-          <Link href="/who-we-help" className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 dark:text-white/50 hover:text-slate-900 dark:hover:text-white transition-colors">
-            See all industries we help <ArrowRight className="h-3.5 w-3.5" />
+          <Link href="/who-we-help" className="link-inline inline-flex min-h-11 items-center gap-1.5 rounded-md px-2 text-sm text-primary hover:text-primary dark:text-white/60 dark:hover:text-white">
+            See all industries we help <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
 

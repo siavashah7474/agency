@@ -4,7 +4,8 @@ import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import SectionEyebrow from "@/components/SectionEyebrow";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 
@@ -111,13 +112,11 @@ export default function WhoWeHelp() {
           <section className="relative py-16 md:py-24 overflow-hidden bg-slate-950">
             <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
             <div className="container mx-auto px-6 relative z-10 text-center">
-              <div className="inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 text-secondary rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm font-medium">Who We Help</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+              <SectionEyebrow tone="dark" className="mb-6">Who We Help</SectionEyebrow>
+              <h1 className="mx-auto mb-6 max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
                 Built for your industry's real bottleneck
               </h1>
-              <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
+              <p className="mx-auto max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl">
                 We go deep, not wide. Pick your industry to see the exact problems and systems that apply to you.
               </p>
             </div>
@@ -132,44 +131,42 @@ export default function WhoWeHelp() {
                     <TabsTrigger
                       key={ind.id}
                       value={ind.id}
-                      className="rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white/60 data-[state=active]:bg-secondary/15 data-[state=active]:border-secondary/40 data-[state=active]:text-secondary data-[state=active]:shadow-none"
+                      className="min-h-11 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/70 transition-colors hover:border-white/30 hover:text-white focus-visible:ring-offset-slate-950 data-[state=active]:border-secondary/50 data-[state=active]:bg-secondary/15 data-[state=active]:text-secondary data-[state=active]:shadow-none"
                     >
-                      <span className="mr-1.5">{ind.emoji}</span>{ind.tabLabel}
+                      <span className="mr-1.5" aria-hidden="true">{ind.emoji}</span>{ind.tabLabel}
                     </TabsTrigger>
                   ))}
                 </TabsList>
 
                 {industries.map((ind) => (
                   <TabsContent key={ind.id} value={ind.id} className="mt-0">
-                    <div className="max-w-4xl mx-auto bg-slate-900 border border-white/8 rounded-2xl p-8 md:p-12">
+                    <div className="mx-auto max-w-4xl rounded-2xl border border-white/10 bg-slate-900 p-6 sm:p-8 md:p-12">
                       <div className="flex items-start justify-between mb-6 gap-4">
                         <div>
-                          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">{ind.title}</h2>
-                          <p className="text-white/50">{ind.subtitle}</p>
+                          <h2 className="mb-2 text-2xl font-bold text-white md:text-3xl">{ind.title}</h2>
+                          <p className="text-white/65">{ind.subtitle}</p>
                         </div>
-                        <span className="text-4xl flex-shrink-0">{ind.emoji}</span>
+                        <span className="text-4xl flex-shrink-0" aria-hidden="true">{ind.emoji}</span>
                       </div>
 
-                      <div className="h-px bg-white/8 mb-6" />
+                      <div className="mb-6 h-px bg-white/10" />
 
-                      <p className="text-white/70 leading-relaxed mb-8">{ind.description}</p>
+                      <p className="mb-8 text-base leading-relaxed text-white/75 md:text-lg">{ind.description}</p>
 
                       <div className="grid grid-cols-3 gap-4 mb-8 max-w-lg">
                         {ind.stats.map((stat) => (
-                          <div key={stat.label} className="bg-white/4 border border-white/8 rounded-lg p-3 text-center">
-                            <div className="text-lg md:text-xl font-bold text-white">{stat.value}</div>
-                            <div className="text-[11px] text-white/40 leading-tight mt-1">{stat.label}</div>
+                          <div key={stat.label} className="rounded-lg border border-white/10 bg-white/5 p-3 text-center">
+                            <div className="text-lg font-bold text-white md:text-xl">{stat.value}</div>
+                            <div className="mt-1 text-[11px] leading-tight text-white/60">{stat.label}</div>
                           </div>
                         ))}
                       </div>
 
                       <div className="flex flex-wrap gap-3">
-                        <Link href={ind.href}>
-                          <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 hover:text-white">
-                            See Full Breakdown <ArrowRight className="ml-2 h-4 w-4" />
-                          </Button>
+                        <Button size="lg" className="rounded-full bg-white text-slate-900 border-white hover:bg-white/90 focus-visible:ring-offset-slate-900" onClick={() => openModal()}>Book a Free Audit</Button>
+                        <Link href={ind.href} className={buttonVariants({ variant: "outline", size: "lg", className: "rounded-full border-white/25 text-white hover:bg-white/10 hover:text-white focus-visible:ring-offset-slate-900" })}>
+                          See Full Breakdown <ArrowRight className="h-4 w-4" aria-hidden="true" />
                         </Link>
-                        <Button onClick={() => openModal()}>Book a Free Audit</Button>
                       </div>
                     </div>
                   </TabsContent>
@@ -178,14 +175,14 @@ export default function WhoWeHelp() {
             </div>
           </section>
 
-          <section className="py-16 md:py-20 bg-muted/30">
+          <section className="bg-slate-50 py-16 md:py-24">
             <div className="container mx-auto px-6 text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-3">Don't see your industry?</h2>
-              <p className="text-muted-foreground max-w-xl mx-auto mb-6">
+              <h2 className="mb-3 text-2xl font-bold text-slate-900 md:text-3xl">Don't see your industry?</h2>
+              <p className="mx-auto mb-6 max-w-xl text-base leading-relaxed text-slate-600 md:text-lg">
                 The same underlying systems apply to almost any lead-driven business. Book a call and we'll tell you honestly if we're a fit.
               </p>
-              <Button size="lg" onClick={() => openModal()}>
-                Talk to Us <ArrowRight className="ml-2 h-4 w-4" />
+              <Button size="lg" className="rounded-full" onClick={() => openModal()}>
+                Talk to Us <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Button>
             </div>
           </section>

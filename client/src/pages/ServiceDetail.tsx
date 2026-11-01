@@ -133,7 +133,7 @@ function GoogleAdsDashboard() {
         {[
           { icon: MousePointerClick, label: "Clicks", value: "4,050", color: "text-blue-600" },
           { icon: Eye, label: "Impressions", value: "65,400", color: "text-indigo-600" },
-          { icon: DollarSign, label: "Cost / Lead", value: "€1.42", color: "text-amber-600" },
+          { icon: DollarSign, label: "Avg. CPC", value: "€1.42", color: "text-amber-600" },
           { icon: TrendingUp, label: "Conv. Rate", value: "6.3%", color: "text-emerald-600" },
         ].map((k) => (
           <div key={k.label} className="px-3 py-3 text-center">
@@ -219,6 +219,7 @@ function MetaAdsResults() {
 
 export default function ServiceDetail() {
   const [, params] = useRoute("/services/:slug");
+  const { openModal } = useBookingModal();
   const slug = params?.slug || "whatsapp-ai-agent";
 
   if (slug && !serviceData[slug]) {
@@ -242,7 +243,6 @@ export default function ServiceDetail() {
   const service = serviceData[slug];
   const iconConfig = serviceIcons[slug] || serviceIcons["whatsapp-ai-agent"];
   const Icon = iconConfig.icon;
-  const { openModal } = useBookingModal();
 
   const isAIService = [
     "whatsapp-ai-agent",
@@ -714,7 +714,7 @@ export default function ServiceDetail() {
                             Book Your Free Call
                           </h4>
                           <p className="text-sm text-muted-foreground mb-6">
-                            20-minute strategy session with our experts
+                            30-minute strategy session with our experts
                           </p>
                           <Button
                             data-testid="button-book-strategy-section"
@@ -798,7 +798,7 @@ export default function ServiceDetail() {
                 Ready to Transform Your Business?
               </h2>
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                Book a free 20-minute strategy call to discuss how{" "}
+                Book a free 30-minute strategy call to discuss how{" "}
                 {service.title} can help you achieve your goals
               </p>
               <Button

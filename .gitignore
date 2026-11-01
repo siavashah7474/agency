@@ -9,3 +9,6 @@ vite.config.ts.*
 .env.local
 .env.*.local
 .vercel
+
+# Replit agent state and OS files
+.local/

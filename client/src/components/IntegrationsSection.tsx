@@ -12,7 +12,7 @@ import {
   SiMeta,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
-import SectionEyebrow from "@/components/SectionEyebrow";
+import { SectionHeader } from "@/components/SectionEyebrow";
 
 const tools: { name: string; icon: IconType; color: string }[] = [
   { name: "WhatsApp Business", icon: SiWhatsapp, color: "#25D366" },
@@ -30,28 +30,28 @@ const tools: { name: string; icon: IconType; color: string }[] = [
 
 export default function IntegrationsSection() {
   return (
-    <section className="bg-white py-16 md:py-24 dark:bg-[#020817]">
-      <div className="container mx-auto px-6 text-center">
-        <SectionEyebrow className="mb-4">Integrations</SectionEyebrow>
-        <h2 className="mx-auto mb-4 max-w-2xl text-3xl font-bold text-slate-900 md:text-4xl dark:text-white">
-          No need to leave the tools you already use.
-        </h2>
-        <p className="mx-auto mb-10 max-w-2xl text-lg text-slate-600 dark:text-white/50">
-          Every lead, booking and report flows straight into your CRM, calendar or spreadsheet. No copy-paste, no new software to learn.
-        </p>
+    <section className="bg-white py-16 md:py-24 dark:bg-[#020817]" aria-labelledby="integrations-heading">
+      <div className="container mx-auto px-6">
+        <SectionHeader
+          id="integrations-heading"
+          eyebrow="Integrations"
+          title="No need to leave the tools you already use."
+          lead="Every lead, booking and report flows straight into your CRM, calendar or spreadsheet. No copy-paste, no new software to learn."
+          className="mb-10"
+        />
 
-        <ul className="mx-auto flex max-w-5xl flex-wrap justify-center gap-3">
+        <ul className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3" aria-label="Supported integrations">
           {tools.map(({ name, icon: Icon, color }) => (
             <li
               key={name}
-              className="inline-flex items-center gap-2.5 rounded-full border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 shadow-sm dark:border-white/10 dark:bg-white/5 dark:text-white/80"
+              className="inline-flex min-h-11 items-center gap-2.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition-colors hover:border-slate-300 dark:border-white/10 dark:bg-white/5 dark:text-white/80"
             >
-              <Icon className="h-4 w-4" style={{ color }} aria-hidden />
+              <Icon className="h-4 w-4 flex-shrink-0" style={{ color }} aria-hidden="true" />
               {name}
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-sm text-slate-500 dark:text-white/40">Plus most other business tools via API.</p>
+        <p className="mt-6 text-center text-sm text-slate-600 dark:text-white/50">Plus most other business tools via API.</p>
       </div>
     </section>
   );

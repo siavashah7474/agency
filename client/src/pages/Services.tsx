@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import SEO from "@/components/SEO";
 import { Link } from "wouter";
 import { useBookingModal } from "@/hooks/use-booking-modal";
@@ -58,40 +58,40 @@ function ServiceCard({
   clientName,
 }: ServiceCardProps) {
   return (
-    <Link href={href}>
-      <Card
-        className="h-full hover-elevate cursor-pointer group overflow-hidden"
-        data-testid={`card-service-${title.toLowerCase().replace(/\s+/g, "-")}`}
-      >
+    <Link
+      href={href}
+      className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      data-testid={`card-service-${title.toLowerCase().replace(/\s+/g, "-")}`}
+    >
+      <Card className="surface-card-interactive h-full overflow-hidden border-card-border">
         <CardContent className="p-0">
-          <div className={`h-2 bg-gradient-to-r ${gradient}`} />
+          <div className={`h-1.5 bg-gradient-to-r ${gradient}`} aria-hidden="true" />
           <div className="p-6">
             <div className="flex items-start justify-between mb-4">
               <div
-                className={`h-12 w-12 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform`}
+                className={`h-12 w-12 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-105`}
+                aria-hidden="true"
               >
                 <Icon className="h-6 w-6 text-white" />
               </div>
               {tag && (
-                <span className="px-2 py-1 bg-primary/10 text-primary rounded text-xs font-medium">
+                <span className="rounded-md bg-primary/10 px-2 py-1 text-xs font-semibold text-primary">
                   {tag}
                 </span>
               )}
             </div>
 
-            <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">
+            <h3 className="mb-2 text-lg font-bold text-slate-900 transition-colors group-hover:text-primary">
               {title}
             </h3>
-            <p className="text-sm text-muted-foreground mb-4">{description}</p>
+            <p className="mb-4 text-sm leading-relaxed text-slate-600">{description}</p>
 
             {resultStat && (
               <div
-                className={`p-3 rounded-lg bg-gradient-to-r ${gradient} bg-opacity-10 mb-4`}
+                className="mb-4 rounded-lg border border-slate-100 bg-slate-50 p-3"
               >
                 <div className="flex items-center gap-3">
-                  <div
-                    className={`text-2xl font-bold bg-gradient-to-r ${gradient} bg-clip-text text-transparent`}
-                  >
+                  <div className="text-2xl font-bold text-primary">
                     {resultStat}
                   </div>
                   <div className="text-xs text-muted-foreground leading-tight">
@@ -108,7 +108,7 @@ function ServiceCard({
 
             <div className="flex items-center text-sm font-medium text-primary">
               Learn More{" "}
-              <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </div>
           </div>
         </CardContent>
@@ -141,28 +141,28 @@ function CategorySection({
   bgClass = "",
 }: CategorySectionProps) {
   return (
-    <section className={`py-16 md:py-20 ${bgClass}`}>
+    <section className={`py-16 md:py-24 ${bgClass || "bg-white"}`}>
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+        <div className="mb-12 grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
           <div>
             <div
-              className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${gradient} text-white rounded-full text-sm font-semibold mb-4`}
+              className={`mb-4 inline-flex items-center gap-2 rounded-full bg-gradient-to-r px-4 py-1.5 text-sm font-semibold text-white ${gradient}`}
             >
-              <Icon className="h-4 w-4" />
+              <Icon className="h-4 w-4" aria-hidden="true" />
               {subtitle}
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">{title}</h2>
-            <p className="text-muted-foreground mb-6">{description}</p>
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 md:text-3xl">{title}</h2>
+            <p className="mb-6 text-base leading-relaxed text-slate-600 md:text-lg">{description}</p>
 
             {trustedBy && trustedBy.length > 0 && (
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs text-muted-foreground">
+                <span className="self-center text-xs font-medium text-slate-600">
                   Trusted by:
                 </span>
                 {trustedBy.map((client, i) => (
                   <span
                     key={i}
-                    className="px-2 py-1 bg-muted rounded text-xs font-medium"
+                    className="rounded-md border border-slate-200 bg-white px-2 py-1 text-xs font-medium text-slate-700"
                   >
                     {client}
                   </span>
@@ -173,13 +173,13 @@ function CategorySection({
 
           <div className="grid grid-cols-3 gap-4">
             {stats.map((stat, i) => (
-              <div key={i} className="text-center p-4 bg-muted/50 rounded-xl">
+              <div key={i} className="surface-card p-4 text-center">
                 <div
                   className={`text-2xl md:text-3xl font-bold bg-gradient-to-r ${gradient} bg-clip-text text-transparent`}
                 >
                   {stat.value}
                 </div>
-                <div className="text-xs text-muted-foreground mt-1">
+                <div className="mt-1 text-xs text-slate-600">
                   {stat.label}
                 </div>
               </div>
@@ -315,48 +315,48 @@ export default function Services() {
         <Navigation />
 
         <main id="main-content" className="flex-1">
-          <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
+          <section className="relative overflow-hidden bg-[#020817] py-20 md:py-28">
             <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/25 rounded-full blur-3xl animate-float-orb pointer-events-none" />
             <div className="absolute bottom-1/4 left-1/6 w-[400px] h-[400px] bg-secondary/15 rounded-full blur-3xl animate-float-orb-2 pointer-events-none" />
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="container mx-auto px-6 text-center text-white relative z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm font-medium mb-6 backdrop-blur-sm border border-white/20">
-                <Sparkles className="h-4 w-4" />
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium backdrop-blur-sm">
+                <Sparkles className="h-4 w-4" aria-hidden="true" />
                 <span>Specialized in Medical Tourism & Real Estate</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <h1 className="mx-auto mb-6 max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
                 Services That Digitalize & Grow Your Business
               </h1>
-              <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8">
+              <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-white/80 md:text-xl">
                 From AI automation to SEO, we offer everything medical tourism
                 clinics and real estate agencies need to attract international
                 clients, handle inquiries 24/7, and close more deals
               </p>
 
-              <div className="flex flex-wrap justify-center gap-6 mb-10">
-                <div className="flex items-center gap-2 text-white/80">
-                  <Clock className="h-5 w-5" />
+              <ul className="mb-10 flex flex-wrap justify-center gap-x-6 gap-y-3">
+                <li className="flex items-center gap-2 text-sm text-white/80 md:text-base">
+                  <Clock className="h-5 w-5 text-secondary" aria-hidden="true" />
                   <span>24/7 Lead Response</span>
-                </div>
-                <div className="flex items-center gap-2 text-white/80">
-                  <TrendingUp className="h-5 w-5" />
+                </li>
+                <li className="flex items-center gap-2 text-sm text-white/80 md:text-base">
+                  <TrendingUp className="h-5 w-5 text-secondary" aria-hidden="true" />
                   <span>60% Higher Conversion Rate</span>
-                </div>
-                <div className="flex items-center gap-2 text-white/80">
-                  <Star className="h-5 w-5" />
+                </li>
+                <li className="flex items-center gap-2 text-sm text-white/80 md:text-base">
+                  <Star className="h-5 w-5 text-secondary" aria-hidden="true" />
                   <span>Medical Tourism & Real Estate Experts</span>
-                </div>
-              </div>
+                </li>
+              </ul>
 
               <div className="flex flex-wrap justify-center gap-4">
                 <Button
                   data-testid="button-services-hero-cta"
                   size="lg"
-                  className="bg-white text-primary hover:bg-white/90 border-white"
+                  className="rounded-full border-white bg-white text-slate-900 hover:bg-white/90 focus-visible:ring-offset-[#020817]"
                   onClick={() => openModal()}
                 >
                   Book Free Strategy Call
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Button>
               </div>
             </div>
@@ -378,7 +378,7 @@ export default function Services() {
               "PrimeHairGroup",
               "Aesthetic Istanbul",
             ]}
-            bgClass="bg-muted/30"
+            bgClass="bg-slate-50"
           >
             <div className="grid md:grid-cols-3 gap-6">
               {aiServices.map((service, index) => (
@@ -422,7 +422,7 @@ export default function Services() {
               "Istanbul Dental Excellence",
               "Prime Properties Istanbul",
             ]}
-            bgClass="bg-muted/30"
+            bgClass="bg-slate-50"
           >
             <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {conversionServices.map((service, index) => (
@@ -461,7 +461,7 @@ export default function Services() {
               { value: "25%", label: "Cart Recovery Rate" },
               { value: "90%", label: "Tasks Automated" },
             ]}
-            bgClass="bg-muted/30"
+            bgClass="bg-slate-50"
           >
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               {[
@@ -492,11 +492,9 @@ export default function Services() {
               ))}
             </div>
             <div className="text-center">
-              <Link href="/services/shopify-ecommerce-automation">
-                <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity">
-                  See Full eCommerce Automation Package
-                  <ArrowRight className="h-4 w-4" />
-                </button>
+              <Link href="/services/shopify-ecommerce-automation" className={buttonVariants({ size: "lg", className: "rounded-full" })}>
+                See Full eCommerce Automation Package
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
           </CategorySection>
@@ -506,10 +504,10 @@ export default function Services() {
             <div className="container mx-auto px-6 relative z-10">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="text-white">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  <h2 className="mb-6 text-3xl font-bold md:text-4xl">
                     Ready to Digitalize Your Business?
                   </h2>
-                  <p className="text-lg text-white/90 mb-8">
+                  <p className="mb-8 text-lg leading-relaxed text-white/80">
                     Whether you run a medical tourism clinic or a real estate
                     agency, let's build a custom AI and marketing plan that
                     attracts international clients and converts more leads into
@@ -518,30 +516,30 @@ export default function Services() {
                   <ul className="space-y-3 mb-8">
                     {benefits.map((benefit, index) => (
                       <li key={index} className="flex items-center gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-white/80 flex-shrink-0" />
+                        <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-secondary" aria-hidden="true" />
                         <span className="text-white/90">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20">
+                <div className="rounded-2xl border border-white/15 bg-white/10 p-6 text-center backdrop-blur-sm sm:p-8">
                   <h3 className="text-2xl font-bold text-white mb-4">
                     Get Your Free Business Growth Strategy
                   </h3>
                   <p className="text-white/80 mb-6">
-                    20-minute call to discuss how AI and digital marketing can
+                    30-minute call to discuss how AI and digital marketing can
                     accelerate your clinic or property business
                   </p>
                   <Button
                     data-testid="button-services-bottom-cta"
                     size="lg"
-                    className="w-full bg-white text-primary hover:bg-white/90 border-white"
+                    className="w-full rounded-full border-white bg-white text-slate-900 hover:bg-white/90 focus-visible:ring-offset-[#020817]"
                     onClick={() => openModal()}
                   >
                     Book Free Strategy Call
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Button>
-                  <p className="text-xs text-white/60 mt-4">
+                  <p className="mt-4 text-sm text-white/70">
                     No commitment required. Let's just talk about your clinic.
                   </p>
                 </div>

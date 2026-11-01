@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 import { Link } from "wouter";
@@ -15,43 +15,44 @@ interface AIProductCardProps {
 
 export default function AIProductCard({ title, tagline, description, features, href, flagship = false }: AIProductCardProps) {
   return (
-    <Card className={`glow-card hover-elevate flex flex-col bg-slate-900 border-0 overflow-hidden ${flagship ? 'ring-1 ring-secondary/40' : ''}`}>
+    <Card className={`glow-card flex flex-col overflow-hidden border-0 bg-slate-900 transition-transform duration-300 hover:-translate-y-0.5 ${flagship ? "ring-1 ring-secondary/40" : ""}`}>
       {/* Terminal-style header bar */}
-      <div className={`px-4 py-2.5 flex items-center justify-between border-b border-white/8 ${flagship ? 'bg-secondary/10' : 'bg-white/4'}`}>
+      <div className={`flex items-center justify-between border-b border-white/10 px-4 py-2.5 ${flagship ? "bg-secondary/10" : "bg-white/5"}`} aria-hidden="true">
         <div className="flex items-center gap-1.5">
-          <span className="w-2.5 h-2.5 rounded-full bg-red-500/60" />
-          <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/60" />
-          <span className="w-2.5 h-2.5 rounded-full bg-green-500/60" />
+          <span className="h-2.5 w-2.5 rounded-full bg-red-500/60" />
+          <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/60" />
+          <span className="h-2.5 w-2.5 rounded-full bg-green-500/60" />
         </div>
         <div className="flex items-center gap-1.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-          <span className="text-[10px] font-mono font-bold text-green-400 tracking-widest uppercase">Active</span>
+          <span className="h-1.5 w-1.5 rounded-full bg-green-400 animate-pulse" />
+          <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-green-400">Active</span>
         </div>
       </div>
 
       <CardHeader className="pb-4">
-        {flagship && <Badge className="w-fit mb-2 bg-secondary/20 text-secondary border-secondary/30" variant="outline">Flagship Product</Badge>}
+        {flagship && <Badge className="mb-2 w-fit border-secondary/30 bg-secondary/20 text-secondary" variant="outline">Flagship Product</Badge>}
         <CardTitle className="text-xl text-white">{title}</CardTitle>
-        <CardDescription className="text-white/50">{tagline}</CardDescription>
+        <CardDescription className="text-white/60">{tagline}</CardDescription>
       </CardHeader>
-      <CardContent className="space-y-5 flex-1 flex flex-col">
-        <p className="text-sm text-white/60 leading-relaxed">{description}</p>
-        <div className="space-y-2 flex-1">
+      <CardContent className="flex flex-1 flex-col space-y-5">
+        <p className="text-sm leading-relaxed text-white/70">{description}</p>
+        <ul className="flex-1 space-y-2">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-start gap-2">
-              <Check className="h-4 w-4 text-secondary flex-shrink-0 mt-0.5" />
-              <span className="text-sm text-white/70">{feature}</span>
-            </div>
+            <li key={index} className="flex items-start gap-2">
+              <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-secondary" aria-hidden="true" />
+              <span className="text-sm text-white/75">{feature}</span>
+            </li>
           ))}
-        </div>
-        <Link href={href}>
-          <Button
-            data-testid={`button-explore-${title.toLowerCase().replace(/\s+/g, '-')}`}
-            className={`w-full ${!flagship ? "border-white/20 text-white hover:bg-white/10 hover:text-white" : ""}`}
-            variant={flagship ? "default" : "outline"}
-          >
-            Explore {title}
-          </Button>
+        </ul>
+        <Link
+          href={href}
+          data-testid={`button-explore-${title.toLowerCase().replace(/\s+/g, "-")}`}
+          className={buttonVariants({
+            variant: flagship ? "default" : "outline",
+            className: `w-full focus-visible:ring-offset-slate-900 ${!flagship ? "border-white/20 text-white hover:bg-white/10 hover:text-white" : ""}`,
+          })}
+        >
+          Explore {title}
         </Link>
       </CardContent>
     </Card>

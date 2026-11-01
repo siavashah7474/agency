@@ -53,7 +53,7 @@ export default function ReviveIQPage() {
           {
             time: "Day 14 · Results",
             event: "Campaign complete — warm leads delivered",
-            detail: "Results: 312 replies received (10.4% of total list). 91 virtual consultations booked (3.0%). Revenue generated: €273,000 (91 × €3,000 average FUE treatment). Total campaign cost: a fraction of acquiring 91 new leads through advertising.",
+            detail: "Results: 312 replies received (10.4% of total list). 91 virtual consultations booked (3.0%). Pipeline value: €273,000 (91 consultations × €3,000 avg. FUE treatment). Total campaign cost: a fraction of acquiring 91 new leads through advertising.",
             highlight: true,
           },
         ],

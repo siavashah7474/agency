@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BlogCard from "@/components/BlogCard";
 import SEO from "@/components/SEO";
-import { blogPosts } from "@/data/blogData";
+import { sortedBlogPosts as blogPosts } from "@/data/blogData";
 import { Button } from "@/components/ui/button";
 import { FileText } from "lucide-react";
 
@@ -15,6 +15,7 @@ export default function Blog() {
     return ["All", ...cats];
   }, []);
 
+  // blogPosts is already sorted newest-first, so filteredPosts[0] is the latest post.
   const filteredPosts = useMemo(() => {
     if (selectedCategory === "All") return blogPosts;
     return blogPosts.filter((post) => post.category === selectedCategory);

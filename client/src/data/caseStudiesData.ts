@@ -58,7 +58,7 @@ export const caseStudies: CaseStudy[] = [
       { metric: "Blog Posts", value: "150+", description: "Published in first 6 months" }
     ],
     testimonial: {
-      quote: "We went from being invisible to ranking #1 for 'best hair transplant Turkey'. The AI-generated content is so good that even our doctors are impressed. Our organic leads now exceed paid leads.",
+      quote: "We went from being invisible to ranking in the top 10 for 'best hair transplant Turkey'. The AI-generated content is so good that even our doctors are impressed. Our organic leads now exceed paid leads.",
       name: "Ramazan Sabaz",
       role: "Hair Transplant Specialist, Estetizm"
     },
