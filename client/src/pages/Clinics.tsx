@@ -141,7 +141,7 @@ export default function Clinics() {
                     {[
                       { value: "< 60s", label: "Reply time, day and night" },
                       { value: "50+", label: "Languages detected" },
-                      { value: "+40%", label: "More consultations booked" },
+                      { value: "+40%", label: "More patient enquiries" },
                       { value: "24/7", label: "Coverage across time zones" },
                     ].map((s) => (
                       <div key={s.label} className="surface-card flex flex-col p-5">
@@ -164,7 +164,7 @@ export default function Clinics() {
                 tone="dark"
                 eyebrow="What goes wrong today"
                 title="Where clinics lose patients"
-                lead="Clinics lose up to 60% of enquiries to slower replies and missing follow-up. None of it is a medical problem."
+                lead="Clinics lose enquiries to slow replies and missing follow-up — not to the quality of care. None of it is a medical problem."
                 className="mb-10"
               />
               <ul className="space-y-3">
