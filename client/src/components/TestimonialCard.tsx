@@ -13,7 +13,7 @@ interface TestimonialCardProps {
 export default function TestimonialCard({ name, role, company, content, rating = 5 }: TestimonialCardProps) {
   const initials = name.split(" ").map((n) => n[0]).join("");
   return (
-    <Card className="h-full">
+    <Card className="h-full min-w-0">
       <CardContent className="flex h-full flex-col p-6 md:p-7">
         <div className="mb-4 flex gap-1" role="img" aria-label={`${rating} out of 5 stars`}>
           {Array.from({ length: rating }).map((_, i) => (

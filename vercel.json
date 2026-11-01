@@ -21,6 +21,17 @@
       "permanent": true
     },
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.webimotagency.com"
+        }
+      ],
+      "destination": "https://webimotagency.com/",
+      "permanent": true
+    },
+    {
       "source": "/services/whatsapp-ai-agent",
       "destination": "/products/whatsapp-ai",
       "permanent": true
@@ -33,6 +44,51 @@
     {
       "source": "/services/ai-marketing-analyst",
       "destination": "/products/cleardesk",
+      "permanent": true
+    },
+    {
+      "source": "/solutions",
+      "destination": "/systems",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/systems",
+      "permanent": true
+    },
+    {
+      "source": "/ai-solutions",
+      "destination": "/clinics",
+      "permanent": true
+    },
+    {
+      "source": "/who-we-help",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/industries/healthcare",
+      "destination": "/clinics",
+      "permanent": true
+    },
+    {
+      "source": "/industries/small-business",
+      "destination": "/small-business",
+      "permanent": true
+    },
+    {
+      "source": "/industries/real-estate",
+      "destination": "/small-business",
+      "permanent": true
+    },
+    {
+      "source": "/industries/ecommerce",
+      "destination": "/small-business",
+      "permanent": true
+    },
+    {
+      "source": "/industries/finance-legal",
+      "destination": "/small-business",
       "permanent": true
     }
   ],

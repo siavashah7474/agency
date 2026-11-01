@@ -68,16 +68,24 @@ export default function Navigation() {
     return () => { document.removeEventListener("mousedown", handleClick); document.removeEventListener("keydown", handleKeyDown); };
   }, []);
 
+  // Six items + CTA is the most that fits on one line at md; Home stays reachable via the logo.
   const navLinks = [
-    { href: "/", label: t("nav.home") },
-    { href: "/solutions", label: t("nav.solutions") },
-    { href: "/case-studies", label: t("nav.work") },
-    { href: "/about", label: t("nav.about") },
-    { href: "/contact", label: t("nav.contact") },
+    { href: "/systems", label: t("nav.systems", "Systems") },
+    { href: "/clinics", label: t("nav.clinics", "Clinics") },
+    { href: "/small-business", label: t("nav.smallBusiness", "Small Business") },
+    { href: "/pricing", label: t("nav.pricing", "Pricing") },
+    { href: "/case-studies", label: t("nav.work", "Work") },
+    { href: "/blog", label: t("nav.blog", "Blog") },
   ];
 
-  // "/" only matches exactly; other links also match their child routes (e.g. /case-studies/xyz)
-  const isActive = (href: string) => (href === "/" ? location === "/" : location === href || location.startsWith(`${href}/`));
+  // A link is active on its own route and its child routes (e.g. /case-studies/xyz).
+  // "Systems" also covers the product and service detail pages, which all belong to a system.
+  const isActive = (href: string) => {
+    if (href === "/") return location === "/";
+    if (location === href || location.startsWith(`${href}/`)) return true;
+    if (href === "/systems") return location.startsWith("/products/") || location.startsWith("/services/");
+    return false;
+  };
 
   return (
     <>
@@ -150,7 +158,7 @@ export default function Navigation() {
                 )}
               </div>
               <Button data-testid="button-book-consultation" variant="default" className="rounded-full px-5" onClick={() => openModal()}>
-                {t("nav.bookCall")}
+                {t("nav.bookDemo", "Book a demo")}
               </Button>
             </div>
 
@@ -215,7 +223,7 @@ export default function Navigation() {
 
               <Button data-testid="button-mobile-book" variant="default" size="lg" className="mt-5 w-full rounded-full"
                 onClick={() => { setMobileMenuOpen(false); openModal(); }}>
-                {t("nav.bookCall")}
+                {t("nav.bookDemo", "Book a demo")}
               </Button>
             </nav>
           </div>

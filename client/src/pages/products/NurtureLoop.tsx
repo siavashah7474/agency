@@ -3,6 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function NurtureLoopPage() {
   return (
     <ProductPageLayout
+      system="convert"
       seoTitle="NurtureLoop | Never let a lead go cold again — Webimot Agency"
       seoDescription="80% of sales require 5+ follow-ups. Most businesses give up after 1 or 2. NurtureLoop runs every follow-up automatically — across every channel — so no lead is ever forgotten."
       emoji="🔁"

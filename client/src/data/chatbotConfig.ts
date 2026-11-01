@@ -13,7 +13,7 @@ export interface ServiceRecommendation {
   serviceSlug: string;
   /**
    * Full path to link to instead of `/services/${serviceSlug}`.
-   * Use for recommendations whose /services/* URL is 301-redirected to a /products/* page.
+   * Use for recommendations that should land on a /products/* page or a /systems#section.
    */
   href?: string;
   serviceName: string;
@@ -108,7 +108,7 @@ export const chatbotConfig: ChatbotConfig = {
     {
       serviceSlug: "whatsapp-ai-agent",
       href: "/products/whatsapp-ai",
-      serviceName: "WhatsApp AI Agent",
+      serviceName: "WhatsApp AI (Capture system)",
       description: "24/7 automated responses to capture and qualify leads instantly",
       matchScore: 0,
       tags: ["automation", "whatsapp", "ai", "leads", "medical", "realestate", "time"]
@@ -142,45 +142,53 @@ export const chatbotConfig: ChatbotConfig = {
       matchScore: 0,
       tags: ["seo", "content", "automation", "ai", "consistency", "long"]
     },
+    // Parked services (website-development, funnel-automation, content-creation, branding,
+    // ai-ops-autopilot, reputation-management) now point at the system that replaced them.
     {
       serviceSlug: "website-development",
-      serviceName: "Website Development",
-      description: "Professional, conversion-optimized websites",
+      href: "/systems#capture",
+      serviceName: "Capture system",
+      description: "Web chat and WhatsApp AI that turn website visitors into qualified, booked leads",
       matchScore: 0,
       tags: ["website", "presence", "conversion", "funnel"]
     },
     {
       serviceSlug: "funnel-automation",
-      serviceName: "Funnel Automation",
-      description: "Convert more visitors with automated follow-up sequences",
+      href: "/systems#convert",
+      serviceName: "Follow-up system",
+      description: "Automated follow-up across WhatsApp, email and SMS until the lead books or opts out",
       matchScore: 0,
       tags: ["funnel", "automation", "conversion", "leads", "short"]
     },
     {
       serviceSlug: "content-creation",
-      serviceName: "Social Media Content",
-      description: "Consistent, engaging content for your social channels",
+      href: "/systems#capture",
+      serviceName: "Capture system",
+      description: "Every enquiry from your social channels answered in seconds, in the customer's language",
       matchScore: 0,
       tags: ["content", "social", "awareness", "branding", "consistency"]
     },
     {
       serviceSlug: "branding",
-      serviceName: "Branding & Identity",
-      description: "Build a memorable brand that stands out",
+      href: "/clinics",
+      serviceName: "AI systems for clinics",
+      description: "Stand out with a clinic that replies instantly, follows up and books 24/7",
       matchScore: 0,
-      tags: ["branding", "awareness", "medium", "long"]
+      tags: ["branding", "awareness", "medium", "long", "medical"]
     },
     {
       serviceSlug: "ai-ops-autopilot",
-      serviceName: "AI Operations Autopilot",
-      description: "Automate internal tasks, workflows, and business operations",
+      href: "/systems#operate",
+      serviceName: "Operations system",
+      description: "AI agents that process invoices, documents and data entry instead of your team",
       matchScore: 0,
       tags: ["automation", "ai", "operations", "admin", "hr", "invoices", "workflows", "scale", "enterprise"]
     },
     {
       serviceSlug: "reputation-management",
-      serviceName: "Reputation Management",
-      description: "Monitor and enhance your online reputation",
+      href: "/systems#capture",
+      serviceName: "Capture system",
+      description: "Fast, consistent replies to every customer message — the first step to a better reputation",
       matchScore: 0,
       tags: ["reputation", "local", "service", "awareness"]
     }
@@ -196,8 +204,16 @@ export function calculateRecommendations(selectedTags: string[]): ServiceRecomme
     };
   });
 
+  // Several legacy recommendations now point at the same system; keep only the best match per destination.
+  const seen = new Set<string>();
   return recommendations
     .filter(rec => rec.matchScore > 0)
     .sort((a, b) => b.matchScore - a.matchScore)
+    .filter(rec => {
+      const destination = rec.href ?? `/services/${rec.serviceSlug}`;
+      if (seen.has(destination)) return false;
+      seen.add(destination);
+      return true;
+    })
     .slice(0, 3);
 }

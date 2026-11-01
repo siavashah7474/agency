@@ -7,9 +7,9 @@ export default function Pricing() {
   return (
     <>
       <SEO
-        title="Packages & Plans — Starter, Growth, Scale | Webimot Agency"
-        description="Compare our three AI automation packages — Starter, Growth, and Scale — and book a free call for a quote tailored to your business."
-        keywords="AI automation pricing, AI agency pricing, automation packages"
+        title="Packages — Starter, Growth, Scale | Webimot"
+        description="Three AI automation packages mapped to our four systems — Starter, Growth and Scale. No fixed prices: request a quote after a free AI audit and pay only for the systems you'll use."
+        keywords="AI automation pricing, AI agency packages, request a quote, clinic automation pricing, small business AI pricing"
         canonicalUrl="https://webimotagency.com/pricing"
       />
       <div className="min-h-screen flex flex-col">

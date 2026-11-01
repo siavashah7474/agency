@@ -29,8 +29,17 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2 } from "lucide-react";
-import { serviceData } from "@/data/servicesData";
+import { SYSTEMS } from "@/data/systemsData";
 import { trackEvent } from "@/components/GoogleAnalytics";
+
+// "Service of interest" options: the four systems, the add-ons, and an escape hatch.
+// Value and label are both readable names, so the lead email never shows a URL slug.
+const serviceOptions = [
+  ...SYSTEMS.map((s) => ({ value: s.name, label: `${s.name} (${s.productLabel})` })),
+  { value: "Meta / Google Ads add-on", label: "Meta / Google Ads add-on" },
+  { value: "SEO add-on", label: "SEO add-on" },
+  { value: "Not sure — help me choose", label: "Not sure — help me choose" },
+];
 
 const bookingSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -90,8 +99,8 @@ export default function BookingModal({
   const onSubmit = async (data: BookingFormValues) => {
     setIsSubmitting(true);
     try {
-      // Send the readable service name, not the URL slug, so the lead email makes sense.
-      const serviceLabel = serviceData[data.service]?.title ?? data.service;
+      // Send the readable label (never a slug or the bare value) so the lead email makes sense.
+      const serviceLabel = serviceOptions.find((o) => o.value === data.service)?.label ?? data.service;
       const response = await fetch("/api/booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -132,12 +141,6 @@ export default function BookingModal({
       setIsSubmitting(false);
     }
   };
-
-  // Get service options from serviceData
-  const serviceOptions = Object.entries(serviceData).map(([slug, service]) => ({
-    value: slug,
-    label: service.title,
-  }));
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -220,7 +223,7 @@ export default function BookingModal({
               name="service"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Service of Interest *</FormLabel>
+                  <FormLabel>Service of interest *</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     value={field.value}

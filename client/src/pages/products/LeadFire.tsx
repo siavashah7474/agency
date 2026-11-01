@@ -3,6 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function LeadFirePage() {
   return (
     <ProductPageLayout
+      system="capture"
       seoTitle="LeadFire | Contact every lead in under 60 seconds — Webimot Agency"
       seoDescription="Most businesses take 2-6 hours to respond to a new lead. By then, they've already gone to a competitor. LeadFire replies in under 60 seconds, qualifies leads, and books calls automatically."
       emoji="⚡"

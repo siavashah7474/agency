@@ -37,117 +37,93 @@
     "getFreePlan": "Ontvang uw gratis groeiplan"
   },
   "home": {
-    "trustBadge": "Vertrouwd door klinieken en bureaus in 12+ landen",
-    "heroTitle1": "Bespaar Elke Dag Uren.",
-    "heroTitle2": "AI-automatisering en optimalisatie die voor u werkt.",
-    "heroSubtitle": "Wij ontwerpen en implementeren AI-systemen die de manier waarop uw bedrijf werkt digitaliseren — van verkoop en klantenservice tot documenten, rapportages en teamprocessen. Gebouwd voor <strong>klinieken</strong>, <strong>makelaars</strong> en <strong>groeiende bedrijven</strong> die 24/7 willen draaien zonder extra personeel.",
-    "heroCta1": "Gratis strategiegesprek",
-    "heroCta2": "Bekijk onze AI-oplossingen",
-    "industries": {
-      "hairTransplant": "Haartransplantatieklinieken",
-      "dental": "Tandheelkundige klinieken",
-      "cosmetic": "Cosmetische chirurgie",
-      "ivf": "IVF & Vruchtbaarheid",
-      "realEstate": "Vastgoedbureaus"
-    },
-    "aiStackBadge": "Bewezen in medisch toerisme & vastgoed",
-    "aiStackTitle": "De AI-stack die werkt terwijl u slaapt",
-    "aiStackSubtitle": "Drie speciaal gebouwde tools die de delen van uw bedrijf afhandelen die u de meeste tijd en geld kosten — leadrespons, content en interne bedrijfsprocessen. Geen inhuur. Geen training. Alleen resultaten.",
-    "benefits": {
-      "hours": { "title": "Bespaar 20+ uur per week", "desc": "Automatiseer repetitieve taken en bevrijd uw team" },
-      "lead247": { "title": "24/7 leadafhandeling", "desc": "Mis nooit een potentiële klant, zelfs niet om 3 uur 's nachts" },
-      "data": { "title": "Ops op Automatische Piloot", "desc": "Automatiseer interne werkstromen zodat uw team zich richt op echt werk, niet op administratie" }
-    },
-    "aiProducts": [
-      {
-        "title": "WhatsApp AI-agent",
-        "tagline": "24/7 intelligente leadafhandeling & boekingsautomatisering",
-        "description": "Mis nooit meer een lead. Onze WhatsApp AI-agent verwerkt inkomende berichten direct, kwalificeert leads, evalueert foto's met Vision AI en boekt consultaties automatisch.",
-        "features": [
-          "Directe leadreacties in meerdere talen",
-          "Spraakbericht → teksttranscriptie",
-          "Fotoevaluatie met Vision AI",
-          "Leadscoring en -kwalificatie",
-          "Geautomatiseerde boekingskalenderintegratie",
-          "Supervisoreskalatie voor complexe vragen",
-          "Follow-up automatiseringsengine",
-          "Realtime dashboard en analytics"
-        ]
-      },
-      {
-        "title": "SEO Blog Generator AI",
-        "tagline": "Geautomatiseerde contentcreatie & publicatie",
-        "description": "Schaal uw contentmarketing moeiteloos op. Onze AI genereert SEO-geoptimaliseerde blogposts, plant publicatie en beheert interne links automatisch.",
-        "features": [
-          "Geautomatiseerde contentgeneratie vanuit RSS-feeds",
-          "SEO-optimalisatie met metatags",
-          "Automatisch plannen en publiceren",
-          "Intern linksysteem",
-          "Meertalige vertaling",
-          "Prestatiemonitoring en analytics"
-        ]
-      },
-      {
-        "title": "AI Operations Autopilot",
-        "tagline": "Automatiseer interne taken, werkstromen en bedrijfsprocessen",
-        "description": "Stop met het verspillen van uren aan taken die een vast patroon volgen. Onze AI verwerkt factuurmails, HR-herinneringen, taakafstemming en terugkerende administratie — bespaart uw team 15-25 uur per week.",
-        "features": [
-          "Geautomatiseerde factuur- en betalingsherinneringsmails",
-          "HR-onboarding checklists en contractherinneringen",
-          "Interne taakplanning met door AI toegewezen prioriteiten",
-          "Escalatie van achterstallige taken naar managers",
-          "Voorbereiding en verspreiding van vergaderagenda's",
-          "Wekelijkse interne statusrapporten automatisch gegenereerd"
-        ]
+    "trustBadge": "AI-automatiseringssystemen · 50+ bedrijven in 12+ landen",
+    "heroTitle1": "AI-automatiseringssystemen",
+    "heroTitle2": "die uw dagelijkse werk draaiend houden.",
+    "heroSubtitle": "Voor <strong>klinieken</strong> en <strong>kleine bedrijven</strong>: elke lead beantwoord, elk document verwerkt, elke follow-up verstuurd — 24/7, zonder extra personeel.",
+    "heroCta1": "Boek een demo",
+    "heroCta2": "Bekijk de systemen",
+    "heroChecklist": [
+      "Gratis AI-audit in 3 dagen",
+      "Live in 2–4 weken",
+      "Geen langlopend contract",
+      "50+ talen"
+    ],
+    "audience": {
+      "eyebrow": "Voor wie we werken",
+      "title": "Twee soorten bedrijven. Eén systeem.",
+      "lead": "Dezelfde vier systemen, afgestemd op hoe uw bedrijf werkt en op de kanalen die uw klanten al gebruiken.",
+      "examplesLabel": "Voorbeelden",
+      "links": {
+        "clinics": "Zo helpen we klinieken",
+        "small-business": "Zo helpen we kleine bedrijven"
       }
-    ],
-    "servicesTitle": "Alles wat u nodig heeft om uw markt te domineren",
-    "servicesSubtitle": "Advertenties, SEO, AI-automatisering en content — volledig beheerd zodat u zich kunt richten op het leveren van resultaten",
-    "services": [
-      { "title": "Meta Advertenties", "description": "Professionele Facebook & Instagram advertentiecampagnes die gekwalificeerde leads genereren" },
-      { "title": "Google Advertenties", "description": "Zoek- en displayadvertising geoptimaliseerd voor maximale ROI" },
-      { "title": "SEO", "description": "Hoger scoren in zoekresultaten met datagedreven optimalisatiestrategieën" },
-      { "title": "Website Ontwikkeling", "description": "Snelle, mooie, conversiegerichte websites gebouwd voor uw bedrijf" },
-      { "title": "Contentcreatie", "description": "Aantrekkelijke content die aansluit bij uw doelgroep en aanzet tot actie" },
-      { "title": "Branding", "description": "Bouw een gedenkwaardige merkidentiteit die opvalt in uw markt" },
-      { "title": "Funnelbouw", "description": "Converteer meer bezoekers naar klanten met geoptimaliseerde verkooptunnels" },
-      { "title": "Reputatiebeheer", "description": "Monitor en verbeter uw online reputatie op alle platforms" }
-    ],
-    "automationTitle": "Eenmalig instellen. Voor altijd laten draaien.",
-    "automationSubtitle": "Onze automatiseringen verbinden uw WhatsApp, CRM, agenda en advertentieaccounts in één systeem dat nooit een dag vrij neemt",
-    "automationFeatures": [
-      { "title": "Lead naar Sheet naar WhatsApp", "description": "Leg leads automatisch vast en route ze naar uw AI-agent" },
-      { "title": "Automatische follow-ups", "description": "Vergeet nooit meer een follow-up met intelligente automatisering" },
-      { "title": "Boekingskalenderautomatisering", "description": "Synchroniseer consultaties rechtstreeks met uw agenda" },
-      { "title": "Foto- en spraakverwerking", "description": "AI-gestuurde analyse van multimediaberichten" },
-      { "title": "CRM-integratie", "description": "Naadloze verbinding met uw bestaande tools" },
-      { "title": "Dashboardrapportage", "description": "Realtime inzichten in al uw automatiseringen" }
-    ],
+    },
+    "ladder": {
+      "eyebrow": "De vier systemen",
+      "title": "Vier systemen. Eén verhaal: vastleggen → converteren → uitvoeren → meten.",
+      "lead": "Elk systeem neemt één stuk handwerk weg. Begin met één systeem en voeg de rest toe wanneer u er klaar voor bent.",
+      "listLabel": "De vier systemen",
+      "stepLabel": "Stap {{step}}",
+      "replaces": "Vervangt",
+      "link": "Bekijk dit systeem",
+      "allLink": "Alle vier de systemen bekijken",
+      "pricingLink": "Pakketten vergelijken"
+    },
     "testimonialsTitle": "Geloof ons niet zomaar op ons woord",
     "testimonialsSubtitle": "Echte bedrijven. Echte cijfers. Dit is wat er gebeurde toen ze stopten met handmatig werken.",
     "testimonials": [
-      { "name": "Dr. Gorkem Atsal", "role": "Eigenaar van de kliniek", "company": "Gorkem Atsal kliniek", "content": "De WhatsApp AI-agent heeft onze leadafhandeling volledig getransformeerd. We zijn gegaan van het missen van 40% van de aanvragen naar het beantwoorden van 100% binnen seconden. Ons conversiepercentage verdubbelde in slechts 3 maanden." },
-      { "name": "Pouyan Azizpour", "role": "CEO", "company": "Wavemed.io", "content": "Webimot's SEO Blog Generator is een gamechanger geweest. We publiceren 20 geoptimaliseerde berichten per maand zonder enig handmatig werk. Ons organisch verkeer steeg aanzienlijk binnen enkele maanden na de start." },
-      { "name": "Dr. Hamed Gholami", "role": "Eigenaar van Novin Ariana", "company": "Novin Ariana Health Group", "content": "De AI Operations Autopilot bespaart ons elke week 20+ uur. Factuurherinneringen, HR-checklists, planningsrapporten — allemaal automatisch afgehandeld. Ons team richt zich eindelijk op echt werk in plaats van administratie." }
+      {
+        "name": "Dr. Gorkem Atsal",
+        "role": "Eigenaar van de kliniek",
+        "company": "Gorkem Atsal kliniek",
+        "content": "De WhatsApp AI-agent heeft onze leadafhandeling volledig getransformeerd. We zijn gegaan van het missen van 40% van de aanvragen naar het beantwoorden van 100% binnen seconden. Ons conversiepercentage verdubbelde in slechts 3 maanden."
+      },
+      {
+        "name": "Pouyan Azizpour",
+        "role": "CEO",
+        "company": "Wavemed.io",
+        "content": "Webimot's SEO Blog Generator is een gamechanger geweest. We publiceren 20 geoptimaliseerde berichten per maand zonder enig handmatig werk. Ons organisch verkeer steeg aanzienlijk binnen enkele maanden na de start."
+      },
+      {
+        "name": "Dr. Hamed Gholami",
+        "role": "Eigenaar van Novin Ariana",
+        "company": "Novin Ariana Health Group",
+        "content": "De AI Operations Autopilot bespaart ons elke week 20+ uur. Factuurherinneringen, HR-checklists, planningsrapporten — allemaal automatisch afgehandeld. Ons team richt zich eindelijk op echt werk in plaats van administratie."
+      }
     ],
     "faqBadge": "FAQ",
     "faqTitle": "Vragen die we elke dag krijgen",
     "faqSubtitle": "Directe antwoorden — geen jargon, geen overbodige tekst",
     "faqs": [
-      { "question": "Wat is een WhatsApp AI-agent en hoe werkt het?", "answer": "Onze WhatsApp AI-agent is een geautomatiseerd systeem gekoppeld aan uw WhatsApp Business-account. Het beantwoordt inkomende patiëntenvragen direct — in meerdere talen — 24 uur per dag. Het kan foto's evalueren met Vision AI, spraakberichten transcriberen, leads scoren en kwalificeren, en automatisch consultaties boeken in uw agenda. Voor routinegesprekken is geen mens nodig." },
-      { "question": "Met welke sectoren werkt u?", "answer": "Onze twee kernspecialisaties zijn medisch toerisme en vastgoed. In medisch toerisme werken we met klinieken in Turkije, waaronder haartransplantatie (FUE/DHI), tandheelkunde en glimlachontwerp, cosmetische en plastische chirurgie, IVF en vruchtbaarheid, en gezondheidstoerismeagentschappen. In vastgoed helpen we bureaus onroerend goed te verkopen aan internationale kopers." },
-      { "question": "Hoe snel kan alles worden opgezet?", "answer": "De WhatsApp AI-agent is doorgaans binnen 2 weken live. Dit omvat het verbinden van uw WhatsApp Business API, het trainen van de AI op uw specifieke diensten en prijzen, het integreren met uw boekingsagenda en testen. SEO- en advertentiecampagnes worden gewoonlijk in dezelfde eerste maand gelanceerd." },
-      { "question": "Welke talen ondersteunt de AI-agent?", "answer": "De AI-agent kan vloeiend communiceren in het Engels, Turks, Arabisch, Russisch, Duits, Frans en vele andere talen. Het detecteert automatisch de taal van de patiënt en reageert dienovereenkomstig, zodat u nooit meertalig personeel hoeft in te huren voor eerste contactondersteuning." },
-      { "question": "Hoe werkt de SEO Blog Generator AI?", "answer": "Onze AI haalt relevante onderwerpen uit RSS-feeds en branchebronnen, schrijft volledig SEO-geoptimaliseerde artikelen, voegt metatitels en -beschrijvingen toe, stelt interne links in en publiceert ze op een schema — allemaal automatisch. Klanten publiceren doorgaans 20-30 artikelen per maand zonder enige handmatige inspanning." },
-      { "question": "Beheert u Google Ads en Meta Ads?", "answer": "Ja. We bouwen en beheren complete betaalde advertentiecampagnes op Google Zoeken, Google Display, Facebook en Instagram. Dit omvat doelgroeponderzoek, advertentiecreatieve strategie, voor/na-content, retargetingfunnels en conversietracking." },
-      { "question": "Heb ik technische kennis nodig om uw tools te gebruiken?", "answer": "Nee. We verzorgen de volledige technische installatie — API-verbindingen, integraties, dashboardconfiguratie en doorlopende optimalisatie. U heeft alleen een WhatsApp Business-account en de wil om te groeien." },
-      { "question": "Welke resultaten kan ik realistisch verwachten?", "answer": "Op basis van onze bestaande klanten: responstijd daalt van uren naar minder dan 30 seconden, leadconversiepercentages stijgen doorgaans met 40-60%, organisch verkeer groeit meer dan 20% binnen 6 maanden van consistente SEO, en betaalde advertentie ROAS heeft 8,5x bereikt." },
-      { "question": "Hoeveel kost het?", "answer": "De prijsstelling hangt af van welke diensten u nodig heeft en de omvang van de activiteiten van uw kliniek. We bieden zowel zelfstandige AI-producten als full-service maandelijkse retainers. Boek een gratis strategiegesprek voor een op maat gemaakt voorstel." },
-      { "question": "Hoe ziet onboarding eruit?", "answer": "Na het strategiegesprek sturen we een korte onboarding-vragenlijst. Vervolgens verzorgen we alle technische installatie, presenteren we u een testomgeving, verzamelen we uw feedback en gaan we live. De meeste klanten zijn binnen 2-3 weken volledig onboarded." }
+      {
+        "question": "Wat is een AI-automatiseringssysteem?",
+        "answer": "Een combinatie van AI-agents en integraties die één terugkerende taak in uw bedrijf volledig overneemt — aanvragen beantwoorden, leads opvolgen, documenten verwerken of resultaten rapporteren. We koppelen het aan de tools die u al gebruikt (WhatsApp, agenda, CRM, e-mail, boekhouding), trainen het op uw diensten en beheren het voor u. Uw team hoeft niets te installeren of te leren."
+      },
+      {
+        "question": "Heb ik alle vier de systemen nodig?",
+        "answer": "Nee. De meeste klanten beginnen met het capture-systeem, zodat elke WhatsApp- en webaanvraag binnen seconden wordt beantwoord, en voegen daarna follow-up en rapportage toe zodra ze de resultaten zien. De vier systemen zijn gebouwd om samen te werken, maar elk systeem werkt ook op zichzelf — u voegt de volgende stap toe wanneer u er klaar voor bent."
+      },
+      {
+        "question": "Hoe snel is het live?",
+        "answer": "De gratis AI-audit duurt 3 dagen en laat de belangrijkste automatiseringskansen voor uw bedrijf zien. Daarna is het capture-systeem meestal binnen 2 weken live; een volledige inrichting met follow-up, operations en rapportage duurt 2–4 weken — inclusief het koppelen van uw WhatsApp Business-nummer, het trainen van de AI op uw diensten en het testen met uw team."
+      },
+      {
+        "question": "Werkt het voor mijn kliniek of klein bedrijf?",
+        "answer": "Ja, als uw klanten u bereiken via WhatsApp, e-mail of webformulieren. Onze diepste ervaring ligt bij haartransplantatie-, tandheelkundige, cosmetische en IVF-klinieken — inclusief aanbieders van medisch toerisme — en bij makelaars, webshops, financiële en juridische kantoren en dienstverleners. De AI antwoordt in 50+ talen, dus ook internationale klanten worden geholpen."
+      },
+      {
+        "question": "Wat kost het?",
+        "answer": "De prijs hangt af van het aantal systemen dat u nodig heeft, het aantal locaties of inboxen en de tools die we koppelen. We bieden drie pakketten — Starter, Growth en Scale — gekoppeld aan de vier systemen, en elk pakket wordt na een gratis audit geoffreerd, zodat u alleen betaalt voor wat u echt tijd bespaart. Er is geen langlopend contract."
+      },
+      {
+        "question": "Vervangt het mijn medewerkers?",
+        "answer": "Nee — het vervangt het repetitieve werk dat uw medewerkers vandaag doen: eerste antwoorden om middernacht, leads najagen die stil zijn gevallen, gegevens uit documenten in spreadsheets overtypen, wekelijkse rapporten maken. Uw team blijft consultaties, complexe vragen en beslissingen doen, en de AI geeft over aan een mens wanneer dat nodig is."
+      }
     ],
-    "ctaTitle": "Uw concurrenten wachten niet. U ook niet.",
-    "ctaSubtitle": "Boek een gratis 30-minuten strategiegesprek. We laten u precies zien welke automatiseringen de grootste impact op uw omzet zullen hebben — geen overbodige informatie, geen harde verkoop, alleen een duidelijk plan.",
-    "ctaButton": "Boek uw gratis strategiegesprek"
+    "ctaTitle": "Zie uw bedrijf draaien op AI.",
+    "ctaSubtitle": "Boek een gratis demo van 30 minuten — we laten het capture-systeem live zien op uw eigen WhatsApp-nummer.",
+    "ctaButton": "Boek een demo"
   },
   "about": {
     "badge": "Lead & Verkoop Generatie Experts",
@@ -164,18 +140,39 @@
       "Meetbare ROI op elke campagne"
     ],
     "stats": [
-      { "number": "50+", "label": "Bediende klanten" },
-      { "number": "60%", "label": "Gem. verkeersgroei" },
-      { "number": "24/7", "label": "AI-automatisering" },
-      { "number": "50+", "label": "Ondersteunde talen" }
+      {
+        "number": "50+",
+        "label": "Bediende klanten"
+      },
+      {
+        "number": "60%",
+        "label": "Gem. verkeersgroei"
+      },
+      {
+        "number": "24/7",
+        "label": "AI-automatisering"
+      },
+      {
+        "number": "50+",
+        "label": "Ondersteunde talen"
+      }
     ],
     "medBadge": "Primaire focus",
     "medTitle": "Medisch toerisme & klinieken",
     "medSubtitle": "Medisch toerisme is een industrie van meer dan $100 miljard met unieke uitdagingen die AI-automatisering perfect oplost. Dit is waar wij ons in specialiseren.",
     "specialties": [
-      { "title": "Tandheelkundige klinieken", "desc": "Implantaten, veneers, volledige mondrestauratie" },
-      { "title": "Haartransplantatie", "desc": "FUE, DHI en baardtransplantaties" },
-      { "title": "Cosmetische chirurgie", "desc": "Rhinoplastiek, BBL, gewichtsverlieschirurgie" }
+      {
+        "title": "Tandheelkundige klinieken",
+        "desc": "Implantaten, veneers, volledige mondrestauratie"
+      },
+      {
+        "title": "Haartransplantatie",
+        "desc": "FUE, DHI en baardtransplantaties"
+      },
+      {
+        "title": "Cosmetische chirurgie",
+        "desc": "Rhinoplastiek, BBL, gewichtsverlieschirurgie"
+      }
     ],
     "challengesTitle": "De uitdagingen in de sector",
     "challenges": [
@@ -230,9 +227,19 @@
   "contact": {
     "title": "Neem contact op",
     "subtitle": "Klaar om uw bedrijf te transformeren met AI-automatisering? Laten we het over uw doelen hebben.",
-    "whatsapp": { "title": "WhatsApp", "desc": "Ontvang directe antwoorden van ons team", "button": "Chat op WhatsApp" },
-    "email": { "title": "E-mail", "desc": "Stuur ons een gedetailleerde aanvraag" },
-    "phone": { "title": "Telefoon", "desc": "Bel ons tijdens kantooruren" },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "desc": "Ontvang directe antwoorden van ons team",
+      "button": "Chat op WhatsApp"
+    },
+    "email": {
+      "title": "E-mail",
+      "desc": "Stuur ons een gedetailleerde aanvraag"
+    },
+    "phone": {
+      "title": "Telefoon",
+      "desc": "Bel ons tijdens kantooruren"
+    },
     "formTitle": "Stuur ons een bericht",
     "formDesc": "Vul het formulier in en we nemen binnen 24 uur contact met u op",
     "name": "Naam *",
@@ -260,9 +267,21 @@
     "subtitle": "Echte resultaten van echte bedrijven in medisch toerisme, vastgoed en servicebranches",
     "successTitle": "Succesverhalen",
     "metrics": [
-      { "value": "100%", "label": "Leadresponspercentage", "desc": "Alle aanvragen direct beantwoord" },
-      { "value": "3x", "label": "Meer conversies", "desc": "Gemiddelde verbetering bij klanten" },
-      { "value": "60%", "label": "Verkeersgroei", "desc": "Gemiddelde stijging organisch verkeer" }
+      {
+        "value": "100%",
+        "label": "Leadresponspercentage",
+        "desc": "Alle aanvragen direct beantwoord"
+      },
+      {
+        "value": "3x",
+        "label": "Meer conversies",
+        "desc": "Gemiddelde verbetering bij klanten"
+      },
+      {
+        "value": "60%",
+        "label": "Verkeersgroei",
+        "desc": "Gemiddelde stijging organisch verkeer"
+      }
     ],
     "testimonialsTitle": "Wat onze klanten zeggen",
     "industriesTitle": "Sectoren die wij bedienen",
@@ -275,10 +294,26 @@
     "title": "Wij helpen klinieken meer patiënten te krijgen",
     "subtitle": "De meeste bureaus brengen u klikken. Wij focussen op wat echt belangrijk is voor uw kliniek — aanvragen omzetten in geboekte procedures. Met AI-systemen speciaal gebouwd voor haartransplantatie-, tand-, cosmetische en IVF-klinieken.",
     "coreValues": [
-      { "title": "Patiënten omzetten in boekingen", "description": "Wij brengen u niet alleen aanvragen — wij bouwen systemen die patiëntenvragen omzetten in bevestigde consultaties en procedures.", "stats": "60% hogere boekingsrate" },
-      { "title": "Internationale patiënten laten groeien", "description": "Trek patiënten aan uit het VK, Duitsland, VS en verder met meertalige marketingstrategieën gebouwd voor klinieken voor medisch toerisme.", "stats": "3x meer internationale leads" },
-      { "title": "24/7 patiëntrespons", "description": "Mis nooit meer een aanvraag. Onze AI behandelt patiëntenvragen, evalueert foto's en boekt consultaties zelfs terwijl u slaapt.", "stats": "100% responspercentage" },
-      { "title": "Volg elke patiëntreis", "description": "Weet precies waar uw patiënten vandaan komen, welke campagnes werken en hoe u meer boekingen kunt krijgen met gedetailleerde analytics.", "stats": "Wekelijkse prestatierapporten" }
+      {
+        "title": "Patiënten omzetten in boekingen",
+        "description": "Wij brengen u niet alleen aanvragen — wij bouwen systemen die patiëntenvragen omzetten in bevestigde consultaties en procedures.",
+        "stats": "60% hogere boekingsrate"
+      },
+      {
+        "title": "Internationale patiënten laten groeien",
+        "description": "Trek patiënten aan uit het VK, Duitsland, VS en verder met meertalige marketingstrategieën gebouwd voor klinieken voor medisch toerisme.",
+        "stats": "3x meer internationale leads"
+      },
+      {
+        "title": "24/7 patiëntrespons",
+        "description": "Mis nooit meer een aanvraag. Onze AI behandelt patiëntenvragen, evalueert foto's en boekt consultaties zelfs terwijl u slaapt.",
+        "stats": "100% responspercentage"
+      },
+      {
+        "title": "Volg elke patiëntreis",
+        "description": "Weet precies waar uw patiënten vandaan komen, welke campagnes werken en hoe u meer boekingen kunt krijgen met gedetailleerde analytics.",
+        "stats": "Wekelijkse prestatierapporten"
+      }
     ],
     "partnerTitle": "De groeiparter van uw kliniek",
     "partnerDesc": "We begrijpen medisch toerisme van binnen en van buiten. Van het afhandelen van patiëntenvragen in het Arabisch, Duits en Engels tot het evalueren van voor/na-foto's — we weten wat er nodig is om internationale patiënten te converteren naar geboekte procedures.",
@@ -290,10 +325,26 @@
     ],
     "processTitle": "Ons bewezen proces",
     "steps": [
-      { "step": "01", "title": "Audit uw kliniek", "description": "We analyseren uw patiëntenstroom, website en huidige marketing om groeikansen te vinden." },
-      { "step": "02", "title": "Bouw uw AI-systeem", "description": "Aangepaste WhatsApp-agent, meertalige campagnes en geautomatiseerde boeking op maat voor uw kliniek." },
-      { "step": "03", "title": "Lanceren & monitoren", "description": "Ga live met 24/7 patiëntrespons en volg elke aanvraag van eerste bericht tot geboekte procedure." },
-      { "step": "04", "title": "Internationaal opschalen", "description": "Uitbreiden naar nieuwe markten — VK, Duitsland, Golfstaten — en uw internationale patiëntenbasis laten groeien." }
+      {
+        "step": "01",
+        "title": "Audit uw kliniek",
+        "description": "We analyseren uw patiëntenstroom, website en huidige marketing om groeikansen te vinden."
+      },
+      {
+        "step": "02",
+        "title": "Bouw uw AI-systeem",
+        "description": "Aangepaste WhatsApp-agent, meertalige campagnes en geautomatiseerde boeking op maat voor uw kliniek."
+      },
+      {
+        "step": "03",
+        "title": "Lanceren & monitoren",
+        "description": "Ga live met 24/7 patiëntrespons en volg elke aanvraag van eerste bericht tot geboekte procedure."
+      },
+      {
+        "step": "04",
+        "title": "Internationaal opschalen",
+        "description": "Uitbreiden naar nieuwe markten — VK, Duitsland, Golfstaten — en uw internationale patiëntenbasis laten groeien."
+      }
     ],
     "cta": "Ontvang uw gratis groeiplan"
   },

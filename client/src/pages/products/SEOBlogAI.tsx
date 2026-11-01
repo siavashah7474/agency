@@ -3,6 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function SEOBlogAIPage() {
   return (
     <ProductPageLayout
+      addOnFor="capture"
       seoTitle="SEO Blog AI | Publish SEO content on autopilot — Webimot Agency"
       seoDescription="SEO Blog AI writes, optimises, and publishes SEO-targeted blog posts automatically every week — so your website ranks on Google and generates inbound leads without a writer or content team."
       emoji="✍️"

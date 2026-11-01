@@ -38,9 +38,9 @@ During peak seasons, inquiries can spike dramatically. Human teams get overwhelm
 
 ## The AI Automation Solution
 
-[Webimot's AI automation platform](/solutions) handles unlimited concurrent conversations in multiple languages, 24 hours a day, 7 days a week. It doesn't get tired, doesn't take breaks, and never forgets to follow up.
+[Webimot's AI automation platform](/systems) handles unlimited concurrent conversations in multiple languages, 24 hours a day, 7 days a week. It doesn't get tired, doesn't take breaks, and never forgets to follow up.
 
-### What [Webimot AI Automation](/solutions) Delivers:
+### What [Webimot AI Automation](/systems) Delivers:
 - **Instant responses** to every inquiry, any time of day
 - **Multilingual support** in 50+ languages without additional staff
 - **Consistent quality** in every patient interaction
@@ -49,7 +49,7 @@ During peak seasons, inquiries can spike dramatically. Human teams get overwhelm
 
 ## Real Results from Real Clinics
 
-Clinics using [Webimot's AI solutions](/solutions) typically see:
+Clinics using [Webimot's AI solutions](/systems) typically see:
 - 60% increase in conversion rates
 - 80% reduction in response times
 - 40% decrease in staff workload
@@ -61,7 +61,7 @@ The clinics winning in medical tourism today aren't the ones with the biggest bu
 
 **The question isn't whether you can afford AI automation. It's whether you can afford to keep losing leads to competitors who have it.**
 
-Ready to see what [Webimot AI automation](/solutions) can do for your clinic? [Book a free strategy call](/book-consultation) to discuss your specific situation.
+Ready to see what [Webimot AI automation](/systems) can do for your clinic? [Book a free strategy call](/book-consultation) to discuss your specific situation.
     `
   },
   {
@@ -243,7 +243,7 @@ All of this happens at 3 AM, without any human involvement.
 - Want to scale without proportionally increasing staff
 - Value consistency in patient communication
 
-Curious if [Webimot AI automation](/solutions) is right for your clinic? [Book a free consultation at webimotagency.com](/book-consultation) to discuss your specific situation.
+Curious if [Webimot AI automation](/systems) is right for your clinic? [Book a free consultation at webimotagency.com](/book-consultation) to discuss your specific situation.
     `
   },
   {
@@ -436,7 +436,7 @@ To cover all hours with human agents, you need:
 
 ## AI Customer Service Costs
 
-[Webimot's AI automation platform](/solutions) replaces your entire manual inquiry team at a fraction of the cost.
+[Webimot's AI automation platform](/systems) replaces your entire manual inquiry team at a fraction of the cost.
 
 ### Implementation
 - Setup and customization: One-time fee
@@ -448,7 +448,7 @@ To cover all hours with human agents, you need:
 - Unlimited conversations: No per-message fees
 - All languages included: No additional cost
 
-### What [Webimot AI](/solutions) Gets You
+### What [Webimot AI](/systems) Gets You
 - 24/7/365 availability
 - Instant responses (under 1 minute)
 - 50+ languages
@@ -475,9 +475,9 @@ To cover all hours with human agents, you need:
 
 ## Beyond Cost: Quality Improvements
 
-[Webimot AI](/solutions) doesn't just save money—it improves service across every metric:
+[Webimot AI](/systems) doesn't just save money—it improves service across every metric:
 
-| Metric | Human Team | [Webimot AI Automation](/solutions) |
+| Metric | Human Team | [Webimot AI Automation](/systems) |
 |--------|------------|---------------|
 | Response time | 2-4 hours | Under 1 minute |
 | Availability | 10-16 hours | 24/7 |
@@ -487,17 +487,17 @@ To cover all hours with human agents, you need:
 
 ## When to Keep Humans
 
-[Webimot's AI solutions](/solutions) are not meant to replace all human interaction. Keep humans for:
+[Webimot's AI solutions](/systems) are not meant to replace all human interaction. Keep humans for:
 - Complex medical consultations
 - Sensitive patient situations
 - High-value relationship building
 - Cases requiring empathy and judgment
 
-The best approach is hybrid: [Webimot AI](/solutions) handles volume and availability, humans handle complexity and relationships.
+The best approach is hybrid: [Webimot AI](/systems) handles volume and availability, humans handle complexity and relationships.
 
 ## ROI Calculation
 
-For most clinics, [Webimot AI automation](/solutions) pays for itself within the first month through:
+For most clinics, [Webimot AI automation](/systems) pays for itself within the first month through:
 - Reduced staffing costs
 - Increased conversion from faster responses
 - Captured leads during off-hours
@@ -591,7 +591,7 @@ WhatsApp is where conversions happen. Multilingual capability is critical — an
 - Cons: May need human backup for very complex cases
 
 ### Best Practice: Hybrid Approach
-[Webimot AI](/solutions) handles initial contact and common questions in any language, humans step in for complex consultations.
+[Webimot AI](/systems) handles initial contact and common questions in any language, humans step in for complex consultations.
 
 ## Content Marketing
 
@@ -998,7 +998,7 @@ Every day, medical tourism clinics receive dozens of patient photos—hairlines,
 
 ## Enter Vision AI
 
-[Webimot's AI solutions](/solutions) include computer vision technology that analyzes medical photos with remarkable accuracy. The system can:
+[Webimot's AI solutions](/systems) include computer vision technology that analyzes medical photos with remarkable accuracy. The system can:
 
 - Assess hair loss patterns and recommend graft counts
 - Evaluate dental conditions and suggest treatments
@@ -1118,7 +1118,7 @@ The AI is a powerful tool that makes doctors more efficient, not obsolete.
 
 ## The Competitive Advantage
 
-Clinics using [Webimot's Vision AI](/ai-solutions) for photo evaluation:
+Clinics using [Webimot's Vision AI](/clinics) for photo evaluation:
 - Respond 10x faster than competitors
 - Convert more leads with instant engagement
 - Free up doctor time for complex cases
@@ -1126,9 +1126,9 @@ Clinics using [Webimot's Vision AI](/ai-solutions) for photo evaluation:
 
 ## Getting Started
 
-[Webimot's AI photo evaluation](/ai-solutions) is no longer science fiction—it's available today and being used by leading clinics.
+[Webimot's AI photo evaluation](/clinics) is no longer science fiction—it's available today and being used by leading clinics.
 
-Interested in adding [Webimot AI](/solutions) to your clinic? [Visit webimotagency.com](/) to see how it could work for your specific procedures.
+Interested in adding [Webimot AI](/systems) to your clinic? [Visit webimotagency.com](/) to see how it could work for your specific procedures.
     `
   },
   {
@@ -1353,12 +1353,12 @@ That gap is the difference between a booked patient and a lost lead worth $3,000
 - **Volume overwhelm** — Peak season brings hundreds of daily inquiries that human teams cannot handle
 - **Inconsistent follow-ups** — Leads go cold when staff forget to follow up after 24 hours
 
-## How [Webimot AI Assistants](/ai-solutions) Transform Turkish Plastic Surgery Clinics
+## How [Webimot AI Assistants](/clinics) Transform Turkish Plastic Surgery Clinics
 
-[Webimot's AI assistant](/ai-solutions) is not a chatbot. It is an intelligent system that understands the patient's question, responds in their language, qualifies their interest, and books a consultation — all automatically.
+[Webimot's AI assistant](/clinics) is not a chatbot. It is an intelligent system that understands the patient's question, responds in their language, qualifies their interest, and books a consultation — all automatically.
 
 ### 24/7 Multilingual Response
-Turkish clinics attract patients from 50+ countries. [Webimot's AI](/solutions) replies instantly in:
+Turkish clinics attract patients from 50+ countries. [Webimot's AI](/systems) replies instantly in:
 - **German** for patients from Germany, Austria, Switzerland
 - **Arabic** for patients from Saudi Arabia, UAE, Kuwait
 - **English** for patients from the UK, USA, Australia
@@ -1366,10 +1366,10 @@ Turkish clinics attract patients from 50+ countries. [Webimot's AI](/solutions) 
 - **Russian** for patients from Russia, Kazakhstan, Ukraine
 - **French** for patients from France, Belgium, Morocco
 
-No hiring. No training. No overtime pay. [See all features at webimotagency.com](/solutions).
+No hiring. No training. No overtime pay. [See all features at webimotagency.com](/systems).
 
 ### Intelligent Lead Qualification
-Not every inquiry becomes a patient. [Webimot's AI assistant](/ai-solutions) filters and qualifies leads by asking the right questions:
+Not every inquiry becomes a patient. [Webimot's AI assistant](/clinics) filters and qualifies leads by asking the right questions:
 - Which procedure are you interested in?
 - Have you had any previous surgeries?
 - What is your preferred travel period?
@@ -1378,7 +1378,7 @@ Not every inquiry becomes a patient. [Webimot's AI assistant](/ai-solutions) fil
 Only serious, qualified leads get escalated to your medical consultants — saving hours of staff time daily.
 
 ### Procedure-Specific Knowledge
-[Webimot's AI](/solutions) answers detailed questions about your most popular procedures:
+[Webimot's AI](/systems) answers detailed questions about your most popular procedures:
 - **Rhinoplasty (Nose Job)** — techniques, recovery time, what to expect
 - **Hair Transplant (FUE/DHI)** — graft count, results timeline, scar-free methods
 - **Liposuction and body contouring** — areas treated, downtime, results
@@ -1386,11 +1386,11 @@ Only serious, qualified leads get escalated to your medical consultants — savi
 - **Dental implants and Hollywood smile** — procedure steps, materials, durability
 
 ### Automated Consultation Booking
-Once a patient is qualified and interested, [Webimot's AI assistant](/ai-solutions) books the video consultation directly into your calendar — no back-and-forth emails required.
+Once a patient is qualified and interested, [Webimot's AI assistant](/clinics) books the video consultation directly into your calendar — no back-and-forth emails required.
 
-## Real Results: What [Webimot AI-Powered](/solutions) Clinics Achieve
+## Real Results: What [Webimot AI-Powered](/systems) Clinics Achieve
 
-Clinics using [Webimot's AI solutions](/solutions) for plastic surgery inquiries typically report:
+Clinics using [Webimot's AI solutions](/systems) for plastic surgery inquiries typically report:
 - **3x more consultations booked** from the same volume of inquiries
 - **90% reduction** in first-response time (from hours to seconds)
 - **45% increase** in international patient bookings within 90 days
@@ -1402,17 +1402,17 @@ Clinics using [Webimot's AI solutions](/solutions) for plastic surgery inquiries
 ### Rhinoplasty (Nose Job)
 Istanbul is globally recognised as a rhinoplasty capital. Surgeons here perform thousands of rhinoplasties annually, attracting patients primarily from Germany, the Netherlands, UK, and the Gulf region. The combination of experienced surgeons, modern facilities, and competitive pricing makes Turkey the top choice.
 
-**[Webimot AI](/solutions) impact:** Patients researching rhinoplasty have many questions about techniques (open vs closed), recovery, scarring, and before/after results. [Webimot's AI assistant](/ai-solutions) answers all of these instantly, building trust before the first consultation.
+**[Webimot AI](/systems) impact:** Patients researching rhinoplasty have many questions about techniques (open vs closed), recovery, scarring, and before/after results. [Webimot's AI assistant](/clinics) answers all of these instantly, building trust before the first consultation.
 
 ### Hair Transplant (FUE / DHI)
 Turkey performs more hair transplants than any other country in the world. Clinics in Istanbul alone perform over 5,000 procedures weekly. Patients come primarily from the UK, Germany, Netherlands, Spain, and Middle East.
 
-**[Webimot AI](/solutions) impact:** Hair transplant patients typically compare 10+ clinics. [Webimot's WhatsApp AI Agent](https://webimot.com) responds instantly with graft estimates, technique explanations, and pricing — converting far more comparisons into bookings.
+**[Webimot AI](/systems) impact:** Hair transplant patients typically compare 10+ clinics. [Webimot's WhatsApp AI Agent](https://webimot.com) responds instantly with graft estimates, technique explanations, and pricing — converting far more comparisons into bookings.
 
 ### Dental Tourism (Implants, Veneers, Hollywood Smile)
 Dental procedures in Turkey cost 60-80% less than in Western Europe. Patients often combine dental work with a vacation, making Turkey especially attractive.
 
-**[Webimot AI](/solutions) impact:** Dental patients often need multiple appointments. [Webimot's AI solutions](/solutions) coordinate treatment plans, answer questions about materials and brands, and manage multi-visit scheduling automatically.
+**[Webimot AI](/systems) impact:** Dental patients often need multiple appointments. [Webimot's AI solutions](/systems) coordinate treatment plans, answer questions about materials and brands, and manage multi-visit scheduling automatically.
 
 ## Getting Started: Implement AI for Your Turkish Clinic
 
@@ -1444,11 +1444,11 @@ Medical tourism is a $207 billion industry growing at 12% per year. The top dest
 
 These patients are sophisticated, research-driven, and impatient. They compare 8-12 clinics before choosing. They send identical inquiries to all of them. And they choose the one that responds first with the most helpful, personalised information.
 
-**This is where most clinics fail — and where [Webimot's AI receptionists](/ai-solutions) win.**
+**This is where most clinics fail — and where [Webimot's AI receptionists](/clinics) win.**
 
-## What is [Webimot's AI Receptionist](/ai-solutions) for Medical Tourism?
+## What is [Webimot's AI Receptionist](/clinics) for Medical Tourism?
 
-[Webimot's AI receptionist](/ai-solutions) is an intelligent, always-on system that:
+[Webimot's AI receptionist](/clinics) is an intelligent, always-on system that:
 - Responds to every inquiry instantly — in the patient's native language
 - Answers detailed questions about procedures, pricing, recovery, and logistics
 - Qualifies the patient's interest and seriousness
@@ -1456,12 +1456,12 @@ These patients are sophisticated, research-driven, and impatient. They compare 8
 - Sends follow-up messages to warm leads
 - Escalates complex cases to human staff
 
-Unlike a chatbot, [Webimot's AI](/solutions) understands context, handles multi-turn conversations, and adapts its tone to match the patient's communication style.
+Unlike a chatbot, [Webimot's AI](/systems) understands context, handles multi-turn conversations, and adapts its tone to match the patient's communication style.
 
-## How Top Medical Tourism Destinations Use [Webimot AI Receptionists](/ai-solutions)
+## How Top Medical Tourism Destinations Use [Webimot AI Receptionists](/clinics)
 
 ### Turkey — Plastic Surgery and Hair Transplant Capital
-Turkey's medical tourism industry is built on speed and volume. Istanbul clinics receive hundreds of daily inquiries from across Europe and the Middle East. The best clinics deploy [Webimot AI receptionists](/ai-solutions) that:
+Turkey's medical tourism industry is built on speed and volume. Istanbul clinics receive hundreds of daily inquiries from across Europe and the Middle East. The best clinics deploy [Webimot AI receptionists](/clinics) that:
 - Reply to German patients asking about rhinoplasty in fluent German within seconds
 - Send before/after galleries and pricing guides automatically
 - Book video consultations with surgeons without human involvement
@@ -1527,11 +1527,11 @@ A study by Harvard Business Review found that **companies responding within 1 ho
 
 **Who gets the consultation booking?** Almost always one of the first three.
 
-## Language: The Secret Weapon of [Webimot AI Receptionists](/ai-solutions)
+## Language: The Secret Weapon of [Webimot AI Receptionists](/clinics)
 
 Medical tourism patients communicate in their native language when they feel anxious or uncertain. A German patient asking about rhinoplasty surgery will share their real concerns — and convert more readily — in German.
 
-[Webimot's AI receptionist](/ai-solutions) serves patients in every major medical tourism source market language:
+[Webimot's AI receptionist](/clinics) serves patients in every major medical tourism source market language:
 
 | Source Market | Language | [Webimot](/) Covers It |
 |---|---|---|
@@ -1544,7 +1544,7 @@ Medical tourism patients communicate in their native language when they feel anx
 | Australia | English | Yes — fluent |
 | France | French | Yes — fluent |
 
-## The ROI of [Webimot's AI Receptionist](/ai-solutions) for Your Clinic
+## The ROI of [Webimot's AI Receptionist](/clinics) for Your Clinic
 
 Let's calculate the return:
 
@@ -1555,7 +1555,7 @@ Let's calculate the return:
 - Consultations booked: 40
 - Patients acquired (50% show): 20
 
-**With [Webimot AI receptionist](/ai-solutions):**
+**With [Webimot AI receptionist](/clinics):**
 - Average monthly inquiries: 500
 - Response time: 30 seconds
 - Conversion to consultation: 25%
@@ -1564,7 +1564,7 @@ Let's calculate the return:
 
 **That is 42 additional patients per month from the same inquiry volume** — without hiring a single extra staff member.
 
-## How to Implement [Webimot's AI Receptionist](/ai-solutions) for Your Clinic
+## How to Implement [Webimot's AI Receptionist](/clinics) for Your Clinic
 
 The implementation process is simpler than most clinic owners expect:
 
@@ -1572,7 +1572,7 @@ The implementation process is simpler than most clinic owners expect:
 2. **AI training** — [Webimot](/) trains the AI on your specific procedures, FAQs, pricing, and consultation process
 3. **Language setup** — Configure all relevant languages for your source markets
 4. **Integration** — [Webimot](/) connects to WhatsApp, website chat, email, and Instagram DMs
-5. **Go live** — Your [Webimot AI receptionist](/ai-solutions) starts handling inquiries within 2 weeks
+5. **Go live** — Your [Webimot AI receptionist](/clinics) starts handling inquiries within 2 weeks
 6. **Optimisation** — Ongoing refinement based on real conversation data
 
 **[Webimot Agency](/)** has implemented AI receptionists for medical tourism clinics across Turkey, helping them capture patients from Germany, the UK, the Netherlands, and the Gulf region.
@@ -1601,14 +1601,14 @@ Most businesses focus their automation efforts externally — customer service, 
 
 Multiply this across your team and you are looking at tens of thousands of euros in lost productivity annually — for tasks that add zero strategic value.
 
-Here are the five internal workflows that deliver the fastest, highest ROI when automated with [Webimot's AI automation](/solutions).
+Here are the five internal workflows that deliver the fastest, highest ROI when automated with [Webimot's AI automation](/systems).
 
 ## 1. Invoice and Accounts Payable Processing
 
 Manual invoice handling is one of the most expensive and error-prone processes in any business. Staff receive invoices by email, extract details manually, match them to purchase orders, enter data into accounting software, and chase approvals — all by hand.
 
-### What [Webimot AI Automation](/solutions) Does
-[Webimot's AI](/solutions) reads incoming invoices from any format (PDF, image, email body) and automatically:
+### What [Webimot AI Automation](/systems) Does
+[Webimot's AI](/systems) reads incoming invoices from any format (PDF, image, email body) and automatically:
 - Extracts vendor name, invoice number, amounts, line items, and due dates
 - Matches invoices against purchase orders in your ERP or accounting system
 - Flags discrepancies for human review
@@ -1723,13 +1723,13 @@ Not all automations are equal. Use this framework to decide where to start — a
 | IT Help Desk | High | Medium | Yes |
 | Contract Routing | Medium | Very High | Yes |
 
-**Start with reporting automation** — it has the lowest complexity, delivers immediate visible results, and builds confidence for larger projects. [Webimot's AI automation team](/solutions) can have this live in under two weeks.
+**Start with reporting automation** — it has the lowest complexity, delivers immediate visible results, and builds confidence for larger projects. [Webimot's AI automation team](/systems) can have this live in under two weeks.
 
 ## The ROI Calculation
 
 For a 20-person business:
 - **Current state:** 4.5 hours/employee/week on automatable tasks = 90 hours/week = €3,600/week in payroll cost for zero-value work
-- **After [Webimot automation](/solutions):** Those 90 hours shift to strategic work — or your team stays the same size and produces significantly more output
+- **After [Webimot automation](/systems):** Those 90 hours shift to strategic work — or your team stays the same size and produces significantly more output
 
 Most businesses recover their [Webimot](/) investment within 3–6 months. After that, every month is pure productivity gain.
 
@@ -1753,7 +1753,7 @@ Want to identify which internal workflows in your specific business would delive
 
 Every growing business carries an invisible tax on its payroll: time spent moving information from one system to another. Sales reps copy leads from email into the CRM. Finance staff type invoice details into accounting software. Operations managers pull numbers from five platforms and paste them into a shared spreadsheet every Monday.
 
-None of this creates value. All of it costs money. And virtually all of it can be eliminated with [Webimot's AI automation solutions](/solutions).
+None of this creates value. All of it costs money. And virtually all of it can be eliminated with [Webimot's AI automation solutions](/systems).
 
 **The scale of the problem:**
 - The average office worker spends 3.5 hours per day on manual, repetitive data tasks
@@ -1769,7 +1769,7 @@ The good news: [Webimot](/) has made it cheaper and faster than ever to connect 
 Until recently, automating data entry required dedicated developers, custom integrations, and months of setup. Most small and medium businesses could not justify the cost.
 
 ### The New Reality
-[Webimot's AI automation platform](/solutions) — built on Make.com, n8n, and custom AI agents — has reduced setup time from months to days and costs from €50,000+ to a fraction of that. Any business with standard cloud tools can now automate the majority of their data entry through [webimotagency.com](/).
+[Webimot's AI automation platform](/systems) — built on Make.com, n8n, and custom AI agents — has reduced setup time from months to days and costs from €50,000+ to a fraction of that. Any business with standard cloud tools can now automate the majority of their data entry through [webimotagency.com](/).
 
 ## The Five Most Common Data Entry Workflows to Eliminate
 
@@ -1879,7 +1879,7 @@ The fastest path to ROI is identifying the one data task that consumes the most 
 
 Start there. Automate it thoroughly. Measure the time saved. Then use that confidence to expand.
 
-Want help identifying and automating the highest-impact data entry workflows in your business? [Book a free analysis call with Webimot](/book-consultation) — we will review your current tools and processes and show you exactly where [Webimot's AI automation](/solutions) would have the biggest impact. [Get started at webimotagency.com](/book-consultation).
+Want help identifying and automating the highest-impact data entry workflows in your business? [Book a free analysis call with Webimot](/book-consultation) — we will review your current tools and processes and show you exactly where [Webimot's AI automation](/systems) would have the biggest impact. [Get started at webimotagency.com](/book-consultation).
     `
   },
   {
@@ -1901,7 +1901,7 @@ Businesses obsess over AI for sales and customer service — and rightly so, the
 - 12+ hours writing the same types of messages, reports, and documentation from scratch
 - 6+ hours manually updating task boards, project statuses, and progress logs
 
-None of this is anyone's fault. It is the natural friction of collaboration at scale. And [Webimot's AI automation](/solutions) can eliminate most of it.
+None of this is anyone's fault. It is the natural friction of collaboration at scale. And [Webimot's AI automation](/systems) can eliminate most of it.
 
 ## The Three Pillars of Internal AI Automation
 
@@ -2023,7 +2023,7 @@ Internal communication requires significant writing: proposals, reports, project
 
 ## Measuring the Impact: What to Expect
 
-Based on documented outcomes from businesses that have implemented [Webimot's internal AI automation](/solutions) across these three pillars:
+Based on documented outcomes from businesses that have implemented [Webimot's internal AI automation](/systems) across these three pillars:
 
 | Area | Typical Time Saved Per Week | Per-Employee Value |
 |---|---|---|
@@ -2038,36 +2038,36 @@ For a 20-person team, this represents **€4,500–€8,200 in recovered product
 ## [Webimot](/) Implementation Roadmap
 
 ### Month 1: Communication Foundation
-- Deploy [Webimot AI](/solutions) meeting assistant for all internal meetings
+- Deploy [Webimot AI](/systems) meeting assistant for all internal meetings
 - Set up email AI routing for shared inboxes
-- Integrate [Webimot AI](/solutions) task creation from Slack/Teams
+- Integrate [Webimot AI](/systems) task creation from Slack/Teams
 
 ### Month 2: Project Intelligence
-- Connect [Webimot AI automation](/solutions) to your project management tools for automatic updates
+- Connect [Webimot AI automation](/systems) to your project management tools for automatic updates
 - Deploy deadline monitoring and proactive alerting
 - Automate work routing for incoming requests
 
 ### Month 3: Knowledge Layer
 - Index existing documentation into [Webimot's](/) AI-searchable knowledge base
 - Set up automated documentation generation from meeting transcripts
-- Deploy [Webimot AI](/solutions) writing assistant for common internal document types
+- Deploy [Webimot AI](/systems) writing assistant for common internal document types
 
 ### Ongoing: Measurement and Optimisation
 - Track time saved per workflow quarterly
 - Identify new friction points as the team grows
-- Expand [Webimot automation](/solutions) to newly repetitive tasks as the business scales
+- Expand [Webimot automation](/systems) to newly repetitive tasks as the business scales
 
 ## The Compounding Advantage
 
-[Webimot's AI automation](/solutions) compounds over time. As your team grows, the time saved scales with headcount — but the cost of the automation remains roughly constant. A system that saves 8 hours per week for a 10-person team saves 16 hours per week when the team doubles, without doubling the cost.
+[Webimot's AI automation](/systems) compounds over time. As your team grows, the time saved scales with headcount — but the cost of the automation remains roughly constant. A system that saves 8 hours per week for a 10-person team saves 16 hours per week when the team doubles, without doubling the cost.
 
-This is the structural advantage that [Webimot AI-powered](/solutions) internal operations provides: your productivity infrastructure scales, your team stays focused on strategic work, and your cost per output unit falls as you grow.
+This is the structural advantage that [Webimot AI-powered](/systems) internal operations provides: your productivity infrastructure scales, your team stays focused on strategic work, and your cost per output unit falls as you grow.
 
 ## Getting Started
 
 The best starting point is a systematic audit of where your team actually spends its time. What are the most frequently repeated internal tasks? Where is information getting lost? Where do projects slow down waiting for status updates?
 
-Once you know where the friction is, [Webimot's AI solutions](/solutions) become obvious.
+Once you know where the friction is, [Webimot's AI solutions](/systems) become obvious.
 
 Want a free internal productivity audit for your business? [Book a call with Webimot](/book-consultation) — we will map your current workflows, identify the highest-impact automation opportunities, and design a 90-day implementation plan tailored to your tools and team size. [Start at webimotagency.com](/book-consultation).
     `
@@ -2108,7 +2108,7 @@ Rhinoplasty is one of the most emotionally complex medical tourism decisions. Pa
 - Accommodation options near the clinic
 - How to communicate with the clinic after they return home
 
-**[Webimot's AI assistant](/ai-solutions) answers all of these questions instantly — in German, Dutch, or Arabic — and converts at dramatically higher rates than a clinic that says "please email us for more information."**
+**[Webimot's AI assistant](/clinics) answers all of these questions instantly — in German, Dutch, or Arabic — and converts at dramatically higher rates than a clinic that says "please email us for more information."**
 
 ## The Hair Transplant Market: Volume, Speed, Competition
 
@@ -2134,7 +2134,7 @@ A human consultant handling 50 of these inquiries per day burns out quickly and 
 
 ## The AI Advantage: A Step-by-Step Patient Journey
 
-Here is how a [Webimot AI-powered](/solutions) Turkish hair transplant clinic handles an inquiry vs a traditional clinic:
+Here is how a [Webimot AI-powered](/systems) Turkish hair transplant clinic handles an inquiry vs a traditional clinic:
 
 ### Traditional Clinic (No AI)
 - 11:45 PM — Patient from Manchester sends WhatsApp inquiry with photos
@@ -2142,19 +2142,19 @@ Here is how a [Webimot AI-powered](/solutions) Turkish hair transplant clinic ha
 - 10:30 AM — Staff respond (10+ hours later) with generic pricing
 - Patient has already booked with a competitor who responded at midnight
 
-### [Webimot AI-Powered](/solutions) Clinic
+### [Webimot AI-Powered](/systems) Clinic
 - 11:45 PM — Patient from Manchester sends WhatsApp inquiry
-- 11:45 PM + 8 seconds — [Webimot's AI](/solutions) responds in English: "Hi! Thank you for reaching out. I can see from your photos that you may be a good candidate for FUE. Based on your hair loss pattern, we typically estimate 2,500–3,500 grafts..."
+- 11:45 PM + 8 seconds — [Webimot's AI](/systems) responds in English: "Hi! Thank you for reaching out. I can see from your photos that you may be a good candidate for FUE. Based on your hair loss pattern, we typically estimate 2,500–3,500 grafts..."
 - 11:52 PM — AI sends before/after gallery, package details, and booking link
 - 12:05 AM — Patient books a video consultation for the next morning
 - The competitor never even got a chance
 
-**This is the reality for clinics using [Webimot's AI receptionist](/ai-solutions) today.**
+**This is the reality for clinics using [Webimot's AI receptionist](/clinics) today.**
 
-## Key Procedures Where [Webimot AI](/solutions) Drives the Highest ROI
+## Key Procedures Where [Webimot AI](/systems) Drives the Highest ROI
 
 ### Rhinoplasty (Nose Job)
-- **Why [Webimot AI](/solutions) helps:** Patients have deep emotional investment and many questions. Fast, empathetic, detailed responses build trust and dramatically increase consultation bookings.
+- **Why [Webimot AI](/systems) helps:** Patients have deep emotional investment and many questions. Fast, empathetic, detailed responses build trust and dramatically increase consultation bookings.
 - **[Webimot](/) ROI:** Typically 3-4x more consultations from same inquiry volume
 - **Key languages:** German, Dutch, Arabic, English
 
@@ -2164,17 +2164,17 @@ Here is how a [Webimot AI-powered](/solutions) Turkish hair transplant clinic ha
 - **Key languages:** English, German, Arabic, Dutch, French
 
 ### Breast Augmentation
-- **Why [Webimot AI](/solutions) helps:** Sensitive topic requiring privacy and detailed answers. [Webimot](/) provides consistent, non-judgmental responses 24/7.
+- **Why [Webimot AI](/systems) helps:** Sensitive topic requiring privacy and detailed answers. [Webimot](/) provides consistent, non-judgmental responses 24/7.
 - **[Webimot](/) ROI:** 2-3x more consultations
 - **Key languages:** German, English, Arabic
 
 ### Liposuction & Body Contouring
-- **Why [Webimot AI](/solutions) helps:** Patients want precise information about areas treated, recovery, and realistic results.
+- **Why [Webimot AI](/systems) helps:** Patients want precise information about areas treated, recovery, and realistic results.
 - **[Webimot](/) ROI:** 2-3x more consultations
 - **Key languages:** English, German, Arabic, Russian
 
 ### Bariatric Surgery (Gastric Sleeve / Bypass)
-- **Why [Webimot AI](/solutions) helps:** Complex medical procedure requiring detailed qualification. [Webimot's AI](/solutions) collects BMI, health history, and previous attempts before escalating to the medical team.
+- **Why [Webimot AI](/systems) helps:** Complex medical procedure requiring detailed qualification. [Webimot's AI](/systems) collects BMI, health history, and previous attempts before escalating to the medical team.
 - **[Webimot](/) ROI:** 3-4x more qualified consultations
 - **Key languages:** English, Arabic, German
 

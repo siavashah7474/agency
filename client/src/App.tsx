@@ -28,18 +28,16 @@ function lazyWithPreload(factory: () => Promise<{ default: ComponentType<any> }>
 
 const importHome = () => import("@/pages/Home");
 const Home = lazyWithPreload(importHome);
-const importSolutions = () => import("@/pages/Solutions");
-const Solutions = lazyWithPreload(importSolutions);
-const importWhoWeHelp = () => import("@/pages/WhoWeHelp");
-const WhoWeHelp = lazyWithPreload(importWhoWeHelp);
+const importSystems = () => import("@/pages/Systems");
+const Systems = lazyWithPreload(importSystems);
+const importClinics = () => import("@/pages/Clinics");
+const Clinics = lazyWithPreload(importClinics);
+const importSmallBusiness = () => import("@/pages/SmallBusiness");
+const SmallBusiness = lazyWithPreload(importSmallBusiness);
 const importPricing = () => import("@/pages/Pricing");
 const Pricing = lazyWithPreload(importPricing);
-const importServices = () => import("@/pages/Services");
-const Services = lazyWithPreload(importServices);
 const importServiceDetail = () => import("@/pages/ServiceDetail");
 const ServiceDetail = lazyWithPreload(importServiceDetail);
-const importAISolutions = () => import("@/pages/AISolutions");
-const AISolutions = lazyWithPreload(importAISolutions);
 const importAbout = () => import("@/pages/About");
 const About = lazyWithPreload(importAbout);
 const importContact = () => import("@/pages/Contact");
@@ -80,26 +78,15 @@ const importChatbot = () => import("@/components/Chatbot");
 const Chatbot = lazyWithPreload(importChatbot);
 const importExitIntentPopup = () => import("@/components/ExitIntentPopup");
 const ExitIntentPopup = lazyWithPreload(importExitIntentPopup);
-const importHealthcarePage = () => import("@/pages/industries/Healthcare");
-const HealthcarePage = lazyWithPreload(importHealthcarePage);
-const importEcommercePage = () => import("@/pages/industries/Ecommerce");
-const EcommercePage = lazyWithPreload(importEcommercePage);
-const importFinanceLegalPage = () => import("@/pages/industries/FinanceLegal");
-const FinanceLegalPage = lazyWithPreload(importFinanceLegalPage);
-const importSmallBusinessPage = () => import("@/pages/industries/SmallBusiness");
-const SmallBusinessPage = lazyWithPreload(importSmallBusinessPage);
-const importRealEstatePage = () => import("@/pages/industries/RealEstate");
-const RealEstatePage = lazyWithPreload(importRealEstatePage);
 
 // Route → page chunk, used to load the first page before React takes over pre-rendered HTML.
 const routeImporters: [string, PreloadableComponent][] = [
   ["/", Home],
-  ["/solutions", Solutions],
-  ["/who-we-help", WhoWeHelp],
+  ["/systems", Systems],
+  ["/clinics", Clinics],
+  ["/small-business", SmallBusiness],
   ["/pricing", Pricing],
-  ["/services", Services],
   ["/services/:slug", ServiceDetail],
-  ["/ai-solutions", AISolutions],
   ["/about", About],
   ["/contact", Contact],
   ["/clients", Clients],
@@ -117,11 +104,6 @@ const routeImporters: [string, PreloadableComponent][] = [
   ["/products/cleardesk", ClearDeskPage],
   ["/products/seo-blog-ai", SEOBlogAIPage],
   ["/products/whatsapp-ai", WhatsAppAIPage],
-  ["/industries/healthcare", HealthcarePage],
-  ["/industries/ecommerce", EcommercePage],
-  ["/industries/finance-legal", FinanceLegalPage],
-  ["/industries/small-business", SmallBusinessPage],
-  ["/industries/real-estate", RealEstatePage],
 ];
 
 export function preloadRoute(pathname: string): Promise<unknown> {
@@ -147,12 +129,11 @@ function Router() {
     <Suspense fallback={<PageLoader />}>
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/solutions" component={Solutions} />
-        <Route path="/who-we-help" component={WhoWeHelp} />
+        <Route path="/systems" component={Systems} />
+        <Route path="/clinics" component={Clinics} />
+        <Route path="/small-business" component={SmallBusiness} />
         <Route path="/pricing" component={Pricing} />
-        <Route path="/services" component={Services} />
         <Route path="/services/:slug" component={ServiceDetail} />
-        <Route path="/ai-solutions" component={AISolutions} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/clients" component={Clients} />
@@ -170,11 +151,6 @@ function Router() {
         <Route path="/products/cleardesk" component={ClearDeskPage} />
         <Route path="/products/seo-blog-ai" component={SEOBlogAIPage} />
         <Route path="/products/whatsapp-ai" component={WhatsAppAIPage} />
-        <Route path="/industries/healthcare" component={HealthcarePage} />
-        <Route path="/industries/ecommerce" component={EcommercePage} />
-        <Route path="/industries/finance-legal" component={FinanceLegalPage} />
-        <Route path="/industries/small-business" component={SmallBusinessPage} />
-        <Route path="/industries/real-estate" component={RealEstatePage} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

@@ -3,6 +3,13 @@ import { Mail, MapPin, Phone, Zap } from "lucide-react";
 import { SiInstagram } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { SYSTEMS, ADD_ONS, AUDIENCES } from "@/data/systemsData";
+
+// The seven product pages: every /products/* link that appears in a system or as an add-on.
+// SEO Blog AI is listed under its product name rather than the add-on label.
+const productLinks = [...SYSTEMS.flatMap((s) => s.products), ...ADD_ONS]
+  .filter((p) => p.href.startsWith("/products/"))
+  .map((p) => (p.href === "/products/seo-blog-ai" ? { ...p, name: "SEO Blog AI" } : p));
 
 // Shared link styles: one look for every footer link, with a visible keyboard focus ring
 const focusRing = "rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-[#020817]";
@@ -20,10 +27,11 @@ export default function Footer() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[1px] bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
 
       <div className="container relative z-10 mx-auto px-4 py-14 sm:px-6 md:py-16">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-6 lg:gap-8">
+        {/* Brand + five link columns: at lg the brand takes its own row, at xl it sits beside the columns */}
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8 xl:grid-cols-7">
 
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-2 lg:pr-8">
+          <div className="sm:col-span-2 lg:col-span-5 xl:col-span-2 xl:pr-8">
             <Link href="/" className={`mb-4 inline-flex items-center gap-2 ${focusRing}`} aria-label="Webimot home">
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <span className="text-white font-bold text-lg">W</span>
@@ -64,31 +72,43 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Products */}
+          {/* Systems */}
           <div>
-            <h3 className={headingClass}>Products</h3>
+            <h3 className={headingClass}>{t("footer.systems", "Systems")}</h3>
             <ul className="space-y-1.5">
-              <li><Link href="/solutions" className={linkStrongClass}>All Solutions →</Link></li>
-              <li><Link href="/products/leadfire" className={linkClass}>⚡ LeadFire</Link></li>
-              <li><Link href="/products/documind" className={linkClass}>📄 DocuMind</Link></li>
-              <li><Link href="/products/nurtureloop" className={linkClass}>🔁 NurtureLoop</Link></li>
-              <li><Link href="/products/reviveiq" className={linkClass}>💎 ReviveIQ</Link></li>
-              <li><Link href="/products/cleardesk" className={linkClass}>📊 ClearDesk</Link></li>
-              <li><Link href="/products/seo-blog-ai" className={linkClass}>✍️ SEO Blog AI</Link></li>
-              <li><Link href="/products/whatsapp-ai" className={linkClass}>💬 WhatsApp AI</Link></li>
+              {SYSTEMS.map((system) => (
+                <li key={system.id}>
+                  <Link href={`/systems#${system.id}`} data-testid={`link-footer-system-${system.id}`} className={linkClass}>
+                    {system.emoji} {system.name}
+                  </Link>
+                </li>
+              ))}
+              <li><Link href="/systems" data-testid="link-footer-systems" className={linkStrongClass}>{t("footer.allSystems", "All systems")} →</Link></li>
             </ul>
           </div>
 
-          {/* Industries */}
+          {/* Products */}
           <div>
-            <h3 className={headingClass}>Industries</h3>
+            <h3 className={headingClass}>{t("footer.products", "Products")}</h3>
             <ul className="space-y-1.5">
-              <li><Link href="/who-we-help" className={linkStrongClass}>Who We Help →</Link></li>
-              <li><Link href="/industries/healthcare" className={linkClass}>Healthcare</Link></li>
-              <li><Link href="/industries/ecommerce" className={linkClass}>eCommerce</Link></li>
-              <li><Link href="/industries/finance-legal" className={linkClass}>Finance & Legal</Link></li>
-              <li><Link href="/industries/small-business" className={linkClass}>Small Business</Link></li>
-              <li><Link href="/industries/real-estate" className={linkClass}>Real Estate</Link></li>
+              {productLinks.map((product) => (
+                <li key={product.href}>
+                  <Link href={product.href} className={linkClass}>{product.emoji} {product.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Who we help */}
+          <div>
+            <h3 className={headingClass}>{t("footer.whoWeHelp", "Who we help")}</h3>
+            <ul className="space-y-1.5">
+              {AUDIENCES.map((audience) => (
+                <li key={audience.id}>
+                  <Link href={audience.href} data-testid={`link-footer-${audience.id}`} className={linkClass}>{audience.name}</Link>
+                </li>
+              ))}
+              <li><Link href="/case-studies" data-testid="link-footer-case-studies" className={linkClass}>{t("footer.caseStudies")}</Link></li>
             </ul>
           </div>
 
@@ -96,10 +116,8 @@ export default function Footer() {
           <div>
             <h3 className={headingClass}>{t("footer.company")}</h3>
             <ul className="space-y-1.5">
-              <li><Link href="/services" className={linkClass}>Services</Link></li>
-              <li><Link href="/pricing" data-testid="link-footer-pricing" className={linkClass}>Pricing</Link></li>
               <li><Link href="/about" data-testid="link-footer-about" className={linkClass}>{t("footer.aboutUs")}</Link></li>
-              <li><Link href="/case-studies" data-testid="link-footer-case-studies" className={linkClass}>{t("footer.caseStudies")}</Link></li>
+              <li><Link href="/pricing" data-testid="link-footer-pricing" className={linkClass}>{t("nav.pricing", "Pricing")}</Link></li>
               <li><Link href="/clients" data-testid="link-footer-clients" className={linkClass}>{t("footer.ourClients")}</Link></li>
               <li><Link href="/blog" data-testid="link-footer-blog" className={linkClass}>{t("nav.blog")}</Link></li>
               <li><Link href="/contact" data-testid="link-footer-contact" className={linkClass}>{t("nav.contact")}</Link></li>

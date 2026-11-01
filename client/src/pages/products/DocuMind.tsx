@@ -3,6 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function DocuMindPage() {
   return (
     <ProductPageLayout
+      system="operate"
       seoTitle="DocuMind | Turn paperwork into data in seconds — Webimot Agency"
       seoDescription="Staff spend hours every week manually processing documents — invoices, intake forms, contracts, patient records. DocuMind reads it, extracts the data, and fills your CRM automatically."
       emoji="📄"

@@ -3,6 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function ReviveIQPage() {
   return (
     <ProductPageLayout
+      system="convert"
       seoTitle="ReviveIQ | Your old leads are a goldmine — Webimot Agency"
       seoDescription="Most businesses have thousands of old contacts sitting unused. ReviveIQ sends AI-personalised reactivation messages and hands you back the ones who are ready to buy — right now."
       emoji="💎"

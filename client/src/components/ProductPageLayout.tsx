@@ -1,10 +1,11 @@
-import { useLocation } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight, ExternalLink } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { useBookingModal } from "@/hooks/use-booking-modal";
+import { systemById, type SystemId } from "@/data/systemsData";
 
 export interface ScenarioStep {
   time: string;
@@ -31,14 +32,22 @@ export interface ProductPageProps {
   ctaHeadline: string;
   // Products that have their own site (e.g. WhatsApp AI at webimot.com) link to it as a reference.
   referenceLink?: { href: string; label: string };
+  // The system this product belongs to ("Part of the Capture system →"). Leave unset for add-ons.
+  system?: SystemId;
+  // For add-ons: the system this product feeds ("Add-on that feeds the Capture system →").
+  addOnFor?: SystemId;
 }
 
 const BASE_KEYWORDS = "medical tourism AI system, AI agent for clinics, clinic AI system, medical tourism marketing, AI automation agency, business automation, lead generation, WhatsApp AI, AI receptionist for clinics, clinic automation software";
 
-export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, results, problemParagraphs, howItWorksSteps, scenario, features, featureDetails, whoItsFor, ctaHeadline, referenceLink }: ProductPageProps) {
+export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, results, problemParagraphs, howItWorksSteps, scenario, features, featureDetails, whoItsFor, ctaHeadline, referenceLink, system, addOnFor }: ProductPageProps) {
   const { openModal } = useBookingModal();
   const [pathname] = useLocation();
   const canonicalUrl = `https://webimotagency.com${pathname}`;
+
+  // One line under the hero badge placing the product in the ladder; `system` wins if both are set.
+  const parentSystem = system ? systemById(system) : addOnFor ? systemById(addOnFor) : undefined;
+  const parentLabel = system ? "Part of the" : "Add-on that feeds the";
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -75,17 +84,30 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#020817] to-transparent pointer-events-none" />
             <div className="container mx-auto px-6 relative z-10 text-center max-w-4xl">
-              <div className="inline-flex items-center gap-2 bg-white/8 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-6">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                 <span className="text-xs font-bold tracking-widest text-green-400 uppercase">Available Now</span>
               </div>
+              {parentSystem && (
+                <nav aria-label={`Breadcrumb: Systems, ${parentSystem.name}, ${name}`} className="mb-6 -mt-2">
+                  <Link
+                    href={`/systems#${parentSystem.id}`}
+                    data-testid="link-product-system"
+                    className="inline-flex items-center gap-1.5 text-sm text-white/60 hover:text-white transition-colors"
+                  >
+                    <span aria-hidden="true">{parentSystem.emoji}</span>
+                    <span>{parentLabel} <span className="font-semibold text-white/85">{parentSystem.name}</span></span>
+                    <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  </Link>
+                </nav>
+              )}
               <div className="text-5xl mb-4">{emoji}</div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">{name}</h1>
               <p className="text-xl md:text-2xl font-semibold text-yellow-300 mb-6">{tagline}</p>
               <p className="text-lg text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed">{heroBrief}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>Book Free Strategy Call</Button>
-                <Button size="lg" variant="outline" className="bg-white/8 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm" onClick={() => openModal()}>See Pricing</Button>
+                <Button size="lg" variant="outline" className="bg-white/10 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm" onClick={() => openModal()}>See Pricing</Button>
               </div>
               {referenceLink && (
                 <a
@@ -103,7 +125,7 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
 
           {/* Results Bar */}
           {results && (
-            <section className="py-12 bg-slate-900 border-y border-white/6 relative overflow-hidden">
+            <section className="py-12 bg-slate-900 border-y border-white/10 relative overflow-hidden">
               <div className="container mx-auto px-6">
                 <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
                   {results.map((r, i) => (
@@ -171,17 +193,17 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
                 </div>
                 <div className="relative">
                   {/* Timeline line */}
-                  <div className="absolute left-5 top-4 bottom-4 w-px bg-white/8 hidden sm:block" />
+                  <div className="absolute left-5 top-4 bottom-4 w-px bg-white/10 hidden sm:block" />
                   <div className="space-y-4">
                     {scenario.steps.map((step, i) => (
-                      <div key={i} className={`relative flex gap-4 sm:gap-6 rounded-xl p-4 border transition-colors ${step.highlight ? "bg-secondary/8 border-secondary/25" : "bg-white/3 border-white/6"}`}>
+                      <div key={i} className={`relative flex gap-4 sm:gap-6 rounded-xl p-4 border transition-colors ${step.highlight ? "bg-secondary/10 border-secondary/25" : "bg-white/5 border-white/10"}`}>
                         {/* Dot */}
-                        <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-xs font-bold border ${step.highlight ? "bg-secondary/20 border-secondary/40 text-secondary" : "bg-white/6 border-white/12 text-white/40"}`}>
+                        <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-xs font-bold border ${step.highlight ? "bg-secondary/20 border-secondary/40 text-secondary" : "bg-white/10 border-white/10 text-white/40"}`}>
                           {String(i + 1).padStart(2, "0")}
                         </div>
                         <div className="flex-1 min-w-0 pt-1">
                           <div className="flex flex-wrap items-center gap-2 mb-1">
-                            <span className={`text-[11px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full ${step.highlight ? "bg-secondary/20 text-secondary" : "bg-white/8 text-white/40"}`}>{step.time}</span>
+                            <span className={`text-[11px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full ${step.highlight ? "bg-secondary/20 text-secondary" : "bg-white/10 text-white/40"}`}>{step.time}</span>
                             <span className="text-sm font-semibold text-white">{step.event}</span>
                           </div>
                           <p className="text-sm text-white/55 leading-relaxed">{step.detail}</p>
@@ -207,7 +229,7 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
               {featureDetails ? (
                 <div className="grid sm:grid-cols-2 gap-4">
                   {featureDetails.map((f, i) => (
-                    <div key={i} className="flex gap-4 bg-white/4 border border-white/8 rounded-xl p-5 hover:border-secondary/25 transition-colors">
+                    <div key={i} className="flex gap-4 bg-white/5 border border-white/10 rounded-xl p-5 hover:border-secondary/25 transition-colors">
                       <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-secondary/15 border border-secondary/25 flex items-center justify-center mt-0.5">
                         <Check className="h-4 w-4 text-secondary" />
                       </div>
@@ -221,7 +243,7 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
               ) : (
                 <div className="grid sm:grid-cols-2 gap-3">
                   {features.map((feature, i) => (
-                    <div key={i} className="flex items-start gap-3 bg-white/4 border border-white/8 rounded-xl p-4">
+                    <div key={i} className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4">
                       <Check className="h-4 w-4 text-secondary flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-white/75">{feature}</span>
                     </div>
@@ -279,7 +301,7 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
                   Book Your Free Strategy Call
                 </Button>
                 {referenceLink && (
-                  <Button asChild size="lg" variant="outline" className="bg-white/8 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm">
+                  <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/15 text-white hover:bg-white/15 backdrop-blur-sm">
                     <a href={referenceLink.href} target="_blank" rel="noopener noreferrer">
                       {referenceLink.label} <ExternalLink className="ml-2 h-4 w-4" />
                     </a>

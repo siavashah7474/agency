@@ -17,7 +17,25 @@ import { createHash } from "node:crypto";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(ROOT, "dist", "public");
 const SITE = "https://webimotagency.com";
-const SEEDS = ["/"];
+// Crawling starts here and follows internal links. Pages that nothing links to must be
+// listed explicitly or they would silently drop out of the build and the sitemap:
+//  - the parked marketing services stay live (decision 2 in the restructure design doc)
+//    but were removed from nav, footer and home;
+//  - the three positioning pages are seeded as a safety net in case a nav change breaks
+//    the link path from "/".
+const SEEDS = [
+  "/",
+  "/systems",
+  "/clinics",
+  "/small-business",
+  "/services/branding",
+  "/services/content-creation",
+  "/services/website-development",
+  "/services/reputation-management",
+  "/services/shopify-ecommerce-automation",
+  "/services/funnel-automation",
+  "/services/ai-ops-autopilot",
+];
 const CONCURRENCY = 4;
 const LASTMOD_FILE = path.join(ROOT, "scripts", "page-lastmod.json");
 

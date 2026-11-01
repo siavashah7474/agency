@@ -230,7 +230,7 @@ export default function ServiceDetail() {
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
             <p className="text-muted-foreground mb-6">The service you're looking for doesn't exist.</p>
-            <Link href="/services">
+            <Link href="/systems">
               <Button>View All Services</Button>
             </Link>
           </div>
@@ -372,7 +372,7 @@ export default function ServiceDetail() {
             <div className="container mx-auto px-6 text-white relative z-10">
               <Breadcrumbs
                 items={[
-                  { label: "Services", href: "/services" },
+                  { label: "Systems", href: "/systems" },
                   { label: service.title },
                 ]}
               />

@@ -3,6 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function ClearDeskPage() {
   return (
     <ProductPageLayout
+      system="measure"
       seoTitle="ClearDesk | Your business data, explained every Monday morning — Webimot Agency"
       seoDescription="Most business owners don't know what's actually working. Reports are manual, late, and incomplete. ClearDesk auto-generates plain-English performance reports every week — no spreadsheets needed."
       emoji="📊"
