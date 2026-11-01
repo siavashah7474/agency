@@ -11,11 +11,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimotagency.com/ai-solutions</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://webimotagency.com/blog</loc>
     <lastmod>2026-11-01</lastmod>
     <priority>0.8</priority>
@@ -166,34 +161,14 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimotagency.com/contact</loc>
+    <loc>https://webimotagency.com/clinics</loc>
     <lastmod>2026-11-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimotagency.com/industries/ecommerce</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://webimotagency.com/industries/finance-legal</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://webimotagency.com/industries/healthcare</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://webimotagency.com/industries/real-estate</loc>
+    <loc>https://webimotagency.com/contact</loc>
     <lastmod>2026-11-01</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://webimotagency.com/industries/small-business</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://webimotagency.com/pricing</loc>
@@ -207,7 +182,7 @@
   </url>
   <url>
     <loc>https://webimotagency.com/products/cleardesk</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -222,7 +197,7 @@
   </url>
   <url>
     <loc>https://webimotagency.com/products/nurtureloop</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -232,18 +207,13 @@
   </url>
   <url>
     <loc>https://webimotagency.com/products/seo-blog-ai</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://webimotagency.com/products/whatsapp-ai</loc>
     <lastmod>2026-11-01</lastmod>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://webimotagency.com/services</loc>
-    <lastmod>2026-11-01</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://webimotagency.com/services/ai-ops-autopilot</loc>
@@ -281,11 +251,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimotagency.com/services/seo</loc>
-    <lastmod>2026-11-01</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://webimotagency.com/services/shopify-ecommerce-automation</loc>
     <lastmod>2026-11-01</lastmod>
     <priority>0.6</priority>
@@ -296,17 +261,17 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webimotagency.com/solutions</loc>
-    <lastmod>2026-10-04</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://webimotagency.com/terms-of-service</loc>
+    <loc>https://webimotagency.com/small-business</loc>
     <lastmod>2026-11-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webimotagency.com/who-we-help</loc>
+    <loc>https://webimotagency.com/systems</loc>
+    <lastmod>2026-11-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/terms-of-service</loc>
     <lastmod>2026-11-01</lastmod>
     <priority>0.8</priority>
   </url>

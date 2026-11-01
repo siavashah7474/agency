@@ -1,15 +1,11 @@
 {
   "/": {
-    "hash": "7389d2a4ee32994c",
+    "hash": "6f1d12b606556157",
     "lastmod": "2026-11-01"
   },
   "/about": {
     "hash": "21fa3b3280c6a8fc",
     "lastmod": "2026-11-01"
-  },
-  "/ai-solutions": {
-    "hash": "e6c3c35689ea5e1a",
-    "lastmod": "2026-10-04"
   },
   "/blog": {
     "hash": "934595366b4ae549",
@@ -20,7 +16,7 @@
     "lastmod": "2026-11-01"
   },
   "/blog/ai-assistant-plastic-surgery-turkey-guide": {
-    "hash": "99988de67ee543f7",
+    "hash": "8f63f79f16fbd8da",
     "lastmod": "2026-11-01"
   },
   "/blog/ai-automation-revenue-growth-business-2026": {
@@ -36,7 +32,7 @@
     "lastmod": "2026-11-01"
   },
   "/blog/ai-internal-workflow-automation-guide-2025": {
-    "hash": "7fef9b64dd6478d3",
+    "hash": "2062b880901ceb78",
     "lastmod": "2026-11-01"
   },
   "/blog/ai-operations-automation-sme-revenue-2026": {
@@ -52,7 +48,7 @@
     "lastmod": "2026-11-01"
   },
   "/blog/cost-comparison-ai-vs-human-customer-service": {
-    "hash": "329620cc4631ed2f",
+    "hash": "d3c7ce815f3bbdb4",
     "lastmod": "2026-11-01"
   },
   "/blog/google-ads-medical-tourism-2025": {
@@ -72,7 +68,7 @@
     "lastmod": "2026-11-01"
   },
   "/blog/medical-tourism-ai-receptionist-germany-uk-gulf": {
-    "hash": "5d1af25522a35d7d",
+    "hash": "e482b3bdca7b3bc8",
     "lastmod": "2026-11-01"
   },
   "/blog/multi-language-marketing-medical-tourism": {
@@ -80,7 +76,7 @@
     "lastmod": "2026-11-01"
   },
   "/blog/rhinoplasty-hair-transplant-turkey-ai-lead-conversion": {
-    "hash": "682943a15b8828a4",
+    "hash": "e156c981f25fd824",
     "lastmod": "2026-11-01"
   },
   "/blog/seo-for-clinics-complete-guide": {
@@ -100,7 +96,7 @@
     "lastmod": "2026-11-01"
   },
   "/blog/why-clinics-must-automate-lead-handling": {
-    "hash": "6632846ee6a4ecbc",
+    "hash": "98b2976193da93e5",
     "lastmod": "2026-11-01"
   },
   "/book-consultation": {
@@ -131,32 +127,16 @@
     "hash": "5ef3ea496962d0d2",
     "lastmod": "2026-11-01"
   },
+  "/clinics": {
+    "hash": "4638283dc09d5af9",
+    "lastmod": "2026-11-01"
+  },
   "/contact": {
     "hash": "943c72d102c611ca",
     "lastmod": "2026-11-01"
   },
-  "/industries/ecommerce": {
-    "hash": "dbe46e2587c315bb",
-    "lastmod": "2026-10-04"
-  },
-  "/industries/finance-legal": {
-    "hash": "83f91520b07c22b5",
-    "lastmod": "2026-10-04"
-  },
-  "/industries/healthcare": {
-    "hash": "3131207eda8faf48",
-    "lastmod": "2026-10-04"
-  },
-  "/industries/real-estate": {
-    "hash": "bde9ffaf1f3aeba9",
-    "lastmod": "2026-11-01"
-  },
-  "/industries/small-business": {
-    "hash": "578f22a6e1d2189e",
-    "lastmod": "2026-10-04"
-  },
   "/pricing": {
-    "hash": "09a36e81269de5b2",
+    "hash": "6c86637ac169676e",
     "lastmod": "2026-11-01"
   },
   "/privacy-policy": {
@@ -164,87 +144,79 @@
     "lastmod": "2026-11-01"
   },
   "/products/cleardesk": {
-    "hash": "eb67c6d568488e00",
-    "lastmod": "2026-10-04"
+    "hash": "1197da803376cba5",
+    "lastmod": "2026-11-01"
   },
   "/products/documind": {
-    "hash": "d3db1d8f9b1e43b9",
+    "hash": "b63c91d87171ea62",
     "lastmod": "2026-11-01"
   },
   "/products/leadfire": {
-    "hash": "02e320703b7ffa10",
+    "hash": "75b4b28f74f3fbd3",
     "lastmod": "2026-11-01"
   },
   "/products/nurtureloop": {
-    "hash": "ce143c7836fe32b2",
-    "lastmod": "2026-10-04"
+    "hash": "b92d0a125a6dc4ba",
+    "lastmod": "2026-11-01"
   },
   "/products/reviveiq": {
-    "hash": "72aa08c3fea0c603",
+    "hash": "fbd5cc18363e0fa8",
     "lastmod": "2026-11-01"
   },
   "/products/seo-blog-ai": {
-    "hash": "13952b824fe9d015",
-    "lastmod": "2026-10-04"
-  },
-  "/products/whatsapp-ai": {
-    "hash": "1cb2272fb0aac774",
+    "hash": "7ad1d82c4ab9679f",
     "lastmod": "2026-11-01"
   },
-  "/services": {
-    "hash": "9aa01aa7d411d2b3",
+  "/products/whatsapp-ai": {
+    "hash": "03d7343cb89686cf",
     "lastmod": "2026-11-01"
   },
   "/services/ai-ops-autopilot": {
-    "hash": "ead711230f778338",
+    "hash": "f3d376bbf8ecf648",
     "lastmod": "2026-11-01"
   },
   "/services/branding": {
-    "hash": "2c69fa6535309c73",
+    "hash": "751e1f28d8c6c693",
     "lastmod": "2026-11-01"
   },
   "/services/content-creation": {
-    "hash": "106699e0063ded3f",
+    "hash": "5b16b783a553d42f",
     "lastmod": "2026-11-01"
   },
   "/services/funnel-automation": {
-    "hash": "bcd75a3cbadde1ab",
+    "hash": "842f75303976bced",
     "lastmod": "2026-11-01"
   },
   "/services/google-ads": {
-    "hash": "571e2790cd711786",
+    "hash": "0af8874341b2da83",
     "lastmod": "2026-11-01"
   },
   "/services/meta-ads": {
-    "hash": "5d7cdf70fe04f95a",
+    "hash": "7dfc31eec59470ae",
     "lastmod": "2026-11-01"
   },
   "/services/reputation-management": {
-    "hash": "9c74df8aec4edecd",
-    "lastmod": "2026-11-01"
-  },
-  "/services/seo": {
-    "hash": "a4f8a1f5c9722018",
+    "hash": "b7a781964081936c",
     "lastmod": "2026-11-01"
   },
   "/services/shopify-ecommerce-automation": {
-    "hash": "aaf54e06ff68f441",
+    "hash": "22d7300c2cf2053d",
     "lastmod": "2026-11-01"
   },
   "/services/website-development": {
-    "hash": "41c0310e5a4c695d",
+    "hash": "105fc9efd524b040",
     "lastmod": "2026-11-01"
   },
-  "/solutions": {
-    "hash": "f942c7423a606465",
-    "lastmod": "2026-10-04"
+  "/small-business": {
+    "hash": "7823e5ff0dc31078",
+    "lastmod": "2026-11-01"
+  },
+  "/systems": {
+    "hash": "ba189c8d621cfb1b",
+    "lastmod": "2026-11-01"
   },
   "/terms-of-service": {
     "hash": "8047a3d901f2c94f",
-    "lastmod": "2026-11-01"
-  },
-  "/who-we-help": {
-    "hash": "d42f6a80886a400f",
     "lastmod": "2026-11-01"
   }
 }
