@@ -1,4 +1,5 @@
 import { newBlogPosts } from "./newBlogPosts2026";
+import { newBlogPostsNov2026 } from "./newBlogPostsNov2026";
 
 export interface BlogPost {
   slug: string;
@@ -3119,6 +3120,7 @@ If you want this built, configured, and managed for your business — without yo
     `
   },
   ...newBlogPosts,
+  ...newBlogPostsNov2026,
 ];
 
 /** Blog posts sorted newest first (dates are strings like "Oct 30, 2025"). */
