@@ -145,7 +145,7 @@ export default function SmallBusiness() {
     <>
       <SEO
         title="AI Automation Systems for Small Businesses | Webimot"
-        description="AI systems for real estate, e-commerce, finance, legal and service businesses: leads answered in 60 seconds, automatic follow-up, paperwork done, weekly report."
+        description="AI systems for real estate, e-commerce, finance, legal and service businesses: leads answered in under 60 seconds, automatic follow-up, paperwork done, weekly report."
         keywords="small business AI automation, SMB automation, WhatsApp AI for small business, lead follow-up automation, real estate AI, Shopify automation, document processing AI, weekly business report"
         canonicalUrl={CANONICAL}
         schema={schema}
@@ -183,8 +183,8 @@ export default function SmallBusiness() {
                 <div className="min-w-0 lg:col-span-5">
                   <dl className="grid grid-cols-2 gap-4">
                     {[
-                      { value: "60s", label: "Lead response time" },
-                      { value: "15–25h", label: "Admin hours saved per week" },
+                      { value: "< 60s", label: "Lead response time" },
+                      { value: "15+", label: "Admin hours saved per week" },
                       { value: "5–15%", label: "Old contacts reactivated" },
                       { value: "0", label: "Manual reports needed" },
                     ].map((s) => (

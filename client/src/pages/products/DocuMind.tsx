@@ -72,7 +72,7 @@ export default function DocuMindPage() {
         { title: "Routes documents to the right person", description: "Based on document type and content, DocuMind routes files to the correct team member or department — patient records to consultants, invoices to accounts, contracts to legal." },
         { title: "Summarises long documents into key points", description: "For contracts, reports, or medical letters, DocuMind generates a plain-English summary — so your team gets the key points without reading 20 pages." },
         { title: "Full audit log", description: "Every document processed is logged with a timestamp, what was extracted, what was created, and what (if anything) was flagged. Fully searchable and auditable." },
-        { title: "Multi-language document processing", description: "DocuMind reads and extracts data from documents in English, German, Arabic, French, Turkish, Spanish, and 30+ more languages." },
+        { title: "Multi-language document processing", description: "DocuMind reads and extracts data from documents in English, German, Arabic, French, Turkish, Spanish, and 40+ more languages." },
       ]}
       features={[
         "Reads PDFs, Word docs, forms, invoices, and contracts",

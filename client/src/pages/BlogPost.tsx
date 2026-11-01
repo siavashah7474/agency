@@ -11,6 +11,30 @@ import { useBookingModal } from "@/hooks/use-booking-modal";
 import type { MouseEvent } from "react";
 const WHATSAPP_LINK = "https://wa.me/31628753175";
 
+// Pulls question/answer pairs out of a post's FAQ section. Answers are flattened to plain
+// text (no markdown) because they end up inside JSON-LD, not rendered HTML.
+function extractFaqs(content: string): { question: string; answer: string }[] {
+  const lines = content.split("\n");
+  const start = lines.findIndex((l) => /^##\s+(frequently asked questions|faqs?)\b/i.test(l.trim()));
+  if (start === -1) return [];
+  const plain = (s: string) =>
+    s.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*([^*]+)\*\*/g, "$1").replace(/\*([^*]+)\*/g, "$1").trim();
+  const faqs: { question: string; answer: string }[] = [];
+  let current: { question: string; answer: string[] } | null = null;
+  for (const raw of lines.slice(start + 1)) {
+    const line = raw.trim();
+    if (/^##\s/.test(line)) break;
+    if (/^###\s/.test(line)) {
+      if (current) faqs.push({ question: current.question, answer: current.answer.join(" ") });
+      current = { question: plain(line.replace(/^###\s+/, "")), answer: [] };
+    } else if (current && line) {
+      current.answer.push(plain(line.replace(/^[-*]\s+|^\d+\.\s+/, "")));
+    }
+  }
+  if (current) faqs.push({ question: current.question, answer: current.answer.join(" ") });
+  return faqs.filter((f) => f.question && f.answer);
+}
+
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
   const [, navigate] = useLocation();
@@ -58,6 +82,10 @@ export default function BlogPost() {
     .map((n) => String(n).padStart(2, "0"))
     .join("-");
 
+  // Posts with a "## Frequently Asked Questions" section (### question / answer paragraphs)
+  // also emit FAQPage schema, so AI search engines and Google can lift the answers directly.
+  const faqs = extractFaqs(post.content);
+
   return (
     <>
       <SEO
@@ -93,6 +121,16 @@ export default function BlogPost() {
                 { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://webimotagency.com/blog/${post.slug}` },
               ],
             },
+            ...(faqs.length
+              ? [{
+                  "@type": "FAQPage",
+                  "mainEntity": faqs.map((f) => ({
+                    "@type": "Question",
+                    "name": f.question,
+                    "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+                  })),
+                }]
+              : []),
           ],
         }}
       />

@@ -81,7 +81,7 @@ export default function Contact() {
       <SEO
         title="Contact Webimot Agency — Book Your Free Strategy Call"
         description="Book a free 30-minute strategy call with Webimot Agency. We'll map out exactly which AI automations and marketing strategies will grow your business fastest. No fluff, no hard sell."
-        keywords="contact AI automation agency, book strategy call, digital marketing consultation, AI automation consultation, free marketing audit, Shopify automation consultation, eCommerce marketing help, WhatsApp AI agent setup, SEO consultation, business automation consultation"
+        keywords="contact AI automation agency, book strategy call, digital marketing consultation, AI automation consultation, free AI audit, Shopify automation consultation, eCommerce marketing help, WhatsApp AI agent setup, SEO consultation, business automation consultation"
         canonicalUrl="https://webimotagency.com/contact"
       />
       <div className="min-h-screen flex flex-col">
@@ -159,7 +159,7 @@ export default function Contact() {
                       href="tel:+31628753175"
                       className="text-primary hover:underline"
                     >
-                      +31 62 8753175
+                      +31 6 2875 3175
                     </a>
                   </CardContent>
                 </Card>

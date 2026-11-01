@@ -216,9 +216,8 @@ export default function BookConsultation() {
                         Can I reschedule if needed?
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Of course! Life happens. You can easily reschedule
-                        through the confirmation email you'll receive after
-                        booking.
+                        Of course! Life happens. Just message us on WhatsApp
+                        and we'll move your call to a time that works.
                       </p>
                     </CardContent>
                   </Card>

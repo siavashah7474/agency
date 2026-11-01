@@ -66,7 +66,7 @@ const caseStudies = [
     metrics: [
       { label: "Response time", value: "< 30s" },
       { label: "Conversion lift", value: "+55%" },
-      { label: "Staff hours saved", value: "120/mo" },
+      { label: "Staff hours saved", value: "120+/mo" },
     ],
   },
   {
@@ -86,7 +86,7 @@ const caseStudies = [
     industry: "Real Estate · Istanbul",
     headline: "+120% revenue YoY",
     description:
-      "Built complete lead automation — instant WhatsApp reply, AI lead scoring on budget/timeline, CRM integration, and weekly performance reports. Every lead responded within 60 seconds, 24/7.",
+      "Built complete lead automation — instant WhatsApp reply, AI lead scoring on budget/timeline, CRM integration, and weekly performance reports. Every lead responded within 1 minute, 24/7.",
     metrics: [
       { label: "Lead response", value: "100%" },
       { label: "Qualified leads", value: "+85%" },

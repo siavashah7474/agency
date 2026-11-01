@@ -18,12 +18,12 @@ export const serviceData: Record<string, ServiceData> = {
     what: "Our WhatsApp AI Agent is a sophisticated automation system that handles incoming messages on WhatsApp 24/7. It uses advanced AI to understand customer inquiries, qualify leads, evaluate photos with Vision AI, transcribe voice messages, and automatically book consultations. The system integrates with your calendar, CRM, and provides real-time dashboards for monitoring performance.",
     why: "In the medical tourism and service industries, speed is everything. Studies show that leads contacted within 5 minutes are 21x more likely to convert. Our AI agent ensures you never miss a lead, responds instantly in multiple languages, and books consultations automatically - even when your team is asleep. This means more conversions, better customer experience, and significant cost savings.",
     benefits: [
-      "Never miss a lead - 100% response rate 24/7",
+      "Never miss a lead - every enquiry answered 24/7",
       "Instant replies in multiple languages",
       "AI-powered photo evaluation for medical cases",
       "Automatic lead qualification and scoring",
       "Direct calendar booking without human intervention",
-      "Reduced staff workload by 70%",
+      "15+ staff hours saved per week",
       "Increased conversion rates by 40-60%",
       "Complete conversation history and analytics"
     ],
@@ -71,10 +71,10 @@ export const serviceData: Record<string, ServiceData> = {
     ]
   },
   "seo-blog-generator": {
-    title: "SEO Blog Generator AI",
+    title: "SEO Blog AI",
     tagline: "Automated Content Creation & Publishing System",
     metaDescription: "Automated SEO blog generator that writes, optimizes, and publishes 20-30 keyword-targeted posts per month on autopilot — no manual writing needed.",
-    what: "Our SEO Blog Generator AI is an automated content marketing system that generates SEO-optimized blog posts based on your industry, keywords, and RSS feed sources. It handles everything from content generation to meta tag optimization, internal linking, scheduling, and publishing - all without manual intervention.",
+    what: "Our SEO Blog AI is an automated content marketing system that generates SEO-optimized blog posts based on your industry, keywords, and RSS feed sources. It handles everything from content generation to meta tag optimization, internal linking, scheduling, and publishing - all without manual intervention.",
     why: "Content marketing is essential for SEO but extremely time-consuming. Manual blog creation takes 4-6 hours per post. Our AI system generates 20-30 SEO-optimized posts monthly for the cost of one freelance writer, helping you dominate search rankings and drive organic traffic at scale.",
     benefits: [
       "20-30 SEO-optimized posts per month",
@@ -132,7 +132,7 @@ export const serviceData: Record<string, ServiceData> = {
   "ai-ops-autopilot": {
     title: "AI Operations Autopilot",
     tagline: "Plan, Coordinate & Automate Your Internal Business Operations",
-    metaDescription: "AI automation for business operations — handles invoices, HR tasks, meeting prep, and recurring admin on autopilot. Save 15-25 staff hours per week.",
+    metaDescription: "AI automation for business operations — handles invoices, HR tasks, meeting prep, and recurring admin on autopilot. Save 15+ staff hours per week.",
     what: "AI Operations Autopilot is an end-to-end internal automation system that handles the repetitive work that drains your team's time every day. From automatically sending invoice emails and payment reminders to managing HR onboarding checklists, scheduling internal meetings, and flagging overdue tasks — the system coordinates your back-office operations around the clock. It integrates with your existing tools (email, Google Workspace, Notion, Slack, HR platforms) and acts as a tireless operations coordinator that never misses a deadline.",
     why: "The average team wastes 20+ hours per week on administrative tasks that follow a predictable pattern — chasing invoices, sending reminder emails, assigning recurring tasks, updating spreadsheets, and manually escalating overdue items. These tasks don't require judgment; they require consistency. Our AI handles all of it automatically, freeing your team to focus on work that actually moves the business forward. Clients typically recover 15-25 hours of staff time per week within the first month.",
     benefits: [
@@ -143,7 +143,7 @@ export const serviceData: Record<string, ServiceData> = {
       "Recurring admin tasks handled on schedule without manual intervention",
       "Meeting scheduling and agenda preparation automation",
       "Weekly internal status reports generated and distributed automatically",
-      "Save 15-25 hours of staff time per week"
+      "Save 15+ hours of staff time per week"
     ],
     deliverables: [
       "Business operations audit and workflow mapping",
@@ -235,7 +235,7 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "Do you create ad visuals?",
-        answer: "Yes, all plans include professionally designed ad creatives. Elite plans also include video ad production."
+        answer: "Yes, all plans include professionally designed ad creatives. Scale plans also include video ad production."
       },
       {
         question: "Can you target international audiences?",
@@ -471,11 +471,11 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "Do you respond to comments?",
-        answer: "Community management is included in Growth and Elite plans. We can add it to Starter for an additional fee."
+        answer: "Community management is included in Growth and Scale plans. We can add it to Starter for an additional fee."
       },
       {
         question: "What about video content?",
-        answer: "Growth plans include simple video editing. Elite plans include professional video production."
+        answer: "Growth plans include simple video editing. Scale plans include professional video production."
       },
       {
         question: "How do you measure success?",

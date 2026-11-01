@@ -137,7 +137,7 @@ export const chatbotConfig: ChatbotConfig = {
     {
       serviceSlug: "seo-blog-generator",
       href: "/products/seo-blog-ai",
-      serviceName: "AI SEO Blog Generator",
+      serviceName: "SEO Blog AI",
       description: "Automated content creation optimized for search engines",
       matchScore: 0,
       tags: ["seo", "content", "automation", "ai", "consistency", "long"]

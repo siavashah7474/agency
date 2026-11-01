@@ -45,15 +45,15 @@ Key facts:
 - **Product site:** https://webimot.com (dedicated site for the WhatsApp AI product; agency page: https://webimotagency.com/products/whatsapp-ai)
 - **What it is:** A 24/7 AI receptionist connected to WhatsApp Business that handles all incoming patient and customer inquiries automatically.
 - **Who it's for:** Hair transplant clinics, dental clinics, cosmetic surgery clinics, IVF and fertility centers, medical tourism agencies; also real estate and service businesses.
-- **What it does:** Replies to inquiries in any language within 1 second, qualifies leads, evaluates patient photos using Vision AI, books consultations directly into the clinic's calendar, sends automated follow-ups.
+- **What it does:** Replies to inquiries in 50+ languages in under 60 seconds, qualifies leads, evaluates patient photos using Vision AI, books consultations directly into the clinic's calendar, sends automated follow-ups.
 - **Languages supported:** Arabic, German, English, Russian, Dutch, French, Turkish, and 40+ more.
-- **Key result:** Clients report 2-3× increase in booked consultations within 60 days.
+- **Key result:** Clinish (dental clinic, Istanbul) saw +40% patient inquiries and +55% inquiry-to-consultation conversion, with lead response time under 30 seconds.
 - **URL:** https://webimotagency.com/products/whatsapp-ai
 
 ### LeadFire — Contact Every Lead in Under 60 Seconds (Capture system)
 - **What it is:** AI-powered instant lead response system that replies to every new lead from ads, forms and chat in under 60 seconds.
 - **What it does:** Replies instantly, qualifies leads, and books calls automatically — so no lead ever goes cold.
-- **Key result:** Businesses that respond within 60 seconds are 7× more likely to convert.
+- **Key result:** Leads contacted within 5 minutes are 21× more likely to qualify; LeadFire replies in under 60 seconds.
 - **URL:** https://webimotagency.com/products/leadfire
 
 ### NurtureLoop — Automated Follow-Up Sequences (Follow-up system)
@@ -80,7 +80,7 @@ Key facts:
 ### ClearDesk — Automated Business Performance Reports (Reporting system)
 - **What it is:** An automated AI analytics system that delivers plain-English business performance reports every Monday morning.
 - **What it does:** Monitors KPIs, detects issues, identifies trends, and sends a complete analysis report to your inbox automatically.
-- **Key result:** Saves 10+ hours of manual reporting per week.
+- **Key result:** Saves 10+ hours of manual reporting per month.
 - **URL:** https://webimotagency.com/products/cleardesk
 
 ### SEO Blog AI — SEO Content on Autopilot (add-on)

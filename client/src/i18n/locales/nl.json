@@ -145,8 +145,8 @@
         "label": "Bediende klanten"
       },
       {
-        "number": "60%",
-        "label": "Gem. verkeersgroei"
+        "number": "12+",
+        "label": "Landen bediend"
       },
       {
         "number": "24/7",
@@ -188,7 +188,7 @@
       "Automatische vertaling in 50+ talen",
       "Vision AI evalueert foto's automatisch",
       "Geautomatiseerde follow-up sequences",
-      "70% verlaging van personeelskosten"
+      "15+ personeelsuren per week bespaard"
     ],
     "reBadge": "Tweede kernspecialisatie",
     "reTitle": "Vastgoed & meer",
@@ -215,7 +215,7 @@
       ]
     },
     "teamTitle": "Ons team",
-    "teamP": "Webimot werd opgericht door digitale marketing- en AI-experts die een kans zagen om de manier waarop bedrijven leads genereren te transformeren. Met kantoren in Istanbul en Amsterdam bedienen we klanten wereldwijd.",
+    "teamP": "Webimot werd opgericht door digitale marketing- en AI-experts die een kans zagen om de manier waarop bedrijven leads genereren te transformeren. Met kantoren in Amsterdam en Istanbul bedienen we klanten wereldwijd.",
     "teamItems": [
       "Digitale marketing- en SEO-experts",
       "AI- en automatiseringsspecialisten",
@@ -266,23 +266,6 @@
     "title": "Onze klanten",
     "subtitle": "Echte resultaten van echte bedrijven in medisch toerisme, vastgoed en servicebranches",
     "successTitle": "Succesverhalen",
-    "metrics": [
-      {
-        "value": "100%",
-        "label": "Leadresponspercentage",
-        "desc": "Alle aanvragen direct beantwoord"
-      },
-      {
-        "value": "3x",
-        "label": "Meer conversies",
-        "desc": "Gemiddelde verbetering bij klanten"
-      },
-      {
-        "value": "60%",
-        "label": "Verkeersgroei",
-        "desc": "Gemiddelde stijging organisch verkeer"
-      }
-    ],
     "testimonialsTitle": "Wat onze klanten zeggen",
     "industriesTitle": "Sectoren die wij bedienen",
     "ctaTitle": "Word onderdeel van onze succesverhalen",
@@ -297,17 +280,17 @@
       {
         "title": "Patiënten omzetten in boekingen",
         "description": "Wij brengen u niet alleen aanvragen — wij bouwen systemen die patiëntenvragen omzetten in bevestigde consultaties en procedures.",
-        "stats": "60% hogere boekingsrate"
+        "stats": "+55% conversie van aanvraag naar boeking"
       },
       {
         "title": "Internationale patiënten laten groeien",
         "description": "Trek patiënten aan uit het VK, Duitsland, VS en verder met meertalige marketingstrategieën gebouwd voor klinieken voor medisch toerisme.",
-        "stats": "3x meer internationale leads"
+        "stats": "Patiënten uit 12+ landen"
       },
       {
         "title": "24/7 patiëntrespons",
         "description": "Mis nooit meer een aanvraag. Onze AI behandelt patiëntenvragen, evalueert foto's en boekt consultaties zelfs terwijl u slaapt.",
-        "stats": "100% responspercentage"
+        "stats": "Antwoord binnen 60 seconden"
       },
       {
         "title": "Volg elke patiëntreis",
@@ -356,7 +339,7 @@
   },
   "exitPopup": {
     "title": "Wacht! Ga niet met lege handen weg",
-    "desc": "Ontvang een <strong>gratis marketingaudit</strong> en ontdek hoe wij u kunnen helpen meer leads te genereren. Geen verplichting.",
+    "desc": "Ontvang een <strong>gratis AI-audit</strong> en ontdek hoe wij u kunnen helpen meer leads te genereren. Geen verplichting.",
     "cta": "Mijn gratis audit ontvangen",
     "dismiss": "Nee bedankt, ik sla het gratis advies over",
     "trust": "Sluit u aan bij 50+ bedrijven die Webimot vertrouwen voor hun marketingbehoeften"

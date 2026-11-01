@@ -130,7 +130,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-sm text-white/70">
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
-                <span>Istanbul, Turkey<br />Amsterdam, Netherlands</span>
+                <span>Amsterdam, Netherlands<br />Istanbul, Turkey</span>
               </li>
               <li className="flex items-center gap-2.5 text-sm">
                 <Mail className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />

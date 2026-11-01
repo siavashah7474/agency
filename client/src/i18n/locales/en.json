@@ -145,8 +145,8 @@
         "label": "Clients Served"
       },
       {
-        "number": "60%",
-        "label": "Avg. Traffic Growth"
+        "number": "12+",
+        "label": "Countries Served"
       },
       {
         "number": "24/7",
@@ -188,7 +188,7 @@
       "Automatic translation in 50+ languages",
       "Vision AI evaluates photos automatically",
       "Automated follow-up sequences",
-      "70% reduction in staffing costs"
+      "15+ staff hours saved per week"
     ],
     "reBadge": "Second Core Specialisation",
     "reTitle": "Real Estate & Beyond",
@@ -215,7 +215,7 @@
       ]
     },
     "teamTitle": "Our Team",
-    "teamP": "Webimot was founded by digital marketing and AI experts who saw an opportunity to transform how businesses generate leads. With offices in Istanbul and Amsterdam, we serve clients worldwide.",
+    "teamP": "Webimot was founded by digital marketing and AI experts who saw an opportunity to transform how businesses generate leads. With offices in Amsterdam and Istanbul, we serve clients worldwide.",
     "teamItems": [
       "Digital marketing and SEO experts",
       "AI and automation specialists",
@@ -266,23 +266,6 @@
     "title": "Our Clients",
     "subtitle": "Real results from real businesses across medical tourism, real estate, and service industries",
     "successTitle": "Success Stories",
-    "metrics": [
-      {
-        "value": "100%",
-        "label": "Lead Response Rate",
-        "desc": "All inquiries answered instantly"
-      },
-      {
-        "value": "3x",
-        "label": "More Conversions",
-        "desc": "Average improvement across clients"
-      },
-      {
-        "value": "60%",
-        "label": "Traffic Growth",
-        "desc": "Average organic traffic increase"
-      }
-    ],
     "testimonialsTitle": "What Our Clients Say",
     "industriesTitle": "Industries We Serve",
     "ctaTitle": "Join Our Success Stories",
@@ -297,17 +280,17 @@
       {
         "title": "Convert Patients to Bookings",
         "description": "We don't just bring you inquiries — we build systems that turn patient questions into confirmed consultations and procedures.",
-        "stats": "60% higher booking rate"
+        "stats": "+55% inquiry-to-booking conversion"
       },
       {
         "title": "Grow International Patients",
         "description": "Attract patients from UK, Germany, USA and beyond with multilingual marketing strategies built for medical tourism clinics.",
-        "stats": "3x more international leads"
+        "stats": "Patients from 12+ countries"
       },
       {
         "title": "24/7 Patient Response",
         "description": "Never miss an inquiry again. Our AI handles patient questions, evaluates photos, and books consultations even while you sleep.",
-        "stats": "100% response rate"
+        "stats": "Replies in under 60 seconds"
       },
       {
         "title": "Track Every Patient Journey",
@@ -356,7 +339,7 @@
   },
   "exitPopup": {
     "title": "Wait! Don't Leave Empty-Handed",
-    "desc": "Get a <strong>free marketing audit</strong> and discover how we can help you generate more leads. No commitment required.",
+    "desc": "Get a <strong>free AI audit</strong> and discover how we can help you generate more leads. No commitment required.",
     "cta": "Get My Free Audit",
     "dismiss": "No thanks, I'll pass on free advice",
     "trust": "Join 50+ businesses who trust Webimot for their marketing needs"

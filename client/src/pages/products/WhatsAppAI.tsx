@@ -5,15 +5,15 @@ export default function WhatsAppAIPage() {
     <ProductPageLayout
       system="capture"
       seoTitle="WhatsApp AI Agent | Answers Every Lead 24/7"
-      seoDescription="Our clinic AI system handles every WhatsApp message 24/7 — qualifying leads, evaluating photos, and booking appointments automatically. The #1 medical tourism AI system for hair transplant, dental, and cosmetic clinics."
+      seoDescription="Our clinic AI system handles every WhatsApp message 24/7 — qualifying leads, evaluating photos, and booking appointments automatically. A medical tourism AI system built for hair transplant, dental, and cosmetic clinics."
       emoji="💬"
       name="WhatsApp AI"
       tagline="24/7 intelligent lead handling on WhatsApp."
-      heroBrief="WhatsApp is where your customers actually are — but you can't staff it 24/7. Our WhatsApp AI handles every message, qualifies every lead, and books every appointment automatically, in any language, around the clock."
+      heroBrief="WhatsApp is where your customers actually are — but you can't staff it 24/7. Our WhatsApp AI handles every message, qualifies every lead, and books every appointment automatically, in 50+ languages, around the clock."
       problemParagraphs={[
         "WhatsApp is the #1 communication channel for leads in most markets — especially in Turkey, the Gulf, and across Europe. But staffing WhatsApp 24/7 is expensive, and missed messages mean missed revenue.",
         "A lead who messages at 11pm and gets no reply until the next morning has already contacted 2–3 competitors. First response wins. If you can't reply instantly, you're losing deals to someone who can.",
-        "Our WhatsApp AI handles every incoming message the moment it arrives — answering questions, evaluating photos, qualifying leads, and booking appointments — in any language, at any hour.",
+        "Our WhatsApp AI handles every incoming message the moment it arrives — answering questions, evaluating photos, qualifying leads, and booking appointments — in the customer's language, at any hour.",
       ]}
       howItWorksSteps={[
         { emoji: "🔗", title: "Connect", description: "Link your WhatsApp Business account. Full setup and training takes about one day — we handle everything." },
@@ -31,7 +31,7 @@ export default function WhatsAppAIPage() {
         "Real-time dashboard and conversation analytics",
       ]}
       whoItsFor={[
-        { emoji: "🏥", industry: "Clinics & medical tourism", useCase: "Handle patient inquiries, evaluate photos, and book consultations 24/7 in any language." },
+        { emoji: "🏥", industry: "Clinics & medical tourism", useCase: "Handle patient inquiries, evaluate photos, and book consultations 24/7 in 50+ languages." },
         { emoji: "🏠", industry: "Real estate agencies", useCase: "Reply instantly to every property inquiry and schedule viewings automatically." },
         { emoji: "🛒", industry: "eCommerce stores", useCase: "Handle order questions, returns, and product support on WhatsApp around the clock." },
         { emoji: "🏢", industry: "Any business on WhatsApp", useCase: "Turn every WhatsApp message into a qualified lead without staffing overhead." },

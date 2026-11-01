@@ -2,7 +2,7 @@ const stats = [
   { value: "50+", label: "businesses transformed" },
   { value: "12+", label: "countries served" },
   { value: "50+", label: "languages handled by our AI" },
-  { value: "15h+", label: "hours saved per team, every week" },
+  { value: "15+", label: "hours saved per team, every week" },
 ];
 
 const useCases = [

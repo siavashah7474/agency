@@ -50,7 +50,7 @@ export const caseStudies: CaseStudy[] = [
     industry: "Medical Tourism - Hair Transplant",
     location: "Istanbul, Turkey",
     challenge: "Despite offering premium FUE and DHI hair transplants, the clinic was invisible in Google searches. They were spending heavily on paid ads but getting low-quality leads. Their website had no blog content and poor SEO, ranking on page 5+ for key terms.",
-    solution: "We deployed our SEO Blog Generator AI to create 25+ optimized articles monthly covering hair transplant topics. Combined with technical SEO fixes, local SEO optimization, and a comprehensive link-building strategy. The AI content was reviewed by their medical team for accuracy before publishing.",
+    solution: "We deployed our SEO Blog AI to create 25+ optimized articles monthly covering hair transplant topics. Combined with technical SEO fixes, local SEO optimization, and a comprehensive link-building strategy. The AI content was reviewed by their medical team for accuracy before publishing.",
     results: [
       { metric: "Organic Traffic", value: "+20%", description: "In 6 months" },
       { metric: "Keyword Rankings", value: "Top 10", description: "For 15 high-value keywords" },
@@ -62,7 +62,7 @@ export const caseStudies: CaseStudy[] = [
       name: "Ramazan Sabaz",
       role: "Hair Transplant Specialist, Estetizm"
     },
-    services: ["SEO Blog Generator", "Technical SEO", "Local SEO"],
+    services: ["SEO Blog AI", "Technical SEO", "Local SEO"],
     duration: "6 months campaign"
   },
   {

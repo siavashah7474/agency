@@ -1,3 +1,5 @@
+import { newBlogPosts } from "./newBlogPosts2026";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -2247,7 +2249,7 @@ Research from Harvard Business Review (updated January 2026) confirms the dynami
 
 > "The odds of qualifying a lead drop by 400% when response time exceeds 5 minutes. Businesses responding in under 60 seconds are 21x more likely to convert the same lead than those responding in 30 minutes."
 
-In medical tourism specifically — one of the highest-stakes, highest-value service industries — Webimot Agency has documented this effect directly. Clinics deploying [Webimot's WhatsApp AI Agent](https://webimotagency.com/ai-solutions) respond to every inquiry in under 30 seconds, regardless of time zone or language. The result: **3–5x more consultations booked from the same inquiry volume**.
+In medical tourism specifically — one of the highest-stakes, highest-value service industries — Webimot Agency has documented this effect directly. Clinics deploying [Webimot's WhatsApp AI Agent](/clinics) respond to every inquiry in under 30 seconds, regardless of time zone or language. The result: **3–5x more consultations booked from the same inquiry volume**.
 
 ## The Three Automation Categories With the Highest Revenue Impact
 
@@ -2276,7 +2278,7 @@ The third pillar is internal. Businesses spend enormous sums paying skilled peop
 
 McKinsey estimates the average 20-person business wastes **€80,000–€140,000 annually** on automatable internal tasks. Eliminating this waste does not just reduce costs — it redirects skilled people to revenue-generating work.
 
-**[Webimot's AI Operations Autopilot](https://webimotagency.com/ai-solutions)** — which handles invoice processing, HR reminders, internal reporting, and task escalation — typically saves client teams **15–25 hours per week**, with payback periods of 3–5 months.
+**[Webimot's AI Operations Autopilot](/clinics)** — which handles invoice processing, HR reminders, internal reporting, and task escalation — typically saves client teams **15+ hours per week**, with payback periods of 3–5 months.
 
 ## The Compounding Effect: Why the Gap Keeps Widening
 
@@ -2300,7 +2302,7 @@ If you run a clinic, an agency, a consultancy, or any service business that depe
 
 For a medical tourism clinic receiving 300 inquiries per month:
 - Without AI: 8% conversion = 24 consultations booked
-- With [Webimot AI](https://webimotagency.com/ai-solutions): 28% conversion = 84 consultations booked
+- With [Webimot AI](/clinics): 28% conversion = 84 consultations booked
 - Difference: 60 additional consultations per month
 - At €3,000 average patient value: **€180,000 in additional revenue per month**
 
@@ -2377,7 +2379,7 @@ The challenge: European patients — who make up 60% of Turkey's medical tourism
 
 For clinics without AI, this means 42% of their leads receive no response for 8–14 hours. At that point, most patients have already booked with a competitor.
 
-Clinics using [Webimot's WhatsApp AI Agent](https://webimotagency.com/ai-solutions) respond to every inquiry within seconds — in the patient's language, at any hour. The impact on after-hours conversions alone justifies the investment for most Turkish clinics.
+Clinics using [Webimot's WhatsApp AI Agent](/clinics) respond to every inquiry within seconds — in the patient's language, at any hour. The impact on after-hours conversions alone justifies the investment for most Turkish clinics.
 
 ## Language: The Hidden Conversion Multiplier
 
@@ -2519,7 +2521,7 @@ Critically, the WEF report notes that the productivity gains are **not evenly di
 2. **Document processing and routing** (+29% output impact)
 3. **Internal reporting and data compilation** (+24% output impact)
 
-These three categories correspond precisely to what [Webimot's AI automation products](https://webimotagency.com/ai-solutions) target: the WhatsApp AI Agent handles lead qualification, DocuMind handles document processing, and the AI Operations Autopilot handles internal reporting and task automation.
+These three categories correspond precisely to what [Webimot's AI automation products](/clinics) target: the WhatsApp AI Agent handles lead qualification, DocuMind handles document processing, and the AI Operations Autopilot handles internal reporting and task automation.
 
 ### European Business Automation Report 2026 (Accenture + EU Commission)
 
@@ -2538,7 +2540,7 @@ This is the clearest revenue story in automation. Every inquiry that is not resp
 
 For any business receiving inbound inquiries — clinics, agencies, consultancies, e-commerce stores — deploying an AI agent that responds instantly and qualifies leads automatically is the single highest-ROI investment in 2026.
 
-**[Webimot's WhatsApp AI Agent](https://webimotagency.com/ai-solutions) and LeadFire product** handle this for clinics and service businesses — with multilingual capability in German, Arabic, English, Dutch, Russian, and French. Typical outcome: 3–5x more qualified leads converted from the same ad budget.
+**[Webimot's WhatsApp AI Agent](/clinics) and LeadFire product** handle this for clinics and service businesses — with multilingual capability in German, Arabic, English, Dutch, Russian, and French. Typical outcome: 3–5x more qualified leads converted from the same ad budget.
 
 ### 2. Document Processing and Invoice Automation
 
@@ -2546,7 +2548,7 @@ The Deloitte report finds that the average SME spends **€18–€35 per invoic
 
 AI document processing reads invoices from any format (PDF, email, image), extracts all relevant data, and posts directly to accounting systems. Processing time drops from 8–15 minutes per invoice to under 60 seconds.
 
-**[Webimot's DocuMind product](https://webimotagency.com/ai-solutions)** automates this for clinics and service businesses — handling supplier invoices, patient intake forms, contract processing, and expense receipts.
+**[Webimot's DocuMind product](/clinics)** automates this for clinics and service businesses — handling supplier invoices, patient intake forms, contract processing, and expense receipts.
 
 ### 3. Internal Reporting and Weekly Operations Summaries
 
@@ -2556,7 +2558,7 @@ AI reporting automation pulls from all connected systems, compiles the data, wri
 
 **The revenue impact:** Operations managers redirect those 4–8 hours per week to strategic decisions, quality improvement, and business development. At a 5-person management team, this recovers **20–40 hours of senior capacity per week** — the most expensive and valuable capacity in the business.
 
-**[Webimot's AI Operations Autopilot](https://webimotagency.com/ai-solutions)** handles automated reporting, task escalation, and internal workflow coordination — saving client teams 15–25 hours per week.
+**[Webimot's AI Operations Autopilot](/clinics)** handles automated reporting, task escalation, and internal workflow coordination — saving client teams 15+ hours per week.
 
 ### 4. SEO Content Generation at Scale
 
@@ -2566,7 +2568,7 @@ Manual content creation at scale is expensive — a single high-quality SEO arti
 
 The compound effect: clinics publishing at AI-assisted volume see organic traffic double or triple within 12 months — reducing dependency on paid advertising and lowering patient acquisition cost.
 
-**[Webimot's SEO Blog Generator](https://webimotagency.com/ai-solutions)** writes, optimises, and publishes 20–30 clinic-specific SEO articles per month automatically — targeted at the keywords international patients search for (e.g., "hair transplant Turkey cost", "rhinoplasty Istanbul 2026", "dental veneers Turkey reviews").
+**[Webimot's SEO Blog AI](/clinics)** writes, optimises, and publishes 20–30 clinic-specific SEO articles per month automatically — targeted at the keywords international patients search for (e.g., "hair transplant Turkey cost", "rhinoplasty Istanbul 2026", "dental veneers Turkey reviews").
 
 ### 5. CRM Update and Lead Nurturing Automation
 
@@ -2579,7 +2581,7 @@ The average sales or client team spends **2.5 hours per day per person** on CRM 
 
 For a clinic or agency with 3 sales/client staff, this recovers **7.5 hours per day** — or nearly a full additional employee's worth of capacity, without the hire.
 
-**[Webimot's NurtureLoop and ReviveIQ products](https://webimotagency.com/ai-solutions)** handle automated lead nurturing and re-engagement for clinics and service businesses.
+**[Webimot's NurtureLoop and ReviveIQ products](/clinics)** handle automated lead nurturing and re-engagement for clinics and service businesses.
 
 ## The Revenue Model: From Cost Saving to Revenue Generation
 
@@ -2595,7 +2597,7 @@ Here is how the math works for a typical Webimot Agency client — a medical tou
 - Automatable tasks handled by AI: 28 of the 32 hours/day recovered
 - Staff redirected to: procedure quality, patient experience, business development
 - Clinic responds to same 400 inquiries at 29% conversion = 116 consultations booked
-- Organic traffic grows 3x from SEO Blog Generator (18 months to full effect)
+- Organic traffic grows 3x from SEO Blog AI (18 months to full effect)
 - Monthly revenue from international patients: €290,000
 
 **Revenue impact: +€210,000/month** — from the same 8 staff, same clinic, same inquiry volume.
@@ -3115,7 +3117,8 @@ If you want this built, configured, and managed for your business — without yo
 
 [Book a free 30-minute WhatsApp automation audit](https://webimotagency.com/book-consultation) — we'll map your current pipeline, show you exactly what can be automated, and give you an ROI estimate before you commit to anything.
     `
-  }
+  },
+  ...newBlogPosts,
 ];
 
 /** Blog posts sorted newest first (dates are strings like "Oct 30, 2025"). */

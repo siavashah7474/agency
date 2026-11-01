@@ -145,8 +145,8 @@
         "label": "Hizmet Verilen Müşteri"
       },
       {
-        "number": "%60",
-        "label": "Ort. Trafik Büyümesi"
+        "number": "12+",
+        "label": "Hizmet Verilen Ülke"
       },
       {
         "number": "7/24",
@@ -188,7 +188,7 @@
       "50'den fazla dilde otomatik çeviri",
       "Vision AI fotoğrafları otomatik değerlendirir",
       "Otomatik takip dizileri",
-      "Personel maliyetlerinde %70 azalma"
+      "Haftada 15+ personel saati tasarrufu"
     ],
     "reBadge": "İkinci Temel Uzmanlık",
     "reTitle": "Gayrimenkul & Daha Fazlası",
@@ -215,7 +215,7 @@
       ]
     },
     "teamTitle": "Ekibimiz",
-    "teamP": "Webimot, işletmelerin müşteri adayı oluşturma biçimini dönüştürmek için bir fırsat gören dijital pazarlama ve AI uzmanları tarafından kuruldu. İstanbul ve Amsterdam'daki ofislerimizle dünya genelinde müşterilere hizmet veriyoruz.",
+    "teamP": "Webimot, işletmelerin müşteri adayı oluşturma biçimini dönüştürmek için bir fırsat gören dijital pazarlama ve AI uzmanları tarafından kuruldu. Amsterdam ve İstanbul'daki ofislerimizle dünya genelinde müşterilere hizmet veriyoruz.",
     "teamItems": [
       "Dijital pazarlama ve SEO uzmanları",
       "AI ve otomasyon uzmanları",
@@ -266,23 +266,6 @@
     "title": "Müşterilerimiz",
     "subtitle": "Tıp turizmi, gayrimenkul ve hizmet sektörlerindeki gerçek işletmelerden gerçek sonuçlar",
     "successTitle": "Başarı Hikayeleri",
-    "metrics": [
-      {
-        "value": "%100",
-        "label": "Müşteri Adayı Yanıt Oranı",
-        "desc": "Tüm sorgulara anında yanıt verildi"
-      },
-      {
-        "value": "3x",
-        "label": "Daha Fazla Dönüşüm",
-        "desc": "Müşteriler genelinde ortalama gelişme"
-      },
-      {
-        "value": "%60",
-        "label": "Trafik Büyümesi",
-        "desc": "Ortalama organik trafik artışı"
-      }
-    ],
     "testimonialsTitle": "Müşterilerimiz Ne Diyor",
     "industriesTitle": "Hizmet Verdiğimiz Sektörler",
     "ctaTitle": "Başarı Hikayelerimize Katılın",
@@ -297,17 +280,17 @@
       {
         "title": "Hastaları Rezervasyona Dönüştürün",
         "description": "Sadece sorgu getirmiyoruz — hasta sorularını onaylı konsültasyonlara ve operasyonlara dönüştüren sistemler kuruyoruz.",
-        "stats": "%60 daha yüksek rezervasyon oranı"
+        "stats": "Talepten rezervasyona %55 daha yüksek dönüşüm"
       },
       {
         "title": "Uluslararası Hasta Sayısını Artırın",
         "description": "Tıp turizmi klinikleri için geliştirilmiş çok dilli pazarlama stratejileriyle İngiltere, Almanya, ABD ve ötesinden hasta çekin.",
-        "stats": "3x daha fazla uluslararası hasta"
+        "stats": "12+ ülkeden hasta"
       },
       {
         "title": "7/24 Hasta Yanıtı",
         "description": "Artık hiçbir sorguyu kaçırmayın. AI'mız siz uyurken bile hasta sorularını ele alır, fotoğrafları değerlendirir ve konsültasyonları kaydeder.",
-        "stats": "%100 yanıt oranı"
+        "stats": "60 saniyeden kısa sürede yanıt"
       },
       {
         "title": "Her Hasta Yolculuğunu Takip Edin",
@@ -356,7 +339,7 @@
   },
   "exitPopup": {
     "title": "Bekleyin! Eli Boş Gitmeyin",
-    "desc": "Ücretsiz bir <strong>pazarlama denetimi</strong> alın ve daha fazla müşteri adayı oluşturmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez.",
+    "desc": "Ücretsiz bir <strong>AI denetimi</strong> alın ve daha fazla müşteri adayı oluşturmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez.",
     "cta": "Ücretsiz Denetimimi Alın",
     "dismiss": "Hayır teşekkürler, ücretsiz tavsiyeleri pas geçeceğim",
     "trust": "Pazarlama ihtiyaçları için Webimot'a güvenen 50'den fazla işletmeye katılın"

@@ -145,8 +145,8 @@
         "label": "Clientes Atendidos"
       },
       {
-        "number": "60%",
-        "label": "Crecimiento Medio de Tráfico"
+        "number": "12+",
+        "label": "Países Atendidos"
       },
       {
         "number": "24/7",
@@ -188,7 +188,7 @@
       "Traducción automática en 50+ idiomas",
       "Vision IA evalúa fotos automáticamente",
       "Secuencias de seguimiento automatizadas",
-      "70% de reducción en costes de personal"
+      "15+ horas de personal ahorradas por semana"
     ],
     "reBadge": "Segunda Especialización Principal",
     "reTitle": "Inmobiliaria y Más",
@@ -215,7 +215,7 @@
       ]
     },
     "teamTitle": "Nuestro Equipo",
-    "teamP": "Webimot fue fundado por expertos en marketing digital e IA que vieron una oportunidad de transformar cómo las empresas generan leads. Con oficinas en Estambul y Ámsterdam, servimos a clientes en todo el mundo.",
+    "teamP": "Webimot fue fundado por expertos en marketing digital e IA que vieron una oportunidad de transformar cómo las empresas generan leads. Con oficinas en Ámsterdam y Estambul, servimos a clientes en todo el mundo.",
     "teamItems": [
       "Expertos en marketing digital y SEO",
       "Especialistas en IA y automatización",
@@ -266,23 +266,6 @@
     "title": "Nuestros Clientes",
     "subtitle": "Resultados reales de negocios reales en turismo médico, inmobiliaria e industrias de servicios",
     "successTitle": "Historias de Éxito",
-    "metrics": [
-      {
-        "value": "100%",
-        "label": "Tasa de Respuesta a Leads",
-        "desc": "Todas las consultas respondidas al instante"
-      },
-      {
-        "value": "3x",
-        "label": "Más Conversiones",
-        "desc": "Mejora media entre clientes"
-      },
-      {
-        "value": "60%",
-        "label": "Crecimiento de Tráfico",
-        "desc": "Aumento medio de tráfico orgánico"
-      }
-    ],
     "testimonialsTitle": "Lo Que Dicen Nuestros Clientes",
     "industriesTitle": "Industrias que Atendemos",
     "ctaTitle": "Únete a Nuestras Historias de Éxito",
@@ -297,17 +280,17 @@
       {
         "title": "Convertir Pacientes en Reservas",
         "description": "No solo te traemos consultas — construimos sistemas que convierten preguntas de pacientes en consultas y procedimientos confirmados.",
-        "stats": "60% mayor tasa de reservas"
+        "stats": "+55% conversión de consulta a reserva"
       },
       {
         "title": "Aumentar Pacientes Internacionales",
         "description": "Atrae pacientes del Reino Unido, Alemania, EE.UU. y más allá con estrategias de marketing multilingüe construidas para clínicas de turismo médico.",
-        "stats": "3x más leads internacionales"
+        "stats": "Pacientes de 12+ países"
       },
       {
         "title": "Respuesta a Pacientes 24/7",
         "description": "Nunca pierdas una consulta. Nuestra IA gestiona preguntas de pacientes, evalúa fotos y reserva consultas incluso mientras duermes.",
-        "stats": "100% tasa de respuesta"
+        "stats": "Respuesta en menos de 60 segundos"
       },
       {
         "title": "Seguir Cada Recorrido del Paciente",
@@ -356,7 +339,7 @@
   },
   "exitPopup": {
     "title": "¡Espera! No Te Vayas con las Manos Vacías",
-    "desc": "Obtén una <strong>auditoría de marketing gratuita</strong> y descubre cómo podemos ayudarte a generar más leads. Sin compromiso.",
+    "desc": "Obtén una <strong>auditoría de IA gratuita</strong> y descubre cómo podemos ayudarte a generar más leads. Sin compromiso.",
     "cta": "Obtener Mi Auditoría Gratuita",
     "dismiss": "No gracias, paso del consejo gratuito",
     "trust": "Únete a más de 50 negocios que confían en Webimot para sus necesidades de marketing"

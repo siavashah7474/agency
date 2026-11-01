@@ -13,7 +13,7 @@ export default function LeadFirePage() {
       results={[
         { value: "< 60s", label: "Response time", context: "Every lead, every channel, day and night" },
         { value: "21×", label: "More likely to qualify a lead", context: "when you reply in under 5 minutes" },
-        { value: "100%", label: "Follow-up rate", context: "No lead ever falls through the cracks" },
+        { value: "Every lead", label: "Followed up automatically", context: "No lead ever falls through the cracks" },
       ]}
       problemParagraphs={[
         "Most businesses take 2–6 hours to respond to a new lead. By then, they've already gone to a competitor. Studies show leads contacted within 5 minutes are 21× more likely to qualify — and after 30 minutes that window closes permanently.",
