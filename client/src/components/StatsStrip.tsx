@@ -1,3 +1,5 @@
+import CountUp from "@/components/CountUp";
+
 const stats = [
   { value: "50+", label: "businesses transformed" },
   { value: "12+", label: "countries served" },
@@ -26,7 +28,9 @@ export default function StatsStrip() {
       <dl className="container mx-auto grid grid-cols-2 gap-x-4 gap-y-10 px-6 py-12 md:grid-cols-4 md:py-14">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
-            <dd className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl dark:text-white">{stat.value}</dd>
+            <dd className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl dark:text-white">
+              <CountUp value={stat.value} />
+            </dd>
             <dt className="mx-auto mt-2 max-w-[12rem] text-sm leading-snug text-slate-600 dark:text-white/60">{stat.label}</dt>
           </div>
         ))}

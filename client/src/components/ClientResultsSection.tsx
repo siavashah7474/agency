@@ -1,3 +1,4 @@
+import CountUp from "@/components/CountUp";
 import { Card, CardContent } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -125,7 +126,7 @@ function ClientCard({ client, index }: { client: ClientResult; index: number }) 
           </div>
           
           <div className={`text-center p-4 rounded-xl bg-gradient-to-br ${client.gradient} text-white mb-4`}>
-            <div className="text-3xl md:text-4xl font-bold mb-1">{client.bigStat.value}</div>
+            <div className="text-3xl md:text-4xl font-bold mb-1"><CountUp value={client.bigStat.value} /></div>
             <div className="text-sm opacity-90">{client.bigStat.label}</div>
           </div>
           

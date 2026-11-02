@@ -1,19 +1,29 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { motion, useReducedMotion } from "framer-motion";
 import { SectionHeader } from "@/components/SectionEyebrow";
 import { SYSTEMS } from "@/data/systemsData";
+import { isPrerendering } from "@/lib/prerender";
 
 const cardFocus =
   "block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
 
+// Timing of the scroll-in sequence: the rail draws across, then each step lights up as the line reaches it.
+const RAIL_SECONDS = 1.4;
+const STEP_DELAY = (index: number) => 0.15 + (RAIL_SECONDS / (SYSTEMS.length - 1)) * index;
+
 /**
  * Home "systems ladder": the four systems from systemsData as numbered steps
  * (capture → convert → operate → measure). Stacked on mobile, 2×2 on tablet,
- * four columns on desktop.
+ * four columns on desktop. On first scroll into view the connecting rail draws
+ * itself and the steps light up in order; static when motion is reduced.
  */
 export default function WhatWeDoSection() {
   const { t } = useTranslation();
+  const reduceMotion = useReducedMotion();
+  const animate = !reduceMotion && !isPrerendering;
+  const viewport = { once: true, amount: 0.35 } as const;
 
   return (
     <section className="relative overflow-hidden bg-white py-16 md:py-24" aria-labelledby="systems-heading">
@@ -26,9 +36,48 @@ export default function WhatWeDoSection() {
           className="mb-12 max-w-3xl"
         />
 
+        {/* Rail: one line through four dots, drawn left to right (desktop only) */}
+        <div className="relative mb-6 hidden h-6 lg:block" aria-hidden="true">
+          <svg className="absolute inset-0 h-full w-full overflow-visible" viewBox="0 0 1000 24" preserveAspectRatio="none">
+            <line x1="125" y1="12" x2="875" y2="12" className="stroke-slate-200" strokeWidth="2" vectorEffect="non-scaling-stroke" />
+            <motion.line
+              x1="125"
+              y1="12"
+              x2="875"
+              y2="12"
+              className="stroke-secondary"
+              strokeWidth="2"
+              strokeLinecap="round"
+              vectorEffect="non-scaling-stroke"
+              initial={animate ? { pathLength: 0 } : false}
+              whileInView={{ pathLength: 1 }}
+              viewport={viewport}
+              transition={{ duration: RAIL_SECONDS, ease: "easeInOut", delay: 0.15 }}
+            />
+          </svg>
+          {SYSTEMS.map((system, index) => (
+            <motion.span
+              key={system.id}
+              className="absolute top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-slate-200 bg-white"
+              style={{ left: `${12.5 + index * 25}%` }}
+              initial={animate ? { scale: 0.8 } : false}
+              whileInView={animate ? { scale: [0.8, 1.5, 1], borderColor: "hsl(var(--secondary))", backgroundColor: "hsl(var(--secondary))" } : {}}
+              viewport={viewport}
+              transition={{ duration: 0.45, delay: STEP_DELAY(index) }}
+            />
+          ))}
+        </div>
+
         <ol className="grid gap-5 md:grid-cols-2 lg:grid-cols-4" aria-label={t("home.ladder.listLabel")}>
           {SYSTEMS.map((system, index) => (
-            <li key={system.id} className="relative">
+            <motion.li
+              key={system.id}
+              className="relative"
+              initial={animate ? { opacity: 0, y: 20 } : false}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={viewport}
+              transition={{ duration: 0.5, delay: animate ? 0.1 + index * 0.12 : 0, ease: "easeOut" }}
+            >
               <Link
                 href={`/systems#${system.id}`}
                 className={`group ${cardFocus}`}
@@ -37,12 +86,16 @@ export default function WhatWeDoSection() {
               >
                 <article className="surface-card-interactive flex h-full flex-col p-6">
                   <div className="mb-5 flex items-center justify-between">
-                    <span
+                    <motion.span
                       className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-slate-900 font-mono text-sm font-bold text-white"
                       aria-hidden="true"
+                      initial={false}
+                      whileInView={animate ? { scale: [1, 1.18, 1], backgroundColor: ["#0f172a", "hsl(var(--secondary))", "#0f172a"] } : {}}
+                      viewport={viewport}
+                      transition={{ duration: 0.6, delay: STEP_DELAY(index) }}
                     >
                       {system.step}
-                    </span>
+                    </motion.span>
                     <span className="text-3xl leading-none" aria-hidden="true">{system.emoji}</span>
                   </div>
 
@@ -69,7 +122,7 @@ export default function WhatWeDoSection() {
                   aria-hidden="true"
                 />
               )}
-            </li>
+            </motion.li>
           ))}
         </ol>
 

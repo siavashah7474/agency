@@ -16,21 +16,27 @@ import {
 interface Area {
   label: string;
   icon: LucideIcon;
+  /** What arrives: the raw message, document or trigger. */
+  incoming: string;
+  /** What the AI did with it. */
   task: string;
   result: string;
 }
 
 // Illustrative examples of work our AI systems handle — not live customer data.
 const areas: Area[] = [
-  { label: "Sales", icon: MessageSquare, task: "New enquiry answered in German", result: "Qualified · call booked" },
-  { label: "Documents", icon: FileText, task: "Supplier invoice read and logged", result: "Synced to accounting" },
-  { label: "Reporting", icon: BarChart3, task: "Weekly KPI report compiled", result: "Sent to managers · Mon 08:00" },
-  { label: "Support", icon: Headphones, task: "Order-status question resolved", result: "No human needed" },
-  { label: "Team ops", icon: Users, task: "New-hire onboarding started", result: "12 tasks assigned" },
-  { label: "Content", icon: PenTool, task: "SEO article drafted and published", result: "Live on the blog" },
+  { label: "Sales", icon: MessageSquare, incoming: "WhatsApp · „Hallo, ist morgen ein Termin frei?“", task: "Enquiry answered in German", result: "Qualified · call booked" },
+  { label: "Documents", icon: FileText, incoming: "Email · supplier invoice PDF received", task: "Invoice read and logged", result: "Synced to accounting" },
+  { label: "Reporting", icon: BarChart3, incoming: "Monday 07:55 · weekly data pulled", task: "KPI report compiled", result: "Sent to managers · 08:00" },
+  { label: "Support", icon: Headphones, incoming: "Web chat · “Where is my order?”", task: "Order-status question resolved", result: "No human needed" },
+  { label: "Team ops", icon: Users, incoming: "HR · new hire starts Monday", task: "Onboarding started", result: "12 tasks assigned" },
+  { label: "Content", icon: PenTool, incoming: "Calendar · article due this week", task: "SEO article drafted and published", result: "Live on the blog" },
 ];
 
-const INTERVAL_MS = 2600;
+// Each step plays a short story: something arrives at a department, travels to the
+// AI core, and comes back as a finished task in the feed.
+const STEP_MS = 3400;
+const THINK_MS = 1500;
 const RADIUS = 37; // % of the square hub, from centre to each area
 
 function position(i: number) {
@@ -40,16 +46,27 @@ function position(i: number) {
 
 export default function AIOpsHub() {
   const reduceMotion = useReducedMotion();
+  const animate = !reduceMotion && !isPrerendering;
   const [step, setStep] = useState(0);
+  const [thinking, setThinking] = useState(false);
 
   useEffect(() => {
-    if (reduceMotion || isPrerendering) return;
-    const id = window.setInterval(() => setStep((s) => s + 1), INTERVAL_MS);
-    return () => window.clearInterval(id);
-  }, [reduceMotion]);
+    if (!animate) return;
+    let settle = 0;
+    const id = window.setInterval(() => {
+      setStep((s) => s + 1);
+      setThinking(true);
+      settle = window.setTimeout(() => setThinking(false), THINK_MS);
+    }, STEP_MS);
+    return () => {
+      window.clearInterval(id);
+      window.clearTimeout(settle);
+    };
+  }, [animate]);
 
   const active = step % areas.length;
   const feed = [0, 1, 2].map((back) => areas[(step - back + areas.length * 3) % areas.length]);
+  const target = position(active);
 
   return (
     <div className="relative" role="img" aria-label="Illustration: one AI core connected to sales, documents, reporting, support, team operations and content, with a live feed of automated tasks">
@@ -93,27 +110,39 @@ export default function AIOpsHub() {
                 />
               );
             })}
-            {!reduceMotion && (
+            {animate && (
+              // Request travels in from the department, then the answer travels back out.
               <motion.circle
                 key={step}
                 r="1.2"
                 className="fill-secondary"
-                initial={{ cx: 50, cy: 50, opacity: 1 }}
-                animate={{ cx: position(active).x, cy: position(active).y, opacity: [1, 1, 0] }}
-                transition={{ duration: 0.9, ease: "easeInOut" }}
+                initial={{ cx: target.x, cy: target.y, opacity: 0 }}
+                animate={{
+                  cx: [target.x, 50, 50, target.x],
+                  cy: [target.y, 50, 50, target.y],
+                  opacity: [0, 1, 1, 0],
+                }}
+                transition={{ duration: 2.2, times: [0, 0.35, 0.65, 1], ease: "easeInOut" }}
               />
             )}
           </svg>
 
           {/* AI core */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            {!reduceMotion && (
-              <span className="absolute inset-0 rounded-2xl bg-secondary/30 animate-ping" style={{ animationDuration: "2.6s" }} />
+            {animate && (
+              <span
+                className="absolute inset-0 rounded-2xl bg-secondary/30 animate-ping"
+                style={{ animationDuration: thinking ? "1s" : "2.6s" }}
+              />
             )}
-            <div className="relative flex h-16 w-16 flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary text-white shadow-lg shadow-secondary/30 sm:h-20 sm:w-20">
-              <Cpu className="h-6 w-6 sm:h-7 sm:w-7" />
-              <span className="mt-0.5 text-[11px] font-semibold tracking-wide">AI core</span>
-            </div>
+            <motion.div
+              className="relative flex h-16 w-16 flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary text-white shadow-lg shadow-secondary/30 sm:h-20 sm:w-20"
+              animate={animate ? { scale: thinking ? 1.08 : 1 } : undefined}
+              transition={{ type: "spring", stiffness: 260, damping: 18 }}
+            >
+              <Cpu className={`h-6 w-6 sm:h-7 sm:w-7 ${animate && thinking ? "animate-spin" : ""}`} style={{ animationDuration: "3s" }} />
+              <span className="mt-0.5 text-[11px] font-semibold tracking-wide">{animate && thinking ? "Working" : "AI core"}</span>
+            </motion.div>
           </div>
 
           {/* Departments */}
@@ -139,6 +168,18 @@ export default function AIOpsHub() {
                     {area.label}
                   </span>
                 </div>
+                {/* Unread badge while the request is being handled */}
+                {animate && isActive && thinking && (
+                  <motion.span
+                    className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-amber-500 text-[9px] font-bold text-white shadow"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                  >
+                    1
+                  </motion.span>
+                )}
               </div>
             );
           })}
@@ -151,23 +192,40 @@ export default function AIOpsHub() {
           </div>
           <ul className="space-y-1.5" aria-live="off">
             <AnimatePresence initial={false} mode="popLayout">
-              {feed.map((item, i) => (
-                <motion.li
-                  key={`${step - i}`}
-                  layout={!reduceMotion}
-                  initial={reduceMotion ? false : { opacity: 0, y: -10 }}
-                  animate={{ opacity: i === 0 ? 1 : 0.6 - i * 0.15, y: 0 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.35 }}
-                  className="flex items-center gap-2.5 rounded-lg bg-white px-2.5 py-2 dark:bg-white/[0.04]"
-                >
-                  <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-500/15">
-                    <Check className="h-3 w-3 text-emerald-600 dark:text-emerald-400" />
-                  </span>
-                  <span className="min-w-0 flex-1 truncate text-xs text-slate-700 dark:text-white/80">{item.task}</span>
-                  <span className="hidden flex-shrink-0 text-[11px] text-slate-600 sm:inline dark:text-white/40">{item.result}</span>
-                </motion.li>
-              ))}
+              {feed.map((item, i) => {
+                const incoming = animate && i === 0 && thinking;
+                return (
+                  <motion.li
+                    key={`${step - i}`}
+                    layout={animate}
+                    initial={animate ? { opacity: 0, y: -10 } : false}
+                    animate={{ opacity: i === 0 ? 1 : 0.6 - i * 0.15, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.35 }}
+                    className={`flex items-center gap-2.5 rounded-lg px-2.5 py-2 transition-colors duration-500 ${
+                      incoming ? "bg-amber-50 dark:bg-amber-500/10" : "bg-white dark:bg-white/[0.04]"
+                    }`}
+                  >
+                    <span
+                      className={`flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full transition-colors duration-500 ${
+                        incoming ? "bg-amber-100 dark:bg-amber-500/20" : "bg-emerald-100 dark:bg-emerald-500/15"
+                      }`}
+                    >
+                      {incoming ? (
+                        <span className="h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse" />
+                      ) : (
+                        <Check className="h-3 w-3 text-emerald-600 dark:text-emerald-400" />
+                      )}
+                    </span>
+                    <span className="min-w-0 flex-1 truncate text-xs text-slate-700 dark:text-white/80">
+                      {incoming ? item.incoming : item.task}
+                    </span>
+                    <span className="hidden flex-shrink-0 text-[11px] text-slate-600 sm:inline dark:text-white/40">
+                      {incoming ? "Working…" : item.result}
+                    </span>
+                  </motion.li>
+                );
+              })}
             </AnimatePresence>
           </ul>
         </div>
