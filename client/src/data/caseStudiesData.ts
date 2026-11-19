@@ -87,4 +87,46 @@ export const caseStudies: CaseStudy[] = [
     ],
     services: ["Website development", "Social media support", "Meta Business Suite setup", "Meta ads", "Google Search Console", "Google Analytics"],
   },
+  {
+    slug: "apex-ai-trading-bots",
+    title: "Apex AI: customised AI-powered crypto trading bots",
+    client: "Apex AI",
+    category: "Software",
+    summary: "Current project by Webimot's founder, Sia Ahmadi: Apex AI, an app with customised AI-powered crypto trading bots, built for a private client in the Netherlands.",
+    about: "Apex AI is an app for building and running AI-powered crypto trading bots. Sia Ahmadi, Webimot's founder, is building it for a private client in the Netherlands. This is a current project.",
+    workDone: [
+      {
+        title: "Trading bot app",
+        description: "Sia is building the Apex AI app, where the client sets up and runs trading bots.",
+      },
+      {
+        title: "Customised AI-powered bots",
+        description: "Sia builds the AI-powered trading bots and customises them to the client's own strategy.",
+      },
+    ],
+    services: ["Custom software development", "AI-powered trading bots", "Crypto"],
+  },
+  {
+    slug: "clinic-freelance-work",
+    title: "Prime Hair, MSB Aesthetic, Estetizm: ads, sites, sales",
+    client: "Prime Hair, MSB Aesthetic and Estetizm",
+    category: "Clinic",
+    summary: "Freelance work by Webimot's founder, Sia Ahmadi, for three clinics: Meta and Google ads, websites and SEO, and sales and patient enquiries.",
+    about: "Prime Hair is a hair clinic, MSB Aesthetic is a clinic, and Estetizm is a clinic owned by Ramazan Sabaz. Sia Ahmadi, Webimot's founder, worked with all three as a freelancer.",
+    workDone: [
+      {
+        title: "Meta and Google ads",
+        description: "Sia set up and ran ad campaigns on Meta and Google.",
+      },
+      {
+        title: "Websites and SEO",
+        description: "Sia worked on the clinics' websites and their search optimisation.",
+      },
+      {
+        title: "Sales and patient enquiries",
+        description: "Sia handled patient enquiries and sales conversations.",
+      },
+    ],
+    services: ["Meta Ads", "Google Ads", "Website development", "SEO", "Sales and patient enquiries"],
+  },
 ];

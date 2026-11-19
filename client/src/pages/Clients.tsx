@@ -14,7 +14,7 @@ export default function Clients() {
     <>
       <SEO
         title="Work by Our Founder, Sia Ahmadi | Webimot"
-        description="Work by Webimot's founder, Sia Ahmadi, for Gorkem Atsal Clinic and Clinish: websites, a CRM, ad campaigns and search optimisation."
+        description="Work by Webimot's founder, Sia Ahmadi, for clinics and a private software client: websites, a CRM, ad campaigns, SEO and AI trading bots."
         keywords="Webimot founder work, Sia Ahmadi projects, Gorkem Atsal Clinic, Clinish, website development, Meta ads setup, Google Search Console optimisation"
         canonicalUrl="https://webimotagency.com/clients"
       />
@@ -37,7 +37,7 @@ export default function Clients() {
                 Work by our founder
               </h1>
               <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
-                What our founder, Sia Ahmadi, built and set up for two clinics, described plainly.
+                What our founder, Sia Ahmadi, built and set up for clinics and other clients, described plainly.
               </p>
             </div>
           </section>

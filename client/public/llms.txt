@@ -32,7 +32,7 @@ Key facts:
 - [Systems](https://webimotagency.com/systems): All four systems and the add-ons
 - [Clinics](https://webimotagency.com/clinics): AI systems for clinics, healthcare and medical tourism providers
 - [Small business](https://webimotagency.com/small-business): AI systems for real estate, e-commerce, finance/legal and service businesses
-- [Our work](https://webimotagency.com/case-studies): Work by founder Sia Ahmadi — Gorkem Atsal Clinic, freelance since November 2023 (website, CRM, Google Ads and Meta Ads, social media strategy, search optimisation for Google, Bing and Yandex, IT security) and Clinish (website, social media, Meta ads setup, Search Console and Analytics optimisation)
+- [Our work](https://webimotagency.com/case-studies): Work by founder Sia Ahmadi — Gorkem Atsal Clinic, freelance since November 2023 (website, CRM, Google Ads and Meta Ads, social media strategy, search optimisation for Google, Bing and Yandex, IT security) and Clinish (website, social media, Meta ads setup, Search Console and Analytics optimisation); freelance work for the clinics Prime Hair, MSB Aesthetic and Estetizm (ads, websites and SEO, sales); and Apex AI, customised AI-powered crypto trading bots for a private client in the Netherlands (current project)
 - [About](https://webimotagency.com/about): Team and approach
 - [Blog](https://webimotagency.com/blog): Guides on AI agents and business automation
 - [Full knowledge base for LLMs](https://webimotagency.com/llms-full.txt)

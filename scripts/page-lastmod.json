@@ -1,6 +1,6 @@
 {
   "/": {
-    "hash": "0ca3339d36677971",
+    "hash": "d5c7c261ef2d2255",
     "lastmod": "2026-11-19"
   },
   "/about": {
@@ -136,23 +136,31 @@
     "lastmod": "2026-11-19"
   },
   "/case-studies": {
-    "hash": "2245fb14b46b4282",
+    "hash": "6a42b362805e5e54",
+    "lastmod": "2026-11-19"
+  },
+  "/case-studies/apex-ai-trading-bots": {
+    "hash": "709ff749ec0c3991",
+    "lastmod": "2026-11-19"
+  },
+  "/case-studies/clinic-freelance-work": {
+    "hash": "b19df8595276d1fc",
     "lastmod": "2026-11-19"
   },
   "/case-studies/clinish-dental-clinic": {
-    "hash": "480db69fddb27a73",
+    "hash": "74540e9aded4d58c",
     "lastmod": "2026-11-19"
   },
   "/case-studies/gorkem-atsal-clinic": {
-    "hash": "9ca7483a9e860798",
+    "hash": "9abb3d8b5011f496",
     "lastmod": "2026-11-19"
   },
   "/clients": {
-    "hash": "4da7887afc7ae7fa",
+    "hash": "70f931ebffa8ab77",
     "lastmod": "2026-11-19"
   },
   "/clinics": {
-    "hash": "4768483180cac70e",
+    "hash": "a9095dc2418184d3",
     "lastmod": "2026-11-19"
   },
   "/contact": {

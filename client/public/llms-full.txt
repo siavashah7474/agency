@@ -200,6 +200,10 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 **Clinish** — Founder Sia Ahmadi built the Clinish clinic's website, supported its social media, set up its Meta Business Suite and started Meta ads for the website, and optimised the site using Google Search Console and Google Analytics. Clinish was founded by Gorkem Atsal and Gulce Yavas. URL: https://webimotagency.com/case-studies/clinish-dental-clinic
 
+**Prime Hair, MSB Aesthetic and Estetizm** — Freelance work by founder Sia Ahmadi for three clinics (Estetizm is owned by Ramazan Sabaz): Meta and Google ads, websites and SEO, and sales and patient enquiries. URL: https://webimotagency.com/case-studies/clinic-freelance-work
+
+**Apex AI** (current project) — Founder Sia Ahmadi is building Apex AI, an app with customised AI-powered crypto trading bots, for a private client in the Netherlands. URL: https://webimotagency.com/case-studies/apex-ai-trading-bots
+
 ---
 
 ## Frequently Asked Questions
@@ -249,7 +253,7 @@ A: Webimot Agency's Reporting system (ClearDesk) collects data from your marketi
 - https://webimotagency.com/about — About Webimot Agency
 - https://webimotagency.com/contact — Contact
 - https://webimotagency.com/clients — Our work
-- https://webimotagency.com/case-studies — Work by the founder: Gorkem Atsal Clinic and Clinish
+- https://webimotagency.com/case-studies — Work by the founder: Gorkem Atsal Clinic, Clinish, Prime Hair, MSB Aesthetic, Estetizm and Apex AI
 - https://webimotagency.com/blog — Blog
 - https://webimotagency.com/book-consultation — Book a free AI audit
 

@@ -33,7 +33,7 @@ export default function CaseStudies() {
     <>
       <SEO
         title="Our Work: Projects by Our Founder | Webimot"
-        description="Work by Webimot's founder, Sia Ahmadi, for Gorkem Atsal Clinic and Clinish: websites, a CRM, Google Ads, Meta Ads and search optimisation."
+        description="Work by Webimot's founder, Sia Ahmadi, for clinics and a private software client: websites, a CRM, ads, SEO and AI trading bots."
         keywords="Webimot founder work, Sia Ahmadi projects, Gorkem Atsal Clinic, Clinish, website development project, Meta ads setup, Google Search Console optimisation"
         canonicalUrl={CANONICAL}
         schema={schema}
@@ -55,7 +55,7 @@ export default function CaseStudies() {
                 Our work
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                Plain write-ups of what our founder, Sia Ahmadi, built and set up for two clinics. No performance figures, no quotes: only the work.
+                Plain write-ups of what our founder, Sia Ahmadi, built and set up for clinics and other clients. No performance figures, no quotes: only the work.
               </p>
             </div>
           </section>
