@@ -37,7 +37,7 @@ export default function Clients() {
                 Work by our founder
               </h1>
               <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
-                What our founder, Sia Ahmadi, built and set up for clinics and other clients, described plainly.
+                Projects delivered by our founder, Sia Ahmadi, for clinics and other clients, with the scope of each engagement.
               </p>
             </div>
           </section>
@@ -54,7 +54,7 @@ export default function Clients() {
                     <p className="text-white/60 leading-relaxed mb-6">
                       {study.about}
                     </p>
-                    <h3 className="text-sm font-semibold text-white/80 uppercase tracking-wide mb-4">What Sia did</h3>
+                    <h3 className="text-sm font-semibold text-white/80 uppercase tracking-wide mb-4">Scope of work</h3>
                     <ul className="space-y-4 mb-8">
                       {study.workDone.map((item) => (
                         <li key={item.title} className="flex items-start gap-3">

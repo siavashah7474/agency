@@ -16,7 +16,7 @@ export default function ClientResultsSection() {
         <SectionHeader
           eyebrow={t("ourWork.badge", "Our work")}
           title={t("ourWork.title", "Work by our founder")}
-          lead={t("ourWork.subtitle", "What our founder, Sia Ahmadi, built and set up for clinics and other clients.")}
+          lead={t("ourWork.subtitle", "Projects delivered by our founder, Sia Ahmadi, for clinics and other clients.")}
           className="mb-10"
         />
 

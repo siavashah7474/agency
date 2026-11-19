@@ -174,7 +174,7 @@
       ]
     },
     "teamTitle": "Çalışmalarımız",
-    "teamP": "Webimot, Amsterdam ve İstanbul merkezlidir ve kurucusu Sia Ahmadi tarafından yönetilir. Sia, Kasım 2023'ten beri serbest satış ve pazarlama uzmanı olarak çalıştığı Gorkem Atsal Clinic için web sitesini ve CRM'i kurdu; Google Ads ve Meta Ads'i, sosyal medya stratejisini ve Google, Bing ve Yandex için arama optimizasyonunu yürütüyor. Clinish kliniği için Sia web sitesini kurdu, sosyal medyaya destek oldu, Meta Business Suite ve Meta reklamlarını kurdu ve siteyi Google Search Console ve Google Analytics ile optimize etti.",
+    "teamP": "Webimot, Amsterdam ve İstanbul merkezlidir ve kurucusu Sia Ahmadi tarafından yönetilir. Bugüne kadarki çalışmalar arasında Gorkem Atsal Clinic ile süren iş birliği (web sitesi, CRM, Google Ads ve Meta Ads, sosyal medya stratejisi ve Google, Bing ve Yandex için arama optimizasyonu), Clinish için web sitesi ve dijital kurulum, Prime Hair, MSB Aesthetic ve Estetizm klinikleri için serbest çalışmalar, Apex AI alım satım botu uygulaması ve Webimot'un kendi ürünü WhatsApp AI yer alır.",
     "teamCta": "Hedeflerinizi Konuşalım",
     "founder": {
       "badge": "Kurucu",
@@ -331,7 +331,7 @@
   "ourWork": {
     "badge": "Çalışmalarımız",
     "title": "Kurucumuzun çalışmaları",
-    "subtitle": "Kurucumuz Sia Ahmadi'nin klinikler ve diğer müşteriler için kurdukları.",
+    "subtitle": "Kurucumuz Sia Ahmadi'nin klinikler ve diğer müşteriler için gerçekleştirdiği projeler.",
     "projectLabel": "Kurucumuzun çalışması",
     "readMore": "Proje özetini okuyun"
   }

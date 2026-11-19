@@ -96,8 +96,22 @@ export default function CaseStudyDetail() {
                     </p>
                   </div>
 
+                  {study.image && (
+                    <figure>
+                      <img
+                        src={study.image.src}
+                        alt={study.image.alt}
+                        width={study.image.width}
+                        height={study.image.height}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-auto rounded-xl border shadow-sm"
+                      />
+                    </figure>
+                  )}
+
                   <div>
-                    <h2 className="text-2xl font-bold mb-4">What Sia did</h2>
+                    <h2 className="text-2xl font-bold mb-4">Scope of work</h2>
                     <ul className="space-y-4">
                       {study.workDone.map((item) => (
                         <li key={item.title} className="flex items-start gap-3">

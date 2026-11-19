@@ -55,7 +55,7 @@ export default function CaseStudies() {
                 Our work
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                Plain write-ups of what our founder, Sia Ahmadi, built and set up for clinics and other clients. No performance figures, no quotes: only the work.
+                Projects delivered by our founder, Sia Ahmadi, for clinics and other clients. Each write-up sets out the scope of work, without performance figures or quotes.
               </p>
             </div>
           </section>
@@ -105,7 +105,7 @@ export default function CaseStudies() {
 
                         <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 flex flex-col justify-center">
                           <h3 className="text-sm font-semibold text-muted-foreground mb-4 uppercase tracking-wide">
-                            What Sia did
+                            Scope of work
                           </h3>
                           <ul className="space-y-3">
                             {study.workDone.map((item) => (

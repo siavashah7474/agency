@@ -20,6 +20,7 @@ const founderSchema = {
     "@id": "https://webimotagency.com/about#founder",
     name: "Sia Ahmadi",
     jobTitle: "Founder",
+    image: "https://webimotagency.com/sia-ahmadi.jpg",
     worksFor: { "@id": "https://webimotagency.com/#organization" },
     homeLocation: [
       { "@type": "City", name: "Amsterdam" },
@@ -108,7 +109,17 @@ export default function About() {
           {/* Founder */}
           <section id="founder" className="scroll-mt-24 py-16 md:py-24 bg-[#020817] relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
-              <div className="max-w-3xl mx-auto">
+              <div className="max-w-5xl mx-auto grid gap-10 md:grid-cols-[280px_1fr] md:gap-14 items-start">
+                <img
+                  src="/sia-ahmadi.jpg"
+                  alt="Sia Ahmadi, founder of Webimot Agency"
+                  width={800}
+                  height={1000}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full max-w-[280px] mx-auto md:mx-0 rounded-2xl bg-white object-cover shadow-lg"
+                />
+                <div className="min-w-0">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/15 rounded-full text-sm font-medium text-white mb-6">
                   <Users className="h-4 w-4" />
                   {t("about.founder.badge")}
@@ -127,6 +138,7 @@ export default function About() {
                   {t("about.founder.linkedin")}
                   <ArrowRight className="h-4 w-4" />
                 </a>
+                </div>
               </div>
             </div>
           </section>
