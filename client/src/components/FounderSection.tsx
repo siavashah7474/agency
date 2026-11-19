@@ -8,15 +8,15 @@ export default function FounderSection() {
   return (
     <section className="bg-white py-16 md:py-24" aria-labelledby="founder-heading">
       <div className="container mx-auto max-w-4xl px-6">
-        <div className="surface-card grid items-center gap-8 p-6 md:grid-cols-[200px_1fr] md:gap-10 md:p-10">
+        <div className="surface-card grid items-center gap-8 p-6 md:grid-cols-[240px_1fr] md:gap-10 md:p-10">
           <img
             src="/sia-ahmadi.jpg"
             alt="Sia Ahmadi, founder of Webimot Agency"
-            width={800}
-            height={1000}
+            width={1200}
+            height={1600}
             loading="lazy"
             decoding="async"
-            className="mx-auto w-full max-w-[200px] rounded-2xl border border-slate-200 bg-white object-cover md:mx-0"
+            className="mx-auto w-full max-w-[240px] rounded-2xl border border-slate-200 object-cover md:mx-0"
           />
           <div className="min-w-0">
             <p className="mb-2 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">
