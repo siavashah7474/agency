@@ -115,6 +115,11 @@
       "source": "/industries/finance-legal",
       "destination": "/small-business",
       "permanent": true
+    },
+    {
+      "source": "/case-studies/clinic-freelance-work",
+      "destination": "/case-studies",
+      "permanent": true
     }
   ],
   "trailingSlash": false

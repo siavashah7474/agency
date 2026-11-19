@@ -1,6 +1,6 @@
 {
   "/": {
-    "hash": "d5c7c261ef2d2255",
+    "hash": "406d1a43571c4fb0",
     "lastmod": "2026-11-19"
   },
   "/about": {
@@ -136,31 +136,43 @@
     "lastmod": "2026-11-19"
   },
   "/case-studies": {
-    "hash": "6a42b362805e5e54",
+    "hash": "b908e972a803077b",
     "lastmod": "2026-11-19"
   },
   "/case-studies/apex-ai-trading-bots": {
-    "hash": "709ff749ec0c3991",
-    "lastmod": "2026-11-19"
-  },
-  "/case-studies/clinic-freelance-work": {
-    "hash": "b19df8595276d1fc",
+    "hash": "482aef205e2c6f64",
     "lastmod": "2026-11-19"
   },
   "/case-studies/clinish-dental-clinic": {
-    "hash": "74540e9aded4d58c",
+    "hash": "96db00614bf89604",
+    "lastmod": "2026-11-19"
+  },
+  "/case-studies/estetizm": {
+    "hash": "2d87f7d3b4ccaa03",
     "lastmod": "2026-11-19"
   },
   "/case-studies/gorkem-atsal-clinic": {
-    "hash": "9abb3d8b5011f496",
+    "hash": "db9aa9bd8a8f51d8",
+    "lastmod": "2026-11-19"
+  },
+  "/case-studies/msb-aesthetic": {
+    "hash": "0042d34ce6e09d2f",
+    "lastmod": "2026-11-19"
+  },
+  "/case-studies/prime-hair": {
+    "hash": "c177fab36aae49d8",
+    "lastmod": "2026-11-19"
+  },
+  "/case-studies/webimot-whatsapp-ai": {
+    "hash": "43fd0490fd111d07",
     "lastmod": "2026-11-19"
   },
   "/clients": {
-    "hash": "70f931ebffa8ab77",
+    "hash": "52b4e4ea84b33994",
     "lastmod": "2026-11-19"
   },
   "/clinics": {
-    "hash": "a9095dc2418184d3",
+    "hash": "852864ff399365b1",
     "lastmod": "2026-11-19"
   },
   "/contact": {

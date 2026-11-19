@@ -111,6 +111,19 @@ export default function CaseStudyDetail() {
                     </ul>
                   </div>
 
+                  {study.link && (
+                    <p>
+                      <a
+                        href={study.link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-primary underline underline-offset-2"
+                      >
+                        {study.link.label}
+                      </a>
+                    </p>
+                  )}
+
                   <p className="text-sm text-muted-foreground">
                     This page lists the work only. We do not publish performance figures or quotes for this project.
                   </p>
