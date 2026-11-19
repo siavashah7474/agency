@@ -100,7 +100,12 @@
     ],
     "ctaTitle": "Ve tu negocio funcionando con IA.",
     "ctaSubtitle": "Reserva una demo gratuita de 30 minutos: te mostramos el sistema de captación en vivo con tu propio número de WhatsApp.",
-    "ctaButton": "Reserva una demo"
+    "ctaButton": "Reserva una demo",
+    "founder": {
+      "badge": "Sobre el fundador",
+      "text": "Fundé Webimot en enero de 2025 y hago el trabajo yo mismo: sitios web, CRM, campañas de anuncios, optimización para buscadores y agentes de IA. Desde 2021 trabajo en ventas y marketing para clínicas de Estambul que atienden a pacientes internacionales. Vivo entre Ámsterdam y Estambul y trabajo en inglés, turco, persa y kurdo.",
+      "link": "Leer la biografía completa"
+    }
   },
   "about": {
     "badge": "Agencia de automatización con IA",

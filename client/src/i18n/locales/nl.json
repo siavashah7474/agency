@@ -100,7 +100,12 @@
     ],
     "ctaTitle": "Zie uw bedrijf draaien op AI.",
     "ctaSubtitle": "Boek een gratis demo van 30 minuten — we laten het capture-systeem live zien op uw eigen WhatsApp-nummer.",
-    "ctaButton": "Boek een demo"
+    "ctaButton": "Boek een demo",
+    "founder": {
+      "badge": "Over de oprichter",
+      "text": "Ik heb Webimot in januari 2025 opgericht en doe het werk zelf: websites, CRM's, advertentiecampagnes, zoekoptimalisatie en AI-agents. Sinds 2021 werk ik in sales en marketing voor klinieken in Istanbul die internationale patiënten behandelen. Ik woon afwisselend in Amsterdam en Istanbul en werk in het Engels, Turks, Perzisch en Koerdisch.",
+      "link": "Lees de volledige bio"
+    }
   },
   "about": {
     "badge": "AI-automatiseringsbureau",

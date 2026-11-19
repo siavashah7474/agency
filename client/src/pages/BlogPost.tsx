@@ -187,7 +187,7 @@ export default function BlogPost() {
                       prose-table:my-6
                       prose-th:bg-muted prose-th:p-3 prose-th:text-left
                       prose-td:p-3 prose-td:border-b
-                      [overflow-wrap:anywhere]"
+                      [overflow-wrap:break-word]"
                     onClick={handleContentClick}
                     dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
                   />
@@ -362,7 +362,8 @@ function formatContent(content: string): string {
       }
       if (line.startsWith('| ')) {
         // Skip separator rows (| --- | --- |)
-        if (/^\|[\s\-:|]+\|$/.test(line.trim())) return '';
+        // Dropped entirely (not left as a blank line), so the header row stays in the same table as the body rows.
+        if (/^\|[\s\-:|]+\|$/.test(line.trim())) return null;
         const cells = line.split('|').filter(c => c.trim() !== '').map(c => `<td>${formatInlineMarkdown(escapeHtml(c.trim()))}</td>`).join('');
         return `<tr>${cells}</tr>`;
       }
@@ -371,10 +372,15 @@ function formatContent(content: string): string {
       }
       return `<p>${formatInlineMarkdown(escapeHtml(line))}</p>`;
     })
+    .filter((line): line is string => line !== null)
     .join('\n')
     .replace(/(<li>.*<\/li>\n?)+/g, (match) => `<ul>${match}</ul>`)
     .replace(/(<oli>.*<\/oli>\n?)+/g, (match) => `<ol>${match.replace(/<(\/?)oli>/g, '<$1li>')}</ol>`)
-    .replace(/(<tr>.*<\/tr>\n?)+/g, (match) => `<div class="overflow-x-auto"><table class="w-full border-collapse my-4">${match}</table></div>`);
+    .replace(/(<tr>.*<\/tr>\n?)+/g, (match) => {
+      // The first row of a markdown table is its header.
+      const rows = match.replace(/^<tr>(.*?)<\/tr>/, (_m, cells: string) => `<thead><tr>${cells.replace(/<(\/?)td>/g, '<$1th>')}</tr></thead><tbody>`);
+      return `<div class="overflow-x-auto"><table class="w-full border-collapse my-4">${rows}</tbody></table></div>`;
+    });
 }
 
 const LINK_CLASS = 'font-medium underline underline-offset-2 text-primary hover:text-primary/80';

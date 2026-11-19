@@ -100,7 +100,12 @@
     ],
     "ctaTitle": "See your business running on AI.",
     "ctaSubtitle": "Book a free 30-minute demo — we'll show the capture system live on your own WhatsApp number.",
-    "ctaButton": "Book a demo"
+    "ctaButton": "Book a demo",
+    "founder": {
+      "badge": "About the founder",
+      "text": "I founded Webimot in January 2025 and do the work myself: websites, CRMs, ad campaigns, search optimisation and AI agents. Since 2021 I have worked in sales and marketing for clinics in Istanbul that treat international patients. I live between Amsterdam and Istanbul and work in English, Turkish, Persian and Kurdish.",
+      "link": "Read the full bio"
+    }
   },
   "about": {
     "badge": "AI Automation Agency",

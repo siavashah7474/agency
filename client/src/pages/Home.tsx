@@ -5,6 +5,7 @@ import { useBookingModal } from "@/hooks/use-booking-modal";
 import Footer from "@/components/Footer";
 import WhyWebimotSection from "@/components/WhyWebimotSection";
 import ClientResultsSection from "@/components/ClientResultsSection";
+import FounderSection from "@/components/FounderSection";
 import WhoWeHelpSection from "@/components/WhoWeHelpSection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import SEO from "@/components/SEO";
@@ -156,6 +157,9 @@ export default function Home() {
 
           {/* 6. Client work */}
           <ClientResultsSection />
+
+          {/* About the founder */}
+          <FounderSection />
 
           {/* 7. Risk-free start */}
           <RiskFreeStartSection />

@@ -100,7 +100,12 @@
     ],
     "ctaTitle": "İşletmenizin AI ile çalıştığını görün.",
     "ctaSubtitle": "Ücretsiz 30 dakikalık demo talep edin — yakalama sistemini kendi WhatsApp numaranızda canlı olarak gösteriyoruz.",
-    "ctaButton": "Demo talep edin"
+    "ctaButton": "Demo talep edin",
+    "founder": {
+      "badge": "Kurucu hakkında",
+      "text": "Webimot'u Ocak 2025'te kurdum ve işi kendim yapıyorum: web siteleri, CRM'ler, reklam kampanyaları, arama optimizasyonu ve AI ajanları. 2021'den beri İstanbul'da uluslararası hastalara hizmet veren kliniklerde satış ve pazarlama alanında çalışıyorum. Amsterdam ve İstanbul arasında yaşıyorum; İngilizce, Türkçe, Farsça ve Kürtçe çalışıyorum.",
+      "link": "Tüm biyografiyi okuyun"
+    }
   },
   "about": {
     "badge": "AI Otomasyon Ajansı",
