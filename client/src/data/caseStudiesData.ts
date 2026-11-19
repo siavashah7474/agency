@@ -21,6 +21,8 @@ export interface CaseStudy {
   link?: { href: string; label: string };
   /** Optional screenshot of the project, served from client/public. */
   image?: { src: string; alt: string; width: number; height: number };
+  /** Optional further screenshots, shown with a caption below the scope of work. */
+  gallery?: { src: string; alt: string; width: number; height: number; caption: string }[];
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -68,6 +70,15 @@ export const caseStudies: CaseStudy[] = [
     services: ["Website development (WordPress, Elementor)", "CRM development and support", "n8n workflows", "AI WhatsApp chatbot", "Google Ads", "Meta Ads", "Social media strategy", "SEO for Google, Bing and Yandex", "Google Analytics 4", "Google Search Console", "Sales process", "IT security"],
     link: { href: "https://gorkematsal.com/", label: "Visit gorkematsal.com" },
     image: { src: "/work/gorkem-atsal-clinic.jpg", alt: "Home page of the Dr. Görkem Atsal Clinic website", width: 1290, height: 795 },
+    gallery: [
+      {
+        src: "/work/gorkem-atsal-clinic-bing.png",
+        alt: "Bing Webmaster Tools chart of clicks and impressions for the clinic website over twelve months",
+        width: 1320,
+        height: 310,
+        caption: "The clinic website's visibility on Bing over the past twelve months, from Bing Webmaster Tools.",
+      },
+    ],
   },
   {
     // The slug is historical and kept so the URL keeps working.

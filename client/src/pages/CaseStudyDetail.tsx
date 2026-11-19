@@ -125,6 +125,21 @@ export default function CaseStudyDetail() {
                     </ul>
                   </div>
 
+                  {study.gallery?.map((shot) => (
+                    <figure key={shot.src}>
+                      <img
+                        src={shot.src}
+                        alt={shot.alt}
+                        width={shot.width}
+                        height={shot.height}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-auto rounded-xl border bg-white shadow-sm"
+                      />
+                      <figcaption className="mt-2 text-sm text-muted-foreground">{shot.caption}</figcaption>
+                    </figure>
+                  ))}
+
                   {study.link && (
                     <p>
                       <a
