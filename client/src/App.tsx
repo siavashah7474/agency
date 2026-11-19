@@ -153,6 +153,43 @@ function Router() {
   );
 }
 
+// wouter neither resets the scroll position on navigation nor scrolls to #anchors, so a
+// footer link would open the next page already scrolled to its footer. On every in-app
+// navigation: go to the #anchor if the URL has one, otherwise to the top of the page.
+function ScrollManager() {
+  useEffect(() => {
+    let last = window.location.pathname + window.location.hash;
+    let timer: number | undefined;
+    const toAnchor = (id: string, attempt = 0) => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ block: "start" });
+      // The target page may still be loading its code; retry briefly.
+      else if (attempt < 20) timer = window.setTimeout(() => toAnchor(id, attempt + 1), 100);
+    };
+    const onNavigate = (event: Event) => {
+      const next = window.location.pathname + window.location.hash;
+      // Back/forward: leave the browser's own scroll restoration alone.
+      const changed = next !== last;
+      last = next;
+      if (event.type === "popstate") return;
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      // Clicking the same #anchor link again should still scroll back to it.
+      if (!changed && !id) return;
+      window.clearTimeout(timer);
+      if (id) toAnchor(id);
+      else window.scrollTo(0, 0);
+    };
+    // wouter dispatches "pushState"/"replaceState" events on window when it navigates.
+    const events = ["pushState", "replaceState", "popstate", "hashchange"];
+    events.forEach((e) => window.addEventListener(e, onNavigate));
+    return () => {
+      window.clearTimeout(timer);
+      events.forEach((e) => window.removeEventListener(e, onNavigate));
+    };
+  }, []);
+  return null;
+}
+
 function WhatsAppButton() {
   // On phones the button would sit on top of the hero content, so it appears once
   // the visitor scrolls past the first screen. On larger screens it's always shown.
@@ -189,6 +226,7 @@ export default function App() {
         <TooltipProvider>
           <BookingModalProvider>
             <GoogleAnalytics />
+            <ScrollManager />
             <Router />
             {!isPrerendering && (
               <Suspense fallback={null}>

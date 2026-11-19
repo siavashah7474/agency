@@ -221,6 +221,8 @@ export default function ServiceDetail() {
   const [, params] = useRoute("/services/:slug");
   const { openModal } = useBookingModal();
   const slug = params?.slug || "whatsapp-ai-agent";
+  // Pre-select the matching "Service of interest" option in the booking form, where one exists.
+  const bookingService = slug === "meta-ads" || slug === "google-ads" ? "Meta / Google Ads add-on" : undefined;
 
   if (slug && !serviceData[slug]) {
     return (
@@ -443,7 +445,7 @@ export default function ServiceDetail() {
                         data-testid="button-sidebar-cta"
                         className="w-full"
                         size="lg"
-                        onClick={() => openModal(slug)}
+                        onClick={() => openModal(bookingService)}
                       >
                         Book Free Strategy Call
                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -551,7 +553,7 @@ export default function ServiceDetail() {
 
                       <div className="mt-8 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4">
                         <p className="text-sm text-white/40 font-mono">Avg. time to first qualified lead: <span className="text-secondary font-bold">7 days</span></p>
-                        <Button size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" onClick={() => openModal(slug)}>
+                        <Button size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" onClick={() => openModal(bookingService)}>
                           Start Your Campaign <ArrowRight className="ml-2 h-3.5 w-3.5" />
                         </Button>
                       </div>
@@ -676,9 +678,9 @@ export default function ServiceDetail() {
                 </div>
 
                 <Card className="bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20">
-                  <CardContent className="p-8 md:p-12">
+                  <CardContent className="p-5 sm:p-8 md:p-12">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
-                      <div>
+                      <div className="min-w-0">
                         <h3 className="text-2xl font-bold mb-4">
                           What You'll Get in Your Free Strategy Call
                         </h3>
@@ -707,8 +709,8 @@ export default function ServiceDetail() {
                           </li>
                         </ul>
                       </div>
-                      <div className="text-center">
-                        <div className="bg-white dark:bg-muted rounded-2xl p-6 shadow-lg">
+                      <div className="min-w-0 text-center">
+                        <div className="bg-white dark:bg-muted rounded-2xl p-5 sm:p-6 shadow-lg">
                           <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
                           <h4 className="text-xl font-bold mb-2">
                             Book Your Free Call
@@ -720,7 +722,7 @@ export default function ServiceDetail() {
                             data-testid="button-book-strategy-section"
                             size="lg"
                             className="w-full mb-3"
-                            onClick={() => openModal(slug)}
+                            onClick={() => openModal(bookingService)}
                           >
                             Book Free Strategy Call
                             <ArrowRight className="ml-2 h-4 w-4" />
@@ -805,7 +807,7 @@ export default function ServiceDetail() {
                 data-testid="button-footer-cta"
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90"
-                onClick={() => openModal(slug)}
+                onClick={() => openModal(bookingService)}
               >
                 Book Your Free Strategy Call
                 <ArrowRight className="ml-2 h-4 w-4" />

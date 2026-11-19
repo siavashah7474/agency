@@ -3,16 +3,20 @@ import express from "express";
 import nodemailer from "nodemailer";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
-// Simple HTML-tag stripper (no jsdom needed in serverless)
+// Form values are kept as typed (minus control characters) for the database, the email
+// subject and addresses, and escaped with esc() only where they go into email HTML.
+// Escaping first would store "O'Brien" as "O&#x27;Brien" and break addresses containing & or '.
 function sanitizeInput(input: string): string {
+  return input.replace(/[\u0000-\u0008\u000B-\u001F\u007F]/g, "").trim();
+}
+
+function esc(input: string): string {
   return input
-    .replace(/<[^>]*>/g, "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#x27;")
-    .trim();
+    .replace(/'/g, "&#x27;");
 }
 
 const SITE_NAME = "Webimot Agency";
@@ -79,7 +83,7 @@ const sendVisitorConfirmation = (email: string, name: string, kind: "booking" | 
   sendMail(
     email,
     kind === "booking" ? "We received your strategy call request" : "We received your message",
-    `<p>Hi ${name},</p>
+    `<p>Hi ${esc(name)},</p>
      <p>Thanks for reaching out to ${SITE_NAME}. ${
        kind === "booking"
          ? "We'll reply within a few hours with available times for your free 30-minute strategy call."
@@ -185,12 +189,12 @@ app.post("/api/booking", async (req, res) => {
     const notified = await sendLeadEmail(
       `New Booking Request from ${sName}`,
       `<h2>New Booking Request</h2>
-       <p><strong>Name:</strong> ${sName}</p>
-       <p><strong>Email:</strong> ${sEmail}</p>
-       <p><strong>Phone:</strong> ${sPhone}</p>
-       <p><strong>Service:</strong> ${sService}</p>
+       <p><strong>Name:</strong> ${esc(sName)}</p>
+       <p><strong>Email:</strong> ${esc(sEmail)}</p>
+       <p><strong>Phone:</strong> ${esc(sPhone)}</p>
+       <p><strong>Service:</strong> ${esc(sService)}</p>
        <p><strong>Message:</strong></p>
-       <p>${sMessage || "Not provided"}</p>
+       <p style="white-space:pre-wrap">${sMessage ? esc(sMessage) : "Not provided"}</p>
        ${storageNote(stored)}
        <p><strong>Received at:</strong> ${new Date().toISOString()}</p>`,
       sEmail,
@@ -201,7 +205,8 @@ app.post("/api/booking", async (req, res) => {
       return res.status(500).json({ message: "We couldn't receive your request right now. Please message us on WhatsApp." });
     }
 
-    sendVisitorConfirmation(sEmail, sName, "booking").catch(() => {});
+    // Awaited: Vercel may freeze the function as soon as the response is sent.
+    await sendVisitorConfirmation(sEmail, sName, "booking").catch(() => {});
     res.status(200).json({ message: "Booking request received successfully", success: true });
   } catch (err) {
     console.error("Booking error:", err);
@@ -237,11 +242,11 @@ app.post("/api/contact", async (req, res) => {
     const notified = await sendLeadEmail(
       `New Contact Message from ${sName}`,
       `<h2>New Contact Message</h2>
-       <p><strong>Name:</strong> ${sName}</p>
-       <p><strong>Email:</strong> ${sEmail}</p>
-       <p><strong>Phone:</strong> ${sPhone || "Not provided"}</p>
+       <p><strong>Name:</strong> ${esc(sName)}</p>
+       <p><strong>Email:</strong> ${esc(sEmail)}</p>
+       <p><strong>Phone:</strong> ${sPhone ? esc(sPhone) : "Not provided"}</p>
        <p><strong>Message:</strong></p>
-       <p>${sMessage}</p>
+       <p style="white-space:pre-wrap">${esc(sMessage)}</p>
        ${storageNote(stored)}
        <p><strong>Received at:</strong> ${new Date().toISOString()}</p>`,
       sEmail,
@@ -251,7 +256,7 @@ app.post("/api/contact", async (req, res) => {
       return res.status(500).json({ message: "We couldn't receive your message right now. Please message us on WhatsApp." });
     }
 
-    sendVisitorConfirmation(sEmail, sName, "contact").catch(() => {});
+    await sendVisitorConfirmation(sEmail, sName, "contact").catch(() => {});
     res.status(200).json({ message: "Message sent successfully", success: true });
   } catch (err) {
     console.error("Contact error:", err);

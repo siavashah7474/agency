@@ -186,7 +186,8 @@ export default function BlogPost() {
                       prose-ul:my-4 prose-ol:my-4
                       prose-table:my-6
                       prose-th:bg-muted prose-th:p-3 prose-th:text-left
-                      prose-td:p-3 prose-td:border-b"
+                      prose-td:p-3 prose-td:border-b
+                      [overflow-wrap:anywhere]"
                     onClick={handleContentClick}
                     dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
                   />

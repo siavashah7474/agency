@@ -38,7 +38,7 @@ Webimot Agency builds and operates AI automation systems for clinics and small b
 
 - **Meta Ads** — Facebook and Instagram campaigns that feed the capture system. https://webimotagency.com/services/meta-ads
 - **Google Ads** — Search campaigns for people already looking for you. https://webimotagency.com/services/google-ads
-- **SEO & SEO Blog AI** — Organic traffic from automated, search-optimised articles. https://webimotagency.com/products/seo-blog-ai · SEO services: https://webimotagency.com/services/seo
+- **SEO & SEO Blog AI** — Organic traffic from automated, search-optimised articles. https://webimotagency.com/products/seo-blog-ai
 
 ## Pricing — Three Packages, One Ladder
 
@@ -285,4 +285,3 @@ A: Webimot Agency's Reporting system (ClearDesk) collects data from your marketi
 ### Add-on Service Pages
 - https://webimotagency.com/services/meta-ads — Meta Ads
 - https://webimotagency.com/services/google-ads — Google Ads
-- https://webimotagency.com/services/seo — SEO

@@ -245,6 +245,7 @@ export default function Chatbot() {
                       variant="ghost"
                       className="text-white hover:bg-white/20 h-8 w-8"
                       onClick={handleClose}
+                      aria-label="Close chat"
                       data-testid="button-close-chat"
                     >
                       <X className="h-5 w-5" />

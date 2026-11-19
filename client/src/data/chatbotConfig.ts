@@ -129,6 +129,7 @@ export const chatbotConfig: ChatbotConfig = {
     },
     {
       serviceSlug: "seo",
+      href: "/products/seo-blog-ai",
       serviceName: "SEO Services",
       description: "Rank higher and drive organic traffic long-term",
       matchScore: 0,
