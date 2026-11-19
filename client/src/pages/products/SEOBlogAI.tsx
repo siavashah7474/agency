@@ -11,56 +11,51 @@ export default function SEOBlogAIPage() {
       tagline="Publish SEO content on autopilot. Every week."
       heroBrief="Most businesses know they need content to rank on Google — but never have time to create it. SEO Blog AI researches target keywords, writes optimised articles, and publishes them automatically on your schedule. Your site ranks while you focus on clients."
       results={[
-        { value: "20–30", label: "Posts per month", context: "Published automatically — no writers, no deadlines, no delays" },
-        { value: "Month 4–6", label: "First-page rankings", context: "Typical timeframe for target keywords to reach Google page 1" },
-        { value: "35%", label: "Of leads from organic", context: "Average for clients running SEO Blog AI for 12+ months" },
+        { value: "Up to 30", label: "Posts per month", context: "Written and published automatically on your schedule" },
+        { value: "Weekly", label: "Publishing schedule", context: "Review each post first, or let it publish automatically" },
+        { value: "Your CMS", label: "Published directly", context: "WordPress, Webflow or another CMS, then submitted to Google Search Console" },
       ]}
       problemParagraphs={[
-        "Most businesses know they need content to rank on Google — but content creation is time-consuming, expensive, and the first thing that gets deprioritised when the team is busy. A blog that hasn't been updated in 3 months is actively hurting your rankings.",
-        "Hiring writers costs €500–€2,000+ per month. Freelancers are inconsistent. And without SEO expertise, even well-written content doesn't rank — it needs proper keyword research, meta tags, internal linking, and topic authority to show up on Google.",
-        "SEO Blog AI solves all three problems at once. It researches what your target audience is searching for, writes high-quality articles optimised for those exact searches, and publishes them automatically to your website — consistently, every week, without you lifting a finger.",
+        "Most businesses know they need content to rank on Google — but content creation is time-consuming, expensive, and the first thing that gets deprioritised when the team is busy. A blog that hasn't been updated in months does little for your rankings.",
+        "Hiring writers is expensive. Freelancers are inconsistent. And without SEO expertise, even well-written content doesn't rank — it needs proper keyword research, meta tags, internal linking, and topic authority to show up on Google.",
+        "SEO Blog AI is built to handle all three. It researches what your target audience is searching for, writes high-quality articles optimised for those exact searches, and publishes them automatically to your website — consistently, every week, without you lifting a finger.",
       ]}
       howItWorksSteps={[
         { emoji: "⚙️", title: "Keyword Research & Setup", description: "We audit your website and industry to identify the highest-opportunity keyword targets — searches your ideal clients are already making. We set your topics, publishing schedule, and connect directly to your CMS (WordPress, Webflow, or any other)." },
         { emoji: "🤖", title: "AI Writes and Optimises", description: "Every week, SEO Blog AI generates articles targeting your chosen keywords — with proper headings structure, meta titles, meta descriptions, internal links to your service pages, image alt tags, and natural keyword placement." },
-        { emoji: "📈", title: "Rankings Grow on Autopilot", description: "Published posts are automatically submitted to Google Search Console. We track keyword rankings weekly and adjust the content strategy based on what's climbing and what's gaining traction." },
+        { emoji: "📈", title: "Rankings Tracked Weekly", description: "Published posts are automatically submitted to Google Search Console. We track keyword rankings weekly and adjust the content strategy based on what's climbing and what's gaining traction." },
       ]}
       scenario={{
-        heading: "See SEO Blog AI in action: a hair transplant clinic in Istanbul goes from 0 to page 1",
-        description: "The clinic has a website but almost no organic traffic. Here's what happens over 6 months with SEO Blog AI running on autopilot.",
+        heading: "See SEO Blog AI in action: a hair transplant clinic's first six months",
+        description: "The clinic has a website but almost no organic traffic. Here's how SEO Blog AI is designed to run over the first 6 months.",
         steps: [
           {
             time: "Week 1 · Setup",
-            event: "Keyword audit — 52 opportunities identified",
-            detail: "SEO Blog AI audits the clinic's website and searches for what potential patients actually type into Google. 52 keyword opportunities identified — including 'best hair transplant Turkey', 'FUE vs DHI which is better', 'hair transplant Turkey cost 2026', 'what to expect during hair transplant recovery', and 'hair transplant UK price vs Turkey price'.",
+            event: "Keyword audit",
+            detail: "SEO Blog AI audits the clinic's website and looks at what potential patients type into Google. It builds a list of keyword opportunities such as 'best hair transplant Turkey', 'FUE vs DHI which is better', 'hair transplant Turkey cost' and 'what to expect during hair transplant recovery'.",
             highlight: true,
           },
           {
             time: "Week 2",
-            event: "First 4 posts published automatically",
-            detail: "First batch published to WordPress: 'Hair Transplant Turkey vs UK: The Complete 2026 Cost Comparison', 'FUE vs DHI: Which Hair Transplant Technique Is Right For You?', 'What to Expect During Hair Transplant Recovery (Week-by-Week Guide)', and 'Best Hair Transplant Clinics in Turkey: What to Look For'.",
+            event: "First posts published automatically",
+            detail: "The first batch goes to WordPress: a Turkey vs UK cost comparison, an FUE vs DHI guide, a week-by-week recovery guide and a guide to choosing a clinic.",
           },
           {
             time: "Month 2",
-            event: "12 posts live — first movements on Google",
-            detail: "12 articles published. Google starts indexing content. 'Hair transplant Turkey cost 2026' enters the top 50 results. Organic traffic starts: 180 monthly visitors from search.",
+            event: "Posts keep going out every week",
+            detail: "More articles are live and submitted to Google Search Console for indexing. Keyword rankings are tracked weekly so the topic plan can follow what is gaining traction.",
           },
           {
             time: "Month 4",
-            event: "First page-1 rankings appear",
-            detail: "'Hair transplant Turkey cost 2026' reaches position #7 on Google UK — bringing 620 monthly visitors from that one keyword alone. 'FUE vs DHI' reaches position #4. Total organic traffic: 1,800 monthly visitors.",
+            event: "Strategy adjusts to what is climbing",
+            detail: "Keywords that are moving up get supporting articles and internal links. Topics that aren't moving are reworked or replaced.",
             highlight: true,
           },
           {
             time: "Month 6",
-            event: "Organic becomes a significant lead channel",
-            detail: "24 articles live. 3,100 monthly organic visitors. 22 consultation inquiries per month from organic search alone — at zero cost per lead. The clinic is now appearing on page 1 for 9 target keywords.",
+            event: "A content library, tracked in one report",
+            detail: "Around two dozen articles are live, each linked to the clinic's service pages. The monthly summary shows rankings and organic traffic per article. Rankings depend on competition and are not guaranteed.",
             highlight: true,
-          },
-          {
-            time: "Month 12",
-            event: "Organic accounts for 35% of all consultations",
-            detail: "52 articles published. 5,800 monthly organic visitors. 47 consultations per month from organic. The clinic now competes for — and wins — searches that cost competitors €40–€80 per click in Google Ads.",
           },
         ],
       }}
@@ -72,7 +67,7 @@ export default function SEOBlogAIPage() {
         { title: "Auto-scheduling and publishing", description: "Posts are published automatically to your CMS on a pre-set schedule. You can review posts before they go live, or set it to fully automatic — your choice." },
         { title: "Multi-language content", description: "Publish content in multiple languages to target international audiences. Particularly valuable for medical tourism clinics targeting patients from Germany, UK, UAE, Netherlands, and other markets." },
         { title: "Google Search Console integration", description: "Every published post is automatically submitted to Google Search Console for indexing. Rankings are tracked weekly and reported in your monthly performance summary." },
-        { title: "20–30 posts per month on autopilot", description: "At full capacity, SEO Blog AI publishes up to 30 optimised articles per month — the kind of output that would require a team of 3–4 full-time writers at a fraction of the cost." },
+        { title: "20–30 posts per month on autopilot", description: "At full capacity, SEO Blog AI can publish up to 30 optimised articles per month." },
       ]}
       features={[
         "Keyword research and content strategy",

@@ -16,15 +16,14 @@ export const serviceData: Record<string, ServiceData> = {
     tagline: "24/7 Intelligent Lead Handling & Booking Automation",
     metaDescription: "AI WhatsApp agent for clinics that answers patient inquiries 24/7, qualifies leads, evaluates photos with Vision AI, and books consultations automatically.",
     what: "Our WhatsApp AI Agent is a sophisticated automation system that handles incoming messages on WhatsApp 24/7. It uses advanced AI to understand customer inquiries, qualify leads, evaluate photos with Vision AI, transcribe voice messages, and automatically book consultations. The system integrates with your calendar, CRM, and provides real-time dashboards for monitoring performance.",
-    why: "In the medical tourism and service industries, speed is everything. Studies show that leads contacted within 5 minutes are 21x more likely to convert. Our AI agent ensures you never miss a lead, responds instantly in multiple languages, and books consultations automatically - even when your team is asleep. This means more conversions, better customer experience, and significant cost savings.",
+    why: "In the medical tourism and service industries, speed is everything. Fast replies win more leads. Our AI agent is designed to answer every enquiry within about a minute, in the customer's language, and book consultations automatically - even when your team is asleep.",
     benefits: [
       "Never miss a lead - every enquiry answered 24/7",
       "Instant replies in multiple languages",
       "AI-powered photo evaluation for medical cases",
       "Automatic lead qualification and scoring",
       "Direct calendar booking without human intervention",
-      "15+ staff hours saved per week",
-      "Increased conversion rates by 40-60%",
+      "Less time spent by staff on repetitive questions",
       "Complete conversation history and analytics"
     ],
     deliverables: [
@@ -43,7 +42,7 @@ export const serviceData: Record<string, ServiceData> = {
       { title: "Discovery & Setup", description: "We analyze your business, define conversation flows, and set up the WhatsApp Business API" },
       { title: "AI Training", description: "We train the AI on your services, pricing, FAQs, and typical customer questions" },
       { title: "Integration", description: "Connect calendar, CRM, and other tools for seamless automation" },
-      { title: "Testing", description: "Comprehensive testing with real scenarios to ensure perfect responses" },
+      { title: "Testing", description: "Testing with realistic scenarios before go-live" },
       { title: "Launch & Monitor", description: "Go live with continuous monitoring and optimization for 30 days" },
       { title: "Ongoing Support", description: "Regular updates, performance reviews, and AI improvements" }
     ],
@@ -62,7 +61,7 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "How accurate is the photo evaluation?",
-        answer: "Our Vision AI achieves 95%+ accuracy in evaluating common medical tourism cases (dental, hair transplant, cosmetic). It provides preliminary assessments and always recommends professional consultation."
+        answer: "The photo evaluation gives a preliminary assessment only, for common cases such as dental, hair transplant and cosmetic enquiries. It is not a diagnosis, and it always recommends a professional consultation."
       },
       {
         question: "What happens if the AI doesn't understand something?",
@@ -75,10 +74,10 @@ export const serviceData: Record<string, ServiceData> = {
     tagline: "Automated Content Creation & Publishing System",
     metaDescription: "Automated SEO blog generator that writes, optimizes, and publishes 20-30 keyword-targeted posts per month on autopilot — no manual writing needed.",
     what: "Our SEO Blog AI is an automated content marketing system that generates SEO-optimized blog posts based on your industry, keywords, and RSS feed sources. It handles everything from content generation to meta tag optimization, internal linking, scheduling, and publishing - all without manual intervention.",
-    why: "Content marketing is essential for SEO but extremely time-consuming. Manual blog creation takes 4-6 hours per post. Our AI system generates 20-30 SEO-optimized posts monthly for the cost of one freelance writer, helping you dominate search rankings and drive organic traffic at scale.",
+    why: "Content marketing is essential for SEO but extremely time-consuming. Writing each post by hand takes hours. Our AI system is built to generate 20-30 SEO-optimized posts a month, so your site keeps publishing without a content team.",
     benefits: [
       "20-30 SEO-optimized posts per month",
-      "Save 80+ hours of content creation time",
+      "No manual writing or scheduling",
       "Automatic keyword research and optimization",
       "Internal linking for better SEO",
       "Multi-language content generation",
@@ -132,9 +131,9 @@ export const serviceData: Record<string, ServiceData> = {
   "ai-ops-autopilot": {
     title: "AI Operations Autopilot",
     tagline: "Plan, Coordinate & Automate Your Internal Business Operations",
-    metaDescription: "AI automation for business operations — handles invoices, HR tasks, meeting prep, and recurring admin on autopilot. Save 15+ staff hours per week.",
+    metaDescription: "AI automation for business operations — handles invoices, HR tasks, meeting prep, and recurring admin on autopilot, using the tools you already have.",
     what: "AI Operations Autopilot is an end-to-end internal automation system that handles the repetitive work that drains your team's time every day. From automatically sending invoice emails and payment reminders to managing HR onboarding checklists, scheduling internal meetings, and flagging overdue tasks — the system coordinates your back-office operations around the clock. It integrates with your existing tools (email, Google Workspace, Notion, Slack, HR platforms) and acts as a tireless operations coordinator that never misses a deadline.",
-    why: "The average team wastes 20+ hours per week on administrative tasks that follow a predictable pattern — chasing invoices, sending reminder emails, assigning recurring tasks, updating spreadsheets, and manually escalating overdue items. These tasks don't require judgment; they require consistency. Our AI handles all of it automatically, freeing your team to focus on work that actually moves the business forward. Clients typically recover 15-25 hours of staff time per week within the first month.",
+    why: "Teams lose hours every week to administrative tasks that follow a predictable pattern — chasing invoices, sending reminder emails, assigning recurring tasks, updating spreadsheets, and manually escalating overdue items. These tasks don't require judgment; they require consistency. Our AI is built to handle them automatically, freeing your team to focus on work that actually moves the business forward.",
     benefits: [
       "Automated invoice generation and payment reminder emails",
       "HR task automation — onboarding checklists, contract reminders, holiday tracking",
@@ -142,8 +141,7 @@ export const serviceData: Record<string, ServiceData> = {
       "Escalation workflows — overdue items automatically flagged to managers",
       "Recurring admin tasks handled on schedule without manual intervention",
       "Meeting scheduling and agenda preparation automation",
-      "Weekly internal status reports generated and distributed automatically",
-      "Save 15+ hours of staff time per week"
+      "Weekly internal status reports generated and distributed automatically"
     ],
     deliverables: [
       "Business operations audit and workflow mapping",
@@ -179,8 +177,8 @@ export const serviceData: Record<string, ServiceData> = {
         answer: "No. We build automations around your existing tools and workflows. Your team keeps using the same platforms — the AI just handles the repetitive parts in the background."
       },
       {
-        question: "How long until we see the time savings?",
-        answer: "Most clients see meaningful time savings within the first week as invoice and reminder automations go live. Full automation of all workflows typically takes 3-4 weeks."
+        question: "How long does it take to set up?",
+        answer: "Invoice and reminder automations are usually the first to go live. We plan for full automation of all workflows in about 3-4 weeks."
       },
       {
         question: "Can the AI handle different departments — finance, HR, and operations?",
@@ -190,19 +188,19 @@ export const serviceData: Record<string, ServiceData> = {
   },
   "meta-ads": {
     title: "Meta Ads Management",
-    tagline: "Expert Facebook & Instagram Advertising",
-    metaDescription: "Expert Meta Ads management for clinics and medical tourism businesses. We run Facebook and Instagram campaigns that lower your cost per lead by 30-50%.",
-    what: "Professional management of your Facebook and Instagram advertising campaigns. We handle everything from strategy and creative to targeting, optimization, and reporting. Our team uses advanced techniques and AI tools to maximize your return on ad spend.",
-    why: "Meta's advertising platform is powerful but complex. Without expertise, businesses waste 30-50% of their ad budget. Our proven strategies and continuous optimization ensure every dollar works harder, delivering qualified leads at the lowest possible cost.",
+    tagline: "Facebook & Instagram Advertising, Managed for You",
+    metaDescription: "Meta Ads management for clinics and medical tourism businesses. We plan, build, and optimise your Facebook and Instagram campaigns and report weekly.",
+    what: "Professional management of your Facebook and Instagram advertising campaigns. We handle everything from strategy and creative to targeting, optimization, and reporting. We use AI tools alongside hands-on optimisation to get more from your ad spend.",
+    why: "Meta's advertising platform is powerful but complex. Without careful setup and tracking, ad budget is easily wasted. We structure, test, and optimise campaigns continuously, aiming for qualified leads at a lower cost.",
     benefits: [
-      "Lower cost per lead by 30-50%",
+      "Campaigns optimised toward cost per qualified lead",
       "Professional ad creative and copywriting",
       "Advanced targeting and audience research",
       "A/B testing and optimization",
       "Detailed performance reporting",
       "Retargeting campaigns",
       "Lead generation funnels",
-      "Dedicated account manager"
+      "Conversion tracking setup"
     ],
     deliverables: [
       "Complete campaign strategy",
@@ -231,7 +229,7 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "How long until I see results?",
-        answer: "Most clients see initial results within 2-4 weeks. Full optimization typically takes 2-3 months as we gather data and refine campaigns."
+        answer: "Campaigns need time to gather data. Expect the first few weeks to be a learning phase, with optimisation continuing over the following 2-3 months. Results depend on your market, offer, and budget."
       },
       {
         question: "Do you create ad visuals?",
@@ -239,20 +237,20 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "Can you target international audiences?",
-        answer: "Absolutely. We specialize in international targeting, particularly for medical tourism and real estate."
+        answer: "Yes. We set up international targeting by country and language, which suits medical tourism and real estate campaigns."
       },
       {
         question: "What if the ads don't perform?",
-        answer: "We continuously test and optimize. If campaigns underperform, we revise strategy, creative, and targeting until we achieve your goals."
+        answer: "We continuously test and optimize. If campaigns underperform, we revise strategy, creative, and targeting and tell you plainly what we are changing and why."
       }
     ]
   },
   "google-ads": {
     title: "Google Ads Management",
     tagline: "Search & Display Advertising That Converts",
-    metaDescription: "Google Ads management for medical tourism clinics. We target high-intent patients in Germany, UK, and UAE — lower cost per lead and higher ROAS.",
+    metaDescription: "Google Ads management for medical tourism clinics. We build Search, Display, and YouTube campaigns for high-intent searches, with tracking.",
     what: "Professional Google Ads management including Search, Display, and YouTube advertising. We create data-driven campaigns that put your business in front of customers actively searching for your services. From keyword research to ad creation and optimization, we handle everything.",
-    why: "Google processes 8.5 billion searches per day. Your potential customers are searching right now. Without expert Google Ads management, you're leaving money on the table. Our certified specialists ensure you appear at the top of search results for high-intent keywords that drive conversions.",
+    why: "Your potential customers are searching on Google right now. Google Ads puts your business in front of them at the moment they are looking. We build and manage campaigns around high-intent keywords, with conversion tracking so you can see what each lead costs.",
     benefits: [
       "Immediate visibility in Google search results",
       "Pay only for clicks from interested prospects",
@@ -260,7 +258,7 @@ export const serviceData: Record<string, ServiceData> = {
       "Geographic and demographic targeting",
       "Retargeting across Google network",
       "Detailed conversion tracking",
-      "Lower cost per acquisition",
+      "Ongoing bid and keyword optimisation",
       "Scalable campaigns"
     ],
     deliverables: [
@@ -286,7 +284,7 @@ export const serviceData: Record<string, ServiceData> = {
     faqs: [
       {
         question: "How much should I spend on Google Ads?",
-        answer: "It depends on your industry and goals. We typically recommend starting with €1,000-2,000/month and scaling up as we prove ROI."
+        answer: "It depends on your industry and goals. We typically recommend starting with €1,000-2,000/month and scaling up once the campaigns show a return."
       },
       {
         question: "What's the difference between Search and Display?",
@@ -368,9 +366,9 @@ export const serviceData: Record<string, ServiceData> = {
   "seo": {
     title: "SEO Services",
     tagline: "Rank Higher & Drive Organic Traffic",
-    metaDescription: "Comprehensive SEO services for medical tourism clinics and businesses. Technical SEO, content strategy, and link building to rank higher and drive organic leads.",
+    metaDescription: "SEO services for medical tourism clinics and businesses. Technical SEO, content strategy, and link building to rank higher and drive organic leads.",
     what: "Comprehensive search engine optimization services to improve your website's visibility in Google and other search engines. We handle technical SEO, on-page optimization, content strategy, link building, and local SEO to help you rank higher for valuable keywords.",
-    why: "75% of users never scroll past the first page of search results. If you're not ranking on page one, you're invisible to most potential customers. Our proven SEO strategies help you climb the rankings, drive qualified organic traffic, and reduce your dependence on paid advertising.",
+    why: "Most people never look past the first page of search results. If you're not ranking there, most potential customers won't find you. Our SEO work is aimed at improving your rankings, bringing in qualified organic traffic, and reducing your dependence on paid advertising.",
     benefits: [
       "Higher search engine rankings",
       "Increased organic traffic",
@@ -404,7 +402,7 @@ export const serviceData: Record<string, ServiceData> = {
     faqs: [
       {
         question: "How long until I see results?",
-        answer: "SEO is a long-term strategy. Most clients see initial improvements in 2-3 months, with significant results in 6-12 months."
+        answer: "SEO is a long-term strategy. It usually takes a few months before changes show in rankings, and longer for competitive keywords. Timelines depend on your market and starting point."
       },
       {
         question: "Can you guarantee #1 rankings?",
@@ -547,14 +545,12 @@ export const serviceData: Record<string, ServiceData> = {
     tagline: "Convert More Visitors Into Customers",
     metaDescription: "Sales funnel automation for clinics and businesses. Landing pages, email sequences, and CRM workflows that turn visitors into paying patients automatically.",
     what: "Complete sales funnel development and automation. We build high-converting landing pages, email sequences, and automation workflows that guide prospects from first click to paying customer. Integration with CRM, email marketing, and payment systems included.",
-    why: "Most businesses lose 90% of website visitors because they lack proper follow-up systems. Automated funnels ensure every lead is nurtured, educated, and guided toward purchase - even while you sleep. This dramatically increases conversion rates and revenue per visitor.",
+    why: "Most website visitors leave without taking action, and many businesses have no follow-up system for the ones who do. Automated funnels make sure every lead is nurtured, educated, and guided toward purchase - even while you sleep.",
     benefits: [
-      "Higher conversion rates",
+      "A clear path from first click to purchase",
       "Automated follow-up sequences",
       "Lead nurturing on autopilot",
-      "Reduced sales cycle time",
       "Better lead qualification",
-      "Increased revenue per visitor",
       "Scalable sales process",
       "Detailed conversion tracking"
     ],
@@ -585,7 +581,7 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "Do you write the email copy?",
-        answer: "Yes, all packages include professional email copywriting based on proven conversion formulas."
+        answer: "Yes, all packages include professional email copywriting."
       },
       {
         question: "Can you integrate with my CRM?",
@@ -593,23 +589,23 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "How long until I see results?",
-        answer: "You'll see initial results immediately after launch. Full optimization typically takes 30-60 days as we gather data and refine."
+        answer: "The funnel starts collecting data as soon as it launches. We plan 30-60 days of optimisation as that data comes in. Results depend on your traffic and offer."
       },
       {
         question: "What if my funnel doesn't convert?",
-        answer: "We include optimization periods and use proven conversion principles. We'll work with you to improve performance until goals are met."
+        answer: "We include an optimisation period. We review the data with you, find where people drop off, and change pages and emails accordingly."
       }
     ]
   },
   "reputation-management": {
     title: "Reputation Management",
     tagline: "Monitor & Enhance Your Online Reputation",
-    metaDescription: "Online reputation management for clinics and businesses. Monitor reviews, respond professionally, and build 5-star ratings on Google, Facebook, and Trustpilot.",
+    metaDescription: "Online reputation management for clinics and businesses. Monitor reviews, respond professionally, and build your ratings on Google, Facebook, and Trustpilot.",
     what: "Comprehensive online reputation monitoring and management. We track mentions of your brand across review sites, social media, and the web. Respond to reviews, address negative feedback, and build a positive online presence that attracts new customers.",
-    why: "88% of consumers trust online reviews as much as personal recommendations. A single negative review can cost you dozens of customers. Our proactive reputation management ensures your online presence accurately reflects the quality of your service.",
+    why: "People read online reviews before they choose a business, and an unanswered negative review can put them off. Our reputation management is designed to make your online presence reflect the quality of your service.",
     benefits: [
-      "Improved online ratings",
-      "More positive reviews",
+      "Every review monitored and answered",
+      "A steady flow of review requests to happy customers",
       "Quick response to negative feedback",
       "Increased customer trust",
       "Better search engine visibility",
@@ -656,7 +652,7 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "How long until my rating improves?",
-        answer: "Results vary, but most clients see rating improvements within 2-3 months as new positive reviews accumulate."
+        answer: "It varies. Ratings move as new reviews come in, so it depends on how many customers you serve and how many respond to review requests."
       }
     ]
   },
@@ -665,12 +661,12 @@ export const serviceData: Record<string, ServiceData> = {
     tagline: "Find Winning Products, Automate Operations, Scale Revenue",
     metaDescription: "Shopify and eCommerce automation that finds winning products, manages inventory, automates pricing, and recovers abandoned carts — all on autopilot.",
     what: "We build end-to-end AI automation systems for Shopify and eCommerce stores — from finding profitable products before your competitors do, to running inventory, pricing, email flows, and fulfillment on autopilot. Whether you're launching a new store or scaling an existing one, we turn your eCommerce operation into a machine that runs itself.",
-    why: "Most eCommerce store owners spend 80% of their time on tasks a machine could do — restocking inventory, writing product descriptions, chasing abandoned carts, monitoring competitor prices. Our automation systems eliminate all of that, giving you back your time while your store generates revenue around the clock. Stores we automate typically see 2-4× revenue growth within 90 days.",
+    why: "Many eCommerce store owners spend most of their time on tasks a machine could do — restocking inventory, writing product descriptions, chasing abandoned carts, monitoring competitor prices. Our automation systems are built to take those tasks over, giving you back your time while your store keeps running around the clock.",
     benefits: [
-      "AI finds winning products before they go viral — first-mover advantage",
+      "AI product research that surfaces trending products early",
       "Inventory auto-managed: reorders triggered before you run out",
       "Dynamic pricing adjusts in real-time based on competitor data",
-      "Abandoned cart flows recover 15-25% of lost revenue automatically",
+      "Abandoned cart flows follow up with shoppers automatically",
       "Bulk AI-written product descriptions — 100 products in hours, not weeks",
       "Supplier sourcing automation with margin analysis built in",
       "Order routing and fulfillment handled without manual input",
@@ -699,7 +695,7 @@ export const serviceData: Record<string, ServiceData> = {
     faqs: [
       {
         question: "Does this work for dropshipping stores?",
-        answer: "Yes — dropshipping stores benefit most from our product research and order routing automations. We connect directly to your suppliers and automate the full fulfillment chain."
+        answer: "Yes — dropshipping stores are a good fit for our product research and order routing automations. We connect directly to your suppliers and automate the full fulfillment chain."
       },
       {
         question: "How does the AI find winning products?",
@@ -707,7 +703,7 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "What platforms do you support?",
-        answer: "We specialize in Shopify and Shopify Plus, but also work with WooCommerce and custom stores. Shopify is our strongest integration."
+        answer: "We work mainly with Shopify and Shopify Plus, and also with WooCommerce and custom stores."
       },
       {
         question: "Can you help with existing stores or only new ones?",
@@ -715,7 +711,7 @@ export const serviceData: Record<string, ServiceData> = {
       },
       {
         question: "How long before I see results?",
-        answer: "Abandoned cart flows and email sequences start recovering revenue within the first week. Product research and pricing automation compound over time — most stores see meaningful revenue uplift within 30-60 days."
+        answer: "Abandoned cart flows and email sequences start running as soon as they go live. Product research and pricing automation take longer to show an effect. Results depend on your traffic, products, and margins."
       },
       {
         question: "Do I need to know how to code?",

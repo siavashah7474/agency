@@ -13,7 +13,7 @@ export default function ClearDeskPage() {
       results={[
         { value: "8 AM Monday", label: "Report delivered", context: "Every week — automatically, without anyone doing anything" },
         { value: "6+ tools", label: "Connected in one report", context: "CRM, Meta Ads, Google Ads, analytics, spreadsheets and more" },
-        { value: "10h+", label: "Saved per month", context: "vs. manually pulling and formatting data from multiple sources" },
+        { value: "Plain English", label: "Written summary", context: "What changed, why it matters and what needs your attention" },
       ]}
       problemParagraphs={[
         "Most business owners don't know what's actually working. Reports are manual, late, incomplete — or just don't exist. Decisions get made on gut feel instead of data, and problems go unnoticed until they're expensive.",
@@ -26,36 +26,36 @@ export default function ClearDeskPage() {
         { emoji: "📬", title: "Report Arrives Monday Morning", description: "At 8am every Monday, your report lands in your inbox — or a shared Slack channel, or a live dashboard. Open it and know exactly where your business stands, what to focus on, and what to fix." },
       ]}
       scenario={{
-        heading: "See ClearDesk in action: a dental clinic's Monday morning report",
-        description: "It's Monday 8:00am. The clinic owner opens their email. Here's exactly what ClearDesk has prepared — automatically, while they slept.",
+        heading: "See ClearDesk in action: a clinic's Monday morning report",
+        description: "It's Monday 8:00am. The clinic owner opens their email. Here's the kind of report ClearDesk is designed to prepare automatically.",
         steps: [
           {
             time: "Last Week Overview",
             event: "Top-line numbers",
-            detail: "Last week: 73 new inquiries received across all channels. 34 consultation calls booked (47% conversion). 11 treatments confirmed (average value: €2,200). Total confirmed revenue: €24,200.",
+            detail: "New inquiries across all channels, consultation calls booked, treatments confirmed and confirmed revenue for the week, each compared with the week before.",
             highlight: true,
           },
           {
             time: "Ad Performance",
-            event: "Meta Ads performing well — Google needs attention",
-            detail: "Meta Ads: €1,240 spend, €27 cost-per-lead (↓18% vs last week — great). Google Ads: €680 spend, €91 cost-per-lead (↑34% vs last week — main ad creative may need refreshing). Recommendation: pause Google Ad #3 and test new headline.",
+            event: "Spend and cost per lead by platform",
+            detail: "Meta Ads and Google Ads side by side. If one platform's cost per lead has jumped, the report says so and suggests what to check first, for example an ad creative that needs refreshing.",
             highlight: true,
           },
           {
-            time: "WhatsApp & Follow-Up",
-            event: "NurtureLoop converted 4 stalled leads",
-            detail: "4 leads that had gone cold for 7+ days were re-engaged by the automated follow-up sequence. 3 of them booked consultations this week. Without automation, these would have been lost.",
+            time: "Follow-Up",
+            event: "Stalled leads that came back",
+            detail: "Which leads that had gone quiet replied to a follow-up last week, and which of them booked a consultation.",
           },
           {
             time: "Revenue Forecast",
-            event: "On track for best month",
-            detail: "Current confirmed revenue: €24,200. Pipeline value (consultations booked, not yet confirmed): €38,600. If conversion holds at last month's rate (31%), projected monthly revenue: €36,000 — which would be a 22% increase on March.",
+            event: "Where the month is heading",
+            detail: "Confirmed revenue so far, the value of consultations booked but not yet confirmed, and a projection for the month based on your recent conversion rate.",
             highlight: true,
           },
           {
             time: "This Week's Focus",
-            event: "3 action items",
-            detail: "1. Review and refresh Google Ads creative — CPA jumped 34%. 2. Follow up with 8 consultations that happened last week but haven't confirmed treatment. 3. Ask the 4 re-engaged leads (from WhatsApp) for a Google review before their consultation.",
+            event: "A short list of action items",
+            detail: "For example: review the Google Ads creative if cost per lead rose, follow up with last week's consultations that haven't confirmed treatment, and ask recent patients for a Google review.",
           },
         ],
       }}

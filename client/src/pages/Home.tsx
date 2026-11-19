@@ -3,7 +3,6 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import Footer from "@/components/Footer";
-import TestimonialCard from "@/components/TestimonialCard";
 import WhyWebimotSection from "@/components/WhyWebimotSection";
 import ClientResultsSection from "@/components/ClientResultsSection";
 import WhoWeHelpSection from "@/components/WhoWeHelpSection";
@@ -31,7 +30,6 @@ export default function Home() {
   const { t } = useTranslation();
 
   const faqs = t("home.faqs", { returnObjects: true }) as Array<{ question: string; answer: string }>;
-  const testimonials = t("home.testimonials", { returnObjects: true }) as Array<{ name: string; role: string; company: string; content: string }>;
   const heroChecklist = t("home.heroChecklist", { returnObjects: true }) as string[];
 
   // Use a stable dep key so this only re-runs when FAQ content actually changes
@@ -143,7 +141,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* 2. Numbers */}
+          {/* 2. Key facts */}
           <StatsStrip />
 
           {/* 3. Two audiences */}
@@ -156,28 +154,13 @@ export default function Home() {
           <WhyWebimotSection />
           <IntegrationsSection />
 
-          {/* 6. Proof */}
+          {/* 6. Client work */}
           <ClientResultsSection />
 
-          {/* 7. Testimonials */}
-          <section className="py-16 md:py-24" aria-labelledby="testimonials-heading">
-            <div className="container mx-auto px-6">
-              <div className="text-center mb-12">
-                <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-bold mb-4">{t("home.testimonialsTitle")}</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("home.testimonialsSubtitle")}</p>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {testimonials.map((testimonial, index) => (
-                  <TestimonialCard key={index} {...testimonial} />
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* 8. Risk-free start */}
+          {/* 7. Risk-free start */}
           <RiskFreeStartSection />
 
-          {/* 9. FAQ */}
+          {/* 8. FAQ */}
           <section className="py-16 md:py-24 bg-muted/30" aria-labelledby="faq-heading">
             <div className="container mx-auto px-6 max-w-3xl">
               <div className="text-center mb-12">
@@ -203,7 +186,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* 10. Final CTA */}
+          {/* 9. Final CTA */}
           <section className="relative overflow-hidden bg-slate-50 py-20 md:py-28" aria-labelledby="cta-heading">
             <div className="absolute inset-0 neural-grid-adaptive pointer-events-none" />
             <div className="absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-secondary/10 blur-3xl pointer-events-none" />

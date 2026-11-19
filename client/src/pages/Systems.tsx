@@ -25,7 +25,7 @@ const HOW_WE_WORK = [
     icon: Search,
     step: "1",
     title: "Free AI audit in 3 days",
-    description: "We map how enquiries, follow-up, paperwork and reporting run today and hand you the five automations with the biggest return.",
+    description: "We map how enquiries, follow-up, paperwork and reporting run today and hand you the five automations we think are worth doing first.",
   },
   {
     icon: Wrench,
@@ -106,7 +106,6 @@ export default function Systems() {
                 lead={PROMISE.subline}
                 className="max-w-3xl"
               />
-              <p className="mt-4 font-mono text-xs font-semibold uppercase tracking-[0.15em] text-slate-500">{PROMISE.proof}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button size="lg" className="rounded-full bg-slate-900 px-7 text-white hover:bg-slate-800" onClick={() => openModal()}>
                   Book a free AI audit <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
@@ -276,7 +275,7 @@ export default function Systems() {
             <div className="container relative z-10 mx-auto max-w-3xl px-6 text-center">
               <h2 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">Not sure which system to start with?</h2>
               <p className="mx-auto mb-8 max-w-2xl text-lg text-white/70">
-                Book a free AI audit. In 3 days you get the five automations with the biggest return for your business, and a plan to deploy the first one in 2–4 weeks.
+                Book a free AI audit. In 3 days you get the five automations we think are worth doing first for your business, and a plan to deploy the first one in 2–4 weeks.
               </p>
               <Button size="lg" className="rounded-full bg-white px-7 text-slate-900 hover:bg-white/90 focus-visible:ring-offset-[#020817]" onClick={() => openModal()}>
                 Book a free AI audit <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />

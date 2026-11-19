@@ -23,10 +23,6 @@ export default function AIProductCard({ title, tagline, description, features, h
           <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/60" />
           <span className="h-2.5 w-2.5 rounded-full bg-green-500/60" />
         </div>
-        <div className="flex items-center gap-1.5">
-          <span className="h-1.5 w-1.5 rounded-full bg-green-400 animate-pulse" />
-          <span className="font-mono text-[11px] font-bold uppercase tracking-widest text-green-400">Active</span>
-        </div>
       </div>
 
       <CardHeader className="pb-4">

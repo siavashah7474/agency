@@ -11,14 +11,14 @@ export default function WhatsAppAIPage() {
       tagline="24/7 intelligent lead handling on WhatsApp."
       heroBrief="WhatsApp is where your customers actually are — but you can't staff it 24/7. Our WhatsApp AI handles every message, qualifies every lead, and books every appointment automatically, in 50+ languages, around the clock."
       problemParagraphs={[
-        "WhatsApp is the #1 communication channel for leads in most markets — especially in Turkey, the Gulf, and across Europe. But staffing WhatsApp 24/7 is expensive, and missed messages mean missed revenue.",
-        "A lead who messages at 11pm and gets no reply until the next morning has already contacted 2–3 competitors. First response wins. If you can't reply instantly, you're losing deals to someone who can.",
+        "WhatsApp is a main communication channel for leads in many markets, including Turkey, the Gulf, and across Europe. But staffing WhatsApp 24/7 is expensive, and missed messages mean missed revenue.",
+        "A lead who messages at 11pm and gets no reply until the next morning has often already contacted competitors. First response wins. If you can't reply instantly, you're losing deals to someone who can.",
         "Our WhatsApp AI handles every incoming message the moment it arrives — answering questions, evaluating photos, qualifying leads, and booking appointments — in the customer's language, at any hour.",
       ]}
       howItWorksSteps={[
         { emoji: "🔗", title: "Connect", description: "Link your WhatsApp Business account. Full setup and training takes about one day — we handle everything." },
         { emoji: "🤖", title: "AI Takes Over", description: "Every incoming message is handled instantly — FAQs answered, photos evaluated, leads qualified, appointments booked." },
-        { emoji: "📊", title: "You See Results", description: "Full inbox coverage 24/7, zero missed leads, and a real-time dashboard of every conversation and conversion." },
+        { emoji: "📊", title: "You See Every Conversation", description: "Full inbox coverage 24/7 and a real-time dashboard of every conversation and booking." },
       ]}
       features={[
         "24/7 instant replies to every WhatsApp message",

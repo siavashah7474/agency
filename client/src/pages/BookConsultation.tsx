@@ -11,7 +11,7 @@ export default function BookConsultation() {
     "Personalized AI automation roadmap",
     "ROI analysis for your business",
     "No obligation or pressure",
-    "Expert advice from our team",
+    "Practical advice from our team",
     "Actionable next steps",
   ];
 
@@ -204,9 +204,8 @@ export default function BookConsultation() {
                         What if I'm not ready to commit?
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        That's perfectly fine! Many clients start with a
-                        strategy call, think it over, and come back when they're
-                        ready. There's no rush.
+                        That's perfectly fine! Take the strategy call, think it
+                        over, and come back when you're ready. There's no rush.
                       </p>
                     </CardContent>
                   </Card>

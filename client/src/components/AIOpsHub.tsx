@@ -69,7 +69,7 @@ export default function AIOpsHub() {
   const target = position(active);
 
   return (
-    <div className="relative" role="img" aria-label="Illustration: one AI core connected to sales, documents, reporting, support, team operations and content, with a live feed of automated tasks">
+    <div className="relative" role="img" aria-label="Illustration: one AI core connected to sales, documents, reporting, support, team operations and content, with an example feed of automated tasks">
       <div className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-secondary/20 via-accent/10 to-transparent blur-2xl" aria-hidden="true" />
 
       <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-2xl shadow-slate-900/10 backdrop-blur dark:border-white/10 dark:bg-slate-900/80 dark:shadow-black/40">
@@ -79,7 +79,7 @@ export default function AIOpsHub() {
             <div className="text-xs text-slate-600 dark:text-white/50">One AI layer across every department</div>
           </div>
           <span className="flex-shrink-0 rounded-full border border-slate-200 px-2.5 py-1 text-[11px] font-medium text-slate-600 dark:border-white/10 dark:text-white/50">
-            Live demo
+            Illustration
           </span>
         </div>
 
@@ -188,7 +188,7 @@ export default function AIOpsHub() {
         {/* Activity feed */}
         <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-3 dark:border-white/10 dark:bg-white/[0.03]">
           <div className="mb-2 flex items-center gap-2 px-1 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-600 dark:text-white/40">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> Just automated
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> Example tasks
           </div>
           <ul className="space-y-1.5" aria-live="off">
             <AnimatePresence initial={false} mode="popLayout">

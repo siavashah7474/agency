@@ -37,7 +37,7 @@
     "getFreePlan": "Ücretsiz Büyüme Planınızı Alın"
   },
   "home": {
-    "trustBadge": "AI otomasyon sistemleri · 12+ ülkede 50+ işletme",
+    "trustBadge": "AI otomasyon sistemleri · Amsterdam · İstanbul",
     "heroTitle1": "Günlük işlerinizi yürüten",
     "heroTitle2": "AI otomasyon sistemleri.",
     "heroSubtitle": "<strong>Klinikler</strong> ve <strong>küçük işletmeler</strong> için: her müşteri adayı yanıtlanır, her belge işlenir, her takip mesajı gönderilir — 7/24, ek personel olmadan.",
@@ -69,28 +69,6 @@
       "link": "Bu sistemi görün",
       "allLink": "Dört sistemin tümünü görün"
     },
-    "testimonialsTitle": "Sadece Bizim Sözümüze Güvenmeyin",
-    "testimonialsSubtitle": "Gerçek işletmeler. Gerçek rakamlar. Manuel yapmayı bıraktıklarında ne oldu.",
-    "testimonials": [
-      {
-        "name": "Dr. Gorkem Atsal",
-        "role": "Klinik Sahibi",
-        "company": "Gorkem Atsal Kliniği",
-        "content": "WhatsApp AI ajanı müşteri adayı yönetimimizi tamamen dönüştürdü. Soruların %40'ını kaçırmaktan saniyeler içinde %100'üne yanıt vermeye geçtik. Dönüşüm oranımız sadece 3 ayda ikiye katlandı."
-      },
-      {
-        "name": "Pouyan Azizpour",
-        "role": "CEO",
-        "company": "Wavemed.io",
-        "content": "Webimot'un SEO Blog Üreteci oyunun kurallarını değiştirdi. Manuel çalışma olmadan ayda 20 optimize edilmiş yazı yayınlıyoruz. Organik trafiğimiz başladıktan birkaç ay içinde önemli ölçüde arttı."
-      },
-      {
-        "name": "Dr. Hamed Gholami",
-        "role": "Novin Ariana Sahibi",
-        "company": "Novin Ariana Sağlık Grubu",
-        "content": "AI Pazarlama Analisti bize her hafta 10+ saat kazandırıyor. Doğrudan gelen kutumuza teslim edilen uygulanabilir içgörülerle detaylı raporlar alıyoruz. Özel bir analistin kadromuzda bulunması gibi."
-      }
-    ],
     "faqBadge": "SSS",
     "faqTitle": "Her Gün Aldığımız Sorular",
     "faqSubtitle": "Doğrudan yanıtlar — jargon yok, gereksiz söz yok",
@@ -101,15 +79,15 @@
       },
       {
         "question": "Dört sistemin hepsine ihtiyacım var mı?",
-        "answer": "Hayır. Çoğu müşterimiz, her WhatsApp ve web talebinin saniyeler içinde yanıtlanması için yakalama sistemiyle başlar; sonuçları gördükten sonra takip ve raporlama sistemlerini ekler. Dört sistem birlikte çalışmak üzere tasarlanmıştır, ancak her biri tek başına da çalışır — bir sonraki adımı hazır olduğunuzda eklersiniz."
+        "answer": "Hayır. Yaygın bir başlangıç noktası yakalama sistemidir; böylece her WhatsApp ve web talebi yaklaşık bir dakika içinde yanıt alır. Takip ve raporlama sonradan eklenebilir. Dört sistem birlikte çalışmak üzere tasarlanmıştır, ancak her biri tek başına da çalışır — bir sonraki adımı hazır olduğunuzda eklersiniz."
       },
       {
         "question": "Ne kadar sürede yayına girer?",
-        "answer": "Ücretsiz AI denetimi 3 gün sürer ve işletmeniz için en önemli otomasyon fırsatlarını ortaya koyar. Ardından yakalama sistemi genellikle 2 hafta içinde yayına girer; takip, operasyon ve raporlamayı içeren tam kurulum 2–4 hafta sürer — WhatsApp Business numaranızın bağlanması, AI'ın hizmetlerinize göre eğitilmesi ve ekibinizle test edilmesi dahil."
+        "answer": "Ücretsiz AI denetimi 3 gün sürer ve işletmeniz için en önemli otomasyon fırsatlarını ortaya koyar. Ardından yakalama sistemini 2 hafta içinde, takip, operasyon ve raporlamayı içeren tam kurulumu ise 2–4 hafta içinde yayına almayı hedefliyoruz — WhatsApp Business numaranızın bağlanması, AI'ın hizmetlerinize göre eğitilmesi ve ekibinizle test edilmesi dahil."
       },
       {
         "question": "Kliniğim veya küçük işletmem için çalışır mı?",
-        "answer": "Müşterileriniz size WhatsApp, e-posta veya web formları üzerinden ulaşıyorsa evet. En derin deneyimimiz saç ekimi, diş, estetik cerrahi ve tüp bebek klinikleri — sağlık turizmi sağlayıcıları dahil — ile emlak ofisleri, e-ticaret mağazaları, finans ve hukuk firmaları ve hizmet işletmelerindedir. AI 50'den fazla dilde yanıt verir, böylece uluslararası müşteriler de kapsanır."
+        "answer": "Müşterileriniz size WhatsApp, e-posta veya web formları üzerinden ulaşıyorsa evet. Sistemler klinikler için — saç ekimi, diş, estetik cerrahi ve tüp bebek; sağlık turizmi sağlayıcıları dahil — ve emlak ofisleri, e-ticaret mağazaları, finans ve hukuk firmaları ile hizmet işletmeleri gibi küçük işletmeler için tasarlanmıştır. AI 50'den fazla dilde yanıt verebilir, böylece uluslararası müşteriler de kapsanır."
       },
       {
         "question": "Maliyeti nedir?",
@@ -125,40 +103,22 @@
     "ctaButton": "Demo talep edin"
   },
   "about": {
-    "badge": "Müşteri Adayı ve Satış Uzmanları",
+    "badge": "AI Otomasyon Ajansı",
     "title": "Webimot Hakkında",
-    "subtitle": "İşletmeniz için müşteri adayları oluşturmak ve satışları artırmak için AI otomasyonunu kanıtlanmış dijital pazarlama stratejileriyle birleştiriyoruz",
+    "subtitle": "Webimot, Amsterdam ve İstanbul'dan çalışan bir AI otomasyon ve dijital pazarlama ajansıdır. Klinikler ve küçük işletmeler için AI sistemleri tasarlıyor, kuruyor ve yönetiyoruz.",
     "focusTitle": "Odak Noktamız: Müşteri Adayları & Satış",
     "focusP1": "Biz sadece bir pazarlama ajansı değiliz. Müşteri adayı oluşturma ve satış ivmelendirme ortağıyız. Her strateji, her otomasyon, her kampanya tek bir hedefle tasarlanır: nitelikli müşteri adayları oluşturmak ve bunları müşterilere dönüştürmek.",
-    "focusP2": "AI destekli sistemlerimiz, satış ekibinizin anlaşmaları kapatmaya odaklanabilmesi için 7/24 müşteri adaylarını yakalar, niteler ve besler.",
-    "deliverTitle": "Neler Sunuyoruz",
+    "focusP2": "Klinikler, emlak ofisleri ve küçük işletmeler çoğu zaman aynı sorunları yaşar: çok fazla manuel iş, müşteri adaylarına geç yanıt ve neyin işe yaradığına dair yetersiz görünürlük. Sistemlerimiz bu üçünü de çözmek üzere tasarlanmıştır.",
+    "deliverTitle": "Sistemlerimiz Ne Yapar",
     "deliver": [
-      "Satış ekibiniz için daha fazla nitelikli müşteri adayı",
-      "AI otomasyonuyla daha hızlı yanıt süreleri",
-      "Besleme yoluyla daha yüksek dönüşüm oranları",
-      "Her kampanyada ölçülebilir yatırım getirisi"
-    ],
-    "stats": [
-      {
-        "number": "50+",
-        "label": "Hizmet Verilen Müşteri"
-      },
-      {
-        "number": "12+",
-        "label": "Hizmet Verilen Ülke"
-      },
-      {
-        "number": "7/24",
-        "label": "AI Otomasyonu"
-      },
-      {
-        "number": "50+",
-        "label": "Desteklenen Dil"
-      }
+      "Her talebi gece gündüz yanıtlamak",
+      "Müşteri adaylarını otomatik olarak takip etmek",
+      "Tekrarlayan belge ve idari işleri ekibinizin üzerinden almak",
+      "Neyin işe yaradığını her hafta raporlamak"
     ],
     "medBadge": "Birincil Odak",
     "medTitle": "Tıp Turizmi & Klinikler",
-    "medSubtitle": "Tıp turizmi, AI otomasyonunun mükemmel çözümler sunduğu kendine özgü zorluklarıyla 100 milyar doların üzerinde bir sektördür. Bu bizim uzmanlık alanımız.",
+    "medSubtitle": "Uluslararası hastalara hizmet veren klinikler, AI otomasyonunun çok uygun olduğu kendine özgü zorluklarla karşılaşır.",
     "specialties": [
       {
         "title": "Diş Klinikleri",
@@ -187,11 +147,11 @@
       "50'den fazla dilde otomatik çeviri",
       "Vision AI fotoğrafları otomatik değerlendirir",
       "Otomatik takip dizileri",
-      "Haftada 15+ personel saati tasarrufu"
+      "Personeliniz için daha az tekrarlayan idari iş"
     ],
-    "reBadge": "İkinci Temel Uzmanlık",
+    "reBadge": "Diğer Sektörler",
     "reTitle": "Gayrimenkul & Daha Fazlası",
-    "reSubtitle": "Gayrimenkul ikinci kanıtlanmış niş alanımızdır — aynı yüksek değerli müşteri adayı dijitalleştirmesine ihtiyaç duyan hizmet işletmeleriyle de çalışıyoruz",
+    "reSubtitle": "Aynı sistemler, yüksek değerli müşteri adaylarıyla çalışan emlak ofisleri ve hizmet işletmeleri için tasarlanmıştır.",
     "realEstate": {
       "title": "Gayrimenkul",
       "subtitle": "Mülk satış ve yatırım ajansları",
@@ -213,14 +173,8 @@
         "Hedefli reklam kampanyaları ve huni otomasyonu"
       ]
     },
-    "teamTitle": "Ekibimiz",
-    "teamP": "Webimot, işletmelerin müşteri adayı oluşturma biçimini dönüştürmek için bir fırsat gören dijital pazarlama ve AI uzmanları tarafından kuruldu. Amsterdam ve İstanbul'daki ofislerimizle dünya genelinde müşterilere hizmet veriyoruz.",
-    "teamItems": [
-      "Dijital pazarlama ve SEO uzmanları",
-      "AI ve otomasyon uzmanları",
-      "Tıp turizmi ve gayrimenkul sektörü deneyimlileri",
-      "Müşteri adayı oluşturma ve satış profesyonelleri"
-    ],
+    "teamTitle": "Çalışmalarımız",
+    "teamP": "Webimot, Amsterdam ve İstanbul'dan çalışır. Devam eden müşterimiz Gorkem Atsal Clinic için web sitesini ve CRM'i kurduk; Google Ads ve Meta Ads'i, sosyal medya stratejisini ve Google, Bing ve Yandex için arama optimizasyonunu yürütüyoruz. Clinish kliniği için web sitesini kurduk, sosyal medyaya destek olduk, Meta Business Suite ve Meta reklamlarını kurduk ve siteyi Google Search Console ve Google Analytics ile optimize ettik.",
     "teamCta": "Hedeflerinizi Konuşalım"
   },
   "contact": {
@@ -263,33 +217,32 @@
   },
   "clients": {
     "title": "Müşterilerimiz",
-    "subtitle": "Tıp turizmi, gayrimenkul ve hizmet sektörlerindeki gerçek işletmelerden gerçek sonuçlar",
-    "successTitle": "Başarı Hikayeleri",
-    "testimonialsTitle": "Müşterilerimiz Ne Diyor",
+    "subtitle": "Kamuya açık olarak paylaşabildiğimiz müşteri çalışmaları.",
+    "successTitle": "Müşteri Çalışmaları",
     "industriesTitle": "Hizmet Verdiğimiz Sektörler",
-    "ctaTitle": "Başarı Hikayelerimize Katılın",
-    "ctaSubtitle": "İşletmeniz için benzer sonuçlar görmek ister misiniz?",
+    "ctaTitle": "İşletmenizi Bizimle Konuşun",
+    "ctaSubtitle": "Ücretsiz bir görüşme ayarlayın; ilk olarak neyi otomatikleştireceğimizi gösterelim.",
     "ctaButton": "Ücretsiz Strateji Görüşmesi Yapın"
   },
   "whyWebimot": {
-    "badge": "Tıp Turizmi Uzmanları",
+    "badge": "Klinikler İçin",
     "title": "Kliniklerin Daha Fazla Hasta Almasına Yardımcı Oluyoruz",
     "subtitle": "Çoğu ajans size tıklama getirir. Biz klinik için gerçekten önemli olana odaklanıyoruz — sorguları rezervasyona dönüştürmek. Saç ekimi, diş, estetik ve IVF klinikleri için özel olarak geliştirilmiş AI sistemleriyle.",
     "coreValues": [
       {
         "title": "Hastaları Rezervasyona Dönüştürün",
         "description": "Sadece sorgu getirmiyoruz — hasta sorularını onaylı konsültasyonlara ve operasyonlara dönüştüren sistemler kuruyoruz.",
-        "stats": "Talepten rezervasyona %55 daha yüksek dönüşüm"
+        "stats": "Talepten rezervasyona takip"
       },
       {
         "title": "Uluslararası Hasta Sayısını Artırın",
         "description": "Tıp turizmi klinikleri için geliştirilmiş çok dilli pazarlama stratejileriyle İngiltere, Almanya, ABD ve ötesinden hasta çekin.",
-        "stats": "12+ ülkeden hasta"
+        "stats": "Çok dilli kampanyalar"
       },
       {
         "title": "7/24 Hasta Yanıtı",
         "description": "Artık hiçbir sorguyu kaçırmayın. AI'mız siz uyurken bile hasta sorularını ele alır, fotoğrafları değerlendirir ve konsültasyonları kaydeder.",
-        "stats": "60 saniyeden kısa sürede yanıt"
+        "stats": "Bir dakika içinde yanıt için tasarlandı"
       },
       {
         "title": "Her Hasta Yolculuğunu Takip Edin",
@@ -298,14 +251,14 @@
       }
     ],
     "partnerTitle": "Kliniğinizin Büyüme Ortağı",
-    "partnerDesc": "Tıp turizmini içten dışa kadar anlıyoruz. Arapça, Almanca ve İngilizcede hasta sorgularını yönetmekten öncesi/sonrası fotoğraflarını değerlendirmeye kadar — uluslararası hastaları rezervasyona dönüştürmek için ne gerektiğini biliyoruz.",
+    "partnerDesc": "Sistemlerimiz sağlık turizmi kliniklerinin çalışma biçimine göre tasarlanmıştır: Arapça, Almanca ve İngilizce hasta taleplerini yönetmek, öncesi/sonrası fotoğraflarını değerlendirmek ve uluslararası hastaları ilk mesajdan randevusu alınmış konsültasyona taşımak.",
     "partnerItems": [
       "Çok dilli hasta iletişimi (EN, DE, AR, RU)",
       "Saç, diş ve estetik prosedürler için AI fotoğraf değerlendirme",
       "Otomatik konsültasyon rezervasyonu & takvim senkronizasyonu",
       "İlk sorgulardan operasyona kadar hasta yolculuğu takibi"
     ],
-    "processTitle": "Kanıtlanmış Sürecimiz",
+    "processTitle": "Sürecimiz",
     "steps": [
       {
         "step": "01",
@@ -330,23 +283,17 @@
     ],
     "cta": "Ücretsiz Büyüme Planınızı Alın"
   },
-  "clientResults": {
-    "badge": "Kanıtlanmış Sonuçlar",
-    "title": "Gerçek Kliniklerden Gerçek Sonuçlar",
-    "subtitle": "Sadece bizim sözümüze güvenmeyin. AI otomasyonu ve dijital pazarlama ile büyümesine yardımcı olduğumuz klinik ve işletmelerin gerçek öncesi/sonrası metriklerini görün.",
-    "viewAll": "Tüm Vaka Çalışmalarını Görüntüle"
-  },
   "exitPopup": {
     "title": "Bekleyin! Eli Boş Gitmeyin",
     "desc": "Ücretsiz bir <strong>AI denetimi</strong> alın ve daha fazla müşteri adayı oluşturmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez.",
     "cta": "Ücretsiz Denetimimi Alın",
     "dismiss": "Hayır teşekkürler, ücretsiz tavsiyeleri pas geçeceğim",
-    "trust": "Pazarlama ihtiyaçları için Webimot'a güvenen 50'den fazla işletmeye katılın"
+    "trust": "Kredi kartı gerekmez. Uzun vadeli sözleşme yok."
   },
   "caseStudies": {
     "title": "Vaka Çalışmaları",
-    "subtitle": "Çözümlerimizle müşteri adayı oluşturmayı dönüştüren işletmelerden gerçek başarı hikayeleri",
-    "ctaTitle": "Bir Sonraki Başarı Hikayemiz Olmaya Hazır mısınız?",
+    "subtitle": "Clinish kliniği için yaptıklarımız.",
+    "ctaTitle": "İşletmeniz İçin Benzerini İster misiniz?",
     "ctaButton": "Ücretsiz Strateji Görüşmesi Yapın"
   },
   "blog": {
@@ -369,7 +316,14 @@
   "services": {
     "title": "İşletmenizi Dijitalleştiren ve Büyüten Hizmetler",
     "subtitle": "AI otomasyonu, hedefli reklamlar, SEO ve dijital pazarlama — tıp turizmi klinikleri ve gayrimenkul ajansları için geliştirilmiş.",
-    "ctaTitle": "Pazarınıza Hâkim Olmaya Hazır mısınız?",
-    "ctaSubtitle": "Daha fazla müşteri adayı oluşturmak, daha hızlı yanıt vermek ve daha fazla anlaşma kapatmak için Webimot'u kullanan tıp turizmi klinikleri ve gayrimenkul ajanslarına katılın."
+    "ctaTitle": "Başlamaya Hazır mısınız?",
+    "ctaSubtitle": "Ücretsiz bir görüşme ayarlayın; işletmenize hangi hizmetlerin uygun olduğunu birlikte belirleyelim."
+  },
+  "ourWork": {
+    "badge": "Çalışmalarımız",
+    "title": "Müşteri projeleri",
+    "subtitle": "Birlikte çalıştığımız klinikler için kurduklarımız.",
+    "projectLabel": "Müşteri projesi",
+    "readMore": "Proje özetini okuyun"
   }
 }

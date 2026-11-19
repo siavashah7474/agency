@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import { AUDIENCES, SYSTEMS, type SystemId } from "@/data/systemsData";
-import { caseStudies } from "@/data/caseStudiesData";
 
 const CANONICAL = "https://webimotagency.com/small-business";
 const audience = AUDIENCES[1];
@@ -89,7 +88,7 @@ const EXAMPLES: { emoji: string; name: string; tagline: string; automations: str
 const FAQS = [
   {
     question: "We are a small team. Is this not built for bigger companies?",
-    answer: "It is built for teams of 2 to 50 people who live on WhatsApp, email and spreadsheets. Most clients start with one system, the capture system, and add the next one once it pays for itself. No IT department needed.",
+    answer: "It is built for teams of 2 to 50 people who live on WhatsApp, email and spreadsheets. You can start with one system, the capture system, and add the next one once it runs. No IT department needed.",
   },
   {
     question: "Which tools does it connect to?",
@@ -101,13 +100,9 @@ const FAQS = [
   },
   {
     question: "How quickly does it go live and what does it cost?",
-    answer: "The capture system is usually live within 1 to 2 weeks, the full set within 2 to 4 weeks. Pricing is a monthly fee per tier based on which systems you run; we quote after the free AI audit so you only pay for what you need.",
+    answer: "We aim to have the capture system live within 1 to 2 weeks and the full set within 2 to 4 weeks. Pricing is a monthly fee per tier based on which systems you run; we quote after the free AI audit so you only pay for what you need.",
   },
 ];
-
-const businessCaseStudies = caseStudies.filter(
-  (cs) => !/clinic|dental|hair|cosmetic|medical/i.test(`${cs.industry} ${cs.title} ${cs.services.join(" ")}`),
-);
 
 export default function SmallBusiness() {
   const { openModal } = useBookingModal();
@@ -145,7 +140,7 @@ export default function SmallBusiness() {
     <>
       <SEO
         title="AI Automation Systems for Small Businesses | Webimot"
-        description="AI systems for real estate, e-commerce, finance, legal and service businesses: leads answered in under 60 seconds, automatic follow-up, paperwork done, weekly report."
+        description="AI systems for real estate, e-commerce, finance, legal and service businesses: leads answered in under a minute, automatic follow-up and a weekly report."
         keywords="small business AI automation, SMB automation, WhatsApp AI for small business, lead follow-up automation, real estate AI, Shopify automation, document processing AI, weekly business report"
         canonicalUrl={CANONICAL}
         schema={schema}
@@ -183,10 +178,10 @@ export default function SmallBusiness() {
                 <div className="min-w-0 lg:col-span-5">
                   <dl className="grid grid-cols-2 gap-4">
                     {[
-                      { value: "< 60s", label: "Lead response time" },
-                      { value: "15+", label: "Admin hours saved per week" },
-                      { value: "5–15%", label: "Old contacts reactivated" },
-                      { value: "0", label: "Manual reports needed" },
+                      { value: "< 60s", label: "Target lead response time" },
+                      { value: "24/7", label: "Evenings and weekends covered" },
+                      { value: "4", label: "Systems, added one at a time" },
+                      { value: "Weekly", label: "Report written for you" },
                     ].map((s) => (
                       <div key={s.label} className="surface-card flex flex-col p-5">
                         <dt className="order-2 text-sm text-slate-600">{s.label}</dt>
@@ -292,47 +287,6 @@ export default function SmallBusiness() {
               </ul>
             </div>
           </section>
-
-          {/* Case studies */}
-          {businessCaseStudies.length > 0 && (
-            <section className="bg-white py-16 md:py-24" aria-labelledby="proof-title">
-              <div className="container mx-auto px-6">
-                <SectionHeader
-                  id="proof-title"
-                  eyebrow="Proof"
-                  title="Small businesses already running on it"
-                  className="mb-12"
-                />
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {businessCaseStudies.map((cs) => {
-                    const top = cs.results[0];
-                    return (
-                      <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                        <article className="surface-card-interactive flex h-full flex-col p-6">
-                          <p className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">{cs.industry}</p>
-                          <div className="mb-3 text-3xl font-bold text-slate-900">{top.value}</div>
-                          <p className="mb-4 text-sm text-slate-600">{top.metric}: {top.description}</p>
-                          <h3 className="flex-1 font-bold leading-snug text-slate-900">{cs.title}</h3>
-                          <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-700 group-hover:text-slate-900">
-                            Read the case study <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                          </span>
-                        </article>
-                      </Link>
-                    );
-                  })}
-                  <Link href="/case-studies" className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                    <div className="flex h-full flex-col justify-center rounded-2xl border border-dashed border-slate-300 p-6 text-center transition-colors group-hover:border-slate-400">
-                      <p className="font-bold text-slate-900">All case studies</p>
-                      <p className="mt-1 text-sm text-slate-600">Clinics, real estate and more.</p>
-                      <span className="mt-3 inline-flex items-center justify-center gap-1 text-sm font-medium text-blue-700 group-hover:text-slate-900">
-                        Browse <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                      </span>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </section>
-          )}
 
           {/* FAQ */}
           <section className="bg-muted/30 py-16 md:py-24" aria-labelledby="faq-title">

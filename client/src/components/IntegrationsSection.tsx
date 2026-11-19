@@ -35,12 +35,12 @@ export default function IntegrationsSection() {
         <SectionHeader
           id="integrations-heading"
           eyebrow="Integrations"
-          title="No need to leave the tools you already use."
-          lead="Every lead, booking and report flows straight into your CRM, calendar or spreadsheet. No copy-paste, no new software to learn."
+          title="Built to connect to the tools you already use."
+          lead="These are tools our systems can connect to, so leads, bookings and reports can go straight into your CRM, calendar or spreadsheet."
           className="mb-10"
         />
 
-        <ul className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3" aria-label="Supported integrations">
+        <ul className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3" aria-label="Tools the systems can connect to">
           {tools.map(({ name, icon: Icon, color }) => (
             <li
               key={name}
@@ -51,7 +51,7 @@ export default function IntegrationsSection() {
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-center text-sm text-slate-600 dark:text-white/50">Plus most other business tools via API.</p>
+        <p className="mt-6 text-center text-sm text-slate-600 dark:text-white/50">Other business tools can be connected through their APIs.</p>
       </div>
     </section>
   );

@@ -57,13 +57,12 @@ const FAQS = [
   },
   {
     question: "How long does it take to go live?",
-    answer: "The capture system is usually live within 1 to 2 weeks: we train the AI on your procedures, prices and FAQs, connect your calendar and test with your team. Follow-up, operations and reporting are added over the following weeks.",
+    answer: "We aim to have the capture system live within 1 to 2 weeks: we train the AI on your procedures, prices and FAQs, connect your calendar and test with your team. Follow-up, operations and reporting are added over the following weeks.",
   },
 ];
 
-const clinicCaseStudies = caseStudies.filter((cs) =>
-  /clinic|dental|hair|cosmetic|medical/i.test(`${cs.industry} ${cs.title} ${cs.services.join(" ")}`),
-);
+// Client projects for clinics. Only confirmed work is listed in caseStudiesData.
+const clinicProjects = caseStudies.filter((cs) => cs.category === "Clinic");
 
 export default function Clinics() {
   const { openModal } = useBookingModal();
@@ -139,9 +138,9 @@ export default function Clinics() {
                 <div className="min-w-0 lg:col-span-5">
                   <dl className="grid grid-cols-2 gap-4">
                     {[
-                      { value: "< 60s", label: "Reply time, day and night" },
-                      { value: "50+", label: "Languages detected" },
-                      { value: "+40%", label: "More patient enquiries" },
+                      { value: "< 60s", label: "Target reply time, day and night" },
+                      { value: "50+", label: "Languages the AI can reply in" },
+                      { value: "1 number", label: "Runs on your own WhatsApp line" },
                       { value: "24/7", label: "Coverage across time zones" },
                     ].map((s) => (
                       <div key={s.label} className="surface-card flex flex-col p-5">
@@ -210,34 +209,37 @@ export default function Clinics() {
             </div>
           </section>
 
-          {/* Case studies */}
-          {clinicCaseStudies.length > 0 && (
-            <section className="bg-slate-50 py-16 md:py-24" aria-labelledby="proof-title">
-              <div className="container mx-auto px-6">
+          {/* Client project */}
+          {clinicProjects.length > 0 && (
+            <section className="bg-slate-50 py-16 md:py-24" aria-labelledby="work-title">
+              <div className="container mx-auto max-w-5xl px-6">
                 <SectionHeader
-                  id="proof-title"
-                  eyebrow="Proof"
-                  title="Clinics already running on it"
-                  lead="Dental, hair transplant and cosmetic surgery clinics in Istanbul serving patients from Europe and the Gulf."
-                  className="mb-12"
+                  id="work-title"
+                  eyebrow="Our work"
+                  title="Clinic projects we work on"
+                  className="mb-10"
                 />
-                <div className="grid gap-6 md:grid-cols-3">
-                  {clinicCaseStudies.map((cs) => {
-                    const top = cs.results[0];
-                    return (
-                      <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                        <article className="surface-card-interactive flex h-full flex-col p-6">
-                          <p className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">{cs.industry}</p>
-                          <div className="mb-3 text-3xl font-bold text-slate-900">{top.value}</div>
-                          <p className="mb-4 text-sm text-slate-600">{top.metric}: {top.description}</p>
-                          <h3 className="flex-1 font-bold leading-snug text-slate-900">{cs.title}</h3>
-                          <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-700 group-hover:text-slate-900">
-                            Read the case study <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                          </span>
-                        </article>
-                      </Link>
-                    );
-                  })}
+                <div className="grid gap-6 md:grid-cols-2">
+                  {clinicProjects.map((cs) => (
+                    <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                      <article className="surface-card-interactive flex h-full flex-col p-6 md:p-7">
+                        <p className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">Client project</p>
+                        <h3 className="mb-3 text-xl font-bold leading-snug text-slate-900">{cs.client}</h3>
+                        <p className="mb-4 text-sm leading-relaxed text-slate-600">{cs.summary}</p>
+                        <ul className="grid flex-1 content-start gap-2 sm:grid-cols-2">
+                          {cs.workDone.map((item) => (
+                            <li key={item.title} className="flex items-start gap-2 text-sm text-slate-700">
+                              <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700" aria-hidden="true" />
+                              <span>{item.title}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-blue-700 group-hover:text-slate-900">
+                          Read the project write-up <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                        </span>
+                      </article>
+                    </Link>
+                  ))}
                 </div>
               </div>
             </section>

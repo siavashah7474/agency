@@ -32,9 +32,6 @@ import {
   Calendar,
   CheckCircle2,
   TrendingDown,
-  MousePointerClick,
-  Eye,
-  DollarSign,
 } from "lucide-react";
 import { serviceData } from "@/data/servicesData";
 import { Link } from "wouter";
@@ -108,114 +105,6 @@ const serviceIcons: Record<
     bgGradient: "from-emerald-500/20 to-teal-600/20",
   },
 };
-
-function GoogleAdsDashboard() {
-  const campaigns = [
-    { name: "Hair Transplant Istanbul – Search", status: "active", clicks: "1,840", ctr: "6.2%", cpc: "€1.40", conv: "112", roas: "9.1×" },
-    { name: "Dental Veneers Turkey – Search", status: "active", clicks: "1,250", ctr: "5.8%", cpc: "€1.65", conv: "78", roas: "8.3×" },
-    { name: "Cosmetic Surgery Istanbul – Brand", status: "active", clicks: "640", ctr: "12.4%", cpc: "€0.80", conv: "54", roas: "11.2×" },
-    { name: "IVF Clinics Turkey – Search", status: "paused", clicks: "320", ctr: "3.1%", cpc: "€2.10", conv: "18", roas: "4.2×" },
-  ];
-
-  return (
-    <div className="rounded-xl border bg-background shadow-xl overflow-hidden text-sm">
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b bg-muted/40">
-        <div className="flex items-center gap-2">
-          <Target className="w-4 h-4 text-amber-500" />
-          <span className="font-semibold text-sm">Google Ads — Campaign Overview</span>
-        </div>
-        <span className="text-xs text-muted-foreground">Mar 1 – Mar 9, 2026</span>
-      </div>
-
-      {/* KPI row */}
-      <div className="grid grid-cols-4 divide-x border-b">
-        {[
-          { icon: MousePointerClick, label: "Clicks", value: "4,050", color: "text-blue-600" },
-          { icon: Eye, label: "Impressions", value: "65,400", color: "text-indigo-600" },
-          { icon: DollarSign, label: "Avg. CPC", value: "€1.42", color: "text-amber-600" },
-          { icon: TrendingUp, label: "Conv. Rate", value: "6.3%", color: "text-emerald-600" },
-        ].map((k) => (
-          <div key={k.label} className="px-3 py-3 text-center">
-            <k.icon className={`w-4 h-4 mx-auto mb-1 ${k.color}`} />
-            <div className={`text-base font-bold ${k.color}`}>{k.value}</div>
-            <div className="text-xs text-muted-foreground">{k.label}</div>
-          </div>
-        ))}
-      </div>
-
-      {/* Campaign table */}
-      <div className="overflow-x-auto">
-        <table className="w-full text-xs">
-          <thead>
-            <tr className="border-b bg-muted/30">
-              <th className="text-left px-4 py-2 font-medium text-muted-foreground">Campaign</th>
-              <th className="text-right px-3 py-2 font-medium text-muted-foreground">Clicks</th>
-              <th className="text-right px-3 py-2 font-medium text-muted-foreground">CTR</th>
-              <th className="text-right px-3 py-2 font-medium text-muted-foreground">CPC</th>
-              <th className="text-right px-3 py-2 font-medium text-muted-foreground">Conv.</th>
-              <th className="text-right px-3 py-2 font-medium text-muted-foreground">ROAS</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y">
-            {campaigns.map((c, i) => (
-              <tr key={i} className="hover:bg-muted/20">
-                <td className="px-4 py-2.5">
-                  <div className="flex items-center gap-2">
-                    <span className={`w-1.5 h-1.5 rounded-full ${c.status === "active" ? "bg-emerald-500" : "bg-amber-400"}`} />
-                    <span className="font-medium truncate max-w-[180px]">{c.name}</span>
-                  </div>
-                </td>
-                <td className="text-right px-3 py-2.5 font-medium">{c.clicks}</td>
-                <td className="text-right px-3 py-2.5 text-blue-600">{c.ctr}</td>
-                <td className="text-right px-3 py-2.5 text-muted-foreground">{c.cpc}</td>
-                <td className="text-right px-3 py-2.5 text-emerald-600 font-medium">{c.conv}</td>
-                <td className="text-right px-3 py-2.5 font-bold text-amber-600">{c.roas}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {/* Footer bar chart */}
-      <div className="px-4 py-3 border-t bg-muted/20">
-        <p className="text-xs text-muted-foreground mb-2">Daily clicks (last 7 days)</p>
-        <div className="flex items-end gap-1.5 h-10">
-          {[55, 72, 68, 80, 74, 41, 38].map((h, i) => (
-            <div key={i} className="flex-1 rounded-sm bg-amber-400/80" style={{ height: `${h}%` }} />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function MetaAdsResults() {
-  const screenshots = [
-    { src: "/1.webp", alt: "Meta Ads campaign dashboard", label: "Campaign Dashboard", sub: "Reach, clicks, and lead volume" },
-    { src: "/2.webp", alt: "Meta Ads ROAS and conversions", label: "ROAS & Conversions", sub: "Return on ad spend and booking rate" },
-    { src: "/3.webp", alt: "Meta Ads audience and targeting", label: "Audience & Targeting", sub: "Demographic breakdown and ad sets" },
-  ];
-
-  return (
-    <div className="grid md:grid-cols-3 gap-6">
-      {screenshots.map((s) => (
-        <div key={s.src} className="rounded-xl border bg-background shadow-xl overflow-hidden">
-          <img
-            src={s.src}
-            alt={s.alt}
-            loading="lazy"
-            className="w-full object-cover"
-          />
-          <div className="px-4 pb-4 pt-3">
-            <h3 className="font-semibold text-sm">{s.label}</h3>
-            <p className="text-xs text-muted-foreground mt-0.5">{s.sub}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
 
 export default function ServiceDetail() {
   const [, params] = useRoute("/services/:slug");
@@ -551,24 +440,12 @@ export default function ServiceDetail() {
                         ))}
                       </div>
 
-                      <div className="mt-8 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4">
-                        <p className="text-sm text-white/40 font-mono">Avg. time to first qualified lead: <span className="text-secondary font-bold">7 days</span></p>
+                      <div className="mt-8 pt-6 border-t border-white/8 flex justify-center sm:justify-end">
                         <Button size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" onClick={() => openModal(bookingService)}>
                           Start Your Campaign <ArrowRight className="ml-2 h-3.5 w-3.5" />
                         </Button>
                       </div>
                     </div>
-                  </div>
-
-                  {/* Real Campaign Results */}
-                  <div className="mb-16">
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className={`h-10 w-10 rounded-lg bg-gradient-to-br ${iconConfig.gradient} flex items-center justify-center`}>
-                        <BarChart className="h-5 w-5 text-white" />
-                      </div>
-                      <h2 className="text-3xl font-bold">Real Campaign Results</h2>
-                    </div>
-                    {slug === "google-ads" ? <GoogleAdsDashboard /> : <MetaAdsResults />}
                   </div>
                 </>
               )}
@@ -716,7 +593,7 @@ export default function ServiceDetail() {
                             Book Your Free Call
                           </h4>
                           <p className="text-sm text-muted-foreground mb-6">
-                            30-minute strategy session with our experts
+                            30-minute strategy session with our team
                           </p>
                           <Button
                             data-testid="button-book-strategy-section"

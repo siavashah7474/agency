@@ -52,6 +52,21 @@
       "permanent": true
     },
     {
+      "source": "/case-studies/hair-transplant-seo-growth",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/real-estate-lead-automation",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/cosmetic-surgery-meta-ads",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
       "source": "/pricing",
       "destination": "/contact",
       "permanent": true

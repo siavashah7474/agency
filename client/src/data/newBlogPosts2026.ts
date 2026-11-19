@@ -12,11 +12,11 @@ export const newBlogPosts: BlogPost[] = [
     date: "Nov 1, 2026",
     readTime: "10 min read",
     content: `
-An AI receptionist for clinics is software that answers every patient enquiry on WhatsApp, web chat and phone within seconds, in the patient's language, then qualifies the patient, evaluates photos where relevant and books the consultation straight into your calendar. It replaces the gap between "message received" and "human replied" — the gap where most clinics lose patients. In 2026 a managed AI receptionist typically costs less than one part-time front-desk salary and pays for itself with one extra booked patient a month.
+An AI receptionist for clinics is software that answers every patient enquiry on WhatsApp, web chat and phone within seconds, in the patient's language, then qualifies the patient, evaluates photos where relevant and books the consultation straight into your calendar. It replaces the gap between "message received" and "human replied" — the gap where most clinics lose patients. Whether it pays for itself depends on your enquiry volume and treatment value; the worked example below shows how to check.
 
 ## What an AI receptionist for clinics actually does
 
-The short version: it does the first 80% of front-desk conversations so your coordinators only handle the patients who are ready to book or who genuinely need a human.
+The short version: it does the repetitive first part of front-desk conversations so your coordinators only handle the patients who are ready to book or who genuinely need a human.
 
 A modern clinic receptionist AI is not a scripted chatbot with buttons. It is an AI agent connected to your WhatsApp Business number, website chat and (optionally) phone line, with access to your calendar, price list and treatment FAQs. In a typical hair transplant, dental or cosmetic surgery clinic it handles:
 
@@ -68,11 +68,11 @@ The takeaway: the cheapest option per month is rarely the cheapest option per bo
 
 ### 1. Self-serve software (per seat or per minute)
 
-Generic AI receptionist tools are sold as monthly subscriptions, often with per-minute charges for voice calls and tiered limits on conversations. In the audits we run for clinics, self-serve tools at the low end of the market look attractive on paper but typically ship with no clinic-specific knowledge, no photo handling and no multilingual tuning. Someone on your team becomes the part-time administrator, and the first month of mistakes happens in front of real patients.
+Generic AI receptionist tools are sold as monthly subscriptions, often with per-minute charges for voice calls and tiered limits on conversations. Self-serve tools at the low end of the market look attractive on paper but often ship with no clinic-specific knowledge, no photo handling and no multilingual tuning. Someone on your team becomes the part-time administrator, and the first month of mistakes happens in front of real patients.
 
 ### 2. Managed retainer (done for you)
 
-A managed service builds the agent around your procedures, prices, languages and calendar, connects it to your WhatsApp Business number and CRM, monitors conversations and keeps improving it every month. You pay a monthly retainer rather than a licence. This is the model Webimot uses for its [WhatsApp AI](/products/whatsapp-ai) Capture system (product site: [webimot.com](https://webimot.com)): quoted after a free audit, live in 2–4 weeks, managed on an ongoing basis. Retainers for clinics typically land well below the fully-loaded cost of one additional multilingual coordinator.
+A managed service builds the agent around your procedures, prices, languages and calendar, connects it to your WhatsApp Business number and CRM, monitors conversations and keeps improving it every month. You pay a monthly retainer rather than a licence. This is the model Webimot uses for its [WhatsApp AI](/products/whatsapp-ai) Capture system (product site: [webimot.com](https://webimot.com)): quoted after a free audit, typically live in 2–4 weeks, managed on an ongoing basis.
 
 ### 3. Custom build (one-off project)
 
@@ -80,7 +80,7 @@ Some clinics commission a developer to build an agent on top of an AI model and 
 
 ## ROI of an AI receptionist: a worked example
 
-Here is the maths most clinics find convincing, with every assumption labelled so you can replace it with your own numbers.
+Here is the maths, with every assumption labelled so you can replace it with your own numbers.
 
 **Assumptions (illustrative, not a guarantee):**
 
@@ -98,7 +98,7 @@ Here is the maths most clinics find convincing, with every assumption labelled s
 - 22 × €2,500 = **€55,000 per month**
 - Uplift: roughly **€20,000 per month** before costs
 
-Against a managed retainer in the low thousands of euros per month, that is a return in the range of 8–15× — and the system covers its cost with a single additional patient at €2,500. Clients using Webimot's WhatsApp AI report 2–3× more booked consultations within 60 days, which is why we treat an 18% booking rate as a conservative planning figure rather than a ceiling. Your numbers will differ by procedure and market; the point is to run the calculation with your own enquiry volume before you sign anything.
+The 18% booking rate is an assumption for the sake of the example, not a measured result. Your numbers will differ by procedure and market; the point is to run the calculation with your own enquiry volume and the quoted retainer before you sign anything.
 
 ## 7-point checklist for choosing an AI receptionist for your clinic
 
@@ -134,7 +134,7 @@ Yes. Voice AI can answer calls, take details and book, though for international 
 
 ### Is an AI receptionist suitable for a dental clinic or only for hair transplant clinics?
 
-It works for any clinic with repetitive, time-sensitive enquiries: dental, hair transplant, cosmetic surgery, IVF, dermatology and medical tourism agencies. The knowledge base and photo rules change; the system is the same. Our clinic clients span all of these — see [AI systems for clinics](/clinics).
+It works for any clinic with repetitive, time-sensitive enquiries: dental, hair transplant, cosmetic surgery, IVF, dermatology and medical tourism agencies. The knowledge base and photo rules change; the system is the same. See [AI systems for clinics](/clinics).
 
 ### Will patients know they are talking to an AI?
 
@@ -147,9 +147,9 @@ A managed deployment typically takes 2–4 weeks: one week to collect procedures
 ## Key takeaways
 
 - An AI receptionist for clinics answers, qualifies, evaluates photos and books 24/7 in 50+ languages; coordinators keep the consultations and the closing.
-- Speed is the business case: contacting leads within an hour makes qualification nearly seven times more likely, and medical tourism enquiries arrive at night.
+- Speed is the business case: firms that contact leads within an hour are nearly seven times as likely to qualify them ([Harvard Business Review](https://hbr.org/2011/03/the-short-life-of-online-sales-leads)), and medical tourism enquiries arrive at night.
 - Three cost models — self-serve subscription, managed retainer, custom build. Judge them by cost per booked patient, not per month.
-- With 300 enquiries a month and a €2,500 average treatment, a booking-rate improvement from 12% to 18% is worth roughly €20,000 a month; one extra patient covers the retainer.
+- In the illustrative example (300 enquiries a month, €2,500 average treatment), moving the booking rate from 12% to 18% would be worth roughly €20,000 a month. Run it with your own numbers.
 - Demand native WhatsApp, language detection, photo handling, calendar/CRM write-back, hand-off rules, medical guardrails and weekly reporting.
 
 If you want to see what this would look like on your own WhatsApp number, Webimot offers a free AI audit: within 3 days you receive the top five automation opportunities for your clinic with ROI estimates, and a 30-minute demo of the Capture system running on your actual enquiries. [Book your free AI audit](/book-consultation).
@@ -172,7 +172,7 @@ The takeaway: adoption is mainstream, but most small businesses are still using 
 
 Goldman Sachs' 10,000 Small Businesses survey of 1,256 owners found that **76% of small businesses now use AI in some form**, yet only 14% say it is fully embedded in core operations ([Goldman Sachs](https://www.goldmansachs.com/community-impact/10000-small-businesses-voices/insights/ai-presents-a-major-opportunity-for-small-businesses)). In the UK, 47% of small business owners use AI tools, more than double the 22% a year earlier ([Simply Business](https://www.simplybusiness.com/small-businesses-are-using-ai-but-theyre-not-letting-it-run-the-show-2026-outlook/)).
 
-The measured productivity gain is real but modest when AI is only used ad hoc: Federal Reserve Bank of St. Louis researchers found workers who use generative AI save about **5.4% of their work hours**, roughly 2.2 hours in a 40-hour week ([St. Louis Fed](https://www.stlouisfed.org/on-the-economy/2025/feb/impact-generative-ai-work-productivity)). That is the "chat with a bot" level. The businesses getting 10–20 hours a week back are the ones that automated whole workflows end to end. This guide is about that second group. For the step-by-step method, see [how to automate your business in 2026](/blog/how-to-automate-your-business-2026-complete-guide).
+The measured productivity gain is real but modest when AI is only used ad hoc: Federal Reserve Bank of St. Louis researchers found workers who use generative AI save about **5.4% of their work hours**, roughly 2.2 hours in a 40-hour week ([St. Louis Fed](https://www.stlouisfed.org/on-the-economy/2025/feb/impact-generative-ai-work-productivity)). That is the "chat with a bot" level. The larger time savings come from automating whole workflows end to end. This guide is about that second approach. For the step-by-step method, see [how to automate your business in 2026](/blog/how-to-automate-your-business-2026-complete-guide).
 
 ## How to decide what to automate first
 
@@ -186,47 +186,47 @@ Lead replies score top on all three. Reporting scores high on frequency and clar
 
 ## The 10 tasks to automate first (in order)
 
-Time estimates below are typical figures from our audits of small businesses with 2–20 staff; your numbers will vary with volume.
+The order follows the three questions above. How much time each one saves depends on your volume, so measure your own hours before and after.
 
 ### 1. First reply to every new lead
 
-The task: a new enquiry arrives from WhatsApp, your website form, Facebook or Instagram ads, or email, and someone has to answer it. The automation: an AI agent replies within 60 seconds, in the customer's language, asks two or three qualifying questions and books a call or sends the right information. Why first: Harvard Business Review's audit of 2,241 companies found those that contacted leads within an hour were nearly seven times as likely to qualify them ([Harvard Business Review](https://hbr.org/2011/03/the-short-life-of-online-sales-leads)) — and most small businesses are nowhere near an hour on evenings and weekends. Tools: WhatsApp Business API, website chat, Meta lead forms, connected to Google Calendar or Calendly. This is Webimot's [Capture system](/systems) (WhatsApp AI and LeadFire). **Typical time saved: 5–10 hours a week**, plus the revenue from leads that previously went cold.
+The task: a new enquiry arrives from WhatsApp, your website form, Facebook or Instagram ads, or email, and someone has to answer it. The automation: an AI agent replies within 60 seconds, in the customer's language, asks two or three qualifying questions and books a call or sends the right information. Why first: Harvard Business Review's audit of 2,241 companies found those that contacted leads within an hour were nearly seven times as likely to qualify them ([Harvard Business Review](https://hbr.org/2011/03/the-short-life-of-online-sales-leads)) — and most small businesses are nowhere near an hour on evenings and weekends. Tools: WhatsApp Business API, website chat, Meta lead forms, connected to Google Calendar or Calendly. This is Webimot's [Capture system](/systems) (WhatsApp AI and LeadFire). It saves the hours spent on first replies and reaches the leads that previously went cold.
 
 ### 2. Follow-up sequences for leads that went quiet
 
-The task: remembering to chase the person who asked for a quote on Tuesday. The automation: a multi-step sequence across WhatsApp, email and SMS that stops the moment the person replies or books. Tools: your CRM (HubSpot, Pipedrive) plus WhatsApp and email. **Typical time saved: 3–5 hours a week**; typically the single biggest conversion lift after the first reply.
+The task: remembering to chase the person who asked for a quote on Tuesday. The automation: a multi-step sequence across WhatsApp, email and SMS that stops the moment the person replies or books. Tools: your CRM (HubSpot, Pipedrive) plus WhatsApp and email. Every quiet lead gets chased, not just the ones someone remembers.
 
 ### 3. Appointment booking, reminders and rescheduling
 
-The task: the back-and-forth of finding a slot and the no-shows when people forget. The automation: the agent offers live slots, books into Google Calendar or Calendly, sends reminders 24 hours and 2 hours before, and handles reschedules. **Typical time saved: 2–4 hours a week** and fewer empty slots.
+The task: the back-and-forth of finding a slot and the no-shows when people forget. The automation: the agent offers live slots, books into Google Calendar or Calendly, sends reminders 24 hours and 2 hours before, and handles reschedules. The aim is less back-and-forth and fewer empty slots.
 
 ### 4. Invoices, receipts and supplier documents
 
-The task: reading PDFs and photos of invoices and typing the numbers into accounting software or a spreadsheet. The automation: an AI document agent extracts supplier, amount, date and line items, matches them to orders and pushes them to your accounting tool or Google Sheets, flagging anything unusual for a human. This is the Operations system (DocuMind) in our four-system ladder. **Typical time saved: 3–8 hours a week** depending on volume.
+The task: reading PDFs and photos of invoices and typing the numbers into accounting software or a spreadsheet. The automation: an AI document agent extracts supplier, amount, date and line items, matches them to orders and pushes them to your accounting tool or Google Sheets, flagging anything unusual for a human. This is the Operations system (DocuMind) in our four-system ladder. The time saved grows with document volume.
 
 ### 5. Intake forms, contracts and onboarding paperwork
 
-The task: new client forms, signed agreements and KYC documents that need to be checked and entered. The automation: the agent reads the document, validates required fields, creates the record in your CRM and triggers the next step (welcome message, task for a colleague). **Typical time saved: 2–5 hours a week.**
+The task: new client forms, signed agreements and KYC documents that need to be checked and entered. The automation: the agent reads the document, validates required fields, creates the record in your CRM and triggers the next step (welcome message, task for a colleague).
 
 ### 6. Weekly performance reporting
 
-The task: pulling numbers from ads, CRM, WhatsApp, calendar and accounting into a report nobody has time to build. The automation: an AI report every Monday morning in plain English — what changed, what to fix, what to double down on. This is our Reporting system (ClearDesk); see [AI data entry and reporting automation](/blog/ai-data-entry-reporting-automation-business). **Typical time saved: 2–4 hours a week**, and decisions based on numbers rather than memory.
+The task: pulling numbers from ads, CRM, WhatsApp, calendar and accounting into a report nobody has time to build. The automation: an AI report every Monday morning in plain English — what changed, what to fix, what to double down on. This is our Reporting system (ClearDesk); see [AI data entry and reporting automation](/blog/ai-data-entry-reporting-automation-business). The point is decisions based on numbers rather than memory.
 
 ### 7. Review requests and review responses
 
-The task: asking happy customers for a Google review and replying to the ones that arrive. The automation: a message sent at the right moment after a completed job or purchase, and drafted replies for every review that a human approves in one click. **Typical time saved: 1–2 hours a week**, with a steady stream of new reviews.
+The task: asking happy customers for a Google review and replying to the ones that arrive. The automation: a message sent at the right moment after a completed job or purchase, and drafted replies for every review that a human approves in one click. The aim is a steady stream of new reviews without anyone having to remember to ask.
 
 ### 8. Reactivating old leads and past customers
 
-The task: the hundreds of contacts in your CRM or inbox you never got back to. The automation: AI-personalised reactivation messages sent in batches, returning only the people who respond. Tools: CRM export or Google Sheets plus WhatsApp and email. **Typical outcome: 5–15% of a dormant list re-engages**, which for most small businesses is the cheapest pipeline they will ever buy.
+The task: the hundreds of contacts in your CRM or inbox you never got back to. The automation: AI-personalised reactivation messages sent in batches, returning only the people who respond. Tools: CRM export or Google Sheets plus WhatsApp and email. These contacts already know you, so reaching them again costs far less than buying new leads.
 
 ### 9. Order and delivery updates (e-commerce and service businesses)
 
-The task: "Where is my order?" and "When are you coming?" messages. The automation: a Shopify or booking-system connection so the agent answers status questions instantly and escalates problems. **Typical time saved: 3–6 hours a week** in support.
+The task: "Where is my order?" and "When are you coming?" messages. The automation: a Shopify or booking-system connection so the agent answers status questions instantly and escalates problems. It takes repetitive status questions off your support inbox.
 
 ### 10. Internal reminders and routine updates
 
-The task: chasing colleagues for timesheets, reminding the team about renewals, updating a status spreadsheet. The automation: AI agents that watch your tools and send the nudge or make the update. **Typical time saved: 1–3 hours a week** of management attention.
+The task: chasing colleagues for timesheets, reminding the team about renewals, updating a status spreadsheet. The automation: AI agents that watch your tools and send the nudge or make the update. It frees management attention for work that needs it.
 
 ## Tools and integrations that make this work
 
@@ -267,7 +267,7 @@ The rule: anything where the cost of a wrong answer is high and the rule cannot 
 
 ### What is the best first AI automation for a small business?
 
-The first reply to new leads. It is frequent, speed directly changes revenue, and the rules are easy to write. Most businesses see the effect within the first month because leads that used to wait hours now get a qualified reply in under a minute.
+The first reply to new leads. It is frequent, speed directly changes revenue, and the rules are easy to write. The effect is easy to measure in the first month, because leads that used to wait hours now get a qualified reply in under a minute.
 
 ### How much does AI automation cost for a small business?
 
@@ -275,11 +275,11 @@ It depends on how many systems you automate and how many tools they connect to. 
 
 ### Do I need a developer or technical staff?
 
-No. A managed approach builds the automations inside your existing tools in 2–4 weeks and maintains them for you. What you do need is one person on your side who owns the rules and reads the transcripts in the first weeks.
+No. A managed approach builds the automations inside your existing tools, typically in 2–4 weeks, and maintains them for you. What you do need is one person on your side who owns the rules and reads the transcripts in the first weeks.
 
 ### Will AI automation replace my staff?
 
-In small businesses it almost never does. It removes the hours spent on repetitive replies, data entry and reporting so the same team handles more customers and spends its time on the work that needs a human — closing, service and relationships.
+That is not the aim. It removes the hours spent on repetitive replies, data entry and reporting so the same team handles more customers and spends its time on the work that needs a human — closing, service and relationships.
 
 ### How do I measure whether it is working?
 
@@ -287,7 +287,7 @@ Pick two numbers before you start: hours per week on the task and the business o
 
 ## Key takeaways
 
-- 76% of small businesses use AI, but only 14% have embedded it in operations; the hours are in end-to-end automation, not chat.
+- 76% of small businesses use AI, but only 14% have embedded it in operations ([Goldman Sachs](https://www.goldmansachs.com/community-impact/10000-small-businesses-voices/insights/ai-presents-a-major-opportunity-for-small-businesses)); the hours are in end-to-end automation, not chat.
 - Automate in this order: lead reply, follow-up, booking, invoices, intake documents, reporting, reviews, reactivation, order updates, internal reminders.
 - Build inside WhatsApp Business, Google Sheets, your CRM, calendar and Shopify rather than adding a new platform.
 - Go live with one automation in 14 days, measure against a baseline, then add the next.
@@ -305,7 +305,7 @@ If you would like the list above turned into a prioritised plan for your own bus
     date: "Oct 24, 2026",
     readTime: "11 min read",
     content: `
-Patients now ask ChatGPT, Google's AI Mode and Perplexity questions like "best hair transplant clinic in Istanbul for a German patient, with prices" — and the AI answers with three or four named clinics. Generative engine optimization (GEO) for medical tourism clinics is the work of making your clinic one of those names: clear, consistent facts about procedures, prices, surgeons and outcomes, published in a form AI systems can read, cite and trust. It is SEO's successor, and the clinics doing it in 2026 are being recommended while their competitors are invisible.
+Patients now ask ChatGPT, Google's AI Mode and Perplexity questions like "best hair transplant clinic in Istanbul for a German patient, with prices" — and the AI answers with three or four named clinics. Generative engine optimization (GEO) for medical tourism clinics is the work of making your clinic one of those names: clear, consistent facts about procedures, prices, surgeons and outcomes, published in a form AI systems can read, cite and trust. It builds on SEO rather than replacing it.
 
 ## Why AI search matters for medical tourism clinics now
 
@@ -360,7 +360,7 @@ JCI or national accreditation, health ministry licence, ISO certificates, and a 
 
 ### 7. An llms.txt file
 
-A plain-text file at yourdomain.com/llms.txt that summarises who you are, what you offer, where you are, your key facts and links to your most important pages, written for language models. It is an emerging convention rather than a formal standard, and it is cheap to add. Webimot publishes one for its own site and builds them for clinic clients as part of the Capture and SEO work.
+A plain-text file at yourdomain.com/llms.txt that summarises who you are, what you offer, where you are, your key facts and links to your most important pages, written for language models. It is an emerging convention rather than a formal standard, and it is cheap to add. Webimot publishes one for its own site and can build one for your clinic as part of its SEO work.
 
 ## Technical GEO checklist for clinics
 
@@ -386,7 +386,7 @@ The goal is to be cited for your core procedures in your top two source countrie
 3. **Days 46–75: Corroborate.** Launch a systematic review request flow (ideally automated after treatment), claim and complete directory listings, pitch two or three case studies to medical tourism publications.
 4. **Days 76–90: Measure and expand.** Re-run the ten-question test. Add procedure pages for the next three treatments and translate the top pages into German and Arabic. Connect the WhatsApp number named in your pages to an AI agent so the enquiries the AI sends you are answered in under 60 seconds.
 
-That last step matters more than it looks. GEO changes where patients find you, not how fast you reply. A clinic that is recommended by ChatGPT at 23:00 and answers at 09:30 has handed the patient to the next clinic in the list. Webimot's [WhatsApp AI](/products/whatsapp-ai) exists for exactly this moment; see the [clinic results in our case studies](/case-studies).
+That last step matters more than it looks. GEO changes where patients find you, not how fast you reply. A clinic that is recommended by ChatGPT at 23:00 and answers at 09:30 has handed the patient to the next clinic in the list. Webimot's [WhatsApp AI](/products/whatsapp-ai) is built for exactly this moment.
 
 ## Frequently Asked Questions
 
@@ -412,7 +412,7 @@ Technical fixes (crawler access, schema, consistent facts) can change AI answers
 
 ## Key takeaways
 
-- 900 million people use ChatGPT weekly and most Google searches now end without a click; patients get clinic shortlists from AI answers.
+- 900 million people use ChatGPT weekly ([TechCrunch](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users)) and roughly 68% of US Google searches end without a click ([Search Engine Land](https://searchengineland.com/google-zero-click-searches-reach-68-in-early-2026-study-479717)); patients get clinic shortlists from AI answers.
 - AI engines cite clinics that publish direct, specific, consistent facts: procedure pages, price ranges, surgeon credentials, FAQs and case studies.
 - Technical basics: allow AI crawlers, add MedicalClinic, Physician, MedicalProcedure and FAQPage schema, publish llms.txt, server-render content, keep facts identical everywhere.
 - Follow a 90-day plan: audit, publish the foundation, corroborate with reviews and directories, measure and expand.

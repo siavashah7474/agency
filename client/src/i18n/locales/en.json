@@ -37,7 +37,7 @@
     "getFreePlan": "Get Your Free Growth Plan"
   },
   "home": {
-    "trustBadge": "AI automation systems · 50+ businesses in 12+ countries",
+    "trustBadge": "AI automation systems · Amsterdam · Istanbul",
     "heroTitle1": "AI automation systems",
     "heroTitle2": "that run your daily work.",
     "heroSubtitle": "For <strong>clinics</strong> and <strong>small businesses</strong>: every lead answered, every document processed, every follow-up sent — 24/7, without adding staff.",
@@ -69,28 +69,6 @@
       "link": "See this system",
       "allLink": "See all four systems"
     },
-    "testimonialsTitle": "Don't Take Our Word for It",
-    "testimonialsSubtitle": "Real businesses. Real numbers. Here's what happened when they stopped doing it manually.",
-    "testimonials": [
-      {
-        "name": "Dr. Gorkem Atsal",
-        "role": "Owner of the clinic",
-        "company": "Gorkem Atsal clinic",
-        "content": "The WhatsApp AI agent completely transformed our lead handling. We went from missing 40% of inquiries to responding to 100% within seconds. Our conversion rate doubled in just 3 months."
-      },
-      {
-        "name": "Pouyan Azizpour",
-        "role": "CEO",
-        "company": "Wavemed.io",
-        "content": "Webimot's SEO Blog Generator has been a game-changer. We publish 20 optimized posts per month without any manual work. Our organic traffic increased significantly within months of starting."
-      },
-      {
-        "name": "Dr. Hamed Gholami",
-        "role": "Owner of Novin Ariana",
-        "company": "Novin Ariana Health Group",
-        "content": "The AI Operations Autopilot saves us 20+ hours every week. Invoice reminders, HR checklists, planning reports — all handled automatically. Our team finally focuses on real work instead of admin."
-      }
-    ],
     "faqBadge": "FAQ",
     "faqTitle": "Questions We Get Every Day",
     "faqSubtitle": "Straight answers — no jargon, no fluff",
@@ -101,15 +79,15 @@
       },
       {
         "question": "Do I need all four systems?",
-        "answer": "No. Most clients start with the capture system so every WhatsApp and web enquiry is answered within seconds, then add follow-up and reporting once they see the results. The four systems are built to work together, but each one works on its own — you add the next step when you're ready."
+        "answer": "No. A common starting point is the capture system, so every WhatsApp and web enquiry gets a reply within about a minute. Follow-up and reporting can be added afterwards. The four systems are built to work together, but each one works on its own — you add the next step when you're ready."
       },
       {
         "question": "How fast is it live?",
-        "answer": "The free AI audit takes 3 days and gives you the top automation opportunities for your business. After that, the capture system is typically live within 2 weeks, and a full setup with follow-up, operations and reporting takes 2–4 weeks — including connecting your WhatsApp Business number, training the AI on your services and testing with your team."
+        "answer": "The free AI audit takes 3 days and gives you the top automation opportunities for your business. After that, we aim to have the capture system live within 2 weeks, and a full setup with follow-up, operations and reporting within 2–4 weeks — including connecting your WhatsApp Business number, training the AI on your services and testing with your team."
       },
       {
         "question": "Does it work for my clinic or small business?",
-        "answer": "Yes, if your customers reach you on WhatsApp, email or web forms. Our deepest experience is with hair transplant, dental, cosmetic surgery and IVF clinics — including medical tourism providers — and with real estate agencies, e-commerce stores, finance and legal firms and service businesses. The AI replies in 50+ languages, so international customers are covered too."
+        "answer": "Yes, if your customers reach you on WhatsApp, email or web forms. The systems are designed for clinics — hair transplant, dental, cosmetic surgery and IVF, including medical tourism providers — and for small businesses such as real estate agencies, e-commerce stores, finance and legal firms and service businesses. The AI can reply in 50+ languages, so international customers are covered too."
       },
       {
         "question": "What does it cost?",
@@ -125,40 +103,22 @@
     "ctaButton": "Book a demo"
   },
   "about": {
-    "badge": "AI Consultant Agency",
-    "title": "We Transform Businesses with AI",
-    "subtitle": "Webimot is an AI consultancy specialising in digital transformation for medical tourism clinics, real estate agencies, and small businesses — replacing manual work with intelligent systems that scale.",
+    "badge": "AI Automation Agency",
+    "title": "About Webimot",
+    "subtitle": "Webimot is an AI automation and digital marketing agency working from Amsterdam and Istanbul. We design, build and run AI systems for clinics and small businesses.",
     "focusTitle": "Our Focus: Digital Transformation Through AI",
     "focusP1": "We're not a SaaS tool or a generic marketing agency. We're AI consultants who design, build, and manage complete digital transformation systems tailored to your specific industry, workflows, and growth goals.",
-    "focusP2": "Our three core verticals — medical tourism, real estate, and small business — share a common problem: too much manual work, too slow to respond to leads, and no visibility into what's actually working. We solve all three with AI.",
-    "deliverTitle": "What We Deliver",
+    "focusP2": "Clinics, real estate agencies and small businesses often share the same problems: too much manual work, slow replies to leads, and little visibility into what is working. Our systems are designed to address all three.",
+    "deliverTitle": "What Our Systems Do",
     "deliver": [
-      "More qualified leads for your sales team",
-      "Faster response times with AI automation",
-      "Higher conversion rates through nurturing",
-      "Measurable ROI on every campaign"
-    ],
-    "stats": [
-      {
-        "number": "50+",
-        "label": "Clients Served"
-      },
-      {
-        "number": "12+",
-        "label": "Countries Served"
-      },
-      {
-        "number": "24/7",
-        "label": "AI Automation"
-      },
-      {
-        "number": "50+",
-        "label": "Languages Supported"
-      }
+      "Answer every enquiry, day or night",
+      "Follow up leads automatically",
+      "Take repetitive document and admin work off your team",
+      "Report each week on what is working"
     ],
     "medBadge": "Primary Focus",
     "medTitle": "Medical Tourism & Clinics",
-    "medSubtitle": "Medical tourism is a $100+ billion industry with unique challenges that AI automation solves perfectly. This is where we specialize.",
+    "medSubtitle": "Clinics that serve international patients face specific challenges that AI automation is well suited to.",
     "specialties": [
       {
         "title": "Dental Clinics",
@@ -187,11 +147,11 @@
       "Automatic translation in 50+ languages",
       "Vision AI evaluates photos automatically",
       "Automated follow-up sequences",
-      "15+ staff hours saved per week"
+      "Less repetitive admin work for your staff"
     ],
-    "reBadge": "Second Core Specialisation",
+    "reBadge": "Other Industries",
     "reTitle": "Real Estate & Beyond",
-    "reSubtitle": "Real estate is our second proven niche — and we also work with service businesses that need the same high-value lead digitalization",
+    "reSubtitle": "The same systems are designed for real estate agencies and service businesses that handle high-value leads.",
     "realEstate": {
       "title": "Real Estate",
       "subtitle": "Property sales & investment agencies",
@@ -213,14 +173,8 @@
         "Targeted ad campaigns and funnel automation"
       ]
     },
-    "teamTitle": "Our Team",
-    "teamP": "Webimot was founded by digital marketing and AI experts who saw an opportunity to transform how businesses generate leads. With offices in Amsterdam and Istanbul, we serve clients worldwide.",
-    "teamItems": [
-      "Digital marketing and SEO experts",
-      "AI and automation specialists",
-      "Medical tourism & real estate industry veterans",
-      "Lead generation and sales professionals"
-    ],
+    "teamTitle": "Our Work",
+    "teamP": "Webimot works from Amsterdam and Istanbul. For Gorkem Atsal Clinic, an ongoing client, we built the website and the CRM, and we run Google Ads and Meta Ads, social media strategy and search optimisation for Google, Bing and Yandex. For the Clinish clinic we built the website, helped with social media, set up Meta Business Suite and Meta ads, and optimised the site using Google Search Console and Google Analytics.",
     "teamCta": "Let's Discuss Your Goals"
   },
   "contact": {
@@ -263,33 +217,32 @@
   },
   "clients": {
     "title": "Our Clients",
-    "subtitle": "Real results from real businesses across medical tourism, real estate, and service industries",
-    "successTitle": "Success Stories",
-    "testimonialsTitle": "What Our Clients Say",
+    "subtitle": "The client work we can share publicly.",
+    "successTitle": "Client Work",
     "industriesTitle": "Industries We Serve",
-    "ctaTitle": "Join Our Success Stories",
-    "ctaSubtitle": "Ready to see similar results for your business?",
+    "ctaTitle": "Talk to Us About Your Business",
+    "ctaSubtitle": "Book a free call and we'll show you what we would automate first.",
     "ctaButton": "Book Your Free Strategy Call"
   },
   "whyWebimot": {
-    "badge": "Medical Tourism Specialists",
+    "badge": "For Clinics",
     "title": "We Help Clinics Get More Patients",
     "subtitle": "Most agencies bring you clicks. We focus on what actually matters for your clinic — turning inquiries into booked procedures. With AI-powered systems built specifically for hair transplant, dental, cosmetic, and IVF clinics.",
     "coreValues": [
       {
         "title": "Convert Patients to Bookings",
         "description": "We don't just bring you inquiries — we build systems that turn patient questions into confirmed consultations and procedures.",
-        "stats": "+55% inquiry-to-booking conversion"
+        "stats": "Inquiry-to-booking follow-up"
       },
       {
         "title": "Grow International Patients",
         "description": "Attract patients from UK, Germany, USA and beyond with multilingual marketing strategies built for medical tourism clinics.",
-        "stats": "Patients from 12+ countries"
+        "stats": "Multilingual campaigns"
       },
       {
         "title": "24/7 Patient Response",
         "description": "Never miss an inquiry again. Our AI handles patient questions, evaluates photos, and books consultations even while you sleep.",
-        "stats": "Replies in under 60 seconds"
+        "stats": "Designed to reply within a minute"
       },
       {
         "title": "Track Every Patient Journey",
@@ -298,14 +251,14 @@
       }
     ],
     "partnerTitle": "Your Clinic's Growth Partner",
-    "partnerDesc": "We understand medical tourism inside and out. From handling patient inquiries in Arabic, German, and English to evaluating before/after photos — we know what it takes to convert international patients into booked procedures.",
+    "partnerDesc": "Our systems are built around how medical tourism clinics work: handling patient inquiries in Arabic, German and English, evaluating before/after photos, and moving international patients from first message to booked consultation.",
     "partnerItems": [
       "Multilingual patient communication (EN, DE, AR, RU)",
       "AI photo evaluation for hair, dental & cosmetic procedures",
       "Automated consultation booking & calendar sync",
       "Patient journey tracking from inquiry to procedure"
     ],
-    "processTitle": "Our Proven Process",
+    "processTitle": "Our Process",
     "steps": [
       {
         "step": "01",
@@ -330,23 +283,17 @@
     ],
     "cta": "Get Your Free Growth Plan"
   },
-  "clientResults": {
-    "badge": "Proven Results",
-    "title": "Real Results from Real Clinics",
-    "subtitle": "Don't just take our word for it. See the actual before/after metrics from clinics and businesses we've helped grow with AI automation and digital marketing.",
-    "viewAll": "View All Case Studies"
-  },
   "exitPopup": {
     "title": "Wait! Don't Leave Empty-Handed",
     "desc": "Get a <strong>free AI audit</strong> and discover how we can help you generate more leads. No commitment required.",
     "cta": "Get My Free Audit",
     "dismiss": "No thanks, I'll pass on free advice",
-    "trust": "Join 50+ businesses who trust Webimot for their marketing needs"
+    "trust": "No credit card. No long-term contract."
   },
   "caseStudies": {
     "title": "Case Studies",
-    "subtitle": "Real success stories from businesses that transformed their lead generation with our solutions",
-    "ctaTitle": "Ready to Become Our Next Success Story?",
+    "subtitle": "What we built for the Clinish clinic.",
+    "ctaTitle": "Want Something Similar for Your Business?",
     "ctaButton": "Book Your Free Strategy Call"
   },
   "blog": {
@@ -369,7 +316,14 @@
   "services": {
     "title": "Services That Digitalize & Grow Your Business",
     "subtitle": "AI automation, targeted ads, SEO, and digital marketing — built for medical tourism clinics and real estate agencies.",
-    "ctaTitle": "Ready to Dominate Your Market?",
-    "ctaSubtitle": "Join medical tourism clinics and real estate agencies that use Webimot to generate more leads, respond faster, and close more deals."
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Book a free call and we'll map out which services fit your business."
+  },
+  "ourWork": {
+    "badge": "Our work",
+    "title": "Client projects",
+    "subtitle": "What we built and set up for the clinics we work with.",
+    "projectLabel": "Client project",
+    "readMore": "Read the project write-up"
   }
 }

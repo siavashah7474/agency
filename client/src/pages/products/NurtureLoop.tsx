@@ -5,19 +5,19 @@ export default function NurtureLoopPage() {
     <ProductPageLayout
       system="convert"
       seoTitle="NurtureLoop | Never let a lead go cold again — Webimot Agency"
-      seoDescription="80% of sales require 5+ follow-ups. Most businesses give up after 1 or 2. NurtureLoop runs every follow-up automatically — across every channel — so no lead is ever forgotten."
+      seoDescription="Most sales need several follow-ups, and most businesses stop after one or two. NurtureLoop runs every follow-up automatically across email, SMS and WhatsApp."
       emoji="🔁"
       name="NurtureLoop"
       tagline="Never let a lead go cold again."
       heroBrief="Most leads go cold because nobody followed up at the right time. NurtureLoop runs intelligent multi-channel sequences across email, SMS, and WhatsApp — automatically — and stops the moment they respond or book."
       results={[
-        { value: "80%", label: "Sales need 5+ follow-ups", context: "Most businesses give up after 1 or 2" },
-        { value: "23%", label: "Leads re-engaged", context: "Average conversion from cold leads after a full NurtureLoop sequence" },
-        { value: "0h", label: "Manual follow-up time", context: "Every sequence runs automatically without staff involvement" },
+        { value: "3 channels", label: "Email, SMS and WhatsApp", context: "Switches channel when a lead doesn't respond" },
+        { value: "Auto-stop", label: "When a lead replies or books", context: "No follow-up after they have already converted" },
+        { value: "Automatic", label: "Every follow-up", context: "Sequences run on a schedule without staff involvement" },
       ]}
       problemParagraphs={[
-        "80% of sales require 5 or more follow-ups. Most businesses give up after 1 or 2. The leads you worked hard to generate — and paid to acquire — are sitting in your CRM going cold because nobody had time to follow up.",
-        "Manual follow-up is inconsistent, time-consuming, and relies entirely on your team remembering to do it. When things get busy, follow-up is always the first thing to slip. That means 60–80% of your lead database is silently rotting.",
+        "Most sales need several follow-ups. Most businesses give up after one or two. The leads you worked hard to generate — and paid to acquire — are sitting in your CRM going cold because nobody had time to follow up.",
+        "Manual follow-up is inconsistent, time-consuming, and relies entirely on your team remembering to do it. When things get busy, follow-up is always the first thing to slip. That leaves a large part of your lead database going cold.",
         "NurtureLoop removes the human dependency completely. Every lead gets followed up automatically — at the right time, on the right channel — until they respond, book, or opt out. Your team only talks to people who are ready.",
       ]}
       howItWorksSteps={[
@@ -27,7 +27,7 @@ export default function NurtureLoopPage() {
       ]}
       scenario={{
         heading: "See NurtureLoop in action: a cosmetic surgery clinic's rhinoplasty inquiry",
-        description: "Ahmad enquires about a rhinoplasty procedure. Here's the full follow-up sequence that runs automatically — across 9 days — while the clinic team focuses on existing patients.",
+        description: "Ahmad enquires about a rhinoplasty procedure. Here's a follow-up sequence NurtureLoop is designed to run automatically, across 9 days, while the clinic team focuses on existing patients.",
         steps: [
           {
             time: "Day 1 · 2:00 PM",
@@ -43,7 +43,7 @@ export default function NurtureLoopPage() {
           {
             time: "Day 3 · 10:00 AM",
             event: "Follow-up email — social proof",
-            detail: "No reply yet. NurtureLoop sends: 'Hi Ahmad, just following up on your rhinoplasty inquiry. Here are 3 real patient stories from patients who came from Dubai for their procedure — including their results and recovery experience.'",
+            detail: "No reply yet. NurtureLoop sends: 'Hi Ahmad, just following up on your rhinoplasty inquiry. Here are a few stories from patients who travelled for their procedure, including their recovery experience.'",
             highlight: true,
           },
           {
@@ -53,8 +53,8 @@ export default function NurtureLoopPage() {
           },
           {
             time: "Day 7 · 9:00 AM",
-            event: "Urgency email — limited slot",
-            detail: "NurtureLoop sends: 'Hi Ahmad, we have a virtual consultation slot opening this Thursday with Dr. Yilmaz. These fill up quickly — would you like me to hold it for you? No commitment needed.'",
+            event: "Email offering a consultation slot",
+            detail: "NurtureLoop sends: 'Hi Ahmad, we have a virtual consultation slot opening this Thursday with our surgeon. Would you like me to hold it for you? No commitment needed.'",
             highlight: true,
           },
           {

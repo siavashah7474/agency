@@ -6,7 +6,6 @@ export const PROMISE = {
   headline: "AI automation systems that run your daily work.",
   subline:
     "For clinics and small businesses: every lead answered, every document processed, every follow-up sent — 24/7, without adding staff.",
-  proof: "50+ businesses · 12+ countries · 50+ languages",
 };
 
 export type SystemId = "capture" | "convert" | "operate" | "measure";
@@ -38,11 +37,11 @@ export const SYSTEMS: SystemDef[] = [
     name: "Capture system",
     productLabel: "WhatsApp AI · LeadFire",
     emoji: "💬",
-    headline: "Every enquiry answered in seconds, in the customer's language, 24/7.",
+    headline: "Every enquiry answered within about a minute, in the customer's language, 24/7.",
     replaces: "Missed messages and slow replies",
     description:
       "An AI agent on your WhatsApp Business number (and web chat) that answers questions, qualifies the lead, evaluates photos where relevant and books the appointment straight into your calendar — the moment the message arrives.",
-    outcomes: ["Reply in under 60 seconds, day and night", "50+ languages detected automatically", "Qualified leads booked, not just answered"],
+    outcomes: ["Built to reply within about a minute, day and night", "The customer's language detected automatically", "Qualified leads booked, not just answered"],
     products: [
       { name: "WhatsApp AI", href: "/products/whatsapp-ai", emoji: "💬", oneLiner: "24/7 AI agent on WhatsApp that answers, qualifies and books." },
       { name: "LeadFire", href: "/products/leadfire", emoji: "⚡", oneLiner: "Instant first response to every new lead from ads, forms and chat." },
@@ -58,7 +57,7 @@ export const SYSTEMS: SystemDef[] = [
     replaces: "Leads that go cold",
     description:
       "Multi-step follow-up across WhatsApp, email and SMS for new leads, plus reactivation campaigns for old contacts already in your CRM or inbox. Stops the moment someone replies or books.",
-    outcomes: ["No lead forgotten after the first message", "Old contacts turned back into bookings", "Hand-off to your team when a human is needed"],
+    outcomes: ["No lead forgotten after the first message", "Old contacts re-contacted with a personal message", "Hand-off to your team when a human is needed"],
     products: [
       { name: "NurtureLoop", href: "/products/nurtureloop", emoji: "🔁", oneLiner: "Automated follow-up sequences for every new lead." },
       { name: "ReviveIQ", href: "/products/reviveiq", emoji: "💎", oneLiner: "Reactivates old leads and past customers in your database." },
@@ -74,7 +73,7 @@ export const SYSTEMS: SystemDef[] = [
     replaces: "Manual paperwork and data entry",
     description:
       "AI agents that read incoming documents, extract the data, update your systems and send the reminders and internal follow-ups your team does by hand today — invoices, intake forms, contracts, HR requests.",
-    outcomes: ["Documents processed the day they arrive", "Human-verified accuracy on what matters", "Hours per week back to your team"],
+    outcomes: ["Documents processed the day they arrive", "Human-verified accuracy on what matters", "Less manual data entry for your team"],
     products: [
       { name: "DocuMind", href: "/products/documind", emoji: "📄", oneLiner: "Reads documents and enters the data where it belongs." },
       { name: "AI agents for daily tasks", href: "/services/ai-ops-autopilot", emoji: "🤖", oneLiner: "Reminders, internal follow-ups and routine updates, done automatically." },

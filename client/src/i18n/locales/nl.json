@@ -37,7 +37,7 @@
     "getFreePlan": "Ontvang uw gratis groeiplan"
   },
   "home": {
-    "trustBadge": "AI-automatiseringssystemen · 50+ bedrijven in 12+ landen",
+    "trustBadge": "AI-automatiseringssystemen · Amsterdam · Istanbul",
     "heroTitle1": "AI-automatiseringssystemen",
     "heroTitle2": "die uw dagelijkse werk draaiend houden.",
     "heroSubtitle": "Voor <strong>klinieken</strong> en <strong>kleine bedrijven</strong>: elke lead beantwoord, elk document verwerkt, elke follow-up verstuurd — 24/7, zonder extra personeel.",
@@ -69,28 +69,6 @@
       "link": "Bekijk dit systeem",
       "allLink": "Alle vier de systemen bekijken"
     },
-    "testimonialsTitle": "Geloof ons niet zomaar op ons woord",
-    "testimonialsSubtitle": "Echte bedrijven. Echte cijfers. Dit is wat er gebeurde toen ze stopten met handmatig werken.",
-    "testimonials": [
-      {
-        "name": "Dr. Gorkem Atsal",
-        "role": "Eigenaar van de kliniek",
-        "company": "Gorkem Atsal kliniek",
-        "content": "De WhatsApp AI-agent heeft onze leadafhandeling volledig getransformeerd. We zijn gegaan van het missen van 40% van de aanvragen naar het beantwoorden van 100% binnen seconden. Ons conversiepercentage verdubbelde in slechts 3 maanden."
-      },
-      {
-        "name": "Pouyan Azizpour",
-        "role": "CEO",
-        "company": "Wavemed.io",
-        "content": "Webimot's SEO Blog Generator is een gamechanger geweest. We publiceren 20 geoptimaliseerde berichten per maand zonder enig handmatig werk. Ons organisch verkeer steeg aanzienlijk binnen enkele maanden na de start."
-      },
-      {
-        "name": "Dr. Hamed Gholami",
-        "role": "Eigenaar van Novin Ariana",
-        "company": "Novin Ariana Health Group",
-        "content": "De AI Operations Autopilot bespaart ons elke week 20+ uur. Factuurherinneringen, HR-checklists, planningsrapporten — allemaal automatisch afgehandeld. Ons team richt zich eindelijk op echt werk in plaats van administratie."
-      }
-    ],
     "faqBadge": "FAQ",
     "faqTitle": "Vragen die we elke dag krijgen",
     "faqSubtitle": "Directe antwoorden — geen jargon, geen overbodige tekst",
@@ -101,15 +79,15 @@
       },
       {
         "question": "Heb ik alle vier de systemen nodig?",
-        "answer": "Nee. De meeste klanten beginnen met het capture-systeem, zodat elke WhatsApp- en webaanvraag binnen seconden wordt beantwoord, en voegen daarna follow-up en rapportage toe zodra ze de resultaten zien. De vier systemen zijn gebouwd om samen te werken, maar elk systeem werkt ook op zichzelf — u voegt de volgende stap toe wanneer u er klaar voor bent."
+        "answer": "Nee. Een gebruikelijk startpunt is het capture-systeem, zodat elke WhatsApp- en webaanvraag binnen ongeveer een minuut een antwoord krijgt. Follow-up en rapportage kunnen daarna worden toegevoegd. De vier systemen zijn gebouwd om samen te werken, maar elk systeem werkt ook op zichzelf — u voegt de volgende stap toe wanneer u er klaar voor bent."
       },
       {
         "question": "Hoe snel is het live?",
-        "answer": "De gratis AI-audit duurt 3 dagen en laat de belangrijkste automatiseringskansen voor uw bedrijf zien. Daarna is het capture-systeem meestal binnen 2 weken live; een volledige inrichting met follow-up, operations en rapportage duurt 2–4 weken — inclusief het koppelen van uw WhatsApp Business-nummer, het trainen van de AI op uw diensten en het testen met uw team."
+        "answer": "De gratis AI-audit duurt 3 dagen en laat de belangrijkste automatiseringskansen voor uw bedrijf zien. Daarna streven we ernaar het capture-systeem binnen 2 weken live te hebben, en een volledige inrichting met follow-up, operations en rapportage binnen 2–4 weken — inclusief het koppelen van uw WhatsApp Business-nummer, het trainen van de AI op uw diensten en het testen met uw team."
       },
       {
         "question": "Werkt het voor mijn kliniek of klein bedrijf?",
-        "answer": "Ja, als uw klanten u bereiken via WhatsApp, e-mail of webformulieren. Onze diepste ervaring ligt bij haartransplantatie-, tandheelkundige, cosmetische en IVF-klinieken — inclusief aanbieders van medisch toerisme — en bij makelaars, webshops, financiële en juridische kantoren en dienstverleners. De AI antwoordt in 50+ talen, dus ook internationale klanten worden geholpen."
+        "answer": "Ja, als uw klanten u bereiken via WhatsApp, e-mail of webformulieren. De systemen zijn ontworpen voor klinieken — haartransplantatie, tandheelkunde, cosmetische chirurgie en IVF, inclusief aanbieders van medisch toerisme — en voor kleine bedrijven zoals makelaars, webshops, financiële en juridische kantoren en dienstverleners. De AI kan in 50+ talen antwoorden, dus ook internationale klanten worden geholpen."
       },
       {
         "question": "Wat kost het?",
@@ -125,40 +103,22 @@
     "ctaButton": "Boek een demo"
   },
   "about": {
-    "badge": "Lead & Verkoop Generatie Experts",
+    "badge": "AI-automatiseringsbureau",
     "title": "Over Webimot",
-    "subtitle": "We combineren AI-automatisering met bewezen digitale marketingstrategieën om leads te genereren en de verkoop voor uw bedrijf te stimuleren",
+    "subtitle": "Webimot is een bureau voor AI-automatisering en digitale marketing dat werkt vanuit Amsterdam en Istanbul. Wij ontwerpen, bouwen en beheren AI-systemen voor klinieken en kleine bedrijven.",
     "focusTitle": "Onze focus: Leads & Verkoop",
     "focusP1": "We zijn niet zomaar een marketingbureau. We zijn een leadgeneratie- en verkoopversnellingspartner. Elke strategie, elke automatisering, elke campagne is ontworpen met één doel: gekwalificeerde leads genereren en deze omzetten in klanten.",
-    "focusP2": "Onze AI-systemen werken 24/7 om leads te vangen, te kwalificeren en te koesteren, zodat uw verkoopteam zich kan richten op het sluiten van deals.",
-    "deliverTitle": "Wat wij leveren",
+    "focusP2": "Klinieken, makelaars en kleine bedrijven hebben vaak dezelfde problemen: te veel handmatig werk, trage reacties op leads en weinig zicht op wat werkt. Onze systemen zijn ontworpen om alle drie aan te pakken.",
+    "deliverTitle": "Wat onze systemen doen",
     "deliver": [
-      "Meer gekwalificeerde leads voor uw verkoopteam",
-      "Snellere responstijden met AI-automatisering",
-      "Hogere conversiepercentages door nurturing",
-      "Meetbare ROI op elke campagne"
-    ],
-    "stats": [
-      {
-        "number": "50+",
-        "label": "Bediende klanten"
-      },
-      {
-        "number": "12+",
-        "label": "Landen bediend"
-      },
-      {
-        "number": "24/7",
-        "label": "AI-automatisering"
-      },
-      {
-        "number": "50+",
-        "label": "Ondersteunde talen"
-      }
+      "Elke aanvraag beantwoorden, dag en nacht",
+      "Leads automatisch opvolgen",
+      "Repetitief document- en administratiewerk bij uw team weghalen",
+      "Wekelijks rapporteren wat werkt"
     ],
     "medBadge": "Primaire focus",
     "medTitle": "Medisch toerisme & klinieken",
-    "medSubtitle": "Medisch toerisme is een industrie van meer dan $100 miljard met unieke uitdagingen die AI-automatisering perfect oplost. Dit is waar wij ons in specialiseren.",
+    "medSubtitle": "Klinieken die internationale patiënten behandelen, hebben specifieke uitdagingen waarvoor AI-automatisering goed geschikt is.",
     "specialties": [
       {
         "title": "Tandheelkundige klinieken",
@@ -187,11 +147,11 @@
       "Automatische vertaling in 50+ talen",
       "Vision AI evalueert foto's automatisch",
       "Geautomatiseerde follow-up sequences",
-      "15+ personeelsuren per week bespaard"
+      "Minder repetitief administratief werk voor uw personeel"
     ],
-    "reBadge": "Tweede kernspecialisatie",
+    "reBadge": "Andere sectoren",
     "reTitle": "Vastgoed & meer",
-    "reSubtitle": "Vastgoed is onze tweede bewezen niche — en we werken ook met servicebedrijven die dezelfde hoogwaardige leaddigitalisering nodig hebben",
+    "reSubtitle": "Dezelfde systemen zijn ontworpen voor makelaars en dienstverleners die met waardevolle leads werken.",
     "realEstate": {
       "title": "Vastgoed",
       "subtitle": "Vastgoed verkoop & investeringsbureaus",
@@ -213,14 +173,8 @@
         "Gerichte advertentiecampagnes en funnelautomatisering"
       ]
     },
-    "teamTitle": "Ons team",
-    "teamP": "Webimot werd opgericht door digitale marketing- en AI-experts die een kans zagen om de manier waarop bedrijven leads genereren te transformeren. Met kantoren in Amsterdam en Istanbul bedienen we klanten wereldwijd.",
-    "teamItems": [
-      "Digitale marketing- en SEO-experts",
-      "AI- en automatiseringsspecialisten",
-      "Veteranen in de medisch toerisme- en vastgoedsector",
-      "Leadgeneratie- en verkoopprofessionals"
-    ],
+    "teamTitle": "Ons werk",
+    "teamP": "Webimot werkt vanuit Amsterdam en Istanbul. Voor Gorkem Atsal Clinic, een lopende klant, bouwden we de website en het CRM, en verzorgen we Google Ads en Meta Ads, de socialemediastrategie en de zoekoptimalisatie voor Google, Bing en Yandex. Voor de kliniek Clinish bouwden we de website, hielpen we met sociale media, richtten we Meta Business Suite en Meta-advertenties in en optimaliseerden we de site met Google Search Console en Google Analytics.",
     "teamCta": "Laten we uw doelen bespreken"
   },
   "contact": {
@@ -263,33 +217,32 @@
   },
   "clients": {
     "title": "Onze klanten",
-    "subtitle": "Echte resultaten van echte bedrijven in medisch toerisme, vastgoed en servicebranches",
-    "successTitle": "Succesverhalen",
-    "testimonialsTitle": "Wat onze klanten zeggen",
+    "subtitle": "Het klantwerk dat we openbaar kunnen delen.",
+    "successTitle": "Klantwerk",
     "industriesTitle": "Sectoren die wij bedienen",
-    "ctaTitle": "Word onderdeel van onze succesverhalen",
-    "ctaSubtitle": "Klaar om vergelijkbare resultaten voor uw bedrijf te zien?",
+    "ctaTitle": "Vertel ons over uw bedrijf",
+    "ctaSubtitle": "Boek een gratis gesprek en we laten zien wat we als eerste zouden automatiseren.",
     "ctaButton": "Boek uw gratis strategiegesprek"
   },
   "whyWebimot": {
-    "badge": "Specialisten in medisch toerisme",
+    "badge": "Voor klinieken",
     "title": "Wij helpen klinieken meer patiënten te krijgen",
     "subtitle": "De meeste bureaus brengen u klikken. Wij focussen op wat echt belangrijk is voor uw kliniek — aanvragen omzetten in geboekte procedures. Met AI-systemen speciaal gebouwd voor haartransplantatie-, tand-, cosmetische en IVF-klinieken.",
     "coreValues": [
       {
         "title": "Patiënten omzetten in boekingen",
         "description": "Wij brengen u niet alleen aanvragen — wij bouwen systemen die patiëntenvragen omzetten in bevestigde consultaties en procedures.",
-        "stats": "+55% conversie van aanvraag naar boeking"
+        "stats": "Opvolging van aanvraag tot boeking"
       },
       {
         "title": "Internationale patiënten laten groeien",
         "description": "Trek patiënten aan uit het VK, Duitsland, VS en verder met meertalige marketingstrategieën gebouwd voor klinieken voor medisch toerisme.",
-        "stats": "Patiënten uit 12+ landen"
+        "stats": "Meertalige campagnes"
       },
       {
         "title": "24/7 patiëntrespons",
         "description": "Mis nooit meer een aanvraag. Onze AI behandelt patiëntenvragen, evalueert foto's en boekt consultaties zelfs terwijl u slaapt.",
-        "stats": "Antwoord binnen 60 seconden"
+        "stats": "Ontworpen om binnen een minuut te antwoorden"
       },
       {
         "title": "Volg elke patiëntreis",
@@ -298,14 +251,14 @@
       }
     ],
     "partnerTitle": "De groeiparter van uw kliniek",
-    "partnerDesc": "We begrijpen medisch toerisme van binnen en van buiten. Van het afhandelen van patiëntenvragen in het Arabisch, Duits en Engels tot het evalueren van voor/na-foto's — we weten wat er nodig is om internationale patiënten te converteren naar geboekte procedures.",
+    "partnerDesc": "Onze systemen zijn gebouwd rond de manier waarop klinieken voor medisch toerisme werken: patiëntenvragen afhandelen in het Arabisch, Duits en Engels, voor/na-foto's beoordelen en internationale patiënten begeleiden van het eerste bericht tot een geboekt consult.",
     "partnerItems": [
       "Meertalige patiëntcommunicatie (EN, DE, AR, RU)",
       "AI-fotoevaluatie voor haar-, tand- & cosmetische procedures",
       "Geautomatiseerde consultatieboeking & agendaSync",
       "Patiëntreistracking van aanvraag tot procedure"
     ],
-    "processTitle": "Ons bewezen proces",
+    "processTitle": "Ons proces",
     "steps": [
       {
         "step": "01",
@@ -330,23 +283,17 @@
     ],
     "cta": "Ontvang uw gratis groeiplan"
   },
-  "clientResults": {
-    "badge": "Bewezen resultaten",
-    "title": "Echte resultaten van echte klinieken",
-    "subtitle": "Geloof ons niet zomaar op ons woord. Bekijk de werkelijke voor/na-statistieken van klinieken en bedrijven die we hebben geholpen te groeien met AI-automatisering en digitale marketing.",
-    "viewAll": "Alle casestudies bekijken"
-  },
   "exitPopup": {
     "title": "Wacht! Ga niet met lege handen weg",
     "desc": "Ontvang een <strong>gratis AI-audit</strong> en ontdek hoe wij u kunnen helpen meer leads te genereren. Geen verplichting.",
     "cta": "Mijn gratis audit ontvangen",
     "dismiss": "Nee bedankt, ik sla het gratis advies over",
-    "trust": "Sluit u aan bij 50+ bedrijven die Webimot vertrouwen voor hun marketingbehoeften"
+    "trust": "Geen creditcard. Geen langlopend contract."
   },
   "caseStudies": {
     "title": "Casestudies",
-    "subtitle": "Echte succesverhalen van bedrijven die hun leadgeneratie transformeerden met onze oplossingen",
-    "ctaTitle": "Klaar om ons volgende succesverhaal te worden?",
+    "subtitle": "Wat we voor de kliniek Clinish hebben gebouwd.",
+    "ctaTitle": "Wilt u iets vergelijkbaars voor uw bedrijf?",
     "ctaButton": "Boek uw gratis strategiegesprek"
   },
   "blog": {
@@ -369,7 +316,14 @@
   "services": {
     "title": "Diensten die uw bedrijf digitaliseren en laten groeien",
     "subtitle": "AI-automatisering, gerichte advertenties, SEO en digitale marketing — gebouwd voor klinieken voor medisch toerisme en vastgoedbureaus.",
-    "ctaTitle": "Klaar om uw markt te domineren?",
-    "ctaSubtitle": "Sluit u aan bij klinieken voor medisch toerisme en vastgoedbureaus die Webimot gebruiken om meer leads te genereren, sneller te reageren en meer deals te sluiten."
+    "ctaTitle": "Klaar om te beginnen?",
+    "ctaSubtitle": "Boek een gratis gesprek en we brengen in kaart welke diensten bij uw bedrijf passen."
+  },
+  "ourWork": {
+    "badge": "Ons werk",
+    "title": "Klantprojecten",
+    "subtitle": "Wat we hebben gebouwd en ingericht voor de klinieken waarmee we werken.",
+    "projectLabel": "Klantproject",
+    "readMore": "Lees de projectbeschrijving"
   }
 }

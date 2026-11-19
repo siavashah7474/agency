@@ -37,7 +37,7 @@
     "getFreePlan": "Obtén Tu Plan de Crecimiento Gratis"
   },
   "home": {
-    "trustBadge": "Sistemas de automatización con IA · 50+ empresas en 12+ países",
+    "trustBadge": "Sistemas de automatización con IA · Ámsterdam · Estambul",
     "heroTitle1": "Sistemas de automatización con IA",
     "heroTitle2": "que hacen funcionar tu trabajo diario.",
     "heroSubtitle": "Para <strong>clínicas</strong> y <strong>pequeñas empresas</strong>: cada lead respondido, cada documento procesado, cada seguimiento enviado — 24/7, sin contratar más personal.",
@@ -69,28 +69,6 @@
       "link": "Ver este sistema",
       "allLink": "Ver los cuatro sistemas"
     },
-    "testimonialsTitle": "No Tomes Nuestra Palabra",
-    "testimonialsSubtitle": "Negocios reales. Números reales. Esto es lo que pasó cuando dejaron de hacerlo manualmente.",
-    "testimonials": [
-      {
-        "name": "Dr. Gorkem Atsal",
-        "role": "Propietario de la clínica",
-        "company": "Clínica Gorkem Atsal",
-        "content": "El agente IA de WhatsApp transformó completamente nuestra gestión de leads. Pasamos de perder el 40% de las consultas a responder al 100% en segundos. Nuestra tasa de conversión se duplicó en solo 3 meses."
-      },
-      {
-        "name": "Pouyan Azizpour",
-        "role": "CEO",
-        "company": "Wavemed.io",
-        "content": "El Generador de Blog SEO de Webimot ha sido un cambio de juego. Publicamos 20 posts optimizados al mes sin ningún trabajo manual. Nuestro tráfico orgánico aumentó significativamente a los pocos meses de empezar."
-      },
-      {
-        "name": "Dr. Hamed Gholami",
-        "role": "Propietario de Novin Ariana",
-        "company": "Grupo de Salud Novin Ariana",
-        "content": "El Piloto Automático de Operaciones IA nos ahorra 20+ horas cada semana. Recordatorios de facturas, checklists de RRHH, informes de planificación — todo gestionado automáticamente. Nuestro equipo finalmente se centra en trabajo real en vez de administración."
-      }
-    ],
     "faqBadge": "FAQ",
     "faqTitle": "Preguntas Que Recibimos Cada Día",
     "faqSubtitle": "Respuestas directas — sin tecnicismos, sin relleno",
@@ -101,15 +79,15 @@
       },
       {
         "question": "¿Necesito los cuatro sistemas?",
-        "answer": "No. La mayoría de los clientes empieza con el sistema de captación para que cada consulta por WhatsApp o web se responda en segundos, y después añade el seguimiento y los informes cuando ve los resultados. Los cuatro sistemas están diseñados para trabajar juntos, pero cada uno funciona por sí solo: añades el siguiente paso cuando estés listo."
+        "answer": "No. Un punto de partida habitual es el sistema de captación, para que cada consulta por WhatsApp o web reciba respuesta en aproximadamente un minuto. El seguimiento y los informes se pueden añadir después. Los cuatro sistemas están diseñados para trabajar juntos, pero cada uno funciona por sí solo: añades el siguiente paso cuando estés listo."
       },
       {
         "question": "¿Cuánto tarda en estar en marcha?",
-        "answer": "La auditoría de IA gratuita dura 3 días y te muestra las principales oportunidades de automatización para tu negocio. Después, el sistema de captación suele estar en marcha en 2 semanas, y una implantación completa con seguimiento, operaciones e informes tarda 2–4 semanas, incluyendo la conexión de tu número de WhatsApp Business, el entrenamiento de la IA con tus servicios y las pruebas con tu equipo."
+        "answer": "La auditoría de IA gratuita dura 3 días y te muestra las principales oportunidades de automatización para tu negocio. Después, nuestro objetivo es tener el sistema de captación en marcha en 2 semanas, y una implantación completa con seguimiento, operaciones e informes en 2–4 semanas, incluyendo la conexión de tu número de WhatsApp Business, el entrenamiento de la IA con tus servicios y las pruebas con tu equipo."
       },
       {
         "question": "¿Funciona para mi clínica o pequeña empresa?",
-        "answer": "Sí, siempre que tus clientes te contacten por WhatsApp, email o formularios web. Nuestra mayor experiencia es con clínicas de trasplante capilar, dentales, de cirugía estética y de fertilidad —incluidos proveedores de turismo médico— y con agencias inmobiliarias, tiendas online, despachos financieros y legales y empresas de servicios. La IA responde en más de 50 idiomas, así que los clientes internacionales también quedan cubiertos."
+        "answer": "Sí, siempre que tus clientes te contacten por WhatsApp, email o formularios web. Los sistemas están diseñados para clínicas —de trasplante capilar, dentales, de cirugía estética y de fertilidad, incluidos proveedores de turismo médico— y para pequeñas empresas como agencias inmobiliarias, tiendas online, despachos financieros y legales y empresas de servicios. La IA puede responder en más de 50 idiomas, así que los clientes internacionales también quedan cubiertos."
       },
       {
         "question": "¿Cuánto cuesta?",
@@ -125,40 +103,22 @@
     "ctaButton": "Reserva una demo"
   },
   "about": {
-    "badge": "Expertos en Generación de Leads y Ventas",
+    "badge": "Agencia de automatización con IA",
     "title": "Sobre Webimot",
-    "subtitle": "Combinamos automatización IA con estrategias de marketing digital probadas para generar leads e impulsar ventas para tu negocio",
+    "subtitle": "Webimot es una agencia de automatización con IA y marketing digital que trabaja desde Ámsterdam y Estambul. Diseñamos, construimos y gestionamos sistemas de IA para clínicas y pequeñas empresas.",
     "focusTitle": "Nuestro Enfoque: Leads y Ventas",
     "focusP1": "No somos solo una agencia de marketing. Somos un socio de generación de leads y aceleración de ventas. Cada estrategia, cada automatización, cada campaña está diseñada con un objetivo: generar leads cualificados y convertirlos en clientes.",
-    "focusP2": "Nuestros sistemas impulsados por IA trabajan 24/7 para capturar, calificar y nutrir leads para que tu equipo de ventas pueda centrarse en cerrar negocios.",
-    "deliverTitle": "Lo Que Entregamos",
+    "focusP2": "Las clínicas, las agencias inmobiliarias y las pequeñas empresas suelen compartir los mismos problemas: demasiado trabajo manual, respuestas lentas a los leads y poca visibilidad sobre lo que funciona. Nuestros sistemas están diseñados para abordar los tres.",
+    "deliverTitle": "Qué hacen nuestros sistemas",
     "deliver": [
-      "Más leads cualificados para tu equipo de ventas",
-      "Tiempos de respuesta más rápidos con automatización IA",
-      "Mayores tasas de conversión mediante nurturing",
-      "ROI medible en cada campaña"
-    ],
-    "stats": [
-      {
-        "number": "50+",
-        "label": "Clientes Atendidos"
-      },
-      {
-        "number": "12+",
-        "label": "Países Atendidos"
-      },
-      {
-        "number": "24/7",
-        "label": "Automatización IA"
-      },
-      {
-        "number": "50+",
-        "label": "Idiomas Soportados"
-      }
+      "Responder cada consulta, de día o de noche",
+      "Hacer seguimiento automático de los leads",
+      "Quitarle a tu equipo el trabajo repetitivo de documentos y administración",
+      "Informar cada semana de lo que funciona"
     ],
     "medBadge": "Enfoque Principal",
     "medTitle": "Turismo Médico y Clínicas",
-    "medSubtitle": "El turismo médico es una industria de más de $100 mil millones con desafíos únicos que la automatización IA resuelve perfectamente. Aquí es donde nos especializamos.",
+    "medSubtitle": "Las clínicas que atienden a pacientes internacionales afrontan desafíos específicos para los que la automatización con IA encaja bien.",
     "specialties": [
       {
         "title": "Clínicas Dentales",
@@ -187,11 +147,11 @@
       "Traducción automática en 50+ idiomas",
       "Vision IA evalúa fotos automáticamente",
       "Secuencias de seguimiento automatizadas",
-      "15+ horas de personal ahorradas por semana"
+      "Menos trabajo administrativo repetitivo para tu personal"
     ],
-    "reBadge": "Segunda Especialización Principal",
+    "reBadge": "Otros sectores",
     "reTitle": "Inmobiliaria y Más",
-    "reSubtitle": "La inmobiliaria es nuestro segundo nicho probado — y también trabajamos con empresas de servicios que necesitan la misma digitalización de leads de alto valor",
+    "reSubtitle": "Los mismos sistemas están diseñados para agencias inmobiliarias y empresas de servicios que gestionan leads de alto valor.",
     "realEstate": {
       "title": "Inmobiliaria",
       "subtitle": "Agencias de venta e inversión inmobiliaria",
@@ -213,14 +173,8 @@
         "Campañas publicitarias dirigidas y automatización de funnels"
       ]
     },
-    "teamTitle": "Nuestro Equipo",
-    "teamP": "Webimot fue fundado por expertos en marketing digital e IA que vieron una oportunidad de transformar cómo las empresas generan leads. Con oficinas en Ámsterdam y Estambul, servimos a clientes en todo el mundo.",
-    "teamItems": [
-      "Expertos en marketing digital y SEO",
-      "Especialistas en IA y automatización",
-      "Veteranos del sector de turismo médico e inmobiliaria",
-      "Profesionales de generación de leads y ventas"
-    ],
+    "teamTitle": "Nuestro trabajo",
+    "teamP": "Webimot trabaja desde Ámsterdam y Estambul. Para Gorkem Atsal Clinic, un cliente actual, creamos el sitio web y el CRM, y gestionamos Google Ads y Meta Ads, la estrategia de redes sociales y la optimización para Google, Bing y Yandex. Para la clínica Clinish creamos el sitio web, ayudamos con las redes sociales, configuramos Meta Business Suite y los anuncios de Meta, y optimizamos el sitio con Google Search Console y Google Analytics.",
     "teamCta": "Hablemos de Tus Objetivos"
   },
   "contact": {
@@ -263,33 +217,32 @@
   },
   "clients": {
     "title": "Nuestros Clientes",
-    "subtitle": "Resultados reales de negocios reales en turismo médico, inmobiliaria e industrias de servicios",
-    "successTitle": "Historias de Éxito",
-    "testimonialsTitle": "Lo Que Dicen Nuestros Clientes",
+    "subtitle": "El trabajo con clientes que podemos compartir públicamente.",
+    "successTitle": "Trabajo con clientes",
     "industriesTitle": "Industrias que Atendemos",
-    "ctaTitle": "Únete a Nuestras Historias de Éxito",
-    "ctaSubtitle": "¿Listo para ver resultados similares para tu negocio?",
+    "ctaTitle": "Háblanos de tu negocio",
+    "ctaSubtitle": "Reserva una llamada gratuita y te mostraremos qué automatizaríamos primero.",
     "ctaButton": "Reserva Tu Llamada Estratégica Gratis"
   },
   "whyWebimot": {
-    "badge": "Especialistas en Turismo Médico",
+    "badge": "Para clínicas",
     "title": "Ayudamos a Clínicas a Conseguir Más Pacientes",
     "subtitle": "La mayoría de agencias te traen clics. Nosotros nos centramos en lo que realmente importa para tu clínica — convertir consultas en procedimientos reservados. Con sistemas impulsados por IA construidos específicamente para clínicas de trasplante capilar, dental, estética y FIV.",
     "coreValues": [
       {
         "title": "Convertir Pacientes en Reservas",
         "description": "No solo te traemos consultas — construimos sistemas que convierten preguntas de pacientes en consultas y procedimientos confirmados.",
-        "stats": "+55% conversión de consulta a reserva"
+        "stats": "Seguimiento de consulta a reserva"
       },
       {
         "title": "Aumentar Pacientes Internacionales",
         "description": "Atrae pacientes del Reino Unido, Alemania, EE.UU. y más allá con estrategias de marketing multilingüe construidas para clínicas de turismo médico.",
-        "stats": "Pacientes de 12+ países"
+        "stats": "Campañas multilingües"
       },
       {
         "title": "Respuesta a Pacientes 24/7",
         "description": "Nunca pierdas una consulta. Nuestra IA gestiona preguntas de pacientes, evalúa fotos y reserva consultas incluso mientras duermes.",
-        "stats": "Respuesta en menos de 60 segundos"
+        "stats": "Diseñado para responder en un minuto"
       },
       {
         "title": "Seguir Cada Recorrido del Paciente",
@@ -298,14 +251,14 @@
       }
     ],
     "partnerTitle": "El Socio de Crecimiento de Tu Clínica",
-    "partnerDesc": "Entendemos el turismo médico de cabo a rabo. Desde gestionar consultas de pacientes en árabe, alemán e inglés hasta evaluar fotos de antes/después — sabemos lo que se necesita para convertir pacientes internacionales en procedimientos reservados.",
+    "partnerDesc": "Nuestros sistemas están pensados para la forma de trabajar de las clínicas de turismo médico: gestionar consultas de pacientes en árabe, alemán e inglés, evaluar fotos de antes/después y acompañar a los pacientes internacionales desde el primer mensaje hasta la consulta reservada.",
     "partnerItems": [
       "Comunicación multilingüe con pacientes (EN, DE, AR, RU)",
       "Evaluación IA de fotos para procedimientos capilares, dentales y estéticos",
       "Reserva de consultas automatizada y sincronización de calendario",
       "Seguimiento del recorrido del paciente desde la consulta hasta el procedimiento"
     ],
-    "processTitle": "Nuestro Proceso Probado",
+    "processTitle": "Nuestro proceso",
     "steps": [
       {
         "step": "01",
@@ -330,23 +283,17 @@
     ],
     "cta": "Obtén Tu Plan de Crecimiento Gratis"
   },
-  "clientResults": {
-    "badge": "Resultados Probados",
-    "title": "Resultados Reales de Clínicas Reales",
-    "subtitle": "No tomes solo nuestra palabra. Mira las métricas reales de antes/después de clínicas y negocios que hemos ayudado a crecer con automatización IA y marketing digital.",
-    "viewAll": "Ver Todos los Casos de Éxito"
-  },
   "exitPopup": {
     "title": "¡Espera! No Te Vayas con las Manos Vacías",
     "desc": "Obtén una <strong>auditoría de IA gratuita</strong> y descubre cómo podemos ayudarte a generar más leads. Sin compromiso.",
     "cta": "Obtener Mi Auditoría Gratuita",
     "dismiss": "No gracias, paso del consejo gratuito",
-    "trust": "Únete a más de 50 negocios que confían en Webimot para sus necesidades de marketing"
+    "trust": "Sin tarjeta de crédito. Sin contrato a largo plazo."
   },
   "caseStudies": {
     "title": "Casos de Éxito",
-    "subtitle": "Historias de éxito reales de negocios que transformaron su generación de leads con nuestras soluciones",
-    "ctaTitle": "¿Listo para Ser Nuestro Próximo Caso de Éxito?",
+    "subtitle": "Lo que construimos para la clínica Clinish.",
+    "ctaTitle": "¿Quieres algo similar para tu negocio?",
     "ctaButton": "Reserva Tu Llamada Estratégica Gratis"
   },
   "blog": {
@@ -369,7 +316,14 @@
   "services": {
     "title": "Servicios que Digitalizan y Hacen Crecer Tu Negocio",
     "subtitle": "Automatización IA, anuncios dirigidos, SEO y marketing digital — construido para clínicas de turismo médico y agencias inmobiliarias.",
-    "ctaTitle": "¿Listo para Dominar Tu Mercado?",
-    "ctaSubtitle": "Únete a clínicas de turismo médico y agencias inmobiliarias que usan Webimot para generar más leads, responder más rápido y cerrar más negocios."
+    "ctaTitle": "¿Listo para empezar?",
+    "ctaSubtitle": "Reserva una llamada gratuita y definiremos qué servicios encajan con tu negocio."
+  },
+  "ourWork": {
+    "badge": "Nuestro trabajo",
+    "title": "Proyectos de clientes",
+    "subtitle": "Lo que creamos y configuramos para las clínicas con las que trabajamos.",
+    "projectLabel": "Proyecto de cliente",
+    "readMore": "Leer el resumen del proyecto"
   }
 }

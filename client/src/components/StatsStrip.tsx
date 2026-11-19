@@ -1,10 +1,9 @@
-import CountUp from "@/components/CountUp";
-
+// Offer and capability facts only: nothing here describes past client results.
 const stats = [
-  { value: "50+", label: "businesses transformed" },
-  { value: "12+", label: "countries served" },
-  { value: "50+", label: "languages handled by our AI" },
-  { value: "15+", label: "hours saved per team, every week" },
+  { value: "50+", label: "languages the AI can reply in" },
+  { value: "24/7", label: "the systems answer day and night" },
+  { value: "3", label: "days to deliver your free AI audit" },
+  { value: "2–4", label: "weeks from audit to live, our target" },
 ];
 
 const useCases = [
@@ -24,12 +23,12 @@ const useCases = [
 
 export default function StatsStrip() {
   return (
-    <section aria-label="Webimot in numbers" className="border-y border-slate-200 bg-white dark:border-white/10 dark:bg-[#020817]">
+    <section aria-label="Key facts" className="border-y border-slate-200 bg-white dark:border-white/10 dark:bg-[#020817]">
       <dl className="container mx-auto grid grid-cols-2 gap-x-4 gap-y-10 px-6 py-12 md:grid-cols-4 md:py-14">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
             <dd className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl dark:text-white">
-              <CountUp value={stat.value} />
+              {stat.value}
             </dd>
             <dt className="mx-auto mt-2 max-w-[12rem] text-sm leading-snug text-slate-600 dark:text-white/60">{stat.label}</dt>
           </div>

@@ -45,7 +45,7 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
   const [pathname] = useLocation();
   const canonicalUrl = `https://webimotagency.com${pathname}`;
 
-  // One line under the hero badge placing the product in the ladder; `system` wins if both are set.
+  // One line at the top of the hero placing the product in the ladder; `system` wins if both are set.
   const parentSystem = system ? systemById(system) : addOnFor ? systemById(addOnFor) : undefined;
   const parentLabel = system ? "Part of the" : "Add-on that feeds the";
 
@@ -57,11 +57,6 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
     "url": canonicalUrl,
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
-    "offers": {
-      "@type": "Offer",
-      "availability": "https://schema.org/InStock",
-      "url": canonicalUrl
-    },
     "provider": {
       "@type": "Organization",
       "name": "Webimot Agency",
@@ -84,12 +79,8 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#020817] to-transparent pointer-events-none" />
             <div className="container mx-auto px-6 relative z-10 text-center max-w-4xl">
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-4 py-1.5 mb-6">
-                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span className="text-xs font-bold tracking-widest text-green-400 uppercase">Available Now</span>
-              </div>
               {parentSystem && (
-                <nav aria-label={`Breadcrumb: Systems, ${parentSystem.name}, ${name}`} className="mb-6 -mt-2">
+                <nav aria-label={`Breadcrumb: Systems, ${parentSystem.name}, ${name}`} className="mb-6">
                   <Link
                     href={`/systems#${parentSystem.id}`}
                     data-testid="link-product-system"
@@ -123,7 +114,7 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
             </div>
           </section>
 
-          {/* Results Bar */}
+          {/* Design facts bar */}
           {results && (
             <section className="py-12 bg-slate-900 border-y border-white/10 relative overflow-hidden">
               <div className="container mx-auto px-6">
@@ -179,17 +170,18 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
             </div>
           </section>
 
-          {/* Real Example / Scenario */}
+          {/* Example scenario (illustrative) */}
           {scenario && (
             <section className="py-16 md:py-24 bg-slate-950 relative overflow-hidden">
               <div className="absolute inset-0 neural-grid-dark pointer-events-none" />
               <div className="container mx-auto px-6 relative z-10 max-w-3xl">
                 <div className="text-center mb-10">
                   <div className="inline-flex items-center gap-2 bg-yellow-400/10 border border-yellow-400/20 text-yellow-400 rounded-full px-4 py-1.5 mb-4">
-                    <span className="text-sm font-medium">Real Example</span>
+                    <span className="text-sm font-medium">Example scenario</span>
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-white">{scenario.heading}</h2>
                   <p className="mt-4 text-white/50 text-base leading-relaxed">{scenario.description}</p>
+                  <p className="mt-3 text-sm text-white/60 italic" data-testid="text-scenario-disclaimer">Example scenario. Illustrative, not a client result.</p>
                 </div>
                 <div className="relative">
                   {/* Timeline line */}

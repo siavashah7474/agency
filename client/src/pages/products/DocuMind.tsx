@@ -9,16 +9,16 @@ export default function DocuMindPage() {
       emoji="📄"
       name="DocuMind"
       tagline="Turn paperwork into data in seconds."
-      heroBrief="Upload any document — invoice, contract, intake form, or medical record. DocuMind reads it, extracts every piece of data, fills your CRM, and flags anything missing. Hours of manual work done in under 30 seconds."
+      heroBrief="Upload any document — invoice, contract, intake form, or medical record. DocuMind reads it, extracts every piece of data, fills your CRM, and flags anything missing. Manual data entry handled in seconds."
       results={[
-        { value: "< 30s", label: "Per document", context: "vs. 5–10 minutes of manual data entry" },
+        { value: "On arrival", label: "Documents processed", context: "From your email inbox, shared folder or upload portal" },
         { value: "Human-verified", label: "Accuracy", context: "AI flags anything ambiguous for review" },
-        { value: "40h+", label: "Saved per month", context: "For a clinic processing 300+ documents" },
+        { value: "CRM-ready", label: "Structured output", context: "Extracted data goes into your CRM, database or spreadsheet" },
       ]}
       problemParagraphs={[
         "Staff spend hours every week manually processing documents — invoices, intake forms, contracts, patient records. It's slow, error-prone, and costs your business money in wasted time and missed data.",
-        "A typical clinic or business processes hundreds of documents per month. At 5–10 minutes per document, that's 25–50+ hours of staff time every month — done by expensive people who should be focusing on patients, clients, or higher-value tasks.",
-        "DocuMind eliminates every second of that manual work. Any document you receive is read, processed, and filed automatically — with zero human input. If something is missing or unclear, DocuMind flags it immediately so nothing slips through.",
+        "Every document typed in by hand takes minutes of staff time. Across a month of intake forms, invoices and contracts that adds up, and it is done by people who should be focusing on patients, clients, or higher-value tasks.",
+        "DocuMind is built to take that manual work off your team. Any document you receive is read, processed, and filed automatically. If something is missing or unclear, DocuMind flags it immediately so nothing slips through.",
       ]}
       howItWorksSteps={[
         { emoji: "📨", title: "Documents Come In", description: "DocuMind watches your email inbox, shared folder, or upload portal. The moment a new document arrives — PDF, Word, scan, or photo — it's automatically queued for processing." },
@@ -27,7 +27,7 @@ export default function DocuMindPage() {
       ]}
       scenario={{
         heading: "See DocuMind in action: an IVF clinic's Monday morning intake",
-        description: "A new patient emails over their intake pack. Here's what happens in the next 30 seconds — with zero staff involvement.",
+        description: "A new patient emails over their intake pack. Here's how DocuMind is designed to handle it, before any staff member is at their desk.",
         steps: [
           {
             time: "9:12 AM",
