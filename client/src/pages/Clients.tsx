@@ -13,9 +13,9 @@ export default function Clients() {
   return (
     <>
       <SEO
-        title="Our Clients and Projects | Webimot"
-        description="Who Webimot works with: Gorkem Atsal Clinic and Clinish. See what we built and set up for each, from websites and a CRM to ads and search optimisation."
-        keywords="Webimot clients, Webimot client project, Gorkem Atsal Clinic, Clinish, website development, Meta ads setup, Google Search Console optimisation"
+        title="Work by Our Founder, Sia Ahmadi | Webimot"
+        description="Work by Webimot's founder, Sia Ahmadi, for Gorkem Atsal Clinic and Clinish: websites, a CRM, ad campaigns and search optimisation."
+        keywords="Webimot founder work, Sia Ahmadi projects, Gorkem Atsal Clinic, Clinish, website development, Meta ads setup, Google Search Console optimisation"
         canonicalUrl="https://webimotagency.com/clients"
       />
       <div className="min-h-screen flex flex-col">
@@ -34,10 +34,10 @@ export default function Clients() {
                 Our work
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Our clients
+                Work by our founder
               </h1>
               <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
-                The client work we can tell you about, described plainly: what we built and what we set up.
+                What our founder, Sia Ahmadi, built and set up for two clinics, described plainly.
               </p>
             </div>
           </section>
@@ -49,12 +49,12 @@ export default function Clients() {
               <div className="grid gap-6">
                 {caseStudies.map((study) => (
                   <article key={study.slug} className="bg-slate-900 rounded-xl border border-white/6 p-6 md:p-8">
-                    <div className="text-xs font-semibold text-secondary/70 uppercase tracking-wider mb-2">Client project</div>
+                    <div className="text-xs font-semibold text-secondary/70 uppercase tracking-wider mb-2">Work by our founder</div>
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{study.client}</h2>
                     <p className="text-white/60 leading-relaxed mb-6">
                       {study.about}
                     </p>
-                    <h3 className="text-sm font-semibold text-white/80 uppercase tracking-wide mb-4">What we did</h3>
+                    <h3 className="text-sm font-semibold text-white/80 uppercase tracking-wide mb-4">What Sia did</h3>
                     <ul className="space-y-4 mb-8">
                       {study.workDone.map((item) => (
                         <li key={item.title} className="flex items-start gap-3">

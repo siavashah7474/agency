@@ -15,8 +15,8 @@ export default function ClientResultsSection() {
       <div className="container mx-auto max-w-5xl px-6">
         <SectionHeader
           eyebrow={t("ourWork.badge", "Our work")}
-          title={t("ourWork.title", "Client projects")}
-          lead={t("ourWork.subtitle", "What we built and set up for the clinics we work with.")}
+          title={t("ourWork.title", "Work by our founder")}
+          lead={t("ourWork.subtitle", "What our founder, Sia Ahmadi, built and set up for two clinics.")}
           className="mb-10"
         />
 
@@ -24,7 +24,7 @@ export default function ClientResultsSection() {
           {caseStudies.map((study, index) => (
             <article key={study.slug} className="surface-card flex flex-col p-6 md:p-8" data-testid={`card-client-result-${index}`}>
               <p className="mb-2 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">
-                {t("ourWork.projectLabel", "Client project")}
+                {t("ourWork.projectLabel", "Work by our founder")}
               </p>
               <h3 className="mb-3 text-xl font-bold text-slate-900 md:text-2xl">{study.client}</h3>
               <p className="mb-5 leading-relaxed text-slate-600">{study.summary}</p>

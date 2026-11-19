@@ -49,7 +49,7 @@ export default function CaseStudyDetail() {
       <SEO
         title={study.title}
         description={study.summary}
-        keywords={`${study.client} project, Webimot client project, ${study.services.join(", ")}`}
+        keywords={`${study.client} project, work by Webimot founder Sia Ahmadi, ${study.services.join(", ")}`}
         canonicalUrl={canonical}
         schema={schema}
       />
@@ -69,7 +69,7 @@ export default function CaseStudyDetail() {
 
               <div className="flex flex-wrap items-center gap-4 mb-6">
                 <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium backdrop-blur-sm">
-                  Client project
+                  Work by our founder
                 </span>
                 <span className="flex items-center gap-1 text-sm text-white/80">
                   <Building className="h-4 w-4" aria-hidden="true" />
@@ -97,7 +97,7 @@ export default function CaseStudyDetail() {
                   </div>
 
                   <div>
-                    <h2 className="text-2xl font-bold mb-4">What we did</h2>
+                    <h2 className="text-2xl font-bold mb-4">What Sia did</h2>
                     <ul className="space-y-4">
                       {study.workDone.map((item) => (
                         <li key={item.title} className="flex items-start gap-3">
@@ -154,7 +154,7 @@ export default function CaseStudyDetail() {
                     .map((other) => (
                       <Card key={other.slug}>
                         <CardContent className="pt-6">
-                          <span className="text-xs font-medium text-primary mb-2 block">Another client project</span>
+                          <span className="text-xs font-medium text-primary mb-2 block">Another project</span>
                           <h3 className="font-semibold mb-3">{other.client}</h3>
                           <Link href={`/case-studies/${other.slug}`} className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
                             Read the project write-up <ArrowRight className="h-4 w-4" aria-hidden="true" />

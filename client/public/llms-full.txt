@@ -194,11 +194,11 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 ---
 
-## Client Work
+## Work by the Founder
 
-**Gorkem Atsal Clinic** (ongoing) — Webimot built the clinic's website, built and supports its CRM, runs its Google Ads and Meta Ads, plans its social media strategy, optimises the website for Google, Bing and Yandex, works on its sales process and improved its IT security. URL: https://webimotagency.com/case-studies/gorkem-atsal-clinic
+**Gorkem Atsal Clinic** (ongoing) — Founder Sia Ahmadi has worked with the clinic as a freelance sales and marketing specialist since November 2023: built the clinic's website, built and supports its CRM, runs its Google Ads and Meta Ads, plans its social media strategy, optimises the website for Google, Bing and Yandex, works on its sales process and improved its IT security. URL: https://webimotagency.com/case-studies/gorkem-atsal-clinic
 
-**Clinish** — Webimot built the Clinish clinic's website, supported its social media, set up its Meta Business Suite and started Meta ads for the website, and optimised the site using Google Search Console and Google Analytics. Clinish was founded by Gorkem Atsal and Gulce Yavas. URL: https://webimotagency.com/case-studies/clinish-dental-clinic
+**Clinish** — Founder Sia Ahmadi built the Clinish clinic's website, supported its social media, set up its Meta Business Suite and started Meta ads for the website, and optimised the site using Google Search Console and Google Analytics. Clinish was founded by Gorkem Atsal and Gulce Yavas. URL: https://webimotagency.com/case-studies/clinish-dental-clinic
 
 ---
 
@@ -249,7 +249,7 @@ A: Webimot Agency's Reporting system (ClearDesk) collects data from your marketi
 - https://webimotagency.com/about — About Webimot Agency
 - https://webimotagency.com/contact — Contact
 - https://webimotagency.com/clients — Our work
-- https://webimotagency.com/case-studies — Client projects: Gorkem Atsal Clinic and Clinish
+- https://webimotagency.com/case-studies — Work by the founder: Gorkem Atsal Clinic and Clinish
 - https://webimotagency.com/blog — Blog
 - https://webimotagency.com/book-consultation — Book a free AI audit
 

@@ -18,8 +18,8 @@
     "company": "Empresa",
     "contact": "Contacto",
     "aboutUs": "Sobre Nosotros",
-    "caseStudies": "Casos de Éxito",
-    "ourClients": "Nuestros Clientes",
+    "caseStudies": "Nuestro trabajo",
+    "ourClients": "Trabajo del fundador",
     "allServices": "Todos los Servicios",
     "whatsappUs": "WhatsApp",
     "privacyPolicy": "Política de Privacidad",
@@ -174,7 +174,7 @@
       ]
     },
     "teamTitle": "Nuestro trabajo",
-    "teamP": "Webimot trabaja desde Ámsterdam y Estambul. Para Gorkem Atsal Clinic, un cliente actual, creamos el sitio web y el CRM, y gestionamos Google Ads y Meta Ads, la estrategia de redes sociales y la optimización para Google, Bing y Yandex. Para la clínica Clinish creamos el sitio web, ayudamos con las redes sociales, configuramos Meta Business Suite y los anuncios de Meta, y optimizamos el sitio con Google Search Console y Google Analytics.",
+    "teamP": "Webimot tiene su base en Ámsterdam y Estambul y está dirigida por su fundador, Sia Ahmadi. Para Gorkem Atsal Clinic, donde Sia trabaja como especialista freelance en ventas y marketing desde noviembre de 2023, Sia creó el sitio web y el CRM y gestiona Google Ads y Meta Ads, la estrategia de redes sociales y la optimización para Google, Bing y Yandex. Para la clínica Clinish, Sia creó el sitio web, ayudó con las redes sociales, configuró Meta Business Suite y los anuncios de Meta, y optimizó el sitio con Google Search Console y Google Analytics.",
     "teamCta": "Hablemos de Tus Objetivos",
     "founder": {
       "badge": "Fundador",
@@ -330,9 +330,9 @@
   },
   "ourWork": {
     "badge": "Nuestro trabajo",
-    "title": "Proyectos de clientes",
-    "subtitle": "Lo que creamos y configuramos para las clínicas con las que trabajamos.",
-    "projectLabel": "Proyecto de cliente",
+    "title": "Trabajo de nuestro fundador",
+    "subtitle": "Lo que nuestro fundador, Sia Ahmadi, creó y configuró para dos clínicas.",
+    "projectLabel": "Trabajo de nuestro fundador",
     "readMore": "Leer el resumen del proyecto"
   }
 }

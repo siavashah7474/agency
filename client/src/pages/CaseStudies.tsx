@@ -32,9 +32,9 @@ export default function CaseStudies() {
   return (
     <>
       <SEO
-        title="Our Work: Client Projects | Webimot"
-        description="Client projects by Webimot: what we built and run for Gorkem Atsal Clinic and Clinish, from websites and a CRM to Google Ads, Meta Ads and search optimisation."
-        keywords="Webimot client projects, Webimot case study, Gorkem Atsal Clinic, Clinish, website development project, Meta ads setup, Google Search Console optimisation"
+        title="Our Work: Projects by Our Founder | Webimot"
+        description="Work by Webimot's founder, Sia Ahmadi, for Gorkem Atsal Clinic and Clinish: websites, a CRM, Google Ads, Meta Ads and search optimisation."
+        keywords="Webimot founder work, Sia Ahmadi projects, Gorkem Atsal Clinic, Clinish, website development project, Meta ads setup, Google Search Console optimisation"
         canonicalUrl={CANONICAL}
         schema={schema}
       />
@@ -49,13 +49,13 @@ export default function CaseStudies() {
             <div className="container mx-auto px-6 text-center text-white relative z-10">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 <Briefcase className="h-4 w-4" aria-hidden="true" />
-                Client projects
+                Work by our founder
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 Our work
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                Plain write-ups of what we built and set up for our clients. No performance figures, no quotes: only the work.
+                Plain write-ups of what our founder, Sia Ahmadi, built and set up for two clinics. No performance figures, no quotes: only the work.
               </p>
             </div>
           </section>
@@ -105,7 +105,7 @@ export default function CaseStudies() {
 
                         <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 flex flex-col justify-center">
                           <h3 className="text-sm font-semibold text-muted-foreground mb-4 uppercase tracking-wide">
-                            What we did
+                            What Sia did
                           </h3>
                           <ul className="space-y-3">
                             {study.workDone.map((item) => (

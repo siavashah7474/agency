@@ -1,4 +1,4 @@
-// Client projects shown on /case-studies, /clients and the home page.
+// Work by the founder, shown on /case-studies, /clients and the home page.
 // Only confirmed facts go in here: what was built and for whom. No metrics,
 // quotes or outcomes unless the client has confirmed them in writing.
 export interface CaseStudy {
@@ -25,36 +25,36 @@ export const caseStudies: CaseStudy[] = [
     title: "Gorkem Atsal Clinic: website, CRM, ads and search",
     client: "Gorkem Atsal Clinic",
     category: "Clinic",
-    summary: "For Gorkem Atsal Clinic, an ongoing client, Webimot built the website and CRM and runs Google Ads, Meta Ads, social media strategy and search optimisation.",
-    about: "Gorkem Atsal Clinic is an ongoing Webimot client. Gorkem Atsal is also a co-founder of Clinish.",
+    summary: "Work by Webimot's founder, Sia Ahmadi, for Gorkem Atsal Clinic: website, CRM, Google Ads, Meta Ads, social media strategy and search optimisation.",
+    about: "Sia Ahmadi, Webimot's founder, has worked with Gorkem Atsal Clinic as a freelance sales and marketing specialist since November 2023, and still does. Gorkem Atsal is also a co-founder of Clinish.",
     workDone: [
       {
         title: "Website",
-        description: "We built the clinic's website.",
+        description: "Sia built the clinic's website.",
       },
       {
         title: "CRM",
-        description: "We built the clinic's CRM and support it.",
+        description: "Sia built the clinic's CRM and supports it.",
       },
       {
         title: "Google Ads and Meta Ads",
-        description: "We run the clinic's Google Ads and Meta Ads.",
+        description: "Sia runs the clinic's Google Ads and Meta Ads.",
       },
       {
         title: "Social media strategy",
-        description: "We work on the clinic's social media strategy.",
+        description: "Sia works on the clinic's social media strategy.",
       },
       {
         title: "Search optimisation",
-        description: "We optimise the website for Google, Bing and Yandex: search presence, visibility and awareness.",
+        description: "Sia optimises the website for Google, Bing and Yandex: search presence, visibility and awareness.",
       },
       {
         title: "Sales process",
-        description: "We work with the clinic on improving its sales process.",
+        description: "Sia works with the clinic on improving its sales process.",
       },
       {
         title: "IT security",
-        description: "We improved the clinic's IT security.",
+        description: "Sia improved the clinic's IT security.",
       },
     ],
     services: ["Website development", "CRM development and support", "Google Ads", "Meta Ads", "Social media strategy", "SEO for Google, Bing and Yandex", "Sales process", "IT security"],
@@ -65,24 +65,24 @@ export const caseStudies: CaseStudy[] = [
     title: "Clinish: website, social media, Meta ads and search setup",
     client: "Clinish",
     category: "Clinic",
-    summary: "Webimot built the Clinish website, helped with social media, set up Meta Business Suite and Meta ads, and optimised the site with Google Search Console.",
-    about: "Clinish is a clinic founded by Gorkem Atsal and Gulce Yavas.",
+    summary: "Work by Webimot's founder, Sia Ahmadi, for Clinish: website, social media, Meta Business Suite and Meta ads setup, and Search Console optimisation.",
+    about: "Clinish is a clinic founded by Gorkem Atsal and Gulce Yavas. This is work done by Webimot's founder, Sia Ahmadi.",
     workDone: [
       {
         title: "Website",
-        description: "We built the Clinish website.",
+        description: "Sia built the Clinish website.",
       },
       {
         title: "Social media",
-        description: "We helped the Clinish team with their social media.",
+        description: "Sia helped the Clinish team with their social media.",
       },
       {
         title: "Meta Business Suite and Meta ads",
-        description: "We set up their Meta Business Suite and started Meta ads for the website.",
+        description: "Sia set up their Meta Business Suite and started Meta ads for the website.",
       },
       {
         title: "Search and analytics",
-        description: "We optimised the website using Google Search Console and Google Analytics.",
+        description: "Sia optimised the website using Google Search Console and Google Analytics.",
       },
     ],
     services: ["Website development", "Social media support", "Meta Business Suite setup", "Meta ads", "Google Search Console", "Google Analytics"],

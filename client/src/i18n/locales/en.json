@@ -18,8 +18,8 @@
     "company": "Company",
     "contact": "Contact",
     "aboutUs": "About Us",
-    "caseStudies": "Case Studies",
-    "ourClients": "Our Clients",
+    "caseStudies": "Our Work",
+    "ourClients": "Founder's Work",
     "allServices": "All Services",
     "whatsappUs": "WhatsApp Us",
     "privacyPolicy": "Privacy Policy",
@@ -174,7 +174,7 @@
       ]
     },
     "teamTitle": "Our Work",
-    "teamP": "Webimot works from Amsterdam and Istanbul. For Gorkem Atsal Clinic, an ongoing client, we built the website and the CRM, and we run Google Ads and Meta Ads, social media strategy and search optimisation for Google, Bing and Yandex. For the Clinish clinic we built the website, helped with social media, set up Meta Business Suite and Meta ads, and optimised the site using Google Search Console and Google Analytics.",
+    "teamP": "Webimot is based in Amsterdam and Istanbul and run by its founder, Sia Ahmadi. For Gorkem Atsal Clinic, where Sia has worked as a freelance sales and marketing specialist since November 2023, Sia built the website and the CRM and runs Google Ads and Meta Ads, social media strategy and search optimisation for Google, Bing and Yandex. For the Clinish clinic, Sia built the website, helped with social media, set up Meta Business Suite and Meta ads, and optimised the site using Google Search Console and Google Analytics.",
     "teamCta": "Let's Discuss Your Goals",
     "founder": {
       "badge": "Founder",
@@ -330,9 +330,9 @@
   },
   "ourWork": {
     "badge": "Our work",
-    "title": "Client projects",
-    "subtitle": "What we built and set up for the clinics we work with.",
-    "projectLabel": "Client project",
+    "title": "Work by our founder",
+    "subtitle": "What our founder, Sia Ahmadi, built and set up for two clinics.",
+    "projectLabel": "Work by our founder",
     "readMore": "Read the project write-up"
   }
 }

@@ -216,14 +216,14 @@ export default function Clinics() {
                 <SectionHeader
                   id="work-title"
                   eyebrow="Our work"
-                  title="Clinic projects we work on"
+                  title="Clinic work by our founder"
                   className="mb-10"
                 />
                 <div className="grid gap-6 md:grid-cols-2">
                   {clinicProjects.map((cs) => (
                     <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                       <article className="surface-card-interactive flex h-full flex-col p-6 md:p-7">
-                        <p className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">Client project</p>
+                        <p className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">Work by our founder</p>
                         <h3 className="mb-3 text-xl font-bold leading-snug text-slate-900">{cs.client}</h3>
                         <p className="mb-4 text-sm leading-relaxed text-slate-600">{cs.summary}</p>
                         <ul className="grid flex-1 content-start gap-2 sm:grid-cols-2">
