@@ -201,7 +201,7 @@ export default function PrivacyPolicy() {
                 <p className="text-muted-foreground">
                   Email: webimot.info@gmail.com
                   <br />
-                  Address: Amsterdam, Netherlands · Istanbul, Turkey
+                  Based in: Amsterdam, Netherlands · Istanbul, Turkey
                 </p>
               </section>
             </div>

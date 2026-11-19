@@ -212,7 +212,7 @@ export default function TermsOfService() {
                 <p className="text-muted-foreground">
                   Email: webimot.info@gmail.com
                   <br />
-                  Address: Amsterdam, The Netherlands
+                  Based in: Amsterdam, The Netherlands
                 </p>
               </section>
             </div>

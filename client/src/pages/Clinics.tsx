@@ -291,7 +291,7 @@ export default function Clinics() {
                 Send us a real patient enquiry and watch the AI answer it in the patient's language, evaluate the photo and book the consultation. 30 minutes, no commitment.
               </p>
               <ul className="mx-auto mb-8 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/60">
-                {["Free AI audit in 3 days", "Live in 1–2 weeks", "Your team can take over any chat"].map((item) => (
+                {["Free AI audit in 3 days", "Live in 2–4 weeks", "Your team can take over any chat"].map((item) => (
                   <li key={item} className="flex items-center gap-1.5">
                     <Check className="h-4 w-4 text-secondary" aria-hidden="true" /> {item}
                   </li>

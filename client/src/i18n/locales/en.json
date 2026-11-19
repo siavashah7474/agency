@@ -83,7 +83,7 @@
       },
       {
         "question": "How fast is it live?",
-        "answer": "The free AI audit takes 3 days and gives you the top automation opportunities for your business. After that, we aim to have the capture system live within 2 weeks, and a full setup with follow-up, operations and reporting within 2–4 weeks — including connecting your WhatsApp Business number, training the AI on your services and testing with your team."
+        "answer": "The free AI audit takes 3 days and gives you the top automation opportunities for your business. After that, we aim to have your system live within 2–4 weeks — including connecting your WhatsApp Business number, training the AI on your services and testing with your team."
       },
       {
         "question": "Does it work for my clinic or small business?",
@@ -175,7 +175,16 @@
     },
     "teamTitle": "Our Work",
     "teamP": "Webimot works from Amsterdam and Istanbul. For Gorkem Atsal Clinic, an ongoing client, we built the website and the CRM, and we run Google Ads and Meta Ads, social media strategy and search optimisation for Google, Bing and Yandex. For the Clinish clinic we built the website, helped with social media, set up Meta Business Suite and Meta ads, and optimised the site using Google Search Console and Google Analytics.",
-    "teamCta": "Let's Discuss Your Goals"
+    "teamCta": "Let's Discuss Your Goals",
+    "founder": {
+      "badge": "Founder",
+      "name": "Sia Ahmadi",
+      "role": "Founder, Webimot Agency",
+      "p1": "I'm Sia Ahmadi. I founded Webimot in January 2025 and I do the work myself: websites, CRMs, ad campaigns, search optimisation and the AI agents, which I build with n8n, the OpenAI API and the WhatsApp Cloud API.",
+      "p2": "Since 2021 I have worked in sales and marketing for clinics in Istanbul that treat international patients: BHT Clinic (Tema Hospital), Ariana Health Clinic, where I led international patient sales, and since November 2023 Dr. Görkem Atsal Clinic, where I work as a freelance sales and marketing specialist. From 2021 to 2024 I also did digital marketing for WaveMed, a US healthcare startup.",
+      "p3": "I hold an MSc in Information Technology from Azad University and I am completing an MSc in Consultancy and Entrepreneurship at Rotterdam Business School. I live between Amsterdam and Istanbul and work in English, Turkish, Persian and Kurdish, with basic Dutch.",
+      "linkedin": "Sia on LinkedIn"
+    }
   },
   "contact": {
     "title": "Get in Touch",
@@ -203,7 +212,7 @@
     "sending": "Sending...",
     "successTitle": "Message sent!",
     "successDesc": "We'll get back to you within 24 hours.",
-    "office": "Amsterdam Office",
+    "office": "Based in Amsterdam and Istanbul",
     "hours": {
       "title": "Business Hours",
       "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM (CET)",

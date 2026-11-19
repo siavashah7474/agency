@@ -83,7 +83,7 @@
       },
       {
         "question": "Hoe snel is het live?",
-        "answer": "De gratis AI-audit duurt 3 dagen en laat de belangrijkste automatiseringskansen voor uw bedrijf zien. Daarna streven we ernaar het capture-systeem binnen 2 weken live te hebben, en een volledige inrichting met follow-up, operations en rapportage binnen 2–4 weken — inclusief het koppelen van uw WhatsApp Business-nummer, het trainen van de AI op uw diensten en het testen met uw team."
+        "answer": "De gratis AI-audit duurt 3 dagen en laat de belangrijkste automatiseringskansen voor uw bedrijf zien. Daarna streven we ernaar uw systeem binnen 2–4 weken live te hebben — inclusief het koppelen van uw WhatsApp Business-nummer, het trainen van de AI op uw diensten en het testen met uw team."
       },
       {
         "question": "Werkt het voor mijn kliniek of klein bedrijf?",
@@ -175,7 +175,16 @@
     },
     "teamTitle": "Ons werk",
     "teamP": "Webimot werkt vanuit Amsterdam en Istanbul. Voor Gorkem Atsal Clinic, een lopende klant, bouwden we de website en het CRM, en verzorgen we Google Ads en Meta Ads, de socialemediastrategie en de zoekoptimalisatie voor Google, Bing en Yandex. Voor de kliniek Clinish bouwden we de website, hielpen we met sociale media, richtten we Meta Business Suite en Meta-advertenties in en optimaliseerden we de site met Google Search Console en Google Analytics.",
-    "teamCta": "Laten we uw doelen bespreken"
+    "teamCta": "Laten we uw doelen bespreken",
+    "founder": {
+      "badge": "Oprichter",
+      "name": "Sia Ahmadi",
+      "role": "Oprichter van Webimot Agency",
+      "p1": "Ik ben Sia Ahmadi. Ik heb Webimot in januari 2025 opgericht en doe het werk zelf: websites, CRM's, advertentiecampagnes, zoekoptimalisatie en de AI-agents, die ik bouw met n8n, de OpenAI API en de WhatsApp Cloud API.",
+      "p2": "Sinds 2021 werk ik in sales en marketing voor klinieken in Istanbul die internationale patiënten behandelen: BHT Clinic (Tema Hospital), Ariana Health Clinic, waar ik de internationale patiëntensales leidde, en sinds november 2023 Dr. Görkem Atsal Clinic, waar ik als freelance sales- en marketingspecialist werk. Van 2021 tot 2024 deed ik ook digitale marketing voor WaveMed, een Amerikaanse zorgstartup.",
+      "p3": "Ik heb een MSc in Informatietechnologie van de Azad Universiteit en rond een MSc in Consultancy en Entrepreneurship af aan de Rotterdam Business School. Ik woon afwisselend in Amsterdam en Istanbul en werk in het Engels, Turks, Perzisch en Koerdisch, met basiskennis Nederlands.",
+      "linkedin": "Sia op LinkedIn"
+    }
   },
   "contact": {
     "title": "Neem contact op",
@@ -203,7 +212,7 @@
     "sending": "Verzenden...",
     "successTitle": "Bericht verzonden!",
     "successDesc": "We nemen binnen 24 uur contact met u op.",
-    "office": "Amsterdam Kantoor",
+    "office": "Gevestigd in Amsterdam en Istanbul",
     "hours": {
       "title": "Openingstijden",
       "weekdays": "Maandag - vrijdag: 9:00 - 18:00 (CET)",

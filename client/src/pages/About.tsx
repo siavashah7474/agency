@@ -9,6 +9,31 @@ import {
 import { useTranslation } from "react-i18next";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 
+const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/sia-ahmadi/";
+
+const founderSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  url: "https://webimotagency.com/about",
+  mainEntity: {
+    "@type": "Person",
+    "@id": "https://webimotagency.com/about#founder",
+    name: "Sia Ahmadi",
+    jobTitle: "Founder",
+    worksFor: { "@id": "https://webimotagency.com/#organization" },
+    homeLocation: [
+      { "@type": "City", name: "Amsterdam" },
+      { "@type": "City", name: "Istanbul" },
+    ],
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "Rotterdam Business School" },
+      { "@type": "CollegeOrUniversity", name: "Azad University" },
+    ],
+    knowsLanguage: ["English", "Turkish", "Persian", "Kurdish", "Dutch"],
+    sameAs: [FOUNDER_LINKEDIN],
+  },
+};
+
 export default function About() {
   const { t } = useTranslation();
   const { openModal } = useBookingModal();
@@ -24,9 +49,10 @@ export default function About() {
     <>
       <SEO
         title="About Webimot | AI Automation Agency"
-        description="Webimot is an AI automation and digital marketing agency working from Amsterdam and Istanbul. We build AI systems for clinics and small businesses."
+        description="Webimot is an AI automation and digital marketing agency founded by Sia Ahmadi, based in Amsterdam and Istanbul. AI systems for clinics and small businesses."
         keywords="AI consultant agency, digital transformation agency, AI consultancy medical tourism, real estate AI consultant, small business digital transformation, AI automation consultancy, Webimot Agency about, AI business transformation"
         canonicalUrl="https://webimotagency.com/about"
+        schema={founderSchema}
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
@@ -75,6 +101,32 @@ export default function About() {
                     })}
                   </ul>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Founder */}
+          <section id="founder" className="scroll-mt-24 py-16 md:py-24 bg-[#020817] relative overflow-hidden">
+            <div className="container mx-auto px-6 relative z-10">
+              <div className="max-w-3xl mx-auto">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/15 rounded-full text-sm font-medium text-white mb-6">
+                  <Users className="h-4 w-4" />
+                  {t("about.founder.badge")}
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">{t("about.founder.name")}</h2>
+                <p className="text-base text-secondary mb-6">{t("about.founder.role")}</p>
+                <p className="text-lg text-white/70 mb-4">{t("about.founder.p1")}</p>
+                <p className="text-lg text-white/70 mb-4">{t("about.founder.p2")}</p>
+                <p className="text-lg text-white/70 mb-6">{t("about.founder.p3")}</p>
+                <a
+                  href={FOUNDER_LINKEDIN}
+                  target="_blank"
+                  rel="noopener noreferrer me"
+                  className="inline-flex items-center gap-2 font-medium text-white underline underline-offset-4 hover:text-white/80"
+                >
+                  {t("about.founder.linkedin")}
+                  <ArrowRight className="h-4 w-4" />
+                </a>
               </div>
             </div>
           </section>

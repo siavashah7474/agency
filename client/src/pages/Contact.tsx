@@ -261,21 +261,6 @@ export default function Contact() {
                 </Card>
 
                 <div className="space-y-8">
-                  {/* <Card>
-                  <CardHeader>
-                    <div className="flex items-start gap-3">
-                      <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                      <div>
-                        <CardTitle className="text-lg mb-2">Istanbul Office</CardTitle>
-                        <p className="text-muted-foreground text-sm">
-                         <br />
-                           Istanbul<br />
-                          Turkey
-                        </p>
-                      </div>
-                    </div>
-                  </CardHeader>
-                </Card> */}
 
                   <Card>
                     <CardHeader>
@@ -283,12 +268,18 @@ export default function Contact() {
                         <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                         <div>
                           <CardTitle className="text-lg mb-2">
-                            Amsterdam Office
+                            Where we work
                           </CardTitle>
                           <p className="text-muted-foreground text-sm">
-                            Amsterdam
+                            Based in Amsterdam, Netherlands
                             <br />
-                            Netherlands
+                            and Istanbul, Turkey. We work with clients remotely.
+                          </p>
+                          <p className="text-muted-foreground text-sm mt-3">
+                            Webimot is run by its founder, Sia Ahmadi.{" "}
+                            <Link href="/about#founder" className="font-medium text-primary underline underline-offset-2">
+                              Read the founder's bio
+                            </Link>
                           </p>
                         </div>
                       </div>

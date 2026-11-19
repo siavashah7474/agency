@@ -83,7 +83,7 @@
       },
       {
         "question": "Ne kadar sürede yayına girer?",
-        "answer": "Ücretsiz AI denetimi 3 gün sürer ve işletmeniz için en önemli otomasyon fırsatlarını ortaya koyar. Ardından yakalama sistemini 2 hafta içinde, takip, operasyon ve raporlamayı içeren tam kurulumu ise 2–4 hafta içinde yayına almayı hedefliyoruz — WhatsApp Business numaranızın bağlanması, AI'ın hizmetlerinize göre eğitilmesi ve ekibinizle test edilmesi dahil."
+        "answer": "Ücretsiz AI denetimi 3 gün sürer ve işletmeniz için en önemli otomasyon fırsatlarını ortaya koyar. Ardından sisteminizi 2–4 hafta içinde yayına almayı hedefliyoruz — WhatsApp Business numaranızın bağlanması, AI'ın hizmetlerinize göre eğitilmesi ve ekibinizle test edilmesi dahil."
       },
       {
         "question": "Kliniğim veya küçük işletmem için çalışır mı?",
@@ -175,7 +175,16 @@
     },
     "teamTitle": "Çalışmalarımız",
     "teamP": "Webimot, Amsterdam ve İstanbul'dan çalışır. Devam eden müşterimiz Gorkem Atsal Clinic için web sitesini ve CRM'i kurduk; Google Ads ve Meta Ads'i, sosyal medya stratejisini ve Google, Bing ve Yandex için arama optimizasyonunu yürütüyoruz. Clinish kliniği için web sitesini kurduk, sosyal medyaya destek olduk, Meta Business Suite ve Meta reklamlarını kurduk ve siteyi Google Search Console ve Google Analytics ile optimize ettik.",
-    "teamCta": "Hedeflerinizi Konuşalım"
+    "teamCta": "Hedeflerinizi Konuşalım",
+    "founder": {
+      "badge": "Kurucu",
+      "name": "Sia Ahmadi",
+      "role": "Webimot Agency Kurucusu",
+      "p1": "Ben Sia Ahmadi. Webimot'u Ocak 2025'te kurdum ve işi kendim yapıyorum: web siteleri, CRM'ler, reklam kampanyaları, arama optimizasyonu ve n8n, OpenAI API ve WhatsApp Cloud API ile kurduğum AI ajanları.",
+      "p2": "2021'den beri İstanbul'da uluslararası hastalara hizmet veren kliniklerde satış ve pazarlama alanında çalışıyorum: BHT Clinic (Tema Hastanesi), uluslararası hasta satışlarını yönettiğim Ariana Health Clinic ve Kasım 2023'ten beri serbest satış ve pazarlama uzmanı olarak çalıştığım Dr. Görkem Atsal Clinic. 2021-2024 arasında ABD merkezli sağlık girişimi WaveMed için de dijital pazarlama yaptım.",
+      "p3": "Azad Üniversitesi'nden Bilgi Teknolojileri yüksek lisansım var ve Rotterdam Business School'da Danışmanlık ve Girişimcilik yüksek lisansımı tamamlıyorum. Amsterdam ve İstanbul arasında yaşıyorum; İngilizce, Türkçe, Farsça ve Kürtçe, ayrıca temel düzeyde Felemenkçe ile çalışıyorum.",
+      "linkedin": "LinkedIn'de Sia"
+    }
   },
   "contact": {
     "title": "İletişime Geçin",
@@ -203,7 +212,7 @@
     "sending": "Gönderiliyor...",
     "successTitle": "Mesaj gönderildi!",
     "successDesc": "24 saat içinde size geri döneceğiz.",
-    "office": "Amsterdam Ofisi",
+    "office": "Amsterdam ve İstanbul merkezli",
     "hours": {
       "title": "Çalışma Saatleri",
       "weekdays": "Pazartesi - Cuma: 09:00 - 18:00 (CET)",

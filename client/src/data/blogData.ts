@@ -1530,7 +1530,7 @@ The implementation process is simpler than most clinic owners expect:
 2. **AI training** — [Webimot](/) trains the AI on your specific procedures, FAQs, pricing, and consultation process
 3. **Language setup** — Configure all relevant languages for your source markets
 4. **Integration** — [Webimot](/) connects to WhatsApp, website chat, email, and Instagram DMs
-5. **Go live** — Your [Webimot AI receptionist](/clinics) starts handling inquiries; we aim for go-live within about 2 weeks
+5. **Go live** — Your [Webimot AI receptionist](/clinics) starts handling inquiries; we aim for go-live within 2–4 weeks
 6. **Optimisation** — Ongoing refinement based on real conversation data
 
 Visit [webimotagency.com](/) to see exactly how our AI receptionist works and book a free demo tailored to your clinic's speciality.
@@ -2387,9 +2387,9 @@ A sensible order for most service businesses:
 
 | Priority | Workflow | How Directly It Affects Revenue | Our Target Build Time |
 |---|---|---|---|
-| 1 | Inbound lead response and qualification | Most direct | 1–2 weeks |
-| 2 | Follow-up and lead nurturing sequences | Direct | 1–2 weeks |
-| 3 | SEO content generation | Indirect, builds over many months | 2–3 weeks |
+| 1 | Inbound lead response and qualification | Most direct | 2–4 weeks |
+| 2 | Follow-up and lead nurturing sequences | Direct | 2–4 weeks |
+| 3 | SEO content generation | Indirect, builds over many months | 2–4 weeks |
 | 4 | Invoice and document processing | Indirect, frees staff time | 2–4 weeks |
 | 5 | Internal reporting and task automation | Indirect, frees management time | 2–4 weeks |
 
@@ -2870,7 +2870,7 @@ The fastest way to get your WhatsApp pipeline automated:
 
 **Month 2 onwards:** Run your first reactivation campaign on your existing contact database.
 
-Target time to full deployment: 3–4 weeks.
+Target time to full deployment: 2–4 weeks.
 
 If you want this built, configured, and managed for your business — without your team having to learn new tools or manage the technical setup — [Webimot Agency](https://webimotagency.com) handles it end to end.
 

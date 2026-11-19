@@ -49,7 +49,7 @@ export const serviceData: Record<string, ServiceData> = {
     faqs: [
       {
         question: "How long does setup take?",
-        answer: "Typically 7-10 business days from contract signing to go-live, including AI training and testing."
+        answer: "We aim to go live within 2–4 weeks of starting, including AI training and testing."
       },
       {
         question: "What languages does the AI support?",
