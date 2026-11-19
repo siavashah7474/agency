@@ -118,7 +118,7 @@ export const caseStudies: CaseStudy[] = [
     workDone: [
       {
         title: "Trading bot application",
-        description: "Development of the Apex AI application, in which the client configures and runs trading bots. The application includes a bot overview, a bot builder, balances, trade history, notifications and settings, and a simulation mode for testing a bot without real funds.",
+        description: "Development of the Apex AI application, in which the client configures and runs trading bots. The application includes a dashboard, markets, portfolio and analytics views, a trading terminal, trade history, an AI trading agent, a strategy builder, backtesting, risk management and exchange connections, and a paper-trading mode for testing a bot without real funds.",
       },
       {
         title: "Customised AI-powered bots",
@@ -126,6 +126,16 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     services: ["Custom software development", "AI-powered trading bots", "Crypto", "Simulation mode"],
+    image: { src: "/work/apex-ai-dashboard.jpg", alt: "Apex AI dashboard in simulation mode, showing balances, portfolio performance, AI market insight and bot status", width: 1702, height: 984 },
+    gallery: [
+      {
+        src: "/work/apex-ai-strategy-builder.jpg",
+        alt: "Apex AI strategy builder with strategy templates, trading pair selection and entry rules",
+        width: 1669,
+        height: 1121,
+        caption: "The strategy builder: the client describes a strategy in plain words or starts from a template, selects trading pairs and sets the entry rules.",
+      },
+    ],
   },
   {
     slug: "webimot-whatsapp-ai",
