@@ -1,26 +1,34 @@
 {
   "/": {
-    "hash": "bda7bc637583353e",
+    "hash": "ab31a44abdaec18d",
     "lastmod": "2026-11-21"
   },
   "/about": {
-    "hash": "0f84601fa453678e",
+    "hash": "fa6af5c826d6dc94",
     "lastmod": "2026-11-21"
   },
   "/blog": {
-    "hash": "4f6fb7e7ac975ef2",
-    "lastmod": "2026-11-19"
+    "hash": "da74951cdc6d67f2",
+    "lastmod": "2026-11-21"
   },
   "/blog/ai-agents-vs-chatbots-2026-business-guide": {
     "hash": "8dfa7000d4af4ca0",
     "lastmod": "2026-11-21"
   },
+  "/blog/ai-assistant-medical-tourism-patient-journey": {
+    "hash": "c124de422bd778e7",
+    "lastmod": "2026-11-21"
+  },
   "/blog/ai-assistant-plastic-surgery-turkey-guide": {
-    "hash": "089a113c96d4ef18",
+    "hash": "7a998dfffe942499",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-automation-for-small-business-2026-what-to-automate-first": {
     "hash": "6562a24b17531284",
+    "lastmod": "2026-11-21"
+  },
+  "/blog/ai-automation-medical-tourism-clinics": {
+    "hash": "b0d0aab9f60b9992",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-automation-revenue-growth-business-2026": {
@@ -28,16 +36,16 @@
     "lastmod": "2026-11-21"
   },
   "/blog/ai-data-entry-reporting-automation-business": {
-    "hash": "c505ee000d518d4b",
-    "lastmod": "2026-11-19"
+    "hash": "0a674ed80053a222",
+    "lastmod": "2026-11-21"
   },
   "/blog/ai-document-processing-small-business-2026-invoices-forms-contracts": {
     "hash": "0e5f7b2daee7acd6",
     "lastmod": "2026-11-19"
   },
   "/blog/ai-employee-productivity-internal-communication-automation": {
-    "hash": "57639e0797dc0b42",
-    "lastmod": "2026-11-19"
+    "hash": "be464de51c556660",
+    "lastmod": "2026-11-21"
   },
   "/blog/ai-for-dental-clinics-2026-patient-journey-automation": {
     "hash": "0ae601c9d5d49b06",
@@ -56,12 +64,16 @@
     "lastmod": "2026-11-19"
   },
   "/blog/ai-receptionist-for-clinics-2026-cost-guide": {
-    "hash": "a43d06ef2c94906c",
+    "hash": "88c79ff3d1665d12",
     "lastmod": "2026-11-21"
   },
   "/blog/best-digital-marketing-strategies-medical-tourism": {
     "hash": "2a51a33605a07531",
     "lastmod": "2026-11-19"
+  },
+  "/blog/best-medical-tourism-destinations-turkey-thailand-dubai": {
+    "hash": "972f67993cf5570f",
+    "lastmod": "2026-11-21"
   },
   "/blog/building-trust-online-medical-tourism": {
     "hash": "3842d8cc9af4b518",
@@ -92,15 +104,15 @@
     "lastmod": "2026-11-21"
   },
   "/blog/medical-tourism-ai-patient-acquisition-2026-report": {
-    "hash": "e800b75b9e1ac50d",
+    "hash": "1240381fdf12e210",
     "lastmod": "2026-11-21"
   },
   "/blog/medical-tourism-ai-receptionist-germany-uk-gulf": {
-    "hash": "cdf1fd34139831dc",
+    "hash": "ba851ac5e010d9b4",
     "lastmod": "2026-11-21"
   },
   "/blog/medical-tourism-patient-journey-automation-7-stages": {
-    "hash": "6d89c8db85934ffb",
+    "hash": "c940a05cb64612db",
     "lastmod": "2026-11-21"
   },
   "/blog/meta-ads-vs-google-ads-clinics-local-business-2026": {
@@ -108,15 +120,23 @@
     "lastmod": "2026-11-21"
   },
   "/blog/multi-language-marketing-medical-tourism": {
-    "hash": "6ffe4832d19cf1dc",
-    "lastmod": "2026-11-19"
+    "hash": "98de993600fc2d1e",
+    "lastmod": "2026-11-21"
+  },
+  "/blog/qualify-international-patients-automatically": {
+    "hash": "659c79917725b36c",
+    "lastmod": "2026-11-21"
   },
   "/blog/reduce-patient-no-shows-clinics-ai-whatsapp-2026": {
     "hash": "73c5d4e07aa66e0f",
     "lastmod": "2026-11-21"
   },
+  "/blog/replace-manual-followup-ai-medical-clinic": {
+    "hash": "cdf2450f79eb37f0",
+    "lastmod": "2026-11-21"
+  },
   "/blog/rhinoplasty-hair-transplant-turkey-ai-lead-conversion": {
-    "hash": "eac78f540765e273",
+    "hash": "7890616037df1b90",
     "lastmod": "2026-11-21"
   },
   "/blog/seo-for-clinics-complete-guide": {
@@ -127,16 +147,32 @@
     "hash": "a5dfcf94a0bac28b",
     "lastmod": "2026-11-19"
   },
+  "/blog/thailand-medical-tourism-clinics-guide-2026": {
+    "hash": "be558553f6ef2f1e",
+    "lastmod": "2026-11-21"
+  },
+  "/blog/turkey-medical-tourism-guide-2026": {
+    "hash": "04e34b9707be326e",
+    "lastmod": "2026-11-21"
+  },
   "/blog/vision-ai-photo-evaluation-medical-tourism": {
     "hash": "51c62478b73c16bf",
     "lastmod": "2026-11-19"
+  },
+  "/blog/whatsapp-automation-medical-tourism": {
+    "hash": "20a3d3cb76a5c94f",
+    "lastmod": "2026-11-21"
   },
   "/blog/whatsapp-business-automation-2026-complete-guide": {
     "hash": "c2e57ea5180cba2b",
     "lastmod": "2026-11-21"
   },
+  "/blog/why-clinics-lose-international-leads": {
+    "hash": "25f59bd20e34806c",
+    "lastmod": "2026-11-21"
+  },
   "/blog/why-clinics-must-automate-lead-handling": {
-    "hash": "87e81cc20d73a767",
+    "hash": "9c65fef717128750",
     "lastmod": "2026-11-21"
   },
   "/blog/workflow-automation-business-growth-bottleneck-method": {
@@ -148,8 +184,8 @@
     "lastmod": "2026-11-19"
   },
   "/case-studies": {
-    "hash": "6b3cb5b8601c5c0a",
-    "lastmod": "2026-11-19"
+    "hash": "550d2ca98eee9be0",
+    "lastmod": "2026-11-21"
   },
   "/case-studies/apex-ai-trading-bots": {
     "hash": "586d0148c3b98b29",
@@ -176,15 +212,15 @@
     "lastmod": "2026-11-19"
   },
   "/case-studies/webimot-whatsapp-ai": {
-    "hash": "a14a901d9aa7201c",
-    "lastmod": "2026-11-19"
+    "hash": "2161c4415bd93903",
+    "lastmod": "2026-11-21"
   },
   "/clients": {
-    "hash": "5800e6b00f809524",
-    "lastmod": "2026-11-19"
+    "hash": "50e43f831652b0a1",
+    "lastmod": "2026-11-21"
   },
   "/clinics": {
-    "hash": "ee5346715fd1f689",
+    "hash": "def0cbad2be6e464",
     "lastmod": "2026-11-21"
   },
   "/contact": {
@@ -220,7 +256,7 @@
     "lastmod": "2026-11-21"
   },
   "/products/whatsapp-ai": {
-    "hash": "f020c5a0ea06832f",
+    "hash": "1306254e8d619077",
     "lastmod": "2026-11-21"
   },
   "/services/ai-ops-autopilot": {
