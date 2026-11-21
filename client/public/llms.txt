@@ -20,10 +20,14 @@ Key facts:
 - [3. Operations system — DocuMind · AI agents for daily tasks](https://webimotagency.com/systems#operate): AI agents read incoming invoices, intake forms and contracts, extract the data, update your systems and send the reminders and internal follow-ups your team does by hand. Replaces manual paperwork and data entry.
 - [4. Reporting system — ClearDesk](https://webimotagency.com/systems#measure): A plain-English report on leads, sales and team performance every Monday, pulled from WhatsApp, CRM, ads, calendar and accounting. Replaces not knowing what's working.
 
-## Add-ons (feed the Capture system)
+## Paid ads (sold on their own or with the systems)
 
-- [Meta Ads](https://webimotagency.com/services/meta-ads): Facebook and Instagram campaigns that feed the capture system.
-- [Google Ads](https://webimotagency.com/services/google-ads): Search campaigns for people already looking for you.
+- [Meta Ads for clinics](https://webimotagency.com/services/meta-ads): Facebook and Instagram ads for clinics and medical tourism: audiences by country and language, lead forms and click-to-WhatsApp ads, creatives within Meta's health ad rules, tracking to booked consultations. Sold on its own or with the WhatsApp AI, which answers every ad lead in under 3 seconds.
+- [Google Ads for clinics](https://webimotagency.com/services/google-ads): Google Search ads for clinics and medical tourism: high-intent treatment and price searches per country and language, negative keywords, offline conversion import so bidding learns from booked consultations, checked against Google's healthcare policy. Sold on its own or with the WhatsApp AI.
+- How ads work: Ad spend is paid by the client directly to the platform, in the client's own ad account; the management fee is quoted after a free 30-minute strategy call (recommended minimum spend: €500/month on Meta, €1,000/month on Google). Ads have been run by founder Sia Ahmadi for five clinics: Gorkem Atsal Clinic, Clinish, Prime Hair, MSB Aesthetic and Estetizm. No guaranteed cost per lead.
+
+## Add-on
+
 - [SEO & SEO Blog AI](https://webimotagency.com/products/seo-blog-ai): Organic traffic from automated, search-optimised articles.
 
 ## Key pages

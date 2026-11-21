@@ -9,7 +9,8 @@
     "clients": "Müşteriler",
     "blog": "Blog",
     "contact": "İletişim",
-    "bookCall": "Strateji Görüşmesi"
+    "bookCall": "Strateji Görüşmesi",
+    "ads": "Reklamlar"
   },
   "footer": {
     "tagline": "Akıllı Pazarlama. Akıllı Otomasyon.",
@@ -106,6 +107,27 @@
       "badge": "Kurucu hakkında",
       "text": "Webimot'u Ocak 2025'te kurdum ve işi kendim yapıyorum: web siteleri, CRM'ler, reklam kampanyaları, arama optimizasyonu ve AI ajanları. 2021'den beri İstanbul'da uluslararası hastalara hizmet veren kliniklerde satış ve pazarlama alanında çalışıyorum. Amsterdam ve İstanbul arasında yaşıyorum; İngilizce, Türkçe, Farsça ve Kürtçe çalışıyorum.",
       "link": "Tüm biyografiyi okuyun"
+    },
+    "ads": {
+      "eyebrow": "Reklamlar",
+      "title": "Rezerve edilmiş bir konsültasyonla biten Meta ve Google reklamları.",
+      "lead": "Klinikler için Facebook, Instagram ve Google kampanyaları yürütüyor ve bunları WhatsApp AI'a bağlıyoruz; böylece tıklayan her hasta 3 saniyenin altında yanıt alır ve her konsültasyonun maliyetini görürsünüz.",
+      "meta": {
+        "name": "Meta Ads",
+        "desc": "Klinikler ve sağlık turizmi için Facebook ve Instagram kampanyaları: ülke ve dile göre hedef kitleler, form ve WhatsApp'a yönlendiren reklamlar, Meta'nın sağlık reklamı kurallarına uygun kreatifler.",
+        "link": "Klinikler için Meta Ads"
+      },
+      "google": {
+        "name": "Google Ads",
+        "desc": "Tedavinizi zaten arayan hastalar için arama kampanyaları, örneğin \"Türkiye saç ekimi fiyatı\"; her pazarın dilinde ve rezerve edilen konsültasyona kadar ölçümle.",
+        "link": "Klinikler için Google Ads"
+      },
+      "points": [
+        "5 klinik için reklam",
+        "Kendi reklam hesabınız",
+        "Haftalık rapor"
+      ],
+      "cta": "Ücretsiz reklam strateji görüşmesi planlayın"
     }
   },
   "about": {

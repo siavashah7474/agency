@@ -36,7 +36,7 @@ import { trackEvent } from "@/components/GoogleAnalytics";
 // Value and label are both readable names, so the lead email never shows a URL slug.
 const serviceOptions = [
   ...SYSTEMS.map((s) => ({ value: s.name, label: `${s.name} (${s.productLabel})` })),
-  { value: "Meta / Google Ads add-on", label: "Meta / Google Ads add-on" },
+  { value: "Meta / Google Ads", label: "Meta / Google Ads" },
   { value: "SEO add-on", label: "SEO add-on" },
   { value: "Not sure — help me choose", label: "Not sure — help me choose" },
 ];

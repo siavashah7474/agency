@@ -13,6 +13,7 @@ import AIOpsHub from "@/components/AIOpsHub";
 import StatsStrip from "@/components/StatsStrip";
 import IntegrationsSection from "@/components/IntegrationsSection";
 import RiskFreeStartSection from "@/components/RiskFreeStartSection";
+import AdsSection from "@/components/AdsSection";
 import {
   Accordion,
   AccordionContent,
@@ -150,6 +151,9 @@ export default function Home() {
 
           {/* 4. Four systems ladder */}
           <WhatWeDoSection />
+
+          {/* Paid ads: Meta and Google, connected to the WhatsApp AI */}
+          <AdsSection />
 
           {/* 5. Why us + integrations */}
           <WhyWebimotSection />

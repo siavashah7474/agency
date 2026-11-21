@@ -9,7 +9,8 @@
     "clients": "Clients",
     "blog": "Blog",
     "contact": "Contact",
-    "bookCall": "Book Strategy Call"
+    "bookCall": "Book Strategy Call",
+    "ads": "Ads"
   },
   "footer": {
     "tagline": "Amsterdam · Istanbul | AI Consulting & Automation",
@@ -106,6 +107,27 @@
       "badge": "About the founder",
       "text": "I founded Webimot in January 2025 and do the work myself: websites, CRMs, ad campaigns, search optimisation and AI agents. Since 2021 I have worked in sales and marketing for clinics in Istanbul that treat international patients. I live between Amsterdam and Istanbul and work in English, Turkish, Persian and Kurdish.",
       "link": "Read the full bio"
+    },
+    "ads": {
+      "eyebrow": "Paid ads",
+      "title": "Meta and Google ads that end in a booked consultation.",
+      "lead": "We run Facebook, Instagram and Google campaigns for clinics, then connect them to the WhatsApp AI, so every patient who clicks gets an answer in under 3 seconds and you can see what each consultation cost.",
+      "meta": {
+        "name": "Meta Ads",
+        "desc": "Facebook and Instagram campaigns for clinics and medical tourism: audiences by country and language, lead forms and click-to-WhatsApp ads, creatives that pass Meta's health ad rules.",
+        "link": "See Meta Ads for clinics"
+      },
+      "google": {
+        "name": "Google Ads",
+        "desc": "Search campaigns for patients already looking for your treatment, such as \"hair transplant Turkey price\", in each market's language, with tracking all the way to the booked consultation.",
+        "link": "See Google Ads for clinics"
+      },
+      "points": [
+        "Ads run for 5 clinics",
+        "Your own ad account",
+        "Weekly report"
+      ],
+      "cta": "Book a free ads strategy call"
     }
   },
   "about": {

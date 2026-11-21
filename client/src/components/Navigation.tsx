@@ -74,6 +74,7 @@ export default function Navigation() {
     { href: "/systems", label: t("nav.systems", "Systems") },
     { href: "/clinics", label: t("nav.clinics", "Clinics") },
     { href: "/small-business", label: t("nav.smallBusiness", "Small Business") },
+    { href: "/services/meta-ads", label: t("nav.ads", "Ads") },
     { href: "/case-studies", label: t("nav.work", "Work") },
     { href: "/blog", label: t("nav.blog", "Blog") },
     { href: "/contact", label: t("nav.contact", "Contact") },
@@ -83,8 +84,10 @@ export default function Navigation() {
   // "Systems" also covers the product and service detail pages, which all belong to a system.
   const isActive = (href: string) => {
     if (href === "/") return location === "/";
+    const isAdsPage = location === "/services/meta-ads" || location === "/services/google-ads";
+    if (href === "/services/meta-ads") return isAdsPage;
     if (location === href || location.startsWith(`${href}/`)) return true;
-    if (href === "/systems") return location.startsWith("/products/") || location.startsWith("/services/");
+    if (href === "/systems") return !isAdsPage && (location.startsWith("/products/") || location.startsWith("/services/"));
     return false;
   };
 

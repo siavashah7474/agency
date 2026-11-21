@@ -34,10 +34,14 @@ Webimot Agency builds and operates AI automation systems for clinics and small b
 3. **Operations system — DocuMind · AI agents for daily tasks** — Invoices, forms and data entry handled by AI agents instead of your team. Agents read incoming documents, extract the data, update your systems and send the reminders and internal follow-ups your team does by hand today (invoices, intake forms, contracts, HR requests). Replaces: manual paperwork and data entry. Designed so that: documents are processed the day they arrive; human-verified accuracy on what matters; hours per week back to your team. https://webimotagency.com/systems#operate
 4. **Reporting system — ClearDesk** — A plain-English report on leads, sales and team performance every Monday. AI pulls the numbers from WhatsApp, CRM, ads, calendar and accounting and sends a short weekly report with what changed, what to fix and what to double down on. Replaces: not knowing what's working. https://webimotagency.com/systems#measure
 
-## Add-ons (feed the Capture system)
+## Paid ads (sold on their own or with the systems)
 
-- **Meta Ads** — Facebook and Instagram campaigns that feed the capture system. https://webimotagency.com/services/meta-ads
-- **Google Ads** — Search campaigns for people already looking for you. https://webimotagency.com/services/google-ads
+- **Meta Ads for clinics** — Facebook and Instagram ads for clinics and medical tourism: audiences by country and language, lead forms and click-to-WhatsApp ads, creatives within Meta's health ad rules, tracking to booked consultations. Sold on its own or with the WhatsApp AI, which answers every ad lead in under 3 seconds. https://webimotagency.com/services/meta-ads
+- **Google Ads for clinics** — Google Search ads for clinics and medical tourism: high-intent treatment and price searches per country and language, negative keywords, offline conversion import so bidding learns from booked consultations, checked against Google's healthcare policy. Sold on its own or with the WhatsApp AI. https://webimotagency.com/services/google-ads
+- **How ads work** — Ad spend is paid by the client directly to the platform, in the client's own ad account; the management fee is quoted after a free 30-minute strategy call (recommended minimum spend: €500/month on Meta, €1,000/month on Google). Ads have been run by founder Sia Ahmadi for five clinics: Gorkem Atsal Clinic, Clinish, Prime Hair, MSB Aesthetic and Estetizm. No guaranteed cost per lead.
+
+## Add-on
+
 - **SEO & SEO Blog AI** — Organic traffic from automated, search-optimised articles. https://webimotagency.com/products/seo-blog-ai
 
 ## Pricing — Three Packages, One Ladder
@@ -274,6 +278,6 @@ A: Webimot Agency's Reporting system (ClearDesk) collects data from your marketi
 - https://webimotagency.com/products/cleardesk — ClearDesk (Reporting system)
 - https://webimotagency.com/products/seo-blog-ai — SEO Blog AI (add-on)
 
-### Add-on Service Pages
+### Paid Ads Pages
 - https://webimotagency.com/services/meta-ads — Meta Ads
 - https://webimotagency.com/services/google-ads — Google Ads

@@ -9,7 +9,8 @@
     "clients": "Clientes",
     "blog": "Blog",
     "contact": "Contacto",
-    "bookCall": "Reservar Llamada"
+    "bookCall": "Reservar Llamada",
+    "ads": "Anuncios"
   },
   "footer": {
     "tagline": "Marketing Inteligente. Automatización Inteligente.",
@@ -106,6 +107,27 @@
       "badge": "Sobre el fundador",
       "text": "Fundé Webimot en enero de 2025 y hago el trabajo yo mismo: sitios web, CRM, campañas de anuncios, optimización para buscadores y agentes de IA. Desde 2021 trabajo en ventas y marketing para clínicas de Estambul que atienden a pacientes internacionales. Vivo entre Ámsterdam y Estambul y trabajo en inglés, turco, persa y kurdo.",
       "link": "Leer la biografía completa"
+    },
+    "ads": {
+      "eyebrow": "Publicidad",
+      "title": "Anuncios en Meta y Google que terminan en una consulta reservada.",
+      "lead": "Gestionamos campañas en Facebook, Instagram y Google para clínicas y las conectamos con la IA de WhatsApp, para que cada paciente que hace clic reciba respuesta en menos de 3 segundos y sepas cuánto costó cada consulta.",
+      "meta": {
+        "name": "Meta Ads",
+        "desc": "Campañas en Facebook e Instagram para clínicas y turismo médico: audiencias por país e idioma, formularios y anuncios que abren WhatsApp, creatividades que cumplen las normas de Meta para anuncios de salud.",
+        "link": "Meta Ads para clínicas"
+      },
+      "google": {
+        "name": "Google Ads",
+        "desc": "Campañas de búsqueda para pacientes que ya buscan tu tratamiento, como \"precio trasplante capilar Turquía\", en el idioma de cada mercado y con seguimiento hasta la consulta reservada.",
+        "link": "Google Ads para clínicas"
+      },
+      "points": [
+        "Anuncios para 5 clínicas",
+        "Tu propia cuenta publicitaria",
+        "Informe semanal"
+      ],
+      "cta": "Reserva una llamada gratuita sobre anuncios"
     }
   },
   "about": {

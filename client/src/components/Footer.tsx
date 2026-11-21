@@ -8,7 +8,7 @@ import { SYSTEMS, ADD_ONS, AUDIENCES } from "@/data/systemsData";
 // The seven product pages: every /products/* link that appears in a system or as an add-on.
 // SEO Blog AI is listed under its product name rather than the add-on label.
 const productLinks = [...SYSTEMS.flatMap((s) => s.products), ...ADD_ONS]
-  .filter((p) => p.href.startsWith("/products/"))
+  .filter((p) => p.href.startsWith("/products/") || p.href === "/services/meta-ads" || p.href === "/services/google-ads")
   .map((p) => (p.href === "/products/seo-blog-ai" ? { ...p, name: "SEO Blog AI" } : p));
 
 // Shared link styles: one look for every footer link, with a visible keyboard focus ring

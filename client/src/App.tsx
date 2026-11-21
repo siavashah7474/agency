@@ -36,6 +36,8 @@ const importSmallBusiness = () => import("@/pages/SmallBusiness");
 const SmallBusiness = lazyWithPreload(importSmallBusiness);
 const importServiceDetail = () => import("@/pages/ServiceDetail");
 const ServiceDetail = lazyWithPreload(importServiceDetail);
+const importAdsService = () => import("@/pages/AdsService");
+const AdsService = lazyWithPreload(importAdsService);
 const importAbout = () => import("@/pages/About");
 const About = lazyWithPreload(importAbout);
 const importContact = () => import("@/pages/Contact");
@@ -83,6 +85,8 @@ const routeImporters: [string, PreloadableComponent][] = [
   ["/systems", Systems],
   ["/clinics", Clinics],
   ["/small-business", SmallBusiness],
+  ["/services/meta-ads", AdsService],
+  ["/services/google-ads", AdsService],
   ["/services/:slug", ServiceDetail],
   ["/about", About],
   ["/contact", Contact],
@@ -129,6 +133,8 @@ function Router() {
         <Route path="/systems" component={Systems} />
         <Route path="/clinics" component={Clinics} />
         <Route path="/small-business" component={SmallBusiness} />
+        <Route path="/services/meta-ads" component={AdsService} />
+        <Route path="/services/google-ads" component={AdsService} />
         <Route path="/services/:slug" component={ServiceDetail} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />

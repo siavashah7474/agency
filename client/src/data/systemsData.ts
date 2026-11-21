@@ -96,10 +96,10 @@ export const SYSTEMS: SystemDef[] = [
   },
 ];
 
-// "Feed the pipe" add-ons: only sold alongside the systems above.
+// "Feed the pipe" services: sold on their own or alongside the systems above.
 export const ADD_ONS: SystemProduct[] = [
-  { name: "Meta Ads", href: "/services/meta-ads", emoji: "📣", oneLiner: "Facebook and Instagram campaigns that feed the capture system." },
-  { name: "Google Ads", href: "/services/google-ads", emoji: "🔍", oneLiner: "Search campaigns for people already looking for you." },
+  { name: "Meta Ads", href: "/services/meta-ads", emoji: "📣", oneLiner: "Facebook and Instagram campaigns for clinics, answered on WhatsApp in seconds." },
+  { name: "Google Ads", href: "/services/google-ads", emoji: "🔍", oneLiner: "Search campaigns for patients already looking for your treatment." },
   { name: "SEO & SEO Blog AI", href: "/products/seo-blog-ai", emoji: "✍️", oneLiner: "Organic traffic from automated, search-optimised articles." },
 ];
 

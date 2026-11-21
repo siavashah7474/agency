@@ -9,7 +9,8 @@
     "clients": "Klanten",
     "blog": "Blog",
     "contact": "Contact",
-    "bookCall": "Strategiegesprek"
+    "bookCall": "Strategiegesprek",
+    "ads": "Advertenties"
   },
   "footer": {
     "tagline": "Slimme Marketing. Slimme Automatisering.",
@@ -106,6 +107,27 @@
       "badge": "Over de oprichter",
       "text": "Ik heb Webimot in januari 2025 opgericht en doe het werk zelf: websites, CRM's, advertentiecampagnes, zoekoptimalisatie en AI-agents. Sinds 2021 werk ik in sales en marketing voor klinieken in Istanbul die internationale patiënten behandelen. Ik woon afwisselend in Amsterdam en Istanbul en werk in het Engels, Turks, Perzisch en Koerdisch.",
       "link": "Lees de volledige bio"
+    },
+    "ads": {
+      "eyebrow": "Advertenties",
+      "title": "Meta- en Google-advertenties die eindigen in een geboekt consult.",
+      "lead": "We draaien Facebook-, Instagram- en Google-campagnes voor klinieken en koppelen ze aan de WhatsApp AI, zodat elke patiënt die klikt binnen 3 seconden antwoord krijgt en u ziet wat elk consult heeft gekost.",
+      "meta": {
+        "name": "Meta Ads",
+        "desc": "Facebook- en Instagram-campagnes voor klinieken en medisch toerisme: doelgroepen per land en taal, leadformulieren en click-to-WhatsApp-advertenties, creatives die voldoen aan Meta's regels voor zorgadvertenties.",
+        "link": "Meta Ads voor klinieken"
+      },
+      "google": {
+        "name": "Google Ads",
+        "desc": "Zoekcampagnes voor patiënten die al naar uw behandeling zoeken, zoals \"haartransplantatie Turkije prijs\", in de taal van elke markt, met meting tot aan het geboekte consult.",
+        "link": "Google Ads voor klinieken"
+      },
+      "points": [
+        "Advertenties voor 5 klinieken",
+        "Uw eigen advertentieaccount",
+        "Wekelijks rapport"
+      ],
+      "cta": "Plan een gratis advertentiegesprek"
     }
   },
   "about": {
