@@ -1,4 +1,5 @@
 import ProductPageLayout from "@/components/ProductPageLayout";
+import { foundingOfferSentence } from "@/data/foundingOffer";
 
 export default function WhatsAppAIPage() {
   return (
@@ -46,6 +47,7 @@ export default function WhatsAppAIPage() {
         headline: "Transparent pricing",
         lines: [
           "Essential: €1,399 one-time setup + €599/month. Pro (up to 3 WhatsApp numbers, weekly reporting dashboard, dedicated account manager): €999/month.",
+          foundingOfferSentence,
           "3-month minimum, so the system has time to learn your business. If it does not generate at least 3 qualified leads in your first 30 days, we refund your first month.",
         ],
       }}

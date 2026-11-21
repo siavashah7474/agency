@@ -10,6 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import { AUDIENCES, SYSTEMS, type SystemId } from "@/data/systemsData";
 import { caseStudies } from "@/data/caseStudiesData";
+import { FOUNDING_OFFER, foundingOfferBadge, foundingOfferSpots } from "@/data/foundingOffer";
 
 const CANONICAL = "https://webimotagency.com/clinics";
 const audience = AUDIENCES[0];
@@ -61,7 +62,7 @@ const FAQS = [
   },
   {
     question: "What does it cost, and is there a minimum term?",
-    answer: "The WhatsApp AI for clinics is €1,399 one-time setup plus €599 a month (Essential), or €999 a month for Pro with up to 3 WhatsApp numbers and a weekly reporting dashboard. We ask for a 3-month minimum so the system has time to learn your clinic. If it does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. The other systems are quoted after the free AI audit.",
+    answer: "The WhatsApp AI for clinics is €1,399 one-time setup plus €599 a month (Essential), or €999 a month for Pro with up to 3 WhatsApp numbers and a weekly reporting dashboard. Founding client offer: the €1,399 setup fee is waived for our first 5 WhatsApp AI clinics, while spots last. We ask for a 3-month minimum so the system has time to learn your clinic. If it does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. The other systems are quoted after the free AI audit.",
   },
   {
     question: "Is patient data GDPR-compliant?",
@@ -247,7 +248,10 @@ export default function Clinics() {
                 ].map((plan) => (
                   <div key={plan.name} className="surface-card flex flex-col p-6 md:p-7">
                     <h3 className="text-lg font-bold text-slate-900">{plan.name}</h3>
-                    <p className="mt-1 text-sm text-slate-500">{plan.setup}</p>
+                    <p className="mt-1 flex flex-wrap items-center gap-2 text-sm text-slate-500">
+                      <span className="line-through decoration-slate-400">{plan.setup}</span>
+                      <span className="rounded-full border border-amber-300 bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800">{foundingOfferBadge}</span>
+                    </p>
                     <p className="mt-3 text-4xl font-bold text-slate-900">{plan.monthly}<span className="text-base font-normal text-slate-500">/month</span></p>
                     <ul className="mt-5 space-y-2">
                       {plan.items.map((item) => (
@@ -259,7 +263,10 @@ export default function Clinics() {
                   </div>
                 ))}
               </div>
-              <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-slate-600">
+              <p className="mx-auto mt-6 max-w-3xl text-center text-sm font-semibold text-amber-800" data-testid="text-founding-offer">
+                {foundingOfferSpots}. The {FOUNDING_OFFER.setupFee} setup fee is waived for our first {FOUNDING_OFFER.spotsTotal} WhatsApp AI clinics.
+              </p>
+              <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-relaxed text-slate-600">
                 3-month minimum. If the system does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. One extra international booking (typically €3,000–€15,000) covers the monthly fee. Full product details on{" "}
                 <a href="https://webimot.com" className="font-medium text-blue-700 underline-offset-2 hover:underline">webimot.com</a>.
               </p>
