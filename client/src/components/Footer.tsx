@@ -3,7 +3,7 @@ import { Mail, MapPin, Phone, Zap } from "lucide-react";
 import { SiInstagram } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { SYSTEMS, ADD_ONS, AUDIENCES } from "@/data/systemsData";
+import { SYSTEMS, ADD_ONS, useLocalizedSystemsData } from "@/data/systemsData";
 
 // The seven product pages: every /products/* link that appears in a system or as an add-on.
 // SEO Blog AI is listed under its product name rather than the add-on label.
@@ -19,10 +19,11 @@ const headingClass = "mb-4 text-xs font-semibold uppercase tracking-[0.15em] tex
 
 export default function Footer() {
   const { t } = useTranslation();
+  const { systems, audiences } = useLocalizedSystemsData();
   const whatsappLink = "https://wa.me/31628753175";
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-[#020817]" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">Footer</h2>
+      <h2 id="footer-heading" className="sr-only">{t("shell.footer.heading", "Footer")}</h2>
       <div className="absolute inset-0 neural-grid pointer-events-none opacity-60" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[1px] bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
 
@@ -32,7 +33,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-5 xl:col-span-2 xl:pr-8">
-            <Link href="/" className={`mb-4 inline-flex items-center gap-2 ${focusRing}`} aria-label="Webimot home">
+            <Link href="/" className={`mb-4 inline-flex items-center gap-2 ${focusRing}`} aria-label={t("shell.nav.homeAria", "Webimot home")}>
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <span className="text-white font-bold text-lg">W</span>
               </div>
@@ -42,7 +43,7 @@ export default function Footer() {
             <p className="max-w-sm text-sm leading-relaxed text-white/65">{t("footer.description")}</p>
             <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/10 px-3 py-1.5">
               <Zap className="h-3 w-3 text-secondary" aria-hidden="true" />
-              <span className="font-mono text-[11px] font-semibold tracking-wide text-secondary">Powered by AI Automation</span>
+              <span className="font-mono text-[11px] font-semibold tracking-wide text-secondary">{t("shell.footer.poweredBy", "Powered by AI Automation")}</span>
             </div>
           </div>
 
@@ -50,7 +51,7 @@ export default function Footer() {
           <div>
             <h3 className={headingClass}>{t("footer.systems", "Systems")}</h3>
             <ul className="space-y-1.5">
-              {SYSTEMS.map((system) => (
+              {systems.map((system) => (
                 <li key={system.id}>
                   <Link href={`/systems#${system.id}`} data-testid={`link-footer-system-${system.id}`} className={linkClass}>
                     {system.emoji} {system.name}
@@ -77,7 +78,7 @@ export default function Footer() {
           <div>
             <h3 className={headingClass}>{t("footer.whoWeHelp", "Who we help")}</h3>
             <ul className="space-y-1.5">
-              {AUDIENCES.map((audience) => (
+              {audiences.map((audience) => (
                 <li key={audience.id}>
                   <Link href={audience.href} data-testid={`link-footer-${audience.id}`} className={linkClass}>{audience.name}</Link>
                 </li>
@@ -103,7 +104,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5 text-sm text-white/70">
                 <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
-                <span>Amsterdam, Netherlands<br />Istanbul, Turkey</span>
+                <span>{t("shell.footer.locationAmsterdam", "Amsterdam, Netherlands")}<br />{t("shell.footer.locationIstanbul", "Istanbul, Turkey")}</span>
               </li>
               <li className="flex items-center gap-2.5 text-sm">
                 <Mail className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
@@ -117,13 +118,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5 text-sm">
                 <SiInstagram className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
-                <a href="https://www.instagram.com/webimotagency/" target="_blank" rel="noopener noreferrer me" className={linkClass} aria-label="Webimot on Instagram (opens in a new tab)">
+                <a href="https://www.instagram.com/webimotagency/" target="_blank" rel="noopener noreferrer me" className={linkClass} aria-label={t("shell.footer.instagramAria", "Webimot on Instagram (opens in a new tab)")}>
                   @webimotagency
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-sm">
                 <FaLinkedin className="h-4 w-4 flex-shrink-0 text-white/50" aria-hidden="true" />
-                <a href="https://www.linkedin.com/company/webimot-agency/" target="_blank" rel="noopener noreferrer me" className={linkClass} aria-label="Webimot on LinkedIn (opens in a new tab)">
+                <a href="https://www.linkedin.com/company/webimot-agency/" target="_blank" rel="noopener noreferrer me" className={linkClass} aria-label={t("shell.footer.linkedinAria", "Webimot on LinkedIn (opens in a new tab)")}>
                   LinkedIn
                 </a>
               </li>
@@ -133,7 +134,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-white/60 sm:flex-row">
           <p className="text-center sm:text-left">&copy; {new Date().getFullYear()} Webimot. {t("footer.rights")}</p>
-          <nav aria-label="Legal" className="flex items-center gap-6">
+          <nav aria-label={t("shell.footer.legalAria", "Legal")} className="flex items-center gap-6">
             <Link href="/privacy-policy" data-testid="link-footer-privacy" className={`py-1 transition-colors hover:text-white ${focusRing}`}>{t("footer.privacyPolicy")}</Link>
             <Link href="/terms-of-service" data-testid="link-footer-terms" className={`py-1 transition-colors hover:text-white ${focusRing}`}>{t("footer.termsOfService")}</Link>
           </nav>

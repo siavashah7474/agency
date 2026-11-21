@@ -1,0 +1,52 @@
+{
+  "shell": {
+    "nav": {
+      "skipToContent": "Ana içeriğe geç",
+      "homeAria": "Webimot ana sayfa",
+      "mainAria": "Ana menü",
+      "changeLanguage": "Dili değiştir",
+      "selectLanguage": "Dil seçin",
+      "openMenu": "Menüyü aç",
+      "closeMenu": "Menüyü kapat",
+      "language": "Dil"
+    },
+    "footer": {
+      "heading": "Alt bilgi",
+      "poweredBy": "Yapay Zekâ Otomasyonu ile Çalışır",
+      "locationAmsterdam": "Amsterdam, Hollanda",
+      "locationIstanbul": "İstanbul, Türkiye",
+      "instagramAria": "Instagram'da Webimot (yeni sekmede açılır)",
+      "linkedinAria": "LinkedIn'de Webimot (yeni sekmede açılır)",
+      "legalAria": "Yasal"
+    },
+    "breadcrumbs": {
+      "ariaLabel": "İçerik haritası",
+      "home": "Ana Sayfa"
+    },
+    "cookies": {
+      "ariaLabel": "Çerez onayı",
+      "textBefore": "Ziyaretçilerin bu siteyi nasıl kullandığını anlamak ve siteyi geliştirmek için Google Analytics çerezleri kullanıyoruz. Pazarlama çerezi kullanılmaz. Ayrıntılar için",
+      "privacyLink": "gizlilik politikamıza",
+      "textAfter": " göz atın.",
+      "decline": "Reddet",
+      "accept": "Analitiği kabul et"
+    },
+    "exitPopup": {
+      "closeAria": "Pencereyi kapat",
+      "descBefore": "Hemen ",
+      "descStrong": "ücretsiz yapay zekâ analizi",
+      "descAfter": " alın ve daha fazla potansiyel müşteri kazanmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez."
+    },
+    "productCard": {
+      "flagship": "Amiral Ürün",
+      "explore": "{{title}} ürününü keşfedin"
+    },
+    "errorBoundary": {
+      "title": "Bir şeyler ters gitti",
+      "message": "Üzgünüz, beklenmedik bir sorun oluştu. Lütfen sayfayı yenileyin veya ana sayfaya dönün.",
+      "tryAgain": "Tekrar Deneyin",
+      "goHome": "Ana Sayfaya Git"
+    },
+    "close": "Kapat"
+  }
+}

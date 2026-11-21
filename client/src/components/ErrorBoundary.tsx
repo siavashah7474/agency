@@ -2,6 +2,7 @@ import React, { Component, ErrorInfo, ReactNode } from "react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { AlertCircle, RefreshCw, Home } from "lucide-react";
 import { Link } from "wouter";
+import i18n from "i18next";
 
 interface Props {
   children: ReactNode;
@@ -48,9 +49,9 @@ export class ErrorBoundary extends Component<Props, State> {
             </div>
             
             <div>
-              <h1 className="mb-3 text-2xl font-bold text-slate-900 md:text-3xl">Something went wrong</h1>
+              <h1 className="mb-3 text-2xl font-bold text-slate-900 md:text-3xl">{i18n.t("shell.errorBoundary.title", "Something went wrong")}</h1>
               <p className="mx-auto mb-4 max-w-prose text-base leading-relaxed text-slate-600">
-                We're sorry, but something unexpected happened. Please try refreshing the page or return to the homepage.
+                {i18n.t("shell.errorBoundary.message", "We're sorry, but something unexpected happened. Please try refreshing the page or return to the homepage.")}
               </p>
               {process.env.NODE_ENV === "development" && this.state.error && (
                 <details className="mt-4 text-left">
@@ -68,11 +69,11 @@ export class ErrorBoundary extends Component<Props, State> {
             <div className="flex flex-col justify-center gap-3 sm:flex-row">
               <Button onClick={this.handleReset} variant="outline" size="lg">
                 <RefreshCw className="h-4 w-4" aria-hidden="true" />
-                Try Again
+                {i18n.t("shell.errorBoundary.tryAgain", "Try Again")}
               </Button>
               <Link href="/" className={buttonVariants({ size: "lg" })}>
                 <Home className="h-4 w-4" aria-hidden="true" />
-                Go Home
+                {i18n.t("shell.errorBoundary.goHome", "Go Home")}
               </Link>
             </div>
           </div>

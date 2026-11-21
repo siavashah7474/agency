@@ -4,8 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Calendar, Clock, Video } from "lucide-react";
 import SEO from "@/components/SEO";
+import { useTranslation } from "react-i18next";
 
 export default function BookConsultation() {
+  const { t } = useTranslation();
   const benefits = [
     "Free 30-minute strategy session",
     "Personalized AI automation roadmap",
@@ -13,7 +15,7 @@ export default function BookConsultation() {
     "No obligation or pressure",
     "Practical advice from our team",
     "Actionable next steps",
-  ];
+  ].map((b, i) => t(`bookConsultationPage.benefits.${i}`, b));
 
   const process = [
     {
@@ -33,7 +35,11 @@ export default function BookConsultation() {
       title: "Get Your Plan",
       description: "Receive a customized strategy for automating your business",
     },
-  ];
+  ].map((step, i) => ({
+    ...step,
+    title: t(`bookConsultationPage.process.${i}.title`, step.title),
+    description: t(`bookConsultationPage.process.${i}.description`, step.description),
+  }));
 
   return (
     <>
@@ -53,11 +59,10 @@ export default function BookConsultation() {
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="container mx-auto px-6 text-center text-white relative z-10">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Book Your Free Strategy Call
+                {t("bookConsultationPage.hero.title", "Book Your Free Strategy Call")}
               </h1>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                Let's discuss how AI automation can transform your business
-                operations and drive growth
+                {t("bookConsultationPage.hero.subtitle", "Let's discuss how AI automation can transform your business operations and drive growth")}
               </p>
             </div>
           </section>
@@ -66,11 +71,9 @@ export default function BookConsultation() {
             <div className="container mx-auto px-6">
               <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
                 <div>
-                  <h2 className="text-3xl font-bold mb-6">What to Expect</h2>
+                  <h2 className="text-3xl font-bold mb-6">{t("bookConsultationPage.expect.title", "What to Expect")}</h2>
                   <p className="text-lg text-muted-foreground mb-6">
-                    In this free 30-minute strategy session, we'll analyze your
-                    current operations and show you exactly how AI automation
-                    can help you:
+                    {t("bookConsultationPage.expect.intro", "In this free 30-minute strategy session, we'll analyze your current operations and show you exactly how AI automation can help you:")}
                   </p>
                   <ul className="space-y-3 mb-8">
                     {benefits.map((benefit, index) => (
@@ -86,18 +89,18 @@ export default function BookConsultation() {
                       <div className="flex items-start gap-3 mb-4">
                         <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                         <div>
-                          <h3 className="font-semibold mb-1">Duration</h3>
+                          <h3 className="font-semibold mb-1">{t("bookConsultationPage.details.duration", "Duration")}</h3>
                           <p className="text-sm text-muted-foreground">
-                            30 minutes
+                            {t("bookConsultationPage.details.durationValue", "30 minutes")}
                           </p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <Video className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                         <div>
-                          <h3 className="font-semibold mb-1">Format</h3>
+                          <h3 className="font-semibold mb-1">{t("bookConsultationPage.details.format", "Format")}</h3>
                           <p className="text-sm text-muted-foreground">
-                            Video call (Zoom, Google Meet, or WhatsApp)
+                            {t("bookConsultationPage.details.formatValue", "Video call (Zoom, Google Meet, or WhatsApp)")}
                           </p>
                         </div>
                       </div>
@@ -108,7 +111,7 @@ export default function BookConsultation() {
                 <div>
                   <Card>
                     <CardHeader>
-                      <CardTitle>How It Works</CardTitle>
+                      <CardTitle>{t("bookConsultationPage.process.title", "How It Works")}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       {process.map((step, index) => (
@@ -132,12 +135,10 @@ export default function BookConsultation() {
                   <Card className="mt-6 bg-primary text-primary-foreground">
                     <CardContent className="pt-6">
                       <h3 className="font-semibold text-lg mb-3">
-                        Ready to Get Started?
+                        {t("bookConsultationPage.cta.title", "Ready to Get Started?")}
                       </h3>
                       <p className="text-sm mb-6 opacity-90">
-                        Click below to message our team on WhatsApp. We'll
-                        reply with a few time slots and confirm the details
-                        once you pick one.
+                        {t("bookConsultationPage.cta.text", "Click below to message our team on WhatsApp. We'll reply with a few time slots and confirm the details once you pick one.")}
                       </p>
                       <a
                         href="https://wa.me/31628753175?text=Hi%2C%20I%20want%20to%20book%20a%20free%20strategy%20call"
@@ -150,11 +151,11 @@ export default function BookConsultation() {
                           className="w-full bg-white text-primary hover:bg-white/90"
                           size="lg"
                         >
-                          Book Your Free Call Now
+                          {t("bookConsultationPage.cta.button", "Book Your Free Call Now")}
                         </Button>
                       </a>
                       <p className="text-xs text-center mt-4 opacity-75">
-                        No credit card required • No obligation
+                        {t("bookConsultationPage.cta.note", "No credit card required • No obligation")}
                       </p>
                     </CardContent>
                   </Card>
@@ -167,56 +168,49 @@ export default function BookConsultation() {
             <div className="container mx-auto px-6">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Still Have Questions?
+                  {t("bookConsultationPage.faq.title", "Still Have Questions?")}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Not sure if a strategy call is right for you? Here are some
-                  common questions:
+                  {t("bookConsultationPage.faq.intro", "Not sure if a strategy call is right for you? Here are some common questions:")}
                 </p>
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   <Card>
                     <CardContent className="pt-6">
                       <h3 className="font-semibold mb-2">
-                        Is this really free?
+                        {t("bookConsultationPage.faq.items.0.question", "Is this really free?")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Yes, absolutely. No credit card required, no strings
-                        attached. We genuinely want to help you understand how
-                        AI can benefit your business.
+                        {t("bookConsultationPage.faq.items.0.answer", "Yes, absolutely. No credit card required, no strings attached. We genuinely want to help you understand how AI can benefit your business.")}
                       </p>
                     </CardContent>
                   </Card>
                   <Card>
                     <CardContent className="pt-6">
                       <h3 className="font-semibold mb-2">
-                        Will you pressure me to buy?
+                        {t("bookConsultationPage.faq.items.1.question", "Will you pressure me to buy?")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Never. Our goal is to provide value and help you make an
-                        informed decision. If our solutions aren't a good fit,
-                        we'll tell you honestly.
+                        {t("bookConsultationPage.faq.items.1.answer", "Never. Our goal is to provide value and help you make an informed decision. If our solutions aren't a good fit, we'll tell you honestly.")}
                       </p>
                     </CardContent>
                   </Card>
                   <Card>
                     <CardContent className="pt-6">
                       <h3 className="font-semibold mb-2">
-                        What if I'm not ready to commit?
+                        {t("bookConsultationPage.faq.items.2.question", "What if I'm not ready to commit?")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        That's perfectly fine! Take the strategy call, think it
-                        over, and come back when you're ready. There's no rush.
+                        {t("bookConsultationPage.faq.items.2.answer", "That's perfectly fine! Take the strategy call, think it over, and come back when you're ready. There's no rush.")}
                       </p>
                     </CardContent>
                   </Card>
                   <Card>
                     <CardContent className="pt-6">
                       <h3 className="font-semibold mb-2">
-                        Can I reschedule if needed?
+                        {t("bookConsultationPage.faq.items.3.question", "Can I reschedule if needed?")}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Of course! Life happens. Just message us on WhatsApp
-                        and we'll move your call to a time that works.
+                        {t("bookConsultationPage.faq.items.3.answer", "Of course! Life happens. Just message us on WhatsApp and we'll move your call to a time that works.")}
                       </p>
                     </CardContent>
                   </Card>

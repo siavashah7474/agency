@@ -1,9 +1,16 @@
 import ProductPageLayout from "@/components/ProductPageLayout";
-import { foundingOfferSentence } from "@/data/foundingOffer";
+import { FOUNDING_OFFER, foundingOfferSentence } from "@/data/foundingOffer";
 
 export default function WhatsAppAIPage() {
   return (
     <ProductPageLayout
+      contentKey="whatsappAi"
+      // Used by the Turkish founding-offer line (pricingNote.lines.1); Turkish writes €1.399, not €1,399.
+      contentValues={{
+        setupFee: FOUNDING_OFFER.setupFee.replace(/,/g, "."),
+        spotsLeft: FOUNDING_OFFER.spotsLeft,
+        spotsTotal: FOUNDING_OFFER.spotsTotal,
+      }}
       system="capture"
       seoTitle="WhatsApp AI Agent | Answers Every Lead 24/7"
       seoDescription="Our clinic AI system handles every WhatsApp message 24/7 — qualifying leads, evaluating photos, and booking appointments automatically. A medical tourism AI system built for hair transplant, dental, and cosmetic clinics."

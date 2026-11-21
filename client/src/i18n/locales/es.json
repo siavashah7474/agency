@@ -10,7 +10,11 @@
     "blog": "Blog",
     "contact": "Contacto",
     "bookCall": "Reservar Llamada",
-    "ads": "Anuncios"
+    "ads": "Anuncios",
+    "systems": "Sistemas",
+    "clinics": "Clínicas",
+    "smallBusiness": "Pequeñas empresas",
+    "bookDemo": "Reservar una demo"
   },
   "footer": {
     "tagline": "Marketing Inteligente. Automatización Inteligente.",
@@ -25,7 +29,11 @@
     "whatsappUs": "WhatsApp",
     "privacyPolicy": "Política de Privacidad",
     "termsOfService": "Términos de Servicio",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "systems": "Sistemas",
+    "allSystems": "Todos los sistemas",
+    "products": "Productos",
+    "whoWeHelp": "A quién ayudamos"
   },
   "common": {
     "bookFreeStrategyCall": "Reserva Tu Llamada Estratégica Gratis",

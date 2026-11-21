@@ -94,7 +94,7 @@ export default function Navigation() {
   return (
     <>
       <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:shadow-lg">
-        Skip to main content
+        {t("shell.nav.skipToContent", "Skip to main content")}
       </a>
       <header
         className={`sticky top-0 z-50 w-full border-b bg-background/85 backdrop-blur-md supports-[backdrop-filter]:bg-background/75 transition-[border-color,box-shadow] duration-300 ${
@@ -103,14 +103,14 @@ export default function Navigation() {
       >
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex h-16 items-center justify-between gap-4">
-            <Link href="/" className={`flex items-center gap-2 rounded-md ${focusRing}`} aria-label="Webimot home">
+            <Link href="/" className={`flex items-center gap-2 rounded-md ${focusRing}`} aria-label={t("shell.nav.homeAria", "Webimot home")}>
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-secondary" aria-hidden="true">
                 <span className="text-lg font-bold text-white">W</span>
               </div>
               <span className="text-xl font-bold tracking-tight text-slate-900">Webimot</span>
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-1" aria-label="Main">
+            <nav className="hidden lg:flex items-center gap-1" aria-label={t("shell.nav.mainAria", "Main")}>
               {navLinks.map((link) => {
                 const active = isActive(link.href);
                 return (
@@ -137,13 +137,13 @@ export default function Navigation() {
                   type="button"
                   onClick={() => setLangMenuOpen(!langMenuOpen)}
                   className={`inline-flex min-h-10 items-center gap-1.5 rounded-md px-2.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 ${focusRing}`}
-                  aria-label="Change language" aria-haspopup="listbox" aria-expanded={langMenuOpen}
+                  aria-label={t("shell.nav.changeLanguage", "Change language")} aria-haspopup="listbox" aria-expanded={langMenuOpen}
                 >
                   <Globe className="h-4 w-4" aria-hidden="true" /><span>{currentLang.label}</span>
                   <ChevronDown className={`h-3.5 w-3.5 transition-transform ${langMenuOpen ? "rotate-180" : ""}`} aria-hidden="true" />
                 </button>
                 {langMenuOpen && (
-                  <div role="listbox" aria-label="Select language" className="absolute right-0 top-full z-50 mt-2 w-44 overflow-hidden rounded-xl border border-slate-200 bg-white p-1 shadow-lg">
+                  <div role="listbox" aria-label={t("shell.nav.selectLanguage", "Select language")} className="absolute right-0 top-full z-50 mt-2 w-44 overflow-hidden rounded-xl border border-slate-200 bg-white p-1 shadow-lg">
                     {LANGUAGES.map((lang) => {
                       const selected = i18n.language === lang.code;
                       return (
@@ -171,7 +171,7 @@ export default function Navigation() {
               data-testid="button-mobile-menu"
               className={`lg:hidden -mr-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"} aria-expanded={mobileMenuOpen} aria-controls="mobile-menu"
+              aria-label={mobileMenuOpen ? t("shell.nav.closeMenu", "Close menu") : t("shell.nav.openMenu", "Open menu")} aria-expanded={mobileMenuOpen} aria-controls="mobile-menu"
             >
               {mobileMenuOpen ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
             </button>
@@ -183,7 +183,7 @@ export default function Navigation() {
       {/* Rendered outside <header>: backdrop-filter on the header would otherwise become the containing block for this fixed panel */}
         {mobileMenuOpen && (
           <div id="mobile-menu" className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-slate-200 bg-background">
-            <nav className="container mx-auto flex flex-col px-4 py-4 sm:px-6" aria-label="Main">
+            <nav className="container mx-auto flex flex-col px-4 py-4 sm:px-6" aria-label={t("shell.nav.mainAria", "Main")}>
               {navLinks.map((link) => {
                 const active = isActive(link.href);
                 return (
@@ -205,9 +205,9 @@ export default function Navigation() {
 
               <div className="mt-4 border-t border-slate-200 pt-4">
                 <div className="mb-2 flex items-center gap-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-500">
-                  <Globe className="h-4 w-4" aria-hidden="true" /> Language
+                  <Globe className="h-4 w-4" aria-hidden="true" /> {t("shell.nav.language", "Language")}
                 </div>
-                <div className="grid grid-cols-4 gap-2" role="listbox" aria-label="Select language">
+                <div className="grid grid-cols-4 gap-2" role="listbox" aria-label={t("shell.nav.selectLanguage", "Select language")}>
                   {LANGUAGES.map((lang) => {
                     const selected = i18n.language === lang.code;
                     return (

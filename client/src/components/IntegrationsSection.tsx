@@ -13,6 +13,7 @@ import {
 } from "react-icons/si";
 import type { IconType } from "react-icons";
 import { SectionHeader } from "@/components/SectionEyebrow";
+import { useTranslation } from "react-i18next";
 
 const tools: { name: string; icon: IconType; color: string }[] = [
   { name: "WhatsApp Business", icon: SiWhatsapp, color: "#25D366" },
@@ -29,18 +30,19 @@ const tools: { name: string; icon: IconType; color: string }[] = [
 ];
 
 export default function IntegrationsSection() {
+  const { t } = useTranslation();
   return (
     <section className="bg-white py-16 md:py-24 dark:bg-[#020817]" aria-labelledby="integrations-heading">
       <div className="container mx-auto px-6">
         <SectionHeader
           id="integrations-heading"
-          eyebrow="Integrations"
-          title="Built to connect to the tools you already use."
-          lead="These are tools our systems can connect to, so leads, bookings and reports can go straight into your CRM, calendar or spreadsheet."
+          eyebrow={t("homePage.integrations.eyebrow", "Integrations")}
+          title={t("homePage.integrations.title", "Built to connect to the tools you already use.")}
+          lead={t("homePage.integrations.lead", "These are tools our systems can connect to, so leads, bookings and reports can go straight into your CRM, calendar or spreadsheet.")}
           className="mb-10"
         />
 
-        <ul className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3" aria-label="Tools the systems can connect to">
+        <ul className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3" aria-label={t("homePage.integrations.listAria", "Tools the systems can connect to")}>
           {tools.map(({ name, icon: Icon, color }) => (
             <li
               key={name}
@@ -51,7 +53,7 @@ export default function IntegrationsSection() {
             </li>
           ))}
         </ul>
-        <p className="mt-6 text-center text-sm text-slate-600 dark:text-white/50">Other business tools can be connected through their APIs.</p>
+        <p className="mt-6 text-center text-sm text-slate-600 dark:text-white/50">{t("homePage.integrations.note", "Other business tools can be connected through their APIs.")}</p>
       </div>
     </section>
   );

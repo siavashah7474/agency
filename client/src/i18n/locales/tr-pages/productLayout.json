@@ -1,0 +1,49 @@
+{
+  "productLayout": {
+    "parent": {
+      "partBefore": "",
+      "partAfter": "bir parçası",
+      "addOnBefore": "",
+      "addOnAfter": "besleyen eklenti"
+    },
+    "systems": {
+      "capture": { "name": "Yakalama sistemi", "part": "Yakalama sisteminin", "addOn": "Yakalama sistemini" },
+      "convert": { "name": "Takip sistemi", "part": "Takip sisteminin", "addOn": "Takip sistemini" },
+      "operate": { "name": "Operasyon sistemi", "part": "Operasyon sisteminin", "addOn": "Operasyon sistemini" },
+      "measure": { "name": "Raporlama sistemi", "part": "Raporlama sisteminin", "addOn": "Raporlama sistemini" }
+    },
+    "breadcrumb": "İçerik yolu: Sistemler, {{system}}, {{product}}",
+    "hero": {
+      "bookCall": "Ücretsiz Strateji Görüşmesi Yapın",
+      "seePricing": "Fiyatları Görün"
+    },
+    "problem": {
+      "badge": "Sorun",
+      "title": "Çoğu işletmenin görmezden geldiği sorun"
+    },
+    "howItWorks": {
+      "badge": "Nasıl Çalışır",
+      "title": "{{name}} nasıl çalışır"
+    },
+    "scenario": {
+      "badge": "Örnek senaryo",
+      "disclaimer": "Örnek senaryo. Açıklama amaçlıdır, bir müşteri sonucu değildir."
+    },
+    "features": {
+      "badge": "Özellikler",
+      "title": "Her şey dahil"
+    },
+    "whoItsFor": {
+      "title": "Sizin gibi işletmeler için tasarlandı"
+    },
+    "pricing": {
+      "title": "Basit, şeffaf fiyatlandırma",
+      "note": "Fiyatlandırma; işletmenizin büyüklüğüne, kullandığınız araçlara ve otomasyonun karmaşıklığına göre belirlenir. Her müşteriye, ücretsiz 30 dakikalık yapay zekâ analizinin ardından özel bir teklif sunuyoruz. Sürpriz yok.",
+      "cta": "Ücretsiz Analizinizi Planlayın"
+    },
+    "cta": {
+      "subtitle": "Ücretsiz 30 dakikalık bir strateji görüşmesi planlayın. {{name}} çözümünün işletmenizde tam olarak nasıl çalışacağını size gösterelim.",
+      "button": "Ücretsiz Strateji Görüşmenizi Planlayın"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "systemsPage": {
+    "breadcrumb": "Sistemler",
+    "hero": {
+      "eyebrow": "Ne kuruyoruz",
+      "title": "Günlük işlerinizi yürüten dört sistem.",
+      "contact": "Bize ulaşın"
+    },
+    "auditCta": "Ücretsiz yapay zekâ analizi alın",
+    "learnMore": "Daha fazla bilgi",
+    "jumpAria": "Bu sayfadaki sistemler",
+    "jumpLabels": {
+      "capture": "Yakalama",
+      "convert": "Takip",
+      "operate": "Operasyon",
+      "measure": "Raporlama"
+    },
+    "replaces": "Yerini aldığı iş:",
+    "productsInSystem": "Bu sistemdeki ürünler",
+    "addOns": {
+      "eyebrow": "Ek hizmetler",
+      "title": "Akışı besleyen ek hizmetler",
+      "lead": "Yakalama sistemine daha fazla talep. Yalnızca yukarıdaki sistemlerle birlikte sunulur; böylece getirdikleri her potansiyel müşteri yanıtlanır ve takip edilir."
+    },
+    "howWeWork": {
+      "eyebrow": "Nasıl çalışıyoruz",
+      "title": "Analiz, kurulum, yönetim",
+      "lead": "Uzun projeler yok. Kendini en hızlı amorti eden sistemle başlıyor, o çalışmaya başlayınca bir sonrakini ekliyoruz.",
+      "steps": [
+        {
+          "title": "3 günde ücretsiz yapay zekâ analizi",
+          "description": "Taleplerin, takibin, evrak işlerinin ve raporlamanın bugün nasıl yürüdüğünü çıkarıyor ve ilk olarak yapılmaya değer bulduğumuz beş otomasyonu size sunuyoruz."
+        },
+        {
+          "title": "2–4 haftada kurulum ve devreye alma",
+          "description": "WhatsApp numaranızı, takviminizi, CRM'inizi ve belgelerinizi bağlıyor, yapay zekâyı hizmetlerinize göre eğitiyor ve sistemleri tek tek yayına alıyoruz."
+        },
+        {
+          "title": "Aylık yönetim",
+          "description": "Rakamları izliyor, işletmeniz değiştikçe yapay zekâyı ayarlıyor ve her ay yeni otomasyonlar ekliyoruz. Her hafta bir rapor alırsınız."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Hangi sistemle başlayacağınızdan emin değil misiniz?",
+      "text": "Ücretsiz yapay zekâ analizi alın. 3 gün içinde işletmeniz için ilk olarak yapılmaya değer bulduğumuz beş otomasyonu ve ilkini 2–4 haftada devreye almak için bir plan alırsınız."
+    }
+  }
+}

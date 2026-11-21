@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { isPrerendering } from "@/lib/prerender";
+import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   BarChart3,
@@ -45,6 +46,7 @@ function position(i: number) {
 }
 
 export default function AIOpsHub() {
+  const { t } = useTranslation();
   const reduceMotion = useReducedMotion();
   const animate = !reduceMotion && !isPrerendering;
   const [step, setStep] = useState(0);
@@ -65,21 +67,28 @@ export default function AIOpsHub() {
   }, [animate]);
 
   const active = step % areas.length;
-  const feed = [0, 1, 2].map((back) => areas[(step - back + areas.length * 3) % areas.length]);
+  const localAreas = areas.map((a, i) => ({
+    ...a,
+    label: t(`homePage.opsHub.areas.${i}.label`, a.label),
+    incoming: t(`homePage.opsHub.areas.${i}.incoming`, a.incoming),
+    task: t(`homePage.opsHub.areas.${i}.task`, a.task),
+    result: t(`homePage.opsHub.areas.${i}.result`, a.result),
+  }));
+  const feed = [0, 1, 2].map((back) => localAreas[(step - back + areas.length * 3) % areas.length]);
   const target = position(active);
 
   return (
-    <div className="relative" role="img" aria-label="Illustration: one AI core connected to sales, documents, reporting, support, team operations and content, with an example feed of automated tasks">
+    <div className="relative" role="img" aria-label={t("homePage.opsHub.ariaLabel", "Illustration: one AI core connected to sales, documents, reporting, support, team operations and content, with an example feed of automated tasks")}>
       <div className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-secondary/20 via-accent/10 to-transparent blur-2xl" aria-hidden="true" />
 
       <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-2xl shadow-slate-900/10 backdrop-blur dark:border-white/10 dark:bg-slate-900/80 dark:shadow-black/40">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <div className="font-semibold text-slate-900 dark:text-white">Your business, on autopilot</div>
-            <div className="text-xs text-slate-600 dark:text-white/50">One AI layer across every department</div>
+            <div className="font-semibold text-slate-900 dark:text-white">{t("homePage.opsHub.title", "Your business, on autopilot")}</div>
+            <div className="text-xs text-slate-600 dark:text-white/50">{t("homePage.opsHub.subtitle", "One AI layer across every department")}</div>
           </div>
           <span className="flex-shrink-0 rounded-full border border-slate-200 px-2.5 py-1 text-[11px] font-medium text-slate-600 dark:border-white/10 dark:text-white/50">
-            Illustration
+            {t("homePage.opsHub.badge", "Illustration")}
           </span>
         </div>
 
@@ -141,12 +150,12 @@ export default function AIOpsHub() {
               transition={{ type: "spring", stiffness: 260, damping: 18 }}
             >
               <Cpu className={`h-6 w-6 sm:h-7 sm:w-7 ${animate && thinking ? "animate-spin" : ""}`} style={{ animationDuration: "3s" }} />
-              <span className="mt-0.5 text-[11px] font-semibold tracking-wide">{animate && thinking ? "Working" : "AI core"}</span>
+              <span className="mt-0.5 text-[11px] font-semibold tracking-wide">{animate && thinking ? t("homePage.opsHub.working", "Working") : t("homePage.opsHub.core", "AI core")}</span>
             </motion.div>
           </div>
 
           {/* Departments */}
-          {areas.map((area, i) => {
+          {localAreas.map((area, i) => {
             const { x, y } = position(i);
             const isActive = i === active;
             const Icon = area.icon;
@@ -188,7 +197,7 @@ export default function AIOpsHub() {
         {/* Activity feed */}
         <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-3 dark:border-white/10 dark:bg-white/[0.03]">
           <div className="mb-2 flex items-center gap-2 px-1 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-600 dark:text-white/40">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> Example tasks
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" /> {t("homePage.opsHub.feedTitle", "Example tasks")}
           </div>
           <ul className="space-y-1.5" aria-live="off">
             <AnimatePresence initial={false} mode="popLayout">
@@ -221,7 +230,7 @@ export default function AIOpsHub() {
                       {incoming ? item.incoming : item.task}
                     </span>
                     <span className="hidden flex-shrink-0 text-[11px] text-slate-600 sm:inline dark:text-white/40">
-                      {incoming ? "Working…" : item.result}
+                      {incoming ? t("homePage.opsHub.workingDots", "Working…") : item.result}
                     </span>
                   </motion.li>
                 );

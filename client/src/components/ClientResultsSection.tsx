@@ -27,12 +27,12 @@ export default function ClientResultsSection() {
                 {t("ourWork.projectLabel", "Work by our founder")}
               </p>
               <h3 className="mb-3 text-xl font-bold text-slate-900 md:text-2xl">{study.client}</h3>
-              <p className="mb-5 leading-relaxed text-slate-600">{study.summary}</p>
+              <p className="mb-5 leading-relaxed text-slate-600">{t(`homePage.clientWork.${study.slug}.summary`, study.summary)}</p>
               <ul className="mb-6 grid flex-1 content-start gap-3 sm:grid-cols-2">
-                {study.workDone.map((item) => (
+                {study.workDone.map((item, i) => (
                   <li key={item.title} className="flex items-start gap-2 text-sm text-slate-700">
                     <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" aria-hidden="true" />
-                    <span>{item.title}</span>
+                    <span>{t(`homePage.clientWork.${study.slug}.workDone.${i}`, item.title)}</span>
                   </li>
                 ))}
               </ul>

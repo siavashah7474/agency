@@ -11,7 +11,7 @@ export default function FounderSection() {
         <div className="surface-card grid items-center gap-8 p-6 md:grid-cols-[240px_1fr] md:gap-10 md:p-10">
           <img
             src="/sia-ahmadi.jpg"
-            alt="Sia Ahmadi, founder of Webimot Agency"
+            alt={t("homePage.founder.imageAlt", "Sia Ahmadi, founder of Webimot Agency")}
             width={1200}
             height={1600}
             loading="lazy"

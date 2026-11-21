@@ -7,17 +7,21 @@ import { SiWhatsapp } from "react-icons/si";
 import { Link } from "wouter";
 import { chatbotConfig, calculateRecommendations, type ServiceRecommendation } from "@/data/chatbotConfig";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface Message {
   id: string;
   type: "bot" | "user";
   content: string;
+  // Translation key for content; messages are translated when rendered so a language switch updates them.
+  contentKey?: string;
   options?: { label: string; value: string }[];
   recommendations?: ServiceRecommendation[];
   showWhatsApp?: boolean;
 }
 
 export default function Chatbot() {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -79,7 +83,8 @@ export default function Chatbot() {
         {
           id: "welcome",
           type: "bot",
-          content: chatbotConfig.welcomeMessage
+          content: chatbotConfig.welcomeMessage,
+          contentKey: "chatbot.welcomeMessage"
         }
       ]);
       
@@ -106,6 +111,7 @@ export default function Chatbot() {
           id: `q-${question.id}`,
           type: "bot",
           content: question.question,
+          contentKey: `chatbot.questions.${question.id}.question`,
           options: question.options.map(opt => ({ label: opt.label, value: opt.value }))
         }
       ]);
@@ -124,7 +130,8 @@ export default function Chatbot() {
       {
         id: `a-${question.id}`,
         type: "user",
-        content: selectedOption.label
+        content: selectedOption.label,
+        contentKey: `chatbot.questions.${question.id}.options.${selectedOption.value}`
       }
     ]);
 
@@ -152,7 +159,8 @@ export default function Chatbot() {
         {
           id: "closing",
           type: "bot",
-          content: chatbotConfig.closingMessage
+          content: chatbotConfig.closingMessage,
+          contentKey: "chatbot.closingMessage"
         }
       ]);
 
@@ -163,6 +171,7 @@ export default function Chatbot() {
             id: "recommendations",
             type: "bot",
             content: "Here are my top recommendations for you:",
+            contentKey: "chatbot.recommendationsIntro",
             recommendations: recommendations
           }
         ]);
@@ -174,6 +183,7 @@ export default function Chatbot() {
               id: "whatsapp",
               type: "bot",
               content: "Ready to take the next step? Connect with our team for a free strategy consultation!",
+              contentKey: "chatbot.nextStep",
               showWhatsApp: true
             }
           ]);
@@ -200,7 +210,7 @@ export default function Chatbot() {
 
   const getWhatsAppLink = () => {
     const message = encodeURIComponent(
-      `${chatbotConfig.whatsappMessage}\n\nMy interests: ${selectedTags.slice(0, 5).join(", ")}`
+      `${t("chatbot.whatsappMessage", chatbotConfig.whatsappMessage)}\n\n${t("chatbot.myInterests", "My interests:")} ${selectedTags.slice(0, 5).join(", ")}`
     );
     return `https://wa.me/${chatbotConfig.whatsappNumber}?text=${message}`;
   };
@@ -225,7 +235,7 @@ export default function Chatbot() {
                     </div>
                     <div>
                       <h3 className="font-semibold">{chatbotConfig.agentName}</h3>
-                      <p className="text-xs text-white/80">{chatbotConfig.companyName} Assistant</p>
+                      <p className="text-xs text-white/80">{t("chatbot.assistant", "{{company}} Assistant", { company: chatbotConfig.companyName })}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
@@ -237,7 +247,7 @@ export default function Chatbot() {
                         onClick={resetChat}
                         data-testid="button-restart-chat"
                       >
-                        Restart
+                        {t("chatbot.restart", "Restart")}
                       </Button>
                     )}
                     <Button
@@ -245,7 +255,7 @@ export default function Chatbot() {
                       variant="ghost"
                       className="text-white hover:bg-white/20 h-8 w-8"
                       onClick={handleClose}
-                      aria-label="Close chat"
+                      aria-label={t("chatbot.closeChat", "Close chat")}
                       data-testid="button-close-chat"
                     >
                       <X className="h-5 w-5" />
@@ -260,16 +270,16 @@ export default function Chatbot() {
                     <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
                       <MessageCircle className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">Find Your Perfect Solution</h3>
+                    <h3 className="text-lg font-semibold mb-2">{t("chatbot.intro.title", "Find Your Perfect Solution")}</h3>
                     <p className="text-muted-foreground text-sm mb-6">
-                      Answer a few quick questions and I'll recommend the best marketing solutions for your business.
+                      {t("chatbot.intro.text", "Answer a few quick questions and I'll recommend the best marketing solutions for your business.")}
                     </p>
                     <Button
                       onClick={startChat}
                       className="gap-2"
                       data-testid="button-start-chat"
                     >
-                      Let's Get Started
+                      {t("chatbot.intro.start", "Let's Get Started")}
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </div>
@@ -293,13 +303,13 @@ export default function Chatbot() {
                                 <Bot className="h-4 w-4 text-white" />
                               </div>
                               <div className="bg-card border rounded-2xl rounded-tl-md px-4 py-2 shadow-sm">
-                                <p className="text-sm">{message.content}</p>
+                                <p className="text-sm">{message.contentKey ? t(message.contentKey, message.content) : message.content}</p>
                               </div>
                             </div>
                           )}
                           
                           {message.type === "user" && (
-                            <p className="text-sm">{message.content}</p>
+                            <p className="text-sm">{message.contentKey ? t(message.contentKey, message.content) : message.content}</p>
                           )}
 
                           {message.options && (
@@ -317,7 +327,7 @@ export default function Chatbot() {
                                     disabled={isAnswered}
                                     data-testid={`button-option-${option.value}`}
                                   >
-                                    {option.label}
+                                    {t(`chatbot.questions.${questionId}.options.${option.value}`, option.label)}
                                   </Button>
                                 );
                               })}
@@ -331,13 +341,13 @@ export default function Chatbot() {
                                   <Card className="p-3 hover-elevate cursor-pointer">
                                     <div className="flex items-start justify-between gap-2">
                                       <div>
-                                        <h4 className="font-medium text-sm">{rec.serviceName}</h4>
-                                        <p className="text-xs text-muted-foreground mt-1">{rec.description}</p>
+                                        <h4 className="font-medium text-sm">{t(`chatbot.recommendations.${rec.serviceSlug}.serviceName`, rec.serviceName)}</h4>
+                                        <p className="text-xs text-muted-foreground mt-1">{t(`chatbot.recommendations.${rec.serviceSlug}.description`, rec.description)}</p>
                                       </div>
                                       <ExternalLink className="h-4 w-4 text-muted-foreground flex-shrink-0" />
                                     </div>
                                     <Badge variant="secondary" className="mt-2 text-xs">
-                                      {Math.round((rec.matchScore / 5) * 100)}% match
+                                      {t("chatbot.match", "{{percent}}% match", { percent: Math.round((rec.matchScore / 5) * 100) })}
                                     </Badge>
                                   </Card>
                                 </Link>
@@ -355,11 +365,11 @@ export default function Chatbot() {
                               >
                                 <Button className="w-full gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white" data-testid="button-whatsapp-connect">
                                   <SiWhatsapp className="h-5 w-5" />
-                                  {chatbotConfig.ctaText}
+                                  {t("chatbot.ctaText", chatbotConfig.ctaText)}
                                 </Button>
                               </a>
                               <p className="text-xs text-muted-foreground text-center mt-2">
-                                Free consultation • No obligation
+                                {t("chatbot.ctaNote", "Free consultation • No obligation")}
                               </p>
                             </div>
                           )}
@@ -398,7 +408,7 @@ export default function Chatbot() {
         }`}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        aria-label={isOpen ? "Close chat" : "Open chat"}
+        aria-label={isOpen ? t("chatbot.closeChat", "Close chat") : t("chatbot.openChat", "Open chat")}
         data-testid="button-toggle-chatbot"
       >
         {isOpen ? (
@@ -414,7 +424,7 @@ export default function Chatbot() {
           animate={{ opacity: 1, x: 0 }}
           className="fixed bottom-8 right-24 z-40 hidden sm:block bg-card border shadow-lg rounded-lg px-4 py-2 max-w-[200px]"
         >
-          <p className="text-sm">Need help? Chat with us!</p>
+          <p className="text-sm">{t("chatbot.teaser", "Need help? Chat with us!")}</p>
           <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-b-8 border-l-8 border-transparent border-l-card"></div>
         </motion.div>
       )}

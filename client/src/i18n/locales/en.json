@@ -10,7 +10,11 @@
     "blog": "Blog",
     "contact": "Contact",
     "bookCall": "Book Strategy Call",
-    "ads": "Ads"
+    "ads": "Ads",
+    "systems": "Systems",
+    "clinics": "Clinics",
+    "smallBusiness": "Small Business",
+    "bookDemo": "Book a demo"
   },
   "footer": {
     "tagline": "Amsterdam · Istanbul | AI Consulting & Automation",
@@ -25,7 +29,11 @@
     "whatsappUs": "WhatsApp Us",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "systems": "Systems",
+    "allSystems": "All systems",
+    "products": "Products",
+    "whoWeHelp": "Who we help"
   },
   "common": {
     "bookFreeStrategyCall": "Book Your Free Strategy Call",

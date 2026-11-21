@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 type Choice = "granted" | "denied";
 const STORAGE_KEY = "cookie-consent";
@@ -34,6 +35,7 @@ function applyChoice(choice: Choice) {
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (readChoice() === null) setVisible(true);
@@ -50,24 +52,23 @@ export default function CookieConsent() {
     <div
       role="dialog"
       aria-live="polite"
-      aria-label="Cookie consent"
+      aria-label={t("shell.cookies.ariaLabel", "Cookie consent")}
       className="fixed bottom-4 left-4 right-4 sm:left-6 sm:right-auto sm:max-w-md z-[90] rounded-xl border bg-background p-5 shadow-2xl"
       data-testid="cookie-consent"
     >
       <p className="text-sm text-muted-foreground mb-4">
-        We use Google Analytics cookies to understand how visitors use this site and improve it.
-        No marketing cookies are set. See our{" "}
+        {t("shell.cookies.textBefore", "We use Google Analytics cookies to understand how visitors use this site and improve it. No marketing cookies are set. See our")}{" "}
         <Link href="/privacy-policy" className="underline underline-offset-2 hover:text-foreground">
-          privacy policy
+          {t("shell.cookies.privacyLink", "privacy policy")}
         </Link>
-        .
+        {t("shell.cookies.textAfter", ".")}
       </p>
       <div className="flex flex-col-reverse sm:flex-row gap-2 sm:justify-end">
         <Button variant="outline" size="sm" onClick={() => decide("denied")} data-testid="button-cookies-decline">
-          Decline
+          {t("shell.cookies.decline", "Decline")}
         </Button>
         <Button size="sm" onClick={() => decide("granted")} data-testid="button-cookies-accept">
-          Accept analytics
+          {t("shell.cookies.accept", "Accept analytics")}
         </Button>
       </div>
     </div>

@@ -3,6 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function LeadFirePage() {
   return (
     <ProductPageLayout
+      contentKey="leadfire"
       system="capture"
       seoTitle="LeadFire | Contact every lead in under 60 seconds — Webimot Agency"
       seoDescription="Slow replies lose leads to faster competitors. LeadFire is built to reply in under 60 seconds, qualify each lead, and book calls automatically."

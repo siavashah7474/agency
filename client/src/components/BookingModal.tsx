@@ -15,7 +15,7 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
+  useFormField,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -29,17 +29,41 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { SYSTEMS } from "@/data/systemsData";
 import { trackEvent } from "@/components/GoogleAnalytics";
 
 // "Service of interest" options: the four systems, the add-ons, and an escape hatch.
 // Value and label are both readable names, so the lead email never shows a URL slug.
+// `key` only picks the translated label shown in the dropdown; value and label stay English.
 const serviceOptions = [
-  ...SYSTEMS.map((s) => ({ value: s.name, label: `${s.name} (${s.productLabel})` })),
-  { value: "Meta / Google Ads", label: "Meta / Google Ads" },
-  { value: "SEO add-on", label: "SEO add-on" },
-  { value: "Not sure — help me choose", label: "Not sure — help me choose" },
+  ...SYSTEMS.map((s) => ({ key: s.id as string, value: s.name, label: `${s.name} (${s.productLabel})` })),
+  { key: "ads", value: "Meta / Google Ads", label: "Meta / Google Ads" },
+  { key: "seo", value: "SEO add-on", label: "SEO add-on" },
+  { key: "notSure", value: "Not sure — help me choose", label: "Not sure — help me choose" },
 ];
+
+// Validation messages are written in English in the schema; this maps them to translation keys.
+const VALIDATION_KEYS: Record<string, string> = {
+  "Name must be at least 2 characters": "nameMin",
+  "Please enter a valid email address": "emailInvalid",
+  "Please enter a valid phone number, e.g. +31 6 1234 5678": "phoneInvalid",
+  "Please select a service": "serviceRequired",
+};
+
+// Same output as FormMessage, with the validation message translated.
+function FormMessage() {
+  const { t } = useTranslation();
+  const { error, formMessageId } = useFormField();
+  const message = error ? String(error.message ?? "") : "";
+  if (!message) return null;
+  const key = VALIDATION_KEYS[message];
+  return (
+    <p id={formMessageId} className="text-sm font-medium text-destructive">
+      {key ? t(`bookingModal.validation.${key}`, message) : message}
+    </p>
+  );
+}
 
 const bookingSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -70,6 +94,7 @@ export default function BookingModal({
   defaultService,
 }: BookingModalProps) {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<BookingFormValues>({
@@ -122,19 +147,19 @@ export default function BookingModal({
       trackEvent("form_submission", "booking", data.service);
 
       toast({
-        title: "Request received!",
-        description: "We've emailed you a confirmation and will reply within a few hours with available times for your call.",
+        title: t("bookingModal.toast.successTitle", "Request received!"),
+        description: t("bookingModal.toast.successDescription", "We've emailed you a confirmation and will reply within a few hours with available times for your call."),
       });
 
       form.reset();
       onOpenChange(false);
     } catch (error) {
       toast({
-        title: "Error",
+        title: t("bookingModal.toast.errorTitle", "Error"),
         description:
           error instanceof Error && error.message !== "Failed to submit booking"
             ? error.message
-            : "Something went wrong. Please try again or contact us directly.",
+            : t("bookingModal.toast.errorDescription", "Something went wrong. Please try again or contact us directly."),
         variant: "destructive",
       });
     } finally {
@@ -146,9 +171,9 @@ export default function BookingModal({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle>Book Your Free AI Audit</DialogTitle>
+          <DialogTitle>{t("bookingModal.title", "Book Your Free AI Audit")}</DialogTitle>
           <DialogDescription>
-            Fill in the form — we'll reply within a few hours with available times for your free 30-minute strategy call.
+            {t("bookingModal.description", "Fill in the form — we'll reply within a few hours with available times for your free 30-minute strategy call.")}
           </DialogDescription>
         </DialogHeader>
 
@@ -167,10 +192,10 @@ export default function BookingModal({
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name *</FormLabel>
+                  <FormLabel>{t("bookingModal.fields.name", "Name *")}</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="Your name"
+                      placeholder={t("bookingModal.fields.namePlaceholder", "Your name")}
                       {...field}
                       disabled={isSubmitting}
                     />
@@ -185,11 +210,11 @@ export default function BookingModal({
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email *</FormLabel>
+                  <FormLabel>{t("bookingModal.fields.email", "Email *")}</FormLabel>
                   <FormControl>
                     <Input
                       type="email"
-                      placeholder="you@company.com"
+                      placeholder={t("bookingModal.fields.emailPlaceholder", "you@company.com")}
                       {...field}
                       disabled={isSubmitting}
                     />
@@ -204,7 +229,7 @@ export default function BookingModal({
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Phone Number *</FormLabel>
+                  <FormLabel>{t("bookingModal.fields.phone", "Phone Number *")}</FormLabel>
                   <FormControl>
                     <Input
                       type="tel"
@@ -223,7 +248,7 @@ export default function BookingModal({
               name="service"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Service of interest *</FormLabel>
+                  <FormLabel>{t("bookingModal.fields.service", "Service of interest *")}</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     value={field.value}
@@ -231,13 +256,13 @@ export default function BookingModal({
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select a service" />
+                        <SelectValue placeholder={t("bookingModal.fields.servicePlaceholder", "Select a service")} />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
                       {serviceOptions.map((service) => (
                         <SelectItem key={service.value} value={service.value}>
-                          {service.label}
+                          {t(`bookingModal.services.${service.key}`, service.label)}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -252,10 +277,10 @@ export default function BookingModal({
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>What's your main challenge? <span className="text-muted-foreground font-normal">(optional)</span></FormLabel>
+                  <FormLabel>{t("bookingModal.fields.message", "What's your main challenge?")} <span className="text-muted-foreground font-normal">{t("bookingModal.fields.optional", "(optional)")}</span></FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="e.g. We get leads from Facebook Ads but respond too slowly and lose them to competitors..."
+                      placeholder={t("bookingModal.fields.messagePlaceholder", "e.g. We get leads from Facebook Ads but respond too slowly and lose them to competitors...")}
                       rows={3}
                       {...field}
                       disabled={isSubmitting}
@@ -273,16 +298,16 @@ export default function BookingModal({
                 onClick={() => onOpenChange(false)}
                 disabled={isSubmitting}
               >
-                Cancel
+                {t("bookingModal.cancel", "Cancel")}
               </Button>
               <Button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Submitting...
+                    {t("bookingModal.submitting", "Submitting...")}
                   </>
                 ) : (
-                  "Book Strategy Call"
+                  t("bookingModal.submit", "Book Strategy Call")
                 )}
               </Button>
             </div>

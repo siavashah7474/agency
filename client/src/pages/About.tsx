@@ -112,7 +112,7 @@ export default function About() {
               <div className="max-w-5xl mx-auto grid gap-10 md:grid-cols-[320px_1fr] md:gap-14 items-start">
                 <img
                   src="/sia-ahmadi.jpg"
-                  alt="Sia Ahmadi, founder of Webimot Agency"
+                  alt={t("aboutPage.founderImageAlt", "Sia Ahmadi, founder of Webimot Agency")}
                   width={1200}
                   height={1600}
                   loading="lazy"

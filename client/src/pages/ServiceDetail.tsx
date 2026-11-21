@@ -1,4 +1,5 @@
 import { useRoute } from "wouter";
+import { useTranslation } from "react-i18next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -109,6 +110,7 @@ const serviceIcons: Record<
 export default function ServiceDetail() {
   const [, params] = useRoute("/services/:slug");
   const { openModal } = useBookingModal();
+  const { t } = useTranslation();
   const slug = params?.slug || "whatsapp-ai-agent";
   // Pre-select the matching "Service of interest" option in the booking form, where one exists.
   const bookingService = undefined;
@@ -119,10 +121,10 @@ export default function ServiceDetail() {
         <Navigation />
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
-            <p className="text-muted-foreground mb-6">The service you're looking for doesn't exist.</p>
+            <h1 className="text-4xl font-bold mb-4">{t("servicesPage.notFound.title", "Service Not Found")}</h1>
+            <p className="text-muted-foreground mb-6">{t("servicesPage.notFound.desc", "The service you're looking for doesn't exist.")}</p>
             <Link href="/systems">
-              <Button>View All Services</Button>
+              <Button>{t("servicesPage.notFound.button", "View All Services")}</Button>
             </Link>
           </div>
         </main>
@@ -132,6 +134,24 @@ export default function ServiceDetail() {
   }
 
   const service = serviceData[slug];
+  // Displayed (translated) copy; SEO and schema below keep the English `service` fields.
+  const sk = `servicesPage.services.${slug}`;
+  const view = {
+    title: t(`${sk}.title`, service.title),
+    tagline: t(`${sk}.tagline`, service.tagline),
+    what: t(`${sk}.what`, service.what),
+    why: t(`${sk}.why`, service.why),
+    benefits: service.benefits.map((b, i) => t(`${sk}.benefits.${i}`, b)),
+    deliverables: service.deliverables.map((d, i) => t(`${sk}.deliverables.${i}`, d)),
+    process: service.process.map((p, i) => ({
+      title: t(`${sk}.process.${i}.title`, p.title),
+      description: t(`${sk}.process.${i}.description`, p.description),
+    })),
+    faqs: service.faqs.map((f, i) => ({
+      question: t(`${sk}.faqs.${i}.question`, f.question),
+      answer: t(`${sk}.faqs.${i}.answer`, f.answer),
+    })),
+  };
   const iconConfig = serviceIcons[slug] || serviceIcons["whatsapp-ai-agent"];
   const Icon = iconConfig.icon;
 
@@ -262,8 +282,8 @@ export default function ServiceDetail() {
             <div className="container mx-auto px-6 text-white relative z-10">
               <Breadcrumbs
                 items={[
-                  { label: "Systems", href: "/systems" },
-                  { label: service.title },
+                  { label: t("servicesPage.breadcrumbSystems", "Systems"), href: "/systems" },
+                  { label: view.title },
                 ]}
               />
               <div className="text-center">
@@ -275,14 +295,14 @@ export default function ServiceDetail() {
                 {isAIService && (
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm font-medium mb-4 backdrop-blur-sm">
                     <Sparkles className="h-4 w-4" />
-                    <span>AI-Powered Solution</span>
+                    <span>{t("servicesPage.aiBadge", "AI-Powered Solution")}</span>
                   </div>
                 )}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                  {service.title}
+                  {view.title}
                 </h1>
                 <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                  {service.tagline}
+                  {view.tagline}
                 </p>
               </div>
             </div>
@@ -294,19 +314,19 @@ export default function ServiceDetail() {
                 <div className="lg:col-span-2">
                   <div className="mb-12">
                     <h2 className="text-3xl font-bold mb-4">
-                      What is {service.title}?
+                      {t("servicesPage.whatIs", "What is {{title}}?", { title: view.title })}
                     </h2>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      {service.what}
+                      {view.what}
                     </p>
                   </div>
 
                   <div className="mb-12">
                     <h2 className="text-3xl font-bold mb-4">
-                      Why It's Important
+                      {t("servicesPage.whyTitle", "Why It's Important")}
                     </h2>
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      {service.why}
+                      {view.why}
                     </p>
                   </div>
                 </div>
@@ -323,10 +343,10 @@ export default function ServiceDetail() {
                           <Icon className="h-7 w-7 text-white" />
                         </div>
                         <h3 className="font-bold text-lg">
-                          Ready to Get Started?
+                          {t("servicesPage.sidebar.title", "Ready to Get Started?")}
                         </h3>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Book a free consultation call
+                          {t("servicesPage.sidebar.desc", "Book a free consultation call")}
                         </p>
                       </div>
                       <Button
@@ -335,7 +355,7 @@ export default function ServiceDetail() {
                         size="lg"
                         onClick={() => openModal(bookingService)}
                       >
-                        Book Free Strategy Call
+                        {t("servicesPage.cta.book", "Book Free Strategy Call")}
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </CardContent>
@@ -350,10 +370,10 @@ export default function ServiceDetail() {
                   >
                     <Check className="h-5 w-5 text-white" />
                   </div>
-                  <h2 className="text-3xl font-bold">Key Benefits</h2>
+                  <h2 className="text-3xl font-bold">{t("servicesPage.benefitsTitle", "Key Benefits")}</h2>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4">
-                  {service.benefits.map((benefit, index) => (
+                  {view.benefits.map((benefit, index) => (
                     <Card key={index} className="hover-elevate">
                       <CardContent className="p-4 flex items-start gap-3">
                         <div
@@ -375,10 +395,10 @@ export default function ServiceDetail() {
                   >
                     <Package className="h-5 w-5 text-white" />
                   </div>
-                  <h2 className="text-3xl font-bold">What's Included</h2>
+                  <h2 className="text-3xl font-bold">{t("servicesPage.includedTitle", "What's Included")}</h2>
                 </div>
                 <div className="grid md:grid-cols-2 gap-3">
-                  {service.deliverables.map((deliverable, index) => (
+                  {view.deliverables.map((deliverable, index) => (
                     <div
                       key={index}
                       className="flex items-start gap-3 p-3 rounded-lg bg-muted/50"
@@ -399,12 +419,12 @@ export default function ServiceDetail() {
                   >
                     <ListChecks className="h-5 w-5 text-white" />
                   </div>
-                  <h2 className="text-3xl font-bold">Our Process</h2>
+                  <h2 className="text-3xl font-bold">{t("servicesPage.processTitle", "Our Process")}</h2>
                 </div>
                 <div className="relative">
                   <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent hidden md:block" />
                   <div className="space-y-6">
-                    {service.process.map((step, index) => (
+                    {view.process.map((step, index) => (
                       <div key={index} className="flex gap-6 items-start">
                         <div
                           className={`relative z-10 flex-shrink-0 h-12 w-12 rounded-xl bg-gradient-to-br ${iconConfig.gradient} text-white flex items-center justify-center font-bold text-lg shadow-lg`}
@@ -435,15 +455,16 @@ export default function ServiceDetail() {
                 <div className="text-center mb-12">
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
                     <Phone className="h-4 w-4" />
-                    Personalized Solutions
+                    {t("servicesPage.custom.badge", "Personalized Solutions")}
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    Every Business is Unique
+                    {t("servicesPage.custom.title", "Every Business is Unique")}
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    We don't believe in one-size-fits-all solutions. Book a free
-                    strategy call and we'll create a custom plan tailored to
-                    your specific needs and goals.
+                    {t(
+                      "servicesPage.custom.lead",
+                      "We don't believe in one-size-fits-all solutions. Book a free strategy call and we'll create a custom plan tailored to your specific needs and goals.",
+                    )}
                   </p>
                 </div>
 
@@ -452,29 +473,29 @@ export default function ServiceDetail() {
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                       <div className="min-w-0">
                         <h3 className="text-2xl font-bold mb-4">
-                          What You'll Get in Your Free Strategy Call
+                          {t("servicesPage.custom.listTitle", "What You'll Get in Your Free Strategy Call")}
                         </h3>
                         <ul className="space-y-3">
                           <li className="flex items-start gap-3">
                             <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                             <span>
-                              Personalized assessment of your current situation
+                              {t("servicesPage.custom.list.0", "Personalized assessment of your current situation")}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                             <span>
-                              Custom recommendations tailored to your business
+                              {t("servicesPage.custom.list.1", "Custom recommendations tailored to your business")}
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                            <span>Clear roadmap for achieving your goals</span>
+                            <span>{t("servicesPage.custom.list.2", "Clear roadmap for achieving your goals")}</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                             <span>
-                              Honest advice - no pressure, no obligations
+                              {t("servicesPage.custom.list.3", "Honest advice - no pressure, no obligations")}
                             </span>
                           </li>
                         </ul>
@@ -483,10 +504,10 @@ export default function ServiceDetail() {
                         <div className="bg-white dark:bg-muted rounded-2xl p-5 sm:p-6 shadow-lg">
                           <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
                           <h4 className="text-xl font-bold mb-2">
-                            Book Your Free Call
+                            {t("servicesPage.custom.cardTitle", "Book Your Free Call")}
                           </h4>
                           <p className="text-sm text-muted-foreground mb-6">
-                            30-minute strategy session with our team
+                            {t("servicesPage.custom.cardDesc", "30-minute strategy session with our team")}
                           </p>
                           <Button
                             data-testid="button-book-strategy-section"
@@ -494,7 +515,7 @@ export default function ServiceDetail() {
                             className="w-full mb-3"
                             onClick={() => openModal(bookingService)}
                           >
-                            Book Free Strategy Call
+                            {t("servicesPage.cta.book", "Book Free Strategy Call")}
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </Button>
                           <a
@@ -509,7 +530,7 @@ export default function ServiceDetail() {
                               className="w-full"
                             >
                               <MessageSquare className="mr-2 h-4 w-4" />
-                              Chat on WhatsApp
+                              {t("servicesPage.cta.whatsapp", "Chat on WhatsApp")}
                             </Button>
                           </a>
                         </div>
@@ -530,11 +551,11 @@ export default function ServiceDetail() {
                   <HelpCircle className="h-5 w-5 text-white" />
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  Frequently Asked Questions
+                  {t("servicesPage.faqTitle", "Frequently Asked Questions")}
                 </h2>
               </div>
               <Accordion type="single" collapsible className="w-full">
-                {service.faqs.map((faq, index) => (
+                {view.faqs.map((faq, index) => (
                   <AccordionItem
                     key={index}
                     value={`item-${index}`}
@@ -567,11 +588,10 @@ export default function ServiceDetail() {
                 <Icon className="h-8 w-8 text-white" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Transform Your Business?
+                {t("servicesPage.finalCta.title", "Ready to Transform Your Business?")}
               </h2>
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                Book a free 30-minute strategy call to discuss how{" "}
-                {service.title} can help you achieve your goals
+                {t("servicesPage.finalCta.lead", "Book a free 30-minute strategy call to discuss how {{title}} can help you achieve your goals", { title: view.title })}
               </p>
               <Button
                 data-testid="button-footer-cta"
@@ -579,7 +599,7 @@ export default function ServiceDetail() {
                 className="bg-white text-primary hover:bg-white/90"
                 onClick={() => openModal(bookingService)}
               >
-                Book Your Free Strategy Call
+                {t("servicesPage.finalCta.button", "Book Your Free Strategy Call")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>

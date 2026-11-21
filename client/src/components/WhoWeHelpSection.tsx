@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "@/components/SectionEyebrow";
-import { AUDIENCES, type AudienceDef } from "@/data/systemsData";
+import { useLocalizedSystemsData, type AudienceDef } from "@/data/systemsData";
 
 const cardFocus =
   "block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
@@ -19,6 +19,7 @@ const accent: Record<AudienceDef["id"], { border: string; chip: string }> = {
  */
 export default function WhoWeHelpSection() {
   const { t } = useTranslation();
+  const { audiences } = useLocalizedSystemsData();
 
   return (
     <section className="relative overflow-hidden bg-slate-50 py-16 md:py-24" aria-labelledby="audience-heading">
@@ -35,7 +36,7 @@ export default function WhoWeHelpSection() {
         />
 
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
-          {AUDIENCES.map((audience) => {
+          {audiences.map((audience) => {
             const linkLabel = t(`home.audience.links.${audience.id}`);
             return (
               <Link
@@ -63,9 +64,9 @@ export default function WhoWeHelpSection() {
                     <p className="mb-6 text-sm leading-relaxed text-slate-600 md:text-base">{audience.description}</p>
 
                     <ul className="mb-8 flex flex-wrap gap-2" aria-label={t("home.audience.examplesLabel")}>
-                      {audience.examples.map((example) => (
+                      {audience.examples.map((example, i) => (
                         <li
-                          key={example}
+                          key={i}
                           className={`rounded-full border px-3 py-1 text-xs font-medium ${accent[audience.id].chip}`}
                         >
                           {example}

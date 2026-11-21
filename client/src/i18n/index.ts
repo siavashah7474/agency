@@ -19,9 +19,9 @@ i18n
     },
     fallbackLng: "en",
     supportedLngs: ["en", "tr", "nl", "es"],
-    // Most pages are English-only, so the site stays English unless the visitor picks a
-    // language in the header. Browser-language detection would otherwise give tr/nl/es
-    // visitors a translated header and footer around untranslated pages.
+    // The site stays English unless the visitor picks a language in the header. Turkish
+    // covers the main pages; nl/es cover the header, footer, home and About pages. Blog
+    // posts, case studies and legal pages are English in every language.
     detection: {
       order: ["localStorage"],
       caches: ["localStorage"],
@@ -29,7 +29,27 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    // Re-render when the lazily loaded Turkish page texts arrive.
+    react: { bindI18nStore: "added" },
   });
+
+// Turkish texts for the main pages live in locales/tr-pages/*.json (one file per page or
+// component, top-level key = its namespace, e.g. { "clinics": { ... } }). Components call
+// t("clinics.some.key", "English text"), so English stays inline as the default and these
+// files are only downloaded when a visitor switches to Turkish.
+const trPageLoaders = import.meta.glob<{ default: Record<string, unknown> }>("./locales/tr-pages/*.json");
+let trPagesLoading: Promise<void> | null = null;
+export const loadTurkishPages = () => {
+  trPagesLoading ??= Promise.all(Object.values(trPageLoaders).map((load) => load())).then((mods) => {
+    for (const mod of mods) i18n.addResourceBundle("tr", "translation", mod.default, true, true);
+  });
+  return trPagesLoading;
+};
+const maybeLoadTurkish = () => {
+  if ((i18n.resolvedLanguage || i18n.language || "").startsWith("tr")) void loadTurkishPages();
+};
+maybeLoadTurkish();
+i18n.on("languageChanged", maybeLoadTurkish);
 
 // Keep <html lang> in sync so screen readers and browsers use the right language.
 const syncHtmlLang = () => {

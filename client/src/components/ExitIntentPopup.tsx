@@ -79,7 +79,7 @@ export default function ExitIntentPopup() {
           onClick={handleClose}
           className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
           data-testid="button-close-exit-popup"
-          aria-label="Close popup"
+          aria-label={t("shell.exitPopup.closeAria", "Close popup")}
         >
           <X className="h-5 w-5" />
         </button>
@@ -94,7 +94,7 @@ export default function ExitIntentPopup() {
           </h2>
 
           <p className="text-muted-foreground mb-6">
-            Get a <strong>free AI audit</strong> and discover how we can help you generate more leads. No commitment required.
+            {t("shell.exitPopup.descBefore", "Get a ")}<strong>{t("shell.exitPopup.descStrong", "free AI audit")}</strong>{t("shell.exitPopup.descAfter", " and discover how we can help you generate more leads. No commitment required.")}
           </p>
 
           <div className="space-y-3">

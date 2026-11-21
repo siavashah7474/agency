@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import { ChevronRight, Home } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const BASE_URL = "https://webimotagency.com";
 
@@ -17,6 +18,8 @@ interface BreadcrumbsProps {
 }
 
 export default function Breadcrumbs({ items, variant = "light", className = "" }: BreadcrumbsProps) {
+  const { t } = useTranslation();
+  // The JSON-LD keeps the English "Home"; only the visible / screen-reader label is translated.
   const allItems = [{ label: "Home", href: "/" }, ...items];
 
   const schema = {
@@ -42,7 +45,7 @@ export default function Breadcrumbs({ items, variant = "light", className = "" }
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
-      <nav aria-label="Breadcrumb" className={`mb-6 ${className}`}>
+      <nav aria-label={t("shell.breadcrumbs.ariaLabel", "Breadcrumb")} className={`mb-6 ${className}`}>
         <ol className="flex flex-wrap items-center gap-1 text-sm">
           <li>
             <Link
@@ -51,7 +54,7 @@ export default function Breadcrumbs({ items, variant = "light", className = "" }
               data-testid="breadcrumb-home"
             >
               <Home className="h-4 w-4" aria-hidden="true" />
-              <span className="sr-only">Home</span>
+              <span className="sr-only">{t("shell.breadcrumbs.home", "Home")}</span>
             </Link>
           </li>
           {items.map((item, index) => (

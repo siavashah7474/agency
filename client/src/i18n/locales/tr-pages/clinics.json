@@ -1,0 +1,204 @@
+{
+  "clinicsPage": {
+    "breadcrumb": "Klinikler",
+    "audience": {
+      "name": "Klinikler ve sağlık",
+      "tagline": "Her hasta talebini rezerve edilmiş bir konsültasyona dönüştürün.",
+      "description": "Saç ekimi, diş, estetik cerrahi ve tüp bebek klinikleri — Almanya, Birleşik Krallık, Hollanda ve Körfez ülkelerinden gelen hastalara hizmet veren medikal turizm sağlayıcıları dahil.",
+      "examples": [
+        "Saç ekimi klinikleri",
+        "Diş klinikleri",
+        "Estetik cerrahi",
+        "Tüp bebek ve doğurganlık",
+        "Medikal turizm ajansları"
+      ]
+    },
+    "hero": {
+      "title": "Klinikler ve medikal turizm için yapay zekâ otomasyon sistemleri.",
+      "ctaPrimary": "Kendi WhatsApp'ınızda demo talep edin",
+      "ctaSecondary": "Dört sistemi görün",
+      "stats": [
+        { "value": "< 3 sn", "label": "Gece gündüz yanıt süresi" },
+        { "value": "40+", "label": "Yapay zekânın yanıt verebildiği dil" },
+        { "value": "48 saat", "label": "Başlangıçtan WhatsApp'ınızda yayına geçişe kadar" },
+        { "value": "7/24", "label": "Tüm saat dilimlerinde kesintisiz hizmet" }
+      ]
+    },
+    "challenges": {
+      "eyebrow": "Bugün ne ters gidiyor",
+      "title": "Klinikler hastaları nerede kaybediyor",
+      "lead": "Klinikler talepleri tedavi kalitesi yüzünden değil, geç yanıtlar ve eksik takip yüzünden kaybeder. Bunların hiçbiri tıbbi bir sorun değildir.",
+      "items": [
+        "Hastalar gece yarısı Almanya'dan, Birleşik Krallık'tan veya Körfez'den yazıyor ve ertesi sabaha kadar yanıt alamıyor. O zamana kadar bir rakiple randevu oluşturmuş oluyorlar.",
+        "Personel, aynı WhatsApp sorularını İngilizce, Arapça, Almanca ve Rusça yanıtlamak için saatler harcıyor.",
+        "Saç ekimi, veneer ve estetik işlemler için fotoğraf değerlendirmeleri elle yapılıyor: yavaş, tutarsız ve maliyetli.",
+        "Fiyat teklifi isteyen hastalar ikinci kez hiç haber almıyor. Tutarlı bir takip sistemi yok.",
+        "Kayıt formları, onam belgeleri ve faturalar elle giriliyor ve kaç talebin gerçekten tedaviye dönüştüğünü kimse bilmiyor."
+      ]
+    },
+    "systems": {
+      "capture": { "name": "Yakalama sistemi", "productLabel": "WhatsApp AI · LeadFire", "about": "Yakalama sistemi hakkında" },
+      "convert": { "name": "Takip sistemi", "productLabel": "NurtureLoop · ReviveIQ", "about": "Takip sistemi hakkında" },
+      "operate": { "name": "Operasyon sistemi", "productLabel": "DocuMind · Günlük işler için AI ajanları", "about": "Operasyon sistemi hakkında" },
+      "measure": { "name": "Raporlama sistemi", "productLabel": "ClearDesk", "about": "Raporlama sistemi hakkında" }
+    },
+    "ladder": {
+      "eyebrow": "Nasıl çalışır",
+      "title": "Dört sistem, bir kliniğe uygulandığında",
+      "lead": "WhatsApp numaranızdaki yakalama sistemiyle başlayın. O çalışmaya başladığında bir sonrakini ekleyin.",
+      "items": {
+        "capture": {
+          "title": "WhatsApp'taki bir hasta talebi Arapça, Almanca veya İngilizce yanıtlanır, fotoğraf değerlendirilir ve konsültasyon randevusu oluşturulur.",
+          "detail": "AI ajanı, kliniğinizin kendi WhatsApp Business numarasında çalışır. Dili algılar, işlemler, greft sayısı ve fiyatlarla ilgili soruları yanıtlar, hastanın gönderdiği fotoğrafları değerlendirir ve görüntülü konsültasyonu doğrudan takviminize kaydeder. Sesli mesajlar da yazıya dökülür."
+        },
+        "convert": {
+          "title": "Fiyat teklifi isteyip randevu almayan her hasta için takip.",
+          "detail": "WhatsApp, e-posta ve SMS üzerinden, hastanın dilinde, randevu alana veya çıkış yapana kadar çok adımlı takip. CRM'inizde veya gelen kutunuzda bekleyen eski talepler kişiselleştirilmiş mesajlarla yeniden canlandırılır."
+        },
+        "operate": {
+          "title": "Kayıt formları, onam belgeleri ve faturalar ön büronuz tarafından değil, yapay zekâ tarafından işlenir.",
+          "detail": "Belgeler geldikleri gün okunur, veriler hasta sisteminize aktarılır ve ekibiniz yalnızca bir şey eksik olduğunda uyarı alır. Seyahat ve randevu hatırlatmaları otomatik olarak gönderilir."
+        },
+        "measure": {
+          "title": "Talepler, konsültasyonlar ve tedaviler hakkında haftalık rapor.",
+          "detail": "Her pazartesi: ülkeye ve işleme göre kaç talep geldiği, bunların kaçının konsültasyona ve tedaviye dönüştüğü, yanıt süreleri ve bu hafta neyin düzeltilmesi gerektiği. Sade bir dille, panel yok."
+        }
+      }
+    },
+    "expect": {
+      "eyebrow": "Sonuçlar ve fiyatlar",
+      "title": "Klinikler neler bekleyebilir",
+      "lead": "WhatsApp AI yayına girdiği andan itibaren her uluslararası talep yanıt alır ve ciddi hastalar koordinatörlerinize ulaşır.",
+      "stats": [
+        { "value": "< 3 sn", "label": "Gece gündüz yanıt süresi" },
+        { "value": "7/24", "label": "Saat dilimleri arasında kaçan talep yok" },
+        { "value": "40+", "label": "Ayda tasarruf edilen manuel mesajlaşma saati" },
+        { "value": "+%60", "label": "Daha fazla rezerve edilen konsültasyon" }
+      ],
+      "guarantee": "Asgari süre 3 aydır. Sistem ilk 30 gününüzde en az 3 nitelikli hasta talebi oluşturmazsa ilk ayınızı iade ederiz. Tek bir ek uluslararası rezervasyon (genellikle €3.000–€15.000) aylık ücreti karşılar. Ürünle ilgili tüm ayrıntılar:"
+    },
+    "plans": [
+      {
+        "setup": "€1.399 tek seferlik kurulum",
+        "items": [
+          "WhatsApp numaranızda 7/24 yapay zekâ yanıtları",
+          "Otomatik hasta ön değerlendirmesi",
+          "Akıllı takip dizileri",
+          "Nitelikli taleplerin ekibinize devri",
+          "Çok dilli destek"
+        ]
+      },
+      {
+        "setup": "€1.399 tek seferlik kurulum",
+        "items": [
+          "Essential'daki her şey",
+          "3 WhatsApp numarasına kadar",
+          "Haftalık raporlama paneli",
+          "Size özel müşteri temsilcisi"
+        ]
+      }
+    ],
+    "perMonth": "/ay",
+    "founding": {
+      "badge": "Kurucu müşteri: kurulum ücreti alınmaz",
+      "spots": "Kurucu müşteri teklifi: {{spotsTotal}} yerden {{spotsLeft}} tanesi kaldı",
+      "waived": "{{setupFee}} kurulum ücreti, ilk {{spotsTotal}} WhatsApp AI kliniğimizden alınmaz."
+    },
+    "guardrails": {
+      "eyebrow": "Tıbbi ve gizlilik güvenceleri",
+      "title": "Yapay zekâ ne yapar, ne asla yapmaz",
+      "lead": "Yapay zekâ bir doktor değil, bir ön büro görevlisidir. Hastaları ekibiniz için hazırlar; her tıbbi kararı sizin tıbbi ekibiniz verir.",
+      "items": [
+        {
+          "title": "Yalnızca ön değerlendirme ve kayıt",
+          "desc": "Pratik soruları yanıtlar; tedavi ilgisini, bütçeyi, seyahat tarihlerini ve fotoğrafları toplar ve vakayı koordinatörleriniz için hazırlar."
+        },
+        {
+          "title": "Asla teşhis koymaz",
+          "desc": "Teşhis koymaz, tedaviye uygunluğa karar vermez ve kesin fiyat onaylamaz. Fotoğraflar doktorlarınızın kurallarına göre sınıflandırılır ve her zaman tıbbi ekibiniz tarafından incelenir."
+        },
+        {
+          "title": "İnsana devir",
+          "desc": "Tıbbi sorular, şikâyetler ve talimatlarının dışında kalan her şey bir özetle birlikte doğrudan bir kişiye iletilir. Ekibiniz istediği sohbeti devralabilir."
+        },
+        {
+          "title": "AB mevzuatına uygun veri işleme",
+          "desc": "GDPR'a uygun, şifreli ve asla üçüncü taraflarla paylaşılmaz. Konuşmalar kendi WhatsApp Business hesabınızda ve sistemlerinizde kalır."
+        }
+      ]
+    },
+    "work": {
+      "eyebrow": "Çalışmalarımız",
+      "title": "Kurucumuzun klinik çalışmaları",
+      "label": "Kurucumuzun çalışması",
+      "readMore": "Proje yazısını okuyun"
+    },
+    "caseStudies": {
+      "gorkem-atsal-clinic": {
+        "summary": "Webimot'un kurucusu Sia Ahmadi'nin Gorkem Atsal Clinic ile devam eden çalışması: web sitesi, CRM, Google Ads, Meta Ads, sosyal medya stratejisi ve SEO.",
+        "workDone": ["Web sitesi", "CRM ve otomasyon", "AI WhatsApp sohbet botu", "Google Ads ve Meta Ads", "Sosyal medya stratejisi", "Arama optimizasyonu", "Satış süreci", "BT güvenliği"]
+      },
+      "clinish-dental-clinic": {
+        "summary": "Webimot'un kurucusu Sia Ahmadi'nin Clinish için yaptığı çalışma: web sitesi, sosyal medya, Meta Business Suite ve Meta reklam kurulumu ve Search Console optimizasyonu.",
+        "workDone": ["Web sitesi", "Sosyal medya", "Meta Business Suite ve Meta reklamları", "Arama ve analiz"]
+      },
+      "prime-hair": {
+        "summary": "Webimot'un kurucusu Sia Ahmadi'nin Prime Hair için serbest çalışması: Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri ve sosyal medya.",
+        "workDone": ["Meta ve Google reklamları", "Web sitesi ve SEO", "Satış ve hasta talepleri", "Sosyal medya"]
+      },
+      "msb-aesthetic": {
+        "summary": "Webimot'un kurucusu Sia Ahmadi'nin MSB Aesthetic için serbest çalışması: Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri ve sosyal medya.",
+        "workDone": ["Meta ve Google reklamları", "Web sitesi ve SEO", "Satış ve hasta talepleri", "Sosyal medya"]
+      },
+      "estetizm": {
+        "summary": "Webimot'un kurucusu Sia Ahmadi'nin Estetizm için serbest çalışması: Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri ve sosyal medya.",
+        "workDone": ["Meta ve Google reklamları", "Web sitesi ve SEO", "Satış ve hasta talepleri", "Sosyal medya"]
+      }
+    },
+    "examples": {
+      "eyebrow": "Kimler için",
+      "title": "Sizinki gibi klinikler için geliştirildi",
+      "note": "Almanya, Birleşik Krallık, Hollanda ve Körfez ülkelerinden hastalar. Türkiye, Avrupa ve Orta Doğu'daki klinikler."
+    },
+    "faq": {
+      "badge": "SSS",
+      "title": "Kliniklerin bize sorduğu sorular"
+    },
+    "faqs": [
+      {
+        "question": "Yapay zekâ kendi WhatsApp numaramızda mı çalışıyor?",
+        "answer": "Evet. Yapay zekâyı kliniğinizin mevcut WhatsApp Business numarasına bağlarız; böylece hastalar zaten bildikleri numaraya yazmaya devam eder. Ekibiniz her konuşmayı görür ve istediği an devralabilir."
+      },
+      {
+        "question": "Hangi dilleri destekliyor?",
+        "answer": "İlk mesajdan otomatik olarak algılanan 40+ dil. Medikal turizm klinikleri için en yaygın olanlar İngilizce, Almanca, Felemenkçe, Arapça, Fransızca, Rusça ve Türkçedir. Yanıtlar, takip mesajları ve raporların her biri farklı bir dilde olabilir."
+      },
+      {
+        "question": "Fotoğraf değerlendirmesi nasıl çalışır ve tıbbi açıdan güvenli midir?",
+        "answer": "Hastalar bugün olduğu gibi fotoğrafları WhatsApp'tan gönderir. Yapay zekâ bu fotoğrafları doktorlarınızın belirlediği kurallara göre (örneğin greft aralığı veya tedaviye uygunluk) sınıflandırır ve ön değerlendirmeden geçirir; böylece koordinatörleriniz ve doktorlarınız ham bir sohbet yerine hazırlanmış bir vaka görür. Asla teşhis koymaz, tedavi kararı vermez veya kesin fiyat söylemez: bunlar her zaman tıbbi ekibinizden gelir ve her tıbbi soru bir kişiye devredilir."
+      },
+      {
+        "question": "Yayına girmesi ne kadar sürer?",
+        "answer": "WhatsApp AI, başlangıçtan itibaren 48 saat içinde yayında olur: işlemleriniz, fiyatlarınız ve sık sorulan sorularınız hakkında birkaç soruyu yanıtlarsınız, kurulumun tamamını biz yaparız. Takip, operasyon ve raporlama daha kapsamlı kurulumlardır ve sonraki 2–4 hafta içinde eklenir."
+      },
+      {
+        "question": "Maliyeti nedir, asgari süre var mı?",
+        "answer": "Klinikler için WhatsApp AI, €1.399 tek seferlik kurulum artı aylık €599 (Essential) ya da 3 WhatsApp numarasına kadar ve haftalık raporlama paneli içeren Pro için aylık €999'dur. Kurucu müşteri teklifi: €1.399 kurulum ücreti, yerler dolana kadar ilk 5 WhatsApp AI kliniğimizden alınmaz. Sistemin kliniğinizi öğrenmesi için zaman tanımak amacıyla 3 ay asgari süre istiyoruz. İlk 30 gününüzde en az 3 nitelikli hasta talebi oluşturmazsa ilk ayınızı iade ederiz. Diğer sistemler ücretsiz yapay zekâ analizinden sonra fiyatlandırılır."
+      },
+      {
+        "question": "Hasta verileri GDPR'a uygun mu?",
+        "answer": "Evet. Konuşmalar ve fotoğraflar şifrelenir, AB veri koruma kurallarına göre işlenir ve asla üçüncü taraflarla paylaşılmaz veya herkese açık modelleri eğitmek için kullanılmaz. Hasta verileri WhatsApp Business hesabınızda ve kendi sistemlerinizde kalır."
+      }
+    ],
+    "cta": {
+      "title": "Kendi WhatsApp numaranızda demo talep edin",
+      "text": "Bize gerçek bir hasta talebi gönderin; yapay zekânın bunu hastanın dilinde yanıtlamasını, fotoğrafı değerlendirmesini ve konsültasyon randevusunu oluşturmasını izleyin. 30 dakika, hiçbir taahhüt yok.",
+      "points": [
+        "48 saat içinde WhatsApp'ınızda yayında",
+        "30 günde 3 nitelikli talep ya da ilk ayınız iade",
+        "Ekibiniz istediği sohbeti devralabilir"
+      ],
+      "button": "Demo talep edin"
+    }
+  }
+}

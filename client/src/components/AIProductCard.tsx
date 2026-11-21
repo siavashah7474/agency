@@ -3,6 +3,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 
 interface AIProductCardProps {
   title: string;
@@ -14,6 +15,7 @@ interface AIProductCardProps {
 }
 
 export default function AIProductCard({ title, tagline, description, features, href, flagship = false }: AIProductCardProps) {
+  const { t } = useTranslation();
   return (
     <Card className={`glow-card flex flex-col overflow-hidden border-0 bg-slate-900 transition-transform duration-300 hover:-translate-y-0.5 ${flagship ? "ring-1 ring-secondary/40" : ""}`}>
       {/* Terminal-style header bar */}
@@ -26,7 +28,7 @@ export default function AIProductCard({ title, tagline, description, features, h
       </div>
 
       <CardHeader className="pb-4">
-        {flagship && <Badge className="mb-2 w-fit border-secondary/30 bg-secondary/20 text-secondary" variant="outline">Flagship Product</Badge>}
+        {flagship && <Badge className="mb-2 w-fit border-secondary/30 bg-secondary/20 text-secondary" variant="outline">{t("shell.productCard.flagship", "Flagship Product")}</Badge>}
         <CardTitle className="text-xl text-white">{title}</CardTitle>
         <CardDescription className="text-white/60">{tagline}</CardDescription>
       </CardHeader>
@@ -48,7 +50,7 @@ export default function AIProductCard({ title, tagline, description, features, h
             className: `w-full focus-visible:ring-offset-slate-900 ${!flagship ? "border-white/20 text-white hover:bg-white/10 hover:text-white" : ""}`,
           })}
         >
-          Explore {title}
+          {t("shell.productCard.explore", "Explore {{title}}", { title })}
         </Link>
       </CardContent>
     </Card>

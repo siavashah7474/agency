@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion, useReducedMotion } from "framer-motion";
 import { SectionHeader } from "@/components/SectionEyebrow";
-import { SYSTEMS } from "@/data/systemsData";
+import { SYSTEMS, useLocalizedSystemsData } from "@/data/systemsData";
 import { isPrerendering } from "@/lib/prerender";
 
 const cardFocus =
@@ -21,6 +21,7 @@ const STEP_DELAY = (index: number) => 0.15 + (RAIL_SECONDS / (SYSTEMS.length - 1
  */
 export default function WhatWeDoSection() {
   const { t } = useTranslation();
+  const { systems } = useLocalizedSystemsData();
   const reduceMotion = useReducedMotion();
   const animate = !reduceMotion && !isPrerendering;
   const viewport = { once: true, amount: 0.35 } as const;
@@ -69,7 +70,7 @@ export default function WhatWeDoSection() {
         </div>
 
         <ol className="grid gap-5 md:grid-cols-2 lg:grid-cols-4" aria-label={t("home.ladder.listLabel")}>
-          {SYSTEMS.map((system, index) => (
+          {systems.map((system, index) => (
             <motion.li
               key={system.id}
               className="relative"

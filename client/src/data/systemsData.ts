@@ -2,6 +2,8 @@
 // four systems. Home, /systems, /clinics, /small-business, navigation, footer,
 // the booking form all read from here so names and routes never drift.
 
+import { useTranslation } from "react-i18next";
+
 export const PROMISE = {
   headline: "AI automation systems that run your daily work.",
   subline:
@@ -140,3 +142,45 @@ export const AUDIENCES: AudienceDef[] = [
 ];
 
 export const systemById = (id: SystemId): SystemDef => SYSTEMS.find((s) => s.id === id)!;
+
+// Translated views of the data above (Turkish texts live in i18n/locales/tr-pages/systemsData.json).
+// The English here stays the default, so English and the other languages render exactly as before.
+// Hooks: call them inside components only.
+export function useLocalizedSystemsData() {
+  const { t } = useTranslation();
+  const product = (base: string, p: SystemProduct): SystemProduct => ({
+    ...p,
+    name: t(`${base}.name`, p.name),
+    oneLiner: t(`${base}.oneLiner`, p.oneLiner),
+  });
+  const promise = {
+    headline: t("systemsData.promise.headline", PROMISE.headline),
+    subline: t("systemsData.promise.subline", PROMISE.subline),
+  };
+  const systems: SystemDef[] = SYSTEMS.map((s) => {
+    const base = `systemsData.systems.${s.id}`;
+    return {
+      ...s,
+      name: t(`${base}.name`, s.name),
+      productLabel: t(`${base}.productLabel`, s.productLabel),
+      headline: t(`${base}.headline`, s.headline),
+      replaces: t(`${base}.replaces`, s.replaces),
+      description: t(`${base}.description`, s.description),
+      outcomes: s.outcomes.map((o, i) => t(`${base}.outcomes.${i}`, o)),
+      products: s.products.map((p, i) => product(`${base}.products.${i}`, p)),
+    };
+  });
+  const addOns: SystemProduct[] = ADD_ONS.map((a, i) => product(`systemsData.addOns.${i}`, a));
+  const audiences: AudienceDef[] = AUDIENCES.map((a) => {
+    const base = `systemsData.audiences.${a.id}`;
+    return {
+      ...a,
+      name: t(`${base}.name`, a.name),
+      navLabel: t(`${base}.navLabel`, a.navLabel),
+      tagline: t(`${base}.tagline`, a.tagline),
+      description: t(`${base}.description`, a.description),
+      examples: a.examples.map((e, i) => t(`${base}.examples.${i}`, e)),
+    };
+  });
+  return { promise, systems, addOns, audiences };
+}

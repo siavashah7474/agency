@@ -3,6 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export default function NurtureLoopPage() {
   return (
     <ProductPageLayout
+      contentKey="nurtureloop"
       system="convert"
       seoTitle="NurtureLoop | Never let a lead go cold again — Webimot Agency"
       seoDescription="Most sales need several follow-ups, and most businesses stop after one or two. NurtureLoop runs every follow-up automatically across email, SMS and WhatsApp."

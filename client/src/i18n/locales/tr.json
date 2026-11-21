@@ -10,7 +10,11 @@
     "blog": "Blog",
     "contact": "İletişim",
     "bookCall": "Strateji Görüşmesi",
-    "ads": "Reklamlar"
+    "ads": "Reklamlar",
+    "systems": "Sistemler",
+    "clinics": "Klinikler",
+    "smallBusiness": "Küçük İşletmeler",
+    "bookDemo": "Demo talep edin"
   },
   "footer": {
     "tagline": "Akıllı Pazarlama. Akıllı Otomasyon.",
@@ -25,7 +29,11 @@
     "whatsappUs": "WhatsApp'tan Yazın",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfService": "Kullanım Koşulları",
-    "rights": "Tüm hakları saklıdır."
+    "rights": "Tüm hakları saklıdır.",
+    "systems": "Sistemler",
+    "allSystems": "Tüm sistemler",
+    "products": "Ürünler",
+    "whoWeHelp": "Kimlere yardım ediyoruz"
   },
   "common": {
     "bookFreeStrategyCall": "Ücretsiz Strateji Görüşmesi Yapın",
@@ -45,7 +53,7 @@
     "heroCta1": "Demo talep edin",
     "heroCta2": "Sistemleri görün",
     "heroChecklist": [
-      "3 günde ücretsiz AI denetimi",
+      "3 günde ücretsiz yapay zekâ analizi",
       "WhatsApp AI 48 saatte yayında",
       "3 saniyenin altında yanıt",
       "40+ dil"
@@ -85,7 +93,7 @@
       },
       {
         "question": "Ne kadar sürede yayına girer?",
-        "answer": "Ücretsiz AI denetimi 3 gün sürer ve işletmeniz için en önemli otomasyon fırsatlarını ortaya koyar. WhatsApp AI, başlangıçtan itibaren 48 saat içinde yayına girer: WhatsApp Business numaranızı bağlar, AI'ı hizmetlerinize göre eğitir ve ekibinizle test ederiz. Dört sistemi kapsayan daha büyük kurulumlar 2–4 hafta sürer."
+        "answer": "Ücretsiz yapay zekâ analizi 3 gün sürer ve işletmeniz için en önemli otomasyon fırsatlarını ortaya koyar. WhatsApp AI, başlangıçtan itibaren 48 saat içinde yayına girer: WhatsApp Business numaranızı bağlar, AI'ı hizmetlerinize göre eğitir ve ekibinizle test ederiz. Dört sistemi kapsayan daha büyük kurulumlar 2–4 hafta sürer."
       },
       {
         "question": "Kliniğim veya küçük işletmem için çalışır mı?",
@@ -93,7 +101,7 @@
       },
       {
         "question": "Maliyeti nedir?",
-        "answer": "WhatsApp AI'ın sabit bir fiyatı vardır: €1.399 tek seferlik kurulum artı aylık €599 (Essential) veya aylık €999 (Pro); asgari süre 3 aydır. İlk 30 günde en az 3 nitelikli müşteri adayı oluşturmazsa ilk ayınızı iade ederiz. Dört sistemi kapsayan daha büyük paketler — Starter, Growth ve Scale — ücretsiz denetimden sonra fiyatlandırılır; böylece yalnızca size gerçekten zaman kazandıracak şeyler için ödersiniz."
+        "answer": "WhatsApp AI'ın sabit bir fiyatı vardır: €1.399 tek seferlik kurulum artı aylık €599 (Essential) veya aylık €999 (Pro); asgari süre 3 aydır. İlk 30 günde en az 3 nitelikli müşteri adayı oluşturmazsa ilk ayınızı iade ederiz. Dört sistemi kapsayan daha büyük paketler — Starter, Growth ve Scale — ücretsiz yapay zekâ analizinden sonra fiyatlandırılır; böylece yalnızca size gerçekten zaman kazandıracak şeyler için ödersiniz."
       },
       {
         "question": "Personelimin yerini alır mı?",
@@ -322,8 +330,8 @@
   },
   "exitPopup": {
     "title": "Bekleyin! Eli Boş Gitmeyin",
-    "desc": "Ücretsiz bir <strong>AI denetimi</strong> alın ve daha fazla müşteri adayı oluşturmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez.",
-    "cta": "Ücretsiz Denetimimi Alın",
+    "desc": "Ücretsiz bir <strong>yapay zekâ analizi</strong> alın ve daha fazla müşteri adayı oluşturmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez.",
+    "cta": "Ücretsiz Analizimi Alın",
     "dismiss": "Hayır teşekkürler, ücretsiz tavsiyeleri pas geçeceğim",
     "trust": "Kredi kartı yok. Taahhüt yok."
   },

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import { ArrowRight, Check, X, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -75,6 +76,12 @@ const clinicProjects = caseStudies.filter((cs) => cs.category === "Clinic");
 
 export default function Clinics() {
   const { openModal } = useBookingModal();
+  const { t, i18n } = useTranslation();
+  const isTr = (i18n.resolvedLanguage || i18n.language || "").startsWith("tr");
+  // Turkish writes €1,399 as €1.399; the number itself comes from FOUNDING_OFFER.
+  const setupFee = isTr ? FOUNDING_OFFER.setupFee.replace(/,/g, ".") : FOUNDING_OFFER.setupFee;
+  const sysName = (id: SystemId, name: string) => t(`clinicsPage.systems.${id}.name`, name);
+  const faqs = FAQS.map((f, i) => ({ ...f, question: t(`clinicsPage.faqs.${i}.question`, f.question), answer: t(`clinicsPage.faqs.${i}.answer`, f.answer) }));
 
   const schema = {
     "@context": "https://schema.org",
@@ -122,24 +129,24 @@ export default function Clinics() {
             <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-secondary/10 blur-3xl animate-float-orb pointer-events-none" />
             <div className="absolute inset-0 neural-grid-adaptive pointer-events-none" />
             <div className="container relative z-10 mx-auto px-6">
-              <Breadcrumbs items={[{ label: "Clinics" }]} />
+              <Breadcrumbs items={[{ label: t("clinicsPage.breadcrumb", "Clinics") }]} />
               <div className="grid items-center gap-12 lg:grid-cols-12">
                 <div className="min-w-0 lg:col-span-7">
                   <SectionHeader
                     as="h1"
                     align="left"
-                    eyebrow={<><span aria-hidden="true">{audience.emoji}</span> {audience.name}</>}
-                    title="AI automation systems for clinics and medical tourism."
-                    lead={`${audience.tagline} ${audience.description}`}
+                    eyebrow={<><span aria-hidden="true">{audience.emoji}</span> {t("clinicsPage.audience.name", audience.name)}</>}
+                    title={t("clinicsPage.hero.title", "AI automation systems for clinics and medical tourism.")}
+                    lead={`${t("clinicsPage.audience.tagline", audience.tagline)} ${t("clinicsPage.audience.description", audience.description)}`}
                     className="max-w-3xl"
                   />
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                     <Button size="lg" className="rounded-full bg-slate-900 px-7 text-white hover:bg-slate-800" onClick={() => openModal()}>
-                      Book a demo on your WhatsApp <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                      {t("clinicsPage.hero.ctaPrimary", "Book a demo on your WhatsApp")} <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                     </Button>
                     <Link href="/systems" className="inline-flex">
                       <Button size="lg" variant="outline" className="w-full rounded-full border-slate-300 bg-white/70 px-7 text-slate-900 hover:bg-white sm:w-auto">
-                        See the four systems
+                        {t("clinicsPage.hero.ctaSecondary", "See the four systems")}
                       </Button>
                     </Link>
                   </div>
@@ -151,7 +158,7 @@ export default function Clinics() {
                       { value: "40+", label: "Languages the AI can reply in" },
                       { value: "48h", label: "From onboarding to live on your WhatsApp" },
                       { value: "24/7", label: "Coverage across time zones" },
-                    ].map((s) => (
+                    ].map((s, i) => ({ value: t(`clinicsPage.hero.stats.${i}.value`, s.value), label: t(`clinicsPage.hero.stats.${i}.label`, s.label) })).map((s) => (
                       <div key={s.label} className="surface-card flex flex-col p-5">
                         <dt className="order-2 text-sm text-slate-600">{s.label}</dt>
                         <dd className="order-1 text-2xl font-bold text-slate-900 md:text-3xl">{s.value}</dd>
@@ -170,13 +177,13 @@ export default function Clinics() {
               <SectionHeader
                 id="challenges-title"
                 tone="dark"
-                eyebrow="What goes wrong today"
-                title="Where clinics lose patients"
-                lead="Clinics lose enquiries to slow replies and missing follow-up — not to the quality of care. None of it is a medical problem."
+                eyebrow={t("clinicsPage.challenges.eyebrow", "What goes wrong today")}
+                title={t("clinicsPage.challenges.title", "Where clinics lose patients")}
+                lead={t("clinicsPage.challenges.lead", "Clinics lose enquiries to slow replies and missing follow-up — not to the quality of care. None of it is a medical problem.")}
                 className="mb-10"
               />
               <ul className="space-y-3">
-                {CHALLENGES.map((c) => (
+                {CHALLENGES.map((c, i) => t(`clinicsPage.challenges.items.${i}`, c)).map((c) => (
                   <li key={c} className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4">
                     <X className="mt-0.5 h-5 w-5 flex-shrink-0 text-red-400" aria-hidden="true" />
                     <p className="leading-relaxed text-white/75">{c}</p>
@@ -191,9 +198,9 @@ export default function Clinics() {
             <div className="container mx-auto px-6">
               <SectionHeader
                 id="ladder-title"
-                eyebrow="How it works"
-                title="The four systems, applied to a clinic"
-                lead="Start with the capture system on your WhatsApp number. Add the next one once it runs."
+                eyebrow={t("clinicsPage.ladder.eyebrow", "How it works")}
+                title={t("clinicsPage.ladder.title", "The four systems, applied to a clinic")}
+                lead={t("clinicsPage.ladder.lead", "Start with the capture system on your WhatsApp number. Add the next one once it runs.")}
                 className="mb-12"
               />
               <ol className="grid gap-6 md:grid-cols-2">
@@ -203,14 +210,14 @@ export default function Clinics() {
                       <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-slate-900 font-mono text-sm font-bold text-white">{s.step}</span>
                       <span className="text-2xl" aria-hidden="true">{s.emoji}</span>
                       <div className="min-w-0">
-                        <h3 className="font-bold text-slate-900">{s.name}</h3>
-                        <p className="text-xs font-medium text-blue-700">{s.productLabel}</p>
+                        <h3 className="font-bold text-slate-900">{sysName(s.id, s.name)}</h3>
+                        <p className="text-xs font-medium text-blue-700">{t(`clinicsPage.systems.${s.id}.productLabel`, s.productLabel)}</p>
                       </div>
                     </div>
-                    <p className="mb-3 text-lg font-semibold leading-snug text-slate-900">{LADDER[s.id].title}</p>
-                    <p className="flex-1 text-sm leading-relaxed text-slate-600">{LADDER[s.id].detail}</p>
+                    <p className="mb-3 text-lg font-semibold leading-snug text-slate-900">{t(`clinicsPage.ladder.items.${s.id}.title`, LADDER[s.id].title)}</p>
+                    <p className="flex-1 text-sm leading-relaxed text-slate-600">{t(`clinicsPage.ladder.items.${s.id}.detail`, LADDER[s.id].detail)}</p>
                     <Link href={`/systems#${s.id}`} className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-700 hover:text-slate-900">
-                      About the {s.name.toLowerCase()} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      {t(`clinicsPage.systems.${s.id}.about`, `About the ${s.name.toLowerCase()}`)} <ArrowRight className="h-4 w-4" aria-hidden="true" />
                     </Link>
                   </li>
                 ))}
@@ -223,9 +230,9 @@ export default function Clinics() {
             <div className="container mx-auto max-w-5xl px-6">
               <SectionHeader
                 id="expect-title"
-                eyebrow="Results and pricing"
-                title="What clinics can expect"
-                lead="From the moment the WhatsApp AI goes live, every international enquiry gets an answer and the serious patients reach your coordinators."
+                eyebrow={t("clinicsPage.expect.eyebrow", "Results and pricing")}
+                title={t("clinicsPage.expect.title", "What clinics can expect")}
+                lead={t("clinicsPage.expect.lead", "From the moment the WhatsApp AI goes live, every international enquiry gets an answer and the serious patients reach your coordinators.")}
                 className="mb-10"
               />
               <dl className="mb-10 grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -234,7 +241,7 @@ export default function Clinics() {
                   { value: "24/7", label: "No missed leads across time zones" },
                   { value: "40+", label: "Hours of manual messaging saved per month" },
                   { value: "+60%", label: "More consultations booked" },
-                ].map((s) => (
+                ].map((s, i) => ({ value: t(`clinicsPage.expect.stats.${i}.value`, s.value), label: t(`clinicsPage.expect.stats.${i}.label`, s.label) })).map((s) => (
                   <div key={s.label} className="surface-card flex flex-col p-5 text-center">
                     <dt className="order-2 text-sm text-slate-600">{s.label}</dt>
                     <dd className="order-1 text-3xl font-bold text-slate-900">{s.value}</dd>
@@ -245,14 +252,14 @@ export default function Clinics() {
                 {[
                   { name: "Essential", setup: "€1,399 one-time setup", monthly: "€599", items: ["24/7 AI replies on your WhatsApp number", "Automated patient qualification", "Smart follow-up sequences", "Qualified lead handoff", "Multi-language support"] },
                   { name: "Pro", setup: "€1,399 one-time setup", monthly: "€999", items: ["Everything in Essential", "Up to 3 WhatsApp numbers", "Weekly reporting dashboard", "Dedicated account manager"] },
-                ].map((plan) => (
+                ].map((plan, p) => ({ ...plan, setup: t(`clinicsPage.plans.${p}.setup`, plan.setup), items: plan.items.map((item, i) => t(`clinicsPage.plans.${p}.items.${i}`, item)) })).map((plan) => (
                   <div key={plan.name} className="surface-card flex flex-col p-6 md:p-7">
                     <h3 className="text-lg font-bold text-slate-900">{plan.name}</h3>
                     <p className="mt-1 flex flex-wrap items-center gap-2 text-sm text-slate-500">
                       <span className="line-through decoration-slate-400">{plan.setup}</span>
-                      <span className="rounded-full border border-amber-300 bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800">{foundingOfferBadge}</span>
+                      <span className="rounded-full border border-amber-300 bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800">{t("clinicsPage.founding.badge", foundingOfferBadge)}</span>
                     </p>
-                    <p className="mt-3 text-4xl font-bold text-slate-900">{plan.monthly}<span className="text-base font-normal text-slate-500">/month</span></p>
+                    <p className="mt-3 text-4xl font-bold text-slate-900">{plan.monthly}<span className="text-base font-normal text-slate-500">{t("clinicsPage.plans.perMonth", "/month")}</span></p>
                     <ul className="mt-5 space-y-2">
                       {plan.items.map((item) => (
                         <li key={item} className="flex items-start gap-2 text-sm text-slate-700">
@@ -264,10 +271,11 @@ export default function Clinics() {
                 ))}
               </div>
               <p className="mx-auto mt-6 max-w-3xl text-center text-sm font-semibold text-amber-800" data-testid="text-founding-offer">
-                {foundingOfferSpots}. The {FOUNDING_OFFER.setupFee} setup fee is waived for our first {FOUNDING_OFFER.spotsTotal} WhatsApp AI clinics.
+                {t("clinicsPage.founding.spots", foundingOfferSpots, { spotsLeft: FOUNDING_OFFER.spotsLeft, spotsTotal: FOUNDING_OFFER.spotsTotal })}.{" "}
+                {t("clinicsPage.founding.waived", "The {{setupFee}} setup fee is waived for our first {{spotsTotal}} WhatsApp AI clinics.", { setupFee, spotsTotal: FOUNDING_OFFER.spotsTotal })}
               </p>
               <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-relaxed text-slate-600">
-                3-month minimum. If the system does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. One extra international booking (typically €3,000–€15,000) covers the monthly fee. Full product details on{" "}
+                {t("clinicsPage.expect.guarantee", "3-month minimum. If the system does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. One extra international booking (typically €3,000–€15,000) covers the monthly fee. Full product details on")}{" "}
                 <a href="https://webimot.com" className="font-medium text-blue-700 underline-offset-2 hover:underline">webimot.com</a>.
               </p>
             </div>
@@ -278,9 +286,9 @@ export default function Clinics() {
             <div className="container mx-auto max-w-5xl px-6">
               <SectionHeader
                 id="guardrails-title"
-                eyebrow="Medical and privacy guardrails"
-                title="What the AI does, and what it never does"
-                lead="The AI is a front desk, not a doctor. It prepares patients for your team; your medical team makes every medical decision."
+                eyebrow={t("clinicsPage.guardrails.eyebrow", "Medical and privacy guardrails")}
+                title={t("clinicsPage.guardrails.title", "What the AI does, and what it never does")}
+                lead={t("clinicsPage.guardrails.lead", "The AI is a front desk, not a doctor. It prepares patients for your team; your medical team makes every medical decision.")}
                 className="mb-10"
               />
               <ul className="grid gap-4 md:grid-cols-2">
@@ -289,7 +297,7 @@ export default function Clinics() {
                   { title: "Never a diagnosis", desc: "It does not diagnose, decide candidacy or confirm a final price. Photos are sorted against your doctors' rules and always reviewed by your medical team." },
                   { title: "Human handoff", desc: "Medical questions, complaints and anything outside its instructions go straight to a person, with a summary. Your team can take over any chat." },
                   { title: "EU-compliant data handling", desc: "GDPR-compliant, encrypted, never shared with third parties. Conversations stay in your own WhatsApp Business account and systems." },
-                ].map((g) => (
+                ].map((g, i) => ({ title: t(`clinicsPage.guardrails.items.${i}.title`, g.title), desc: t(`clinicsPage.guardrails.items.${i}.desc`, g.desc) })).map((g) => (
                   <li key={g.title} className="surface-card flex items-start gap-3 p-5">
                     <Check className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-700" aria-hidden="true" />
                     <div>
@@ -308,27 +316,27 @@ export default function Clinics() {
               <div className="container mx-auto max-w-5xl px-6">
                 <SectionHeader
                   id="work-title"
-                  eyebrow="Our work"
-                  title="Clinic work by our founder"
+                  eyebrow={t("clinicsPage.work.eyebrow", "Our work")}
+                  title={t("clinicsPage.work.title", "Clinic work by our founder")}
                   className="mb-10"
                 />
                 <div className="grid gap-6 md:grid-cols-2">
                   {clinicProjects.map((cs) => (
                     <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                       <article className="surface-card-interactive flex h-full flex-col p-6 md:p-7">
-                        <p className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">Work by our founder</p>
+                        <p className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-slate-500">{t("clinicsPage.work.label", "Work by our founder")}</p>
                         <h3 className="mb-3 text-xl font-bold leading-snug text-slate-900">{cs.client}</h3>
-                        <p className="mb-4 text-sm leading-relaxed text-slate-600">{cs.summary}</p>
+                        <p className="mb-4 text-sm leading-relaxed text-slate-600">{t(`clinicsPage.caseStudies.${cs.slug}.summary`, cs.summary)}</p>
                         <ul className="grid flex-1 content-start gap-2 sm:grid-cols-2">
-                          {cs.workDone.map((item) => (
+                          {cs.workDone.map((item, i) => (
                             <li key={item.title} className="flex items-start gap-2 text-sm text-slate-700">
                               <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700" aria-hidden="true" />
-                              <span>{item.title}</span>
+                              <span>{t(`clinicsPage.caseStudies.${cs.slug}.workDone.${i}`, item.title)}</span>
                             </li>
                           ))}
                         </ul>
                         <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-blue-700 group-hover:text-slate-900">
-                          Read the project write-up <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                          {t("clinicsPage.work.readMore", "Read the project write-up")} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                         </span>
                       </article>
                     </Link>
@@ -341,15 +349,15 @@ export default function Clinics() {
           {/* Who it's for */}
           <section className="bg-white py-16 md:py-24" aria-labelledby="examples-title">
             <div className="container mx-auto max-w-3xl px-6 text-center">
-              <SectionHeader id="examples-title" eyebrow="Who it's for" title="Built for clinics like yours" className="mb-8" />
+              <SectionHeader id="examples-title" eyebrow={t("clinicsPage.examples.eyebrow", "Who it's for")} title={t("clinicsPage.examples.title", "Built for clinics like yours")} className="mb-8" />
               <ul className="flex flex-wrap justify-center gap-2.5">
-                {audience.examples.map((e) => (
+                {audience.examples.map((e, i) => t(`clinicsPage.audience.examples.${i}`, e)).map((e) => (
                   <li key={e} className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700">
                     {e}
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-sm text-slate-500">Patients from Germany, the UK, the Netherlands and the Gulf. Clinics in Turkey, Europe and the Middle East.</p>
+              <p className="mt-6 text-sm text-slate-500">{t("clinicsPage.examples.note", "Patients from Germany, the UK, the Netherlands and the Gulf. Clinics in Turkey, Europe and the Middle East.")}</p>
             </div>
           </section>
 
@@ -359,12 +367,12 @@ export default function Clinics() {
               <div className="mb-10 text-center">
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-primary">
                   <HelpCircle className="h-4 w-4" aria-hidden="true" />
-                  <span className="text-sm font-medium">FAQ</span>
+                  <span className="text-sm font-medium">{t("clinicsPage.faq.badge", "FAQ")}</span>
                 </div>
-                <h2 id="faq-title" className="text-3xl font-bold md:text-4xl">Questions clinics ask us</h2>
+                <h2 id="faq-title" className="text-3xl font-bold md:text-4xl">{t("clinicsPage.faq.title", "Questions clinics ask us")}</h2>
               </div>
               <Accordion type="single" collapsible className="w-full">
-                {FAQS.map((faq, i) => (
+                {faqs.map((faq, i) => (
                   <AccordionItem key={faq.question} value={`faq-${i}`}>
                     <AccordionTrigger className="text-left text-base font-medium hover:no-underline">{faq.question}</AccordionTrigger>
                     <AccordionContent className="leading-relaxed text-muted-foreground">{faq.answer}</AccordionContent>
@@ -379,19 +387,19 @@ export default function Clinics() {
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
             <div className="container relative z-10 mx-auto max-w-3xl px-6 text-center">
-              <h2 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">Book a demo on your own WhatsApp number</h2>
+              <h2 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">{t("clinicsPage.cta.title", "Book a demo on your own WhatsApp number")}</h2>
               <p className="mx-auto mb-8 max-w-2xl text-lg text-white/70">
-                Send us a real patient enquiry and watch the AI answer it in the patient's language, evaluate the photo and book the consultation. 30 minutes, no commitment.
+                {t("clinicsPage.cta.text", "Send us a real patient enquiry and watch the AI answer it in the patient's language, evaluate the photo and book the consultation. 30 minutes, no commitment.")}
               </p>
               <ul className="mx-auto mb-8 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/60">
-                {["Live on your WhatsApp in 48 hours", "3 qualified leads in 30 days or your first month back", "Your team can take over any chat"].map((item) => (
+                {["Live on your WhatsApp in 48 hours", "3 qualified leads in 30 days or your first month back", "Your team can take over any chat"].map((item, i) => t(`clinicsPage.cta.points.${i}`, item)).map((item) => (
                   <li key={item} className="flex items-center gap-1.5">
                     <Check className="h-4 w-4 text-secondary" aria-hidden="true" /> {item}
                   </li>
                 ))}
               </ul>
               <Button size="lg" className="rounded-full bg-white px-7 text-slate-900 hover:bg-white/90 focus-visible:ring-offset-[#020817]" onClick={() => openModal()}>
-                Book a demo <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                {t("clinicsPage.cta.button", "Book a demo")} <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Button>
             </div>
           </section>

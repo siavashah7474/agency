@@ -1,0 +1,141 @@
+{
+  "smallBusinessPage": {
+    "breadcrumb": "Küçük İşletmeler",
+    "audience": {
+      "name": "Küçük işletmeler",
+      "tagline": "Daha fazla personel almadan yapay zekâ ile çalışın.",
+      "description": "WhatsApp, e-posta ve tablolar üzerinden yürüyen hizmet işletmeleri — çoğunlukla emlak ofisleri — kliniklere kurduğumuz sistemlerin aynısını kullanıyor.",
+      "examples": [
+        "Emlak ofisleri",
+        "WhatsApp üzerinden çalışan hizmet işletmeleri"
+      ]
+    },
+    "hero": {
+      "title": "Küçük işletmeler için yapay zekâ otomasyon sistemleri.",
+      "ctaPrimary": "Ücretsiz yapay zekâ analizi alın",
+      "ctaSecondary": "Dört sistemi görün",
+      "stats": [
+        { "value": "< 60 sn", "label": "Hedeflenen müşteri yanıt süresi" },
+        { "value": "7/24", "label": "Akşamlar ve hafta sonları dahil" },
+        { "value": "4", "label": "Sistem, birer birer eklenir" },
+        { "value": "Haftalık", "label": "Sizin için yazılan rapor" }
+      ]
+    },
+    "challenges": {
+      "eyebrow": "Bugün ne ters gidiyor",
+      "title": "Küçük işletmeler zamanı ve müşterileri nerede kaybediyor",
+      "lead": "On kat fazla personeli olan şirketlerle rekabet ediyorsunuz. Aradaki fark yetenek değil, günün saatleri.",
+      "items": [
+        "WhatsApp, e-posta ve telefonu günün her saati yanıtlayacak personeliniz yok; bu yüzden akşam ve hafta sonu gelen talepler pazartesiyi bekliyor.",
+        "Kimsenin ikinci ve üçüncü kez takip yapacak vakti olmadığı için potansiyel müşteriler soğuyor.",
+        "Eski kişiler ve geçmiş müşteriler bir tabloda veya CRM'de kullanılmadan duruyor.",
+        "İdari işler her hafta saatlerinizi alıyor: hatırlatmalar, faturalar, veri girişi, raporlar.",
+        "Satış ve pazarlamada neyin işe yaradığına dair net bir tablo yok; kararlar içgüdüyle veriliyor."
+      ]
+    },
+    "systems": {
+      "capture": { "name": "Yakalama sistemi", "productLabel": "WhatsApp AI · LeadFire", "about": "Yakalama sistemi hakkında" },
+      "convert": { "name": "Takip sistemi", "productLabel": "NurtureLoop · ReviveIQ", "about": "Takip sistemi hakkında" },
+      "operate": { "name": "Operasyon sistemi", "productLabel": "DocuMind · Günlük işler için AI ajanları", "about": "Operasyon sistemi hakkında" },
+      "measure": { "name": "Raporlama sistemi", "productLabel": "ClearDesk", "about": "Raporlama sistemi hakkında" }
+    },
+    "ladder": {
+      "eyebrow": "Nasıl çalışır",
+      "title": "Dört sistem, bir küçük işletmeye uygulandığında",
+      "lead": "En hızlı geri dönüş sağlayan sistemle başlayın. O çalışmaya başladığında bir sonrakini ekleyin.",
+      "items": {
+        "capture": {
+          "title": "WhatsApp'tan, web sitenizden ve reklamlarınızdan gelen her talep saniyeler içinde yanıtlanır.",
+          "detail": "WhatsApp Business numaranızda ve web sohbetinizde çalışan bir AI ajanı soruları yanıtlar, potansiyel müşteriyi bütçe ve zamanlamaya göre değerlendirir ve bir görüşme ya da yer gösterimi randevusunu doğrudan takviminize kaydeder. Akşamlar ve hafta sonları dahil."
+        },
+        "convert": {
+          "title": "Yanıt vermeyen potansiyel müşteriler için takip ve elinizdekilerin yeniden canlandırılması.",
+          "detail": "Potansiyel müşteri yanıt verene veya çıkış yapana kadar WhatsApp, e-posta ve SMS üzerinden çok adımlı takip. CRM'inizdeki veya gelen kutunuzdaki eski kişilere kişiselleştirilmiş yeniden canlandırma mesajları gider ve yanıt verenler size devredilir."
+        },
+        "operate": {
+          "title": "Faturalar, kayıt formları ve veri girişi ekibiniz yerine AI ajanları tarafından yapılır.",
+          "detail": "Gelen belgeler okunur, veriler muhasebe sisteminize, CRM'inize veya tablonuza aktarılır ve ekibinizin elle gönderdiği rutin hatırlatmalar otomatik olarak gider. Siz yalnızca işaretlenenleri kontrol edersiniz."
+        },
+        "measure": {
+          "title": "Beş ayrı panel yerine potansiyel müşteriler, satışlar ve ekip performansı hakkında tek bir haftalık rapor.",
+          "detail": "Her pazartesi sabahı: kanala göre talepler, yanıt süreleri, dönüşüm, gelir ve bu hafta neyin düzeltilmesi gerektiği. Araçlarınızdan derlenir ve sade bir dille yazılır."
+        }
+      }
+    },
+    "examples": {
+      "eyebrow": "Örnekler",
+      "title": "İşletmenizde nasıl görünür",
+      "lead": "Aynı dört sistem, her işletme türü için farklı şekilde kurulur.",
+      "items": [
+        {
+          "name": "Emlak ofisleri",
+          "tagline": "Her emlak talebine saniyeler içinde ulaşın ve yer gösterimlerini otomatik planlayın.",
+          "automations": [
+            "Portal, web sitesi ve WhatsApp talepleri saniyeler içinde yanıtlanır, alıcılar bütçe ve zamanlamaya göre değerlendirilir, yer gösterimleri danışmanın takvimine kaydedilir",
+            "Uzun satış döngüleri için aylar süren takip ve soğumuş alıcı ve satıcı veritabanlarının yeniden canlandırılması",
+            "Hangi ilanların, reklamların ve kanalların potansiyel müşteri getirdiğine dair haftalık rapor"
+          ]
+        },
+        {
+          "name": "E-ticaret ve Shopify mağazaları",
+          "tagline": "Daha fazla personel olmadan kaybedilen geliri geri kazanın ve geçmiş müşterileri yeniden kazanın.",
+          "automations": [
+            "WhatsApp, e-posta ve SMS üzerinden terk edilen sepet ve satın alma sonrası takip",
+            "Geçmiş müşterilere, her segmente göre kişiselleştirilmiş yeniden canlandırma kampanyaları",
+            "Shopify, reklam hesapları ve analiz araçlarından derlenen pazartesi raporu: ne satıldı, nelerden vazgeçilmeli"
+          ]
+        },
+        {
+          "name": "Finans ve hukuk büroları",
+          "tagline": "Belgeleri otomatikleştirin, talepleri anında değerlendirin ve saat gibi işleyen bir takip yapın.",
+          "automations": [
+            "Sözleşmeler, faturalar ve kayıt formları yapay zekâ tarafından okunur, veriler CRM'inize girilir, eksikler işaretlenir",
+            "Yeni talepler bir dakika içinde değerlendirilir ve doğru danışmana yönlendirilir",
+            "İlk görüşmede dönüşmeyen her aday için takip dizileri"
+          ]
+        },
+        {
+          "name": "Hizmet işletmeleri",
+          "tagline": "Büyük bir şirket gibi işe alım yapmadan büyük bir şirket gibi çalışın.",
+          "automations": [
+            "WhatsApp'ta fiyat teklifi talepleri yanıtlanır ve randevular 7/24 oluşturulur",
+            "Ödeme hatırlatmaları, randevu hatırlatmaları ve yorum talepleri otomatik olarak gönderilir",
+            "İşler, gelir ve yanıt sürelerinin haftalık özeti"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "badge": "SSS",
+      "title": "Küçük işletmelerin bize sorduğu sorular"
+    },
+    "faqs": [
+      {
+        "question": "Küçük bir ekibiz. Bu, daha büyük şirketler için tasarlanmamış mı?",
+        "answer": "WhatsApp, e-posta ve tablolarla çalışan 2 ila 50 kişilik ekipler için tasarlandı. Tek bir sistemle, yakalama sistemiyle başlayabilir ve o çalışmaya başladığında bir sonrakini ekleyebilirsiniz. BT departmanına gerek yok."
+      },
+      {
+        "question": "Hangi araçlara bağlanıyor?",
+        "answer": "WhatsApp Business, web sitenizdeki formlar, Meta ve Google Ads'den gelen potansiyel müşteriler, Google veya Outlook takvimleri, yaygın CRM'ler (HubSpot, Pipedrive, Zoho ve diğerleri), Shopify, Google Sheets, muhasebe araçları ve e-posta. Alışılmadık bir araç kullanıyorsanız onu API'si veya Zapier üzerinden bağlarız."
+      },
+      {
+        "question": "Yapay zekâ bir soruyu yanıtlayamadığında ne olur?",
+        "answer": "Konuşmayı, söylenenlerin bir özetiyle birlikte ekibinizden birine devreder ve müşteriye birinin kendisine dönüş yapacağını bildirir. Normal WhatsApp'ınızdan istediğiniz an istediğiniz sohbeti devralabilirsiniz."
+      },
+      {
+        "question": "Ne kadar sürede yayına girer ve maliyeti nedir?",
+        "answer": "Yakalama sistemini 1 ila 2 hafta içinde, tüm seti ise 2 ila 4 hafta içinde yayına almayı hedefliyoruz. Fiyatlandırma, hangi sistemleri kullandığınıza göre belirlenen kademe başına aylık bir ücrettir; yalnızca ihtiyacınız olan için ödemeniz amacıyla teklifi ücretsiz yapay zekâ analizinden sonra veririz."
+      }
+    ],
+    "cta": {
+      "title": "Önce neyi otomatikleştireceğinizi öğrenin",
+      "text": "Ücretsiz yapay zekâ analizi alın. 3 gün içinde işletmeniz için en yüksek getiriyi sağlayacak beş otomasyonu ve ilkini 2–4 haftada devreye alma planını alırsınız.",
+      "points": [
+        "Ücretsiz analiz, kredi kartı gerekmez",
+        "2–4 haftada yayında",
+        "Her ay sizin için yönetilir"
+      ],
+      "button": "Ücretsiz yapay zekâ analizi alın"
+    }
+  }
+}

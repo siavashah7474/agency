@@ -10,7 +10,11 @@
     "blog": "Blog",
     "contact": "Contact",
     "bookCall": "Strategiegesprek",
-    "ads": "Advertenties"
+    "ads": "Advertenties",
+    "systems": "Systemen",
+    "clinics": "Klinieken",
+    "smallBusiness": "Kleine bedrijven",
+    "bookDemo": "Demo aanvragen"
   },
   "footer": {
     "tagline": "Slimme Marketing. Slimme Automatisering.",
@@ -25,7 +29,11 @@
     "whatsappUs": "WhatsApp ons",
     "privacyPolicy": "Privacybeleid",
     "termsOfService": "Servicevoorwaarden",
-    "rights": "Alle rechten voorbehouden."
+    "rights": "Alle rechten voorbehouden.",
+    "systems": "Systemen",
+    "allSystems": "Alle systemen",
+    "products": "Producten",
+    "whoWeHelp": "Voor wie"
   },
   "common": {
     "bookFreeStrategyCall": "Boek uw gratis strategiegesprek",

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import { ArrowRight, Check, X, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -106,6 +107,14 @@ const FAQS = [
 
 export default function SmallBusiness() {
   const { openModal } = useBookingModal();
+  const { t } = useTranslation();
+  const faqs = FAQS.map((f, i) => ({ ...f, question: t(`smallBusinessPage.faqs.${i}.question`, f.question), answer: t(`smallBusinessPage.faqs.${i}.answer`, f.answer) }));
+  const examples = EXAMPLES.map((ex, i) => ({
+    ...ex,
+    name: t(`smallBusinessPage.examples.items.${i}.name`, ex.name),
+    tagline: t(`smallBusinessPage.examples.items.${i}.tagline`, ex.tagline),
+    automations: ex.automations.map((a, j) => t(`smallBusinessPage.examples.items.${i}.automations.${j}`, a)),
+  }));
 
   const schema = {
     "@context": "https://schema.org",
@@ -153,24 +162,24 @@ export default function SmallBusiness() {
             <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-secondary/10 blur-3xl animate-float-orb pointer-events-none" />
             <div className="absolute inset-0 neural-grid-adaptive pointer-events-none" />
             <div className="container relative z-10 mx-auto px-6">
-              <Breadcrumbs items={[{ label: "Small Business" }]} />
+              <Breadcrumbs items={[{ label: t("smallBusinessPage.breadcrumb", "Small Business") }]} />
               <div className="grid items-center gap-12 lg:grid-cols-12">
                 <div className="min-w-0 lg:col-span-7">
                   <SectionHeader
                     as="h1"
                     align="left"
-                    eyebrow={<><span aria-hidden="true">{audience.emoji}</span> {audience.name}</>}
-                    title="AI automation systems for small businesses."
-                    lead={`${audience.tagline} ${audience.description}`}
+                    eyebrow={<><span aria-hidden="true">{audience.emoji}</span> {t("smallBusinessPage.audience.name", audience.name)}</>}
+                    title={t("smallBusinessPage.hero.title", "AI automation systems for small businesses.")}
+                    lead={`${t("smallBusinessPage.audience.tagline", audience.tagline)} ${t("smallBusinessPage.audience.description", audience.description)}`}
                     className="max-w-3xl"
                   />
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                     <Button size="lg" className="rounded-full bg-slate-900 px-7 text-white hover:bg-slate-800" onClick={() => openModal()}>
-                      Book a free AI audit <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                      {t("smallBusinessPage.hero.ctaPrimary", "Book a free AI audit")} <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                     </Button>
                     <Link href="/systems" className="inline-flex">
                       <Button size="lg" variant="outline" className="w-full rounded-full border-slate-300 bg-white/70 px-7 text-slate-900 hover:bg-white sm:w-auto">
-                        See the four systems
+                        {t("smallBusinessPage.hero.ctaSecondary", "See the four systems")}
                       </Button>
                     </Link>
                   </div>
@@ -182,7 +191,7 @@ export default function SmallBusiness() {
                       { value: "24/7", label: "Evenings and weekends covered" },
                       { value: "4", label: "Systems, added one at a time" },
                       { value: "Weekly", label: "Report written for you" },
-                    ].map((s) => (
+                    ].map((s, i) => ({ value: t(`smallBusinessPage.hero.stats.${i}.value`, s.value), label: t(`smallBusinessPage.hero.stats.${i}.label`, s.label) })).map((s) => (
                       <div key={s.label} className="surface-card flex flex-col p-5">
                         <dt className="order-2 text-sm text-slate-600">{s.label}</dt>
                         <dd className="order-1 text-2xl font-bold text-slate-900 md:text-3xl">{s.value}</dd>
@@ -201,13 +210,13 @@ export default function SmallBusiness() {
               <SectionHeader
                 id="challenges-title"
                 tone="dark"
-                eyebrow="What goes wrong today"
-                title="Where small businesses lose time and customers"
-                lead="You compete with companies that have ten times the staff. The gap is not talent, it is hours in the day."
+                eyebrow={t("smallBusinessPage.challenges.eyebrow", "What goes wrong today")}
+                title={t("smallBusinessPage.challenges.title", "Where small businesses lose time and customers")}
+                lead={t("smallBusinessPage.challenges.lead", "You compete with companies that have ten times the staff. The gap is not talent, it is hours in the day.")}
                 className="mb-10"
               />
               <ul className="space-y-3">
-                {CHALLENGES.map((c) => (
+                {CHALLENGES.map((c, i) => t(`smallBusinessPage.challenges.items.${i}`, c)).map((c) => (
                   <li key={c} className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4">
                     <X className="mt-0.5 h-5 w-5 flex-shrink-0 text-red-400" aria-hidden="true" />
                     <p className="leading-relaxed text-white/75">{c}</p>
@@ -222,9 +231,9 @@ export default function SmallBusiness() {
             <div className="container mx-auto px-6">
               <SectionHeader
                 id="ladder-title"
-                eyebrow="How it works"
-                title="The four systems, applied to a small business"
-                lead="Start with the system that pays back fastest. Add the next one once it runs."
+                eyebrow={t("smallBusinessPage.ladder.eyebrow", "How it works")}
+                title={t("smallBusinessPage.ladder.title", "The four systems, applied to a small business")}
+                lead={t("smallBusinessPage.ladder.lead", "Start with the system that pays back fastest. Add the next one once it runs.")}
                 className="mb-12"
               />
               <ol className="grid gap-6 md:grid-cols-2">
@@ -234,14 +243,14 @@ export default function SmallBusiness() {
                       <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-slate-900 font-mono text-sm font-bold text-white">{s.step}</span>
                       <span className="text-2xl" aria-hidden="true">{s.emoji}</span>
                       <div className="min-w-0">
-                        <h3 className="font-bold text-slate-900">{s.name}</h3>
-                        <p className="text-xs font-medium text-blue-700">{s.productLabel}</p>
+                        <h3 className="font-bold text-slate-900">{t(`smallBusinessPage.systems.${s.id}.name`, s.name)}</h3>
+                        <p className="text-xs font-medium text-blue-700">{t(`smallBusinessPage.systems.${s.id}.productLabel`, s.productLabel)}</p>
                       </div>
                     </div>
-                    <p className="mb-3 text-lg font-semibold leading-snug text-slate-900">{LADDER[s.id].title}</p>
-                    <p className="flex-1 text-sm leading-relaxed text-slate-600">{LADDER[s.id].detail}</p>
+                    <p className="mb-3 text-lg font-semibold leading-snug text-slate-900">{t(`smallBusinessPage.ladder.items.${s.id}.title`, LADDER[s.id].title)}</p>
+                    <p className="flex-1 text-sm leading-relaxed text-slate-600">{t(`smallBusinessPage.ladder.items.${s.id}.detail`, LADDER[s.id].detail)}</p>
                     <Link href={`/systems#${s.id}`} className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-700 hover:text-slate-900">
-                      About the {s.name.toLowerCase()} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      {t(`smallBusinessPage.systems.${s.id}.about`, `About the ${s.name.toLowerCase()}`)} <ArrowRight className="h-4 w-4" aria-hidden="true" />
                     </Link>
                   </li>
                 ))}
@@ -254,13 +263,13 @@ export default function SmallBusiness() {
             <div className="container mx-auto px-6">
               <SectionHeader
                 id="examples-title"
-                eyebrow="Examples"
-                title="What it looks like in your business"
-                lead="The same four systems, set up differently for each kind of business."
+                eyebrow={t("smallBusinessPage.examples.eyebrow", "Examples")}
+                title={t("smallBusinessPage.examples.title", "What it looks like in your business")}
+                lead={t("smallBusinessPage.examples.lead", "The same four systems, set up differently for each kind of business.")}
                 className="mb-12"
               />
               <div className="grid gap-6 md:grid-cols-2">
-                {EXAMPLES.map((ex) => (
+                {examples.map((ex) => (
                   <article key={ex.name} className="surface-card flex flex-col p-6 md:p-7">
                     <div className="mb-3 flex items-center gap-3">
                       <span className="text-3xl" aria-hidden="true">{ex.emoji}</span>
@@ -279,7 +288,7 @@ export default function SmallBusiness() {
                 ))}
               </div>
               <ul className="mt-10 flex flex-wrap justify-center gap-2.5">
-                {audience.examples.map((e) => (
+                {audience.examples.map((e, i) => t(`smallBusinessPage.audience.examples.${i}`, e)).map((e) => (
                   <li key={e} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700">
                     {e}
                   </li>
@@ -294,12 +303,12 @@ export default function SmallBusiness() {
               <div className="mb-10 text-center">
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-primary">
                   <HelpCircle className="h-4 w-4" aria-hidden="true" />
-                  <span className="text-sm font-medium">FAQ</span>
+                  <span className="text-sm font-medium">{t("smallBusinessPage.faq.badge", "FAQ")}</span>
                 </div>
-                <h2 id="faq-title" className="text-3xl font-bold md:text-4xl">Questions small businesses ask us</h2>
+                <h2 id="faq-title" className="text-3xl font-bold md:text-4xl">{t("smallBusinessPage.faq.title", "Questions small businesses ask us")}</h2>
               </div>
               <Accordion type="single" collapsible className="w-full">
-                {FAQS.map((faq, i) => (
+                {faqs.map((faq, i) => (
                   <AccordionItem key={faq.question} value={`faq-${i}`}>
                     <AccordionTrigger className="text-left text-base font-medium hover:no-underline">{faq.question}</AccordionTrigger>
                     <AccordionContent className="leading-relaxed text-muted-foreground">{faq.answer}</AccordionContent>
@@ -314,19 +323,19 @@ export default function SmallBusiness() {
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
             <div className="container relative z-10 mx-auto max-w-3xl px-6 text-center">
-              <h2 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">Find out what to automate first</h2>
+              <h2 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">{t("smallBusinessPage.cta.title", "Find out what to automate first")}</h2>
               <p className="mx-auto mb-8 max-w-2xl text-lg text-white/70">
-                Book a free AI audit. In 3 days you get the five automations with the biggest return for your business and a plan to deploy the first one in 2–4 weeks.
+                {t("smallBusinessPage.cta.text", "Book a free AI audit. In 3 days you get the five automations with the biggest return for your business and a plan to deploy the first one in 2–4 weeks.")}
               </p>
               <ul className="mx-auto mb-8 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/60">
-                {["Free audit, no credit card", "Live in 2–4 weeks", "Managed for you every month"].map((item) => (
+                {["Free audit, no credit card", "Live in 2–4 weeks", "Managed for you every month"].map((item, i) => t(`smallBusinessPage.cta.points.${i}`, item)).map((item) => (
                   <li key={item} className="flex items-center gap-1.5">
                     <Check className="h-4 w-4 text-secondary" aria-hidden="true" /> {item}
                   </li>
                 ))}
               </ul>
               <Button size="lg" className="rounded-full bg-white px-7 text-slate-900 hover:bg-white/90 focus-visible:ring-offset-[#020817]" onClick={() => openModal()}>
-                Book a free AI audit <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                {t("smallBusinessPage.cta.button", "Book a free AI audit")} <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Button>
             </div>
           </section>
