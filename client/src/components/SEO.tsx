@@ -1,4 +1,10 @@
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
+import { useLocation } from "wouter";
+import { SITE, isTranslated, languagesFor, localizePath, seoKey, type Lang } from "@/i18n/routes";
+
+const OG_LOCALE: Record<Lang, string> = { en: "en_US", tr: "tr_TR", nl: "nl_NL", es: "es_ES", ar: "ar_AR" };
+const absolute = (path: string) => SITE + (path === "/" ? "/" : path);
 
 interface SEOProps {
   title: string;
@@ -44,8 +50,21 @@ export default function SEO({
   schema,
   noindex = false,
 }: SEOProps) {
-  const brandedTitle = withBrand(title);
-  const metaDescription = clip(description, 160);
+  const { t, i18n } = useTranslation();
+  const [location] = useLocation();
+  // The page's path without a language prefix: from the canonical URL the page passes, else
+  // from the router (which already hides the prefix).
+  const path = (canonicalUrl ? canonicalUrl.replace(SITE, "").replace(/[?#].*$/, "") : location).replace(/\/+$/, "") || "/";
+  const lang = ((i18n.resolvedLanguage || "en").slice(0, 2)) as Lang;
+  const translated = lang !== "en" && isTranslated(lang, path);
+
+  // A translated page has its own title and description (seoMeta in <lng>-pages/*.json) and
+  // its own canonical URL; hreflang links tell search engines which versions exist.
+  const key = seoKey(path);
+  const brandedTitle = withBrand(translated ? t(`seoMeta.${key}.title`, { defaultValue: title }) : title);
+  const metaDescription = clip(translated ? t(`seoMeta.${key}.description`, { defaultValue: description }) : description, 160);
+  const canonical = canonicalUrl && translated ? absolute(localizePath(path, lang)) : canonicalUrl;
+  const alternates = canonicalUrl && !noindex ? languagesFor(path) : [];
 
   return (
     <Helmet>
@@ -53,7 +72,10 @@ export default function SEO({
       <meta name="description" content={metaDescription} />
       {keywords && <meta name="keywords" content={keywords} />}
       {noindex && <meta name="robots" content="noindex, follow" />}
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {canonical && <link rel="canonical" href={canonical} />}
+      {alternates.length > 1 &&
+        alternates.map((l) => <link key={l} rel="alternate" hrefLang={l} href={absolute(localizePath(path, l))} />)}
+      {alternates.length > 1 && <link rel="alternate" hrefLang="x-default" href={absolute(path)} />}
 
       {/* Open Graph */}
       <meta property="og:title" content={brandedTitle} />
@@ -61,8 +83,8 @@ export default function SEO({
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content="Webimot Agency" />
-      <meta property="og:locale" content="en_US" />
-      {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+      <meta property="og:locale" content={OG_LOCALE[translated ? lang : "en"]} />
+      {canonical && <meta property="og:url" content={canonical} />}
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

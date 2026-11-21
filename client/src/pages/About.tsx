@@ -7,6 +7,7 @@ import {
   Stethoscope, Building, ShoppingCart, ArrowRight, Heart, Sparkles,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "wouter";
 import { useDir } from "@/i18n/useDir";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 
@@ -132,7 +133,9 @@ export default function About() {
             <div className="container mx-auto px-6 relative z-10">
               <div className="max-w-5xl mx-auto grid gap-10 md:grid-cols-[320px_1fr] md:gap-14 items-start">
                 <img
-                  src="/sia-ahmadi.jpg"
+                  src="/sia-ahmadi-720.webp"
+                  srcSet="/sia-ahmadi-480.webp 480w, /sia-ahmadi-720.webp 720w"
+                  sizes="320px"
                   alt={t("aboutPage.founderImageAlt", "Sia Ahmadi, founder of Webimot Agency")}
                   width={1200}
                   height={1600}
@@ -159,6 +162,15 @@ export default function About() {
                 </ul>
                 <p className="text-lg text-white/70 mb-4">{t("about.founder.p2")}</p>
                 <p className="text-lg text-white/70 mb-6">{t("about.founder.p3")}</p>
+                <div className="flex flex-wrap gap-x-6 gap-y-3">
+                <Link
+                  href="/sia-ahmadi"
+                  className="inline-flex items-center gap-2 font-medium text-white underline underline-offset-4 hover:text-white/80"
+                  data-testid="link-founder-profile"
+                >
+                  {t("founderPage.aboutLink", "See Sia's full profile")}
+                  <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                </Link>
                 <a
                   href={FOUNDER_LINKEDIN}
                   target="_blank"
@@ -168,6 +180,7 @@ export default function About() {
                   {t("about.founder.linkedin")}
                   <ArrowRight className="h-4 w-4 rtl:rotate-180" />
                 </a>
+                </div>
                 </div>
               </div>
             </div>

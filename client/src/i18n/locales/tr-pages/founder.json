@@ -1,0 +1,163 @@
+{
+  "founderPage": {
+    "aboutLink": "Sia'nın tüm profilini görün",
+    "hero": {
+      "eyebrow": "Webimot Agency kurucusu",
+      "lead": "Kliniklerin ve küçük işletmelerin büyümesine yardımcı oluyorum. Taleplerin, satışların ve zamanın nerede kaybedildiğini bulur, ardından bunu daha iyi satış hunileri, daha iyi reklamlar, daha fazla görünürlük ve yapay zekâ otomasyonuyla çözerim. Uzmanlık alanım medikal ve sağlık turizmi; stratejiden kuruluma kadar işi bizzat yapıyorum.",
+      "location": "Amsterdam ile İstanbul arasında yaşıyorum. İngilizce, Türkçe, Farsça ve Kürtçe, ayrıca temel düzeyde Felemenkçe ile çalışıyorum.",
+      "ctaBook": "Sia ile görüşme planlayın",
+      "ctaWhatsapp": "WhatsApp'tan yazın",
+      "imageAlt": "Girişimci ve Webimot Agency kurucusu Sia Ahmadi"
+    },
+    "roles": {
+      "eyebrow": "Dört rol, tek kişi",
+      "title": "Ne yapıyorum",
+      "lead": "Önce işletmenin sorununa, sonra teknolojiye bakarım. Müşterilerin bana geldiği dört konu şunlar.",
+      "items": [
+        {
+          "title": "Girişimci",
+          "text": "Webimot'u Ocak 2025'te kurdum ve kendi ürününü geliştirdim: kliniklere gelen talepleri WhatsApp'ta yanıtlayan bir yapay zekâ ajanı olan Webimot WhatsApp AI. Müşteri işlerini stratejiden kuruluma kadar bizzat yapıyorum."
+        },
+        {
+          "title": "İş geliştirme uzmanı",
+          "text": "Bir işletmenin talepleri, satışları ve zamanı nerede kaybettiğini bulur, ilk temastan satışa kadar olan yolu yeniden kurarım: hızlı yanıt, ön değerlendirme, takip ve ekibin gerçekten kullandığı bir CRM."
+        },
+        {
+          "title": "Yapay zekâ otomasyon uzmanı",
+          "text": "n8n, OpenAI API ve WhatsApp Cloud API ile yapay zekâ ajanları ve iş akışları geliştiriyorum; böylece yanıtlar, takipler ve raporlar kimse elle uğraşmadan her gün çalışır."
+        },
+        {
+          "title": "Dijital dönüşüm danışmanı",
+          "text": "İşletme sahiplerinin WhatsApp, e-posta, belge ve tablolardaki elle yapılan işleri sistemlere taşımasına yardımcı oluyorum ve bu sistemleri de kendim kuruyorum: web siteleri, CRM'ler, reklam kampanyaları ve arama optimizasyonu."
+        }
+      ]
+    },
+    "specialties": {
+      "eyebrow": "Uzmanlık"
+    },
+    "experience": {
+      "eyebrow": "Deneyim",
+      "title": "Nerelerde çalıştım",
+      "lead": "2021'den beri İstanbul'da uluslararası hasta kabul eden kliniklerde satış ve pazarlama alanında çalışıyorum; bu yüzden hastanın ilk mesajdan randevuya kadar olan yolunu iyi biliyorum.",
+      "items": [
+        {
+          "period": "Ocak 2025 – günümüz",
+          "role": "Kurucu",
+          "org": "Webimot Agency",
+          "text": "Klinikler ve küçük işletmeler için yapay zekâ otomasyonu ve dijital pazarlama. Müşteri işlerini bizzat yapıyorum: web siteleri, CRM'ler, reklam kampanyaları, arama optimizasyonu ve yapay zekâ ajanları."
+        },
+        {
+          "period": "Kasım 2023 – günümüz",
+          "role": "Serbest satış ve pazarlama uzmanı",
+          "org": "Dr. Görkem Atsal Clinic, İstanbul",
+          "text": "Uluslararası hasta kabul eden bir yüz plastik cerrahisi kliniği için web sitesi, CRM, Google Ads ve Meta Ads, sosyal medya stratejisi, arama optimizasyonu ve satış süreci."
+        },
+        {
+          "period": "2021 – 2024",
+          "role": "Dijital pazarlama",
+          "org": "WaveMed",
+          "text": "ABD merkezli bir sağlık girişimi için dijital pazarlama."
+        },
+        {
+          "period": "",
+          "role": "Uluslararası hasta satışları yöneticisi",
+          "org": "Ariana Health Clinic, İstanbul",
+          "text": "İstanbul'daki bir klinikte uluslararası hasta satışlarını yönettim."
+        },
+        {
+          "period": "",
+          "role": "Satış ve pazarlama",
+          "org": "BHT Clinic (Tema Hastanesi), İstanbul",
+          "text": "İstanbul'da uluslararası hasta kabul eden bir klinik için satış ve pazarlama."
+        }
+      ]
+    },
+    "education": {
+      "eyebrow": "Geçmiş",
+      "title": "Eğitim ve diller",
+      "heading": "Eğitim",
+      "items": [
+        {
+          "degree": "Danışmanlık ve Girişimcilik Yüksek Lisansı (MSc)",
+          "school": "Rotterdam Business School",
+          "note": "Devam ediyor"
+        },
+        {
+          "degree": "Bilgi Teknolojileri Yüksek Lisansı (MSc)",
+          "school": "Azad Üniversitesi",
+          "note": ""
+        }
+      ]
+    },
+    "languages": {
+      "heading": "Diller",
+      "items": [
+        "İngilizce",
+        "Türkçe",
+        "Farsça",
+        "Kürtçe",
+        "Felemenkçe (temel)"
+      ]
+    },
+    "tools": {
+      "heading": "Yapay zekâ ajanlarını hangi araçlarla geliştiriyorum"
+    },
+    "work": {
+      "eyebrow": "Seçilmiş işler",
+      "title": "Çalıştığım klinikler ve geliştirdiğim ürünler",
+      "lead": "Her sayfa, ne yaptığımı ve kimin için yaptığımı anlatır.",
+      "cardLink": "Projeyi görün",
+      "categories": {
+        "Clinic": "Klinik",
+        "Software": "Yazılım",
+        "Product": "Ürün"
+      },
+      "items": {
+        "gorkem-atsal-clinic": "Kasım 2023'ten beri devam ediyor: web sitesi, CRM, Google Ads ve Meta Ads, sosyal medya stratejisi ve arama optimizasyonu.",
+        "clinish-dental-clinic": "Web sitesi, sosyal medya, Meta Business Suite ve Meta reklamlarının kurulumu ve arama optimizasyonu.",
+        "apex-ai-trading-bots": "Güncel proje: Hollanda'daki özel bir müşteri için geliştirilen, kişiselleştirilmiş yapay zekâ destekli kripto alım satım botları içeren bir uygulama.",
+        "webimot-whatsapp-ai": "Kendi ürünüm: kliniklere gelen talepleri WhatsApp'ta yanıtlayan, ön değerlendirme soruları soran ve sıcak talepleri satış ekibine aktaran bir yapay zekâ ajanı.",
+        "prime-hair": "Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri, sosyal medya.",
+        "msb-aesthetic": "Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri, sosyal medya.",
+        "estetizm": "Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri, sosyal medya."
+      }
+    },
+    "ways": {
+      "eyebrow": "Birlikte çalışmak",
+      "title": "Benimle nasıl çalışabilirsiniz",
+      "lead": "Webimot üzerinden doğrudan benimle çalışırsınız. İşletmenize uyan başlangıç noktasını seçin.",
+      "items": [
+        {
+          "title": "Klinikler için danışmanlık",
+          "text": "Bir görüşmeyle başlarız. İlk reklam veya mesajdan randevuya kadar olan yola bakar ve ilk olarak neyi düzelteceğimi söylerim.",
+          "link": "Kliniklerle nasıl çalışıyorum"
+        },
+        {
+          "title": "Anahtar teslim sistemler",
+          "text": "Sistemleri sizin için kurar ve işletirim: taleplerin yakalanması, takip, operasyon ve raporlama; hâlihazırda kullandığınız araçlara bağlı olarak.",
+          "link": "Dört sistemi görün"
+        },
+        {
+          "title": "Reklam yönetimi",
+          "text": "Klinikler için Meta ve Google kampanyaları; kendi reklam hesabınızda yürütülür ve tıklamalarla değil, alınan randevularla ölçülür.",
+          "link": "Reklam yönetimini görün"
+        },
+        {
+          "title": "Kliniğiniz için WhatsApp AI",
+          "text": "Kliniğinizin kendi WhatsApp Business numarasında çalışan; talepleri yanıtlayan, hastaları ön değerlendirmeden geçiren ve sıcak talepleri ekibinize aktaran bir yapay zekâ ajanı.",
+          "link": "WhatsApp AI'ı görün"
+        }
+      ]
+    },
+    "cta": {
+      "title": "İşletmenizin talepleri nerede kaybettiğini anlatın",
+      "text": "30 dakikalık ücretsiz bir görüşme planlayın. Siz kliniğinizi veya işletmenizi anlatın; birlikte çalışsak da çalışmasak da ilk olarak neyi düzelteceğimi size dürüstçe söyleyeyim."
+    }
+  },
+  "seoMeta": {
+    "sia-ahmadi": {
+      "title": "Sia Ahmadi | Girişimci ve Yapay Zekâ Danışmanı",
+      "description": "Sia Ahmadi: klinikler, sağlık turizmi ve küçük işletmeler için girişimci, iş geliştirme uzmanı, yapay zekâ otomasyon uzmanı ve dijital dönüşüm danışmanı."
+    }
+  }
+}

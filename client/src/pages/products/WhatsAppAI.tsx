@@ -750,7 +750,9 @@ export default function WhatsAppAIPage() {
             <div className="container mx-auto max-w-4xl px-6">
               <div className="surface-card grid items-start gap-8 p-6 md:grid-cols-[200px_1fr] md:gap-10 md:p-10">
                 <img
-                  src="/sia-ahmadi.jpg"
+                  src="/sia-ahmadi-720.webp"
+                  srcSet="/sia-ahmadi-480.webp 480w, /sia-ahmadi-720.webp 720w"
+                  sizes="200px"
                   alt={t("whatsappAiPage.founder.imageAlt", "Sia Ahmadi, founder of Webimot Agency")}
                   width={1200}
                   height={1600}
@@ -779,7 +781,7 @@ export default function WhatsAppAIPage() {
                     ))}
                   </dl>
                   <div className="flex flex-wrap gap-x-6 gap-y-2">
-                    <Link href="/about#founder" className="inline-flex items-center gap-2 font-semibold text-blue-700 underline-offset-4 hover:underline" data-testid="link-founder-bio">
+                    <Link href="/sia-ahmadi" className="inline-flex items-center gap-2 font-semibold text-blue-700 underline-offset-4 hover:underline" data-testid="link-founder-bio">
                       {t("whatsappAiPage.founder.link", "Read the full bio")} <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
                     </Link>
                     <a href={FOUNDER_LINKEDIN} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-semibold text-slate-700 underline-offset-4 hover:underline">

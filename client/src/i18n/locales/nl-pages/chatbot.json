@@ -1,0 +1,120 @@
+{
+  "chatbot": {
+    "welcomeMessage": "Hallo! Ik help u graag de marketingoplossing te vinden die het beste bij uw bedrijf past. Ik stel u een paar korte vragen om uw wensen beter te begrijpen.",
+    "closingMessage": "Op basis van uw antwoorden heb ik de oplossingen gevonden die het beste bij u passen! Ons team bespreekt graag met u hoe wij uw bedrijf kunnen helpen groeien.",
+    "ctaText": "Chat met ons team via WhatsApp",
+    "ctaNote": "Gratis adviesgesprek • Geen verplichtingen",
+    "whatsappMessage": "Hallo! Ik heb zojuist de vragenlijst op uw website ingevuld en wil graag meer weten over uw diensten.",
+    "myInterests": "Mijn interesses:",
+    "assistant": "{{company}}-assistent",
+    "restart": "Opnieuw beginnen",
+    "closeChat": "Chat sluiten",
+    "openChat": "Chat openen",
+    "teaser": "Hulp nodig? Chat met ons!",
+    "intro": {
+      "title": "Vind de oplossing die bij u past",
+      "text": "Beantwoord een paar korte vragen en ik adviseer de beste marketingoplossingen voor uw bedrijf.",
+      "start": "Laten we beginnen"
+    },
+    "recommendationsIntro": "Dit zijn mijn beste aanbevelingen voor u:",
+    "nextStep": "Klaar voor de volgende stap? Neem contact op met ons team voor een gratis strategiegesprek!",
+    "match": "{{percent}}% match",
+    "questions": {
+      "industry": {
+        "question": "In welke branche is uw bedrijf actief?",
+        "options": {
+          "medical": "Medisch toerisme / Zorg",
+          "realestate": "Vastgoed",
+          "ecommerce": "E-commerce / Retail",
+          "service": "Dienstverlening",
+          "other": "Anders"
+        }
+      },
+      "goal": {
+        "question": "Wat is op dit moment uw belangrijkste doel?",
+        "options": {
+          "leads": "Meer leads en aanvragen krijgen",
+          "awareness": "De naamsbekendheid vergroten",
+          "presence": "De online zichtbaarheid verbeteren",
+          "automation": "Klantcommunicatie automatiseren",
+          "all": "Al het bovenstaande"
+        }
+      },
+      "challenge": {
+        "question": "Wat is uw grootste uitdaging?",
+        "options": {
+          "time": "Te weinig tijd om op aanvragen te reageren",
+          "traffic": "Weinig websiteverkeer",
+          "conversion": "Leads worden geen klant",
+          "analytics": "Ik weet niet wat werkt",
+          "consistency": "Marketing gebeurt onregelmatig"
+        }
+      },
+      "budget": {
+        "question": "Wat is uw maandelijkse marketingbudget?",
+        "options": {
+          "low": "Minder dan €1.000",
+          "medium": "€1.000 - €5.000",
+          "high": "€5.000 - €15.000",
+          "enterprise": "€15.000+",
+          "unsure": "Weet ik nog niet"
+        }
+      },
+      "timeline": {
+        "question": "Wanneer wilt u resultaat zien?",
+        "options": {
+          "urgent": "Zo snel mogelijk",
+          "short": "Binnen 1-3 maanden",
+          "medium": "Binnen 3-6 maanden",
+          "long": "Groei op de lange termijn"
+        }
+      }
+    },
+    "recommendations": {
+      "whatsapp-ai-agent": {
+        "serviceName": "WhatsApp AI (Capture-systeem)",
+        "description": "24/7 automatische antwoorden om leads direct vast te leggen en te kwalificeren"
+      },
+      "meta-ads": {
+        "serviceName": "Meta Ads-beheer",
+        "description": "Gerichte Facebook- en Instagram-campagnes voor kwalitatieve leads"
+      },
+      "google-ads": {
+        "serviceName": "Google Ads-beheer",
+        "description": "Bereik klanten met een sterke koopintentie die naar uw diensten zoeken"
+      },
+      "seo": {
+        "serviceName": "SEO-diensten",
+        "description": "Scoor hoger in de zoekresultaten en trek op de lange termijn organisch verkeer aan"
+      },
+      "seo-blog-generator": {
+        "serviceName": "SEO Blog AI",
+        "description": "Geautomatiseerde contentcreatie, geoptimaliseerd voor zoekmachines"
+      },
+      "website-development": {
+        "serviceName": "Capture-systeem",
+        "description": "Webchat en WhatsApp AI die websitebezoekers omzetten in gekwalificeerde leads met een afspraak"
+      },
+      "funnel-automation": {
+        "serviceName": "Follow-upsysteem",
+        "description": "Automatische opvolging via WhatsApp, e-mail en sms tot de lead boekt of zich afmeldt"
+      },
+      "content-creation": {
+        "serviceName": "Capture-systeem",
+        "description": "Elke aanvraag via uw socialmediakanalen binnen enkele seconden beantwoord, in de taal van de klant"
+      },
+      "branding": {
+        "serviceName": "AI-systemen voor klinieken",
+        "description": "Onderscheid u met een kliniek die direct antwoordt, opvolgt en 24/7 afspraken inplant"
+      },
+      "ai-ops-autopilot": {
+        "serviceName": "Operations-systeem",
+        "description": "AI-agents die facturen, documenten en gegevensinvoer verwerken in plaats van uw team"
+      },
+      "reputation-management": {
+        "serviceName": "Capture-systeem",
+        "description": "Snelle, consistente antwoorden op elk klantbericht — de eerste stap naar een betere reputatie"
+      }
+    }
+  }
+}

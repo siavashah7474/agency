@@ -36,6 +36,17 @@ const SEEDS = [
   "/services/funnel-automation",
   "/services/ai-ops-autopilot",
 ];
+// Language versions: every page listed in translated-routes.json also exists under its
+// language prefix (/tr/clinics). They are seeded explicitly so none depends on being linked.
+const TRANSLATED = JSON.parse(await fs.readFile(path.join(ROOT, "client", "src", "i18n", "translated-routes.json"), "utf8"));
+const LANG_CODES = Object.keys(TRANSLATED);
+const localized = (lang, base) => (lang === "en" ? base : `/${lang}${base === "/" ? "" : base}`);
+for (const lang of LANG_CODES) for (const base of TRANSLATED[lang]) SEEDS.push(localized(lang, base));
+// "/tr/clinics" → { lang: "tr", base: "/clinics" }
+function splitLang(route) {
+  const [, first, ...rest] = route.split("/");
+  return LANG_CODES.includes(first) ? { lang: first, base: "/" + rest.join("/") } : { lang: "en", base: route };
+}
 const CONCURRENCY = 4;
 const LASTMOD_FILE = path.join(ROOT, "scripts", "page-lastmod.json");
 
@@ -128,6 +139,7 @@ async function capture(browser, origin, route) {
       return {
         head,
         title: document.title,
+        lang: document.documentElement.lang || "en",
         body: document.getElementById("root").innerHTML,
         links: [...document.querySelectorAll("a[href]")].map((a) => a.href),
         notFound: /404/.test(document.querySelector("h1")?.textContent ?? ""),
@@ -151,6 +163,7 @@ function buildHtml(template, snap) {
   }
   // Helmet's title tag has data-rh; make sure exactly one <title> remains.
   if (!/<title/.test(html)) html = html.replace("</head>", `    <title>${snap.title}</title>\n  </head>`);
+  if (snap.lang && snap.lang !== "en") html = html.replace(/<html lang="en"/, `<html lang="${snap.lang}"`);
   return html.replace('<div id="root"></div>', `<div id="root">${snap.body}</div>`);
 }
 
@@ -176,11 +189,24 @@ async function lastmods(hashes) {
 }
 
 function sitemap(routes, dates) {
-  const priority = (r) => (r === "/" ? "1.0" : r.split("/").length === 2 ? "0.8" : "0.6");
+  const have = new Set(routes);
+  const priority = (base) => (base === "/" ? "1.0" : base.split("/").length === 2 ? "0.8" : "0.6");
+  const loc = (r) => `${SITE}${r === "/" ? "/" : r}`;
   const urls = routes
-    .map((r) => `  <url>\n    <loc>${SITE}${r === "/" ? "/" : r}</loc>\n    <lastmod>${dates[r]}</lastmod>\n    <priority>${priority(r)}</priority>\n  </url>`)
+    .map((r) => {
+      const { base } = splitLang(r);
+      // hreflang: every language version of this page that was actually rendered.
+      const versions = ["en", ...LANG_CODES].filter((l) => have.has(localized(l, base)));
+      const alternates =
+        versions.length > 1
+          ? [...versions.map((l) => [l, localized(l, base)]), ["x-default", base]]
+              .map(([l, href]) => `\n    <xhtml:link rel="alternate" hreflang="${l}" href="${loc(href)}"/>`)
+              .join("")
+          : "";
+      return `  <url>\n    <loc>${loc(r)}</loc>\n    <lastmod>${dates[r]}</lastmod>\n    <priority>${priority(base)}</priority>${alternates}\n  </url>`;
+    })
     .join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`;
 }
 
 async function main() {
@@ -226,6 +252,12 @@ async function main() {
               seen.add(next);
               queue.push(next);
             }
+          }
+          // A language URL that fell back to English (page not translated) must not be published.
+          const want = splitLang(route).lang;
+          if (snap.lang !== want) {
+            problems.push(`${route}: rendered in "${snap.lang}", expected "${want}"`);
+            return;
           }
           if (snap.notFound) {
             problems.push(`${route}: renders the 404 page (linked from somewhere on the site)`);

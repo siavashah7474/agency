@@ -1,5 +1,10 @@
-import { createContext, useContext, useState, ReactNode } from "react";
-import BookingModal from "@/components/BookingModal";
+import { createContext, lazy, Suspense, useContext, useEffect, useState, ReactNode } from "react";
+
+// The booking form (form library, validation, select and dialog) is only needed once a
+// visitor opens it, so it is kept out of the first download. It is fetched in the background
+// a few seconds after the page loads, so opening it still feels instant.
+const importBookingModal = () => import("@/components/BookingModal");
+const BookingModal = lazy(importBookingModal);
 
 interface BookingModalContextType {
   isOpen: boolean;
@@ -14,9 +19,16 @@ const BookingModalContext = createContext<BookingModalContextType | undefined>(
 export function BookingModalProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [defaultService, setDefaultService] = useState<string | undefined>();
+  const [everOpened, setEverOpened] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => void importBookingModal(), 4000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const openModal = (service?: string) => {
     setDefaultService(service);
+    setEverOpened(true);
     setIsOpen(true);
   };
 
@@ -28,11 +40,11 @@ export function BookingModalProvider({ children }: { children: ReactNode }) {
   return (
     <BookingModalContext.Provider value={{ isOpen, openModal, closeModal }}>
       {children}
-      <BookingModal
-        open={isOpen}
-        onOpenChange={setIsOpen}
-        defaultService={defaultService}
-      />
+      {everOpened && (
+        <Suspense fallback={null}>
+          <BookingModal open={isOpen} onOpenChange={setIsOpen} defaultService={defaultService} />
+        </Suspense>
+      )}
     </BookingModalContext.Provider>
   );
 }

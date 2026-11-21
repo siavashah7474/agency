@@ -1,0 +1,120 @@
+{
+  "chatbot": {
+    "welcomeMessage": "¡Hola! Estoy aquí para ayudarte a encontrar la solución de marketing ideal para tu negocio. Déjame hacerte unas preguntas rápidas para entender mejor lo que necesitas.",
+    "closingMessage": "Según tus respuestas, ¡he encontrado las soluciones ideales para ti! A nuestro equipo le encantará comentar contigo cómo podemos ayudar a hacer crecer tu negocio.",
+    "ctaText": "Habla con nuestro equipo por WhatsApp",
+    "ctaNote": "Consulta gratuita • Sin compromiso",
+    "whatsappMessage": "¡Hola! Acabo de completar el cuestionario de vuestra web y me gustaría saber más sobre vuestros servicios.",
+    "myInterests": "Mis intereses:",
+    "assistant": "Asistente de {{company}}",
+    "restart": "Reiniciar",
+    "closeChat": "Cerrar chat",
+    "openChat": "Abrir chat",
+    "teaser": "¿Necesitas ayuda? ¡Chatea con nosotros!",
+    "intro": {
+      "title": "Encuentra tu solución ideal",
+      "text": "Responde unas preguntas rápidas y te recomendaré las mejores soluciones de marketing para tu negocio.",
+      "start": "Empecemos"
+    },
+    "recommendationsIntro": "Estas son mis mejores recomendaciones para ti:",
+    "nextStep": "¿Listo para dar el siguiente paso? ¡Contacta con nuestro equipo para una consulta estratégica gratuita!",
+    "match": "{{percent}} % de coincidencia",
+    "questions": {
+      "industry": {
+        "question": "¿En qué sector está tu negocio?",
+        "options": {
+          "medical": "Turismo médico / Salud",
+          "realestate": "Sector inmobiliario",
+          "ecommerce": "E-commerce / Comercio minorista",
+          "service": "Empresa de servicios",
+          "other": "Otro"
+        }
+      },
+      "goal": {
+        "question": "¿Cuál es tu objetivo principal ahora mismo?",
+        "options": {
+          "leads": "Conseguir más leads y consultas",
+          "awareness": "Aumentar el reconocimiento de marca",
+          "presence": "Mejorar la presencia online",
+          "automation": "Automatizar la comunicación con los clientes",
+          "all": "Todo lo anterior"
+        }
+      },
+      "challenge": {
+        "question": "¿Cuál es tu mayor reto?",
+        "options": {
+          "time": "No hay tiempo suficiente para responder a las consultas",
+          "traffic": "Poco tráfico en la web",
+          "conversion": "Los leads no se convierten en clientes",
+          "analytics": "No sé qué está funcionando",
+          "consistency": "El marketing no es constante"
+        }
+      },
+      "budget": {
+        "question": "¿Cuál es tu presupuesto mensual de marketing?",
+        "options": {
+          "low": "Menos de €1.000",
+          "medium": "€1.000 - €5.000",
+          "high": "€5.000 - €15.000",
+          "enterprise": "€15.000+",
+          "unsure": "Aún no lo sé"
+        }
+      },
+      "timeline": {
+        "question": "¿Cuándo quieres ver resultados?",
+        "options": {
+          "urgent": "Lo antes posible",
+          "short": "En 1-3 meses",
+          "medium": "En 3-6 meses",
+          "long": "Crecimiento a largo plazo"
+        }
+      }
+    },
+    "recommendations": {
+      "whatsapp-ai-agent": {
+        "serviceName": "WhatsApp AI (Sistema de captación)",
+        "description": "Respuestas automáticas 24/7 para captar y calificar leads al instante"
+      },
+      "meta-ads": {
+        "serviceName": "Gestión de Meta Ads",
+        "description": "Campañas segmentadas en Facebook e Instagram para conseguir leads de calidad"
+      },
+      "google-ads": {
+        "serviceName": "Gestión de Google Ads",
+        "description": "Capta clientes con alta intención de compra que buscan tus servicios"
+      },
+      "seo": {
+        "serviceName": "Servicios de SEO",
+        "description": "Posiciónate más arriba y atrae tráfico orgánico a largo plazo"
+      },
+      "seo-blog-generator": {
+        "serviceName": "SEO Blog AI",
+        "description": "Creación automatizada de contenido optimizado para buscadores"
+      },
+      "website-development": {
+        "serviceName": "Sistema de captación",
+        "description": "Chat web y WhatsApp AI que convierten a los visitantes de la web en leads calificados y con cita reservada"
+      },
+      "funnel-automation": {
+        "serviceName": "Sistema de seguimiento",
+        "description": "Seguimiento automático por WhatsApp, email y SMS hasta que el lead reserva o se da de baja"
+      },
+      "content-creation": {
+        "serviceName": "Sistema de captación",
+        "description": "Cada consulta de tus redes sociales respondida en segundos, en el idioma del cliente"
+      },
+      "branding": {
+        "serviceName": "Sistemas de IA para clínicas",
+        "description": "Destaca con una clínica que responde al instante, hace seguimiento y reserva citas 24/7"
+      },
+      "ai-ops-autopilot": {
+        "serviceName": "Sistema de operaciones",
+        "description": "Agentes de IA que procesan facturas, documentos e introducción de datos en lugar de tu equipo"
+      },
+      "reputation-management": {
+        "serviceName": "Sistema de captación",
+        "description": "Respuestas rápidas y coherentes a cada mensaje de cliente — el primer paso hacia una mejor reputación"
+      }
+    }
+  }
+}

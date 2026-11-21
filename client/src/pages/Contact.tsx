@@ -277,7 +277,7 @@ export default function Contact() {
                           </p>
                           <p className="text-muted-foreground text-sm mt-3">
                             {t("contactPage.location.founder", "Webimot is run by its founder, Sia Ahmadi.")}{" "}
-                            <Link href="/about#founder" className="font-medium text-primary underline underline-offset-2">
+                            <Link href="/sia-ahmadi" className="font-medium text-primary underline underline-offset-2">
                               {t("contactPage.location.founderLink", "Read the founder's bio")}
                             </Link>
                           </p>

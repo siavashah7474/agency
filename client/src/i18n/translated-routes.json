@@ -1,0 +1,31 @@
+{
+  "tr": [
+    "/",
+    "/about",
+    "/sia-ahmadi",
+    "/systems",
+    "/clinics",
+    "/small-business",
+    "/contact",
+    "/book-consultation",
+    "/services/meta-ads",
+    "/services/google-ads",
+    "/services/ai-ops-autopilot",
+    "/services/website-development",
+    "/services/content-creation",
+    "/services/branding",
+    "/services/funnel-automation",
+    "/services/reputation-management",
+    "/services/shopify-ecommerce-automation",
+    "/products/whatsapp-ai",
+    "/products/leadfire",
+    "/products/nurtureloop",
+    "/products/reviveiq",
+    "/products/cleardesk",
+    "/products/documind",
+    "/products/seo-blog-ai"
+  ],
+  "nl": ["/", "/about", "/sia-ahmadi", "/products/whatsapp-ai"],
+  "es": ["/", "/about", "/sia-ahmadi", "/products/whatsapp-ai"],
+  "ar": ["/", "/about", "/sia-ahmadi", "/products/whatsapp-ai"]
+}

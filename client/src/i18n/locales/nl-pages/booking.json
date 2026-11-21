@@ -1,0 +1,42 @@
+{
+  "bookingModal": {
+    "title": "Plan uw gratis AI-audit",
+    "description": "Vul het formulier in — binnen enkele uren ontvangt u van ons de beschikbare tijden voor uw gratis strategiegesprek van 30 minuten.",
+    "fields": {
+      "name": "Naam *",
+      "namePlaceholder": "Uw naam",
+      "email": "E-mail *",
+      "emailPlaceholder": "u@uwbedrijf.nl",
+      "phone": "Telefoonnummer *",
+      "service": "Dienst waarin u geïnteresseerd bent *",
+      "servicePlaceholder": "Kies een dienst",
+      "message": "Wat is uw grootste uitdaging?",
+      "optional": "(optioneel)",
+      "messagePlaceholder": "bijv. We krijgen leads via Facebook-advertenties, maar reageren te traag en raken ze kwijt aan concurrenten..."
+    },
+    "services": {
+      "capture": "Capture-systeem (WhatsApp AI · LeadFire)",
+      "convert": "Follow-upsysteem (NurtureLoop · ReviveIQ)",
+      "operate": "Operations-systeem (DocuMind · AI-agents voor dagelijkse taken)",
+      "measure": "Rapportagesysteem (ClearDesk)",
+      "ads": "Meta / Google Ads",
+      "seo": "SEO-add-on",
+      "notSure": "Weet ik niet zeker — help mij kiezen"
+    },
+    "validation": {
+      "nameMin": "De naam moet minimaal 2 tekens bevatten",
+      "emailInvalid": "Vul een geldig e-mailadres in",
+      "phoneInvalid": "Vul een geldig telefoonnummer in, bijv. +31 6 1234 5678",
+      "serviceRequired": "Kies een dienst"
+    },
+    "toast": {
+      "successTitle": "Aanvraag ontvangen!",
+      "successDescription": "We hebben u een bevestiging gemaild en reageren binnen enkele uren met de beschikbare tijden voor uw gesprek.",
+      "errorTitle": "Fout",
+      "errorDescription": "Er is iets misgegaan. Probeer het opnieuw of neem rechtstreeks contact met ons op."
+    },
+    "cancel": "Annuleren",
+    "submitting": "Bezig met verzenden...",
+    "submit": "Strategiegesprek inplannen"
+  }
+}

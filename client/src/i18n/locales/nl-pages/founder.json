@@ -1,0 +1,163 @@
+{
+  "founderPage": {
+    "aboutLink": "Bekijk het volledige profiel van Sia",
+    "hero": {
+      "eyebrow": "Oprichter van Webimot Agency",
+      "lead": "Ik help klinieken en kleine bedrijven groeien. Ik zoek uit waar aanvragen, omzet en tijd verloren gaan en los dat op met betere salesfunnels, betere advertenties, meer zichtbaarheid en AI-automatisering. Mijn specialisme is medisch en gezondheidstoerisme, en ik doe het werk zelf, van strategie tot bouw.",
+      "location": "Ik woon afwisselend in Amsterdam en Istanbul. Ik werk in het Engels, Turks, Perzisch en Koerdisch, met basiskennis Nederlands.",
+      "ctaBook": "Plan een gesprek met Sia",
+      "ctaWhatsapp": "Stuur een WhatsApp-bericht",
+      "imageAlt": "Sia Ahmadi, ondernemer en oprichter van Webimot Agency"
+    },
+    "roles": {
+      "eyebrow": "Vier rollen, één persoon",
+      "title": "Wat ik doe",
+      "lead": "Ik kijk eerst naar het bedrijfsprobleem en pas daarna naar de technologie. Voor deze vier dingen komen klanten bij mij.",
+      "items": [
+        {
+          "title": "Ondernemer",
+          "text": "Ik heb Webimot in januari 2025 opgericht en het eigen product gebouwd: de Webimot WhatsApp AI, een AI-agent die aanvragen van klinieken op WhatsApp beantwoordt. Het werk voor klanten doe ik zelf, van strategie tot bouw."
+        },
+        {
+          "title": "Business developer",
+          "text": "Ik zoek uit waar een bedrijf aanvragen, omzet en tijd verliest en bouw de weg van het eerste contact tot de verkoop opnieuw op: snelle reacties, kwalificatie, opvolging en een CRM dat het team echt gebruikt."
+        },
+        {
+          "title": "AI-automatiseringsspecialist",
+          "text": "Ik bouw AI-agents en workflows met n8n, de OpenAI API en de WhatsApp Cloud API, zodat reacties, opvolging en rapportages elke dag draaien zonder dat iemand ze met de hand hoeft te doen."
+        },
+        {
+          "title": "Consultant digitale transformatie",
+          "text": "Ik help ondernemers om handmatig werk in WhatsApp, e-mail, documenten en spreadsheets onder te brengen in systemen, en ik bouw die systemen ook zelf: websites, CRM's, advertentiecampagnes en zoekmachineoptimalisatie."
+        }
+      ]
+    },
+    "specialties": {
+      "eyebrow": "Specialismen"
+    },
+    "experience": {
+      "eyebrow": "Ervaring",
+      "title": "Waar ik heb gewerkt",
+      "lead": "Sinds 2021 werk ik in sales en marketing voor klinieken in Istanbul die internationale patiënten behandelen. Ik ken dus de weg van de patiënt, van het eerste bericht tot het geboekte consult.",
+      "items": [
+        {
+          "period": "Januari 2025 – heden",
+          "role": "Oprichter",
+          "org": "Webimot Agency",
+          "text": "AI-automatisering en digitale marketing voor klinieken en kleine bedrijven. Het werk voor klanten doe ik zelf: websites, CRM's, advertentiecampagnes, zoekmachineoptimalisatie en AI-agents."
+        },
+        {
+          "period": "November 2023 – heden",
+          "role": "Freelance sales- en marketingspecialist",
+          "org": "Dr. Görkem Atsal Clinic, Istanbul",
+          "text": "Website, CRM, Google Ads en Meta Ads, socialmediastrategie, zoekmachineoptimalisatie en het salesproces voor een kliniek voor plastische gezichtschirurgie die internationale patiënten behandelt."
+        },
+        {
+          "period": "2021 – 2024",
+          "role": "Digitale marketing",
+          "org": "WaveMed",
+          "text": "Digitale marketing voor een Amerikaanse zorgstartup."
+        },
+        {
+          "period": "",
+          "role": "Hoofd internationale patiëntensales",
+          "org": "Ariana Health Clinic, Istanbul",
+          "text": "Ik leidde de internationale patiëntensales van een kliniek in Istanbul."
+        },
+        {
+          "period": "",
+          "role": "Sales en marketing",
+          "org": "BHT Clinic (Tema Hospital), Istanbul",
+          "text": "Sales en marketing voor een kliniek in Istanbul die internationale patiënten behandelt."
+        }
+      ]
+    },
+    "education": {
+      "eyebrow": "Achtergrond",
+      "title": "Opleiding en talen",
+      "heading": "Opleiding",
+      "items": [
+        {
+          "degree": "MSc Consultancy en Entrepreneurship",
+          "school": "Rotterdam Business School",
+          "note": "Bezig"
+        },
+        {
+          "degree": "MSc Informatietechnologie",
+          "school": "Azad Universiteit",
+          "note": ""
+        }
+      ]
+    },
+    "languages": {
+      "heading": "Talen",
+      "items": [
+        "Engels",
+        "Turks",
+        "Perzisch",
+        "Koerdisch",
+        "Nederlands (basis)"
+      ]
+    },
+    "tools": {
+      "heading": "Waarmee ik AI-agents bouw"
+    },
+    "work": {
+      "eyebrow": "Geselecteerd werk",
+      "title": "Klinieken waarvoor ik heb gewerkt en producten die ik heb gebouwd",
+      "lead": "Elke pagina beschrijft wat ik heb gedaan en voor wie.",
+      "cardLink": "Bekijk het project",
+      "categories": {
+        "Clinic": "Kliniek",
+        "Software": "Software",
+        "Product": "Product"
+      },
+      "items": {
+        "gorkem-atsal-clinic": "Lopend sinds november 2023: website, CRM, Google Ads en Meta Ads, socialmediastrategie en zoekmachineoptimalisatie.",
+        "clinish-dental-clinic": "Website, social media, inrichting van Meta Business Suite en Meta-advertenties, en zoekmachineoptimalisatie.",
+        "apex-ai-trading-bots": "Huidig project: een app met op maat gemaakte, AI-gestuurde cryptotradingbots, gebouwd voor een particuliere klant in Nederland.",
+        "webimot-whatsapp-ai": "Mijn eigen product: een AI-agent op WhatsApp die aanvragen van klinieken beantwoordt, kwalificatievragen stelt en warme leads doorgeeft aan het salesteam.",
+        "prime-hair": "Meta- en Google-advertenties, website en SEO, sales en patiëntaanvragen, en social media.",
+        "msb-aesthetic": "Meta- en Google-advertenties, website en SEO, sales en patiëntaanvragen, en social media.",
+        "estetizm": "Meta- en Google-advertenties, website en SEO, sales en patiëntaanvragen, en social media."
+      }
+    },
+    "ways": {
+      "eyebrow": "Samenwerken",
+      "title": "Zo werkt u met mij samen",
+      "lead": "U werkt rechtstreeks met mij, via Webimot. Kies het startpunt dat bij uw bedrijf past.",
+      "items": [
+        {
+          "title": "Advies voor klinieken",
+          "text": "We beginnen met een gesprek. Ik bekijk de weg van de eerste advertentie of het eerste bericht tot het geboekte consult en vertel u wat ik als eerste zou aanpakken.",
+          "link": "Zo werk ik met klinieken"
+        },
+        {
+          "title": "Systemen die ik voor u bouw en beheer",
+          "text": "Ik bouw en beheer de systemen voor u: aanvragen opvangen, opvolging, operatie en rapportage, gekoppeld aan de tools die u al gebruikt.",
+          "link": "Bekijk de vier systemen"
+        },
+        {
+          "title": "Advertentiebeheer",
+          "text": "Meta- en Google-campagnes voor klinieken, in uw eigen advertentieaccount en afgerekend op geboekte consulten, niet op klikken.",
+          "link": "Bekijk het advertentiebeheer"
+        },
+        {
+          "title": "WhatsApp AI voor uw kliniek",
+          "text": "Een AI-agent op het eigen WhatsApp Business-nummer van uw kliniek die aanvragen beantwoordt, patiënten kwalificeert en warme leads doorgeeft aan uw team.",
+          "link": "Bekijk de WhatsApp AI"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Vertel me waar uw bedrijf aanvragen verliest",
+      "text": "Plan een gratis gesprek van 30 minuten. U vertelt over uw kliniek of bedrijf en ik zeg u eerlijk wat ik als eerste zou aanpakken, of we nu gaan samenwerken of niet."
+    }
+  },
+  "seoMeta": {
+    "sia-ahmadi": {
+      "title": "Sia Ahmadi | Ondernemer & AI-automatiseringsconsultant",
+      "description": "Sia Ahmadi: ondernemer, business developer, AI-automatiseringsspecialist en consultant digitale transformatie voor klinieken, medisch toerisme en mkb."
+    }
+  }
+}

@@ -9,6 +9,7 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieConsent from "@/components/CookieConsent";
 import { isPrerendering } from "@/lib/prerender";
+import LangRouter from "@/i18n/LangRouter";
 
 type PreloadableComponent = ComponentType<any> & { preload: () => Promise<unknown> };
 
@@ -40,6 +41,8 @@ const importAdsService = () => import("@/pages/AdsService");
 const AdsService = lazyWithPreload(importAdsService);
 const importAbout = () => import("@/pages/About");
 const About = lazyWithPreload(importAbout);
+const importFounder = () => import("@/pages/Founder");
+const Founder = lazyWithPreload(importFounder);
 const importContact = () => import("@/pages/Contact");
 const Contact = lazyWithPreload(importContact);
 const importClients = () => import("@/pages/Clients");
@@ -96,6 +99,7 @@ const routeImporters: [string, PreloadableComponent][] = [
   ["/services/google-ads", AdsService],
   ["/services/:slug", ServiceDetail],
   ["/about", About],
+  ["/sia-ahmadi", Founder],
   ["/contact", Contact],
   ["/clients", Clients],
   ["/blog", Blog],
@@ -144,6 +148,7 @@ function Router() {
         <Route path="/services/google-ads" component={AdsService} />
         <Route path="/services/:slug" component={ServiceDetail} />
         <Route path="/about" component={About} />
+        <Route path="/sia-ahmadi" component={Founder} />
         <Route path="/contact" component={Contact} />
         <Route path="/clients" component={Clients} />
         <Route path="/blog" component={Blog} />
@@ -238,18 +243,20 @@ export default function App() {
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <BookingModalProvider>
-            <GoogleAnalytics />
-            <ScrollManager />
-            <Router />
-            {!isPrerendering && (
-              <Suspense fallback={null}>
-                <SiteChat />
-                <ExitIntentPopup />
-              </Suspense>
-            )}
-            {!isPrerendering && <CookieConsent />}
-            <WhatsAppButton />
-            <Toaster />
+            <LangRouter>
+              <GoogleAnalytics />
+              <ScrollManager />
+              <Router />
+              {!isPrerendering && (
+                <Suspense fallback={null}>
+                  <SiteChat />
+                  <ExitIntentPopup />
+                </Suspense>
+              )}
+              {!isPrerendering && <CookieConsent />}
+              <WhatsAppButton />
+              <Toaster />
+            </LangRouter>
           </BookingModalProvider>
         </TooltipProvider>
       </QueryClientProvider>

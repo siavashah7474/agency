@@ -5,6 +5,8 @@ import { useState, useRef, useEffect } from "react";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import { useTranslation } from "react-i18next";
 import { useDir } from "@/i18n/useDir";
+import { navigate as browserNavigate } from "wouter/use-browser-location";
+import { isTranslated, localizePath, setPreferredLang, type Lang } from "@/i18n/routes";
 
 const LANGUAGES = [
   { code: "en", label: "EN", name: "English" },
@@ -28,6 +30,13 @@ export default function Navigation() {
   const dir = useDir();
 
   const currentLang = LANGUAGES.find((l) => l.code === i18n.language) ?? LANGUAGES[0];
+
+  // Each language has its own URLs (/tr/clinics). Go to this page in the chosen language, or
+  // to that language's home page when this page only exists in English.
+  const switchLanguage = (code: Lang) => {
+    setPreferredLang(code);
+    browserNavigate(code === "en" ? location : isTranslated(code, location) ? localizePath(location, code) : `/${code}`);
+  };
 
   // Close the mobile menu whenever the route changes
   useEffect(() => { setMobileMenuOpen(false); }, [location]);
@@ -153,7 +162,7 @@ export default function Navigation() {
                       return (
                         <button
                           key={lang.code} type="button" role="option" aria-selected={selected}
-                          onClick={() => { i18n.changeLanguage(lang.code); setLangMenuOpen(false); }}
+                          onClick={() => { switchLanguage(lang.code as Lang); setLangMenuOpen(false); }}
                           className={`flex w-full min-h-10 items-center gap-2 rounded-lg px-3 text-sm transition-colors hover:bg-slate-100 ${focusRing} ${selected ? "font-semibold text-primary" : "text-slate-700"}`}
                         >
                           <span className="w-7 text-xs font-bold">{lang.label}</span>
@@ -217,7 +226,7 @@ export default function Navigation() {
                     return (
                       <button
                         key={lang.code} type="button" role="option" aria-selected={selected}
-                        onClick={() => { i18n.changeLanguage(lang.code); setMobileMenuOpen(false); }}
+                        onClick={() => { switchLanguage(lang.code as Lang); setMobileMenuOpen(false); }}
                         className={`min-h-11 rounded-lg border text-sm font-semibold transition-colors ${focusRing} ${
                           selected ? "border-primary bg-primary text-white" : "border-slate-200 bg-white text-slate-700 hover:border-slate-300"
                         }`}

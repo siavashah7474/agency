@@ -1,0 +1,52 @@
+{
+  "shell": {
+    "nav": {
+      "skipToContent": "Saltar al contenido principal",
+      "homeAria": "Inicio de Webimot",
+      "mainAria": "Menú principal",
+      "changeLanguage": "Cambiar idioma",
+      "selectLanguage": "Seleccionar idioma",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "language": "Idioma"
+    },
+    "footer": {
+      "heading": "Pie de página",
+      "poweredBy": "Impulsado por automatización con IA",
+      "locationAmsterdam": "Ámsterdam, Países Bajos",
+      "locationIstanbul": "Estambul, Turquía",
+      "instagramAria": "Webimot en Instagram (se abre en una pestaña nueva)",
+      "linkedinAria": "Webimot en LinkedIn (se abre en una pestaña nueva)",
+      "legalAria": "Legal"
+    },
+    "breadcrumbs": {
+      "ariaLabel": "Ruta de navegación",
+      "home": "Inicio"
+    },
+    "cookies": {
+      "ariaLabel": "Consentimiento de cookies",
+      "textBefore": "Usamos cookies de Google Analytics para entender cómo utilizan este sitio los visitantes y mejorarlo. No se instalan cookies de marketing. Consulta nuestra",
+      "privacyLink": "política de privacidad",
+      "textAfter": ".",
+      "decline": "Rechazar",
+      "accept": "Aceptar analítica"
+    },
+    "exitPopup": {
+      "closeAria": "Cerrar ventana emergente",
+      "descBefore": "Obtén una ",
+      "descStrong": "auditoría de IA gratuita",
+      "descAfter": " y descubre cómo podemos ayudarte a generar más leads. Sin compromiso."
+    },
+    "productCard": {
+      "flagship": "Producto estrella",
+      "explore": "Descubre {{title}}"
+    },
+    "errorBoundary": {
+      "title": "Algo ha salido mal",
+      "message": "Lo sentimos, ha ocurrido algo inesperado. Actualiza la página o vuelve a la página de inicio.",
+      "tryAgain": "Inténtalo de nuevo",
+      "goHome": "Ir al inicio"
+    },
+    "close": "Cerrar"
+  }
+}

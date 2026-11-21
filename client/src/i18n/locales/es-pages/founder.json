@@ -1,0 +1,163 @@
+{
+  "founderPage": {
+    "aboutLink": "Ver el perfil completo de Sia",
+    "hero": {
+      "eyebrow": "Fundador de Webimot Agency",
+      "lead": "Ayudo a clínicas y pequeñas empresas a crecer. Detecto dónde se pierden consultas, ventas y tiempo, y lo resuelvo con mejores embudos de venta, mejores anuncios, más visibilidad y automatización con IA. Mi especialidad es el turismo médico y de salud, y hago el trabajo yo mismo, de la estrategia a la implementación.",
+      "location": "Vivo entre Ámsterdam y Estambul. Trabajo en inglés, turco, persa y kurdo, con neerlandés básico.",
+      "ctaBook": "Reserva una llamada con Sia",
+      "ctaWhatsapp": "Escríbeme por WhatsApp",
+      "imageAlt": "Sia Ahmadi, emprendedor y fundador de Webimot Agency"
+    },
+    "roles": {
+      "eyebrow": "Cuatro roles, una persona",
+      "title": "Qué hago",
+      "lead": "Primero trabajo el problema del negocio y después la tecnología. Estas son las cuatro cosas por las que los clientes acuden a mí.",
+      "items": [
+        {
+          "title": "Emprendedor",
+          "text": "Fundé Webimot en enero de 2025 y desarrollé su producto propio: Webimot WhatsApp AI, un agente de IA que responde por WhatsApp a las consultas que reciben las clínicas. Hago yo mismo el trabajo para los clientes, de la estrategia a la implementación."
+        },
+        {
+          "title": "Desarrollador de negocio",
+          "text": "Detecto dónde pierde un negocio consultas, ventas y tiempo, y reconstruyo el camino desde el primer contacto hasta la venta: respuestas rápidas, cualificación, seguimiento y un CRM que el equipo usa de verdad."
+        },
+        {
+          "title": "Especialista en automatización con IA",
+          "text": "Desarrollo agentes de IA y flujos de trabajo con n8n, la API de OpenAI y la WhatsApp Cloud API, para que las respuestas, los seguimientos y los informes funcionen cada día sin que nadie los haga a mano."
+        },
+        {
+          "title": "Consultor de transformación digital",
+          "text": "Ayudo a los propietarios a llevar el trabajo manual de WhatsApp, correo, documentos y hojas de cálculo a sistemas, y además construyo esos sistemas: sitios web, CRM, campañas publicitarias y optimización para buscadores."
+        }
+      ]
+    },
+    "specialties": {
+      "eyebrow": "Especialidades"
+    },
+    "experience": {
+      "eyebrow": "Experiencia",
+      "title": "Dónde he trabajado",
+      "lead": "Desde 2021 trabajo en ventas y marketing para clínicas de Estambul que atienden a pacientes internacionales, así que conozco el recorrido del paciente desde el primer mensaje hasta la consulta reservada.",
+      "items": [
+        {
+          "period": "Enero de 2025 – actualidad",
+          "role": "Fundador",
+          "org": "Webimot Agency",
+          "text": "Automatización con IA y marketing digital para clínicas y pequeñas empresas. Hago yo mismo el trabajo para los clientes: sitios web, CRM, campañas publicitarias, optimización para buscadores y agentes de IA."
+        },
+        {
+          "period": "Noviembre de 2023 – actualidad",
+          "role": "Especialista freelance en ventas y marketing",
+          "org": "Dr. Görkem Atsal Clinic, Estambul",
+          "text": "Sitio web, CRM, Google Ads y Meta Ads, estrategia de redes sociales, optimización para buscadores y proceso de ventas para una clínica de cirugía plástica facial que atiende a pacientes internacionales."
+        },
+        {
+          "period": "2021 – 2024",
+          "role": "Marketing digital",
+          "org": "WaveMed",
+          "text": "Marketing digital para una startup sanitaria de Estados Unidos."
+        },
+        {
+          "period": "",
+          "role": "Responsable de ventas a pacientes internacionales",
+          "org": "Ariana Health Clinic, Estambul",
+          "text": "Dirigí las ventas a pacientes internacionales de una clínica de Estambul."
+        },
+        {
+          "period": "",
+          "role": "Ventas y marketing",
+          "org": "BHT Clinic (Tema Hospital), Estambul",
+          "text": "Ventas y marketing para una clínica de Estambul que atiende a pacientes internacionales."
+        }
+      ]
+    },
+    "education": {
+      "eyebrow": "Formación",
+      "title": "Estudios e idiomas",
+      "heading": "Estudios",
+      "items": [
+        {
+          "degree": "Máster (MSc) en Consultoría y Emprendimiento",
+          "school": "Rotterdam Business School",
+          "note": "En curso"
+        },
+        {
+          "degree": "Máster (MSc) en Tecnologías de la Información",
+          "school": "Universidad Azad",
+          "note": ""
+        }
+      ]
+    },
+    "languages": {
+      "heading": "Idiomas",
+      "items": [
+        "Inglés",
+        "Turco",
+        "Persa",
+        "Kurdo",
+        "Neerlandés (básico)"
+      ]
+    },
+    "tools": {
+      "heading": "Con qué desarrollo los agentes de IA"
+    },
+    "work": {
+      "eyebrow": "Trabajos seleccionados",
+      "title": "Clínicas para las que he trabajado y productos que he creado",
+      "lead": "Cada página describe lo que hice y para quién.",
+      "cardLink": "Ver el proyecto",
+      "categories": {
+        "Clinic": "Clínica",
+        "Software": "Software",
+        "Product": "Producto"
+      },
+      "items": {
+        "gorkem-atsal-clinic": "En curso desde noviembre de 2023: sitio web, CRM, Google Ads y Meta Ads, estrategia de redes sociales y optimización para buscadores.",
+        "clinish-dental-clinic": "Sitio web, redes sociales, configuración de Meta Business Suite y de los anuncios de Meta, y optimización para buscadores.",
+        "apex-ai-trading-bots": "Proyecto actual: una aplicación con bots de trading de criptomonedas personalizados e impulsados por IA, desarrollada para un cliente privado de los Países Bajos.",
+        "webimot-whatsapp-ai": "Mi propio producto: un agente de IA en WhatsApp que responde a las consultas de las clínicas, hace preguntas de cualificación y pasa los leads interesados al equipo de ventas.",
+        "prime-hair": "Anuncios en Meta y Google, sitio web y SEO, ventas y consultas de pacientes, y redes sociales.",
+        "msb-aesthetic": "Anuncios en Meta y Google, sitio web y SEO, ventas y consultas de pacientes, y redes sociales.",
+        "estetizm": "Anuncios en Meta y Google, sitio web y SEO, ventas y consultas de pacientes, y redes sociales."
+      }
+    },
+    "ways": {
+      "eyebrow": "Trabajar juntos",
+      "title": "Cómo trabajar conmigo",
+      "lead": "Trabajas directamente conmigo, a través de Webimot. Elige el punto de partida que mejor encaje con tu negocio.",
+      "items": [
+        {
+          "title": "Consultoría para clínicas",
+          "text": "Empezamos con una llamada. Reviso el recorrido desde el primer anuncio o mensaje hasta la consulta reservada y te digo qué arreglaría primero.",
+          "link": "Cómo trabajo con clínicas"
+        },
+        {
+          "title": "Sistemas llave en mano",
+          "text": "Construyo y gestiono los sistemas por ti: captación de consultas, seguimiento, operaciones e informes, conectados con las herramientas que ya usas.",
+          "link": "Ver los cuatro sistemas"
+        },
+        {
+          "title": "Gestión de anuncios",
+          "text": "Campañas de Meta y Google para clínicas, gestionadas en tu propia cuenta publicitaria y medidas por consultas reservadas, no por clics.",
+          "link": "Ver la gestión de anuncios"
+        },
+        {
+          "title": "WhatsApp AI para tu clínica",
+          "text": "Un agente de IA en el número de WhatsApp Business de tu clínica que responde a las consultas, cualifica a los pacientes y pasa los leads interesados a tu equipo.",
+          "link": "Ver WhatsApp AI"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Cuéntame dónde pierde consultas tu negocio",
+      "text": "Reserva una llamada gratuita de 30 minutos. Me cuentas cómo es tu clínica o tu negocio y te digo con sinceridad qué arreglaría primero, trabajemos juntos o no."
+    }
+  },
+  "seoMeta": {
+    "sia-ahmadi": {
+      "title": "Sia Ahmadi | Emprendedor y consultor de IA",
+      "description": "Sia Ahmadi: emprendedor, desarrollador de negocio, especialista en automatización con IA y consultor de transformación digital para clínicas y pymes."
+    }
+  }
+}

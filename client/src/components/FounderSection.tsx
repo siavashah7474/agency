@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-// Home page "About the founder" block: photo, a short bio and a link to the full bio on /about.
+// Home page "About the founder" block: photo, a short bio and a link to his full profile on /sia-ahmadi.
 export default function FounderSection() {
   const { t } = useTranslation();
   return (
@@ -10,7 +10,9 @@ export default function FounderSection() {
       <div className="container mx-auto max-w-4xl px-6">
         <div className="surface-card grid items-center gap-8 p-6 md:grid-cols-[240px_1fr] md:gap-10 md:p-10">
           <img
-            src="/sia-ahmadi.jpg"
+            src="/sia-ahmadi-720.webp"
+            srcSet="/sia-ahmadi-480.webp 480w, /sia-ahmadi-720.webp 720w"
+            sizes="(min-width: 768px) 240px, 240px"
             alt={t("homePage.founder.imageAlt", "Sia Ahmadi, founder of Webimot Agency")}
             width={1200}
             height={1600}
@@ -35,7 +37,7 @@ export default function FounderSection() {
               ))}
             </ul>
             <Link
-              href="/about#founder"
+              href="/sia-ahmadi"
               className="inline-flex items-center gap-2 font-semibold text-primary underline-offset-4 hover:underline"
               data-testid="link-founder-bio"
             >

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, ArrowLeft, ArrowRight, MessageSquare, Phone } from "lucide-react";
 import { useBookingModal } from "@/hooks/use-booking-modal";
+import AuthorBox from "@/components/AuthorBox";
 import type { MouseEvent } from "react";
 const WHATSAPP_LINK = "https://wa.me/31628753175";
 
@@ -95,7 +96,7 @@ export default function BlogPost() {
         canonicalUrl={`https://webimotagency.com/blog/${post.slug}`}
         ogType="article"
         articlePublishedTime={publishedIso}
-        articleAuthor="Webimot Agency"
+        articleAuthor="Sia Ahmadi"
         schema={{
           "@context": "https://schema.org",
           "@graph": [
@@ -110,7 +111,12 @@ export default function BlogPost() {
               "url": `https://webimotagency.com/blog/${post.slug}`,
               "mainEntityOfPage": `https://webimotagency.com/blog/${post.slug}`,
               "image": "https://webimotagency.com/og-image.png",
-              "author": { "@type": "Organization", "name": "Webimot Agency", "url": "https://webimotagency.com/" },
+              "author": {
+                "@type": "Person",
+                "@id": "https://webimotagency.com/about#founder",
+                "name": "Sia Ahmadi",
+                "url": "https://webimotagency.com/sia-ahmadi",
+              },
               "publisher": { "@id": "https://webimotagency.com/#organization" },
             },
             {
@@ -148,7 +154,7 @@ export default function BlogPost() {
                 Back to Blog
               </Link>
               <div className="max-w-4xl">
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-4">
                   <Badge variant="secondary" className="bg-white/20 text-white border-none">
                     {post.category}
                   </Badge>
@@ -166,6 +172,23 @@ export default function BlogPost() {
                 </h1>
                 <p className="text-lg text-white/90">
                   {post.excerpt}
+                </p>
+                <p className="mt-5 flex items-center gap-3 text-sm text-white/80" data-testid="text-blog-byline">
+                  <img
+                    src="/sia-ahmadi-480.webp"
+                    alt=""
+                    width={1200}
+                    height={1600}
+                    decoding="async"
+                    className="h-9 w-9 flex-shrink-0 rounded-full border border-white/30 object-cover object-top"
+                  />
+                  <span>
+                    By{" "}
+                    <Link href="/sia-ahmadi" rel="author" className="font-semibold text-white underline underline-offset-4 hover:text-white/80">
+                      Sia Ahmadi
+                    </Link>
+                    , founder of Webimot
+                  </span>
                 </p>
               </div>
             </div>
@@ -191,7 +214,9 @@ export default function BlogPost() {
                     onClick={handleContentClick}
                     dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
                   />
-                  
+
+                  <AuthorBox />
+
                   <div className="mt-12 pt-8 border-t">
                     <div className="flex flex-col sm:flex-row gap-4 justify-between">
                       {prevPost ? (
