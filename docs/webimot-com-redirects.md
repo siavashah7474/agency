@@ -36,4 +36,6 @@ What to decide when the new site goes live:
 - **Google Search Console.** If webimot.com is verified there, use the Change of Address tool only
   if the whole domain redirects to webimotagency.com; otherwise just let the redirects work.
 - **Old demo form and Aria chat.** webimot.com's `/api/demo-request` and `/api/chat` endpoints are
-  not moved. Demo requests now go through the booking form on webimotagency.com.
+  not moved. On webimotagency.com, Aria is a guided lead chat (no AI, no API key): it emails the
+  lead through `/api/contact` and offers WhatsApp with the answers prefilled. Demo requests also
+  go through the booking form.

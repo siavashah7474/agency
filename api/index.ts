@@ -1,7 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import express from "express";
 import nodemailer from "nodemailer";
-import Anthropic from "@anthropic-ai/sdk";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 // Form values are kept as typed (minus control characters) for the database, the email
@@ -153,8 +152,6 @@ app.use(express.json({ limit: "20kb" }));
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api", (req, res, next) => {
-  // The Aria chat has its own, higher limit (see below); forms keep the strict one.
-  if (req.path === "/chat") return next();
   if (req.method === "POST" && rateLimited(clientIp(req))) {
     return res.status(429).json({ message: "Too many requests. Please try again in a few minutes." });
   }
@@ -264,105 +261,6 @@ app.post("/api/contact", async (req, res) => {
   } catch (err) {
     console.error("Contact error:", err);
     res.status(500).json({ message: "Internal server error" });
-  }
-});
-
-// ── Aria: live AI chat on /products/whatsapp-ai (moved from webimot.com) ──────────────
-// Needs ANTHROPIC_API_KEY in the Vercel project. Without it the endpoint answers 503 and the
-// widget falls back to "book a demo / WhatsApp". Keep the facts below identical to the site.
-const ARIA_SYSTEM_PROMPT = `You are Aria, a professional AI sales assistant for Webimot's WhatsApp AI, shown on https://webimotagency.com/products/whatsapp-ai. You help clinic owners and managers discover how the WhatsApp AI can grow their medical tourism business.
-
-About the WhatsApp AI:
-- AI-powered WhatsApp automation built specifically for medical tourism clinics, part of Webimot's Capture system
-- Replies to international patient inquiries instantly, 24/7 (under 3 seconds response time)
-- Automatically qualifies patients by treatment type, budget and travel timeline
-- Routes only serious, qualified leads to the clinic team
-- Saves 40+ hours of manual messaging per month; clinics can expect around 60% more consultations booked (an expectation, not a guarantee)
-- Replies in 40+ languages, including English, Arabic, German, Dutch, French, Turkish and Spanish
-- Live within 48 hours of onboarding; no technical work required from the clinic
-- GDPR compliant; conversations and photos are encrypted and handled under EU data protection rules
-- Pricing: Essential €1,399 one-time setup + €599/month; Pro €999/month (up to 3 WhatsApp numbers, weekly reporting dashboard, dedicated account manager). 3-month minimum. If it does not generate at least 3 qualified leads in the first 30 days, the first month is refunded. Founding-client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics, while spots last.
-- Medical guardrails: the AI is a front desk, not a doctor. Pre-qualification and intake only; never a diagnosis, candidacy decision or final price; medical questions are handed to a person.
-- Webimot Agency (webimotagency.com) was founded by Sia Ahmadi in January 2025 and is based in Amsterdam and Istanbul. It also runs Meta and Google Ads for clinics and builds the Follow-up, Operations and Reporting systems.
-- Clinic work by the founder: Dr. Görkem Atsal Clinic (facial plastic surgery, Istanbul), Clinish, Prime Hair, MSB Aesthetic, Estetizm. Write-ups at webimotagency.com/case-studies; no performance figures are published.
-- Contact: webimot.info@gmail.com | WhatsApp: +31 6 2875 3175 | Instagram @webimotagency
-
-Your role:
-1. Warmly greet and answer questions about the WhatsApp AI clearly and confidently
-2. Ask about the visitor's clinic type and their biggest challenge with international patients
-3. Connect features directly to their specific pain points
-4. After 2-3 exchanges with an interested visitor, invite them to book a free demo
-
-Rules:
-- Always reply in the language the visitor writes in
-- Keep every response to 2-4 sentences, concise, direct and confident; plain text, no markdown
-- Be warm, professional and persuasive but never pushy
-- Never invent features, pricing, results or statistics not listed above, and never give medical advice
-- If you don't know something, say "great question — our team can give you the full details" and suggest booking a demo or WhatsApp
-- When a visitor seems ready, say they can use the "Book a demo" button on this page or reach the team on WhatsApp.`;
-
-const CHAT_WINDOW_MS = 10 * 60 * 1000;
-const CHAT_MAX_PER_WINDOW = 25;
-const chatHits = new Map<string, number[]>();
-function chatRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const recent = (chatHits.get(ip) ?? []).filter((t) => now - t < CHAT_WINDOW_MS);
-  recent.push(now);
-  chatHits.set(ip, recent);
-  if (chatHits.size > 5000) chatHits.clear();
-  return recent.length > CHAT_MAX_PER_WINDOW;
-}
-
-app.post("/api/chat", async (req, res) => {
-  if (chatRateLimited(clientIp(req))) {
-    return res.status(429).json({ error: "Too many messages. Please try again in a few minutes." });
-  }
-  const raw = (req.body as { messages?: unknown })?.messages;
-  const valid =
-    Array.isArray(raw) &&
-    raw.length >= 1 &&
-    raw.length <= 24 &&
-    raw.every(
-      (m) =>
-        m &&
-        (m.role === "user" || m.role === "assistant") &&
-        typeof m.content === "string" &&
-        m.content.trim() !== "" &&
-        m.content.length <= 1200,
-    );
-  if (!valid) return res.status(400).json({ error: "Invalid request" });
-
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) return res.status(503).json({ error: "Chat service unavailable" });
-
-  // Last 10 messages, starting with a user turn, to keep each request small.
-  let messages = (raw as Anthropic.MessageParam[]).slice(-10).map((m) => ({ role: m.role, content: sanitizeInput(m.content as string) }));
-  while (messages.length && messages[0].role !== "user") messages = messages.slice(1);
-  if (!messages.length || messages[messages.length - 1].role !== "user") {
-    return res.status(400).json({ error: "Invalid request" });
-  }
-
-  try {
-    const client = new Anthropic({ apiKey });
-    const response = await client.messages.create({
-      model: "claude-sonnet-4-6",
-      max_tokens: 320,
-      system: ARIA_SYSTEM_PROMPT,
-      messages,
-    });
-    const text = response.content
-      .filter((b): b is Anthropic.TextBlock => b.type === "text")
-      .map((b) => b.text)
-      .join("")
-      .trim();
-    if (!text) return res.status(502).json({ error: "Empty response" });
-    return res.json({ message: text });
-  } catch (err) {
-    if (err instanceof Anthropic.RateLimitError) {
-      return res.status(429).json({ error: "The assistant is busy. Please try again in a minute." });
-    }
-    console.error("Chat error:", err instanceof Anthropic.APIError ? `${err.status} ${err.message}` : err);
-    return res.status(500).json({ error: "Failed to get response" });
   }
 });
 

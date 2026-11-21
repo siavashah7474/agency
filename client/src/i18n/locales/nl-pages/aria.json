@@ -1,17 +1,54 @@
 {
   "aria": {
-    "welcome": "Hallo! Ik ben Aria, de AI-assistent van Webimot. Ik beantwoord al uw vragen over hoe onze WhatsApp AI klinieken voor medisch toerisme helpt meer internationale patiënten te krijgen. Wat wilt u weten?",
     "dialogLabel": "Chat met Aria",
-    "subtitle": "Webimot AI · Aangedreven door Claude",
+    "subtitle": "Webimot-assistent · Vraag in een minuut een demo aan",
     "close": "Chat sluiten",
-    "typing": "Aria typt",
-    "error": "Sorry, ik heb een verbindingsprobleem. Vraag een demo aan of neem contact op via WhatsApp.",
-    "limit": "Sessielimiet bereikt. Wilt u verder?",
-    "bookDemo": "Vraag een gratis demo aan",
-    "whatsapp": "Chat via WhatsApp",
-    "placeholder": "Stel me een vraag...",
-    "send": "Bericht versturen",
-    "disclaimer": "AI kan fouten maken · Controleer belangrijke informatie",
-    "open": "Chat met Aria, de AI van Webimot"
+    "open": "Chat met Aria om een demo aan te vragen",
+    "welcome": "Hallo! Ik ben Aria. Beantwoord drie korte vragen en ons team laat u zien hoe de WhatsApp AI werkt met de aanvragen van uw eigen kliniek.",
+    "questions": [
+      {
+        "text": "Wat voor kliniek heeft u?",
+        "options": [
+          "Haartransplantatie",
+          "Tandheelkunde",
+          "Cosmetische chirurgie",
+          "IVF / fertiliteit",
+          "Anders"
+        ]
+      },
+      {
+        "text": "Wat is uw grootste uitdaging bij aanvragen van internationale patiënten?",
+        "options": [
+          "Trage reacties",
+          "Te veel ongekwalificeerde leads",
+          "Geen opvolging",
+          "Te veel talen",
+          "Iets anders"
+        ]
+      },
+      {
+        "text": "Hoeveel internationale aanvragen krijgt u ongeveer per maand?",
+        "options": [
+          "Minder dan 50",
+          "50–200",
+          "Meer dan 200",
+          "Weet ik niet"
+        ]
+      }
+    ],
+    "askContact": "Dank u. Waar kunnen we u bereiken? We reageren binnen enkele uren met tijden voor een demo van 30 minuten.",
+    "form": {
+      "name": "Uw naam *",
+      "clinic": "Naam van de kliniek",
+      "email": "E-mail *",
+      "phone": "WhatsApp-nummer (met landcode)",
+      "submit": "Demo aanvragen"
+    },
+    "error": "Dat is niet gelukt. Probeer het opnieuw of stuur ons een bericht via WhatsApp.",
+    "sent": "Dank u, we hebben uw gegevens! U ontvangt binnen enkele uren een e-mail van ons. Sneller antwoord? Ga verder via WhatsApp.",
+    "sentBadge": "Aanvraag verzonden",
+    "continueWhatsapp": "Verder via WhatsApp",
+    "skipToWhatsapp": "Of stuur ons nu een WhatsApp-bericht",
+    "privacy": "We gebruiken uw gegevens alleen om op deze aanvraag te reageren."
   }
 }

@@ -1,17 +1,54 @@
 {
   "aria": {
-    "welcome": "Merhaba! Ben Aria, Webimot'un yapay zekâ asistanıyım. WhatsApp AI'ın medikal turizm kliniklerinin daha fazla uluslararası hasta kazanmasına nasıl yardımcı olduğuyla ilgili tüm sorularınızı yanıtlayabilirim. Ne öğrenmek istersiniz?",
     "dialogLabel": "Aria ile sohbet",
-    "subtitle": "Webimot AI · Claude ile çalışır",
+    "subtitle": "Webimot asistanı · Bir dakikada demo talep edin",
     "close": "Sohbeti kapat",
-    "typing": "Aria yazıyor",
-    "error": "Üzgünüm, bağlantı sorunu yaşıyorum. Bunun yerine demo talep edin veya bize WhatsApp'tan yazın.",
-    "limit": "Oturum sınırına ulaşıldı. Devam etmek ister misiniz?",
-    "bookDemo": "Ücretsiz demo talep edin",
-    "whatsapp": "WhatsApp'tan yazın",
-    "placeholder": "Bana istediğinizi sorun...",
-    "send": "Mesaj gönder",
-    "disclaimer": "Yapay zekâ hata yapabilir · Önemli bilgileri doğrulayın",
-    "open": "Webimot AI asistanı Aria ile sohbet edin"
+    "open": "Demo talep etmek için Aria ile sohbet edin",
+    "welcome": "Merhaba! Ben Aria. Üç kısa soruyu yanıtlayın; ekibimiz size WhatsApp AI'ın kendi kliniğinizin talepleri üzerinde nasıl çalıştığını göstersin.",
+    "questions": [
+      {
+        "text": "Nasıl bir klinik işletiyorsunuz?",
+        "options": [
+          "Saç ekimi",
+          "Diş",
+          "Estetik cerrahi",
+          "Tüp bebek / IVF",
+          "Diğer"
+        ]
+      },
+      {
+        "text": "Uluslararası hasta taleplerinde en büyük zorluğunuz nedir?",
+        "options": [
+          "Geç yanıtlar",
+          "Çok fazla niteliksiz talep",
+          "Takip yapılmıyor",
+          "Çok fazla dil",
+          "Başka bir şey"
+        ]
+      },
+      {
+        "text": "Ayda yaklaşık kaç uluslararası talep alıyorsunuz?",
+        "options": [
+          "50'den az",
+          "50–200",
+          "200'den fazla",
+          "Emin değilim"
+        ]
+      }
+    ],
+    "askContact": "Teşekkürler. Size nereden ulaşalım? Birkaç saat içinde 30 dakikalık demo için uygun saatlerle dönüş yaparız.",
+    "form": {
+      "name": "Adınız *",
+      "clinic": "Klinik adı",
+      "email": "E-posta *",
+      "phone": "WhatsApp numarası (ülke koduyla)",
+      "submit": "Demo talebimi gönder"
+    },
+    "error": "Talebiniz iletilemedi. Lütfen tekrar deneyin veya bize WhatsApp'tan yazın.",
+    "sent": "Teşekkürler, bilgilerinizi aldık! Birkaç saat içinde size e-posta göndereceğiz. Daha hızlı yanıt ister misiniz? WhatsApp'tan devam edin.",
+    "sentBadge": "Talep gönderildi",
+    "continueWhatsapp": "WhatsApp'tan devam edin",
+    "skipToWhatsapp": "Ya da hemen WhatsApp'tan yazın",
+    "privacy": "Bilgilerinizi yalnızca bu talebi yanıtlamak için kullanırız."
   }
 }

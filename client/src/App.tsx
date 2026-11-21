@@ -81,7 +81,7 @@ const importChatbot = () => import("@/components/Chatbot");
 const Chatbot = lazyWithPreload(importChatbot);
 const AriaChat = lazy(() => import("@/components/whatsapp-ai/AriaChat"));
 
-// The WhatsApp AI page gets Aria (live AI chat, from webimot.com); every other page keeps Mia.
+// The WhatsApp AI page gets Aria (a guided lead chat); every other page keeps Mia.
 function SiteChat() {
   const [location] = useLocation();
   return location === "/products/whatsapp-ai" ? <AriaChat /> : <Chatbot />;

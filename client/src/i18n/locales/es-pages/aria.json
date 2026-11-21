@@ -1,17 +1,54 @@
 {
   "aria": {
-    "welcome": "¡Hola! Soy Aria, la asistente de IA de Webimot. Puedo responder cualquier pregunta sobre cómo nuestra IA de WhatsApp ayuda a las clínicas de turismo médico a conseguir más pacientes internacionales. ¿Qué te gustaría saber?",
     "dialogLabel": "Chatea con Aria",
-    "subtitle": "Webimot AI · Con tecnología de Claude",
+    "subtitle": "Asistente de Webimot · Reserva una demo en un minuto",
     "close": "Cerrar chat",
-    "typing": "Aria está escribiendo",
-    "error": "Lo siento, tengo un problema de conexión. Reserva una demo o escríbenos por WhatsApp.",
-    "limit": "Has alcanzado el límite de la sesión. ¿Quieres continuar?",
-    "bookDemo": "Reserva una demo gratuita",
-    "whatsapp": "Chatea por WhatsApp",
-    "placeholder": "Pregúntame lo que quieras...",
-    "send": "Enviar mensaje",
-    "disclaimer": "La IA puede cometer errores · Verifica la información importante",
-    "open": "Chatea con Aria, la IA de Webimot"
+    "open": "Chatea con Aria para reservar una demo",
+    "welcome": "¡Hola! Soy Aria. Responde tres preguntas rápidas y nuestro equipo te mostrará la IA de WhatsApp funcionando con las consultas de tu propia clínica.",
+    "questions": [
+      {
+        "text": "¿Qué tipo de clínica tienes?",
+        "options": [
+          "Trasplante capilar",
+          "Dental",
+          "Cirugía estética",
+          "FIV / fertilidad",
+          "Otra"
+        ]
+      },
+      {
+        "text": "¿Cuál es tu mayor reto con las consultas de pacientes internacionales?",
+        "options": [
+          "Respuestas lentas",
+          "Demasiados leads no calificados",
+          "Sin seguimiento",
+          "Demasiados idiomas",
+          "Otra cosa"
+        ]
+      },
+      {
+        "text": "¿Cuántas consultas internacionales recibes al mes, aproximadamente?",
+        "options": [
+          "Menos de 50",
+          "50–200",
+          "Más de 200",
+          "No estoy seguro"
+        ]
+      }
+    ],
+    "askContact": "Gracias. ¿Dónde podemos contactarte? Respondemos en pocas horas con horarios para una demo de 30 minutos.",
+    "form": {
+      "name": "Tu nombre *",
+      "clinic": "Nombre de la clínica",
+      "email": "Correo electrónico *",
+      "phone": "Número de WhatsApp (con prefijo del país)",
+      "submit": "Solicitar mi demo"
+    },
+    "error": "No se pudo enviar. Inténtalo de nuevo o escríbenos por WhatsApp.",
+    "sent": "¡Recibido, gracias! Tenemos tus datos y te escribiremos por correo en pocas horas. ¿Quieres una respuesta más rápida? Continúa por WhatsApp.",
+    "sentBadge": "Solicitud enviada",
+    "continueWhatsapp": "Continuar por WhatsApp",
+    "skipToWhatsapp": "O escríbenos ahora por WhatsApp",
+    "privacy": "Solo usamos tus datos para responder a esta solicitud."
   }
 }

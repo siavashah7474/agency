@@ -1,38 +1,50 @@
-import { useEffect, useRef, useState } from "react";
-import { Bot, Loader2, Send, Sparkles, X } from "lucide-react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
+import { Bot, Check, Loader2, MessageCircle, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useBookingModal } from "@/hooks/use-booking-modal";
-import { systemById } from "@/data/systemsData";
+import { useDir } from "@/i18n/useDir";
 
-// Aria: the live AI sales assistant from webimot.com, shown on the WhatsApp AI page in place
-// of the scripted Mia chatbot. Replies come from /api/chat (Claude), which needs
-// ANTHROPIC_API_KEY set in the Vercel project; without it the endpoint returns 503 and the
-// widget shows the connection message with the booking and WhatsApp fallbacks.
+// Aria: a guided lead chat on the WhatsApp AI page (no AI, no API key). Three quick questions,
+// then contact details. The lead is emailed to the team through the same /api/contact endpoint
+// as the contact form, and the visitor can continue on WhatsApp with their answers prefilled.
+// Every other page keeps the scripted Mia chatbot.
 
-const MAX_USER_MESSAGES = 12;
-const WHATSAPP_URL = "https://wa.me/31628753175";
+const WHATSAPP_NUMBER = "31628753175";
 
-type Message = { role: "user" | "assistant"; content: string };
+const QUESTIONS = [
+  {
+    id: "clinic",
+    text: "What kind of clinic do you run?",
+    options: ["Hair transplant", "Dental", "Cosmetic surgery", "IVF / fertility", "Other"],
+  },
+  {
+    id: "challenge",
+    text: "What is your biggest challenge with international patient enquiries?",
+    options: ["Slow replies", "Too many unqualified leads", "No follow-up", "Too many languages", "Something else"],
+  },
+  {
+    id: "volume",
+    text: "Roughly how many international enquiries do you get per month?",
+    options: ["Under 50", "50–200", "More than 200", "Not sure"],
+  },
+] as const;
+
+// English labels are what the team receives; the visitor sees the translated ones.
+const SUMMARY_LABELS = ["Clinic type", "Biggest challenge", "Enquiries per month"];
+
+type Status = "idle" | "sending" | "sent" | "error";
 
 export default function AriaChat() {
-  const { t, i18n } = useTranslation();
-  const { openModal } = useBookingModal();
+  const { t } = useTranslation();
+  const dir = useDir();
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([]);
-  const [input, setInput] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [failed, setFailed] = useState(false);
   const [unread, setUnread] = useState(false);
+  const [answers, setAnswers] = useState<number[]>([]);
+  const [status, setStatus] = useState<Status>("idle");
+  const [form, setForm] = useState({ name: "", clinic: "", email: "", phone: "", website: "" });
   const endRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
 
-  const rtl = i18n.language === "ar";
-  const userCount = messages.filter((m) => m.role === "user").length;
-  const limitReached = userCount >= MAX_USER_MESSAGES;
-  const welcome = t(
-    "aria.welcome",
-    "Hi! I'm Aria, Webimot's AI assistant. I can answer any questions about how our WhatsApp AI helps medical tourism clinics get more international patients. What would you like to know?",
-  );
+  const step = answers.length;
+  const done = step >= QUESTIONS.length;
 
   useEffect(() => {
     const timer = setTimeout(() => setUnread(true), 8000);
@@ -48,75 +60,102 @@ export default function AriaChat() {
   useEffect(() => {
     if (!open) return;
     setUnread(false);
-    const timer = setTimeout(() => inputRef.current?.focus(), 120);
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("keydown", onKey);
-    };
+    return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
-  }, [messages, loading]);
+  }, [step, status, open]);
 
-  const send = async () => {
-    const text = input.trim();
-    if (!text || loading || limitReached) return;
-    const history = [...messages, { role: "user" as const, content: text }];
-    setMessages(history);
-    setInput("");
-    setLoading(true);
-    setFailed(false);
+  const question = (i: number) => t(`aria.questions.${i}.text`, QUESTIONS[i].text);
+  const option = (i: number, o: number) => t(`aria.questions.${i}.options.${o}`, QUESTIONS[i].options[o]);
+
+  // The team reads the answers in English, whatever language the visitor used.
+  const summary = () => answers.map((o, i) => `${SUMMARY_LABELS[i]}: ${QUESTIONS[i].options[o]}`);
+
+  const whatsappUrl = () => {
+    const lines = ["Hi, I'd like a demo of the WhatsApp AI.", ...summary()];
+    if (form.name.trim()) lines.push(`Name: ${form.name.trim()}`);
+    if (form.clinic.trim()) lines.push(`Clinic: ${form.clinic.trim()}`);
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
+  };
+
+  const submit = async (e: FormEvent) => {
+    e.preventDefault();
+    if (status === "sending") return;
+    setStatus("sending");
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: history.slice(-20) }),
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim() || undefined,
+          website: form.website,
+          message: [
+            "Lead from the Aria chat on the WhatsApp AI page",
+            form.clinic.trim() ? `Clinic name: ${form.clinic.trim()}` : null,
+            ...summary(),
+            `Page language: ${document.documentElement.lang || "en"}`,
+          ]
+            .filter(Boolean)
+            .join("\n"),
+        }),
       });
-      if (!res.ok) throw new Error(String(res.status));
-      const data = (await res.json()) as { message?: string };
-      if (!data.message) throw new Error("empty");
-      setMessages((prev) => [...prev, { role: "assistant", content: data.message! }]);
+      setStatus(res.ok ? "sent" : "error");
     } catch {
-      setFailed(true);
-    } finally {
-      setLoading(false);
+      setStatus("error");
     }
   };
 
-  const book = () => {
-    setOpen(false);
-    openModal(systemById("capture").name);
-  };
+  const bubble = "max-w-[82%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed";
+  const inputClass =
+    "w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm outline-none transition-shadow placeholder:text-slate-400 focus:ring-2 focus:ring-primary/30";
 
-  const bubble = (role: Message["role"]) =>
-    role === "user"
-      ? "bg-slate-900 text-white rounded-ee-sm"
-      : "bg-slate-100 text-slate-800 rounded-es-sm";
+  const AssistantLine = ({ children }: { children: string }) => (
+    <div className="flex justify-start gap-2">
+      <div className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
+        <Bot className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
+      </div>
+      <div className={`${bubble} rounded-es-sm bg-slate-100 text-slate-800`}>{children}</div>
+    </div>
+  );
+
+  const WhatsAppLink = ({ primary }: { primary?: boolean }) => (
+    <a
+      href={whatsappUrl()}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-testid="link-aria-whatsapp"
+      className={
+        primary
+          ? "inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+          : "inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline"
+      }
+    >
+      <MessageCircle className="h-4 w-4" aria-hidden="true" />
+      {primary ? t("aria.continueWhatsapp", "Continue on WhatsApp") : t("aria.skipToWhatsapp", "Or message us on WhatsApp now")}
+    </a>
+  );
 
   return (
-    <div dir={rtl ? "rtl" : "ltr"} className="fixed bottom-6 end-6 z-50 flex flex-col items-end gap-3" data-testid="aria-chat">
+    <div dir={dir} className="fixed bottom-6 end-6 z-50 flex flex-col items-end gap-3" data-testid="aria-chat">
       {open && (
         <div
           role="dialog"
           aria-label={t("aria.dialogLabel", "Chat with Aria")}
-          className="flex h-[520px] max-h-[calc(100dvh-7rem)] w-[380px] max-w-[calc(100vw-3rem)] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
+          className="flex h-[540px] max-h-[calc(100dvh-7rem)] w-[380px] max-w-[calc(100vw-3rem)] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
         >
           <div className="flex flex-shrink-0 items-center gap-3 bg-gradient-to-r from-primary to-secondary px-4 py-3 text-white">
-            <div className="relative flex-shrink-0">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
-                <Bot className="h-5 w-5" aria-hidden="true" />
-              </div>
-              <span className="absolute -bottom-0.5 -end-0.5 h-3 w-3 rounded-full border-2 border-white bg-green-400" aria-hidden="true" />
+            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-white/20">
+              <Bot className="h-5 w-5" aria-hidden="true" />
             </div>
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold leading-none">Aria</p>
-              <p className="mt-1 flex items-center gap-1 text-xs opacity-80">
-                <Sparkles className="h-3 w-3" aria-hidden="true" />
-                {t("aria.subtitle", "Webimot AI · Powered by Claude")}
-              </p>
+              <p className="mt-1 text-xs opacity-80">{t("aria.subtitle", "Webimot assistant · Book a demo in a minute")}</p>
             </div>
             <button
               type="button"
@@ -129,85 +168,144 @@ export default function AriaChat() {
           </div>
 
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto px-4 py-4" aria-live="polite">
-            {[{ role: "assistant" as const, content: welcome }, ...messages].map((msg, i) => (
-              <div key={i} className={`flex gap-2 ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
-                {msg.role === "assistant" && (
-                  <div className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
-                    <Bot className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
-                  </div>
-                )}
-                <div dir="auto" className={`max-w-[78%] whitespace-pre-wrap rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${bubble(msg.role)}`}>
-                  {msg.content}
-                </div>
-              </div>
-            ))}
+            <AssistantLine>
+              {t(
+                "aria.welcome",
+                "Hi! I'm Aria. Answer three quick questions and our team will show you the WhatsApp AI working on your own clinic's enquiries.",
+              )}
+            </AssistantLine>
 
-            {loading && (
-              <div className="flex justify-start gap-2" aria-label={t("aria.typing", "Aria is typing")}>
-                <div className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
-                  <Bot className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
+            {QUESTIONS.map((q, i) =>
+              i > step ? null : (
+                <div key={q.id} className="flex flex-col gap-3">
+                  <AssistantLine>{question(i)}</AssistantLine>
+                  {i < step ? (
+                    <div className="flex justify-end">
+                      <div className={`${bubble} rounded-ee-sm bg-slate-900 text-white`}>{option(i, answers[i])}</div>
+                    </div>
+                  ) : (
+                    <div className="flex flex-wrap gap-2 ps-9" role="group" aria-label={question(i)}>
+                      {q.options.map((_, o) => (
+                        <button
+                          key={o}
+                          type="button"
+                          onClick={() => setAnswers([...answers, o])}
+                          className="rounded-full border border-slate-200 bg-white px-3.5 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-primary hover:text-primary"
+                          data-testid={`button-aria-${q.id}-${o}`}
+                        >
+                          {option(i, o)}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
-                <div className="flex items-center gap-1.5 rounded-2xl rounded-es-sm bg-slate-100 px-4 py-3">
-                  <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-slate-400 [animation-delay:0ms]" />
-                  <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-slate-400 [animation-delay:160ms]" />
-                  <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-slate-400 [animation-delay:320ms]" />
+              ),
+            )}
+
+            {done && status !== "sent" && (
+              <>
+                <AssistantLine>
+                  {t("aria.askContact", "Thanks. Where can we reach you? We reply within a few hours with times for a 30-minute demo.")}
+                </AssistantLine>
+                <form onSubmit={submit} className="flex flex-col gap-2.5 ps-9" data-testid="form-aria-lead">
+                  <input
+                    required
+                    minLength={2}
+                    maxLength={100}
+                    autoComplete="name"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                    placeholder={t("aria.form.name", "Your name *")}
+                    aria-label={t("aria.form.name", "Your name *")}
+                    className={inputClass}
+                  />
+                  <input
+                    maxLength={150}
+                    autoComplete="organization"
+                    value={form.clinic}
+                    onChange={(e) => setForm({ ...form, clinic: e.target.value })}
+                    placeholder={t("aria.form.clinic", "Clinic name")}
+                    aria-label={t("aria.form.clinic", "Clinic name")}
+                    className={inputClass}
+                  />
+                  <input
+                    required
+                    type="email"
+                    dir="ltr"
+                    maxLength={255}
+                    autoComplete="email"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    placeholder={t("aria.form.email", "Email *")}
+                    aria-label={t("aria.form.email", "Email *")}
+                    className={inputClass}
+                  />
+                  <input
+                    type="tel"
+                    dir="ltr"
+                    maxLength={30}
+                    pattern="[+\d\(][\d\s\-\(\)\.]{4,}"
+                    autoComplete="tel"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                    placeholder={t("aria.form.phone", "WhatsApp number (with country code)")}
+                    aria-label={t("aria.form.phone", "WhatsApp number (with country code)")}
+                    className={inputClass}
+                  />
+                  {/* Honeypot: people never see or fill this in. */}
+                  <input
+                    type="text"
+                    name="website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    value={form.website}
+                    onChange={(e) => setForm({ ...form, website: e.target.value })}
+                    className="hidden"
+                  />
+                  {status === "error" && (
+                    <p role="alert" className="text-xs text-red-600">
+                      {t("aria.error", "That didn't go through. Please try again, or message us on WhatsApp.")}
+                    </p>
+                  )}
+                  <button
+                    type="submit"
+                    disabled={status === "sending"}
+                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
+                    data-testid="button-aria-submit"
+                  >
+                    {status === "sending" && <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />}
+                    {t("aria.form.submit", "Request my demo")}
+                  </button>
+                  <WhatsAppLink />
+                </form>
+              </>
+            )}
+
+            {status === "sent" && (
+              <div className="flex flex-col gap-3">
+                <AssistantLine>
+                  {t("aria.sent", "Got it, thank you! We have your details and will email you within a few hours. Want a faster answer? Continue on WhatsApp.")}
+                </AssistantLine>
+                <div className="flex flex-col gap-2 ps-9">
+                  <p className="flex items-center gap-1.5 text-xs font-medium text-green-700">
+                    <Check className="h-4 w-4" aria-hidden="true" /> {t("aria.sentBadge", "Request sent")}
+                  </p>
+                  <WhatsAppLink primary />
                 </div>
               </div>
             )}
 
-            {(failed || limitReached) && !loading && (
-              <div className="mx-auto mt-1 w-full rounded-xl bg-slate-50 px-4 py-3 text-center">
-                <p className="mb-2 text-xs text-slate-600">
-                  {failed
-                    ? t("aria.error", "Sorry, I'm having a connection issue. Book a demo or reach us on WhatsApp instead.")
-                    : t("aria.limit", "Session limit reached. Want to continue?")}
-                </p>
-                <div className="flex flex-wrap justify-center gap-x-4 gap-y-1">
-                  <button type="button" onClick={book} className="text-xs font-semibold text-primary hover:underline">
-                    {t("aria.bookDemo", "Book a free demo")}
-                  </button>
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-primary hover:underline">
-                    {t("aria.whatsapp", "Chat on WhatsApp")}
-                  </a>
-                </div>
+            {!done && (
+              <div className="ps-9">
+                <WhatsAppLink />
               </div>
             )}
             <div ref={endRef} />
           </div>
 
-          {!limitReached && (
-            <form
-              className="flex flex-shrink-0 items-center gap-2 border-t border-slate-200 px-3 py-3"
-              onSubmit={(e) => {
-                e.preventDefault();
-                void send();
-              }}
-            >
-              <input
-                ref={inputRef}
-                type="text"
-                dir="auto"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder={t("aria.placeholder", "Ask me anything...")}
-                aria-label={t("aria.placeholder", "Ask me anything...")}
-                maxLength={500}
-                disabled={loading}
-                className="flex-1 rounded-xl bg-slate-100 px-4 py-2.5 text-sm outline-none transition-shadow placeholder:text-slate-500 focus:ring-2 focus:ring-primary/30 disabled:opacity-50"
-              />
-              <button
-                type="submit"
-                disabled={!input.trim() || loading}
-                aria-label={t("aria.send", "Send message")}
-                className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-slate-900 text-white transition-opacity hover:opacity-90 disabled:opacity-40"
-              >
-                {loading ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <Send className="h-4 w-4 rtl:-scale-x-100" aria-hidden="true" />}
-              </button>
-            </form>
-          )}
-
-          <p className="flex-shrink-0 pb-2 text-center text-[10px] text-slate-500">
-            {t("aria.disclaimer", "AI can make mistakes · Verify important info")}
+          <p className="flex-shrink-0 border-t border-slate-100 px-4 py-2 text-center text-[10px] text-slate-500">
+            {t("aria.privacy", "We only use your details to reply to this request.")}
           </p>
         </div>
       )}
@@ -216,7 +314,7 @@ export default function AriaChat() {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        aria-label={open ? t("aria.close", "Close chat") : t("aria.open", "Chat with Aria, Webimot AI")}
+        aria-label={open ? t("aria.close", "Close chat") : t("aria.open", "Chat with Aria to book a demo")}
         className="relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-white shadow-lg transition-transform hover:scale-105"
         data-testid="button-aria-toggle"
       >
