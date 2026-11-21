@@ -42,7 +42,7 @@ export default function ClientResultsSection() {
                 className={buttonVariants({ variant: "outline", className: "self-start rounded-full bg-white" })}
               >
                 {t("ourWork.readMore", "Read the project write-up")}
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
               </Link>
             </article>
           ))}

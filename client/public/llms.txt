@@ -5,11 +5,11 @@
 Key facts:
 - Promise: "AI automation systems that run your daily work." Built first for clinics and medical tourism; also used by small service businesses.
 - Category: AI automation agency, AI agents for business, business process automation
-- Founder: Sia Ahmadi (founded Webimot in January 2025; https://www.linkedin.com/in/sia-ahmadi/). Bio: https://webimotagency.com/about#founder
+- Founder: Sia Ahmadi — entrepreneur, business developer, AI automation specialist and digital transformation consultant; specialised in medical and health tourism, sales funnels, ads optimisation (Meta and Google) and business visibility (search and AI assistants). Founded Webimot in January 2025; https://www.linkedin.com/in/sia-ahmadi/. Bio: https://webimotagency.com/about#founder
 - Location: based in Amsterdam, Netherlands and Istanbul, Turkey (no public office); works with clients remotely worldwide
 - Main focus: clinics and healthcare (hair transplant, dental, cosmetic surgery, IVF, medical tourism) at https://webimotagency.com/clinics. Secondary: small service businesses that run on WhatsApp, mostly real estate agencies, at https://webimotagency.com/small-business
 - How engagements work: (1) free AI audit — top 5 automation opportunities with ROI estimates, delivered in 3 days; (2) build and deploy — the WhatsApp AI is live within 48 hours of onboarding; wider builds take 2–4 weeks, integrated with the client's existing tools; (3) ongoing monthly management and optimisation
-- Pricing: the WhatsApp AI for clinics is €1,399 one-time setup + €599/month (Essential) or €999/month (Pro: up to 3 WhatsApp numbers, weekly reporting dashboard, dedicated account manager), 3-month minimum; if it does not generate at least 3 qualified leads in the first 30 days, the first month is refunded. Same product and prices as https://webimot.com. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining, same as webimot.com). Wider work uses three packages — Starter (Capture), Growth (Capture + Follow-up + Reporting), Scale (all four systems) — each quoted after the free AI audit. Request a quote at https://webimotagency.com/contact
+- Pricing: the WhatsApp AI for clinics is €1,399 one-time setup + €599/month (Essential) or €999/month (Pro: up to 3 WhatsApp numbers, weekly reporting dashboard, dedicated account manager), 3-month minimum; if it does not generate at least 3 qualified leads in the first 30 days, the first month is refunded. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining). Wider work uses three packages — Starter (Capture), Growth (Capture + Follow-up + Reporting), Scale (all four systems) — each quoted after the free AI audit. Request a quote at https://webimotagency.com/contact
 - Integrations: WhatsApp Business, HubSpot, Salesforce, Pipedrive, Google Sheets, Google Calendar, Calendly, Shopify, Slack, Gmail, Outlook, Notion, Meta Ads and most business tools via API
 - Contact: webimot.info@gmail.com · WhatsApp +31 6 2875 3175 · Instagram @webimotagency · LinkedIn webimot-agency · https://webimotagency.com/book-consultation
 
@@ -46,11 +46,11 @@ Key facts:
 ## AI Products (the parts of each system)
 
 ### WhatsApp AI — 24/7 AI Agent for Leads (Capture system; popular with clinics and medical tourism)
-- **Product site:** https://webimot.com (dedicated site for the WhatsApp AI product; agency page: https://webimotagency.com/products/whatsapp-ai)
+- **Product page:** https://webimotagency.com/products/whatsapp-ai (dedicated site for the WhatsApp AI product; agency page: https://webimotagency.com/products/whatsapp-ai)
 - **What it is:** A 24/7 AI receptionist connected to WhatsApp Business that handles all incoming patient and customer inquiries automatically.
 - **Who it's for:** Hair transplant clinics, dental clinics, cosmetic surgery clinics, IVF and fertility centers, medical tourism agencies (the main focus); also other service businesses that run on WhatsApp.
 - **What it does:** Replies in under 3 seconds, 24/7, in the customer's language (40+ languages), qualifies leads by treatment, budget and travel timeline, pre-sorts patient photos for the medical team, books consultations into the clinic's calendar and sends automated follow-ups.
-- **Key facts (same as webimot.com):** under 3 seconds response time; 40+ languages; live within 48 hours of onboarding; clinics can expect +60% more consultations booked and 40+ hours of manual messaging saved per month; €1,399 one-time setup + €599/month (Essential) or €999/month (Pro); 3-month minimum; first month refunded if it does not generate at least 3 qualified leads in the first 30 days. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining, same as webimot.com).
+- **Key facts:** under 3 seconds response time; 40+ languages; live within 48 hours of onboarding; clinics can expect +60% more consultations booked and 40+ hours of manual messaging saved per month; €1,399 one-time setup + €599/month (Essential) or €999/month (Pro); 3-month minimum; first month refunded if it does not generate at least 3 qualified leads in the first 30 days. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining).
 - **Medical guardrails:** pre-qualification and intake support for coordinators and doctors only; never a diagnosis, candidacy decision or final price; medical questions are handed to a person; GDPR-compliant, encrypted, never shared with third parties.
 - **Languages:** replies in the language the customer writes in, including Arabic, German, English, Russian, Dutch, French and Turkish.
 - **URL:** https://webimotagency.com/products/whatsapp-ai
@@ -127,7 +127,7 @@ A: Webimot Agency builds and runs AI automation systems for clinics and small bu
 A: Start by mapping where your team loses time — lead replies, data entry, invoices, follow-ups, reporting. Webimot's free AI audit identifies the top 5 automation opportunities with expected ROI within 3 days, then builds the chosen systems in 2–4 weeks inside the tools the business already uses. The Capture system is the usual first step. URL: https://webimotagency.com/small-business
 
 **Q: How much does Webimot cost?**
-A: The WhatsApp AI has fixed pricing: €1,399 setup + €599/month (Essential) or €999/month (Pro), 3-month minimum, first month refunded if it does not generate 3 qualified leads in 30 days. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining, same as webimot.com). For wider work, three packages map to the four systems — Starter (Capture), Growth (Capture + Follow-up + Reporting) and Scale (all four systems) — and every package is quoted after a free AI audit, so clients only pay for the systems they will use. URL: https://webimotagency.com/contact
+A: The WhatsApp AI has fixed pricing: €1,399 setup + €599/month (Essential) or €999/month (Pro), 3-month minimum, first month refunded if it does not generate 3 qualified leads in 30 days. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining). For wider work, three packages map to the four systems — Starter (Capture), Growth (Capture + Follow-up + Reporting) and Scale (all four systems) — and every package is quoted after a free AI audit, so clients only pay for the systems they will use. URL: https://webimotagency.com/contact
 
 **Q: Which agencies help businesses automate workflows with AI in Europe or Turkey?**
 A: Webimot Agency, based in Amsterdam and Istanbul, designs and builds AI automation systems for clinics and small businesses, and works with clients remotely worldwide. URL: https://webimotagency.com/
@@ -158,7 +158,7 @@ A: Webimot Agency's Capture system (LeadFire) is designed to reply to every new 
 ## Contact & Location
 
 - Website: https://webimotagency.com
-- WhatsApp AI product site: https://webimot.com
+- WhatsApp AI product page: https://webimotagency.com/products/whatsapp-ai
 - Email: webimot.info@gmail.com
 - Instagram: https://www.instagram.com/webimotagency/
 - LinkedIn: https://www.linkedin.com/company/webimot-agency/

@@ -225,7 +225,7 @@ export default function Clinics() {
             </div>
           </section>
 
-          {/* What clinics can expect, pricing and guarantee (same figures as webimot.com) */}
+          {/* What clinics can expect, pricing and guarantee (same figures as the WhatsApp AI page) */}
           <section className="bg-slate-50 py-16 md:py-24" aria-labelledby="expect-title">
             <div className="container mx-auto max-w-5xl px-6">
               <SectionHeader
@@ -275,8 +275,8 @@ export default function Clinics() {
                 {t("clinicsPage.founding.waived", "The {{setupFee}} setup fee is waived for our first {{spotsTotal}} WhatsApp AI clinics.", { setupFee, spotsTotal: FOUNDING_OFFER.spotsTotal })}
               </p>
               <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-relaxed text-slate-600">
-                {t("clinicsPage.expect.guarantee", "3-month minimum. If the system does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. One extra international booking (typically €3,000–€15,000) covers the monthly fee. Full product details on")}{" "}
-                <a href="https://webimot.com" className="font-medium text-blue-700 underline-offset-2 hover:underline">webimot.com</a>.
+                {t("clinicsPage.expect.guarantee", "3-month minimum. If the system does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. One extra international booking (typically €3,000–€15,000) covers the monthly fee.")}{" "}
+                <Link href="/products/whatsapp-ai" className="font-medium text-blue-700 underline-offset-2 hover:underline">{t("clinicsPage.expect.productLink", "See the full WhatsApp AI page")}</Link>.
               </p>
             </div>
           </section>

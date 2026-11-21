@@ -32,7 +32,7 @@ export interface ProductPageProps {
   featureDetails?: { title: string; description: string }[];
   whoItsFor: { emoji: string; industry: string; useCase: string }[];
   ctaHeadline: string;
-  // Products that have their own site (e.g. WhatsApp AI at webimot.com) link to it as a reference.
+  // Products that have their own site (none at the moment) link to it as a reference.
   referenceLink?: { href: string; label: string };
   /** Replaces the default "custom quote" pricing note with fixed prices and terms. */
   pricingNote?: { headline: string; lines: string[] };

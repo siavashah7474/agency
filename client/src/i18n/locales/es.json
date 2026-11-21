@@ -113,8 +113,15 @@
     "ctaButton": "Reserva una demo",
     "founder": {
       "badge": "Sobre el fundador",
-      "text": "Fundé Webimot en enero de 2025 y hago el trabajo yo mismo: sitios web, CRM, campañas de anuncios, optimización para buscadores y agentes de IA. Desde 2021 trabajo en ventas y marketing para clínicas de Estambul que atienden a pacientes internacionales. Vivo entre Ámsterdam y Estambul y trabajo en inglés, turco, persa y kurdo.",
-      "link": "Leer la biografía completa"
+      "text": "Soy emprendedor, desarrollador de negocio y especialista en automatización con IA. Ayudo a clínicas y pequeñas empresas a crecer con mejores embudos de venta, mejores anuncios, más visibilidad y sistemas de IA, y hago el trabajo yo mismo. Desde 2021 trabajo en ventas y marketing para clínicas de Estambul que atienden a pacientes internacionales. Vivo entre Ámsterdam y Estambul y trabajo en inglés, turco, persa y kurdo.",
+      "link": "Leer la biografía completa",
+      "tags": [
+        "Turismo médico y de salud",
+        "Embudos de venta",
+        "Optimización de anuncios",
+        "Visibilidad",
+        "Automatización con IA"
+      ]
     },
     "ads": {
       "eyebrow": "Publicidad",
@@ -215,11 +222,34 @@
     "founder": {
       "badge": "Fundador",
       "name": "Sia Ahmadi",
-      "role": "Fundador de Webimot Agency",
-      "p1": "Soy Sia Ahmadi. Fundé Webimot en enero de 2025 y hago el trabajo yo mismo: sitios web, CRM, campañas de anuncios, optimización para buscadores y los agentes de IA, que construyo con n8n, la API de OpenAI y la API de WhatsApp Cloud.",
+      "role": "Emprendedor · Desarrollador de negocio · Especialista en automatización con IA · Consultor de transformación digital",
+      "p1": "Soy Sia Ahmadi, emprendedor y desarrollador de negocio. Fundé Webimot en enero de 2025 para ayudar a clínicas y pequeñas empresas a crecer: detecto dónde se pierden consultas, ventas y tiempo, y lo resuelvo con mejores embudos de venta, mejores anuncios, más visibilidad y automatización con IA. Hago el trabajo yo mismo, de la estrategia a la implementación: sitios web, CRM, campañas publicitarias, optimización para buscadores y agentes de IA, que desarrollo con n8n, la API de OpenAI y la WhatsApp Cloud API.",
       "p2": "Desde 2021 trabajo en ventas y marketing para clínicas de Estambul que atienden a pacientes internacionales: BHT Clinic (Tema Hospital), Ariana Health Clinic, donde dirigí las ventas a pacientes internacionales, y desde noviembre de 2023 Dr. Görkem Atsal Clinic, donde trabajo como especialista freelance en ventas y marketing. De 2021 a 2024 también hice marketing digital para WaveMed, una startup sanitaria de Estados Unidos.",
       "p3": "Tengo un máster en Tecnologías de la Información por la Universidad Azad y estoy terminando un máster en Consultoría y Emprendimiento en Rotterdam Business School. Vivo entre Ámsterdam y Estambul y trabajo en inglés, turco, persa y kurdo, con neerlandés básico.",
-      "linkedin": "Sia en LinkedIn"
+      "linkedin": "Sia en LinkedIn",
+      "specialtiesTitle": "En qué me especializo",
+      "specialties": [
+        {
+          "title": "Turismo médico y de salud",
+          "desc": "Desde 2021 trabajo en ventas y marketing para clínicas que atienden a pacientes internacionales, así que conozco el recorrido del paciente desde el primer mensaje hasta la consulta reservada."
+        },
+        {
+          "title": "Embudos de venta",
+          "desc": "Analizo dónde se pierden las consultas y reconstruyo el embudo: respuestas rápidas, cualificación, seguimiento y un CRM que el equipo usa de verdad."
+        },
+        {
+          "title": "Optimización de anuncios",
+          "desc": "Campañas de Meta y Google medidas por consultas reservadas y ventas, no por clics ni leads baratos."
+        },
+        {
+          "title": "Visibilidad del negocio",
+          "desc": "Aparecer donde buscan los clientes: Google, el Perfil de Empresa de Google y asistentes de IA como ChatGPT y Perplexity."
+        },
+        {
+          "title": "Automatización con IA y transformación digital",
+          "desc": "Llevar el trabajo manual de WhatsApp, correo, documentos y hojas de cálculo a sistemas que funcionan cada día."
+        }
+      ]
     }
   },
   "contact": {

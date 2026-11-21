@@ -1,6 +1,7 @@
 import { newBlogPosts } from "./newBlogPosts2026";
 import { newBlogPostsNov2026 } from "./newBlogPostsNov2026";
 import { newBlogPostsNov2026b } from "./newBlogPostsNov2026b";
+import { webimotBlogPosts } from "./webimotBlogPosts";
 
 export interface BlogPost {
   slug: string;
@@ -187,7 +188,7 @@ Even the best human teams face limitations:
 
 ## Enter AI-Powered WhatsApp Agents
 
-[Webimot's WhatsApp AI Agent](https://webimot.com) is designed to hold a natural, helpful conversation. It can:
+[Webimot's WhatsApp AI Agent](/products/whatsapp-ai) is designed to hold a natural, helpful conversation. It can:
 
 - Answer complex procedure questions accurately
 - Provide personalized pricing based on patient needs
@@ -196,7 +197,7 @@ Even the best human teams face limitations:
 - Follow up automatically if conversations go quiet
 - Hand off to humans when needed
 
-[See how Webimot's WhatsApp AI Agent works](https://webimot.com) — built specifically for medical tourism clinics.
+[See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) — built specifically for medical tourism clinics.
 
 ## What Changes When Replies Are Instant
 
@@ -234,7 +235,7 @@ All of this can happen at 3 AM, before anyone on your team is awake.
 
 ## Is AI Right for Your Clinic?
 
-[Webimot's WhatsApp AI Agent](https://webimot.com) works best for clinics that:
+[Webimot's WhatsApp AI Agent](/products/whatsapp-ai) works best for clinics that:
 - Receive high volumes of inquiries
 - Serve international patients in multiple time zones
 - Want to scale without proportionally increasing staff
@@ -563,13 +564,13 @@ True localization means:
 
 ## WhatsApp Communication
 
-WhatsApp is where conversions happen. Multilingual capability is critical — and [Webimot's WhatsApp AI Agent](https://webimot.com) is built exactly for this.
+WhatsApp is where conversions happen. Multilingual capability is critical — and [Webimot's WhatsApp AI Agent](/products/whatsapp-ai) is built exactly for this.
 
 ### Human Teams
 - Pros: Natural conversation, cultural understanding
 - Cons: Expensive, limited hours, recruitment challenges
 
-### [Webimot WhatsApp AI Agent](https://webimot.com)
+### [Webimot WhatsApp AI Agent](/products/whatsapp-ai)
 - Pros: Many languages, 24/7, consistent quality, fast responses
 - Cons: May need human backup for very complex cases
 
@@ -1086,7 +1087,7 @@ The AI is a powerful tool that makes doctors more efficient, not obsolete.
 - Continuous improvement
 
 ### Integration
-- [WhatsApp AI Agent by Webimot](https://webimot.com) for seamless patient experience
+- [WhatsApp AI Agent by Webimot](/products/whatsapp-ai) for seamless patient experience
 - Website upload options via [webimotagency.com](/)
 - CRM integration for lead management
 
@@ -1288,7 +1289,7 @@ Track these indicators:
 
 Building online trust is a strategic process, not a one-time project. It requires planning, consistent effort, and ongoing management.
 
-Want help developing a trust-building strategy for your clinic? [Webimot](/) pairs reputation management with an [AI WhatsApp agent](https://webimot.com) that responds so quickly, patients feel attended to from the very first message — which is itself the strongest trust signal. [Visit webimotagency.com](/) to discuss your current situation and opportunities for improvement.
+Want help developing a trust-building strategy for your clinic? [Webimot](/) pairs reputation management with an [AI WhatsApp agent](/products/whatsapp-ai) that responds so quickly, patients feel attended to from the very first message — which is itself the strongest trust signal. [Visit webimotagency.com](/) to discuss your current situation and opportunities for improvement.
     `
   },
   {
@@ -1373,7 +1374,7 @@ Istanbul is widely known for rhinoplasty and attracts patients from Germany, the
 ### Hair Transplant (FUE / DHI)
 Turkey is one of the most popular countries in the world for hair transplants. Patients come from the UK, Germany, the Netherlands, Spain, and the Middle East, among others.
 
-**[Webimot AI](/systems) impact:** Hair transplant patients typically compare several clinics. [Webimot's WhatsApp AI Agent](https://webimot.com) is designed to respond right away with technique explanations, pricing information, and next steps, so your clinic stays in the comparison.
+**[Webimot AI](/systems) impact:** Hair transplant patients typically compare several clinics. [Webimot's WhatsApp AI Agent](/products/whatsapp-ai) is designed to respond right away with technique explanations, pricing information, and next steps, so your clinic stays in the comparison.
 
 ### Dental Tourism (Implants, Veneers, Hollywood Smile)
 Dental procedures in Turkey generally cost much less than in Western Europe. Patients often combine dental work with a vacation, making Turkey especially attractive.
@@ -2059,7 +2060,7 @@ The hair transplant market in Turkey is intensely competitive. Patients typicall
 - "When will I see results?"
 - "Do you offer a guarantee?"
 
-A human consultant handling dozens of these inquiries per day gets worn down and answers inconsistently. [Webimot's WhatsApp AI Agent](https://webimot.com) is designed to handle many conversations at once and give the same approved answers each time.
+A human consultant handling dozens of these inquiries per day gets worn down and answers inconsistently. [Webimot's WhatsApp AI Agent](/products/whatsapp-ai) is designed to handle many conversations at once and give the same approved answers each time.
 
 ## The AI Advantage: A Step-by-Step Patient Journey
 
@@ -2084,7 +2085,7 @@ Here is an illustration of how a clinic with a [Webimot AI](/systems) agent woul
 - **Key languages:** German, Dutch, Arabic, English
 
 ### Hair Transplant (FUE/DHI/Sapphire)
-- **Why [Webimot's WhatsApp AI Agent](https://webimot.com) helps:** Patients compare many clinics, and the first helpful response has a clear advantage.
+- **Why [Webimot's WhatsApp AI Agent](/products/whatsapp-ai) helps:** Patients compare many clinics, and the first helpful response has a clear advantage.
 - **Key languages:** English, German, Arabic, Dutch, French
 
 ### Breast Augmentation
@@ -2881,6 +2882,7 @@ If you want this built, configured, and managed for your business — without yo
   ...newBlogPosts,
   ...newBlogPostsNov2026,
   ...newBlogPostsNov2026b,
+  ...webimotBlogPosts,
 ];
 
 /** Blog posts sorted newest first (dates are strings like "Oct 30, 2025"). */

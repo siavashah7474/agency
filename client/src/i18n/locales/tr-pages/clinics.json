@@ -18,10 +18,22 @@
       "ctaPrimary": "Kendi WhatsApp'ınızda demo talep edin",
       "ctaSecondary": "Dört sistemi görün",
       "stats": [
-        { "value": "< 3 sn", "label": "Gece gündüz yanıt süresi" },
-        { "value": "40+", "label": "Yapay zekânın yanıt verebildiği dil" },
-        { "value": "48 saat", "label": "Başlangıçtan WhatsApp'ınızda yayına geçişe kadar" },
-        { "value": "7/24", "label": "Tüm saat dilimlerinde kesintisiz hizmet" }
+        {
+          "value": "< 3 sn",
+          "label": "Gece gündüz yanıt süresi"
+        },
+        {
+          "value": "40+",
+          "label": "Yapay zekânın yanıt verebildiği dil"
+        },
+        {
+          "value": "48 saat",
+          "label": "Başlangıçtan WhatsApp'ınızda yayına geçişe kadar"
+        },
+        {
+          "value": "7/24",
+          "label": "Tüm saat dilimlerinde kesintisiz hizmet"
+        }
       ]
     },
     "challenges": {
@@ -37,10 +49,26 @@
       ]
     },
     "systems": {
-      "capture": { "name": "Yakalama sistemi", "productLabel": "WhatsApp AI · LeadFire", "about": "Yakalama sistemi hakkında" },
-      "convert": { "name": "Takip sistemi", "productLabel": "NurtureLoop · ReviveIQ", "about": "Takip sistemi hakkında" },
-      "operate": { "name": "Operasyon sistemi", "productLabel": "DocuMind · Günlük işler için AI ajanları", "about": "Operasyon sistemi hakkında" },
-      "measure": { "name": "Raporlama sistemi", "productLabel": "ClearDesk", "about": "Raporlama sistemi hakkında" }
+      "capture": {
+        "name": "Yakalama sistemi",
+        "productLabel": "WhatsApp AI · LeadFire",
+        "about": "Yakalama sistemi hakkında"
+      },
+      "convert": {
+        "name": "Takip sistemi",
+        "productLabel": "NurtureLoop · ReviveIQ",
+        "about": "Takip sistemi hakkında"
+      },
+      "operate": {
+        "name": "Operasyon sistemi",
+        "productLabel": "DocuMind · Günlük işler için AI ajanları",
+        "about": "Operasyon sistemi hakkında"
+      },
+      "measure": {
+        "name": "Raporlama sistemi",
+        "productLabel": "ClearDesk",
+        "about": "Raporlama sistemi hakkında"
+      }
     },
     "ladder": {
       "eyebrow": "Nasıl çalışır",
@@ -70,12 +98,25 @@
       "title": "Klinikler neler bekleyebilir",
       "lead": "WhatsApp AI yayına girdiği andan itibaren her uluslararası talep yanıt alır ve ciddi hastalar koordinatörlerinize ulaşır.",
       "stats": [
-        { "value": "< 3 sn", "label": "Gece gündüz yanıt süresi" },
-        { "value": "7/24", "label": "Saat dilimleri arasında kaçan talep yok" },
-        { "value": "40+", "label": "Ayda tasarruf edilen manuel mesajlaşma saati" },
-        { "value": "+%60", "label": "Daha fazla rezerve edilen konsültasyon" }
+        {
+          "value": "< 3 sn",
+          "label": "Gece gündüz yanıt süresi"
+        },
+        {
+          "value": "7/24",
+          "label": "Saat dilimleri arasında kaçan talep yok"
+        },
+        {
+          "value": "40+",
+          "label": "Ayda tasarruf edilen manuel mesajlaşma saati"
+        },
+        {
+          "value": "+%60",
+          "label": "Daha fazla rezerve edilen konsültasyon"
+        }
       ],
-      "guarantee": "Asgari süre 3 aydır. Sistem ilk 30 gününüzde en az 3 nitelikli hasta talebi oluşturmazsa ilk ayınızı iade ederiz. Tek bir ek uluslararası rezervasyon (genellikle €3.000–€15.000) aylık ücreti karşılar. Ürünle ilgili tüm ayrıntılar:"
+      "guarantee": "Asgari süre 3 aydır. Sistem ilk 30 gününüzde en az 3 nitelikli hasta talebi oluşturmazsa ilk ayınızı iade ederiz. Tek bir ek uluslararası rezervasyon (genellikle €3.000–€15.000) aylık ücreti karşılar.",
+      "productLink": "WhatsApp AI sayfasının tamamını görün"
     },
     "plans": [
       {
@@ -136,23 +177,52 @@
     "caseStudies": {
       "gorkem-atsal-clinic": {
         "summary": "Webimot'un kurucusu Sia Ahmadi'nin Gorkem Atsal Clinic ile devam eden çalışması: web sitesi, CRM, Google Ads, Meta Ads, sosyal medya stratejisi ve SEO.",
-        "workDone": ["Web sitesi", "CRM ve otomasyon", "AI WhatsApp sohbet botu", "Google Ads ve Meta Ads", "Sosyal medya stratejisi", "Arama optimizasyonu", "Satış süreci", "BT güvenliği"]
+        "workDone": [
+          "Web sitesi",
+          "CRM ve otomasyon",
+          "AI WhatsApp sohbet botu",
+          "Google Ads ve Meta Ads",
+          "Sosyal medya stratejisi",
+          "Arama optimizasyonu",
+          "Satış süreci",
+          "BT güvenliği"
+        ]
       },
       "clinish-dental-clinic": {
         "summary": "Webimot'un kurucusu Sia Ahmadi'nin Clinish için yaptığı çalışma: web sitesi, sosyal medya, Meta Business Suite ve Meta reklam kurulumu ve Search Console optimizasyonu.",
-        "workDone": ["Web sitesi", "Sosyal medya", "Meta Business Suite ve Meta reklamları", "Arama ve analiz"]
+        "workDone": [
+          "Web sitesi",
+          "Sosyal medya",
+          "Meta Business Suite ve Meta reklamları",
+          "Arama ve analiz"
+        ]
       },
       "prime-hair": {
         "summary": "Webimot'un kurucusu Sia Ahmadi'nin Prime Hair için serbest çalışması: Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri ve sosyal medya.",
-        "workDone": ["Meta ve Google reklamları", "Web sitesi ve SEO", "Satış ve hasta talepleri", "Sosyal medya"]
+        "workDone": [
+          "Meta ve Google reklamları",
+          "Web sitesi ve SEO",
+          "Satış ve hasta talepleri",
+          "Sosyal medya"
+        ]
       },
       "msb-aesthetic": {
         "summary": "Webimot'un kurucusu Sia Ahmadi'nin MSB Aesthetic için serbest çalışması: Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri ve sosyal medya.",
-        "workDone": ["Meta ve Google reklamları", "Web sitesi ve SEO", "Satış ve hasta talepleri", "Sosyal medya"]
+        "workDone": [
+          "Meta ve Google reklamları",
+          "Web sitesi ve SEO",
+          "Satış ve hasta talepleri",
+          "Sosyal medya"
+        ]
       },
       "estetizm": {
         "summary": "Webimot'un kurucusu Sia Ahmadi'nin Estetizm için serbest çalışması: Meta ve Google reklamları, web sitesi ve SEO, satış ve hasta talepleri ve sosyal medya.",
-        "workDone": ["Meta ve Google reklamları", "Web sitesi ve SEO", "Satış ve hasta talepleri", "Sosyal medya"]
+        "workDone": [
+          "Meta ve Google reklamları",
+          "Web sitesi ve SEO",
+          "Satış ve hasta talepleri",
+          "Sosyal medya"
+        ]
       }
     },
     "examples": {

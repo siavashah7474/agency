@@ -55,7 +55,7 @@ A reminder schedule that works for most clinics:
 3. **Day of, 2 to 3 hours before**: a brief "See you at 14:00, here is the map" message.
 4. **For travelling patients**: an extra message on arrival day with transfer and hotel details.
 
-What the AI does: sends each message from a WhatsApp-approved template, in the detected language, and answers the questions that come back ("Can I eat before?", "Is there parking?") in under 3 seconds. This is the part a human front desk cannot do at scale: a reminder that opens a conversation rather than ending one. On Webimot's Capture system this runs through [WhatsApp AI](https://webimot.com), the same agent that handled the original enquiry, so the patient sees one continuous conversation instead of a reminder from an unknown number.
+What the AI does: sends each message from a WhatsApp-approved template, in the detected language, and answers the questions that come back ("Can I eat before?", "Is there parking?") in under 3 seconds. This is the part a human front desk cannot do at scale: a reminder that opens a conversation rather than ending one. On Webimot's Capture system this runs through [WhatsApp AI](/products/whatsapp-ai), the same agent that handled the original enquiry, so the patient sees one continuous conversation instead of a reminder from an unknown number.
 
 ### Step 3: A deposit for high-value and first-time slots
 
@@ -206,7 +206,7 @@ What AI automates:
 
 What stays human: the deposit policy, special arrangements, and the weekly review of attendance numbers.
 
-On Webimot's Capture system this is all handled by [WhatsApp AI](https://webimot.com), the same agent that answered the first enquiry, so the patient has one conversation from "how much are veneers" to "see you at 10:00 on Tuesday".
+On Webimot's Capture system this is all handled by [WhatsApp AI](/products/whatsapp-ai), the same agent that answered the first enquiry, so the patient has one conversation from "how much are veneers" to "see you at 10:00 on Tuesday".
 
 ## Stage 4: Treatment plan, consent and insurance paperwork
 
@@ -369,7 +369,7 @@ WhatsApp reached three billion monthly users in 2025 ([Statista](https://www.sta
 
 For agencies the practical advantages are two-way conversation instead of abandoned forms, floor plans and video walkthroughs sent in the thread on request, the buyer's number as a single lead ID (no duplicates when the same couple enquires about four of your listings), and WhatsApp Business API rules on consent and templates that protect your number when a managed setup handles them.
 
-Webimot's [WhatsApp AI](https://webimot.com) runs on the agency's own WhatsApp Business number, so the buyer sees your brand, not a third-party bot, and the handover to the listing agent happens inside the same conversation.
+Webimot's [WhatsApp AI](/products/whatsapp-ai) runs on the agency's own WhatsApp Business number, so the buyer sees your brand, not a third-party bot, and the handover to the listing agent happens inside the same conversation.
 
 ## With and without AI: the same week in an agency
 
@@ -659,7 +659,7 @@ The uncomfortable part: the ad account can be fine while the funnel behind it le
 
 The principle: the ad's job ends when the patient taps; a system, not a person, should own the next 60 seconds and the next 30 days. In Webimot's four-system approach it looks like this:
 
-- **Capture.** Every lead from a Meta instant form, a Google Ads landing page or a click-to-WhatsApp ad gets a first reply in under 3 seconds, in the patient's language (40+ languages), with qualifying questions and live consultation slots. [LeadFire](/products/leadfire) handles form and ad leads; [WhatsApp AI](https://webimot.com) runs the WhatsApp conversation itself, photos included.
+- **Capture.** Every lead from a Meta instant form, a Google Ads landing page or a click-to-WhatsApp ad gets a first reply in under 3 seconds, in the patient's language (40+ languages), with qualifying questions and live consultation slots. [LeadFire](/products/leadfire) handles form and ad leads; [WhatsApp AI](/products/whatsapp-ai) runs the WhatsApp conversation itself, photos included.
 - **Follow-up.** Leads that go quiet after a quote enter a multi-step sequence across WhatsApp, email and SMS (NurtureLoop) that stops the moment they reply or book. This is the step meant to recover Meta leads that were cold on day one.
 - **Attribution.** Every lead carries its source (platform, campaign, ad) into the CRM, and the booked consultation is written back as the conversion both platforms optimise against.
 - **Reporting.** A Monday report (ClearDesk) shows cost per booked consultation by platform and campaign, so the budget decision is a number.

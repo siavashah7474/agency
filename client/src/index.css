@@ -43,9 +43,11 @@
   --chart-3: 188 95% 42%;
   --chart-4: 211 54% 25%;
   --chart-5: 205 75% 42%;
-  --font-sans: Poppins, Inter, sans-serif;
+  /* IBM Plex Sans Arabic only covers Arabic text (Poppins/Inter have no Arabic glyphs); its
+     Google Fonts files are split by unicode-range, so they only download when Arabic is shown. */
+  --font-sans: Poppins, Inter, "IBM Plex Sans Arabic", sans-serif;
   --font-serif: Georgia, serif;
-  --font-mono: Menlo, monospace;
+  --font-mono: Menlo, "IBM Plex Sans Arabic", monospace;
   --radius: .5rem;
   --shadow-2xs: 0px 2px 0px 0px hsl(220 12% 75% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(220 12% 75% / 0.00);
@@ -428,4 +430,9 @@
   .animate-ticker > [aria-hidden="true"] {
     display: none;
   }
+}
+
+/* Arabic: letter-spacing breaks the joined letters, so tracking utilities are neutralised in RTL parts. */
+[dir="rtl"] :is(.tracking-tight, .tracking-tighter, .tracking-wide, .tracking-wider, .tracking-widest, [class*="tracking-["]) {
+  letter-spacing: normal;
 }

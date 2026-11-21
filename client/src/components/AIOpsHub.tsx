@@ -180,7 +180,7 @@ export default function AIOpsHub() {
                 {/* Unread badge while the request is being handled */}
                 {animate && isActive && thinking && (
                   <motion.span
-                    className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-amber-500 text-[9px] font-bold text-white shadow"
+                    className="absolute -end-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-amber-500 text-[9px] font-bold text-white shadow"
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     exit={{ scale: 0 }}

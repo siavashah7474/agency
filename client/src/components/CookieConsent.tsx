@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useDir } from "@/i18n/useDir";
 
 type Choice = "granted" | "denied";
 const STORAGE_KEY = "cookie-consent";
@@ -36,6 +37,7 @@ function applyChoice(choice: Choice) {
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
   const { t } = useTranslation();
+  const dir = useDir();
 
   useEffect(() => {
     if (readChoice() === null) setVisible(true);
@@ -51,6 +53,7 @@ export default function CookieConsent() {
   return (
     <div
       role="dialog"
+      dir={dir}
       aria-live="polite"
       aria-label={t("shell.cookies.ariaLabel", "Cookie consent")}
       className="fixed bottom-4 left-4 right-4 sm:left-6 sm:right-auto sm:max-w-md z-[90] rounded-xl border bg-background p-5 shadow-2xl"

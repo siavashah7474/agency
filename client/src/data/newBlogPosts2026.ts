@@ -72,7 +72,7 @@ Generic AI receptionist tools are sold as monthly subscriptions, often with per-
 
 ### 2. Managed retainer (done for you)
 
-A managed service builds the agent around your procedures, prices, languages and calendar, connects it to your WhatsApp Business number and CRM, monitors conversations and keeps improving it every month. You pay a monthly retainer rather than a licence. This is the model Webimot uses for its [WhatsApp AI](/products/whatsapp-ai) Capture system (product site: [webimot.com](https://webimot.com)): quoted after a free audit, typically live in 2–4 weeks, managed on an ongoing basis.
+A managed service builds the agent around your procedures, prices, languages and calendar, connects it to your WhatsApp Business number and CRM, monitors conversations and keeps improving it every month. You pay a monthly retainer rather than a licence. This is the model Webimot uses for its [WhatsApp AI](/products/whatsapp-ai) Capture system: quoted after a free audit, typically live in 2–4 weeks, managed on an ongoing basis.
 
 ### 3. Custom build (one-off project)
 

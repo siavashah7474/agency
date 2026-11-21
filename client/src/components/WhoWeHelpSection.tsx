@@ -55,13 +55,13 @@ export default function WhoWeHelpSection() {
                             {t("home.audience.focusBadge")}
                           </p>
                         )}
-                        <h3 className="text-2xl font-bold leading-tight text-slate-900">{audience.name}</h3>
-                        <p className="mt-2 text-base font-medium text-slate-700">{audience.tagline}</p>
+                        <h3 dir="auto" className="text-2xl font-bold leading-tight text-slate-900">{audience.name}</h3>
+                        <p dir="auto" className="mt-2 text-base font-medium text-slate-700">{audience.tagline}</p>
                       </div>
                       <span className="text-4xl leading-none" aria-hidden="true">{audience.emoji}</span>
                     </div>
 
-                    <p className="mb-6 text-sm leading-relaxed text-slate-600 md:text-base">{audience.description}</p>
+                    <p dir="auto" className="mb-6 text-sm leading-relaxed text-slate-600 md:text-base">{audience.description}</p>
 
                     <ul className="mb-8 flex flex-wrap gap-2" aria-label={t("home.audience.examplesLabel")}>
                       {audience.examples.map((example, i) => (
@@ -76,7 +76,7 @@ export default function WhoWeHelpSection() {
 
                     <div className="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors group-hover:text-slate-900">
                       {linkLabel}
-                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" aria-hidden="true" />
                     </div>
                   </div>
                 </article>

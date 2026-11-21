@@ -4,12 +4,14 @@ import { Menu, X, Globe, ChevronDown, Check } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import { useTranslation } from "react-i18next";
+import { useDir } from "@/i18n/useDir";
 
 const LANGUAGES = [
   { code: "en", label: "EN", name: "English" },
   { code: "tr", label: "TR", name: "Türkçe" },
   { code: "nl", label: "NL", name: "Nederlands" },
   { code: "es", label: "ES", name: "Español" },
+  { code: "ar", label: "AR", name: "العربية" },
 ];
 
 const focusRing =
@@ -23,6 +25,7 @@ export default function Navigation() {
   const { openModal } = useBookingModal();
   const { t, i18n } = useTranslation();
   const langRef = useRef<HTMLDivElement>(null);
+  const dir = useDir();
 
   const currentLang = LANGUAGES.find((l) => l.code === i18n.language) ?? LANGUAGES[0];
 
@@ -97,6 +100,7 @@ export default function Navigation() {
         {t("shell.nav.skipToContent", "Skip to main content")}
       </a>
       <header
+        dir={dir}
         className={`sticky top-0 z-50 w-full border-b bg-background/85 backdrop-blur-md supports-[backdrop-filter]:bg-background/75 transition-[border-color,box-shadow] duration-300 ${
           scrolled || mobileMenuOpen ? "border-slate-200 shadow-[0_1px_2px_rgba(15,23,42,0.06)]" : "border-transparent"
         }`}
@@ -143,7 +147,7 @@ export default function Navigation() {
                   <ChevronDown className={`h-3.5 w-3.5 transition-transform ${langMenuOpen ? "rotate-180" : ""}`} aria-hidden="true" />
                 </button>
                 {langMenuOpen && (
-                  <div role="listbox" aria-label={t("shell.nav.selectLanguage", "Select language")} className="absolute right-0 top-full z-50 mt-2 w-44 overflow-hidden rounded-xl border border-slate-200 bg-white p-1 shadow-lg">
+                  <div role="listbox" aria-label={t("shell.nav.selectLanguage", "Select language")} className="absolute end-0 top-full z-50 mt-2 w-44 overflow-hidden rounded-xl border border-slate-200 bg-white p-1 shadow-lg">
                     {LANGUAGES.map((lang) => {
                       const selected = i18n.language === lang.code;
                       return (
@@ -153,7 +157,7 @@ export default function Navigation() {
                           className={`flex w-full min-h-10 items-center gap-2 rounded-lg px-3 text-sm transition-colors hover:bg-slate-100 ${focusRing} ${selected ? "font-semibold text-primary" : "text-slate-700"}`}
                         >
                           <span className="w-7 text-xs font-bold">{lang.label}</span>
-                          <span className="flex-1 text-left">{lang.name}</span>
+                          <span className="flex-1 text-start" lang={lang.code}>{lang.name}</span>
                           {selected && <Check className="h-4 w-4 text-primary" aria-hidden="true" />}
                         </button>
                       );
@@ -169,7 +173,7 @@ export default function Navigation() {
             <button
               type="button"
               data-testid="button-mobile-menu"
-              className={`lg:hidden -mr-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}
+              className={`lg:hidden -me-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? t("shell.nav.closeMenu", "Close menu") : t("shell.nav.openMenu", "Open menu")} aria-expanded={mobileMenuOpen} aria-controls="mobile-menu"
             >
@@ -182,7 +186,7 @@ export default function Navigation() {
 
       {/* Rendered outside <header>: backdrop-filter on the header would otherwise become the containing block for this fixed panel */}
         {mobileMenuOpen && (
-          <div id="mobile-menu" className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-slate-200 bg-background">
+          <div id="mobile-menu" dir={dir} className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-slate-200 bg-background">
             <nav className="container mx-auto flex flex-col px-4 py-4 sm:px-6" aria-label={t("shell.nav.mainAria", "Main")}>
               {navLinks.map((link) => {
                 const active = isActive(link.href);
@@ -207,7 +211,7 @@ export default function Navigation() {
                 <div className="mb-2 flex items-center gap-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-500">
                   <Globe className="h-4 w-4" aria-hidden="true" /> {t("shell.nav.language", "Language")}
                 </div>
-                <div className="grid grid-cols-4 gap-2" role="listbox" aria-label={t("shell.nav.selectLanguage", "Select language")}>
+                <div className="grid grid-cols-5 gap-2" role="listbox" aria-label={t("shell.nav.selectLanguage", "Select language")}>
                   {LANGUAGES.map((lang) => {
                     const selected = i18n.language === lang.code;
                     return (

@@ -23,6 +23,7 @@ import {
 import { CheckCircle, ArrowRight, HelpCircle } from "lucide-react";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useDir } from "@/i18n/useDir";
 import { PROMISE, SYSTEMS } from "@/data/systemsData";
 
 const SITE_URL = "https://webimotagency.com";
@@ -30,6 +31,7 @@ const SITE_URL = "https://webimotagency.com";
 export default function Home() {
   const { openModal } = useBookingModal();
   const { t } = useTranslation();
+  const dir = useDir();
 
   const faqs = t("home.faqs", { returnObjects: true }) as Array<{ question: string; answer: string }>;
   const heroChecklist = t("home.heroChecklist", { returnObjects: true }) as string[];
@@ -85,7 +87,7 @@ export default function Home() {
       <div className="min-h-screen flex flex-col bg-background text-foreground">
         <Navigation />
 
-        <main id="main-content" className="flex-1">
+        <main id="main-content" dir={dir} className="flex-1">
           {/* 1. Hero — the promise */}
           <section className="relative overflow-hidden bg-gradient-to-b from-sky-50 via-white to-white py-20 md:py-28">
             <div className="absolute top-0 right-0 h-[600px] w-[600px] rounded-full bg-secondary/10 blur-3xl animate-float-orb pointer-events-none" />
@@ -114,7 +116,7 @@ export default function Home() {
                       className="rounded-full bg-slate-900 px-7 text-white hover:bg-slate-800"
                       onClick={() => openModal()}
                     >
-                      {t("home.heroCta1")} <ArrowRight className="ml-2 h-4 w-4" />
+                      {t("home.heroCta1")} <ArrowRight className="ms-2 h-4 w-4 rtl:rotate-180" />
                     </Button>
                     <Link href="/systems">
                       <Button
@@ -182,7 +184,7 @@ export default function Home() {
               <Accordion type="single" collapsible className="w-full">
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`faq-${index}`}>
-                    <AccordionTrigger className="text-left text-base font-medium hover:no-underline">
+                    <AccordionTrigger className="text-start text-base font-medium hover:no-underline">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground leading-relaxed">
@@ -207,7 +209,7 @@ export default function Home() {
                 className="rounded-full bg-slate-900 px-8 text-white hover:bg-slate-800"
                 onClick={() => openModal()}
               >
-                {t("home.ctaButton")} <ArrowRight className="ml-2 h-4 w-4" />
+                {t("home.ctaButton")} <ArrowRight className="ms-2 h-4 w-4 rtl:rotate-180" />
               </Button>
             </div>
           </section>

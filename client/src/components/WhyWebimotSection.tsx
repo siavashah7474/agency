@@ -69,7 +69,7 @@ export default function WhyWebimotSection() {
               </ul>
               <Button data-testid="button-why-webimot-cta" size="lg" className="rounded-full" onClick={() => openModal()}>
                 {t("whyWebimot.cta")}
-                <ArrowRight className="ml-1 h-4 w-4" aria-hidden="true" />
+                <ArrowRight className="ms-1 h-4 w-4 rtl:rotate-180" aria-hidden="true" />
               </Button>
             </div>
 

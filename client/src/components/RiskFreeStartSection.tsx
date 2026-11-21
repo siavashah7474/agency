@@ -50,7 +50,7 @@ export default function RiskFreeStartSection() {
               className="rounded-full bg-slate-900 px-8 text-white hover:bg-slate-800"
               onClick={() => openModal()}
             >
-              {t("homePage.riskFree.cta", "Claim my free AI audit")} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              {t("homePage.riskFree.cta", "Claim my free AI audit")} <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
             </Button>
           </div>
         </div>

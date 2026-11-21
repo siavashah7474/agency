@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone, Zap } from "lucide-react";
 import { SiInstagram } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { useDir } from "@/i18n/useDir";
 import { SYSTEMS, ADD_ONS, useLocalizedSystemsData } from "@/data/systemsData";
 
 // The seven product pages: every /products/* link that appears in a system or as an add-on.
@@ -19,10 +20,11 @@ const headingClass = "mb-4 text-xs font-semibold uppercase tracking-[0.15em] tex
 
 export default function Footer() {
   const { t } = useTranslation();
+  const dir = useDir();
   const { systems, audiences } = useLocalizedSystemsData();
   const whatsappLink = "https://wa.me/31628753175";
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 bg-[#020817]" aria-labelledby="footer-heading">
+    <footer dir={dir} className="relative overflow-hidden border-t border-white/10 bg-[#020817]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">{t("shell.footer.heading", "Footer")}</h2>
       <div className="absolute inset-0 neural-grid pointer-events-none opacity-60" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[1px] bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
@@ -32,7 +34,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8 xl:grid-cols-7">
 
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-5 xl:col-span-2 xl:pr-8">
+          <div className="sm:col-span-2 lg:col-span-5 xl:col-span-2 xl:pe-8">
             <Link href="/" className={`mb-4 inline-flex items-center gap-2 ${focusRing}`} aria-label={t("shell.nav.homeAria", "Webimot home")}>
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <span className="text-white font-bold text-lg">W</span>
@@ -58,7 +60,7 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-              <li><Link href="/systems" data-testid="link-footer-systems" className={linkStrongClass}>{t("footer.allSystems", "All systems")} →</Link></li>
+              <li><Link href="/systems" data-testid="link-footer-systems" className={linkStrongClass}>{t("footer.allSystems", "All systems")} <span className="inline-block rtl:-scale-x-100" aria-hidden="true">→</span></Link></li>
             </ul>
           </div>
 
@@ -133,7 +135,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-white/60 sm:flex-row">
-          <p className="text-center sm:text-left">&copy; {new Date().getFullYear()} Webimot. {t("footer.rights")}</p>
+          <p className="text-center sm:text-start">&copy; {new Date().getFullYear()} Webimot. {t("footer.rights")}</p>
           <nav aria-label={t("shell.footer.legalAria", "Legal")} className="flex items-center gap-6">
             <Link href="/privacy-policy" data-testid="link-footer-privacy" className={`py-1 transition-colors hover:text-white ${focusRing}`}>{t("footer.privacyPolicy")}</Link>
             <Link href="/terms-of-service" data-testid="link-footer-terms" className={`py-1 transition-colors hover:text-white ${focusRing}`}>{t("footer.termsOfService")}</Link>

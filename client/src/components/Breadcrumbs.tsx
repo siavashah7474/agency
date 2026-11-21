@@ -59,7 +59,7 @@ export default function Breadcrumbs({ items, variant = "light", className = "" }
           </li>
           {items.map((item, index) => (
             <li key={index} className="flex items-center gap-1">
-              <ChevronRight className={`h-4 w-4 flex-shrink-0 ${separatorClass}`} aria-hidden="true" />
+              <ChevronRight className={`h-4 w-4 flex-shrink-0 rtl:rotate-180 ${separatorClass}`} aria-hidden="true" />
               {item.href ? (
                 <Link
                   href={item.href}

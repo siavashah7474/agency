@@ -3,12 +3,14 @@ import { Button } from "@/components/ui/button";
 import { X, Gift, ArrowRight } from "lucide-react";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import { useTranslation } from "react-i18next";
+import { useDir } from "@/i18n/useDir";
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
   const { isOpen: bookingOpen, openModal } = useBookingModal();
   const { t } = useTranslation();
+  const dir = useDir();
 
   const showPopup = useCallback(() => {
     // Never stack on top of the booking form the visitor is already filling in.
@@ -69,7 +71,7 @@ export default function ExitIntentPopup() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="exit-popup-title">
+    <div dir={dir} className="fixed inset-0 z-[100] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="exit-popup-title">
       <div 
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={handleClose}
@@ -77,7 +79,7 @@ export default function ExitIntentPopup() {
       <div className="relative bg-background rounded-2xl shadow-2xl max-w-md w-full p-8 animate-in zoom-in-95 duration-300">
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
+          className="absolute top-4 end-4 text-muted-foreground hover:text-foreground transition-colors"
           data-testid="button-close-exit-popup"
           aria-label={t("shell.exitPopup.closeAria", "Close popup")}
         >
@@ -108,7 +110,7 @@ export default function ExitIntentPopup() {
               }}
             >
               {t("exitPopup.cta")}
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="ms-2 h-4 w-4 rtl:rotate-180" />
             </Button>
 
             <button

@@ -1,0 +1,48 @@
+{
+  "shell": {
+    "nav": {
+      "skipToContent": "الانتقال إلى المحتوى الرئيسي",
+      "homeAria": "الصفحة الرئيسية لـ Webimot",
+      "mainAria": "القائمة الرئيسية",
+      "changeLanguage": "تغيير اللغة",
+      "selectLanguage": "اختر اللغة",
+      "openMenu": "فتح القائمة",
+      "closeMenu": "إغلاق القائمة",
+      "language": "اللغة"
+    },
+    "footer": {
+      "heading": "تذييل الصفحة",
+      "poweredBy": "مدعوم بالأتمتة بالذكاء الاصطناعي",
+      "locationAmsterdam": "أمستردام، هولندا",
+      "locationIstanbul": "إسطنبول، تركيا",
+      "instagramAria": "Webimot على Instagram (يُفتح في علامة تبويب جديدة)",
+      "linkedinAria": "Webimot على LinkedIn (يُفتح في علامة تبويب جديدة)",
+      "legalAria": "المعلومات القانونية"
+    },
+    "breadcrumbs": {
+      "ariaLabel": "مسار التنقل",
+      "home": "الرئيسية"
+    },
+    "cookies": {
+      "ariaLabel": "الموافقة على ملفات تعريف الارتباط",
+      "textBefore": "نستخدم ملفات تعريف الارتباط من Google Analytics لفهم كيفية استخدام الزوار لهذا الموقع وتحسينه. لا نستخدم أي ملفات تعريف ارتباط تسويقية. راجع",
+      "privacyLink": "سياسة الخصوصية",
+      "textAfter": ".",
+      "decline": "رفض",
+      "accept": "قبول التحليلات"
+    },
+    "exitPopup": {
+      "closeAria": "إغلاق النافذة",
+      "descBefore": "احصل على ",
+      "descStrong": "تدقيق مجاني بالذكاء الاصطناعي",
+      "descAfter": " واكتشف كيف يمكننا مساعدتك على استقطاب مزيد من العملاء المحتملين. دون أي التزام."
+    },
+    "errorBoundary": {
+      "title": "حدث خطأ ما",
+      "message": "عذراً، حدثت مشكلة غير متوقعة. يرجى تحديث الصفحة أو العودة إلى الصفحة الرئيسية.",
+      "tryAgain": "حاول مرة أخرى",
+      "goHome": "الذهاب إلى الصفحة الرئيسية"
+    },
+    "close": "إغلاق"
+  }
+}

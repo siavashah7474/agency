@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { SectionHeader } from "@/components/SectionEyebrow";
 import { SYSTEMS, useLocalizedSystemsData } from "@/data/systemsData";
 import { isPrerendering } from "@/lib/prerender";
+import { useDir } from "@/i18n/useDir";
 
 const cardFocus =
   "block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
@@ -23,6 +24,8 @@ export default function WhatWeDoSection() {
   const { t } = useTranslation();
   const { systems } = useLocalizedSystemsData();
   const reduceMotion = useReducedMotion();
+  // Right-to-left: the rail draws from the right and step 1 sits on the right, like the grid.
+  const rtl = useDir() === "rtl";
   const animate = !reduceMotion && !isPrerendering;
   const viewport = { once: true, amount: 0.35 } as const;
 
@@ -42,9 +45,9 @@ export default function WhatWeDoSection() {
           <svg className="absolute inset-0 h-full w-full overflow-visible" viewBox="0 0 1000 24" preserveAspectRatio="none">
             <line x1="125" y1="12" x2="875" y2="12" className="stroke-slate-200" strokeWidth="2" vectorEffect="non-scaling-stroke" />
             <motion.line
-              x1="125"
+              x1={rtl ? "875" : "125"}
               y1="12"
-              x2="875"
+              x2={rtl ? "125" : "875"}
               y2="12"
               className="stroke-secondary"
               strokeWidth="2"
@@ -60,7 +63,7 @@ export default function WhatWeDoSection() {
             <motion.span
               key={system.id}
               className="absolute top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-slate-200 bg-white"
-              style={{ left: `${12.5 + index * 25}%` }}
+              style={{ left: `${12.5 + (rtl ? SYSTEMS.length - 1 - index : index) * 25}%` }}
               initial={animate ? { scale: 0.8 } : false}
               whileInView={animate ? { scale: [0.8, 1.5, 1], borderColor: "hsl(var(--secondary))", backgroundColor: "hsl(var(--secondary))" } : {}}
               viewport={viewport}
@@ -100,18 +103,18 @@ export default function WhatWeDoSection() {
                     <span className="text-3xl leading-none" aria-hidden="true">{system.emoji}</span>
                   </div>
 
-                  <h3 className="text-lg font-bold leading-snug text-slate-900">{system.name}</h3>
-                  <p className="mt-1 text-xs font-medium uppercase tracking-wider text-slate-500">{system.productLabel}</p>
+                  <h3 dir="auto" className="text-lg font-bold leading-snug text-slate-900">{system.name}</h3>
+                  <p dir="auto" className="mt-1 text-xs font-medium uppercase tracking-wider text-slate-500">{system.productLabel}</p>
 
-                  <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-700">{system.headline}</p>
+                  <p dir="auto" className="mt-4 flex-1 text-sm leading-relaxed text-slate-700">{system.headline}</p>
 
                   <p className="mt-5 rounded-xl bg-slate-50 px-3 py-2.5 text-sm text-slate-600">
-                    <span className="font-semibold text-slate-900">{t("home.ladder.replaces")}:</span> {system.replaces}
+                    <span className="font-semibold text-slate-900">{t("home.ladder.replaces")}:</span> <bdi>{system.replaces}</bdi>
                   </p>
 
                   <span className="mt-5 inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-primary transition-colors group-hover:text-slate-900">
                     {t("home.ladder.link")}
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" aria-hidden="true" />
                   </span>
                 </article>
               </Link>
@@ -119,7 +122,7 @@ export default function WhatWeDoSection() {
               {/* Connector arrow between steps on the 4-column layout */}
               {index < SYSTEMS.length - 1 && (
                 <ArrowRight
-                  className="pointer-events-none absolute -right-5 top-1/2 hidden h-5 w-5 -translate-y-1/2 text-slate-300 lg:block"
+                  className="pointer-events-none absolute -end-5 top-1/2 hidden h-5 w-5 -translate-y-1/2 text-slate-300 rtl:rotate-180 lg:block"
                   aria-hidden="true"
                 />
               )}
@@ -129,7 +132,7 @@ export default function WhatWeDoSection() {
 
         <div className="mt-12 flex flex-col items-center justify-center gap-3 text-sm sm:flex-row sm:gap-8">
           <Link href="/systems" className="link-inline inline-flex min-h-11 items-center gap-1.5 rounded-md px-2 text-primary" data-testid="link-all-systems">
-            {t("home.ladder.allLink")} <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            {t("home.ladder.allLink")} <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
           </Link>
         </div>
       </div>

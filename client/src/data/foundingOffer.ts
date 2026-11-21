@@ -1,5 +1,5 @@
-// Founding-client offer, kept identical to webimot.com.
-// Update spotsLeft here when a founding spot is taken (and on webimot.com and in llms.txt / llms-full.txt).
+// Founding-client offer for the WhatsApp AI (shown on the Clinics and WhatsApp AI pages).
+// Update spotsLeft here when a founding spot is taken (and in llms.txt / llms-full.txt).
 export const FOUNDING_OFFER = {
   setupFee: "€1,399",
   spotsLeft: 3,

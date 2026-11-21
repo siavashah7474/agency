@@ -1,0 +1,17 @@
+{
+  "aria": {
+    "welcome": "Merhaba! Ben Aria, Webimot'un yapay zekâ asistanıyım. WhatsApp AI'ın medikal turizm kliniklerinin daha fazla uluslararası hasta kazanmasına nasıl yardımcı olduğuyla ilgili tüm sorularınızı yanıtlayabilirim. Ne öğrenmek istersiniz?",
+    "dialogLabel": "Aria ile sohbet",
+    "subtitle": "Webimot AI · Claude ile çalışır",
+    "close": "Sohbeti kapat",
+    "typing": "Aria yazıyor",
+    "error": "Üzgünüm, bağlantı sorunu yaşıyorum. Bunun yerine demo talep edin veya bize WhatsApp'tan yazın.",
+    "limit": "Oturum sınırına ulaşıldı. Devam etmek ister misiniz?",
+    "bookDemo": "Ücretsiz demo talep edin",
+    "whatsapp": "WhatsApp'tan yazın",
+    "placeholder": "Bana istediğinizi sorun...",
+    "send": "Mesaj gönder",
+    "disclaimer": "Yapay zekâ hata yapabilir · Önemli bilgileri doğrulayın",
+    "open": "Webimot AI asistanı Aria ile sohbet edin"
+  }
+}

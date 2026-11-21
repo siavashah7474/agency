@@ -113,8 +113,15 @@
     "ctaButton": "Book a demo",
     "founder": {
       "badge": "About the founder",
-      "text": "I founded Webimot in January 2025 and do the work myself: websites, CRMs, ad campaigns, search optimisation and AI agents. Since 2021 I have worked in sales and marketing for clinics in Istanbul that treat international patients. I live between Amsterdam and Istanbul and work in English, Turkish, Persian and Kurdish.",
-      "link": "Read the full bio"
+      "text": "I'm an entrepreneur, business developer and AI automation specialist. I help clinics and small businesses grow with better sales funnels, better ads, more visibility and AI systems, and I do the work myself. Since 2021 I have worked in sales and marketing for clinics in Istanbul that treat international patients. I live between Amsterdam and Istanbul and work in English, Turkish, Persian and Kurdish.",
+      "link": "Read the full bio",
+      "tags": [
+        "Medical and health tourism",
+        "Sales funnels",
+        "Ads optimisation",
+        "Business visibility",
+        "AI automation"
+      ]
     },
     "ads": {
       "eyebrow": "Paid ads",
@@ -215,11 +222,34 @@
     "founder": {
       "badge": "Founder",
       "name": "Sia Ahmadi",
-      "role": "Founder, Webimot Agency",
-      "p1": "I'm Sia Ahmadi. I founded Webimot in January 2025 and I do the work myself: websites, CRMs, ad campaigns, search optimisation and the AI agents, which I build with n8n, the OpenAI API and the WhatsApp Cloud API.",
+      "role": "Entrepreneur · Business developer · AI automation specialist · Digital transformation consultant",
+      "p1": "I'm Sia Ahmadi, an entrepreneur and business developer. I founded Webimot in January 2025 to help clinics and small businesses grow: I find where enquiries, sales and time are being lost, then fix it with better sales funnels, better ads, more visibility and AI automation. I do the work myself, from the strategy to the build: websites, CRMs, ad campaigns, search optimisation and AI agents, which I build with n8n, the OpenAI API and the WhatsApp Cloud API.",
       "p2": "Since 2021 I have worked in sales and marketing for clinics in Istanbul that treat international patients: BHT Clinic (Tema Hospital), Ariana Health Clinic, where I led international patient sales, and since November 2023 Dr. Görkem Atsal Clinic, where I work as a freelance sales and marketing specialist. From 2021 to 2024 I also did digital marketing for WaveMed, a US healthcare startup.",
       "p3": "I hold an MSc in Information Technology from Azad University and I am completing an MSc in Consultancy and Entrepreneurship at Rotterdam Business School. I live between Amsterdam and Istanbul and work in English, Turkish, Persian and Kurdish, with basic Dutch.",
-      "linkedin": "Sia on LinkedIn"
+      "linkedin": "Sia on LinkedIn",
+      "specialtiesTitle": "What I specialise in",
+      "specialties": [
+        {
+          "title": "Medical and health tourism",
+          "desc": "Since 2021 I have worked in sales and marketing for clinics that treat international patients, so I know the patient's path from the first message to the booked consultation."
+        },
+        {
+          "title": "Sales funnels",
+          "desc": "I map where enquiries drop out and rebuild the funnel: fast replies, qualification, follow-up and a CRM the team actually uses."
+        },
+        {
+          "title": "Ads optimisation",
+          "desc": "Meta and Google campaigns measured by booked consultations and sales, not by clicks or cheap leads."
+        },
+        {
+          "title": "Business visibility",
+          "desc": "Being found where customers look: Google search, Google Business Profile and AI assistants such as ChatGPT and Perplexity."
+        },
+        {
+          "title": "AI automation and digital transformation",
+          "desc": "Moving manual work on WhatsApp, email, documents and spreadsheets into systems that run every day."
+        }
+      ]
     }
   },
   "contact": {

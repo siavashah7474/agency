@@ -26,14 +26,21 @@ export default function FounderSection() {
               {t("about.founder.name")}
             </h2>
             <p className="mb-4 mt-1 text-sm font-medium text-primary">{t("about.founder.role")}</p>
-            <p className="mb-5 leading-relaxed text-slate-600">{t("home.founder.text")}</p>
+            <p className="mb-4 leading-relaxed text-slate-600">{t("home.founder.text")}</p>
+            <ul className="mb-5 flex flex-wrap gap-2" data-testid="list-founder-tags">
+              {(t("home.founder.tags", { returnObjects: true }) as string[]).map((tag) => (
+                <li key={tag} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">
+                  {tag}
+                </li>
+              ))}
+            </ul>
             <Link
               href="/about#founder"
               className="inline-flex items-center gap-2 font-semibold text-primary underline-offset-4 hover:underline"
               data-testid="link-founder-bio"
             >
               {t("home.founder.link")}
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
             </Link>
           </div>
         </div>

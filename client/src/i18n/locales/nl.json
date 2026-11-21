@@ -113,8 +113,15 @@
     "ctaButton": "Boek een demo",
     "founder": {
       "badge": "Over de oprichter",
-      "text": "Ik heb Webimot in januari 2025 opgericht en doe het werk zelf: websites, CRM's, advertentiecampagnes, zoekoptimalisatie en AI-agents. Sinds 2021 werk ik in sales en marketing voor klinieken in Istanbul die internationale patiënten behandelen. Ik woon afwisselend in Amsterdam en Istanbul en werk in het Engels, Turks, Perzisch en Koerdisch.",
-      "link": "Lees de volledige bio"
+      "text": "Ik ben ondernemer, business developer en AI-automatiseringsspecialist. Ik help klinieken en kleine bedrijven groeien met betere salesfunnels, betere advertenties, meer zichtbaarheid en AI-systemen, en ik doe het werk zelf. Sinds 2021 werk ik in sales en marketing voor klinieken in Istanbul die internationale patiënten behandelen. Ik woon afwisselend in Amsterdam en Istanbul en werk in het Engels, Turks, Perzisch en Koerdisch.",
+      "link": "Lees de volledige bio",
+      "tags": [
+        "Medisch en gezondheidstoerisme",
+        "Salesfunnels",
+        "Advertentie-optimalisatie",
+        "Zichtbaarheid",
+        "AI-automatisering"
+      ]
     },
     "ads": {
       "eyebrow": "Advertenties",
@@ -215,11 +222,34 @@
     "founder": {
       "badge": "Oprichter",
       "name": "Sia Ahmadi",
-      "role": "Oprichter van Webimot Agency",
-      "p1": "Ik ben Sia Ahmadi. Ik heb Webimot in januari 2025 opgericht en doe het werk zelf: websites, CRM's, advertentiecampagnes, zoekoptimalisatie en de AI-agents, die ik bouw met n8n, de OpenAI API en de WhatsApp Cloud API.",
+      "role": "Ondernemer · Business developer · AI-automatiseringsspecialist · Consultant digitale transformatie",
+      "p1": "Ik ben Sia Ahmadi, ondernemer en business developer. Ik heb Webimot in januari 2025 opgericht om klinieken en kleine bedrijven te helpen groeien: ik zoek uit waar aanvragen, omzet en tijd verloren gaan en los dat op met betere salesfunnels, betere advertenties, meer zichtbaarheid en AI-automatisering. Ik doe het werk zelf, van strategie tot bouw: websites, CRM's, advertentiecampagnes, zoekmachineoptimalisatie en AI-agents, die ik bouw met n8n, de OpenAI API en de WhatsApp Cloud API.",
       "p2": "Sinds 2021 werk ik in sales en marketing voor klinieken in Istanbul die internationale patiënten behandelen: BHT Clinic (Tema Hospital), Ariana Health Clinic, waar ik de internationale patiëntensales leidde, en sinds november 2023 Dr. Görkem Atsal Clinic, waar ik als freelance sales- en marketingspecialist werk. Van 2021 tot 2024 deed ik ook digitale marketing voor WaveMed, een Amerikaanse zorgstartup.",
       "p3": "Ik heb een MSc in Informatietechnologie van de Azad Universiteit en rond een MSc in Consultancy en Entrepreneurship af aan de Rotterdam Business School. Ik woon afwisselend in Amsterdam en Istanbul en werk in het Engels, Turks, Perzisch en Koerdisch, met basiskennis Nederlands.",
-      "linkedin": "Sia op LinkedIn"
+      "linkedin": "Sia op LinkedIn",
+      "specialtiesTitle": "Waarin ik gespecialiseerd ben",
+      "specialties": [
+        {
+          "title": "Medisch en gezondheidstoerisme",
+          "desc": "Sinds 2021 werk ik in sales en marketing voor klinieken die internationale patiënten behandelen. Ik ken dus de weg van de patiënt, van het eerste bericht tot het geboekte consult."
+        },
+        {
+          "title": "Salesfunnels",
+          "desc": "Ik breng in kaart waar aanvragen afhaken en bouw de funnel opnieuw op: snelle reacties, kwalificatie, opvolging en een CRM dat het team echt gebruikt."
+        },
+        {
+          "title": "Advertentie-optimalisatie",
+          "desc": "Meta- en Google-campagnes die worden afgerekend op geboekte consulten en omzet, niet op klikken of goedkope leads."
+        },
+        {
+          "title": "Zichtbaarheid van bedrijven",
+          "desc": "Gevonden worden waar klanten zoeken: Google, Google Bedrijfsprofiel en AI-assistenten zoals ChatGPT en Perplexity."
+        },
+        {
+          "title": "AI-automatisering en digitale transformatie",
+          "desc": "Handmatig werk in WhatsApp, e-mail, documenten en spreadsheets onderbrengen in systemen die elke dag draaien."
+        }
+      ]
     }
   },
   "contact": {

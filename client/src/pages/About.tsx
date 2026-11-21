@@ -7,6 +7,7 @@ import {
   Stethoscope, Building, ShoppingCart, ArrowRight, Heart, Sparkles,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useDir } from "@/i18n/useDir";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 
 const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/sia-ahmadi/";
@@ -19,7 +20,26 @@ const founderSchema = {
     "@type": "Person",
     "@id": "https://webimotagency.com/about#founder",
     name: "Sia Ahmadi",
-    jobTitle: "Founder",
+    jobTitle: "Founder, entrepreneur and AI automation specialist",
+    description:
+      "Entrepreneur, business developer, AI automation specialist and digital transformation consultant, specialised in medical and health tourism, sales funnels, ads optimisation and business visibility.",
+    hasOccupation: [
+      { "@type": "Occupation", name: "Entrepreneur" },
+      { "@type": "Occupation", name: "Business developer" },
+      { "@type": "Occupation", name: "AI automation specialist" },
+      { "@type": "Occupation", name: "Digital transformation consultant" },
+    ],
+    knowsAbout: [
+      "Medical tourism",
+      "Health tourism",
+      "Sales funnels",
+      "Meta Ads optimisation",
+      "Google Ads optimisation",
+      "Search and AI search visibility",
+      "AI automation",
+      "Digital transformation",
+      "Business development",
+    ],
     image: "https://webimotagency.com/sia-ahmadi.jpg",
     worksFor: { "@id": "https://webimotagency.com/#organization" },
     homeLocation: [
@@ -37,6 +57,7 @@ const founderSchema = {
 
 export default function About() {
   const { t } = useTranslation();
+  const dir = useDir();
   const { openModal } = useBookingModal();
   const deliver = t("about.deliver", { returnObjects: true }) as string[];
   const specialties = t("about.specialties", { returnObjects: true }) as Array<{ title: string; desc: string }>;
@@ -57,7 +78,7 @@ export default function About() {
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />
-        <main id="main-content" className="flex-1">
+        <main id="main-content" dir={dir} className="flex-1">
 
           {/* Hero */}
           <section className="relative py-20 md:py-32 overflow-hidden bg-[#020817]">
@@ -126,7 +147,16 @@ export default function About() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">{t("about.founder.name")}</h2>
                 <p className="text-base text-secondary mb-6">{t("about.founder.role")}</p>
-                <p className="text-lg text-white/70 mb-4">{t("about.founder.p1")}</p>
+                <p className="text-lg text-white/70 mb-6">{t("about.founder.p1")}</p>
+                <h3 className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-white/60">{t("about.founder.specialtiesTitle")}</h3>
+                <ul className="mb-6 grid gap-3 sm:grid-cols-2" data-testid="list-founder-specialties">
+                  {(t("about.founder.specialties", { returnObjects: true }) as { title: string; desc: string }[]).map((item) => (
+                    <li key={item.title} className="rounded-xl border border-white/10 bg-white/5 p-4 last:sm:col-span-2">
+                      <p className="font-semibold text-white">{item.title}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-white/65">{item.desc}</p>
+                    </li>
+                  ))}
+                </ul>
                 <p className="text-lg text-white/70 mb-4">{t("about.founder.p2")}</p>
                 <p className="text-lg text-white/70 mb-6">{t("about.founder.p3")}</p>
                 <a
@@ -136,7 +166,7 @@ export default function About() {
                   className="inline-flex items-center gap-2 font-medium text-white underline underline-offset-4 hover:text-white/80"
                 >
                   {t("about.founder.linkedin")}
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-4 w-4 rtl:rotate-180" />
                 </a>
                 </div>
               </div>
@@ -250,7 +280,7 @@ export default function About() {
                   onClick={() => openModal()}
                 >
                   {t("about.teamCta")}
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ms-2 h-4 w-4 rtl:rotate-180" />
                 </Button>
               </div>
             </div>

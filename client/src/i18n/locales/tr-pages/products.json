@@ -1,51 +1,5 @@
 {
   "productPages": {
-    "whatsappAi": {
-      "tagline": "WhatsApp'ta 7/24 akıllı talep yönetimi.",
-      "heroBrief": "Müşterileriniz aslında WhatsApp'ta — ama WhatsApp'a 7/24 personel ayıramazsınız. WhatsApp AI her mesajı yanıtlar, her potansiyel müşteriyi değerlendirir ve her randevuyu otomatik olarak, 40+ dilde, günün her saatinde oluşturur. Yanıtlar 3 saniyenin altında gider ve sistem 48 saat içinde yayına girer.",
-      "problemParagraphs": [
-        "WhatsApp, Türkiye, Körfez ülkeleri ve Avrupa'nın birçok yeri dahil pek çok pazarda potansiyel müşterilerin ana iletişim kanalıdır. Ancak WhatsApp'a 7/24 personel ayırmak pahalıdır ve kaçırılan her mesaj, kaçırılan gelir demektir.",
-        "Gece 23:00'te mesaj atıp ertesi sabaha kadar yanıt alamayan bir potansiyel müşteri, çoğu zaman çoktan rakiplerinize de ulaşmıştır. İlk yanıt veren kazanır. Anında yanıt veremiyorsanız, işi verebilen birine kaptırıyorsunuz.",
-        "WhatsApp AI, gelen her mesajı ulaştığı anda yönetir — soruları yanıtlar, fotoğrafları değerlendirir, potansiyel müşterileri ön elemeden geçirir ve randevuları oluşturur — müşterinin dilinde, günün her saatinde."
-      ],
-      "howItWorksSteps": [
-        { "title": "Bağlayın", "description": "WhatsApp Business hesabınızı bağlayın. Tüm kurulum ve eğitim 48 saat içinde tamamlanır — her şeyi biz hallederiz." },
-        { "title": "Yapay Zekâ Devralır", "description": "Gelen her mesaj anında yönetilir — sık sorulan sorular yanıtlanır, fotoğraflar değerlendirilir, potansiyel müşteriler ön elemeden geçer, randevular oluşturulur." },
-        { "title": "Her Konuşmayı Görürsünüz", "description": "7/24 eksiksiz gelen kutusu takibi ve her konuşmayı ve randevuyu gösteren gerçek zamanlı bir panel." }
-      ],
-      "features": [
-        "Her WhatsApp mesajına 7/24 anında yanıt",
-        "Çok dilli destek — potansiyel müşterinin dilini algılar ve o dilde yanıt verir",
-        "Görsel yapay zekâ: fotoğrafları ekibiniz için sınıflandırır ve ön değerlendirmeden geçirir (asla teşhis koymaz)",
-        "Sesli mesajları yazıya dökme ve akıllı yanıt",
-        "Potansiyel müşteri değerlendirme ve puanlama",
-        "Takviminize otomatik randevu oluşturma",
-        "Karmaşık sorularda canlı temsilciye aktarma",
-        "Gerçek zamanlı panel ve konuşma analitiği"
-      ],
-      "whoItsFor": [
-        { "industry": "Klinikler ve medikal turizm", "useCase": "Hasta taleplerini yönetin, fotoğrafları değerlendirin ve 40+ dilde 7/24 konsültasyon randevusu oluşturun." },
-        { "industry": "Emlak ofisleri", "useCase": "Her mülk talebine anında yanıt verin ve gösterimleri otomatik olarak planlayın." },
-        { "industry": "E-ticaret mağazaları", "useCase": "Sipariş sorularını, iadeleri ve ürün desteğini WhatsApp'ta günün her saatinde yönetin." },
-        { "industry": "WhatsApp kullanan her işletme", "useCase": "Ek personel yükü olmadan her WhatsApp mesajını nitelikli bir potansiyel müşteriye dönüştürün." }
-      ],
-      "ctaHeadline": "Siz Uyurken Rakipleriniz Yanıt Veriyor. Ya Siz?",
-      "results": [
-        { "value": "< 3 sn", "label": "Yanıt süresi", "context": "Her hasta, gece ya da gündüz anında yanıt alır" },
-        { "value": "40+", "label": "Ayda kazanılan saat", "context": "Ekibiniz için daha az manuel mesajlaşma" },
-        { "value": "+%60", "label": "Daha fazla konsültasyon randevusu", "context": "Nitelikli talepler doğrudan randevuya ilerlediğinde kliniklerin bekleyebileceği artış" }
-      ],
-      "pricingNote": {
-        "headline": "Şeffaf fiyatlandırma",
-        "lines": [
-          "Essential: €1.399 tek seferlik kurulum + aylık €599. Pro (en fazla 3 WhatsApp numarası, haftalık raporlama paneli, size özel müşteri temsilcisi): aylık €999.",
-          "Kurucu müşteri teklifi: ilk {{spotsTotal}} WhatsApp AI kliniğimiz için {{setupFee}} kurulum ücreti alınmıyor ({{spotsTotal}} yerden {{spotsLeft}} tanesi kaldı).",
-          "Sistemin işletmenizi öğrenmesi için asgari süre 3 aydır. İlk 30 gününüzde en az 3 nitelikli talep oluşturmazsa ilk ayınızın ücretini iade ederiz."
-        ]
-      },
-      "referenceLink": { "label": "WhatsApp AI ürününü webimot.com'da görün" }
-    },
-
     "leadfire": {
       "tagline": "Her potansiyel müşteriye 60 saniyenin altında ulaşın — otomatik olarak.",
       "heroBrief": "Bir form, reklam ya da web sitesinden yeni bir potansiyel müşteri geldiğinde LeadFire 60 saniyenin altında yanıt verir. Yapay zekâ talebi değerlendirir, ilk sorularını yanıtlar ve otomatik olarak bir görüşme planlar. Manuel iş yok. Kaçırılan talep yok.",

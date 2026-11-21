@@ -113,8 +113,15 @@
     "ctaButton": "Demo talep edin",
     "founder": {
       "badge": "Kurucu hakkında",
-      "text": "Webimot'u Ocak 2025'te kurdum ve işi kendim yapıyorum: web siteleri, CRM'ler, reklam kampanyaları, arama optimizasyonu ve AI ajanları. 2021'den beri İstanbul'da uluslararası hastalara hizmet veren kliniklerde satış ve pazarlama alanında çalışıyorum. Amsterdam ve İstanbul arasında yaşıyorum; İngilizce, Türkçe, Farsça ve Kürtçe çalışıyorum.",
-      "link": "Tüm biyografiyi okuyun"
+      "text": "Girişimci, iş geliştirme uzmanı ve yapay zekâ otomasyon uzmanıyım. Kliniklerin ve küçük işletmelerin daha iyi satış hunileri, daha iyi reklamlar, daha fazla görünürlük ve yapay zekâ sistemleriyle büyümesine yardımcı oluyorum ve işi bizzat yapıyorum. 2021'den beri İstanbul'da uluslararası hasta kabul eden kliniklerde satış ve pazarlama alanında çalışıyorum. Amsterdam ile İstanbul arasında yaşıyor; İngilizce, Türkçe, Farsça ve Kürtçe çalışıyorum.",
+      "link": "Tüm biyografiyi okuyun",
+      "tags": [
+        "Medikal ve sağlık turizmi",
+        "Satış hunileri",
+        "Reklam optimizasyonu",
+        "İşletme görünürlüğü",
+        "Yapay zekâ otomasyonu"
+      ]
     },
     "ads": {
       "eyebrow": "Reklamlar",
@@ -215,11 +222,34 @@
     "founder": {
       "badge": "Kurucu",
       "name": "Sia Ahmadi",
-      "role": "Webimot Agency Kurucusu",
-      "p1": "Ben Sia Ahmadi. Webimot'u Ocak 2025'te kurdum ve işi kendim yapıyorum: web siteleri, CRM'ler, reklam kampanyaları, arama optimizasyonu ve n8n, OpenAI API ve WhatsApp Cloud API ile kurduğum AI ajanları.",
+      "role": "Girişimci · İş geliştirme uzmanı · Yapay zekâ otomasyon uzmanı · Dijital dönüşüm danışmanı",
+      "p1": "Ben Sia Ahmadi; girişimci ve iş geliştirme uzmanıyım. Webimot'u Ocak 2025'te kliniklerin ve küçük işletmelerin büyümesine yardımcı olmak için kurdum: taleplerin, satışların ve zamanın nerede kaybedildiğini bulur, ardından bunu daha iyi satış hunileri, daha iyi reklamlar, daha fazla görünürlük ve yapay zekâ otomasyonuyla çözerim. Stratejiden kuruluma kadar işi bizzat yapıyorum: web siteleri, CRM'ler, reklam kampanyaları, arama optimizasyonu ve n8n, OpenAI API ve WhatsApp Cloud API ile geliştirdiğim yapay zekâ ajanları.",
       "p2": "2021'den beri İstanbul'da uluslararası hastalara hizmet veren kliniklerde satış ve pazarlama alanında çalışıyorum: BHT Clinic (Tema Hastanesi), uluslararası hasta satışlarını yönettiğim Ariana Health Clinic ve Kasım 2023'ten beri serbest satış ve pazarlama uzmanı olarak çalıştığım Dr. Görkem Atsal Clinic. 2021-2024 arasında ABD merkezli sağlık girişimi WaveMed için de dijital pazarlama yaptım.",
       "p3": "Azad Üniversitesi'nden Bilgi Teknolojileri yüksek lisansım var ve Rotterdam Business School'da Danışmanlık ve Girişimcilik yüksek lisansımı tamamlıyorum. Amsterdam ve İstanbul arasında yaşıyorum; İngilizce, Türkçe, Farsça ve Kürtçe, ayrıca temel düzeyde Felemenkçe ile çalışıyorum.",
-      "linkedin": "LinkedIn'de Sia"
+      "linkedin": "LinkedIn'de Sia",
+      "specialtiesTitle": "Uzmanlık alanlarım",
+      "specialties": [
+        {
+          "title": "Medikal ve sağlık turizmi",
+          "desc": "2021'den beri uluslararası hasta kabul eden kliniklerde satış ve pazarlama alanında çalışıyorum; bu yüzden hastanın ilk mesajdan randevuya kadar olan yolunu iyi biliyorum."
+        },
+        {
+          "title": "Satış hunileri",
+          "desc": "Taleplerin nerede kaybolduğunu haritalar ve huniyi yeniden kurarım: hızlı yanıt, ön değerlendirme, takip ve ekibin gerçekten kullandığı bir CRM."
+        },
+        {
+          "title": "Reklam optimizasyonu",
+          "desc": "Tıklamalarla veya ucuz taleplerle değil, alınan randevular ve satışlarla ölçülen Meta ve Google kampanyaları."
+        },
+        {
+          "title": "İşletme görünürlüğü",
+          "desc": "Müşterilerin aradığı yerde bulunmak: Google araması, Google İşletme Profili ve ChatGPT, Perplexity gibi yapay zekâ asistanları."
+        },
+        {
+          "title": "Yapay zekâ otomasyonu ve dijital dönüşüm",
+          "desc": "WhatsApp, e-posta, belge ve tablolardaki elle yapılan işleri her gün çalışan sistemlere taşımak."
+        }
+      ]
     }
   },
   "contact": {

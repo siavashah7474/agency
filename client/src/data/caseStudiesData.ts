@@ -142,8 +142,8 @@ export const caseStudies: CaseStudy[] = [
     title: "Webimot WhatsApp AI: an AI agent for clinic enquiries",
     client: "Webimot WhatsApp AI",
     category: "Product",
-    summary: "Webimot's own product, designed and built by founder Sia Ahmadi: an AI agent on WhatsApp for clinics, with its own site at webimot.com.",
-    about: "Webimot WhatsApp AI is Webimot's own product: an AI agent on WhatsApp for medical tourism clinics, with its own site at webimot.com. It was designed and built by Webimot's founder, Sia Ahmadi, and draws on several years of first-hand experience handling patient enquiries for clinics.",
+    summary: "Webimot's own product, designed and built by founder Sia Ahmadi: an AI agent on WhatsApp for clinics, now presented on its own product page on this site.",
+    about: "Webimot WhatsApp AI is Webimot's own product: an AI agent on WhatsApp for medical tourism clinics. It was designed and built by Webimot's founder, Sia Ahmadi, and draws on several years of first-hand experience handling patient enquiries for clinics.",
     workDone: [
       {
         title: "WhatsApp AI agent",
@@ -155,11 +155,11 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         title: "Product website",
-        description: "Design and build of the product's own website at webimot.com.",
+        description: "Design and build of the product's website and landing page, now the WhatsApp AI page on webimotagency.com.",
       },
     ],
     services: ["WhatsApp AI agent", "n8n", "OpenAI API", "WhatsApp Cloud API", "Product website"],
-    link: { href: "https://www.webimot.com/", label: "Visit webimot.com" },
+    link: { href: "/products/whatsapp-ai", label: "See the WhatsApp AI page" },
   },
   {
     slug: "prime-hair",

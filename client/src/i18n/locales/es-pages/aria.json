@@ -1,0 +1,17 @@
+{
+  "aria": {
+    "welcome": "¡Hola! Soy Aria, la asistente de IA de Webimot. Puedo responder cualquier pregunta sobre cómo nuestra IA de WhatsApp ayuda a las clínicas de turismo médico a conseguir más pacientes internacionales. ¿Qué te gustaría saber?",
+    "dialogLabel": "Chatea con Aria",
+    "subtitle": "Webimot AI · Con tecnología de Claude",
+    "close": "Cerrar chat",
+    "typing": "Aria está escribiendo",
+    "error": "Lo siento, tengo un problema de conexión. Reserva una demo o escríbenos por WhatsApp.",
+    "limit": "Has alcanzado el límite de la sesión. ¿Quieres continuar?",
+    "bookDemo": "Reserva una demo gratuita",
+    "whatsapp": "Chatea por WhatsApp",
+    "placeholder": "Pregúntame lo que quieras...",
+    "send": "Enviar mensaje",
+    "disclaimer": "La IA puede cometer errores · Verifica la información importante",
+    "open": "Chatea con Aria, la IA de Webimot"
+  }
+}

@@ -43,7 +43,7 @@ export default function AdsSection() {
                 <p className="mb-6 flex-1 text-sm leading-relaxed text-slate-600 md:text-base">{t(`home.ads.${card.id}.desc`)}</p>
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors group-hover:text-slate-900">
                   {t(`home.ads.${card.id}.link`)}
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" aria-hidden="true" />
                 </span>
               </article>
             </Link>
@@ -59,7 +59,7 @@ export default function AdsSection() {
             ))}
           </ul>
           <Button size="lg" className="shrink-0 rounded-full bg-slate-900 px-7 text-white hover:bg-slate-800" onClick={() => openModal("Meta / Google Ads")}>
-            {t("home.ads.cta")} <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+            {t("home.ads.cta")} <ArrowRight className="ms-2 h-4 w-4 rtl:rotate-180" aria-hidden="true" />
           </Button>
         </div>
       </div>
