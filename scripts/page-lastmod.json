@@ -4,7 +4,23 @@
     "lastmod": "2026-11-21"
   },
   "/about": {
-    "hash": "fa6af5c826d6dc94",
+    "hash": "ba598963963116c8",
+    "lastmod": "2026-11-21"
+  },
+  "/ar": {
+    "hash": "e2408ac5b1eb0af9",
+    "lastmod": "2026-11-21"
+  },
+  "/ar/about": {
+    "hash": "28e2fbf33c1c7ec6",
+    "lastmod": "2026-11-21"
+  },
+  "/ar/products/whatsapp-ai": {
+    "hash": "e2eec1a5151220c6",
+    "lastmod": "2026-11-21"
+  },
+  "/ar/sia-ahmadi": {
+    "hash": "e3a1bb7d6c443f41",
     "lastmod": "2026-11-21"
   },
   "/blog": {
@@ -12,172 +28,172 @@
     "lastmod": "2026-11-21"
   },
   "/blog/ai-agents-vs-chatbots-2026-business-guide": {
-    "hash": "8dfa7000d4af4ca0",
+    "hash": "46983ee98ab97928",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-assistant-medical-tourism-patient-journey": {
-    "hash": "c124de422bd778e7",
+    "hash": "119913d68699d628",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-assistant-plastic-surgery-turkey-guide": {
-    "hash": "7a998dfffe942499",
+    "hash": "acdfcb35c9618080",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-automation-for-small-business-2026-what-to-automate-first": {
-    "hash": "6562a24b17531284",
+    "hash": "8fa0f65bc93112aa",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-automation-medical-tourism-clinics": {
-    "hash": "b0d0aab9f60b9992",
+    "hash": "26ae0c53a2b1b6b1",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-automation-revenue-growth-business-2026": {
-    "hash": "ba77838a5afd38f3",
+    "hash": "7abbdfe8e6547815",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-data-entry-reporting-automation-business": {
-    "hash": "0a674ed80053a222",
+    "hash": "29b410e22cd6f64d",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-document-processing-small-business-2026-invoices-forms-contracts": {
-    "hash": "0e5f7b2daee7acd6",
-    "lastmod": "2026-11-19"
+    "hash": "7109806be5f22732",
+    "lastmod": "2026-11-21"
   },
   "/blog/ai-employee-productivity-internal-communication-automation": {
-    "hash": "be464de51c556660",
+    "hash": "7f6b2d36b35d3027",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-for-dental-clinics-2026-patient-journey-automation": {
-    "hash": "0ae601c9d5d49b06",
+    "hash": "3162692df9b5ff47",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-for-real-estate-agents-2026-lead-response-automation": {
-    "hash": "ec89859321f1bfa4",
+    "hash": "f8d9ba96c3794b21",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-internal-workflow-automation-guide-2025": {
-    "hash": "0e76a31a98e710fa",
-    "lastmod": "2026-11-19"
+    "hash": "6d42ee29f843ee4c",
+    "lastmod": "2026-11-21"
   },
   "/blog/ai-operations-automation-sme-revenue-2026": {
-    "hash": "5f10fcc12f84043f",
-    "lastmod": "2026-11-19"
+    "hash": "9f91cbb7ccea1bee",
+    "lastmod": "2026-11-21"
   },
   "/blog/ai-receptionist-for-clinics-2026-cost-guide": {
-    "hash": "88c79ff3d1665d12",
+    "hash": "2bb5c33cf091260d",
     "lastmod": "2026-11-21"
   },
   "/blog/best-digital-marketing-strategies-medical-tourism": {
-    "hash": "2a51a33605a07531",
-    "lastmod": "2026-11-19"
+    "hash": "47aff3927aaa845d",
+    "lastmod": "2026-11-21"
   },
   "/blog/best-medical-tourism-destinations-turkey-thailand-dubai": {
-    "hash": "972f67993cf5570f",
+    "hash": "b11f76aa6594c4f4",
     "lastmod": "2026-11-21"
   },
   "/blog/building-trust-online-medical-tourism": {
-    "hash": "3842d8cc9af4b518",
-    "lastmod": "2026-11-19"
+    "hash": "83a72669dddf2480",
+    "lastmod": "2026-11-21"
   },
   "/blog/business-process-automation-readiness-checklist": {
-    "hash": "8ad6c4a4e9612a28",
-    "lastmod": "2026-11-19"
+    "hash": "c6732fbcfdd42e04",
+    "lastmod": "2026-11-21"
   },
   "/blog/cost-comparison-ai-vs-human-customer-service": {
-    "hash": "5fd04fdeae1bd24c",
+    "hash": "c2b2007c9a80a27a",
     "lastmod": "2026-11-21"
   },
   "/blog/generative-engine-optimization-medical-tourism-clinics-2026": {
-    "hash": "b8d58d70bd44ef92",
+    "hash": "2374c05f9a65a638",
     "lastmod": "2026-11-21"
   },
   "/blog/google-ads-medical-tourism-2025": {
-    "hash": "2642f8952091f689",
-    "lastmod": "2026-11-19"
+    "hash": "4895804e07515914",
+    "lastmod": "2026-11-21"
   },
   "/blog/how-to-automate-your-business-2026-complete-guide": {
-    "hash": "19ba642e775705e8",
+    "hash": "ae15b2a77b74ca65",
     "lastmod": "2026-11-21"
   },
   "/blog/how-whatsapp-ai-agents-increase-conversions": {
-    "hash": "3b53ea9ed3e2c06e",
+    "hash": "3ee6f51164e47170",
     "lastmod": "2026-11-21"
   },
   "/blog/medical-tourism-ai-patient-acquisition-2026-report": {
-    "hash": "1240381fdf12e210",
+    "hash": "6c2cafa49bd94012",
     "lastmod": "2026-11-21"
   },
   "/blog/medical-tourism-ai-receptionist-germany-uk-gulf": {
-    "hash": "ba851ac5e010d9b4",
+    "hash": "28effe0762cd7944",
     "lastmod": "2026-11-21"
   },
   "/blog/medical-tourism-patient-journey-automation-7-stages": {
-    "hash": "c940a05cb64612db",
+    "hash": "7cdf29ef75102370",
     "lastmod": "2026-11-21"
   },
   "/blog/meta-ads-vs-google-ads-clinics-local-business-2026": {
-    "hash": "9d3f26cf2154437f",
+    "hash": "12eac2976e48dcc9",
     "lastmod": "2026-11-21"
   },
   "/blog/multi-language-marketing-medical-tourism": {
-    "hash": "98de993600fc2d1e",
+    "hash": "8eaae83270bd0af3",
     "lastmod": "2026-11-21"
   },
   "/blog/qualify-international-patients-automatically": {
-    "hash": "659c79917725b36c",
+    "hash": "a8b365baf9c29754",
     "lastmod": "2026-11-21"
   },
   "/blog/reduce-patient-no-shows-clinics-ai-whatsapp-2026": {
-    "hash": "73c5d4e07aa66e0f",
+    "hash": "7e68f03ca72b2a71",
     "lastmod": "2026-11-21"
   },
   "/blog/replace-manual-followup-ai-medical-clinic": {
-    "hash": "cdf2450f79eb37f0",
+    "hash": "eda78e46f0199161",
     "lastmod": "2026-11-21"
   },
   "/blog/rhinoplasty-hair-transplant-turkey-ai-lead-conversion": {
-    "hash": "7890616037df1b90",
+    "hash": "e58c96cf10f2f4e9",
     "lastmod": "2026-11-21"
   },
   "/blog/seo-for-clinics-complete-guide": {
-    "hash": "e58c66b5f17eaf40",
-    "lastmod": "2026-11-19"
+    "hash": "97c134b300b1e0a7",
+    "lastmod": "2026-11-21"
   },
   "/blog/social-media-strategy-healthcare-providers": {
-    "hash": "a5dfcf94a0bac28b",
-    "lastmod": "2026-11-19"
+    "hash": "4253f076b23c1304",
+    "lastmod": "2026-11-21"
   },
   "/blog/thailand-medical-tourism-clinics-guide-2026": {
-    "hash": "be558553f6ef2f1e",
+    "hash": "9cf479b0abf4969d",
     "lastmod": "2026-11-21"
   },
   "/blog/turkey-medical-tourism-guide-2026": {
-    "hash": "04e34b9707be326e",
+    "hash": "e7980e866f8125c6",
     "lastmod": "2026-11-21"
   },
   "/blog/vision-ai-photo-evaluation-medical-tourism": {
-    "hash": "51c62478b73c16bf",
-    "lastmod": "2026-11-19"
+    "hash": "3cab44e8bff11899",
+    "lastmod": "2026-11-21"
   },
   "/blog/whatsapp-automation-medical-tourism": {
-    "hash": "20a3d3cb76a5c94f",
+    "hash": "14c04f092c54b41f",
     "lastmod": "2026-11-21"
   },
   "/blog/whatsapp-business-automation-2026-complete-guide": {
-    "hash": "c2e57ea5180cba2b",
+    "hash": "4537c86d9cc2828b",
     "lastmod": "2026-11-21"
   },
   "/blog/why-clinics-lose-international-leads": {
-    "hash": "25f59bd20e34806c",
+    "hash": "3e1ee0b0ff5a12b0",
     "lastmod": "2026-11-21"
   },
   "/blog/why-clinics-must-automate-lead-handling": {
-    "hash": "9c65fef717128750",
+    "hash": "9431763add1c7ac6",
     "lastmod": "2026-11-21"
   },
   "/blog/workflow-automation-business-growth-bottleneck-method": {
-    "hash": "d7966322183a49d4",
-    "lastmod": "2026-11-19"
+    "hash": "da08d767282d4d58",
+    "lastmod": "2026-11-21"
   },
   "/book-consultation": {
     "hash": "692874d52adfbd45",
@@ -226,6 +242,38 @@
   "/contact": {
     "hash": "12d375303aa0484b",
     "lastmod": "2026-11-19"
+  },
+  "/es": {
+    "hash": "6a0f2d82ffa03390",
+    "lastmod": "2026-11-21"
+  },
+  "/es/about": {
+    "hash": "ace425cd66ab29f0",
+    "lastmod": "2026-11-21"
+  },
+  "/es/products/whatsapp-ai": {
+    "hash": "f380ec7ddbd80190",
+    "lastmod": "2026-11-21"
+  },
+  "/es/sia-ahmadi": {
+    "hash": "2651e2fdd91a8dd5",
+    "lastmod": "2026-11-21"
+  },
+  "/nl": {
+    "hash": "c7fdc255771c04ef",
+    "lastmod": "2026-11-21"
+  },
+  "/nl/about": {
+    "hash": "a1da026202a91e8b",
+    "lastmod": "2026-11-21"
+  },
+  "/nl/products/whatsapp-ai": {
+    "hash": "a0cf54affd9e4b16",
+    "lastmod": "2026-11-21"
+  },
+  "/nl/sia-ahmadi": {
+    "hash": "f8151b627925112a",
+    "lastmod": "2026-11-21"
   },
   "/privacy-policy": {
     "hash": "2f4abdf05575e4df",
@@ -295,6 +343,10 @@
     "hash": "f491de8562a1a608",
     "lastmod": "2026-11-19"
   },
+  "/sia-ahmadi": {
+    "hash": "c7f30e5967e76261",
+    "lastmod": "2026-11-21"
+  },
   "/small-business": {
     "hash": "92158b8d73b0f00a",
     "lastmod": "2026-11-21"
@@ -306,5 +358,101 @@
   "/terms-of-service": {
     "hash": "dc6ccaccb3bfe4bc",
     "lastmod": "2026-11-19"
+  },
+  "/tr": {
+    "hash": "6862e1cc83d779fb",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/about": {
+    "hash": "25f9f86fd06bd6a4",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/book-consultation": {
+    "hash": "6afc0a77a181a3dc",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/clinics": {
+    "hash": "4f2ee10145f193ef",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/contact": {
+    "hash": "3e81ce4a0a8984d1",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/products/cleardesk": {
+    "hash": "43fd49cd48b4b1dc",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/products/documind": {
+    "hash": "19f8f9de955f8230",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/products/leadfire": {
+    "hash": "defbdcf655a296d2",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/products/nurtureloop": {
+    "hash": "3ad343b6d75e2c35",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/products/reviveiq": {
+    "hash": "dffc03b681c18c64",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/products/seo-blog-ai": {
+    "hash": "3019aa0568ff84a8",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/products/whatsapp-ai": {
+    "hash": "60bbf1f7ca650f52",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/ai-ops-autopilot": {
+    "hash": "3d2e75ebf1d75536",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/branding": {
+    "hash": "ddf5ff4312fabf42",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/content-creation": {
+    "hash": "c9eb52647826588d",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/funnel-automation": {
+    "hash": "9947dad919f0ddd6",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/google-ads": {
+    "hash": "c950cac51f0e509b",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/meta-ads": {
+    "hash": "1827d48428f22cdd",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/reputation-management": {
+    "hash": "057a0bc9b4fc72ff",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/shopify-ecommerce-automation": {
+    "hash": "2e64a88ab3f6360a",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/services/website-development": {
+    "hash": "89757e2139995d1f",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/sia-ahmadi": {
+    "hash": "169a5d82f1141a81",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/small-business": {
+    "hash": "3130f833e42712e5",
+    "lastmod": "2026-11-21"
+  },
+  "/tr/systems": {
+    "hash": "b1f9d13847f6cf1d",
+    "lastmod": "2026-11-21"
   }
 }

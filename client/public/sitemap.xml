@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://webimotagency.com/</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/"/>
   </url>
   <url>
     <loc>https://webimotagency.com/about</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/about"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/about"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/ar</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/ar/about</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/about"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/about"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/ar/products/whatsapp-ai</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/whatsapp-ai"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/ar/sia-ahmadi</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/sia-ahmadi"/>
   </url>
   <url>
     <loc>https://webimotagency.com/blog</loc>
@@ -52,7 +108,7 @@
   </url>
   <url>
     <loc>https://webimotagency.com/blog/ai-document-processing-small-business-2026-invoices-forms-contracts</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -72,12 +128,12 @@
   </url>
   <url>
     <loc>https://webimotagency.com/blog/ai-internal-workflow-automation-guide-2025</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://webimotagency.com/blog/ai-operations-automation-sme-revenue-2026</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -87,7 +143,7 @@
   </url>
   <url>
     <loc>https://webimotagency.com/blog/best-digital-marketing-strategies-medical-tourism</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -97,12 +153,12 @@
   </url>
   <url>
     <loc>https://webimotagency.com/blog/building-trust-online-medical-tourism</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://webimotagency.com/blog/business-process-automation-readiness-checklist</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -117,7 +173,7 @@
   </url>
   <url>
     <loc>https://webimotagency.com/blog/google-ads-medical-tourism-2025</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -177,12 +233,12 @@
   </url>
   <url>
     <loc>https://webimotagency.com/blog/seo-for-clinics-complete-guide</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://webimotagency.com/blog/social-media-strategy-healthcare-providers</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -197,7 +253,7 @@
   </url>
   <url>
     <loc>https://webimotagency.com/blog/vision-ai-photo-evaluation-medical-tourism</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -222,13 +278,16 @@
   </url>
   <url>
     <loc>https://webimotagency.com/blog/workflow-automation-business-growth-bottleneck-method</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://webimotagency.com/book-consultation</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/book-consultation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/book-consultation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/book-consultation"/>
   </url>
   <url>
     <loc>https://webimotagency.com/case-studies</loc>
@@ -279,11 +338,105 @@
     <loc>https://webimotagency.com/clinics</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/clinics"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/clinics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/clinics"/>
   </url>
   <url>
     <loc>https://webimotagency.com/contact</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/contact"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/es</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/es/about</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/about"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/about"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/es/products/whatsapp-ai</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/whatsapp-ai"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/es/sia-ahmadi</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/sia-ahmadi"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/nl</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/nl/about</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/about"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/about"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/nl/products/whatsapp-ai</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/whatsapp-ai"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/nl/sia-ahmadi</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/sia-ahmadi"/>
   </url>
   <url>
     <loc>https://webimotagency.com/privacy-policy</loc>
@@ -294,95 +447,367 @@
     <loc>https://webimotagency.com/products/cleardesk</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/cleardesk"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/cleardesk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/cleardesk"/>
   </url>
   <url>
     <loc>https://webimotagency.com/products/documind</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/documind"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/documind"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/documind"/>
   </url>
   <url>
     <loc>https://webimotagency.com/products/leadfire</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/leadfire"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/leadfire"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/leadfire"/>
   </url>
   <url>
     <loc>https://webimotagency.com/products/nurtureloop</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/nurtureloop"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/nurtureloop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/nurtureloop"/>
   </url>
   <url>
     <loc>https://webimotagency.com/products/reviveiq</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/reviveiq"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/reviveiq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/reviveiq"/>
   </url>
   <url>
     <loc>https://webimotagency.com/products/seo-blog-ai</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/seo-blog-ai"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/seo-blog-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/seo-blog-ai"/>
   </url>
   <url>
     <loc>https://webimotagency.com/products/whatsapp-ai</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/whatsapp-ai"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/ai-ops-autopilot</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/ai-ops-autopilot"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/ai-ops-autopilot"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/ai-ops-autopilot"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/branding</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/branding"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/branding"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/branding"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/content-creation</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/content-creation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/content-creation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/content-creation"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/funnel-automation</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/funnel-automation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/funnel-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/funnel-automation"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/google-ads</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/google-ads"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/meta-ads</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/meta-ads"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/reputation-management</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/reputation-management"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/reputation-management"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/reputation-management"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/shopify-ecommerce-automation</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/shopify-ecommerce-automation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/shopify-ecommerce-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/shopify-ecommerce-automation"/>
   </url>
   <url>
     <loc>https://webimotagency.com/services/website-development</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/website-development"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/website-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/website-development"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/sia-ahmadi</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/sia-ahmadi"/>
   </url>
   <url>
     <loc>https://webimotagency.com/small-business</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/small-business"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/small-business"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/small-business"/>
   </url>
   <url>
     <loc>https://webimotagency.com/systems</loc>
     <lastmod>2026-11-21</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/systems"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/systems"/>
   </url>
   <url>
     <loc>https://webimotagency.com/terms-of-service</loc>
     <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/about</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/about"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/about"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/about"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/book-consultation</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/book-consultation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/book-consultation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/book-consultation"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/clinics</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/clinics"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/clinics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/clinics"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/contact</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/contact"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/products/cleardesk</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/cleardesk"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/cleardesk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/cleardesk"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/products/documind</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/documind"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/documind"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/documind"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/products/leadfire</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/leadfire"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/leadfire"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/leadfire"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/products/nurtureloop</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/nurtureloop"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/nurtureloop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/nurtureloop"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/products/reviveiq</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/reviveiq"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/reviveiq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/reviveiq"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/products/seo-blog-ai</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/seo-blog-ai"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/seo-blog-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/seo-blog-ai"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/products/whatsapp-ai</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/products/whatsapp-ai"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/products/whatsapp-ai"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/ai-ops-autopilot</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/ai-ops-autopilot"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/ai-ops-autopilot"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/ai-ops-autopilot"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/branding</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/branding"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/branding"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/branding"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/content-creation</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/content-creation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/content-creation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/content-creation"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/funnel-automation</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/funnel-automation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/funnel-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/funnel-automation"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/google-ads</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/google-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/google-ads"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/meta-ads</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/meta-ads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/meta-ads"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/reputation-management</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/reputation-management"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/reputation-management"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/reputation-management"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/shopify-ecommerce-automation</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/shopify-ecommerce-automation"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/shopify-ecommerce-automation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/shopify-ecommerce-automation"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/services/website-development</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/services/website-development"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/services/website-development"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/services/website-development"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/sia-ahmadi</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://webimotagency.com/nl/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://webimotagency.com/es/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webimotagency.com/ar/sia-ahmadi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/sia-ahmadi"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/small-business</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/small-business"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/small-business"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/small-business"/>
+  </url>
+  <url>
+    <loc>https://webimotagency.com/tr/systems</loc>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webimotagency.com/systems"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://webimotagency.com/tr/systems"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webimotagency.com/systems"/>
   </url>
 </urlset>
