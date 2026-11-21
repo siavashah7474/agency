@@ -41,7 +41,7 @@ const founderSchema = {
       "Digital transformation",
       "Business development",
     ],
-    image: "https://webimotagency.com/sia-ahmadi.jpg",
+    image: "https://webimotagency.com/sia-ahmadi-1200.jpg",
     worksFor: { "@id": "https://webimotagency.com/#organization" },
     homeLocation: [
       { "@type": "City", name: "Amsterdam" },

@@ -130,7 +130,7 @@ async function capture(browser, origin, route) {
     await page.goto(origin + route, { waitUntil: "networkidle0", timeout: 30000 });
     await page.waitForFunction(() => document.querySelector("#root main, #root h1"), { timeout: 15000 });
     // react-helmet applies head tags asynchronously; wait for the canonical/title to land.
-    await page.waitForFunction(() => document.querySelector('link[rel="canonical"][data-rh], meta[name="robots"][data-rh]'), { timeout: 5000 }).catch(() => {});
+    await page.waitForFunction(() => document.querySelector('link[rel="canonical"][data-rh], meta[name="robots"][data-rh]'), { timeout: 15000 }).catch(() => {});
     await new Promise((r) => setTimeout(r, 300));
     return await page.evaluate(() => {
       const head = [...document.head.querySelectorAll("[data-rh], #faq-schema")]

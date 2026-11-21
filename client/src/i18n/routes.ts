@@ -68,5 +68,7 @@ export function setPreferredLang(lang: Lang) {
 /** Language that links on the current page should lead to: the page's own, else the chosen one. */
 export function linkLang(): Lang {
   const { lang } = splitLang(window.location.pathname);
-  return lang !== "en" ? lang : getPreferredLang();
+  if (lang !== "en") return lang;
+  // While pre-rendering, an English page always links to English pages.
+  return (window as unknown as { __PRERENDER__?: boolean }).__PRERENDER__ ? "en" : getPreferredLang();
 }

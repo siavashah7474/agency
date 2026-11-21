@@ -33,7 +33,7 @@ const profileSchema = {
     "@id": "https://webimotagency.com/about#founder",
     name: "Sia Ahmadi",
     url: CANONICAL,
-    image: "https://webimotagency.com/sia-ahmadi.jpg",
+    image: "https://webimotagency.com/sia-ahmadi-1200.jpg",
     jobTitle: "Entrepreneur, business developer, AI automation specialist and digital transformation consultant",
     description:
       "Entrepreneur, business developer, AI automation specialist and digital transformation consultant, specialised in medical and health tourism, sales funnels, ads optimisation (Meta and Google) and business visibility in search engines and AI assistants. Founder of Webimot Agency.",

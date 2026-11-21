@@ -122,7 +122,12 @@ export function preloadRoute(pathname: string): Promise<unknown> {
   const match = routeImporters.find(([pattern]) =>
     new RegExp("^" + pattern.replace(/:[^/]+/g, "[^/]+") + "/?$").test(pathname),
   );
-  return (match ? match[1] : NotFound).preload();
+  const page = (match ? match[1] : NotFound).preload();
+  // An article's body is a separate download; fetch it together with the page so a
+  // pre-rendered article is replaced in one step, without its text disappearing briefly.
+  const article = pathname.match(/^\/blog\/([^/]+)\/?$/);
+  if (!article) return page;
+  return Promise.all([page, import("@/data/blogData").then((m) => m.loadPostBody(article[1])).catch(() => {})]);
 }
 
 function PageLoader() {

@@ -2,14 +2,14 @@ import { useRoute, Link, useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { sortedBlogPosts as blogPosts } from "@/data/blogData";
+import { sortedBlogPosts as blogPosts, getPostBody, loadPostBody } from "@/data/blogData";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, ArrowLeft, ArrowRight, MessageSquare, Phone } from "lucide-react";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import AuthorBox from "@/components/AuthorBox";
-import type { MouseEvent } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 const WHATSAPP_LINK = "https://wa.me/31628753175";
 
 // Pulls question/answer pairs out of a post's FAQ section. Answers are flattened to plain
@@ -48,6 +48,22 @@ export default function BlogPost() {
   const prevPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
   const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
 
+  // The article body is its own download. It is usually ready before the first render (the
+  // app preloads it for the page being opened); otherwise it arrives a moment later.
+  const [body, setBody] = useState(() => (slug ? getPostBody(slug) : undefined));
+  useEffect(() => {
+    if (!post) return;
+    let current = true;
+    setBody(getPostBody(post.slug));
+    loadPostBody(post.slug).then(
+      (text) => current && setBody(text),
+      () => current && setBody(""),
+    );
+    return () => {
+      current = false;
+    };
+  }, [post]);
+
   // Internal links inside the rendered markdown are plain <a> tags; route them
   // through wouter so they don't trigger a full page reload.
   const handleContentClick = (e: MouseEvent<HTMLDivElement>) => {
@@ -85,7 +101,7 @@ export default function BlogPost() {
 
   // Posts with a "## Frequently Asked Questions" section (### question / answer paragraphs)
   // also emit FAQPage schema, so AI search engines and Google can lift the answers directly.
-  const faqs = extractFaqs(post.content);
+  const faqs = extractFaqs(body ?? "");
 
   return (
     <>
@@ -212,7 +228,8 @@ export default function BlogPost() {
                       prose-td:p-3 prose-td:border-b
                       [overflow-wrap:break-word]"
                     onClick={handleContentClick}
-                    dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
+                    aria-busy={body === undefined}
+                    dangerouslySetInnerHTML={{ __html: formatContent(body ?? "") }}
                   />
 
                   <AuthorBox />

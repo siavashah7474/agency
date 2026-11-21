@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en.json";
+import { isPrerendering } from "@/lib/prerender";
 import { getPreferredLang, isTranslated, localizePath, setPreferredLang, splitLang, type Lang } from "./routes";
 
 // The URL decides the language (see ./routes): /tr/clinics is Turkish, /clinics is English.
@@ -53,7 +54,9 @@ export async function initLanguageFromUrl(): Promise<void> {
   const { lang, path } = splitLang(window.location.pathname);
   if (lang !== "en") {
     setPreferredLang(lang);
-  } else {
+  } else if (!isPrerendering) {
+    // (Pre-rendering captures many pages in one browser, where a stored choice from another
+    // page must never move this one.)
     const preferred = getPreferredLang();
     if (preferred !== "en" && isTranslated(preferred, path)) {
       window.history.replaceState(null, "", localizePath(path, preferred) + window.location.search + window.location.hash);
