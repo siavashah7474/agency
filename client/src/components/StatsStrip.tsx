@@ -1,9 +1,9 @@
 // Offer and capability facts only: nothing here describes past client results.
 const stats = [
-  { value: "50+", label: "languages the AI can reply in" },
+  { value: "40+", label: "languages the AI can reply in" },
   { value: "24/7", label: "the systems answer day and night" },
   { value: "3", label: "days to deliver your free AI audit" },
-  { value: "2–4", label: "weeks from audit to live, our target" },
+  { value: "48h", label: "to put the WhatsApp AI live after onboarding" },
 ];
 
 const useCases = [

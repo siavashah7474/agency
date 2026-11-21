@@ -24,7 +24,7 @@ const CHALLENGES = [
 // The four systems, applied to a small business.
 const LADDER: Record<SystemId, { title: string; detail: string }> = {
   capture: {
-    title: "Every enquiry from WhatsApp, your website and your ads answered in under 60 seconds.",
+    title: "Every enquiry from WhatsApp, your website and your ads answered in seconds.",
     detail: "An AI agent on your WhatsApp Business number and web chat answers questions, qualifies the lead by budget and timing and books a call or viewing straight into your calendar. Evenings and weekends included.",
   },
   convert: {
@@ -48,7 +48,7 @@ const EXAMPLES: { emoji: string; name: string; tagline: string; automations: str
     name: "Real estate agencies",
     tagline: "Contact every property lead in seconds and book viewings on autopilot.",
     automations: [
-      "Portal, website and WhatsApp enquiries answered in under 60 seconds, buyers qualified by budget and timeline, viewings booked into the agent's calendar",
+      "Portal, website and WhatsApp enquiries answered in seconds, buyers qualified by budget and timeline, viewings booked into the agent's calendar",
       "Multi-month follow-up for long sales cycles, plus reactivation of cold buyer and seller databases",
       "Weekly report on which listings, ads and channels generate leads",
     ],

@@ -40,24 +40,25 @@
     "trustBadge": "AI automation systems · Amsterdam · Istanbul",
     "heroTitle1": "AI automation systems",
     "heroTitle2": "that run your daily work.",
-    "heroSubtitle": "For <strong>clinics</strong> and <strong>small businesses</strong>: every lead answered, every document processed, every follow-up sent — 24/7, without adding staff.",
+    "heroSubtitle": "For <strong>clinics and medical tourism providers</strong> first, and for <strong>small businesses</strong> that live on WhatsApp: every lead answered, every document processed, every follow-up sent — 24/7, without adding staff.",
     "heroCta1": "Book a demo",
     "heroCta2": "See the systems",
     "heroChecklist": [
       "Free AI audit in 3 days",
-      "Live in 2–4 weeks",
-      "No long-term contract",
-      "50+ languages"
+      "WhatsApp AI live in 48 hours",
+      "Replies in under 3 seconds",
+      "40+ languages"
     ],
     "audience": {
       "eyebrow": "Who we help",
-      "title": "Two kinds of business. One system.",
-      "lead": "The same four systems, tuned to how your business works and the channels your customers already use.",
+      "title": "Built for clinics. Used by small businesses too.",
+      "lead": "Our focus is clinics and medical tourism: we know how patients choose a clinic and where enquiries get lost. The same four systems also run for small service businesses that live on WhatsApp.",
       "examplesLabel": "Examples",
       "links": {
         "clinics": "See how we help clinics",
         "small-business": "See how we help small businesses"
-      }
+      },
+      "focusBadge": "Our focus"
     },
     "ladder": {
       "eyebrow": "The four systems",
@@ -79,19 +80,19 @@
       },
       {
         "question": "Do I need all four systems?",
-        "answer": "No. A common starting point is the capture system, so every WhatsApp and web enquiry gets a reply within about a minute. Follow-up and reporting can be added afterwards. The four systems are built to work together, but each one works on its own — you add the next step when you're ready."
+        "answer": "No. A common starting point is the capture system, so every WhatsApp enquiry gets a reply in under 3 seconds. Follow-up and reporting can be added afterwards. The four systems are built to work together, but each one works on its own — you add the next step when you're ready."
       },
       {
         "question": "How fast is it live?",
-        "answer": "The free AI audit takes 3 days and gives you the top automation opportunities for your business. After that, we aim to have your system live within 2–4 weeks — including connecting your WhatsApp Business number, training the AI on your services and testing with your team."
+        "answer": "The free AI audit takes 3 days and gives you the top automation opportunities for your business. The WhatsApp AI is live within 48 hours of onboarding: we connect your WhatsApp Business number, train the AI on your services and test it with your team. Larger builds across all four systems take 2–4 weeks."
       },
       {
         "question": "Does it work for my clinic or small business?",
-        "answer": "Yes, if your customers reach you on WhatsApp, email or web forms. The systems are designed for clinics — hair transplant, dental, cosmetic surgery and IVF, including medical tourism providers — and for small businesses such as real estate agencies, e-commerce stores, finance and legal firms and service businesses. The AI can reply in 50+ languages, so international customers are covered too."
+        "answer": "Yes, if your customers reach you on WhatsApp, email or web forms. Our focus is clinics — hair transplant, dental, cosmetic surgery and IVF, including medical tourism providers. The same systems also work for small service businesses that run on WhatsApp, such as real estate agencies. The AI can reply in 40+ languages, so international customers are covered too."
       },
       {
         "question": "What does it cost?",
-        "answer": "Pricing depends on how many systems you need, how many locations or inboxes you run and which tools we connect. We offer three tiers — Starter, Growth and Scale — mapped to the four systems, and every tier is quoted after a free audit, so you only pay for what will actually save you time. There is no long-term contract."
+        "answer": "The WhatsApp AI has fixed pricing: €1,399 one-time setup plus €599 a month (Essential) or €999 a month (Pro), with a 3-month minimum. If it does not generate at least 3 qualified leads in your first 30 days, we refund your first month. Larger packages across the four systems — Starter, Growth and Scale — are quoted after a free audit, so you only pay for what will actually save you time."
       },
       {
         "question": "Does it replace my staff?",
@@ -149,8 +150,8 @@
     "solutionTitle": "Our AI Solution",
     "solutions": [
       "AI agent responds instantly in any time zone",
-      "Automatic translation in 50+ languages",
-      "Vision AI evaluates photos automatically",
+      "Automatic translation in 40+ languages",
+      "Vision AI pre-sorts patient photos for your doctors (never a diagnosis)",
       "Automated follow-up sequences",
       "Less repetitive admin work for your staff"
     ],
@@ -302,7 +303,7 @@
     "desc": "Get a <strong>free AI audit</strong> and discover how we can help you generate more leads. No commitment required.",
     "cta": "Get My Free Audit",
     "dismiss": "No thanks, I'll pass on free advice",
-    "trust": "No credit card. No long-term contract."
+    "trust": "No credit card. No commitment."
   },
   "caseStudies": {
     "title": "Case Studies",

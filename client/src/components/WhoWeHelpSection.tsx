@@ -49,6 +49,11 @@ export default function WhoWeHelpSection() {
                   <div className="flex flex-1 flex-col p-6 md:p-8">
                     <div className="mb-5 flex items-start justify-between gap-4">
                       <div>
+                        {audience.id === "clinics" && (
+                          <p className="mb-2 inline-flex rounded-full bg-slate-900 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-white">
+                            {t("home.audience.focusBadge")}
+                          </p>
+                        )}
                         <h3 className="text-2xl font-bold leading-tight text-slate-900">{audience.name}</h3>
                         <p className="mt-2 text-base font-medium text-slate-700">{audience.tagline}</p>
                       </div>

@@ -55,7 +55,7 @@ A reminder schedule that works for most clinics:
 3. **Day of, 2 to 3 hours before**: a brief "See you at 14:00, here is the map" message.
 4. **For travelling patients**: an extra message on arrival day with transfer and hotel details.
 
-What the AI does: sends each message from a WhatsApp-approved template, in the detected language, and answers the questions that come back ("Can I eat before?", "Is there parking?") in under 60 seconds. This is the part a human front desk cannot do at scale: a reminder that opens a conversation rather than ending one. On Webimot's Capture system this runs through [WhatsApp AI](https://webimot.com), the same agent that handled the original enquiry, so the patient sees one continuous conversation instead of a reminder from an unknown number.
+What the AI does: sends each message from a WhatsApp-approved template, in the detected language, and answers the questions that come back ("Can I eat before?", "Is there parking?") in under 3 seconds. This is the part a human front desk cannot do at scale: a reminder that opens a conversation rather than ending one. On Webimot's Capture system this runs through [WhatsApp AI](https://webimot.com), the same agent that handled the original enquiry, so the patient sees one continuous conversation instead of a reminder from an unknown number.
 
 ### Step 3: A deposit for high-value and first-time slots
 
@@ -85,10 +85,10 @@ Choose the channel your patients already use to reach you. For most clinics outs
 |---|---|---|---|---|
 | Two-way: patient can reply and reschedule | Yes, same thread | Limited | Rarely read in time | Yes |
 | Rich content (map, doctor photo, documents) | Yes | No | Yes | No |
-| Languages | Auto-detected, 50+ | One per template | One per template | Depends on staff |
+| Languages | Auto-detected, 40+ | One per template | One per template | Depends on staff |
 | Works evenings and weekends | Yes | Yes | Yes | No |
 | Staff time per reminder | None | None | None | 3 to 5 minutes plus call-backs |
-| Answers patient questions | Yes, in under 60 seconds | No | No | Yes, during hours |
+| Answers patient questions | Yes, in under 3 seconds | No | No | Yes, during hours |
 | Published evidence | Builds on messaging evidence | [Cochrane](https://www.cochrane.org/evidence/CD007458_mobile-phone-messaging-reminders-attendance-healthcare-appointments): 78.6% vs 67.8% attendance | Weak | [Cochrane](https://www.cochrane.org/evidence/CD007458_mobile-phone-messaging-reminders-attendance-healthcare-appointments): 80.3% attendance |
 
 The Cochrane figures show that phone calls and text messages perform almost identically for attendance; the call just costs staff time. An AI agent on WhatsApp gives you the conversational quality of a call at the cost of a text.
@@ -134,7 +134,7 @@ Yes, provided it is connected to live availability in Google Calendar or your cl
 
 - A twelve-year study of ten US clinics recorded an 18.8% no-show rate and a cost of $196 per missed visit ([BMC Health Services Research](https://pmc.ncbi.nlm.nih.gov/articles/PMC4714455/)), before lost treatment revenue.
 - Text reminders lift attendance from about 68% to about 79% ([Cochrane](https://www.cochrane.org/evidence/CD007458_mobile-phone-messaging-reminders-attendance-healthcare-appointments)); closing the remaining gap needs confirmation, deposits, easy rescheduling and reactivation.
-- WhatsApp with an AI agent gives two-way, multilingual reminders that answer questions in under 60 seconds and cost no staff time.
+- WhatsApp with an AI agent gives two-way, multilingual reminders that answer questions in under 3 seconds and cost no staff time.
 - Measure the no-show rate by segment every week, and treat the chain from enquiry to attendance as one system.
 
 If you want to know what your clinic's no-show rate is actually costing and which of the five steps would move it most, Webimot's free AI audit works that out from your real booking data within 3 days and shows the Capture and Follow-up systems running on your own WhatsApp number. [Book your free AI audit](/book-consultation).
@@ -173,7 +173,7 @@ Speed decides this stage. Harvard Business Review's audit of 2,241 companies fou
 
 What AI automates:
 
-- Replies to every WhatsApp, web chat and Instagram enquiry in under 60 seconds, 24/7, in the patient's language (50+ languages detected automatically)
+- Replies to every WhatsApp, web chat and Instagram enquiry in under 3 seconds, 24/7, in the patient's language (40+ languages detected automatically)
 - Answers the questions your receptionist answers twenty times a day: treatments, what a package includes, number of visits, length of stay for international patients, payment methods
 - Asks the qualifying questions: which teeth, the goal, any pain, previous dental work, timeline, city
 - Routes emergencies (swelling, trauma, severe pain) straight to a named person by phone, and creates the patient record in your CRM without anyone copying details
@@ -292,7 +292,7 @@ Pick the numbers before you start: first-reply time, enquiries per month, consul
 ## Key takeaways
 
 - 43.3% of dentists already use AI ([ADA Health Policy Institute](https://www.ada.org/resources/research/health-policy-institute/dental-practice-research/dentists-ai-usage-and-attitudes)), and the growth is administrative: insurance verification, charting and front desk, not treatment decisions.
-- Reply to dental patient enquiries on WhatsApp in under 60 seconds in the patient's language; patients message several clinics at once, so the first proper reply matters.
+- Reply to dental patient enquiries on WhatsApp in under 3 seconds in the patient's language; patients message several clinics at once, so the first proper reply matters.
 - Keep clinical assessment, final quotes, consent and complaints human; let AI draft, remind, file and follow up.
 - Expect the first stage live in 2 to 4 weeks and the full journey in about two months, measured weekly against a baseline recorded before you start.
 
@@ -353,7 +353,7 @@ The cost of waiting is well documented: the Harvard Business Review audit of 2,2
 Think of it as a six-stage pipeline, each stage removing a task that an agent or office coordinator currently does by hand.
 
 1. **Capture every lead in one place.** Portal emails, website forms, Meta and Google lead ads, WhatsApp messages and Instagram DMs are all pulled into one queue with the listing reference attached. This is what [LeadFire](/products/leadfire) does in Webimot's Capture system: no lead sits in an inbox.
-2. **Reply in under 60 seconds, in the buyer's language.** The AI agent opens the conversation on the channel the buyer used, confirms availability and answers the obvious questions (service charges, energy label, parking, year built) from the listing data. International buyers in Amsterdam, Lisbon, Alicante or Istanbul write in German, English, Arabic or Russian; the agent follows automatically across 50+ languages.
+2. **Reply in under 60 seconds, in the buyer's language.** The AI agent opens the conversation on the channel the buyer used, confirms availability and answers the obvious questions (service charges, energy label, parking, year built) from the listing data. International buyers in Amsterdam, Lisbon, Alicante or Istanbul write in German, English, Arabic or Russian; the agent follows automatically across 40+ languages.
 3. **Qualify budget, timeline and financing.** Three to five conversational questions: when do you want to move, what is your budget range, cash or mortgage, do you have a property to sell. Answers are written to the CRM, not to a chat log nobody reads.
 4. **Book the viewing.** Live slots from the listing agent's calendar, confirmation, directions, reminders and reschedules, without a phone call.
 5. **Follow up until there is an answer.** Buyers who go quiet after the first exchange, a viewing or a quote get a structured sequence across WhatsApp and email that stops the moment they reply.
@@ -378,7 +378,7 @@ Here is how the two scenarios compare over a typical week of portal enquiries.
 | Stage | Without AI | With AI for real estate agents |
 |---|---|---|
 | First reply to an evening portal lead | Next working day, often later | Under 60 seconds, any hour |
-| Language handling | Whatever the agent on duty speaks | 50+ languages, detected automatically |
+| Language handling | Whatever the agent on duty speaks | 40+ languages, detected automatically |
 | Qualification | A phone call, if the buyer answers | Three to five questions answered in chat before anyone calls |
 | Viewing booking | Email or phone back-and-forth | Live calendar slots offered in the conversation |
 | Follow-up attempts | One or two, from memory | Five structured touches, stopped on reply |
@@ -433,7 +433,7 @@ A managed setup typically takes 2–4 weeks: a week to collect listings data, FA
 
 - 68% of website enquiries to large real estate brands get no response within 24 hours ([Florida Realtors](https://www.floridarealtors.org/news-media/news-articles/2026/10/real-estate-inquiries-often-fail-reach-agents)); replying within an hour already puts you in the top tenth.
 - The 21:40 portal lead is the whole business case: contact in under 60 seconds, qualify budget, timeline and financing, book the viewing, follow up five times, reactivate old buyers.
-- WhatsApp is the channel because buyers read it immediately; the AI runs on the agency's own number in 50+ languages.
+- WhatsApp is the channel because buyers read it immediately; the AI runs on the agency's own number in 40+ languages.
 - Roll out in order: capture, follow-up, reactivation, reporting. Agents keep viewings, valuations and negotiation; the AI removes the chasing.
 
 If you would like to see the 21:40 scenario run on your own listings, Webimot offers a free AI audit for agencies: within three days you get the top automation opportunities for your enquiry flow and a 30-minute walkthrough of the Capture system handling your real portal leads. [Book your free AI audit](/book-consultation).
@@ -659,7 +659,7 @@ The uncomfortable part: the ad account can be fine while the funnel behind it le
 
 The principle: the ad's job ends when the patient taps; a system, not a person, should own the next 60 seconds and the next 30 days. In Webimot's four-system approach it looks like this:
 
-- **Capture.** Every lead from a Meta instant form, a Google Ads landing page or a click-to-WhatsApp ad gets a first reply in under 60 seconds, in the patient's language (50+ languages), with qualifying questions and live consultation slots. [LeadFire](/products/leadfire) handles form and ad leads; [WhatsApp AI](https://webimot.com) runs the WhatsApp conversation itself, photos included.
+- **Capture.** Every lead from a Meta instant form, a Google Ads landing page or a click-to-WhatsApp ad gets a first reply in under 3 seconds, in the patient's language (40+ languages), with qualifying questions and live consultation slots. [LeadFire](/products/leadfire) handles form and ad leads; [WhatsApp AI](https://webimot.com) runs the WhatsApp conversation itself, photos included.
 - **Follow-up.** Leads that go quiet after a quote enter a multi-step sequence across WhatsApp, email and SMS (NurtureLoop) that stops the moment they reply or book. This is the step meant to recover Meta leads that were cold on day one.
 - **Attribution.** Every lead carries its source (platform, campaign, ad) into the CRM, and the booked consultation is written back as the conversion both platforms optimise against.
 - **Reporting.** A Monday report (ClearDesk) shows cost per booked consultation by platform and campaign, so the budget decision is a number.

@@ -49,15 +49,23 @@ const FAQS = [
   },
   {
     question: "Which languages does it handle?",
-    answer: "50+ languages, detected automatically from the first message. For medical tourism clinics the most common are English, German, Dutch, Arabic, French, Russian and Turkish. Replies, follow-ups and reports can each use a different language.",
+    answer: "40+ languages, detected automatically from the first message. For medical tourism clinics the most common are English, German, Dutch, Arabic, French, Russian and Turkish. Replies, follow-ups and reports can each use a different language.",
   },
   {
     question: "How does photo evaluation work, and is it medically safe?",
-    answer: "Patients send photos on WhatsApp as they do today. Vision AI gives a first assessment based on rules your doctors define (for example graft range or treatment candidacy) and books a consultation. The final evaluation always stays with your medical team.",
+    answer: "Patients send photos on WhatsApp as they do today. The AI sorts and pre-qualifies them against rules your doctors define (for example graft range or treatment candidacy) so your coordinators and doctors see a prepared case, not a raw chat. It never gives a diagnosis, a treatment decision or a final price: those always come from your medical team, and any medical question is handed to a person.",
   },
   {
     question: "How long does it take to go live?",
-    answer: "We aim to have the capture system live within 1 to 2 weeks: we train the AI on your procedures, prices and FAQs, connect your calendar and test with your team. Follow-up, operations and reporting are added over the following weeks.",
+    answer: "The WhatsApp AI is live within 48 hours of onboarding: you answer a few questions about your procedures, prices and FAQs and we do the full setup. Follow-up, operations and reporting are larger builds, added over the following 2–4 weeks.",
+  },
+  {
+    question: "What does it cost, and is there a minimum term?",
+    answer: "The WhatsApp AI for clinics is €1,399 one-time setup plus €599 a month (Essential), or €999 a month for Pro with up to 3 WhatsApp numbers and a weekly reporting dashboard. We ask for a 3-month minimum so the system has time to learn your clinic. If it does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. The other systems are quoted after the free AI audit.",
+  },
+  {
+    question: "Is patient data GDPR-compliant?",
+    answer: "Yes. Conversations and photos are encrypted, handled under EU data protection rules and never shared with third parties or used to train public models. Patient data stays in your WhatsApp Business account and your own systems.",
   },
 ];
 
@@ -100,7 +108,7 @@ export default function Clinics() {
     <>
       <SEO
         title="AI Automation for Clinics & Medical Tourism | Webimot"
-        description="AI systems for hair transplant, dental, cosmetic and IVF clinics: WhatsApp enquiries answered in 50+ languages, photo evaluation, follow-up and weekly reports."
+        description="AI systems for hair transplant, dental, cosmetic and IVF clinics: WhatsApp enquiries answered in under 3 seconds in 40+ languages, photo pre-qualification, follow-up and weekly reports. Live in 48 hours."
         keywords="AI agent for clinics, medical tourism AI, clinic WhatsApp AI, AI receptionist for clinics, hair transplant clinic AI, dental clinic automation, patient enquiry automation, clinic automation software"
         canonicalUrl={CANONICAL}
         schema={schema}
@@ -138,9 +146,9 @@ export default function Clinics() {
                 <div className="min-w-0 lg:col-span-5">
                   <dl className="grid grid-cols-2 gap-4">
                     {[
-                      { value: "< 60s", label: "Target reply time, day and night" },
-                      { value: "50+", label: "Languages the AI can reply in" },
-                      { value: "1 number", label: "Runs on your own WhatsApp line" },
+                      { value: "< 3s", label: "Reply time, day and night" },
+                      { value: "40+", label: "Languages the AI can reply in" },
+                      { value: "48h", label: "From onboarding to live on your WhatsApp" },
                       { value: "24/7", label: "Coverage across time zones" },
                     ].map((s) => (
                       <div key={s.label} className="surface-card flex flex-col p-5">
@@ -206,6 +214,84 @@ export default function Clinics() {
                   </li>
                 ))}
               </ol>
+            </div>
+          </section>
+
+          {/* What clinics can expect, pricing and guarantee (same figures as webimot.com) */}
+          <section className="bg-slate-50 py-16 md:py-24" aria-labelledby="expect-title">
+            <div className="container mx-auto max-w-5xl px-6">
+              <SectionHeader
+                id="expect-title"
+                eyebrow="Results and pricing"
+                title="What clinics can expect"
+                lead="From the moment the WhatsApp AI goes live, every international enquiry gets an answer and the serious patients reach your coordinators."
+                className="mb-10"
+              />
+              <dl className="mb-10 grid grid-cols-2 gap-4 md:grid-cols-4">
+                {[
+                  { value: "< 3s", label: "Response time, day or night" },
+                  { value: "24/7", label: "No missed leads across time zones" },
+                  { value: "40+", label: "Hours of manual messaging saved per month" },
+                  { value: "+60%", label: "More consultations booked" },
+                ].map((s) => (
+                  <div key={s.label} className="surface-card flex flex-col p-5 text-center">
+                    <dt className="order-2 text-sm text-slate-600">{s.label}</dt>
+                    <dd className="order-1 text-3xl font-bold text-slate-900">{s.value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <div className="grid gap-6 md:grid-cols-2">
+                {[
+                  { name: "Essential", setup: "€1,399 one-time setup", monthly: "€599", items: ["24/7 AI replies on your WhatsApp number", "Automated patient qualification", "Smart follow-up sequences", "Qualified lead handoff", "Multi-language support"] },
+                  { name: "Pro", setup: "€1,399 one-time setup", monthly: "€999", items: ["Everything in Essential", "Up to 3 WhatsApp numbers", "Weekly reporting dashboard", "Dedicated account manager"] },
+                ].map((plan) => (
+                  <div key={plan.name} className="surface-card flex flex-col p-6 md:p-7">
+                    <h3 className="text-lg font-bold text-slate-900">{plan.name}</h3>
+                    <p className="mt-1 text-sm text-slate-500">{plan.setup}</p>
+                    <p className="mt-3 text-4xl font-bold text-slate-900">{plan.monthly}<span className="text-base font-normal text-slate-500">/month</span></p>
+                    <ul className="mt-5 space-y-2">
+                      {plan.items.map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-sm text-slate-700">
+                          <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-700" aria-hidden="true" /> {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-slate-600">
+                3-month minimum. If the system does not generate at least 3 qualified patient leads in your first 30 days, we refund your first month. One extra international booking (typically €3,000–€15,000) covers the monthly fee. Full product details on{" "}
+                <a href="https://webimot.com" className="font-medium text-blue-700 underline-offset-2 hover:underline">webimot.com</a>.
+              </p>
+            </div>
+          </section>
+
+          {/* Medical and privacy guardrails */}
+          <section className="bg-white py-16 md:py-24" aria-labelledby="guardrails-title">
+            <div className="container mx-auto max-w-5xl px-6">
+              <SectionHeader
+                id="guardrails-title"
+                eyebrow="Medical and privacy guardrails"
+                title="What the AI does, and what it never does"
+                lead="The AI is a front desk, not a doctor. It prepares patients for your team; your medical team makes every medical decision."
+                className="mb-10"
+              />
+              <ul className="grid gap-4 md:grid-cols-2">
+                {[
+                  { title: "Pre-qualification and intake only", desc: "It answers practical questions, collects treatment interest, budget, travel dates and photos, and prepares the case for your coordinators." },
+                  { title: "Never a diagnosis", desc: "It does not diagnose, decide candidacy or confirm a final price. Photos are sorted against your doctors' rules and always reviewed by your medical team." },
+                  { title: "Human handoff", desc: "Medical questions, complaints and anything outside its instructions go straight to a person, with a summary. Your team can take over any chat." },
+                  { title: "EU-compliant data handling", desc: "GDPR-compliant, encrypted, never shared with third parties. Conversations stay in your own WhatsApp Business account and systems." },
+                ].map((g) => (
+                  <li key={g.title} className="surface-card flex items-start gap-3 p-5">
+                    <Check className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-700" aria-hidden="true" />
+                    <div>
+                      <h3 className="font-semibold text-slate-900">{g.title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-slate-600">{g.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </section>
 
@@ -291,7 +377,7 @@ export default function Clinics() {
                 Send us a real patient enquiry and watch the AI answer it in the patient's language, evaluate the photo and book the consultation. 30 minutes, no commitment.
               </p>
               <ul className="mx-auto mb-8 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/60">
-                {["Free AI audit in 3 days", "Live in 2–4 weeks", "Your team can take over any chat"].map((item) => (
+                {["Live on your WhatsApp in 48 hours", "3 qualified leads in 30 days or your first month back", "Your team can take over any chat"].map((item) => (
                   <li key={item} className="flex items-center gap-1.5">
                     <Check className="h-4 w-4 text-secondary" aria-hidden="true" /> {item}
                   </li>

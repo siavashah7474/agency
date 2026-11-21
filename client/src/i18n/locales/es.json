@@ -40,24 +40,25 @@
     "trustBadge": "Sistemas de automatización con IA · Ámsterdam · Estambul",
     "heroTitle1": "Sistemas de automatización con IA",
     "heroTitle2": "que hacen funcionar tu trabajo diario.",
-    "heroSubtitle": "Para <strong>clínicas</strong> y <strong>pequeñas empresas</strong>: cada lead respondido, cada documento procesado, cada seguimiento enviado — 24/7, sin contratar más personal.",
+    "heroSubtitle": "Ante todo para <strong>clínicas y proveedores de turismo médico</strong>, y también para <strong>pequeñas empresas</strong> que viven en WhatsApp: cada lead respondido, cada documento procesado, cada seguimiento enviado — 24/7, sin contratar más personal.",
     "heroCta1": "Reserva una demo",
     "heroCta2": "Ver los sistemas",
     "heroChecklist": [
       "Auditoría de IA gratis en 3 días",
-      "En marcha en 2–4 semanas",
-      "Sin contrato a largo plazo",
-      "50+ idiomas"
+      "IA de WhatsApp en marcha en 48 horas",
+      "Respuestas en menos de 3 segundos",
+      "40+ idiomas"
     ],
     "audience": {
       "eyebrow": "A quién ayudamos",
-      "title": "Dos tipos de negocio. Un solo sistema.",
-      "lead": "Los mismos cuatro sistemas, adaptados a cómo funciona tu negocio y a los canales que tus clientes ya usan.",
+      "title": "Hecho para clínicas. También para pequeñas empresas.",
+      "lead": "Nuestro foco son las clínicas y el turismo médico: sabemos cómo eligen clínica los pacientes y dónde se pierden las consultas. Los mismos cuatro sistemas también funcionan para pequeñas empresas de servicios que viven en WhatsApp.",
       "examplesLabel": "Ejemplos",
       "links": {
         "clinics": "Cómo ayudamos a las clínicas",
         "small-business": "Cómo ayudamos a las pequeñas empresas"
-      }
+      },
+      "focusBadge": "Nuestro foco"
     },
     "ladder": {
       "eyebrow": "Los cuatro sistemas",
@@ -79,19 +80,19 @@
       },
       {
         "question": "¿Necesito los cuatro sistemas?",
-        "answer": "No. Un punto de partida habitual es el sistema de captación, para que cada consulta por WhatsApp o web reciba respuesta en aproximadamente un minuto. El seguimiento y los informes se pueden añadir después. Los cuatro sistemas están diseñados para trabajar juntos, pero cada uno funciona por sí solo: añades el siguiente paso cuando estés listo."
+        "answer": "No. Un punto de partida habitual es el sistema de captación, para que cada consulta por WhatsApp reciba respuesta en menos de 3 segundos. El seguimiento y los informes se pueden añadir después. Los cuatro sistemas están diseñados para trabajar juntos, pero cada uno funciona por sí solo: añades el siguiente paso cuando estés listo."
       },
       {
         "question": "¿Cuánto tarda en estar en marcha?",
-        "answer": "La auditoría de IA gratuita dura 3 días y te muestra las principales oportunidades de automatización para tu negocio. Después, nuestro objetivo es tener tu sistema en marcha en 2–4 semanas, incluyendo la conexión de tu número de WhatsApp Business, el entrenamiento de la IA con tus servicios y las pruebas con tu equipo."
+        "answer": "La auditoría de IA gratuita dura 3 días y te muestra las principales oportunidades de automatización para tu negocio. La IA de WhatsApp está en marcha en 48 horas desde el inicio: conectamos tu número de WhatsApp Business, entrenamos la IA con tus servicios y la probamos con tu equipo. Los proyectos más grandes con los cuatro sistemas tardan 2–4 semanas."
       },
       {
         "question": "¿Funciona para mi clínica o pequeña empresa?",
-        "answer": "Sí, siempre que tus clientes te contacten por WhatsApp, email o formularios web. Los sistemas están diseñados para clínicas —de trasplante capilar, dentales, de cirugía estética y de fertilidad, incluidos proveedores de turismo médico— y para pequeñas empresas como agencias inmobiliarias, tiendas online, despachos financieros y legales y empresas de servicios. La IA puede responder en más de 50 idiomas, así que los clientes internacionales también quedan cubiertos."
+        "answer": "Sí, siempre que tus clientes te contacten por WhatsApp, email o formularios web. Nuestro foco son las clínicas —de trasplante capilar, dentales, de cirugía estética y de fertilidad, incluidos proveedores de turismo médico—. Los mismos sistemas también sirven a pequeñas empresas de servicios que funcionan por WhatsApp, como las agencias inmobiliarias. La IA puede responder en más de 40 idiomas, así que los clientes internacionales también quedan cubiertos."
       },
       {
         "question": "¿Cuánto cuesta?",
-        "answer": "El precio depende de cuántos sistemas necesitas, cuántas sedes o bandejas de entrada gestionas y qué herramientas conectamos. Ofrecemos tres planes —Starter, Growth y Scale— alineados con los cuatro sistemas, y cada plan se presupuesta después de una auditoría gratuita, para que solo pagues por lo que realmente te ahorra tiempo. No hay contrato a largo plazo."
+        "answer": "La IA de WhatsApp tiene precio fijo: 1.399 € de configuración única más 599 € al mes (Essential) o 999 € al mes (Pro), con un mínimo de 3 meses. Si no genera al menos 3 leads cualificados en tus primeros 30 días, te devolvemos el primer mes. Los paquetes más amplios con los cuatro sistemas —Starter, Growth y Scale— se presupuestan después de una auditoría gratuita, para que solo pagues por lo que realmente te ahorra tiempo."
       },
       {
         "question": "¿Sustituye a mi personal?",
@@ -149,8 +150,8 @@
     "solutionTitle": "Nuestra Solución IA",
     "solutions": [
       "El agente IA responde instantáneamente en cualquier zona horaria",
-      "Traducción automática en 50+ idiomas",
-      "Vision IA evalúa fotos automáticamente",
+      "Traducción automática en 40+ idiomas",
+      "La IA de visión preclasifica las fotos de los pacientes para tus médicos (nunca un diagnóstico)",
       "Secuencias de seguimiento automatizadas",
       "Menos trabajo administrativo repetitivo para tu personal"
     ],
@@ -302,7 +303,7 @@
     "desc": "Obtén una <strong>auditoría de IA gratuita</strong> y descubre cómo podemos ayudarte a generar más leads. Sin compromiso.",
     "cta": "Obtener Mi Auditoría Gratuita",
     "dismiss": "No gracias, paso del consejo gratuito",
-    "trust": "Sin tarjeta de crédito. Sin contrato a largo plazo."
+    "trust": "Sin tarjeta de crédito. Sin compromiso."
   },
   "caseStudies": {
     "title": "Casos de Éxito",

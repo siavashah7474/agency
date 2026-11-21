@@ -46,7 +46,7 @@ During peak seasons, inquiries can spike dramatically. Human teams get overwhelm
 
 ### What [Webimot AI Automation](/systems) Delivers:
 - **Instant responses** to every inquiry, any time of day
-- **Multilingual support** in 50+ languages without additional staff
+- **Multilingual support** in 40+ languages without additional staff
 - **Consistent quality** in every patient interaction
 - **Intelligent qualification** to prioritize high-value leads
 - **Automated follow-ups** so no lead goes cold
@@ -202,7 +202,7 @@ Even the best human teams face limitations:
 
 An AI agent changes each step between first message and booking:
 
-- **Response time:** a reply goes out within about a minute, at any hour, instead of whenever someone is next at their desk
+- **Response time:** a reply goes out in under 3 seconds, at any hour, instead of whenever someone is next at their desk
 - **First response:** the patient gets a useful answer and a clear next step straight away
 - **Consultation booking:** the agent offers a consultation while the patient is still engaged
 - **Follow-up:** quiet conversations get a polite nudge instead of being forgotten
@@ -443,7 +443,7 @@ To cover all hours with human agents, you need:
 
 ### What [Webimot AI](/systems) Gets You
 - 24/7 availability
-- Fast first responses (designed to reply within about a minute)
+- Fast first responses (designed to reply in under 3 seconds)
 - Multilingual conversations
 - Consistent answers based on your approved information
 - Capacity that does not depend on headcount
@@ -462,7 +462,7 @@ The comparison is rarely just cost against cost. An AI setup usually changes cov
 
 | Aspect | Human Team | [Webimot AI Automation](/systems) |
 |--------|------------|---------------|
-| Response time | Depends on staffing and time of day | Designed to reply within about a minute |
+| Response time | Depends on staffing and time of day | Designed to reply in under 3 seconds |
 | Availability | Working hours or shifts | 24/7 |
 | Languages | Those your staff speak | Many |
 | Consistency | Varies by person | Same approved information every time |
@@ -1310,7 +1310,7 @@ But here is the problem clinics face: **international demand arrives around the 
 
 When a patient in Amsterdam searches "rhinoplasty Turkey cost" at 11 PM, they often send inquiries to several clinics at once. The first clinic to respond with helpful, personalised information has a clear advantage.
 
-A clinic that relies on office-hours staff may reply the next morning. A clinic with an AI assistant can reply within about a minute.
+A clinic that relies on office-hours staff may reply the next morning. A clinic with an AI assistant can reply in under 3 seconds.
 
 That gap can be the difference between a booked patient and a lost lead.
 
@@ -1358,7 +1358,7 @@ Once a patient is qualified and interested, [Webimot's AI assistant](/clinics) b
 ## What a Clinic Can Expect From [Webimot AI](/systems)
 
 We do not publish result figures. What the system is designed to change is straightforward:
-- **First response** goes out in about a minute instead of hours
+- **First response** goes out in under 3 seconds instead of hours
 - **Consultations** are offered while the patient is still interested
 - **Staff time** on initial inquiry handling goes down
 - **Nights, weekends, and public holidays** are covered
@@ -1415,7 +1415,7 @@ These patients are research-driven and impatient. They compare several clinics b
 ## What is [Webimot's AI Receptionist](/clinics) for Medical Tourism?
 
 [Webimot's AI receptionist](/clinics) is an intelligent, always-on system that:
-- Responds to every inquiry within about a minute, in the patient's native language
+- Responds to every inquiry in under 3 seconds, in the patient's native language
 - Answers detailed questions about procedures, pricing, recovery, and logistics
 - Qualifies the patient's interest and seriousness
 - Schedules video consultations automatically
@@ -1430,7 +1430,7 @@ The examples below describe what an AI receptionist can do in each market. They 
 
 ### Turkey — Plastic Surgery and Hair Transplants
 Turkish clinics receive inquiries from across Europe and the Middle East. An AI receptionist can:
-- Reply to German patients asking about rhinoplasty in German within about a minute
+- Reply to German patients asking about rhinoplasty in German in under 3 seconds
 - Send approved pricing guides and procedure information automatically
 - Book video consultations with surgeons
 - Follow up with undecided patients over the following days
@@ -1521,7 +1521,7 @@ We do not publish conversion figures, because they depend on your clinic. To est
 - What share of inquiries currently turn into consultations
 - What share of consultations turn into patients
 
-The AI receptionist changes the second number directly: every inquiry gets a reply in about a minute. How far that moves the third number is something you measure after go-live, comparing against your own baseline.
+The AI receptionist changes the second number directly: every inquiry gets a reply in under 3 seconds. How far that moves the third number is something you measure after go-live, comparing against your own baseline.
 
 ## How to Implement [Webimot's AI Receptionist](/clinics) for Your Clinic
 
@@ -2073,7 +2073,7 @@ Here is an illustration of how a clinic with a [Webimot AI](/systems) agent woul
 
 ### Clinic With a [Webimot AI](/systems) Agent
 - 11:45 PM — Patient from Manchester sends WhatsApp inquiry
-- Within about a minute — the AI responds in English, thanks the patient, explains the available techniques and asks the questions the medical team needs answered
+- Within 3 seconds — the AI responds in English, thanks the patient, explains the available techniques and asks the questions the medical team needs answered
 - A few minutes later — the AI sends package details and a booking link
 - Shortly after — the patient books a video consultation for the next morning
 
@@ -2155,7 +2155,7 @@ The underlying mechanism is straightforward. When a potential customer reaches o
 
 Whoever answers first with something useful starts the conversation. Everyone else is replying to a person who is already talking to someone else. Fast replies win more leads.
 
-In medical tourism this is amplified by time zones and languages. [Webimot's WhatsApp AI Agent](/clinics) is designed to reply to every inquiry within about a minute, regardless of time zone or language.
+In medical tourism this is amplified by time zones and languages. [Webimot's WhatsApp AI Agent](/clinics) is designed to reply to every inquiry in under 3 seconds, regardless of time zone or language.
 
 ## The Three Automation Categories That Matter Most for Revenue
 
@@ -2164,7 +2164,7 @@ In medical tourism this is amplified by time zones and languages. [Webimot's Wha
 An AI agent reads every incoming inquiry (WhatsApp message, web form, Instagram DM) and responds right away in the customer's own language. It answers common questions, asks the qualifying questions your team would ask, and offers an appointment.
 
 What changes:
-- First response time goes from hours to about a minute
+- First response time goes from hours to under 3 seconds
 - Inquiries that arrive at night or on weekends are no longer left waiting
 - Your team starts each conversation with the basics already collected
 
@@ -2243,7 +2243,7 @@ Clinics that serve patients abroad face a timing mismatch. A patient in Germany 
 
 For a clinic without automation, those inquiries wait until the next morning. By that point the patient has often heard back from another clinic.
 
-[Webimot's WhatsApp AI Agent](/clinics) is designed to respond to every inquiry within about a minute, in the patient's language, at any hour.
+[Webimot's WhatsApp AI Agent](/clinics) is designed to respond to every inquiry in under 3 seconds, in the patient's language, at any hour.
 
 ## Language: The Quiet Advantage
 
@@ -2266,7 +2266,7 @@ Follow-up messages spaced over the days and weeks after first contact help here,
 ## Five Practices That Make the Difference
 
 **1. Fast first response, always**
-An AI system replies to every incoming WhatsApp message, Instagram DM, or website inquiry within about a minute, including nights, weekends, and holidays.
+An AI system replies to every incoming WhatsApp message, Instagram DM, or website inquiry in under 3 seconds, including nights, weekends, and holidays.
 
 **2. Real multilingual capability**
 Natural-sounding replies in the patient's own language, using the correct medical terms for your procedures.
@@ -2515,7 +2515,7 @@ This is the kind of architecture [Webimot Agency](https://webimotagency.com) bui
 
 **Use an AI agent if:**
 - You receive more leads than your team can respond to instantly
-- You're losing leads to slow response times (many businesses take hours to reply; the goal is about a minute)
+- You're losing leads to slow response times (many businesses take hours to reply; the goal is seconds)
 - You want to automate booking, CRM updates, and follow-up sequences
 - You operate in multiple time zones or serve international customers
 - You want to grow revenue without growing headcount
@@ -2575,7 +2575,7 @@ Before jumping into tactics, understand that business automation in 2026 falls i
 ### Pillar 1: Lead Response Automation
 **The problem it solves:** You're losing leads to competitors who respond faster.
 
-Fast replies win more leads. Many businesses take hours to respond to a new inquiry. An AI agent can respond within about a minute.
+Fast replies win more leads. Many businesses take hours to respond to a new inquiry. An AI agent can respond in under 3 seconds.
 
 Lead response automation means every new inquiry — from WhatsApp, your website contact form, Instagram DM, email, or any other channel — gets an immediate, intelligent, personalised response that begins qualifying the lead before any human is involved.
 
@@ -2629,7 +2629,7 @@ What you're building:
 - It creates a CRM record automatically
 
 What should change:
-- Response time drops from hours to about a minute
+- Response time drops from hours to under 3 seconds
 - Routine inquiries are qualified and booked without manual handling
 - Your team spends their time on complex leads and delivery, not inbox management
 
@@ -2744,7 +2744,7 @@ What works in 2026 is **AI-native WhatsApp automation** — systems built on lar
 
 ### Workflow 1: First Response and Lead Qualification
 
-Every new WhatsApp message deserves a fast response — within about a minute, 24/7, in the language the lead is using.
+Every new WhatsApp message deserves a fast response — in under 3 seconds, 24/7, in the language the lead is using.
 
 Your AI agent's first job is qualification. Within the first 2–3 messages, it should establish:
 - What the lead is looking for (procedure, product, service)
@@ -2851,7 +2851,7 @@ Here is an example scenario (illustrative, not a client result). A hair transpla
 
 After a full WhatsApp automation stack is in place with [Webimot Agency](https://webimotagency.com):
 
-- Every enquiry gets a reply within about a minute
+- Every enquiry gets a reply in under 3 seconds
 - Coordinators handle complex cases and confirmed bookings instead of first-contact questions
 - Coverage is 24/7 in Arabic, German, English, Russian, and Dutch
 

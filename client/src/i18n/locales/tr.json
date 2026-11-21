@@ -40,24 +40,25 @@
     "trustBadge": "AI otomasyon sistemleri · Amsterdam · İstanbul",
     "heroTitle1": "Günlük işlerinizi yürüten",
     "heroTitle2": "AI otomasyon sistemleri.",
-    "heroSubtitle": "<strong>Klinikler</strong> ve <strong>küçük işletmeler</strong> için: her müşteri adayı yanıtlanır, her belge işlenir, her takip mesajı gönderilir — 7/24, ek personel olmadan.",
+    "heroSubtitle": "Öncelikle <strong>klinikler ve sağlık turizmi sağlayıcıları</strong>, ayrıca WhatsApp üzerinden çalışan <strong>küçük işletmeler</strong> için: her müşteri adayı yanıtlanır, her belge işlenir, her takip mesajı gönderilir — 7/24, ek personel olmadan.",
     "heroCta1": "Demo talep edin",
     "heroCta2": "Sistemleri görün",
     "heroChecklist": [
       "3 günde ücretsiz AI denetimi",
-      "2–4 haftada yayında",
-      "Uzun vadeli sözleşme yok",
-      "50+ dil"
+      "WhatsApp AI 48 saatte yayında",
+      "3 saniyenin altında yanıt",
+      "40+ dil"
     ],
     "audience": {
       "eyebrow": "Kime yardımcı oluyoruz",
-      "title": "İki tür işletme. Tek bir sistem.",
-      "lead": "Aynı dört sistem, işletmenizin çalışma şekline ve müşterilerinizin zaten kullandığı kanallara göre uyarlanır.",
+      "title": "Klinikler için kuruldu. Küçük işletmeler de kullanıyor.",
+      "lead": "Odağımız klinikler ve sağlık turizmi: hastaların klinik seçme biçimini ve taleplerin nerede kaybolduğunu biliyoruz. Aynı dört sistem, WhatsApp üzerinden çalışan küçük hizmet işletmeleri için de çalışır.",
       "examplesLabel": "Örnekler",
       "links": {
         "clinics": "Kliniklere nasıl yardımcı oluyoruz",
         "small-business": "Küçük işletmelere nasıl yardımcı oluyoruz"
-      }
+      },
+      "focusBadge": "Odağımız"
     },
     "ladder": {
       "eyebrow": "Dört sistem",
@@ -79,19 +80,19 @@
       },
       {
         "question": "Dört sistemin hepsine ihtiyacım var mı?",
-        "answer": "Hayır. Yaygın bir başlangıç noktası yakalama sistemidir; böylece her WhatsApp ve web talebi yaklaşık bir dakika içinde yanıt alır. Takip ve raporlama sonradan eklenebilir. Dört sistem birlikte çalışmak üzere tasarlanmıştır, ancak her biri tek başına da çalışır — bir sonraki adımı hazır olduğunuzda eklersiniz."
+        "answer": "Hayır. Yaygın bir başlangıç noktası yakalama sistemidir; böylece her WhatsApp talebi 3 saniyenin altında yanıt alır. Takip ve raporlama sonradan eklenebilir. Dört sistem birlikte çalışmak üzere tasarlanmıştır, ancak her biri tek başına da çalışır — bir sonraki adımı hazır olduğunuzda eklersiniz."
       },
       {
         "question": "Ne kadar sürede yayına girer?",
-        "answer": "Ücretsiz AI denetimi 3 gün sürer ve işletmeniz için en önemli otomasyon fırsatlarını ortaya koyar. Ardından sisteminizi 2–4 hafta içinde yayına almayı hedefliyoruz — WhatsApp Business numaranızın bağlanması, AI'ın hizmetlerinize göre eğitilmesi ve ekibinizle test edilmesi dahil."
+        "answer": "Ücretsiz AI denetimi 3 gün sürer ve işletmeniz için en önemli otomasyon fırsatlarını ortaya koyar. WhatsApp AI, başlangıçtan itibaren 48 saat içinde yayına girer: WhatsApp Business numaranızı bağlar, AI'ı hizmetlerinize göre eğitir ve ekibinizle test ederiz. Dört sistemi kapsayan daha büyük kurulumlar 2–4 hafta sürer."
       },
       {
         "question": "Kliniğim veya küçük işletmem için çalışır mı?",
-        "answer": "Müşterileriniz size WhatsApp, e-posta veya web formları üzerinden ulaşıyorsa evet. Sistemler klinikler için — saç ekimi, diş, estetik cerrahi ve tüp bebek; sağlık turizmi sağlayıcıları dahil — ve emlak ofisleri, e-ticaret mağazaları, finans ve hukuk firmaları ile hizmet işletmeleri gibi küçük işletmeler için tasarlanmıştır. AI 50'den fazla dilde yanıt verebilir, böylece uluslararası müşteriler de kapsanır."
+        "answer": "Müşterileriniz size WhatsApp, e-posta veya web formları üzerinden ulaşıyorsa evet. Odağımız klinikler — saç ekimi, diş, estetik cerrahi ve tüp bebek; sağlık turizmi sağlayıcıları dahil. Aynı sistemler, emlak ofisleri gibi WhatsApp üzerinden çalışan küçük hizmet işletmeleri için de çalışır. AI 40'tan fazla dilde yanıt verebilir, böylece uluslararası müşteriler de kapsanır."
       },
       {
         "question": "Maliyeti nedir?",
-        "answer": "Fiyat, kaç sisteme ihtiyacınız olduğuna, kaç şube veya gelen kutusu yönettiğinize ve hangi araçları bağladığımıza göre değişir. Dört sisteme karşılık gelen üç paket sunuyoruz — Starter, Growth ve Scale — ve her paket ücretsiz denetimden sonra fiyatlandırılır; böylece yalnızca size gerçekten zaman kazandıracak şeyler için ödersiniz. Uzun vadeli sözleşme yoktur."
+        "answer": "WhatsApp AI'ın sabit bir fiyatı vardır: €1.399 tek seferlik kurulum artı aylık €599 (Essential) veya aylık €999 (Pro); asgari süre 3 aydır. İlk 30 günde en az 3 nitelikli müşteri adayı oluşturmazsa ilk ayınızı iade ederiz. Dört sistemi kapsayan daha büyük paketler — Starter, Growth ve Scale — ücretsiz denetimden sonra fiyatlandırılır; böylece yalnızca size gerçekten zaman kazandıracak şeyler için ödersiniz."
       },
       {
         "question": "Personelimin yerini alır mı?",
@@ -149,8 +150,8 @@
     "solutionTitle": "AI Çözümümüz",
     "solutions": [
       "AI ajanı herhangi bir saat diliminde anında yanıt verir",
-      "50'den fazla dilde otomatik çeviri",
-      "Vision AI fotoğrafları otomatik değerlendirir",
+      "40+ dilde otomatik çeviri",
+      "Vision AI hasta fotoğraflarını doktorlarınız için ön sınıflandırır (asla teşhis değildir)",
       "Otomatik takip dizileri",
       "Personeliniz için daha az tekrarlayan idari iş"
     ],
@@ -302,7 +303,7 @@
     "desc": "Ücretsiz bir <strong>AI denetimi</strong> alın ve daha fazla müşteri adayı oluşturmanıza nasıl yardımcı olabileceğimizi keşfedin. Taahhüt gerekmez.",
     "cta": "Ücretsiz Denetimimi Alın",
     "dismiss": "Hayır teşekkürler, ücretsiz tavsiyeleri pas geçeceğim",
-    "trust": "Kredi kartı gerekmez. Uzun vadeli sözleşme yok."
+    "trust": "Kredi kartı yok. Taahhüt yok."
   },
   "caseStudies": {
     "title": "Vaka Çalışmaları",

@@ -60,7 +60,7 @@ export default function Home() {
     <>
       <SEO
         title="AI Automation Systems for Clinics & Small Business | Webimot"
-        description="AI automation systems for clinics and small businesses: capture every lead, follow up automatically, process documents, get a weekly report. Live in 2–4 weeks."
+        description="AI automation systems for clinics and small businesses: capture every lead, follow up automatically, process documents, get a weekly report. WhatsApp AI live in 48 hours."
         keywords="AI automation systems, AI automation for clinics, AI automation for small business, WhatsApp AI agent, lead follow-up automation, document processing AI, automated weekly reporting, AI receptionist for clinics, clinic WhatsApp automation, medical tourism AI, hair transplant clinic AI, dental clinic AI agent, AI agency Europe, AI agency Turkey"
         canonicalUrl={`${SITE_URL}/`}
         schema={{

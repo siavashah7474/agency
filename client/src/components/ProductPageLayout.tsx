@@ -32,6 +32,8 @@ export interface ProductPageProps {
   ctaHeadline: string;
   // Products that have their own site (e.g. WhatsApp AI at webimot.com) link to it as a reference.
   referenceLink?: { href: string; label: string };
+  /** Replaces the default "custom quote" pricing note with fixed prices and terms. */
+  pricingNote?: { headline: string; lines: string[] };
   // The system this product belongs to ("Part of the Capture system →"). Leave unset for add-ons.
   system?: SystemId;
   // For add-ons: the system this product feeds ("Add-on that feeds the Capture system →").
@@ -40,7 +42,7 @@ export interface ProductPageProps {
 
 const BASE_KEYWORDS = "medical tourism AI system, AI agent for clinics, clinic AI system, medical tourism marketing, AI automation agency, business automation, lead generation, WhatsApp AI, AI receptionist for clinics, clinic automation software";
 
-export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, results, problemParagraphs, howItWorksSteps, scenario, features, featureDetails, whoItsFor, ctaHeadline, referenceLink, system, addOnFor }: ProductPageProps) {
+export default function ProductPageLayout({ seoTitle, seoDescription, seoKeywords, emoji, name, tagline, heroBrief, results, problemParagraphs, howItWorksSteps, scenario, features, featureDetails, whoItsFor, ctaHeadline, referenceLink, system, addOnFor, pricingNote }: ProductPageProps) {
   const { openModal } = useBookingModal();
   const [pathname] = useLocation();
   const canonicalUrl = `https://webimotagency.com${pathname}`;
@@ -268,10 +270,18 @@ export default function ProductPageLayout({ seoTitle, seoDescription, seoKeyword
           <section className="py-16 md:py-20 bg-[#020817] relative overflow-hidden">
             <div className="absolute inset-0 neural-grid pointer-events-none" />
             <div className="container mx-auto px-6 relative z-10 text-center max-w-2xl">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Simple, transparent pricing</h2>
-              <p className="text-white/60 mb-8 leading-relaxed">
-                Pricing is based on your business size, existing tools, and automation complexity. We give every client a custom quote after a free 30-minute AI Audit. No surprises, no lock-in contracts.
-              </p>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">{pricingNote?.headline ?? "Simple, transparent pricing"}</h2>
+              {pricingNote ? (
+                <div className="mb-8 space-y-3">
+                  {pricingNote.lines.map((line) => (
+                    <p key={line} className="text-white/60 leading-relaxed">{line}</p>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-white/60 mb-8 leading-relaxed">
+                  Pricing is based on your business size, existing tools, and automation complexity. We give every client a custom quote after a free 30-minute AI Audit. No surprises.
+                </p>
+              )}
               <Button size="lg" className="bg-white text-primary hover:bg-white/90" onClick={() => openModal()}>
                 Book Your Free Audit <ArrowRight className="ml-2 h-4 w-4" />
               </Button>

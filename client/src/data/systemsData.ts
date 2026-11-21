@@ -37,11 +37,11 @@ export const SYSTEMS: SystemDef[] = [
     name: "Capture system",
     productLabel: "WhatsApp AI · LeadFire",
     emoji: "💬",
-    headline: "Every enquiry answered within about a minute, in the customer's language, 24/7.",
+    headline: "Every enquiry answered in seconds, in the customer's language, 24/7.",
     replaces: "Missed messages and slow replies",
     description:
       "An AI agent on your WhatsApp Business number (and web chat) that answers questions, qualifies the lead, evaluates photos where relevant and books the appointment straight into your calendar — the moment the message arrives.",
-    outcomes: ["Built to reply within about a minute, day and night", "The customer's language detected automatically", "Qualified leads booked, not just answered"],
+    outcomes: ["Replies in under 3 seconds on WhatsApp, day and night", "The customer's language detected automatically", "Qualified leads booked, not just answered"],
     products: [
       { name: "WhatsApp AI", href: "/products/whatsapp-ai", emoji: "💬", oneLiner: "24/7 AI agent on WhatsApp that answers, qualifies and books." },
       { name: "LeadFire", href: "/products/leadfire", emoji: "⚡", oneLiner: "Instant first response to every new lead from ads, forms and chat." },
@@ -134,8 +134,8 @@ export const AUDIENCES: AudienceDef[] = [
     emoji: "🏢",
     tagline: "Run on AI without hiring more staff.",
     description:
-      "Real estate agencies, e-commerce stores, finance and legal firms and service businesses that live on WhatsApp, email and spreadsheets.",
-    examples: ["Real estate agencies", "E-commerce & Shopify stores", "Finance & legal firms", "Service businesses"],
+      "Service businesses that live on WhatsApp, email and spreadsheets — most often real estate agencies — running the same systems we build for clinics.",
+    examples: ["Real estate agencies", "Service businesses on WhatsApp"],
   },
 ];
 

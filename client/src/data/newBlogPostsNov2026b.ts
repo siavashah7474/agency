@@ -105,7 +105,7 @@ No. An AI agent can collect photos and information, check that they are complete
 
 ### How long does it take to automate the first stages?
 
-Webimot aims to have a system live within 2–4 weeks of starting, including connecting the clinic's WhatsApp Business number and testing with the team.
+Webimot has the WhatsApp AI live within 48 hours of onboarding, including connecting the clinic's WhatsApp Business number and testing with the team. Follow-up, document and reporting systems are added over the following 2–4 weeks.
 
 ## Key takeaways
 

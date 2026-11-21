@@ -40,24 +40,25 @@
     "trustBadge": "AI-automatiseringssystemen · Amsterdam · Istanbul",
     "heroTitle1": "AI-automatiseringssystemen",
     "heroTitle2": "die uw dagelijkse werk draaiend houden.",
-    "heroSubtitle": "Voor <strong>klinieken</strong> en <strong>kleine bedrijven</strong>: elke lead beantwoord, elk document verwerkt, elke follow-up verstuurd — 24/7, zonder extra personeel.",
+    "heroSubtitle": "In de eerste plaats voor <strong>klinieken en aanbieders van medisch toerisme</strong>, en ook voor <strong>kleine bedrijven</strong> die op WhatsApp draaien: elke lead beantwoord, elk document verwerkt, elke follow-up verstuurd — 24/7, zonder extra personeel.",
     "heroCta1": "Boek een demo",
     "heroCta2": "Bekijk de systemen",
     "heroChecklist": [
       "Gratis AI-audit in 3 dagen",
-      "Live in 2–4 weken",
-      "Geen langlopend contract",
-      "50+ talen"
+      "WhatsApp AI live in 48 uur",
+      "Antwoord binnen 3 seconden",
+      "40+ talen"
     ],
     "audience": {
       "eyebrow": "Voor wie we werken",
-      "title": "Twee soorten bedrijven. Eén systeem.",
-      "lead": "Dezelfde vier systemen, afgestemd op hoe uw bedrijf werkt en op de kanalen die uw klanten al gebruiken.",
+      "title": "Gebouwd voor klinieken. Ook voor kleine bedrijven.",
+      "lead": "Onze focus ligt op klinieken en medisch toerisme: we weten hoe patiënten een kliniek kiezen en waar aanvragen verloren gaan. Dezelfde vier systemen draaien ook voor kleine dienstverleners die op WhatsApp werken.",
       "examplesLabel": "Voorbeelden",
       "links": {
         "clinics": "Zo helpen we klinieken",
         "small-business": "Zo helpen we kleine bedrijven"
-      }
+      },
+      "focusBadge": "Onze focus"
     },
     "ladder": {
       "eyebrow": "De vier systemen",
@@ -79,19 +80,19 @@
       },
       {
         "question": "Heb ik alle vier de systemen nodig?",
-        "answer": "Nee. Een gebruikelijk startpunt is het capture-systeem, zodat elke WhatsApp- en webaanvraag binnen ongeveer een minuut een antwoord krijgt. Follow-up en rapportage kunnen daarna worden toegevoegd. De vier systemen zijn gebouwd om samen te werken, maar elk systeem werkt ook op zichzelf — u voegt de volgende stap toe wanneer u er klaar voor bent."
+        "answer": "Nee. Een gebruikelijk startpunt is het capture-systeem, zodat elke WhatsApp-aanvraag binnen 3 seconden een antwoord krijgt. Follow-up en rapportage kunnen daarna worden toegevoegd. De vier systemen zijn gebouwd om samen te werken, maar elk systeem werkt ook op zichzelf — u voegt de volgende stap toe wanneer u er klaar voor bent."
       },
       {
         "question": "Hoe snel is het live?",
-        "answer": "De gratis AI-audit duurt 3 dagen en laat de belangrijkste automatiseringskansen voor uw bedrijf zien. Daarna streven we ernaar uw systeem binnen 2–4 weken live te hebben — inclusief het koppelen van uw WhatsApp Business-nummer, het trainen van de AI op uw diensten en het testen met uw team."
+        "answer": "De gratis AI-audit duurt 3 dagen en laat de belangrijkste automatiseringskansen voor uw bedrijf zien. De WhatsApp AI is binnen 48 uur na de start live: we koppelen uw WhatsApp Business-nummer, trainen de AI op uw diensten en testen met uw team. Grotere trajecten met alle vier de systemen duren 2–4 weken."
       },
       {
         "question": "Werkt het voor mijn kliniek of klein bedrijf?",
-        "answer": "Ja, als uw klanten u bereiken via WhatsApp, e-mail of webformulieren. De systemen zijn ontworpen voor klinieken — haartransplantatie, tandheelkunde, cosmetische chirurgie en IVF, inclusief aanbieders van medisch toerisme — en voor kleine bedrijven zoals makelaars, webshops, financiële en juridische kantoren en dienstverleners. De AI kan in 50+ talen antwoorden, dus ook internationale klanten worden geholpen."
+        "answer": "Ja, als uw klanten u bereiken via WhatsApp, e-mail of webformulieren. Onze focus ligt op klinieken — haartransplantatie, tandheelkunde, cosmetische chirurgie en IVF, inclusief aanbieders van medisch toerisme. Dezelfde systemen werken ook voor kleine dienstverleners die op WhatsApp draaien, zoals makelaars. De AI kan in 40+ talen antwoorden, dus ook internationale klanten worden geholpen."
       },
       {
         "question": "Wat kost het?",
-        "answer": "De prijs hangt af van het aantal systemen dat u nodig heeft, het aantal locaties of inboxen en de tools die we koppelen. We bieden drie pakketten — Starter, Growth en Scale — gekoppeld aan de vier systemen, en elk pakket wordt na een gratis audit geoffreerd, zodat u alleen betaalt voor wat u echt tijd bespaart. Er is geen langlopend contract."
+        "answer": "De WhatsApp AI heeft een vaste prijs: € 1.399 eenmalige setup plus € 599 per maand (Essential) of € 999 per maand (Pro), met een minimale looptijd van 3 maanden. Levert het in uw eerste 30 dagen geen 3 gekwalificeerde leads op, dan krijgt u uw eerste maand terug. Grotere pakketten met de vier systemen — Starter, Growth en Scale — worden na een gratis audit geoffreerd, zodat u alleen betaalt voor wat u echt tijd bespaart."
       },
       {
         "question": "Vervangt het mijn medewerkers?",
@@ -149,8 +150,8 @@
     "solutionTitle": "Onze AI-oplossing",
     "solutions": [
       "AI-agent reageert direct in elke tijdzone",
-      "Automatische vertaling in 50+ talen",
-      "Vision AI evalueert foto's automatisch",
+      "Automatische vertaling in 40+ talen",
+      "Vision AI sorteert patiëntfoto's voor uw artsen (nooit een diagnose)",
       "Geautomatiseerde follow-up sequences",
       "Minder repetitief administratief werk voor uw personeel"
     ],
@@ -302,7 +303,7 @@
     "desc": "Ontvang een <strong>gratis AI-audit</strong> en ontdek hoe wij u kunnen helpen meer leads te genereren. Geen verplichting.",
     "cta": "Mijn gratis audit ontvangen",
     "dismiss": "Nee bedankt, ik sla het gratis advies over",
-    "trust": "Geen creditcard. Geen langlopend contract."
+    "trust": "Geen creditcard. Geen verplichtingen."
   },
   "caseStudies": {
     "title": "Casestudies",

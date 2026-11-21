@@ -16,7 +16,7 @@ export const serviceData: Record<string, ServiceData> = {
     tagline: "24/7 Intelligent Lead Handling & Booking Automation",
     metaDescription: "AI WhatsApp agent for clinics that answers patient inquiries 24/7, qualifies leads, evaluates photos with Vision AI, and books consultations automatically.",
     what: "Our WhatsApp AI Agent is a sophisticated automation system that handles incoming messages on WhatsApp 24/7. It uses advanced AI to understand customer inquiries, qualify leads, evaluate photos with Vision AI, transcribe voice messages, and automatically book consultations. The system integrates with your calendar, CRM, and provides real-time dashboards for monitoring performance.",
-    why: "In the medical tourism and service industries, speed is everything. Fast replies win more leads. Our AI agent is designed to answer every enquiry within about a minute, in the customer's language, and book consultations automatically - even when your team is asleep.",
+    why: "In the medical tourism and service industries, speed is everything. Fast replies win more leads. Our AI agent is designed to answer every enquiry in under 3 seconds, in the customer's language, and book consultations automatically - even when your team is asleep.",
     benefits: [
       "Never miss a lead - every enquiry answered 24/7",
       "Instant replies in multiple languages",
@@ -49,11 +49,11 @@ export const serviceData: Record<string, ServiceData> = {
     faqs: [
       {
         question: "How long does setup take?",
-        answer: "We aim to go live within 2–4 weeks of starting, including AI training and testing."
+        answer: "The WhatsApp AI is live within 48 hours of onboarding, including AI training and testing. Wider builds with CRM and calendar integrations take 2–4 weeks."
       },
       {
         question: "What languages does the AI support?",
-        answer: "The AI supports 50+ languages including English, Turkish, Arabic, Russian, German, and French. We can add custom languages as needed."
+        answer: "The AI supports 40+ languages including English, Turkish, Arabic, Russian, German, and French. We can add custom languages as needed."
       },
       {
         question: "Can the AI handle complex medical questions?",

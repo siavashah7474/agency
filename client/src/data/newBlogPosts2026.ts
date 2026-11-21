@@ -20,7 +20,7 @@ The short version: it does the repetitive first part of front-desk conversations
 
 A modern clinic receptionist AI is not a scripted chatbot with buttons. It is an AI agent connected to your WhatsApp Business number, website chat and (optionally) phone line, with access to your calendar, price list and treatment FAQs. In a typical hair transplant, dental or cosmetic surgery clinic it handles:
 
-- **WhatsApp and web chat** — replies in under 60 seconds, 24/7, including weekends and public holidays
+- **WhatsApp and web chat** — replies in under 3 seconds, 24/7, including weekends and public holidays
 - **Languages** — detects the patient's language automatically and answers in it (German, Arabic, English, Dutch, Russian, French, Turkish and 40+ more)
 - **Qualification** — asks the questions your coordinators ask: procedure, timeline, budget range, medical history flags, city of residence
 - **Photo evaluation** — accepts hair, teeth or skin photos and gives a first indication of candidacy and graft or treatment range, then flags cases for a doctor (see our guide to [Vision AI photo evaluation](/blog/vision-ai-photo-evaluation-medical-tourism))
@@ -142,11 +142,11 @@ They should. Disclose it, offer a human at any point and make the hand-off insta
 
 ### How long does it take to go live?
 
-A managed deployment typically takes 2–4 weeks: one week to collect procedures, prices and FAQs, one to two weeks to build and test with your team, then a supervised launch. WhatsApp Business connection itself takes about a day.
+With a managed service the WhatsApp agent itself can be live within 48 hours: you answer questions about procedures, prices and FAQs, and the provider builds and tests it. Adding CRM, calendar and reporting integrations around it typically takes 2–4 weeks.
 
 ## Key takeaways
 
-- An AI receptionist for clinics answers, qualifies, evaluates photos and books 24/7 in 50+ languages; coordinators keep the consultations and the closing.
+- An AI receptionist for clinics answers, qualifies, evaluates photos and books 24/7 in 40+ languages; coordinators keep the consultations and the closing.
 - Speed is the business case: firms that contact leads within an hour are nearly seven times as likely to qualify them ([Harvard Business Review](https://hbr.org/2011/03/the-short-life-of-online-sales-leads)), and medical tourism enquiries arrive at night.
 - Three cost models — self-serve subscription, managed retainer, custom build. Judge them by cost per booked patient, not per month.
 - In the illustrative example (300 enquiries a month, €2,500 average treatment), moving the booking rate from 12% to 18% would be worth roughly €20,000 a month. Run it with your own numbers.
@@ -190,7 +190,7 @@ The order follows the three questions above. How much time each one saves depend
 
 ### 1. First reply to every new lead
 
-The task: a new enquiry arrives from WhatsApp, your website form, Facebook or Instagram ads, or email, and someone has to answer it. The automation: an AI agent replies within 60 seconds, in the customer's language, asks two or three qualifying questions and books a call or sends the right information. Why first: Harvard Business Review's audit of 2,241 companies found those that contacted leads within an hour were nearly seven times as likely to qualify them ([Harvard Business Review](https://hbr.org/2011/03/the-short-life-of-online-sales-leads)) — and most small businesses are nowhere near an hour on evenings and weekends. Tools: WhatsApp Business API, website chat, Meta lead forms, connected to Google Calendar or Calendly. This is Webimot's [Capture system](/systems) (WhatsApp AI and LeadFire). It saves the hours spent on first replies and reaches the leads that previously went cold.
+The task: a new enquiry arrives from WhatsApp, your website form, Facebook or Instagram ads, or email, and someone has to answer it. The automation: an AI agent replies within seconds (under 3 seconds on WhatsApp), in the customer's language, asks two or three qualifying questions and books a call or sends the right information. Why first: Harvard Business Review's audit of 2,241 companies found those that contacted leads within an hour were nearly seven times as likely to qualify them ([Harvard Business Review](https://hbr.org/2011/03/the-short-life-of-online-sales-leads)) — and most small businesses are nowhere near an hour on evenings and weekends. Tools: WhatsApp Business API, website chat, Meta lead forms, connected to Google Calendar or Calendly. This is Webimot's [Capture system](/systems) (WhatsApp AI and LeadFire). It saves the hours spent on first replies and reaches the leads that previously went cold.
 
 ### 2. Follow-up sequences for leads that went quiet
 
@@ -384,7 +384,7 @@ The goal is to be cited for your core procedures in your top two source countrie
 1. **Days 1–15: Audit and baseline.** Run the ten-question test above and record results. Check robots.txt, structured data and crawlability. Fix inconsistent facts across profiles.
 2. **Days 16–45: Publish the foundation.** Procedure pages with price ranges for your top three procedures, surgeon profiles, one FAQ page per procedure, llms.txt, schema markup on all of them. Server-render if needed.
 3. **Days 46–75: Corroborate.** Launch a systematic review request flow (ideally automated after treatment), claim and complete directory listings, pitch two or three case studies to medical tourism publications.
-4. **Days 76–90: Measure and expand.** Re-run the ten-question test. Add procedure pages for the next three treatments and translate the top pages into German and Arabic. Connect the WhatsApp number named in your pages to an AI agent so the enquiries the AI sends you are answered in under 60 seconds.
+4. **Days 76–90: Measure and expand.** Re-run the ten-question test. Add procedure pages for the next three treatments and translate the top pages into German and Arabic. Connect the WhatsApp number named in your pages to an AI agent so the enquiries the AI sends you are answered in under 3 seconds.
 
 That last step matters more than it looks. GEO changes where patients find you, not how fast you reply. A clinic that is recommended by ChatGPT at 23:00 and answers at 09:30 has handed the patient to the next clinic in the list. Webimot's [WhatsApp AI](/products/whatsapp-ai) is built for exactly this moment.
 
