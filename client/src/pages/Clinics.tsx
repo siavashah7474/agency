@@ -19,7 +19,7 @@ const audience = AUDIENCES[0];
 const CHALLENGES = [
   "Patients enquire at midnight from Germany, the UK or the Gulf and get no reply until the next morning. By then they have booked with a competitor.",
   "Staff spend hours answering the same WhatsApp questions in English, Arabic, German and Russian.",
-  "Photo evaluations for hair transplants, veneers and cosmetic procedures are done by hand: slow, inconsistent and costly.",
+  "Photos for hair transplants, veneers and cosmetic procedures are collected and sorted by hand: slow, inconsistent and costly.",
   "Patients who asked for a quote never hear back a second time. There is no consistent follow-up system.",
   "Intake forms, consent documents and invoices are typed in manually, and nobody knows how many enquiries actually became treatments.",
 ];
@@ -27,8 +27,8 @@ const CHALLENGES = [
 // The four systems, applied to a clinic.
 const LADDER: Record<SystemId, { title: string; detail: string }> = {
   capture: {
-    title: "A patient enquiry on WhatsApp answered in Arabic, German or English, with photo evaluation and the consultation booked.",
-    detail: "The AI agent runs on your clinic's own WhatsApp Business number. It detects the language, answers questions about procedures, grafts and prices, evaluates the photos the patient sends and books a video consultation straight into your calendar. Voice notes are transcribed too.",
+    title: "A patient enquiry on WhatsApp answered in Arabic, German or English, with photos collected for the doctor and the consultation booked.",
+    detail: "The AI agent runs on your clinic's own WhatsApp Business number. It detects the language, answers common questions about procedures and price ranges, collects the photos the patient sends for your doctors and books a video consultation straight into your calendar. Voice notes are transcribed too.",
   },
   convert: {
     title: "Follow-up for every patient who asked for a quote but did not book.",
@@ -54,7 +54,7 @@ const FAQS = [
     answer: "40+ languages, detected automatically from the first message. For medical tourism clinics the most common are English, German, Dutch, Arabic, French, Russian and Turkish. Replies, follow-ups and reports can each use a different language.",
   },
   {
-    question: "How does photo evaluation work, and is it medically safe?",
+    question: "How does photo pre-qualification work, and is it medically safe?",
     answer: "Patients send photos on WhatsApp as they do today. The AI sorts and pre-qualifies them against rules your doctors define (for example graft range or treatment candidacy) so your coordinators and doctors see a prepared case, not a raw chat. It never gives a diagnosis, a treatment decision or a final price: those always come from your medical team, and any medical question is handed to a person.",
   },
   {
@@ -389,7 +389,7 @@ export default function Clinics() {
             <div className="container relative z-10 mx-auto max-w-3xl px-6 text-center">
               <h2 className="mb-4 text-3xl font-bold tracking-tight text-white md:text-4xl">{t("clinicsPage.cta.title", "Book a demo on your own WhatsApp number")}</h2>
               <p className="mx-auto mb-8 max-w-2xl text-lg text-white/70">
-                {t("clinicsPage.cta.text", "Send us a real patient enquiry and watch the AI answer it in the patient's language, evaluate the photo and book the consultation. 30 minutes, no commitment.")}
+                {t("clinicsPage.cta.text", "Send us a real patient enquiry and watch the AI answer it in the patient's language, collect the photo for the doctor and book the consultation. 30 minutes, no commitment.")}
               </p>
               <ul className="mx-auto mb-8 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/60">
                 {["Live on your WhatsApp in 48 hours", "3 qualified leads in 30 days or your first month back", "Your team can take over any chat"].map((item, i) => t(`clinicsPage.cta.points.${i}`, item)).map((item) => (

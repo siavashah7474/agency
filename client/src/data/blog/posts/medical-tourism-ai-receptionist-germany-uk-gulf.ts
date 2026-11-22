@@ -12,7 +12,7 @@ These patients are research-driven and impatient. They compare several clinics b
 
 [Webimot's AI receptionist](/clinics) is an intelligent, always-on system that:
 - Responds to every inquiry in under 3 seconds, in the patient's native language
-- Answers detailed questions about procedures, pricing, recovery, and logistics
+- Answers common questions about procedures, price ranges, recovery, and logistics, and passes medical questions to a person
 - Qualifies the patient's interest and seriousness
 - Schedules video consultations automatically
 - Sends follow-up messages to warm leads
@@ -85,7 +85,7 @@ Fast replies win more leads. In medical tourism, where patients are comparing se
 **A typical patient journey (illustrative):**
 1. Patient searches "hair transplant Turkey cost" at 9 PM from Amsterdam
 2. Sends the same inquiry to several clinics
-3. Some reply within a minute (AI-assisted)
+3. Some reply within seconds (AI-assisted)
 4. Some reply within a couple of hours (automated email)
 5. The rest reply the next morning (human staff)
 
@@ -95,7 +95,7 @@ Fast replies win more leads. In medical tourism, where patients are comparing se
 
 Medical tourism patients communicate in their native language when they feel anxious or uncertain. A German patient asking about rhinoplasty surgery will share their real concerns more readily in German.
 
-[Webimot's AI receptionist](/clinics) is built to converse in the main medical tourism source market languages:
+[Webimot's AI receptionist](/clinics) converses in 40+ languages, including the main medical tourism source market languages:
 
 | Source Market | Language | [Webimot](/) Covers It |
 |---|---|---|
@@ -110,7 +110,7 @@ Medical tourism patients communicate in their native language when they feel anx
 
 ## Estimating the Return of an [AI Receptionist](/clinics) for Your Clinic
 
-We do not publish conversion figures, because they depend on your clinic. To estimate the effect yourself, look at:
+What clinics can expect from the WhatsApp AI is around 60% more consultations booked and 40+ hours of manual messaging saved per month. That is an expectation, not a guarantee, and we do not publish client result figures, because they depend on the clinic. To estimate the effect yourself, look at:
 
 - How many inquiries you receive per month
 - How long your first reply takes today, especially at night and on weekends
@@ -127,7 +127,7 @@ The implementation process is simpler than most clinic owners expect:
 2. **AI training** — [Webimot](/) trains the AI on your specific procedures, FAQs, pricing, and consultation process
 3. **Language setup** — Configure all relevant languages for your source markets
 4. **Integration** — [Webimot](/) connects to WhatsApp, website chat, email, and Instagram DMs
-5. **Go live** — Your [Webimot AI receptionist](/clinics) starts handling inquiries; we aim for go-live within 2–4 weeks
+5. **Go live** — Your [Webimot AI receptionist](/clinics) starts handling inquiries; the WhatsApp AI is live within 48 hours of onboarding, and a larger build across several channels and systems takes 2–4 weeks
 6. **Optimisation** — Ongoing refinement based on real conversation data
 
 Visit [webimotagency.com](/) to see exactly how our AI receptionist works and book a free demo tailored to your clinic's speciality.

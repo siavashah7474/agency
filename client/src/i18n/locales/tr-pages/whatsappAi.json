@@ -317,7 +317,7 @@
           "answer": "Yapay zekâ, hastanın istediği tedavi, bütçe aralığı ve seyahat zamanlaması hakkında yapılandırılmış takip soruları sorar. Yalnızca kriterlerinizi karşılayan hastalar ekibinize iletilir; bu da saatlerce süren manuel yazışmayı ortadan kaldırır."
         },
         {
-          "question": "Fotoğraf değerlendirmesi nasıl çalışır ve tıbbi açıdan güvenli midir?",
+          "question": "Fotoğraf ön değerlendirmesi nasıl çalışır ve tıbbi açıdan güvenli midir?",
           "answer": "Hastalar bugün olduğu gibi fotoğraflarını WhatsApp'tan gönderir. Yapay zekâ bu fotoğrafları doktorlarınızın belirlediği kurallara göre (örneğin greft aralığı) sınıflandırır ve ön değerlendirmeden geçirir; böylece koordinatörleriniz ve doktorlarınız ham bir sohbet yerine hazırlanmış bir vaka görür. Asla teşhis koymaz, tedaviye uygunluğa karar vermez ve kesin fiyat söylemez: bunlar her zaman tıbbi ekibinizden gelir."
         },
         {

@@ -40,14 +40,14 @@ To cover all hours with human agents, you need:
 - Integration with existing systems: Included
 
 ### Ongoing Costs
-- A monthly fee, quoted for your setup
-- All supported languages included
+- A monthly fee: the WhatsApp AI is €599/month on Essential (after a €1,399 one-time setup) or €999/month on Pro, with a 3-month minimum; other systems are quoted after a free AI audit
+- All 40+ supported languages included
 - No extra shifts to pay for at night or on weekends
 
 ### What [Webimot AI](/systems) Gets You
 - 24/7 availability
 - Fast first responses (designed to reply in under 3 seconds)
-- Multilingual conversations
+- Conversations in 40+ languages
 - Consistent answers based on your approved information
 - Capacity that does not depend on headcount
 
@@ -67,14 +67,14 @@ The comparison is rarely just cost against cost. An AI setup usually changes cov
 |--------|------------|---------------|
 | Response time | Depends on staffing and time of day | Designed to reply in under 3 seconds |
 | Availability | Working hours or shifts | 24/7 |
-| Languages | Those your staff speak | Many |
+| Languages | Those your staff speak | 40+ |
 | Consistency | Varies by person | Same approved information every time |
 | Scalability | Limited by headcount | Not tied to headcount |
 
 ## When to Keep Humans
 
 [Webimot's AI solutions](/systems) are not meant to replace all human interaction. Keep humans for:
-- Complex medical consultations
+- Medical questions and consultations
 - Sensitive patient situations
 - High-value relationship building
 - Cases requiring empathy and judgment

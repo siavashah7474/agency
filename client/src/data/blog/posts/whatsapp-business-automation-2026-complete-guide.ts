@@ -41,19 +41,19 @@ This qualification data gets stored automatically in your CRM, scored, and used 
 
 **Without automation:** Team member reads message → thinks about response → types reply → waits for response → asks follow-up questions → creates CRM entry manually. That is a lot of staff time per lead.
 
-**With automation:** All of the above happens within minutes, automatically, whether it's 2 PM or 2 AM.
+**With automation:** The first reply lands in under 3 seconds and all of the above happens automatically within the same conversation, whether it's 2 PM or 2 AM.
 
-### Workflow 2: Photo and Document Evaluation
+### Workflow 2: Photo and Document Pre-Qualification
 
 For medical, aesthetic, dental, and cosmetic businesses, leads frequently send photos as part of their enquiry — a hair loss photo, dental condition image, skin concern, body area for cosmetic treatment.
 
-Vision AI — the ability to receive and pre-screen these images automatically — helps here. Your AI agent can:
-- Acknowledge the photo and give a preliminary, non-binding read
+Vision AI — the ability to receive, check and organise these images automatically — helps here. Your AI agent can:
+- Acknowledge the photo and check that the set is complete and usable (right angles, sharp, well lit)
 - Set expectations for what the consultation will cover
-- Suggest the appropriate procedure or consultation type
-- Flag promising cases for your clinical team's attention
+- Ask for any missing photos or history the doctor will need
+- Pass the organised case to your clinical team for review
 
-This used to be a fully manual process. The final assessment still belongs to your clinical team.
+This used to be a fully manual process. The AI does not evaluate or diagnose anything from the photos: the assessment, the choice of procedure and the final price belong to your clinical team.
 
 ### Workflow 3: Appointment Booking
 
@@ -147,17 +147,17 @@ The change is in how the team's time is used, and in how many enquiries get a ti
 
 The fastest way to get your WhatsApp pipeline automated:
 
-**Week 1:** Audit your current WhatsApp volume, response times, and conversion rates. Identify your top 10 most common enquiry types.
+**Step 1:** Audit your current WhatsApp volume, response times, and conversion rates. Identify your top 10 most common enquiry types.
 
-**Week 2:** Build and test your AI agent with those 10 enquiry types. Connect to your calendar and CRM.
+**Step 2:** Set up and test your AI agent with those 10 enquiry types and go live. With Webimot's WhatsApp AI this happens within 48 hours of onboarding, with no technical work on your side.
 
-**Week 3–4:** Go live, monitor conversations, refine responses, and add the nurture and follow-up sequences.
+**First weeks after go-live:** Monitor conversations, refine responses, connect your calendar and CRM where needed, and add the nurture and follow-up sequences.
 
 **Month 2 onwards:** Run your first reactivation campaign on your existing contact database.
 
-Target time to full deployment: 2–4 weeks.
+Target time: the WhatsApp AI alone is live within 48 hours of onboarding. Allow 2–4 weeks only for a larger build that connects several systems or needs custom integrations.
 
 If you want this built, configured, and managed for your business — without your team having to learn new tools or manage the technical setup — [Webimot Agency](https://webimotagency.com) handles it end to end.
 
-[Book a free 30-minute WhatsApp automation audit](https://webimotagency.com/book-consultation) — we'll map your current pipeline, and show you what can be automated before you commit to anything.
+[Book a free 30-minute strategy call](https://webimotagency.com/book-consultation) — we'll map your current pipeline, and show you what can be automated before you commit to anything.
     `;

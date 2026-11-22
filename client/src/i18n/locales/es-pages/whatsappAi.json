@@ -317,7 +317,7 @@
           "answer": "La IA hace preguntas de seguimiento estructuradas sobre el tratamiento que busca el paciente, su rango de presupuesto y sus plazos de viaje. Solo los pacientes que cumplen tus criterios pasan a tu equipo, lo que ahorra horas de mensajes manuales."
         },
         {
-          "question": "¿Cómo funciona la evaluación de fotos y es segura desde el punto de vista médico?",
+          "question": "¿Cómo funciona la preselección de fotos y es segura desde el punto de vista médico?",
           "answer": "Los pacientes envían sus fotos por WhatsApp como ya lo hacen hoy. La IA las clasifica y precalifica según las reglas que definen tus médicos (por ejemplo, el rango de injertos), para que tus coordinadores y médicos vean un caso preparado y no un chat sin ordenar. Nunca da un diagnóstico, nunca decide si alguien es candidato y nunca confirma un precio final: eso siempre lo hace tu equipo médico."
         },
         {

@@ -1,6 +1,6 @@
 // Article body (markdown) for /blog/ai-for-dental-clinics-2026-patient-journey-automation. Title, date and excerpt live in ../index.ts.
 export default `
-AI for dental clinics works best when it follows the patient journey rather than sitting in one department: it answers the first WhatsApp enquiry in seconds, turns a photo into a preliminary assessment and quote range, books the consultation, prepares the treatment-plan and insurance paperwork, and brings the patient back for recall and reviews. Each of those steps is a repetitive, time-critical task that a two-chair clinic currently does by hand between patients, which is why the front desk, not the surgery, is the natural place for dental practice AI to start. This guide maps the journey stage by stage, shows what to automate and what to keep human, and gives a realistic week-by-week timeline.
+AI for dental clinics works best when it follows the patient journey rather than sitting in one department: it answers the first WhatsApp enquiry in seconds, collects the patient's photos for the dentist and shares a price range, books the consultation, prepares the treatment-plan and insurance paperwork, and brings the patient back for recall and reviews. Each of those steps is a repetitive, time-critical task that a two-chair clinic currently does by hand between patients, which is why the front desk, not the surgery, is the natural place for dental practice AI to start. This guide maps the journey stage by stage, shows what to automate and what to keep human, and gives a realistic week-by-week timeline.
 
 ## Why AI for dental clinics is now a front-desk decision, not a clinical one
 
@@ -31,18 +31,18 @@ What AI automates:
 
 What stays human: anything clinical, any complaint, and any patient who asks for a person. The hand-off should be instant and visible in the same thread.
 
-## Stage 2: Photo, preliminary assessment and quote range
+## Stage 2: Photo collection, case preparation and quote range
 
 Dental patients send photos before they send money, usually within the first ten messages. Today that photo waits until a dentist has a gap, and the patient waits with it.
 
 What AI automates:
 
 - Accepts the photo, checks it is usable (lighting, angle, whole arch visible) and asks for a better one if not
-- Gives a preliminary indication: likely candidate for veneers or crowns, probable number of units, whether implants or a bridge is more likely, and what a dentist must look at first
+- Collects what the dentist needs alongside it (which teeth, the goal, previous dental work, any pain) and tells the patient a dentist will review the case; it gives no opinion on candidacy, treatment or number of units
 - Quotes a range from your published price list, with inclusions, never a fixed figure
-- Packages the photo, answers and notes for the dentist, who confirms or corrects in minutes rather than typing from scratch
+- Packages the photo, answers and notes for the dentist, who can assess the case in minutes with everything in one place
 
-What stays human: the actual assessment and the final quote. The AI's job is to make the dentist's review a two-minute confirmation. The guardrails are the same ones we describe for hair and skin cases in our guide to [Vision AI photo evaluation](/blog/vision-ai-photo-evaluation-medical-tourism): no diagnosis, no promised result, no final price before a dentist has looked.
+What stays human: the actual assessment and the final quote. The AI's job is to make the dentist's review a two-minute job. The guardrails are the same ones we describe for hair and skin cases in our guide to [Vision AI photo evaluation](/blog/vision-ai-photo-evaluation-medical-tourism): no diagnosis, no candidacy decision, no promised result, no final price before a dentist has looked.
 
 ## Stage 3: Booking the consultation and making sure the patient arrives
 
@@ -95,22 +95,22 @@ This is the Follow-up system in our ladder: NurtureLoop for the timed sequences 
 | Stage | Automate with AI | Keep human |
 |---|---|---|
 | Enquiry | First reply, FAQs, qualification, language, CRM entry | Emergencies, complaints, anyone asking for a person |
-| Photo and quote | Photo quality check, preliminary indication, price range, case packaging | Clinical assessment, final quote |
+| Photo and quote | Photo collection and quality check, price range, case packaging | Clinical assessment, candidacy, final quote |
 | Booking and arrival | Slot offer, confirmation, reminders, deposit link, reschedule, no-show follow-up | Deposit policy, special arrangements |
 | Treatment plan and paperwork | Plan draft, patient summary, document reading, insurance forms, filing | The plan, consent, final check before sending |
 | Recall and reviews | Recall invitations, review requests and reply drafts, reactivation | Recall intervals, replies to clinical questions |
 
 ## A realistic timeline for a two-chair dental clinic
 
-The honest answer for a managed deployment is live in 2 to 4 weeks for the first stage, then one more stage every few weeks.
+The honest answer for a managed deployment: the WhatsApp AI that covers the first stage is live within 48 hours of onboarding, then one more stage every few weeks.
 
-**Week 1: Knowledge and rules.** Collect the treatment list with price ranges, package inclusions, opening hours, the twenty questions patients ask most, your photo rules (what the AI may and may not say) and the hand-off rules. Connect the WhatsApp Business number and Google Calendar. Record your current first-reply time and consultation booking rate so you can prove the change.
+**Week 1: Onboarding and go-live for Stages 1 and 3.** Collect the treatment list with price ranges, package inclusions, opening hours, the twenty questions patients ask most, your photo rules (what the AI may and may not say) and the hand-off rules. Connect the WhatsApp Business number and Google Calendar. Record your current first-reply time and consultation booking rate so you can prove the change. The agent is built on your knowledge base and is live on your real WhatsApp number within 48 hours of onboarding, with no technical work from the clinic.
 
-**Week 2: Build and test Stages 1 and 3.** The agent is built on your knowledge base, then the team tests it with realistic messages in each language you serve, including awkward ones ("Is it painful?", "Can you do it cheaper?", "My tooth fell out just now"). Fix the knowledge base, not the prompts.
+**Week 2: Test and tune.** The team tests it with realistic messages in each language you serve, including awkward ones ("Is it painful?", "Can you do it cheaper?", "My tooth fell out just now"). Fix the knowledge base, not the prompts.
 
-**Week 3: Supervised launch.** The agent goes live on your real WhatsApp number. A coordinator reads every transcript daily for the first week and sends corrections; patients are told they are talking to an AI assistant.
+**Week 3: Supervised running.** A coordinator reads every transcript daily in these first weeks and sends corrections; patients are told they are talking to an AI assistant.
 
-**Week 4: Add Stage 2 photos.** Photo handling is enabled with your dentist's rules; the dentist reviews the first batch of preliminary indications and tightens the wording where needed.
+**Week 4: Add Stage 2 photos.** Photo handling is enabled with your dentist's rules; the dentist reviews the first batch of prepared cases and tightens the photo instructions where needed.
 
 **Weeks 5 to 6: Stage 4 paperwork.** DocuMind is connected to your practice software or spreadsheets; treatment-plan templates and insurance forms are mapped.
 
@@ -122,15 +122,15 @@ The honest answer for a managed deployment is live in 2 to 4 weeks for the first
 
 ### What can AI actually do in a dental clinic?
 
-In 2026 AI is most useful in the hours around the chair: answering WhatsApp and web enquiries instantly in any language, giving a preliminary indication and price range from a photo, booking and reminding, drafting treatment plans and insurance paperwork from the dentist's notes, and running recalls and review requests. Clinical diagnosis and treatment decisions remain with the dentist, which is also where the ADA survey shows dentists want the line drawn.
+In 2026 AI is most useful in the hours around the chair: answering WhatsApp and web enquiries instantly in any language, collecting photos for the dentist and sharing a price range, booking and reminding, drafting treatment plans and insurance paperwork from the dentist's notes, and running recalls and review requests. Clinical diagnosis and treatment decisions remain with the dentist, which is also where the ADA survey shows dentists want the line drawn.
 
 ### Will an AI agent give patients a dental diagnosis or a fixed price?
 
-It should not, and a well-configured one is prevented from doing so. The agent gives a preliminary indication and a price range from your published list, with clear wording that a dentist will confirm after examination, and it escalates anything that looks clinical. Final assessment and final quote always come from the dentist.
+It should not, and a well-configured one is prevented from doing so. The agent collects photos and history and shares a price range from your published list, with clear wording that a dentist will confirm after examination, and it passes anything clinical to a person. Final assessment and final quote always come from the dentist.
 
 ### How quickly can a dental clinic go live with AI?
 
-A managed deployment of the enquiry and booking stages typically takes 2 to 4 weeks: one week to gather treatments, prices, FAQs and rules, one to two weeks to build and test, then a supervised launch. Photo handling, paperwork automation and recall sequences are added over the following weeks once the first stage is stable.
+The WhatsApp AI that covers the enquiry and booking stages is live within 48 hours of onboarding, with no technical work from the clinic, followed by a few supervised weeks of testing and tuning. Photo handling, paperwork automation and recall sequences are added over the following weeks once the first stage is stable.
 
 ### Does this work for a small two-chair clinic or only for large dental groups?
 
@@ -145,7 +145,7 @@ Pick the numbers before you start: first-reply time, enquiries per month, consul
 - 43.3% of dentists already use AI ([ADA Health Policy Institute](https://www.ada.org/resources/research/health-policy-institute/dental-practice-research/dentists-ai-usage-and-attitudes)), and the growth is administrative: insurance verification, charting and front desk, not treatment decisions.
 - Reply to dental patient enquiries on WhatsApp in under 3 seconds in the patient's language; patients message several clinics at once, so the first proper reply matters.
 - Keep clinical assessment, final quotes, consent and complaints human; let AI draft, remind, file and follow up.
-- Expect the first stage live in 2 to 4 weeks and the full journey in about two months, measured weekly against a baseline recorded before you start.
+- Expect the first stage live within 48 hours of onboarding and the full journey in about two months, measured weekly against a baseline recorded before you start.
 
 If you would like to know which of the five stages would pay back fastest for your own clinic, Webimot's free AI audit maps your current patient journey and returns the top automation opportunities with ROI estimates within 3 days, followed by a demo on your own enquiries. [Book your free AI audit](/book-consultation).
 `;

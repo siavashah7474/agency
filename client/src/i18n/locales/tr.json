@@ -316,8 +316,8 @@
       },
       {
         "title": "7/24 Hasta Yanıtı",
-        "description": "Artık hiçbir sorguyu kaçırmayın. AI'mız siz uyurken bile hasta sorularını ele alır, fotoğrafları değerlendirir ve konsültasyonları kaydeder.",
-        "stats": "Bir dakika içinde yanıt için tasarlandı"
+        "description": "Artık hiçbir sorguyu kaçırmayın. AI'mız siz uyurken bile hasta sorularını ele alır, fotoğrafları doktorlarınız için toplar ve konsültasyonları kaydeder.",
+        "stats": "3 saniyenin altında yanıt"
       },
       {
         "title": "Her Hasta Yolculuğunu Takip Edin",
@@ -326,10 +326,10 @@
       }
     ],
     "partnerTitle": "Kliniğinizin Büyüme Ortağı",
-    "partnerDesc": "Sistemlerimiz sağlık turizmi kliniklerinin çalışma biçimine göre tasarlanmıştır: Arapça, Almanca ve İngilizce hasta taleplerini yönetmek, öncesi/sonrası fotoğraflarını değerlendirmek ve uluslararası hastaları ilk mesajdan randevusu alınmış konsültasyona taşımak.",
+    "partnerDesc": "Sistemlerimiz sağlık turizmi kliniklerinin çalışma biçimine göre tasarlanmıştır: Arapça, Almanca ve İngilizce hasta taleplerini yönetmek, hasta fotoğraflarını doktor için toplayıp sınıflandırmak ve uluslararası hastaları ilk mesajdan randevusu alınmış konsültasyona taşımak.",
     "partnerItems": [
       "Çok dilli hasta iletişimi (EN, DE, AR, RU)",
-      "Saç, diş ve estetik prosedürler için AI fotoğraf değerlendirme",
+      "Saç, diş ve estetik prosedürler için AI fotoğraf ön değerlendirmesi (asla teşhis değildir)",
       "Otomatik konsültasyon rezervasyonu & takvim senkronizasyonu",
       "İlk sorgulardan operasyona kadar hasta yolculuğu takibi"
     ],

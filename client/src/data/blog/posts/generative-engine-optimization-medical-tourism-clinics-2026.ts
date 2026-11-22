@@ -111,7 +111,7 @@ Technical fixes (crawler access, schema, consistent facts) can change AI answers
 - AI engines cite clinics that publish direct, specific, consistent facts: procedure pages, price ranges, surgeon credentials, FAQs and case studies.
 - Technical basics: allow AI crawlers, add MedicalClinic, Physician, MedicalProcedure and FAQPage schema, publish llms.txt, server-render content, keep facts identical everywhere.
 - Follow a 90-day plan: audit, publish the foundation, corroborate with reviews and directories, measure and expand.
-- Being recommended is only half the job; the enquiry still has to be answered in under a minute.
+- Being recommended is only half the job; the enquiry still has to be answered within seconds.
 
 Webimot builds the publishing side (SEO Blog AI and llms.txt for clinics) and the answering side (the WhatsApp AI Capture system) so that being found by AI turns into booked consultations. If you want to know where your clinic stands today, our free AI audit covers both within 3 days — [book your free AI audit](/book-consultation) or explore [AI systems for clinics](/clinics).
 `;

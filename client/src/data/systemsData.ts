@@ -42,7 +42,7 @@ export const SYSTEMS: SystemDef[] = [
     headline: "Every enquiry answered in seconds, in the customer's language, 24/7.",
     replaces: "Missed messages and slow replies",
     description:
-      "An AI agent on your WhatsApp Business number (and web chat) that answers questions, qualifies the lead, evaluates photos where relevant and books the appointment straight into your calendar — the moment the message arrives.",
+      "An AI agent on your WhatsApp Business number (and web chat) that answers questions, qualifies the lead, collects photos for your doctor where relevant and books the appointment straight into your calendar — the moment the message arrives.",
     outcomes: ["Replies in under 3 seconds on WhatsApp, day and night", "The customer's language detected automatically", "Qualified leads booked, not just answered"],
     products: [
       { name: "WhatsApp AI", href: "/products/whatsapp-ai", emoji: "💬", oneLiner: "24/7 AI agent on WhatsApp that answers, qualifies and books." },

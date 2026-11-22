@@ -316,8 +316,8 @@
       },
       {
         "title": "Respuesta a Pacientes 24/7",
-        "description": "Nunca pierdas una consulta. Nuestra IA gestiona preguntas de pacientes, evalúa fotos y reserva consultas incluso mientras duermes.",
-        "stats": "Diseñado para responder en un minuto"
+        "description": "Nunca pierdas una consulta. Nuestra IA gestiona preguntas de pacientes, recopila las fotos para tus médicos y reserva consultas incluso mientras duermes.",
+        "stats": "Responde en menos de 3 segundos"
       },
       {
         "title": "Seguir Cada Recorrido del Paciente",
@@ -326,10 +326,10 @@
       }
     ],
     "partnerTitle": "El Socio de Crecimiento de Tu Clínica",
-    "partnerDesc": "Nuestros sistemas están pensados para la forma de trabajar de las clínicas de turismo médico: gestionar consultas de pacientes en árabe, alemán e inglés, evaluar fotos de antes/después y acompañar a los pacientes internacionales desde el primer mensaje hasta la consulta reservada.",
+    "partnerDesc": "Nuestros sistemas están pensados para la forma de trabajar de las clínicas de turismo médico: gestionar consultas de pacientes en árabe, alemán e inglés, recopilar y ordenar las fotos de los pacientes para el médico y acompañar a los pacientes internacionales desde el primer mensaje hasta la consulta reservada.",
     "partnerItems": [
       "Comunicación multilingüe con pacientes (EN, DE, AR, RU)",
-      "Evaluación IA de fotos para procedimientos capilares, dentales y estéticos",
+      "Preselección de fotos con IA para procedimientos capilares, dentales y estéticos (nunca un diagnóstico)",
       "Reserva de consultas automatizada y sincronización de calendario",
       "Seguimiento del recorrido del paciente desde la consulta hasta el procedimiento"
     ],

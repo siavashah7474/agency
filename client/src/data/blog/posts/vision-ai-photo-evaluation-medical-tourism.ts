@@ -2,125 +2,128 @@
 export default `
 ## The Photo Evaluation Challenge
 
-Medical tourism clinics receive a steady stream of patient photos—hairlines, smiles, body profiles—requiring evaluation. Traditionally, this process is:
+Medical tourism clinics receive a steady stream of patient photos—hairlines, smiles, body profiles—requiring evaluation by a doctor. Traditionally, this process is:
 
-- **Time-consuming:** Doctors spend hours reviewing photos
-- **Inconsistent:** Different evaluators give different assessments
-- **Slow to respond:** Patients wait hours or days for quotes
-- **Limited by expertise:** Not all staff can evaluate medical photos
+- **Time-consuming:** Doctors and coordinators spend hours chasing, sorting and reviewing photos
+- **Inconsistent:** Photos arrive in different angles, quality and order for every patient
+- **Slow to respond:** Patients wait hours or days before anyone acknowledges what they sent
+- **Limited by expertise:** Not all staff know which photos the doctor needs
 
 ## Enter Vision AI
 
-[Webimot's AI solutions](/systems) include computer vision technology designed to give a preliminary read on patient photos. The system is built to:
+[Webimot's AI solutions](/systems) include computer vision technology used for photo pre-qualification: collecting, checking and organising patient photos so the doctor can review them quickly. The AI is a front desk, not a doctor. The system is built to:
 
-- Assess hair loss patterns and recommend graft counts
-- Evaluate dental conditions and suggest treatments
-- Analyze skin conditions for cosmetic procedures
-- Provide instant preliminary assessments
+- Ask for the right photos for each procedure (for example front, top, back and donor area for hair)
+- Check that the set is complete and usable: right angles, sharp, well lit
+- Request retakes or missing photos straight away
+- Organise the photos with the patient's history into one case file for the doctor
+
+It never gives a diagnosis, never decides whether someone is a candidate, never estimates graft counts and never quotes a final price.
 
 ## How It Works
 
 ### 1. Photo Submission
 Patient submits photos via WhatsApp, website, or email.
 
-### 2. AI Analysis
-Vision AI analyzes the images for:
-- Condition severity
-- Treatment suitability
-- Estimated procedure requirements
-- Potential complications or concerns
+### 2. AI Photo Check
+Vision AI checks the images for:
+- Completeness (all required angles for the procedure)
+- Usable quality (focus, lighting, framing)
+- Anything missing from the patient's history or intake answers
+- Medical questions that need to go to a person
 
 ### 3. Instant Response
 Within seconds, patient receives:
-- Preliminary assessment
-- Estimated treatment plan
-- Approximate cost range
+- Confirmation that the photos have arrived
+- A request for any missing or unclear photos
+- The clinic's general price range, where the clinic has set one (the final price comes after the doctor's review)
 - Next steps for consultation
 
 ### 4. Human Review
-Complex cases flagged for doctor review, but AI handles routine assessments.
+Every case goes to the doctor for review. The AI handles the collecting and organising; the medical assessment is always human.
 
 ## Use Cases in Medical Tourism
 
 ### Hair Transplant
-AI can analyze:
-- Norwood scale classification
-- Donor area density
-- Estimated graft count needed
-- Suitability for FUE vs FUT
+AI can collect and organise:
+- Front, top, crown and side photos
+- Donor area photos
+- History of hair loss and previous procedures
+- Travel dates and budget range
 
-**Impact:** A preliminary estimate in seconds instead of waiting for a manual review
+**Impact:** The doctor gets a complete case file instead of a scattered chat thread, and estimates the graft count and technique from it
 
 ### Dental Procedures
-AI can assess:
-- Missing or damaged teeth
-- Alignment issues
-- Gum condition
-- Treatment complexity
+AI can collect and organise:
+- Smile and bite photos
+- Existing X-rays or scans the patient already has
+- Previous dental work and current complaints
+- Treatment the patient is asking about
 
-**Impact:** A preliminary treatment outline before the consultation
+**Impact:** The dentist has what is needed to prepare a treatment outline before the consultation
 
 ### Cosmetic Surgery
-AI can evaluate:
-- Facial proportions
-- Skin quality
-- Structural considerations
-- Procedure recommendations
+AI can collect and organise:
+- Standard front and profile photos
+- The patient's goals in their own words
+- Relevant medical history
+- Questions the patient wants the surgeon to answer
 
-**Impact:** A personalized starting point for the consultation
+**Impact:** A well-prepared starting point for the consultation
 
 ## Benefits for Clinics
 
 ### Speed
 - Instant responses to patient inquiries
-- No waiting for doctor availability
-- 24/7 evaluation capability
+- No waiting for staff to ask for missing photos
+- 24/7 photo intake
 
 ### Consistency
-- Same evaluation criteria every time
-- Standardized assessments
-- Reduced human error
+- Same photo checklist every time
+- Standardized case files
+- Fewer incomplete submissions
 
 ### Scalability
-- Volume does not depend on how many evaluators are on shift
-- No additional staff needed for routine cases
+- Volume does not depend on how many coordinators are on shift
+- No additional staff needed for photo intake
 - Peak periods handled smoothly
 
 ### Cost Efficiency
-- Reduced doctor time on routine evaluations
+- Reduced doctor time lost to incomplete or unusable photos
 - Less manual work per inquiry
 - Faster responses to interested patients
 
 ## Benefits for Patients
 
 ### Immediate Answers
-No more waiting days for a quote. Get preliminary assessment in seconds.
+No more waiting days to hear whether the photos were even received. Patients get an acknowledgement and clear next steps in seconds.
 
 ### Accurate Expectations
-A preliminary assessment sets expectations early; the doctor confirms the plan.
+Patients know from the start that the doctor reviews their photos and confirms the plan and the final price.
 
 ### Better Preparation
 Patients come to consultations better informed and ready to decide.
 
 ## The Human Element
 
-Vision AI doesn't replace doctors—it enhances their capabilities:
+Vision AI doesn't replace doctors—it prepares their work:
 
-- **Routine cases:** AI handles independently
-- **Complex cases:** AI flags for doctor review
-- **All cases:** Doctor makes final treatment decisions
+- **Photo intake:** AI collects, checks and organises
+- **Medical questions:** AI passes them to a person
+- **All cases:** Doctor makes the assessment and the final treatment decisions
 
-The AI is a powerful tool that makes doctors more efficient, not obsolete.
+The AI is a tool that makes doctors more efficient, not obsolete. It introduces itself to patients as the clinic's AI assistant.
 
 ## Implementation Considerations
 
 ### Data Privacy
-- Secure handling of medical photos
-- HIPAA/GDPR compliance
+- Secure, encrypted handling of medical photos
+- GDPR / EU data protection compliance
 - Clear patient consent
+- Conversations are not used to train public models
 
-### Accuracy Validation
-- Regular accuracy testing
+### Quality Checks
+- Regular review of AI conversations
 - Human oversight protocols
 - Continuous improvement
 
@@ -131,15 +134,15 @@ The AI is a powerful tool that makes doctors more efficient, not obsolete.
 
 ## The Competitive Advantage
 
-[Webimot's Vision AI](/clinics) for photo evaluation is designed to help a clinic:
-- Respond to photo inquiries much faster than a manual review allows
+[Webimot's Vision AI](/clinics) for photo pre-qualification is designed to help a clinic:
+- Respond to photo inquiries much faster than a manual process allows
 - Keep patients engaged while their interest is fresh
-- Free up doctor time for complex cases
-- Apply the same criteria to every preliminary assessment
+- Free up doctor time for the review itself
+- Apply the same photo checklist to every case
 
 ## Getting Started
 
-[Webimot's AI photo evaluation](/clinics) is something we can set up as part of a clinic's inquiry flow, with your doctors defining what the AI may and may not say.
+[Webimot's AI photo pre-qualification](/clinics) is something we can set up as part of a clinic's inquiry flow, with your doctors defining what the AI may and may not say.
 
 Interested in adding [Webimot AI](/systems) to your clinic? [Visit webimotagency.com](/) to see how it could work for your specific procedures.
     `;

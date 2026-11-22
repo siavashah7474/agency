@@ -316,8 +316,8 @@
       },
       {
         "title": "24/7 patiëntrespons",
-        "description": "Mis nooit meer een aanvraag. Onze AI behandelt patiëntenvragen, evalueert foto's en boekt consultaties zelfs terwijl u slaapt.",
-        "stats": "Ontworpen om binnen een minuut te antwoorden"
+        "description": "Mis nooit meer een aanvraag. Onze AI behandelt patiëntenvragen, verzamelt foto's voor uw artsen en boekt consultaties, zelfs terwijl u slaapt.",
+        "stats": "Antwoordt binnen 3 seconden"
       },
       {
         "title": "Volg elke patiëntreis",
@@ -326,10 +326,10 @@
       }
     ],
     "partnerTitle": "De groeiparter van uw kliniek",
-    "partnerDesc": "Onze systemen zijn gebouwd rond de manier waarop klinieken voor medisch toerisme werken: patiëntenvragen afhandelen in het Arabisch, Duits en Engels, voor/na-foto's beoordelen en internationale patiënten begeleiden van het eerste bericht tot een geboekt consult.",
+    "partnerDesc": "Onze systemen zijn gebouwd rond de manier waarop klinieken voor medisch toerisme werken: patiëntenvragen afhandelen in het Arabisch, Duits en Engels, patiëntfoto's verzamelen en sorteren voor de arts, en internationale patiënten begeleiden van het eerste bericht tot een geboekt consult.",
     "partnerItems": [
       "Meertalige patiëntcommunicatie (EN, DE, AR, RU)",
-      "AI-fotoevaluatie voor haar-, tand- & cosmetische procedures",
+      "AI-voorselectie van foto's voor haar-, tand- & cosmetische procedures (nooit een diagnose)",
       "Geautomatiseerde consultatieboeking & agendaSync",
       "Patiëntreistracking van aanvraag tot procedure"
     ],

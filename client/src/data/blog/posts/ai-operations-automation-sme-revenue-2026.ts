@@ -28,7 +28,7 @@ The mechanism is simple. A potential customer, whether a patient looking for a c
 
 For any business receiving inbound inquiries, such as clinics, agencies, consultancies, and e-commerce stores, an AI agent that responds quickly and qualifies leads is usually the first thing to automate.
 
-**[Webimot's WhatsApp AI Agent](/clinics) and LeadFire product** are built for this, with multilingual capability in German, Arabic, English, Dutch, Russian, and French.
+**[Webimot's WhatsApp AI Agent](/clinics) and LeadFire product** are built for this, with replies in 40+ languages, including German, Arabic, English, Dutch, Russian, and French.
 
 ### 2. Document Processing and Invoice Automation
 
@@ -46,7 +46,7 @@ AI reporting automation pulls from the connected systems, compiles the data, wri
 
 **The revenue link:** managers get that time back for decisions, quality improvement, and business development.
 
-**[Webimot's AI Operations Autopilot](/clinics)** is designed to handle automated reporting, task escalation, and internal workflow coordination.
+**[Webimot's ClearDesk product](/clinics)** is designed to handle automated reporting.
 
 ### 4. SEO Content Generation
 
@@ -96,7 +96,7 @@ A sensible order for most service businesses:
 
 | Priority | Workflow | How Directly It Affects Revenue | Our Target Build Time |
 |---|---|---|---|
-| 1 | Inbound lead response and qualification | Most direct | 2–4 weeks |
+| 1 | Inbound lead response and qualification | Most direct | WhatsApp AI live within 48 hours of onboarding; 2–4 weeks with custom integrations |
 | 2 | Follow-up and lead nurturing sequences | Direct | 2–4 weeks |
 | 3 | SEO content generation | Indirect, builds over many months | 2–4 weeks |
 | 4 | Invoice and document processing | Indirect, frees staff time | 2–4 weeks |

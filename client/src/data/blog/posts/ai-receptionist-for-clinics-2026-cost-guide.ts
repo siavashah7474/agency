@@ -1,6 +1,6 @@
 // Article body (markdown) for /blog/ai-receptionist-for-clinics-2026-cost-guide. Title, date and excerpt live in ../index.ts.
 export default `
-An AI receptionist for clinics is software that answers every patient enquiry on WhatsApp, web chat and phone within seconds, in the patient's language, then qualifies the patient, evaluates photos where relevant and books the consultation straight into your calendar. It replaces the gap between "message received" and "human replied" — the gap where most clinics lose patients. Whether it pays for itself depends on your enquiry volume and treatment value; the worked example below shows how to check.
+An AI receptionist for clinics is software that answers every patient enquiry on WhatsApp, web chat and phone within seconds, in the patient's language, then qualifies the patient, collects photos for the doctor where relevant and books the consultation straight into your calendar. It replaces the gap between "message received" and "human replied" — the gap where most clinics lose patients. Whether it pays for itself depends on your enquiry volume and treatment value; the worked example below shows how to check.
 
 ## What an AI receptionist for clinics actually does
 
@@ -11,7 +11,7 @@ A modern clinic receptionist AI is not a scripted chatbot with buttons. It is an
 - **WhatsApp and web chat** — replies in under 3 seconds, 24/7, including weekends and public holidays
 - **Languages** — detects the patient's language automatically and answers in it (German, Arabic, English, Dutch, Russian, French, Turkish and 40+ more)
 - **Qualification** — asks the questions your coordinators ask: procedure, timeline, budget range, medical history flags, city of residence
-- **Photo evaluation** — accepts hair, teeth or skin photos and gives a first indication of candidacy and graft or treatment range, then flags cases for a doctor (see our guide to [Vision AI photo evaluation](/blog/vision-ai-photo-evaluation-medical-tourism))
+- **Photo collection** — accepts hair, teeth or skin photos, checks they are complete and usable and organises them for the doctor, who decides candidacy and the graft or treatment plan (see our guide to [Vision AI photo evaluation](/blog/vision-ai-photo-evaluation-medical-tourism))
 - **Booking** — offers free slots from Google Calendar or Calendly and confirms the consultation
 - **Hand-off** — passes the conversation to a named coordinator the moment a patient asks for a human, mentions a complication or is ready to pay a deposit
 - **Follow-up** — nudges patients who went quiet after a quote (usually as part of a separate follow-up system)
@@ -37,7 +37,7 @@ It replaces the repetitive, time-critical part of front-desk work; it does not r
 - Night, weekend and holiday coverage of WhatsApp and web chat
 - First-reply delays while coordinators are on calls or with patients
 - Translating and re-translating the same price and procedure answers
-- Manual pre-screening of photos before a doctor sees them
+- Chasing, checking and organising photos before a doctor sees them
 - Calendar back-and-forth to find a slot
 - Copying patient details from chat into the CRM
 
@@ -60,7 +60,7 @@ Generic AI receptionist tools are sold as monthly subscriptions, often with per-
 
 ### 2. Managed retainer (done for you)
 
-A managed service builds the agent around your procedures, prices, languages and calendar, connects it to your WhatsApp Business number and CRM, monitors conversations and keeps improving it every month. You pay a monthly retainer rather than a licence. This is the model Webimot uses for its [WhatsApp AI](/products/whatsapp-ai) Capture system: quoted after a free audit, typically live in 2–4 weeks, managed on an ongoing basis.
+A managed service builds the agent around your procedures, prices, languages and calendar, connects it to your WhatsApp Business number and CRM, monitors conversations and keeps improving it every month. You pay a monthly retainer rather than a licence. This is the model Webimot uses for its [WhatsApp AI](/products/whatsapp-ai) Capture system: Essential is €1,399 one-time setup plus €599/month and Pro is €999/month (3-month minimum), live within 48 hours of onboarding, managed on an ongoing basis.
 
 ### 3. Custom build (one-off project)
 
@@ -94,7 +94,7 @@ Use this in every demo. If a vendor cannot show you an item live, assume it does
 
 1. **Native WhatsApp Business integration** — not a widget that imitates WhatsApp. Ask to see a conversation on a real WhatsApp Business number with templates and opt-in handled properly.
 2. **Automatic language detection** — send a message in German, then switch to Arabic mid-conversation. The agent should follow without being told.
-3. **Photo handling** — send a hair or teeth photo and see whether the agent gives a sensible first indication and escalates correctly. Clinics live on photos; most generic tools ignore them.
+3. **Photo handling** — send a hair or teeth photo and see whether the agent checks it is usable, asks for any missing angles and passes it to a doctor without offering an assessment of its own. Clinics live on photos; most generic tools ignore them.
 4. **Calendar and CRM write-back** — the booking should appear in Google Calendar or Calendly and the patient record in HubSpot, Pipedrive or your clinic software, without anyone copying data.
 5. **Human hand-off rules you control** — define exactly when a coordinator takes over (deposit, complication, VIP, frustrated tone) and confirm the notification reaches the right person.
 6. **Medical guardrails** — the agent must never diagnose, promise results or quote a final price for a case a doctor has not reviewed. Ask how this is enforced, not just promised.
@@ -114,7 +114,7 @@ Most failures are not technical; they come from treating the agent as a gadget i
 
 ### How much does an AI receptionist for a clinic cost?
 
-It depends on the model: self-serve software is sold as a monthly subscription (often with per-minute fees for calls), managed services charge a monthly retainer, and custom builds charge a project fee plus maintenance. We quote every clinic after a free AI audit so the price reflects actual enquiry volume, languages and integrations rather than a generic tier.
+It depends on the model: self-serve software is sold as a monthly subscription (often with per-minute fees for calls), managed services charge a monthly retainer, and custom builds charge a project fee plus maintenance. Webimot's WhatsApp AI is €1,399 one-time setup plus €599/month (Essential) or €999/month (Pro), with a 3-month minimum; other systems are quoted after a free AI audit so the price reflects actual enquiry volume and integrations.
 
 ### Can an AI receptionist handle phone calls as well as WhatsApp?
 
@@ -126,7 +126,7 @@ It works for any clinic with repetitive, time-sensitive enquiries: dental, hair 
 
 ### Will patients know they are talking to an AI?
 
-They should. Disclose it, offer a human at any point and make the hand-off instant. In practice patients care far more about getting an accurate answer in their language within a minute than about who typed it.
+They should. Disclose it, offer a human at any point and make the hand-off instant. In practice patients care far more about getting an accurate answer in their language within seconds than about who typed it.
 
 ### How long does it take to go live?
 
@@ -134,7 +134,7 @@ With a managed service the WhatsApp agent itself can be live within 48 hours: yo
 
 ## Key takeaways
 
-- An AI receptionist for clinics answers, qualifies, evaluates photos and books 24/7 in 40+ languages; coordinators keep the consultations and the closing.
+- An AI receptionist for clinics answers, qualifies, collects photos for the doctor and books 24/7 in 40+ languages; coordinators keep the consultations and the closing.
 - Speed is the business case: firms that contact leads within an hour are nearly seven times as likely to qualify them ([Harvard Business Review](https://hbr.org/2011/03/the-short-life-of-online-sales-leads)), and medical tourism enquiries arrive at night.
 - Three cost models — self-serve subscription, managed retainer, custom build. Judge them by cost per booked patient, not per month.
 - In the illustrative example (300 enquiries a month, €2,500 average treatment), moving the booking rate from 12% to 18% would be worth roughly €20,000 a month. Run it with your own numbers.

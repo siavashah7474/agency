@@ -199,7 +199,7 @@ const FAQS = [
     answer: "The AI asks structured follow-up questions about the treatment the patient wants, their budget range and travel timeline. Only patients who meet your criteria are passed to your team, which saves hours of manual back-and-forth.",
   },
   {
-    question: "How does photo evaluation work, and is it medically safe?",
+    question: "How does photo pre-qualification work, and is it medically safe?",
     answer: "Patients send photos on WhatsApp as they do today. The AI sorts and pre-qualifies them against rules your doctors define (for example graft range), so your coordinators and doctors see a prepared case, not a raw chat. It never gives a diagnosis, a candidacy decision or a final price: those always come from your medical team.",
   },
   {

@@ -1,6 +1,6 @@
 // Article body (markdown) for /blog/ai-for-real-estate-agents-2026-lead-response-automation. Title, date and excerpt live in ../index.ts.
 export default `
-AI for real estate agents is software that answers every portal, website and WhatsApp enquiry within a minute, asks the qualifying questions a good negotiator would ask, books the viewing straight into the agent's calendar and keeps following up until the buyer books or opts out. It matters because most property leads arrive outside office hours and most are never answered in time: in a 2026 mystery-shop of 21 large real estate brands, 68% of website enquiries received no response within 24 hours ([Florida Realtors](https://www.floridarealtors.org/news-media/news-articles/2026/10/real-estate-inquiries-often-fail-reach-agents)). A managed setup on the agency's existing WhatsApp number typically takes two to four weeks, and the agents keep every viewing and every negotiation.
+AI for real estate agents is software that answers every portal, website and WhatsApp enquiry within a minute (in under 3 seconds on WhatsApp), asks the qualifying questions a good negotiator would ask, books the viewing straight into the agent's calendar and keeps following up until the buyer books or opts out. It matters because most property leads arrive outside office hours and most are never answered in time: in a 2026 mystery-shop of 21 large real estate brands, 68% of website enquiries received no response within 24 hours ([Florida Realtors](https://www.floridarealtors.org/news-media/news-articles/2026/10/real-estate-inquiries-often-fail-reach-agents)). The WhatsApp AI on the agency's existing number is live within 48 hours of onboarding, a full managed setup that also connects portals, calendar and CRM typically takes two to four weeks, and the agents keep every viewing and every negotiation.
 
 ## The 21:40 portal lead without AI
 
@@ -103,7 +103,7 @@ The order of rollout matters: capture first, then follow-up, then reactivation, 
 
 ### What does AI for real estate agents actually do?
 
-It answers every new enquiry within a minute on WhatsApp, email or web chat, qualifies the buyer on budget, timeline and financing, books viewings into the agent's calendar and follows up automatically until the buyer books or opts out. Agents keep the viewings, valuations and negotiations; the AI removes the chasing and the data entry.
+It answers every new enquiry within a minute (in under 3 seconds on WhatsApp) on WhatsApp, email or web chat, qualifies the buyer on budget, timeline and financing, books viewings into the agent's calendar and follows up automatically until the buyer books or opts out. Agents keep the viewings, valuations and negotiations; the AI removes the chasing and the data entry.
 
 ### Will buyers mind talking to an AI instead of my agent?
 
@@ -119,7 +119,7 @@ An auto-reply confirms receipt and does nothing else. An AI agent holds a conver
 
 ### How long does it take to set up AI for a real estate agency?
 
-A managed setup typically takes 2–4 weeks: a week to collect listings data, FAQs and hand-off rules, one to two weeks to connect portals, WhatsApp Business and the calendar and test with the team, then a supervised launch on one branch. Follow-up and reactivation are usually added in the following month.
+The WhatsApp AI on its own is live within 48 hours of onboarding. The full managed setup, with portal capture and calendar integration, typically takes 2–4 weeks: a week to collect listings data, FAQs and hand-off rules, one to two weeks to connect portals, WhatsApp Business and the calendar and test with the team, then a supervised launch on one branch. Follow-up and reactivation are usually added in the following month.
 
 ## Key takeaways
 

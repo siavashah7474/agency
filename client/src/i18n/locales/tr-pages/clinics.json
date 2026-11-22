@@ -43,7 +43,7 @@
       "items": [
         "Hastalar gece yarısı Almanya'dan, Birleşik Krallık'tan veya Körfez'den yazıyor ve ertesi sabaha kadar yanıt alamıyor. O zamana kadar bir rakiple randevu oluşturmuş oluyorlar.",
         "Personel, aynı WhatsApp sorularını İngilizce, Arapça, Almanca ve Rusça yanıtlamak için saatler harcıyor.",
-        "Saç ekimi, veneer ve estetik işlemler için fotoğraf değerlendirmeleri elle yapılıyor: yavaş, tutarsız ve maliyetli.",
+        "Saç ekimi, veneer ve estetik işlemler için fotoğraflar elle toplanıp sınıflandırılıyor: yavaş, tutarsız ve maliyetli.",
         "Fiyat teklifi isteyen hastalar ikinci kez hiç haber almıyor. Tutarlı bir takip sistemi yok.",
         "Kayıt formları, onam belgeleri ve faturalar elle giriliyor ve kaç talebin gerçekten tedaviye dönüştüğünü kimse bilmiyor."
       ]
@@ -76,8 +76,8 @@
       "lead": "WhatsApp numaranızdaki yakalama sistemiyle başlayın. O çalışmaya başladığında bir sonrakini ekleyin.",
       "items": {
         "capture": {
-          "title": "WhatsApp'taki bir hasta talebi Arapça, Almanca veya İngilizce yanıtlanır, fotoğraf değerlendirilir ve konsültasyon randevusu oluşturulur.",
-          "detail": "AI ajanı, kliniğinizin kendi WhatsApp Business numarasında çalışır. Dili algılar, işlemler, greft sayısı ve fiyatlarla ilgili soruları yanıtlar, hastanın gönderdiği fotoğrafları değerlendirir ve görüntülü konsültasyonu doğrudan takviminize kaydeder. Sesli mesajlar da yazıya dökülür."
+          "title": "WhatsApp'taki bir hasta talebi Arapça, Almanca veya İngilizce yanıtlanır, fotoğraflar doktor için toplanır ve konsültasyon randevusu oluşturulur.",
+          "detail": "AI ajanı, kliniğinizin kendi WhatsApp Business numarasında çalışır. Dili algılar, işlemler ve fiyat aralıklarıyla ilgili sık sorulan soruları yanıtlar, hastanın gönderdiği fotoğrafları doktorlarınız için toplar ve görüntülü konsültasyonu doğrudan takviminize kaydeder. Sesli mesajlar da yazıya dökülür."
         },
         "convert": {
           "title": "Fiyat teklifi isteyip randevu almayan her hasta için takip.",
@@ -244,7 +244,7 @@
         "answer": "İlk mesajdan otomatik olarak algılanan 40+ dil. Medikal turizm klinikleri için en yaygın olanlar İngilizce, Almanca, Felemenkçe, Arapça, Fransızca, Rusça ve Türkçedir. Yanıtlar, takip mesajları ve raporların her biri farklı bir dilde olabilir."
       },
       {
-        "question": "Fotoğraf değerlendirmesi nasıl çalışır ve tıbbi açıdan güvenli midir?",
+        "question": "Fotoğraf ön değerlendirmesi nasıl çalışır ve tıbbi açıdan güvenli midir?",
         "answer": "Hastalar bugün olduğu gibi fotoğrafları WhatsApp'tan gönderir. Yapay zekâ bu fotoğrafları doktorlarınızın belirlediği kurallara göre (örneğin greft aralığı veya tedaviye uygunluk) sınıflandırır ve ön değerlendirmeden geçirir; böylece koordinatörleriniz ve doktorlarınız ham bir sohbet yerine hazırlanmış bir vaka görür. Asla teşhis koymaz, tedavi kararı vermez veya kesin fiyat söylemez: bunlar her zaman tıbbi ekibinizden gelir ve her tıbbi soru bir kişiye devredilir."
       },
       {
@@ -262,7 +262,7 @@
     ],
     "cta": {
       "title": "Kendi WhatsApp numaranızda demo talep edin",
-      "text": "Bize gerçek bir hasta talebi gönderin; yapay zekânın bunu hastanın dilinde yanıtlamasını, fotoğrafı değerlendirmesini ve konsültasyon randevusunu oluşturmasını izleyin. 30 dakika, hiçbir taahhüt yok.",
+      "text": "Bize gerçek bir hasta talebi gönderin; yapay zekânın bunu hastanın dilinde yanıtlamasını, fotoğrafı doktor için toplamasını ve konsültasyon randevusunu oluşturmasını izleyin. 30 dakika, hiçbir taahhüt yok.",
       "points": [
         "48 saat içinde WhatsApp'ınızda yayında",
         "30 günde 3 nitelikli talep ya da ilk ayınız iade",

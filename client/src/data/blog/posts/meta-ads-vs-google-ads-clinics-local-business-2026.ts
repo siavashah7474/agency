@@ -79,12 +79,12 @@ The uncomfortable part: the ad account can be fine while the funnel behind it le
 
 The principle: the ad's job ends when the patient taps; a system, not a person, should own the next 60 seconds and the next 30 days. In Webimot's four-system approach it looks like this:
 
-- **Capture.** Every lead from a Meta instant form, a Google Ads landing page or a click-to-WhatsApp ad gets a first reply in under 3 seconds, in the patient's language (40+ languages), with qualifying questions and live consultation slots. [LeadFire](/products/leadfire) handles form and ad leads; [WhatsApp AI](/products/whatsapp-ai) runs the WhatsApp conversation itself, photos included.
+- **Capture.** Every lead from a Meta instant form, a Google Ads landing page or a click-to-WhatsApp ad gets an immediate first reply in the patient's language (40+ languages), with qualifying questions and live consultation slots. [LeadFire](/products/leadfire) responds to form and ad leads in under 60 seconds; [WhatsApp AI](/products/whatsapp-ai) answers the WhatsApp conversation itself in under 3 seconds, photos included.
 - **Follow-up.** Leads that go quiet after a quote enter a multi-step sequence across WhatsApp, email and SMS (NurtureLoop) that stops the moment they reply or book. This is the step meant to recover Meta leads that were cold on day one.
 - **Attribution.** Every lead carries its source (platform, campaign, ad) into the CRM, and the booked consultation is written back as the conversion both platforms optimise against.
 - **Reporting.** A Monday report (ClearDesk) shows cost per booked consultation by platform and campaign, so the budget decision is a number.
 
-A managed system of this kind is typically live in 2–4 weeks; build it first and the test below measures the real funnel.
+The WhatsApp AI on its own is live within 48 hours of onboarding; the full four-system setup is typically live in 2–4 weeks. Build it first and the test below measures the real funnel.
 
 ## A 30-day Meta vs Google test plan with a budget split
 

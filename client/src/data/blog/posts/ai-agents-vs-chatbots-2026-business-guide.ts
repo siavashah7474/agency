@@ -85,7 +85,7 @@ More advanced setups don't use a single AI agent — they use **orchestrated net
 
 A medical tourism clinic running a multi-agent system might have:
 - **Intake Agent** — handles first contact, qualifies the patient, gathers procedure and budget information
-- **Vision Agent** — receives and evaluates patient photos (hair loss grade, dental condition, etc.)
+- **Vision Agent** — receives patient photos, checks they are complete and usable, and organises them for the doctor's review (it does not assess or diagnose)
 - **Booking Agent** — checks calendars and confirms consultation slots
 - **Nurture Agent** — runs follow-up sequences for leads that didn't book immediately
 - **Reporting Agent** — generates weekly summaries of inquiries, conversions, and pipeline health
@@ -122,7 +122,7 @@ Not all AI agents are equal. When evaluating options, look for:
 
 **2. Multilingual capability** — If you serve international customers, your agent must handle Arabic, German, Russian, Dutch, French, and other major languages fluently — not just translate responses.
 
-**3. Vision AI** — For medical and aesthetic businesses, the ability to receive and evaluate photos is a significant qualifier. Not all platforms offer this.
+**3. Vision AI** — For medical and aesthetic businesses, the ability to receive photos, check they are complete and organise them for the doctor is a significant qualifier. Not all platforms offer this.
 
 **4. Human escalation logic** — A good AI agent knows when to escalate. Urgent queries, complex cases, and emotionally sensitive conversations should route to a human without friction.
 

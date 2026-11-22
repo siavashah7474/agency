@@ -59,7 +59,7 @@ This exercise takes a few hours and usually reveals several obvious gaps where l
 
 ### Step 2 — Start With Lead Response (Week 1–2)
 
-Lead response automation is the closest to revenue. Deploy it first.
+Lead response automation is the closest to revenue. Deploy it first. (If Webimot sets it up, the WhatsApp AI on its own is live within 48 hours of onboarding; the week ranges in this guide describe the larger build across all four pillars.)
 
 What you're building:
 - An AI agent connected to your primary lead channel (usually WhatsApp or web chat)
@@ -142,9 +142,9 @@ Every AI agent should have clear escalation logic. Emotionally sensitive convers
 
 ## How to Get Started This Week
 
-A good first step is a focused AI audit: a 30-minute session where you map your current lead pipeline and identify the 2–3 automation opportunities most worth pursuing.
+A good first step is a free 30-minute strategy call where you map your current lead pipeline and identify the 2–3 automation opportunities most worth pursuing.
 
 [Webimot Agency](https://webimotagency.com) offers this for free. No commitment required. The aim is that you leave with a clear automation roadmap you can act on.
 
-[Book your free automation audit here](https://webimotagency.com/book-consultation).
+[Book your free strategy call here](https://webimotagency.com/book-consultation).
     `;

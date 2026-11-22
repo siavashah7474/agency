@@ -61,9 +61,9 @@ Not every inquiry becomes a patient. [Webimot's AI assistant](/clinics) filters 
 Only serious, qualified leads get escalated to your medical consultants, so staff spend less time on first-contact questions.
 
 ### Procedure-Specific Knowledge
-[Webimot's AI](/systems) answers detailed questions about your most popular procedures:
+[Webimot's AI](/systems) answers general questions about your most popular procedures from the clinic's approved information, and passes medical questions about the patient's own case to your team:
 - **Rhinoplasty (Nose Job)** — techniques, recovery time, what to expect
-- **Hair Transplant (FUE/DHI)** — graft count, results timeline, scar-free methods
+- **Hair Transplant (FUE/DHI)** — how the techniques differ, results timeline, what the package includes (the graft estimate comes from the doctor)
 - **Liposuction and body contouring** — areas treated, downtime, results
 - **Breast augmentation** — implant types, sizing, recovery
 - **Dental implants and Hollywood smile** — procedure steps, materials, durability
@@ -73,7 +73,7 @@ Once a patient is qualified and interested, [Webimot's AI assistant](/clinics) b
 
 ## What a Clinic Can Expect From [Webimot AI](/systems)
 
-We do not publish result figures. What the system is designed to change is straightforward:
+What clinics can expect from the WhatsApp AI is around 60% more consultations booked and 40+ hours of manual messaging saved per month. That is an expectation, not a guarantee, and we do not publish performance figures for individual client clinics. What the system is designed to change is straightforward:
 - **First response** goes out in under 3 seconds instead of hours
 - **Consultations** are offered while the patient is still interested
 - **Staff time** on initial inquiry handling goes down

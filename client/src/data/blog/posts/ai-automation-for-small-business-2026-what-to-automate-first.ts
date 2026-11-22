@@ -103,15 +103,15 @@ The rule: anything where the cost of a wrong answer is high and the rule cannot 
 
 ### What is the best first AI automation for a small business?
 
-The first reply to new leads. It is frequent, speed directly changes revenue, and the rules are easy to write. The effect is easy to measure in the first month, because leads that used to wait hours now get a qualified reply in under a minute.
+The first reply to new leads. It is frequent, speed directly changes revenue, and the rules are easy to write. The effect is easy to measure in the first month, because leads that used to wait hours now get a qualifying reply within seconds.
 
 ### How much does AI automation cost for a small business?
 
-It depends on how many systems you automate and how many tools they connect to. Webimot does not publish fixed prices: every business gets a free AI audit first, then a quote for a Starter (Capture), Growth (Capture + Follow-up + Reporting) or Scale (all four systems) package, so you pay only for the systems you will actually use.
+It depends on how many systems you automate and how many tools they connect to. The WhatsApp AI has published pricing: Essential is €1,399 one-time setup plus €599/month, Pro is €999/month, with a 3-month minimum. The other systems are quoted after a free AI audit, as a Starter (Capture), Growth (Capture + Follow-up + Reporting) or Scale (all four systems) package, so you pay only for the systems you will actually use.
 
 ### Do I need a developer or technical staff?
 
-No. A managed approach builds the automations inside your existing tools, typically in 2–4 weeks, and maintains them for you. What you do need is one person on your side who owns the rules and reads the transcripts in the first weeks.
+No. A managed approach builds the automations inside your existing tools and maintains them for you: the WhatsApp AI is live within 48 hours of onboarding, and larger builds across several systems typically take 2–4 weeks. What you do need is one person on your side who owns the rules and reads the transcripts in the first weeks.
 
 ### Will AI automation replace my staff?
 

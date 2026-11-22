@@ -316,8 +316,8 @@
       },
       {
         "title": "24/7 Patient Response",
-        "description": "Never miss an inquiry again. Our AI handles patient questions, evaluates photos, and books consultations even while you sleep.",
-        "stats": "Designed to reply within a minute"
+        "description": "Never miss an inquiry again. Our AI handles patient questions, collects photos for your doctors, and books consultations even while you sleep.",
+        "stats": "Replies in under 3 seconds"
       },
       {
         "title": "Track Every Patient Journey",
@@ -326,10 +326,10 @@
       }
     ],
     "partnerTitle": "Your Clinic's Growth Partner",
-    "partnerDesc": "Our systems are built around how medical tourism clinics work: handling patient inquiries in Arabic, German and English, evaluating before/after photos, and moving international patients from first message to booked consultation.",
+    "partnerDesc": "Our systems are built around how medical tourism clinics work: handling patient inquiries in Arabic, German and English, collecting and sorting patient photos for the doctor, and moving international patients from first message to booked consultation.",
     "partnerItems": [
       "Multilingual patient communication (EN, DE, AR, RU)",
-      "AI photo evaluation for hair, dental & cosmetic procedures",
+      "AI photo pre-qualification for hair, dental & cosmetic procedures (never a diagnosis)",
       "Automated consultation booking & calendar sync",
       "Patient journey tracking from inquiry to procedure"
     ],

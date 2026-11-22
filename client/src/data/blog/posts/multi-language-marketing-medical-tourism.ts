@@ -73,11 +73,11 @@ WhatsApp is where conversions happen. Multilingual capability is critical — an
 - Cons: Expensive, limited hours, recruitment challenges
 
 ### [Webimot WhatsApp AI Agent](/products/whatsapp-ai)
-- Pros: Many languages, 24/7, consistent quality, fast responses
-- Cons: May need human backup for very complex cases
+- Pros: 40+ languages, 24/7, consistent quality, replies in under 3 seconds
+- Cons: Needs human backup for medical questions and very complex cases
 
 ### Best Practice: Hybrid Approach
-[Webimot AI](/systems) handles initial contact and common questions in any language, humans step in for complex consultations.
+[Webimot AI](/systems) handles initial contact and common questions in 40+ languages, humans step in for medical questions and complex consultations.
 
 ## Content Marketing
 

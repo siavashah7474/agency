@@ -14,13 +14,13 @@ export const serviceData: Record<string, ServiceData> = {
   "whatsapp-ai-agent": {
     title: "WhatsApp AI Agent",
     tagline: "24/7 Intelligent Lead Handling & Booking Automation",
-    metaDescription: "AI WhatsApp agent for clinics that answers patient inquiries 24/7, qualifies leads, evaluates photos with Vision AI, and books consultations automatically.",
-    what: "Our WhatsApp AI Agent is a sophisticated automation system that handles incoming messages on WhatsApp 24/7. It uses advanced AI to understand customer inquiries, qualify leads, evaluate photos with Vision AI, transcribe voice messages, and automatically book consultations. The system integrates with your calendar, CRM, and provides real-time dashboards for monitoring performance.",
+    metaDescription: "AI WhatsApp agent for clinics that answers patient inquiries 24/7, qualifies leads, collects photos for your doctors, and books consultations automatically.",
+    what: "Our WhatsApp AI Agent is a sophisticated automation system that handles incoming messages on WhatsApp 24/7. It uses advanced AI to understand customer inquiries, qualify leads, collect and sort photos for your doctors with Vision AI, transcribe voice messages, and automatically book consultations. The system integrates with your calendar, CRM, and provides real-time dashboards for monitoring performance.",
     why: "In the medical tourism and service industries, speed is everything. Fast replies win more leads. Our AI agent is designed to answer every enquiry in under 3 seconds, in the customer's language, and book consultations automatically - even when your team is asleep.",
     benefits: [
       "Never miss a lead - every enquiry answered 24/7",
       "Instant replies in multiple languages",
-      "AI-powered photo evaluation for medical cases",
+      "AI photo pre-qualification for medical cases (never a diagnosis)",
       "Automatic lead qualification and scoring",
       "Direct calendar booking without human intervention",
       "Less time spent by staff on repetitive questions",
@@ -30,7 +30,7 @@ export const serviceData: Record<string, ServiceData> = {
       "Fully configured WhatsApp Business API integration",
       "Custom AI agent trained on your services",
       "Voice-to-text transcription system",
-      "Vision AI photo evaluation",
+      "Vision AI photo pre-qualification",
       "Lead qualification workflow",
       "Calendar booking integration",
       "CRM integration (optional)",
@@ -60,8 +60,8 @@ export const serviceData: Record<string, ServiceData> = {
         answer: "The AI is trained on your specific services and can handle most common inquiries. For complex medical questions, it seamlessly escalates to your human team with full context."
       },
       {
-        question: "How accurate is the photo evaluation?",
-        answer: "The photo evaluation gives a preliminary assessment only, for common cases such as dental, hair transplant and cosmetic enquiries. It is not a diagnosis, and it always recommends a professional consultation."
+        question: "How does the photo pre-qualification work?",
+        answer: "The AI collects the photos patients send, checks they are complete and usable, and sorts them against rules your doctors define, so the doctor sees a prepared case. It never gives a diagnosis, a candidacy decision or a final price: those always come from your medical team."
       },
       {
         question: "What happens if the AI doesn't understand something?",
