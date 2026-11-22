@@ -1,27 +1,27 @@
 {
   "/": {
-    "hash": "902ee71856224ae5",
+    "hash": "fe193c15b22b2dc9",
     "lastmod": "2026-11-22"
   },
   "/about": {
-    "hash": "ba598963963116c8",
-    "lastmod": "2026-11-21"
+    "hash": "c6bf090c24f8df9f",
+    "lastmod": "2026-11-22"
   },
   "/ar": {
-    "hash": "2a5b950655102870",
+    "hash": "682f525a83afe407",
     "lastmod": "2026-11-22"
   },
   "/ar/about": {
-    "hash": "28e2fbf33c1c7ec6",
-    "lastmod": "2026-11-21"
+    "hash": "e1d6645aab686fbe",
+    "lastmod": "2026-11-22"
   },
   "/ar/products/whatsapp-ai": {
     "hash": "84863b7d623ac40f",
     "lastmod": "2026-11-22"
   },
   "/ar/sia-ahmadi": {
-    "hash": "e3a1bb7d6c443f41",
-    "lastmod": "2026-11-21"
+    "hash": "f68cc6ac5f899513",
+    "lastmod": "2026-11-22"
   },
   "/blog": {
     "hash": "a911bacf6083c9e0",
@@ -40,7 +40,7 @@
     "lastmod": "2026-11-22"
   },
   "/blog/ai-automation-for-small-business-2026-what-to-automate-first": {
-    "hash": "69692d7c4185ac07",
+    "hash": "c0b7f8c240b1cc83",
     "lastmod": "2026-11-22"
   },
   "/blog/ai-automation-medical-tourism-clinics": {
@@ -52,19 +52,19 @@
     "lastmod": "2026-11-21"
   },
   "/blog/ai-document-processing-small-business-2026-invoices-forms-contracts": {
-    "hash": "7109806be5f22732",
-    "lastmod": "2026-11-21"
+    "hash": "f07f1e08416f361d",
+    "lastmod": "2026-11-22"
   },
   "/blog/ai-employee-productivity-internal-communication-automation": {
     "hash": "7f6b2d36b35d3027",
     "lastmod": "2026-11-21"
   },
   "/blog/ai-for-dental-clinics-2026-patient-journey-automation": {
-    "hash": "5455e917cbe34bf2",
+    "hash": "a38fa71e779797cc",
     "lastmod": "2026-11-22"
   },
   "/blog/ai-for-real-estate-agents-2026-lead-response-automation": {
-    "hash": "48596096b9f88bd5",
+    "hash": "24291d11b54b7c50",
     "lastmod": "2026-11-22"
   },
   "/blog/ai-internal-workflow-automation-guide-2025": {
@@ -72,7 +72,7 @@
     "lastmod": "2026-11-21"
   },
   "/blog/ai-operations-automation-sme-revenue-2026": {
-    "hash": "e3fbf70ba5090454",
+    "hash": "b89e034fa97bb671",
     "lastmod": "2026-11-22"
   },
   "/blog/ai-receptionist-for-clinics-2026-cost-guide": {
@@ -100,7 +100,7 @@
     "lastmod": "2026-11-22"
   },
   "/blog/generative-engine-optimization-medical-tourism-clinics-2026": {
-    "hash": "fff054fdb7de518d",
+    "hash": "c66c9a08f9cbdf46",
     "lastmod": "2026-11-22"
   },
   "/blog/google-ads-medical-tourism-2025": {
@@ -120,7 +120,7 @@
     "lastmod": "2026-11-22"
   },
   "/blog/meta-ads-vs-google-ads-clinics-local-business-2026": {
-    "hash": "c1ac26156fe69b92",
+    "hash": "a52031f44feef8ad",
     "lastmod": "2026-11-22"
   },
   "/blog/multi-language-marketing-medical-tourism": {
@@ -132,8 +132,8 @@
     "lastmod": "2026-11-21"
   },
   "/blog/reduce-patient-no-shows-clinics-ai-whatsapp-2026": {
-    "hash": "7e68f03ca72b2a71",
-    "lastmod": "2026-11-21"
+    "hash": "7ed4aedc14aea37b",
+    "lastmod": "2026-11-22"
   },
   "/blog/replace-manual-followup-ai-medical-clinic": {
     "hash": "eda78e46f0199161",
@@ -175,48 +175,36 @@
     "hash": "da08d767282d4d58",
     "lastmod": "2026-11-21"
   },
-  "/book-consultation": {
-    "hash": "692874d52adfbd45",
-    "lastmod": "2026-11-19"
-  },
   "/case-studies": {
-    "hash": "550d2ca98eee9be0",
-    "lastmod": "2026-11-21"
-  },
-  "/case-studies/apex-ai-trading-bots": {
-    "hash": "586d0148c3b98b29",
-    "lastmod": "2026-11-19"
+    "hash": "921541955f21385e",
+    "lastmod": "2026-11-22"
   },
   "/case-studies/clinish-dental-clinic": {
-    "hash": "c872c453511265e9",
-    "lastmod": "2026-11-19"
+    "hash": "36224f8dbafd7ca2",
+    "lastmod": "2026-11-22"
   },
   "/case-studies/estetizm": {
-    "hash": "c720b4a9661aa717",
-    "lastmod": "2026-11-19"
+    "hash": "21d9049a4fab7d0d",
+    "lastmod": "2026-11-22"
   },
   "/case-studies/gorkem-atsal-clinic": {
-    "hash": "8f54086fff5facdd",
-    "lastmod": "2026-11-19"
+    "hash": "86227360a44d0de6",
+    "lastmod": "2026-11-22"
   },
   "/case-studies/msb-aesthetic": {
-    "hash": "efb74ba0cb06dbb8",
-    "lastmod": "2026-11-19"
+    "hash": "d472d6019956538d",
+    "lastmod": "2026-11-22"
   },
   "/case-studies/prime-hair": {
-    "hash": "306888b4fd8b0d8c",
-    "lastmod": "2026-11-19"
+    "hash": "077e96d86f5ca67c",
+    "lastmod": "2026-11-22"
   },
   "/case-studies/webimot-whatsapp-ai": {
-    "hash": "2161c4415bd93903",
-    "lastmod": "2026-11-21"
-  },
-  "/clients": {
-    "hash": "50e43f831652b0a1",
-    "lastmod": "2026-11-21"
+    "hash": "301e484f9d39b2c5",
+    "lastmod": "2026-11-22"
   },
   "/clinics": {
-    "hash": "7f42b01c83581e57",
+    "hash": "58ba3e9ce22a6ea5",
     "lastmod": "2026-11-22"
   },
   "/contact": {
@@ -224,63 +212,43 @@
     "lastmod": "2026-11-19"
   },
   "/es": {
-    "hash": "0dd680e68cdabca9",
+    "hash": "6b034a8c240fab97",
     "lastmod": "2026-11-22"
   },
   "/es/about": {
-    "hash": "ace425cd66ab29f0",
-    "lastmod": "2026-11-21"
+    "hash": "2625e68cc0902c69",
+    "lastmod": "2026-11-22"
   },
   "/es/products/whatsapp-ai": {
     "hash": "c9c4ce263047b0b4",
     "lastmod": "2026-11-22"
   },
   "/es/sia-ahmadi": {
-    "hash": "2651e2fdd91a8dd5",
-    "lastmod": "2026-11-21"
+    "hash": "5faaa2fc8d58978f",
+    "lastmod": "2026-11-22"
   },
   "/nl": {
-    "hash": "6fd38d91f4632694",
+    "hash": "b40f25bd9745b32b",
     "lastmod": "2026-11-22"
   },
   "/nl/about": {
-    "hash": "a1da026202a91e8b",
-    "lastmod": "2026-11-21"
+    "hash": "810b5763e8a81b59",
+    "lastmod": "2026-11-22"
   },
   "/nl/products/whatsapp-ai": {
     "hash": "1a8c90456fd934e4",
     "lastmod": "2026-11-22"
   },
   "/nl/sia-ahmadi": {
-    "hash": "f8151b627925112a",
-    "lastmod": "2026-11-21"
+    "hash": "168b21fe4dd1225b",
+    "lastmod": "2026-11-22"
   },
   "/privacy-policy": {
     "hash": "2f4abdf05575e4df",
     "lastmod": "2026-11-19"
   },
-  "/products/cleardesk": {
-    "hash": "f8febc694d31b624",
-    "lastmod": "2026-11-21"
-  },
-  "/products/documind": {
-    "hash": "9a5adceb5e8e62d7",
-    "lastmod": "2026-11-21"
-  },
   "/products/leadfire": {
     "hash": "9aad1759b0466d46",
-    "lastmod": "2026-11-21"
-  },
-  "/products/nurtureloop": {
-    "hash": "86a83532a8f2cc31",
-    "lastmod": "2026-11-21"
-  },
-  "/products/reviveiq": {
-    "hash": "79be928a0be531e7",
-    "lastmod": "2026-11-21"
-  },
-  "/products/seo-blog-ai": {
-    "hash": "90ccaa84bda00fe4",
     "lastmod": "2026-11-21"
   },
   "/products/whatsapp-ai": {
@@ -324,15 +292,15 @@
     "lastmod": "2026-11-19"
   },
   "/sia-ahmadi": {
-    "hash": "c7f30e5967e76261",
-    "lastmod": "2026-11-21"
+    "hash": "0bb5536ad9c83a92",
+    "lastmod": "2026-11-22"
   },
   "/small-business": {
-    "hash": "92158b8d73b0f00a",
-    "lastmod": "2026-11-21"
+    "hash": "cd19c93d021cfd43",
+    "lastmod": "2026-11-22"
   },
   "/systems": {
-    "hash": "327e3546c80f79c5",
+    "hash": "2de1e0eae5d4bd42",
     "lastmod": "2026-11-22"
   },
   "/terms-of-service": {
@@ -340,47 +308,23 @@
     "lastmod": "2026-11-19"
   },
   "/tr": {
-    "hash": "08494375103c0f89",
+    "hash": "3ba494f3c1b1e96d",
     "lastmod": "2026-11-22"
   },
   "/tr/about": {
-    "hash": "25f9f86fd06bd6a4",
-    "lastmod": "2026-11-21"
-  },
-  "/tr/book-consultation": {
-    "hash": "6afc0a77a181a3dc",
-    "lastmod": "2026-11-21"
+    "hash": "a53684729866374d",
+    "lastmod": "2026-11-22"
   },
   "/tr/clinics": {
-    "hash": "8a961b535a69983f",
+    "hash": "a11b64dbfae7e36c",
     "lastmod": "2026-11-22"
   },
   "/tr/contact": {
     "hash": "3e81ce4a0a8984d1",
     "lastmod": "2026-11-21"
   },
-  "/tr/products/cleardesk": {
-    "hash": "43fd49cd48b4b1dc",
-    "lastmod": "2026-11-21"
-  },
-  "/tr/products/documind": {
-    "hash": "19f8f9de955f8230",
-    "lastmod": "2026-11-21"
-  },
   "/tr/products/leadfire": {
     "hash": "defbdcf655a296d2",
-    "lastmod": "2026-11-21"
-  },
-  "/tr/products/nurtureloop": {
-    "hash": "3ad343b6d75e2c35",
-    "lastmod": "2026-11-21"
-  },
-  "/tr/products/reviveiq": {
-    "hash": "dffc03b681c18c64",
-    "lastmod": "2026-11-21"
-  },
-  "/tr/products/seo-blog-ai": {
-    "hash": "3019aa0568ff84a8",
     "lastmod": "2026-11-21"
   },
   "/tr/products/whatsapp-ai": {
@@ -424,15 +368,15 @@
     "lastmod": "2026-11-21"
   },
   "/tr/sia-ahmadi": {
-    "hash": "169a5d82f1141a81",
-    "lastmod": "2026-11-21"
+    "hash": "8c67772e85bc7d78",
+    "lastmod": "2026-11-22"
   },
   "/tr/small-business": {
-    "hash": "3130f833e42712e5",
-    "lastmod": "2026-11-21"
+    "hash": "41bc61986f32c758",
+    "lastmod": "2026-11-22"
   },
   "/tr/systems": {
-    "hash": "846b613ddc05d8df",
+    "hash": "5e09a1506e6a76e6",
     "lastmod": "2026-11-22"
   }
 }
