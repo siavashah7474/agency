@@ -113,5 +113,5 @@ Technical fixes (crawler access, schema, consistent facts) can change AI answers
 - Follow a 90-day plan: audit, publish the foundation, corroborate with reviews and directories, measure and expand.
 - Being recommended is only half the job; the enquiry still has to be answered within seconds.
 
-Webimot builds the publishing side (SEO Blog AI and llms.txt for clinics) and the answering side (the WhatsApp AI Capture system) so that being found by AI turns into booked consultations. If you want to know where your clinic stands today, our free AI audit covers both within 3 days — [book your free AI audit](/book-consultation) or explore [AI systems for clinics](/clinics).
+Webimot builds the publishing side (SEO blog articles and llms.txt for clinics) and the answering side (the WhatsApp AI Capture system) so that being found by AI turns into booked consultations. If you want to know where your clinic stands today, our free AI audit covers both within 3 days — [book your free AI audit](/contact) or explore [AI systems for clinics](/clinics).
 `;

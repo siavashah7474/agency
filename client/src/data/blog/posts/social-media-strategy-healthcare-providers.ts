@@ -171,5 +171,5 @@ Organize your content around these themes:
 
 Social media success doesn't happen overnight. It requires consistent effort, quality content, and strategic planning.
 
-Need help developing a social media strategy for your clinic? [Webimot](/) combines social media management with AI-powered WhatsApp follow-up — so every DM and comment that shows interest is automatically captured as a lead. [Book a free strategy call at webimotagency.com](/book-consultation) to discuss what would work best for your situation.
+Need help developing a social media strategy for your clinic? [Webimot](/) combines social media management with AI-powered WhatsApp follow-up — so every DM and comment that shows interest is automatically captured as a lead. [Book a free strategy call at webimotagency.com](/contact) to discuss what would work best for your situation.
     `;

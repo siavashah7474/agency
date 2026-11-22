@@ -36,7 +36,7 @@ Processing invoices by hand costs staff time on every single document, and the t
 
 AI document processing reads invoices from any format (PDF, email, image), extracts the relevant data, and posts it to accounting systems, with unclear cases flagged for a person to check.
 
-**[Webimot's DocuMind product](/clinics)** is designed for this: supplier invoices, patient intake forms, contracts, and expense receipts.
+**[Webimot's Operations system](/systems#operate)** is designed for this: supplier invoices, patient intake forms, contracts, and expense receipts.
 
 ### 3. Internal Reporting and Weekly Operations Summaries
 
@@ -46,7 +46,7 @@ AI reporting automation pulls from the connected systems, compiles the data, wri
 
 **The revenue link:** managers get that time back for decisions, quality improvement, and business development.
 
-**[Webimot's ClearDesk product](/clinics)** is designed to handle automated reporting.
+**[Webimot's Reporting system](/systems#measure)** is designed to handle automated reporting.
 
 ### 4. SEO Content Generation
 
@@ -54,7 +54,7 @@ For clinics and agencies that depend on organic search traffic, publishing usefu
 
 AI-assisted content generation lowers the cost per article and makes a regular publishing schedule realistic. Organic traffic builds slowly, typically over many months, and it reduces dependency on paid advertising when it works.
 
-**[Webimot's SEO Blog AI](/clinics)** is built to write, optimise, and publish clinic-specific SEO articles on a regular schedule, targeted at the searches international patients make (for example "hair transplant Turkey cost" or "dental veneers Turkey reviews").
+**[Webimot's SEO blog service](/systems)** is built to write, optimise, and publish clinic-specific SEO articles on a regular schedule, targeted at the searches international patients make (for example "hair transplant Turkey cost" or "dental veneers Turkey reviews").
 
 ### 5. CRM Update and Lead Nurturing Automation
 
@@ -65,7 +65,7 @@ Sales and client teams spend a good part of each day on CRM updates, follow-up r
 - Personalised nurture messages sent at set intervals
 - Alerts when a high-value lead has gone silent
 
-**[Webimot's NurtureLoop and ReviveIQ products](/clinics)** are designed for automated lead nurturing and re-engagement for clinics and service businesses.
+**[Webimot's Follow-up system](/systems#convert)** is designed for automated lead nurturing and re-engagement for clinics and service businesses.
 
 ## From Cost Saving to Revenue: An Honest View
 

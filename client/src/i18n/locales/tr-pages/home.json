@@ -145,13 +145,6 @@
           "Arama ve analitik"
         ]
       },
-      "apex-ai-trading-bots": {
-        "summary": "Webimot'un kurucusu Sia Ahmadi'nin güncel projesi: Hollanda'daki özel bir müşteri için geliştirilen, kişiye özel yapay zekâ destekli kripto alım satım botlarına sahip Apex AI uygulaması.",
-        "workDone": [
-          "Alım satım botu uygulaması",
-          "Kişiye özel yapay zekâ destekli botlar"
-        ]
-      },
       "webimot-whatsapp-ai": {
         "summary": "Kurucu Sia Ahmadi tarafından tasarlanıp geliştirilen Webimot'un kendi ürünü: klinikler için WhatsApp üzerinde çalışan bir yapay zekâ ajanı.",
         "workDone": [

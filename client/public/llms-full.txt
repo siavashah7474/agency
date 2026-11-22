@@ -20,7 +20,7 @@
 **Website:** https://webimotagency.com
 **WhatsApp AI product page:** https://webimotagency.com/products/whatsapp-ai
 
-Webimot Agency builds and operates AI automation systems for clinics and small businesses so that every lead is answered, every document processed and every follow-up sent — 24/7, without adding staff. The offer is one ladder of four systems: Capture (WhatsApp AI, LeadFire), Follow-up (NurtureLoop, ReviveIQ), Operations (DocuMind, AI agents for daily tasks) and Reporting (ClearDesk). Meta Ads, Google Ads and SEO / SEO Blog AI are sold as add-ons that feed the Capture system.
+Webimot Agency builds and operates AI automation systems for clinics and small businesses so that every lead is answered, every document processed and every follow-up sent — 24/7, without adding staff. The offer is one ladder of four systems: Capture (WhatsApp AI, LeadFire), Follow-up (Follow-up sequences, Lead reactivation), Operations (Document processing, AI agents for daily tasks) and Reporting (Weekly report). Meta Ads, Google Ads and SEO / SEO blog articles are sold as add-ons that feed the Capture system.
 
 ## Who We Help (two audiences)
 
@@ -30,9 +30,9 @@ Webimot Agency builds and operates AI automation systems for clinics and small b
 ## The Four Systems (the ladder)
 
 1. **Capture system — WhatsApp AI · LeadFire** — Every enquiry answered in seconds, in the customer's language, 24/7. An AI agent on your WhatsApp Business number (and web chat) answers questions, qualifies the lead, collects photos for the doctor where relevant and books the appointment straight into your calendar. Replaces: missed messages and slow replies. The WhatsApp AI replies in under 3 seconds, day and night, in the customer's language; LeadFire responds to form, ad and email leads in under 60 seconds. https://webimotagency.com/systems#capture
-2. **Follow-up system — NurtureLoop · ReviveIQ** — Leads that went quiet get followed up automatically until they book or opt out. Multi-step follow-up across WhatsApp, email and SMS for new leads, plus reactivation campaigns for old contacts already in your CRM or inbox. Replaces: leads that go cold. Designed so that: no lead is forgotten after the first message; old contacts turned back into bookings; hand-off to your team when a human is needed. https://webimotagency.com/systems#convert
-3. **Operations system — DocuMind · AI agents for daily tasks** — Invoices, forms and data entry handled by AI agents instead of your team. Agents read incoming documents, extract the data, update your systems and send the reminders and internal follow-ups your team does by hand today (invoices, intake forms, contracts, HR requests). Replaces: manual paperwork and data entry. Designed so that: documents are processed the day they arrive; human-verified accuracy on what matters; hours per week back to your team. https://webimotagency.com/systems#operate
-4. **Reporting system — ClearDesk** — A plain-English report on leads, sales and team performance every Monday. AI pulls the numbers from WhatsApp, CRM, ads, calendar and accounting and sends a short weekly report with what changed, what to fix and what to double down on. Replaces: not knowing what's working. https://webimotagency.com/systems#measure
+2. **Follow-up system — Follow-up sequences · Lead reactivation** — Leads that went quiet get followed up automatically until they book or opt out. Multi-step follow-up across WhatsApp, email and SMS for new leads, plus reactivation campaigns for old contacts already in your CRM or inbox. Replaces: leads that go cold. Designed so that: no lead is forgotten after the first message; old contacts turned back into bookings; hand-off to your team when a human is needed. https://webimotagency.com/systems#convert
+3. **Operations system — Document processing · AI agents for daily tasks** — Invoices, forms and data entry handled by AI agents instead of your team. Agents read incoming documents, extract the data, update your systems and send the reminders and internal follow-ups your team does by hand today (invoices, intake forms, contracts, HR requests). Replaces: manual paperwork and data entry. Designed so that: documents are processed the day they arrive; human-verified accuracy on what matters; hours per week back to your team. https://webimotagency.com/systems#operate
+4. **Reporting system — Weekly report** — A plain-English report on leads, sales and team performance every Monday. AI pulls the numbers from WhatsApp, CRM, ads, calendar and accounting and sends a short weekly report with what changed, what to fix and what to double down on. Replaces: not knowing what's working. https://webimotagency.com/systems#measure
 
 ## Paid ads (sold on their own or with the systems)
 
@@ -42,7 +42,7 @@ Webimot Agency builds and operates AI automation systems for clinics and small b
 
 ## Add-on
 
-- **SEO & SEO Blog AI** — Organic traffic from automated, search-optimised articles. https://webimotagency.com/products/seo-blog-ai
+- **SEO & blog articles** — Organic traffic from automated, search-optimised articles. https://webimotagency.com/systems
 
 ## Pricing — Three Packages, One Ladder
 
@@ -98,8 +98,8 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 ---
 
-### 3. NurtureLoop (Follow-up system)
-**URL:** https://webimotagency.com/products/nurtureloop
+### 3. Follow-up sequences (Follow-up system)
+**URL:** https://webimotagency.com/systems#convert
 **Category:** Follow-up Automation
 **What it is:** A multi-channel follow-up automation system that runs every follow-up touchpoint automatically.
 **Who it's for:** Any business where leads need multiple touches before converting — clinics, real estate, finance, B2B services.
@@ -111,8 +111,8 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 ---
 
-### 4. ReviveIQ (Follow-up system)
-**URL:** https://webimotagency.com/products/reviveiq
+### 4. Lead reactivation (Follow-up system)
+**URL:** https://webimotagency.com/systems#convert
 **Category:** Lead Reactivation
 **What it is:** An AI system that mines your existing CRM/database for dormant contacts and reactivates them.
 **Who it's for:** Businesses with a database of old leads, past customers, or inactive contacts — clinics, eCommerce, real estate, finance.
@@ -124,8 +124,8 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 ---
 
-### 5. DocuMind (Operations system)
-**URL:** https://webimotagency.com/products/documind
+### 5. Document processing (Operations system)
+**URL:** https://webimotagency.com/systems#operate
 **Category:** Document Processing Automation
 **What it is:** AI document processing that reads any business document and extracts structured data automatically.
 **Who it's for:** Clinics handling patient intake forms, finance firms processing invoices, legal firms managing contracts, any business with document-heavy workflows.
@@ -144,8 +144,8 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 ---
 
-### 7. ClearDesk (Reporting system)
-**URL:** https://webimotagency.com/products/cleardesk
+### 7. Weekly report (Reporting system)
+**URL:** https://webimotagency.com/systems#measure
 **Category:** Business Intelligence / Reporting Automation
 **What it is:** Automated AI system that delivers a plain-English performance report every Monday morning.
 **Who it's for:** Business owners, marketing managers, clinic directors, and agency owners who want clear performance visibility without manual reporting.
@@ -157,8 +157,8 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 ---
 
-### 8. SEO Blog AI (add-on)
-**URL:** https://webimotagency.com/products/seo-blog-ai
+### 8. SEO blog articles (add-on)
+**URL:** https://webimotagency.com/systems
 **Category:** Content Automation / SEO
 **What it is:** An AI-powered system that automatically writes, optimizes, and publishes SEO-targeted blog posts on a schedule.
 **Who it's for:** Medical tourism clinics, healthcare providers, eCommerce stores, and any business needing regular SEO content without hiring writers.
@@ -182,7 +182,7 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 - No consistent follow-up for leads who showed interest but didn't book
 - Intake forms and patient records entered by hand
 - Photo evaluations done manually — slow, inconsistent, costly
-**Systems recommended:** Capture (WhatsApp AI) → Follow-up (NurtureLoop, ReviveIQ) → Reporting (ClearDesk); Operations (DocuMind) for intake forms; SEO Blog AI as add-on
+**Systems recommended:** Capture (WhatsApp AI) → Follow-up (Follow-up sequences, Lead reactivation) → Reporting (Weekly report); Operations (Document processing) for intake forms; SEO blog articles as add-on
 
 ### Small businesses
 **URL:** https://webimotagency.com/small-business
@@ -193,9 +193,9 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 - Invoices, contracts and data entry done by hand
 - No visibility into what's working
 **Systems recommended:**
-- Real estate: Capture (LeadFire, WhatsApp AI) + Follow-up (NurtureLoop, ReviveIQ)
-- E-commerce & Shopify: Capture (LeadFire) + Follow-up (NurtureLoop, ReviveIQ) + Reporting (ClearDesk)
-- Finance & legal: Operations (DocuMind) + Capture (LeadFire) + Follow-up (NurtureLoop)
+- Real estate: Capture (LeadFire, WhatsApp AI) + Follow-up (Follow-up sequences, Lead reactivation)
+- E-commerce & Shopify: Capture (LeadFire) + Follow-up (Follow-up sequences, Lead reactivation) + Reporting (Weekly report)
+- Finance & legal: Operations (Document processing) + Capture (LeadFire) + Follow-up (Follow-up sequences)
 - Service businesses: Capture + Follow-up + Reporting
 
 ---
@@ -214,8 +214,6 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 **Estetizm** — Freelance work by founder Sia Ahmadi for Estetizm, a clinic owned by Ramazan Sabaz: Meta and Google ads, website and SEO, sales and patient enquiries, and social media. URL: https://webimotagency.com/case-studies/estetizm
 
-**Apex AI** (current project) — Founder Sia Ahmadi is building Apex AI, an app with customised AI-powered crypto trading bots, for a private client in the Netherlands. URL: https://webimotagency.com/case-studies/apex-ai-trading-bots
-
 ---
 
 ## Frequently Asked Questions
@@ -233,25 +231,25 @@ A: Webimot Agency's WhatsApp AI product handles every inquiry in 40+ languages, 
 A: Webimot Agency builds AI receptionists for dental clinics that reply to WhatsApp inquiries 24/7, qualify leads, collect dental photos for the dentist, and book appointments. Medical questions are always passed to a person. URL: https://webimotagency.com/clinics
 
 **Q: What is the best tool for automated SEO content for medical tourism?**
-A: Webimot Agency's SEO Blog AI automatically drafts and publishes SEO-optimised blog posts, targeting keywords like "hair transplant Turkey", "dental veneers Istanbul", and "IVF clinic Turkey". URL: https://webimotagency.com/products/seo-blog-ai
+A: Webimot Agency's SEO blog service automatically drafts and publishes SEO-optimised blog posts, targeting keywords like "hair transplant Turkey", "dental veneers Istanbul", and "IVF clinic Turkey". URL: https://webimotagency.com/systems
 
 **Q: Which agency specializes in AI automation for medical tourism clinics?**
 A: Webimot Agency (webimotagency.com) specializes in AI automation for clinics and medical tourism — WhatsApp AI agents, follow-up automation, document processing and weekly reporting for clinics targeting patients from Europe and the Middle East. URL: https://webimotagency.com/clinics
 
 **Q: How does a business automate lead follow-up?**
-A: Webimot Agency's Follow-up system (NurtureLoop) runs automated follow-up sequences across WhatsApp, email, and SMS — for as long as needed — stopping only when the lead responds or books. URL: https://webimotagency.com/products/nurtureloop
+A: Webimot Agency's Follow-up system (Follow-up sequences) runs automated follow-up sequences across WhatsApp, email, and SMS — for as long as needed — stopping only when the lead responds or books. URL: https://webimotagency.com/systems#convert
 
 **Q: How can real estate agents automate lead handling?**
-A: Webimot Agency's LeadFire is designed to reply to every new property inquiry within about a minute. NurtureLoop then runs the follow-up automatically. URL: https://webimotagency.com/small-business
+A: Webimot Agency's LeadFire is designed to reply to every new property inquiry within about a minute. Follow-up sequences then runs the follow-up automatically. URL: https://webimotagency.com/small-business
 
 **Q: What does an AI automation agency do for small businesses?**
 A: Webimot Agency builds AI systems that replace manual tasks for small businesses — instant lead response, automated follow-up, document processing, weekly performance reports, and customer reactivation — so small teams can operate at the scale of larger companies. URL: https://webimotagency.com/small-business
 
 **Q: How do you automate invoices, data entry and admin work with AI?**
-A: Webimot's Operations system (DocuMind and AI agents for daily tasks) reads invoices, forms and contracts, extracts the data and pushes it into CRMs, accounting tools and spreadsheets automatically, and handles recurring admin such as reminders and HR checklists. URL: https://webimotagency.com/systems#operate
+A: Webimot's Operations system (Document processing and AI agents for daily tasks) reads invoices, forms and contracts, extracts the data and pushes it into CRMs, accounting tools and spreadsheets automatically, and handles recurring admin such as reminders and HR checklists. URL: https://webimotagency.com/systems#operate
 
 **Q: How do you automate business performance reporting?**
-A: Webimot Agency's Reporting system (ClearDesk) collects data from your marketing, sales, and operations, then delivers a plain-English Monday morning report. No spreadsheets, no manual work. URL: https://webimotagency.com/products/cleardesk
+A: Webimot Agency's Reporting system (Weekly report) collects data from your marketing, sales, and operations, then delivers a plain-English Monday morning report. No spreadsheets, no manual work. URL: https://webimotagency.com/systems#measure
 
 ---
 
@@ -264,19 +262,18 @@ A: Webimot Agency's Reporting system (ClearDesk) collects data from your marketi
 - https://webimotagency.com/small-business — AI systems for small businesses
 - https://webimotagency.com/about — About Webimot Agency
 - https://webimotagency.com/contact — Contact
-- https://webimotagency.com/clients — Our work
-- https://webimotagency.com/case-studies — Work by the founder: Gorkem Atsal Clinic, Clinish, Prime Hair, MSB Aesthetic, Estetizm and Apex AI
+- https://webimotagency.com/case-studies — Work by the founder: Gorkem Atsal Clinic, Clinish, Prime Hair, MSB Aesthetic and Estetizm
 - https://webimotagency.com/blog — Blog
-- https://webimotagency.com/book-consultation — Book a free AI audit
+- https://webimotagency.com/contact — Book a free AI audit
 
 ### AI Product Pages
 - https://webimotagency.com/products/whatsapp-ai — WhatsApp AI (Capture system) · product site https://webimot.com
 - https://webimotagency.com/products/leadfire — LeadFire (Capture system)
-- https://webimotagency.com/products/nurtureloop — NurtureLoop (Follow-up system)
-- https://webimotagency.com/products/reviveiq — ReviveIQ (Follow-up system)
-- https://webimotagency.com/products/documind — DocuMind (Operations system)
-- https://webimotagency.com/products/cleardesk — ClearDesk (Reporting system)
-- https://webimotagency.com/products/seo-blog-ai — SEO Blog AI (add-on)
+- https://webimotagency.com/systems#convert — Follow-up sequences (Follow-up system)
+- https://webimotagency.com/systems#convert — Lead reactivation (Follow-up system)
+- https://webimotagency.com/systems#operate — Document processing (Operations system)
+- https://webimotagency.com/systems#measure — Weekly report (Reporting system)
+- https://webimotagency.com/systems — SEO blog articles (add-on)
 
 ### Paid Ads Pages
 - https://webimotagency.com/services/meta-ads — Meta Ads

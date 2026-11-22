@@ -72,7 +72,7 @@ What AI automates:
 
 What stays human: the plan itself, the consent conversation, and the final check before anything is sent to a patient or insurer. The dentist reviews a draft; the dentist does not type one.
 
-In Webimot's four-system ladder this is the Operations system, and the product that does it is [DocuMind](/products/documind): it reads the document, extracts what matters and writes it into your practice software or spreadsheet, with every exception routed to a person.
+In Webimot's four-system ladder this is the [Operations system](/systems#operate): it reads the document, extracts what matters and writes it into your practice software or spreadsheet, with every exception routed to a person.
 
 ## Stage 5: Recall, reviews and reactivation
 
@@ -88,7 +88,7 @@ What AI automates:
 
 What stays human: the clinical decision on recall intervals, and any reply that contains a complaint or a question about treatment.
 
-This is the Follow-up system in our ladder: NurtureLoop for the timed sequences and ReviveIQ for the dormant list.
+This is the Follow-up system in our ladder: follow-up sequences for the timed messages and lead reactivation for the dormant list.
 
 ## AI for dental clinics: what to automate and what to keep human
 
@@ -112,7 +112,7 @@ The honest answer for a managed deployment: the WhatsApp AI that covers the firs
 
 **Week 4: Add Stage 2 photos.** Photo handling is enabled with your dentist's rules; the dentist reviews the first batch of prepared cases and tightens the photo instructions where needed.
 
-**Weeks 5 to 6: Stage 4 paperwork.** DocuMind is connected to your practice software or spreadsheets; treatment-plan templates and insurance forms are mapped.
+**Weeks 5 to 6: Stage 4 paperwork.** Document processing is connected to your practice software or spreadsheets; treatment-plan templates and insurance forms are mapped.
 
 **Weeks 7 to 8: Stage 5 recall and reviews.** Recall rules are set per treatment, the review request is timed, and the dormant list is loaded for reactivation in small batches.
 
@@ -147,5 +147,5 @@ Pick the numbers before you start: first-reply time, enquiries per month, consul
 - Keep clinical assessment, final quotes, consent and complaints human; let AI draft, remind, file and follow up.
 - Expect the first stage live within 48 hours of onboarding and the full journey in about two months, measured weekly against a baseline recorded before you start.
 
-If you would like to know which of the five stages would pay back fastest for your own clinic, Webimot's free AI audit maps your current patient journey and returns the top automation opportunities with ROI estimates within 3 days, followed by a demo on your own enquiries. [Book your free AI audit](/book-consultation).
+If you would like to know which of the five stages would pay back fastest for your own clinic, Webimot's free AI audit maps your current patient journey and returns the top automation opportunities with ROI estimates within 3 days, followed by a demo on your own enquiries. [Book your free AI audit](/contact).
 `;

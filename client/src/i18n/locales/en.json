@@ -24,7 +24,6 @@
     "contact": "Contact",
     "aboutUs": "About Us",
     "caseStudies": "Our Work",
-    "ourClients": "Founder's Work",
     "allServices": "All Services",
     "whatsappUs": "WhatsApp Us",
     "privacyPolicy": "Privacy Policy",
@@ -217,7 +216,7 @@
       ]
     },
     "teamTitle": "Our Work",
-    "teamP": "Webimot is based in Amsterdam and Istanbul and led by its founder, Sia Ahmadi. Work to date includes an ongoing engagement with Gorkem Atsal Clinic (website, CRM, Google Ads and Meta Ads, social media strategy and search optimisation for Google, Bing and Yandex), the website and online set-up for Clinish, freelance engagements with the clinics Prime Hair, MSB Aesthetic and Estetizm, the Apex AI trading bot application and Webimot's own WhatsApp AI product.",
+    "teamP": "Webimot is based in Amsterdam and Istanbul and led by its founder, Sia Ahmadi. Work to date includes an ongoing engagement with Gorkem Atsal Clinic (website, CRM, Google Ads and Meta Ads, social media strategy and search optimisation for Google, Bing and Yandex), the website and online set-up for Clinish, freelance engagements with the clinics Prime Hair, MSB Aesthetic and Estetizm, and Webimot's own WhatsApp AI product.",
     "teamCta": "Let's Discuss Your Goals",
     "founder": {
       "badge": "Founder",
@@ -298,65 +297,6 @@
     "ctaTitle": "Talk to Us About Your Business",
     "ctaSubtitle": "Book a free call and we'll show you what we would automate first.",
     "ctaButton": "Book Your Free Strategy Call"
-  },
-  "whyWebimot": {
-    "badge": "For Clinics",
-    "title": "We Help Clinics Get More Patients",
-    "subtitle": "Most agencies bring you clicks. We focus on what actually matters for your clinic — turning inquiries into booked procedures. With AI-powered systems built specifically for hair transplant, dental, cosmetic, and IVF clinics.",
-    "coreValues": [
-      {
-        "title": "Convert Patients to Bookings",
-        "description": "We don't just bring you inquiries — we build systems that turn patient questions into confirmed consultations and procedures.",
-        "stats": "Inquiry-to-booking follow-up"
-      },
-      {
-        "title": "Grow International Patients",
-        "description": "Attract patients from UK, Germany, USA and beyond with multilingual marketing strategies built for medical tourism clinics.",
-        "stats": "Multilingual campaigns"
-      },
-      {
-        "title": "24/7 Patient Response",
-        "description": "Never miss an inquiry again. Our AI handles patient questions, collects photos for your doctors, and books consultations even while you sleep.",
-        "stats": "Replies in under 3 seconds"
-      },
-      {
-        "title": "Track Every Patient Journey",
-        "description": "Know exactly where your patients come from, which campaigns work, and how to get more bookings with detailed analytics.",
-        "stats": "Weekly performance reports"
-      }
-    ],
-    "partnerTitle": "Your Clinic's Growth Partner",
-    "partnerDesc": "Our systems are built around how medical tourism clinics work: handling patient inquiries in Arabic, German and English, collecting and sorting patient photos for the doctor, and moving international patients from first message to booked consultation.",
-    "partnerItems": [
-      "Multilingual patient communication (EN, DE, AR, RU)",
-      "AI photo pre-qualification for hair, dental & cosmetic procedures (never a diagnosis)",
-      "Automated consultation booking & calendar sync",
-      "Patient journey tracking from inquiry to procedure"
-    ],
-    "processTitle": "Our Process",
-    "steps": [
-      {
-        "step": "01",
-        "title": "Audit Your Clinic",
-        "description": "We analyze your patient flow, website, and current marketing to find growth opportunities."
-      },
-      {
-        "step": "02",
-        "title": "Build Your AI System",
-        "description": "Custom WhatsApp agent, multilingual campaigns, and automated booking tailored to your clinic."
-      },
-      {
-        "step": "03",
-        "title": "Launch & Monitor",
-        "description": "Go live with 24/7 patient response and track every inquiry from first message to booked procedure."
-      },
-      {
-        "step": "04",
-        "title": "Scale Internationally",
-        "description": "Expand to new markets — UK, Germany, Gulf countries — and grow your international patient base."
-      }
-    ],
-    "cta": "Get Your Free Growth Plan"
   },
   "exitPopup": {
     "title": "Wait! Don't Leave Empty-Handed",

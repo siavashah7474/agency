@@ -29,7 +29,7 @@
       },
       "convert": {
         "name": "Sistema de seguimiento",
-        "productLabel": "NurtureLoop · ReviveIQ",
+        "productLabel": "Secuencias de seguimiento · Reactivación de leads",
         "headline": "Los leads que dejaron de responder reciben seguimiento — automáticamente, hasta que reservan o se dan de baja.",
         "replaces": "Leads que se enfrían",
         "description": "Seguimiento en varios pasos por WhatsApp, email y SMS para los nuevos leads, además de campañas de reactivación para contactos antiguos que ya están en tu CRM o en tu bandeja de entrada. Se detiene en cuanto alguien responde o reserva.",
@@ -40,18 +40,18 @@
         ],
         "products": [
           {
-            "name": "NurtureLoop",
+            "name": "Secuencias de seguimiento",
             "oneLiner": "Secuencias de seguimiento automatizadas para cada nuevo lead."
           },
           {
-            "name": "ReviveIQ",
+            "name": "Reactivación de leads",
             "oneLiner": "Reactiva leads antiguos y clientes anteriores de tu base de datos."
           }
         ]
       },
       "operate": {
         "name": "Sistema de operaciones",
-        "productLabel": "DocuMind · Agentes de IA para tareas diarias",
+        "productLabel": "Procesamiento de documentos · Agentes de IA para tareas diarias",
         "headline": "Facturas, formularios e introducción de datos gestionados por agentes de IA en lugar de tu equipo.",
         "replaces": "Papeleo e introducción de datos manuales",
         "description": "Agentes de IA que leen los documentos entrantes, extraen los datos, actualizan tus sistemas y envían los recordatorios y seguimientos internos que hoy tu equipo hace a mano — facturas, formularios de admisión, contratos, solicitudes de RR. HH.",
@@ -62,7 +62,7 @@
         ],
         "products": [
           {
-            "name": "DocuMind",
+            "name": "Procesamiento de documentos",
             "oneLiner": "Lee documentos e introduce los datos donde corresponde."
           },
           {
@@ -73,7 +73,7 @@
       },
       "measure": {
         "name": "Sistema de informes",
-        "productLabel": "ClearDesk",
+        "productLabel": "Informe semanal",
         "headline": "Cada lunes, un informe en lenguaje claro sobre leads, ventas y rendimiento del equipo.",
         "replaces": "No saber qué está funcionando",
         "description": "La IA extrae las cifras de tus herramientas — WhatsApp, CRM, anuncios, calendario, contabilidad — y envía un breve informe semanal con lo que ha cambiado, lo que hay que corregir y dónde conviene redoblar esfuerzos.",
@@ -84,7 +84,7 @@
         ],
         "products": [
           {
-            "name": "ClearDesk",
+            "name": "Informe semanal",
             "oneLiner": "Informe semanal de rendimiento, cada lunes por la mañana."
           }
         ]
@@ -100,7 +100,7 @@
         "oneLiner": "Campañas de búsqueda para pacientes que ya buscan tu tratamiento."
       },
       {
-        "name": "SEO y SEO Blog AI",
+        "name": "SEO y artículos de blog",
         "oneLiner": "Tráfico orgánico con artículos automatizados y optimizados para buscadores."
       }
     ],

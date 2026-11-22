@@ -91,7 +91,7 @@ Setting up AI follow-up sequences is not a complex technical project. For clinic
 
 No technical work is required from the clinic team. The provider configures, deploys, and maintains the system.
 
-Webimot's WhatsApp AI Agent handles first response, pre-qualification, follow-up, and lead handoff: fully managed, replying in under 3 seconds, live within 48 hours after onboarding. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/book-consultation) and see how many leads you're currently leaving on the table.
+Webimot's WhatsApp AI Agent handles first response, pre-qualification, follow-up, and lead handoff: fully managed, replying in under 3 seconds, live within 48 hours after onboarding. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/contact) and see how many leads you're currently leaving on the table.
 
 Related reading: [AI Automation in Medical Tourism](/blog/ai-automation-medical-tourism-clinics), [How AI Assistants Guide International Patients](/blog/ai-assistant-medical-tourism-patient-journey) and [Why Hair Transplant Clinics Lose International Leads](/blog/why-clinics-lose-international-leads).
 `;

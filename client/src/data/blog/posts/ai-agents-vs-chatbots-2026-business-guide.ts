@@ -138,5 +138,5 @@ An AI agent works around the clock, converses in many languages, and does not fo
 
 **If your current "AI" only answers questions and your team still does everything else manually, you have a chatbot problem — not an AI solution.**
 
-[Book a free strategy call with Webimot Agency](https://webimotagency.com/book-consultation) to see what an AI agent built specifically for your business would look like.
+[Book a free strategy call with Webimot Agency](https://webimotagency.com/contact) to see what an AI agent built specifically for your business would look like.
     `;

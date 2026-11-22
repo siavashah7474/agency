@@ -87,5 +87,5 @@ In small businesses it usually changes what staff spend their time on. The routi
 - A process that fails two or more questions needs fixing before it needs software.
 - When several processes are ready, start with the one closest to revenue.
 
-Webimot's [free AI audit](/book-consultation) applies this checklist to your business in 3 days and lists the processes worth automating first. See [AI systems for small businesses](/small-business) and [the four systems](/systems).
+Webimot's [free AI audit](/contact) applies this checklist to your business in 3 days and lists the processes worth automating first. See [AI systems for small businesses](/small-business) and [the four systems](/systems).
 `;

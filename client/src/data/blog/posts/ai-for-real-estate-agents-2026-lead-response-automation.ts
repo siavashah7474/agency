@@ -89,13 +89,13 @@ Most agencies stop after one unanswered call. A follow-up system keeps going, po
 4. **Day 3** — two similar listings in the same budget range, in case the first was not quite right.
 5. **Day 7** — a soft close: "Shall I keep you updated on new listings in this area, or close your file for now?"
 
-The same logic applies after a viewing (feedback request, second-viewing offer, comparable listings) and after an offer falls through. This is what [NurtureLoop](/products/nurtureloop) does in the Follow-up system, and its value is that the sequence runs for every lead, not just the ones the agent remembers.
+The same logic applies after a viewing (feedback request, second-viewing offer, comparable listings) and after an offer falls through. This is what the [Follow-up system](/systems#convert) does, and its value is that the sequence runs for every lead, not just the ones the agent remembers.
 
 ## Reactivating old buyers: the pipeline you already paid for
 
 Every agency has a CRM or spreadsheet with hundreds of buyers who enquired in the last 18 months and never bought. Some are still in the market; a few may now be sellers.
 
-Reactivation is a batch job: the AI matches each dormant buyer's recorded budget and area to current listings, sends a personalised WhatsApp or email ("You were looking at two-bedroom flats in De Pijp last spring; three new ones came on this week"), and returns to the agent only the people who respond. [ReviveIQ](/products/reviveiq) exists for exactly this, and because the leads were already paid for once, reaching them again costs little.
+Reactivation is a batch job: the AI matches each dormant buyer's recorded budget and area to current listings, sends a personalised WhatsApp or email ("You were looking at two-bedroom flats in De Pijp last spring; three new ones came on this week"), and returns to the agent only the people who respond. [Lead reactivation](/systems#convert) exists for exactly this, and because the leads were already paid for once, reaching them again costs little.
 
 The order of rollout matters: capture first, then follow-up, then reactivation, then a weekly report showing response time, qualification rate and viewings booked per 100 enquiries. Measure the last 100 portal enquiries before you start so the change can be proven, and go live on one branch, reading every transcript for two weeks before widening.
 
@@ -128,5 +128,5 @@ The WhatsApp AI on its own is live within 48 hours of onboarding. The full manag
 - WhatsApp is the channel because buyers read it immediately; the AI runs on the agency's own number in 40+ languages.
 - Roll out in order: capture, follow-up, reactivation, reporting. Agents keep viewings, valuations and negotiation; the AI removes the chasing.
 
-If you would like to see the 21:40 scenario run on your own listings, Webimot offers a free AI audit for agencies: within three days you get the top automation opportunities for your enquiry flow and a 30-minute walkthrough of the Capture system handling your real portal leads. [Book your free AI audit](/book-consultation).
+If you would like to see the 21:40 scenario run on your own listings, Webimot offers a free AI audit for agencies: within three days you get the top automation opportunities for your enquiry flow and a 30-minute walkthrough of the Capture system handling your real portal leads. [Book your free AI audit](/contact).
 `;

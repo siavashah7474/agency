@@ -173,5 +173,5 @@ The best starting point is a systematic audit of where your team actually spends
 
 Once you know where the friction is, [Webimot's AI solutions](/systems) become obvious.
 
-Want a free internal productivity audit for your business? [Book a call with Webimot](/book-consultation) — we will map your current workflows, identify the highest-impact automation opportunities, and design a 90-day implementation plan tailored to your tools and team size. [Start at webimotagency.com](/book-consultation).
+Want a free internal productivity audit for your business? [Book a call with Webimot](/contact) — we will map your current workflows, identify the highest-impact automation opportunities, and design a 90-day implementation plan tailored to your tools and team size. [Start at webimotagency.com](/contact).
     `;

@@ -106,7 +106,7 @@ Once automated pre-qualification is running, track these metrics monthly:
 
 The improvement comes not from getting more enquiries, but from converting a higher percentage of the enquiries you already have. Clinics can expect around 60% more consultations booked (not guaranteed), and coordinators save 40+ hours of manual messaging per month.
 
-See how [Webimot's WhatsApp AI Agent](/products/whatsapp-ai) pre-qualifies patients on WhatsApp, or [book a free consultation](/book-consultation).
+See how [Webimot's WhatsApp AI Agent](/products/whatsapp-ai) pre-qualifies patients on WhatsApp, or [book a free consultation](/contact).
 
 Related reading: [Why Hair Transplant Clinics Lose International Leads](/blog/why-clinics-lose-international-leads) and [WhatsApp Automation for Medical Tourism](/blog/whatsapp-automation-medical-tourism).
 `;

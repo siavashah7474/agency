@@ -146,5 +146,5 @@ A good first step is a free 30-minute strategy call where you map your current l
 
 [Webimot Agency](https://webimotagency.com) offers this for free. No commitment required. The aim is that you leave with a clear automation roadmap you can act on.
 
-[Book your free strategy call here](https://webimotagency.com/book-consultation).
+[Book your free strategy call here](https://webimotagency.com/contact).
     `;

@@ -16,6 +16,7 @@ import { Mail, MapPin, Phone, MessageSquare } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "wouter";
+import { useBookingModal } from "@/hooks/use-booking-modal";
 import { useTranslation } from "react-i18next";
 import { Loader2 } from "lucide-react";
 import { trackEvent } from "@/components/GoogleAnalytics";
@@ -24,6 +25,7 @@ export default function Contact() {
   const whatsappLink = "https://wa.me/31628753175";
   const { toast } = useToast();
   const { t } = useTranslation();
+  const { openModal } = useBookingModal();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -315,15 +317,14 @@ export default function Contact() {
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
                 {t("contactPage.cta.text", "Book a free 30-minute strategy call to discuss how AI automation can transform your business")}
               </p>
-              <Link href="/book-consultation">
-                <Button
-                  data-testid="button-book-strategy-call"
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90"
-                >
-                  {t("contactPage.cta.button", "Book Your Free Strategy Call")}
-                </Button>
-              </Link>
+              <Button
+                data-testid="button-book-strategy-call"
+                size="lg"
+                className="bg-white text-primary hover:bg-white/90"
+                onClick={() => openModal()}
+              >
+                {t("contactPage.cta.button", "Book Your Free Strategy Call")}
+              </Button>
             </div>
           </section>
         </main>

@@ -4,9 +4,21 @@
       "tagline": "Her potansiyel müşteriye 60 saniyenin altında ulaşın — otomatik olarak.",
       "heroBrief": "Bir form, reklam ya da web sitesinden yeni bir potansiyel müşteri geldiğinde LeadFire 60 saniyenin altında yanıt verir. Yapay zekâ talebi değerlendirir, ilk sorularını yanıtlar ve otomatik olarak bir görüşme planlar. Manuel iş yok. Kaçırılan talep yok.",
       "results": [
-        { "value": "< 60 sn", "label": "Hedef yanıt süresi", "context": "Her potansiyel müşteri, gece ve gündüz" },
-        { "value": "Formlar + reklamlar", "label": "Bağlanan talep kaynakları", "context": "Meta Ads, Google Ads, web sitesi formları ve açılış sayfaları" },
-        { "value": "Her talep", "label": "Otomatik takip edilir", "context": "Değerlendirilir, ardından takviminize randevu bağlantısı sunulur" }
+        {
+          "value": "< 60 sn",
+          "label": "Hedef yanıt süresi",
+          "context": "Her potansiyel müşteri, gece ve gündüz"
+        },
+        {
+          "value": "Formlar + reklamlar",
+          "label": "Bağlanan talep kaynakları",
+          "context": "Meta Ads, Google Ads, web sitesi formları ve açılış sayfaları"
+        },
+        {
+          "value": "Her talep",
+          "label": "Otomatik takip edilir",
+          "context": "Değerlendirilir, ardından takviminize randevu bağlantısı sunulur"
+        }
       ],
       "problemParagraphs": [
         "Pek çok işletme yeni bir potansiyel müşteriye yanıt vermek için saatler harcar. O zamana kadar potansiyel müşteri çoğu zaman bir rakibe gitmiştir. Hızlı yanıt daha fazla müşteri kazandırır; bekleme uzadıkça ilgi de soğur.",
@@ -14,31 +26,88 @@
         "LeadFire bu açığı kapatmak için tasarlandı. Yeni bir potansiyel müşteri form doldurduğu, bir reklama tıkladığı ya da web sitenizden mesaj gönderdiği anda LeadFire 60 saniyenin altında yanıt verecek, talebi değerlendirecek ve doğrudan takviminize bir görüşme yerleştirecek şekilde tasarlanmıştır."
       ],
       "howItWorksSteps": [
-        { "title": "Talep Kaynaklarınızı Bağlayın", "description": "Reklam hesaplarınızı (Meta, Google), web sitesi iletişim formlarınızı ve açılış sayfalarınızı LeadFire'a bağlayın. Kurulum yaklaşık 30 dakika sürer — tüm entegrasyonları biz yaparız." },
-        { "title": "Yapay Zekâ Anında Yanıt Verir", "description": "Her yeni potansiyel müşteri saniyeler içinde kişiselleştirilmiş bir yanıt alır. Yapay zekâ, talebi puanlamak ve sonraki adımları belirlemek için bütçe, zamanlama ve özel ihtiyaçlar gibi akıllı değerlendirme soruları sorar." },
-        { "title": "Takvim Kendini Doldurur", "description": "Nitelikli potansiyel müşterilere otomatik olarak bir randevu bağlantısı gönderilir. Bir saat seçtiklerinde takviminiz güncellenir, ekibiniz bilgilendirilir ve potansiyel müşteri bir onay alır. Sıfır manuel iş." }
+        {
+          "title": "Talep Kaynaklarınızı Bağlayın",
+          "description": "Reklam hesaplarınızı (Meta, Google), web sitesi iletişim formlarınızı ve açılış sayfalarınızı LeadFire'a bağlayın. Kurulum yaklaşık 30 dakika sürer — tüm entegrasyonları biz yaparız."
+        },
+        {
+          "title": "Yapay Zekâ Anında Yanıt Verir",
+          "description": "Her yeni potansiyel müşteri saniyeler içinde kişiselleştirilmiş bir yanıt alır. Yapay zekâ, talebi puanlamak ve sonraki adımları belirlemek için bütçe, zamanlama ve özel ihtiyaçlar gibi akıllı değerlendirme soruları sorar."
+        },
+        {
+          "title": "Takvim Kendini Doldurur",
+          "description": "Nitelikli potansiyel müşterilere otomatik olarak bir randevu bağlantısı gönderilir. Bir saat seçtiklerinde takviminiz güncellenir, ekibiniz bilgilendirilir ve potansiyel müşteri bir onay alır. Sıfır manuel iş."
+        }
       ],
       "scenario": {
         "heading": "LeadFire'ı iş başında görün: Pazar akşamı bir emlak ofisi",
         "description": "Bir potansiyel müşteri formu gönderdiği andan itibaren, dakika dakika LeadFire'ın nasıl çalışacak şekilde tasarlandığını görün.",
         "steps": [
-          { "time": "18:43", "event": "Potansiyel müşteri iletişim formunu doldurur", "detail": "Sarah, Google'da mülk web sitenizi bulur ve bir form doldurur: 'Manchester'da 3 yatak odalı bir daire arıyorum, bütçem £350.000, konut kredim önceden onaylı.' Pazar akşamı. Ofisiniz kapalı." },
-          { "time": "18:43 · 14 saniye sonra", "event": "LeadFire kişiselleştirilmiş bir WhatsApp mesajı gönderir", "detail": "\"Merhaba Sarah! Bize ulaştığınız için teşekkürler — Manchester'da yaklaşık £350.000 bütçeyle 3 yatak odalı bir daire aradığınızı gördüm. Yardımcı olmak için buradayım. İdeal taşınma zamanınız nedir?\"" },
-          { "time": "18:45", "event": "Sarah yanıt verir", "detail": "\"İdeal olarak 3 ay içinde — konut kredimiz zaten onaylı, yani hızlı hareket etmeye hazırız.\"" },
-          { "time": "18:45", "event": "Yapay zekâ değerlendirir ve randevuya geçer", "detail": "LeadFire bunun satın alma niyeti yüksek, ön onaylı bir alıcı olduğunu fark eder ve yanıt verir: \"Harika — kredi onayınızın olması sizi güçlü bir konuma getiriyor. Yarın ekibimizle 30 dakikalık kısa bir görüşme ayarlayıp size kriterlerinize birebir uyan 3 güncel ilanı gösterelim mi?\"" },
-          { "time": "18:47", "event": "Sarah randevu saatini seçer", "detail": "Randevu bağlantısına tıklar ve Salı 09:30'u seçer. Toplantı, tüm bağlamıyla birlikte doğrudan danışmanınızın takvimine düşer." },
-          { "time": "18:47", "event": "Danışmanınız bir bildirim alır", "detail": "Slack mesajı: \"Yeni nitelikli talep — Sarah T. Bütçe: £350.000, zamanlama: 3 ay, konut kredisi önceden onaylı. Toplantı planlandı: Salı 09:30. Tüm ayrıntılar CRM'de.\" Danışmanınız tek bir kelime yazmadı." }
+          {
+            "time": "18:43",
+            "event": "Potansiyel müşteri iletişim formunu doldurur",
+            "detail": "Sarah, Google'da mülk web sitenizi bulur ve bir form doldurur: 'Manchester'da 3 yatak odalı bir daire arıyorum, bütçem £350.000, konut kredim önceden onaylı.' Pazar akşamı. Ofisiniz kapalı."
+          },
+          {
+            "time": "18:43 · 14 saniye sonra",
+            "event": "LeadFire kişiselleştirilmiş bir WhatsApp mesajı gönderir",
+            "detail": "\"Merhaba Sarah! Bize ulaştığınız için teşekkürler — Manchester'da yaklaşık £350.000 bütçeyle 3 yatak odalı bir daire aradığınızı gördüm. Yardımcı olmak için buradayım. İdeal taşınma zamanınız nedir?\""
+          },
+          {
+            "time": "18:45",
+            "event": "Sarah yanıt verir",
+            "detail": "\"İdeal olarak 3 ay içinde — konut kredimiz zaten onaylı, yani hızlı hareket etmeye hazırız.\""
+          },
+          {
+            "time": "18:45",
+            "event": "Yapay zekâ değerlendirir ve randevuya geçer",
+            "detail": "LeadFire bunun satın alma niyeti yüksek, ön onaylı bir alıcı olduğunu fark eder ve yanıt verir: \"Harika — kredi onayınızın olması sizi güçlü bir konuma getiriyor. Yarın ekibimizle 30 dakikalık kısa bir görüşme ayarlayıp size kriterlerinize birebir uyan 3 güncel ilanı gösterelim mi?\""
+          },
+          {
+            "time": "18:47",
+            "event": "Sarah randevu saatini seçer",
+            "detail": "Randevu bağlantısına tıklar ve Salı 09:30'u seçer. Toplantı, tüm bağlamıyla birlikte doğrudan danışmanınızın takvimine düşer."
+          },
+          {
+            "time": "18:47",
+            "event": "Danışmanınız bir bildirim alır",
+            "detail": "Slack mesajı: \"Yeni nitelikli talep — Sarah T. Bütçe: £350.000, zamanlama: 3 ay, konut kredisi önceden onaylı. Toplantı planlandı: Salı 09:30. Tüm ayrıntılar CRM'de.\" Danışmanınız tek bir kelime yazmadı."
+          }
         ]
       },
       "featureDetails": [
-        { "title": "Her form ve reklam talebine anında yanıt", "description": "Meta Ads, Google Ads, web sitesi formları ve açılış sayfalarına bağlanır. Her gönderim anında kişiselleştirilmiş bir yanıtı tetikler — gecikme yok, toplu gönderim yok." },
-        { "title": "Yapay zekâ ile kişiselleştirilmiş ilk mesaj", "description": "Sıradan bir otomatik yanıt değil. LeadFire potansiyel müşterinin talebini, adını ve geldiği kaynağı okur ve insan gibi hissettiren, konuya uygun bir açılış mesajı yazar." },
-        { "title": "Akıllı değerlendirme soruları", "description": "Yapay zekâ bütçe, zamanlama, özel gereksinimler ve satın alma aşaması hakkında sorular sorar — ardından talebi puanlar ve doğru yere yönlendirir." },
-        { "title": "Otomatik takvim randevusu", "description": "Nitelikli potansiyel müşterilere doğrudan ekibinizin takvimine bağlı bir randevu bağlantısı sunulur. Randevular onaylanır, hatırlatmalar gönderilir ve gelmeyenler takip edilir." },
-        { "title": "Gerçek zamanlı ekip bildirimleri", "description": "Satış ekibiniz, bir talep nitelikli hale geldiği anda Slack, e-posta veya SMS ile tüm bağlamıyla bilgilendirilir — böylece görüşmeye hazırlıklı gelir." },
-        { "title": "WhatsApp, e-posta ve SMS'te çalışır", "description": "LeadFire potansiyel müşterilere tercih ettikleri kanaldan ulaşır ve belirli bir süre yanıt gelmezse kanal değiştirir." },
-        { "title": "CRM senkronizasyonu", "description": "Her talep, konuşma ve sonuç otomatik olarak CRM'inize kaydedilir — manuel veri girişi gerekmez." },
-        { "title": "Mesai dışı kapsama", "description": "LeadFire 7/24 çalışır. Gece yarısı gelen talepler, sabah 9'da gelenlerle aynı anlık yanıtı alır — fazla mesai maliyeti olmadan." }
+        {
+          "title": "Her form ve reklam talebine anında yanıt",
+          "description": "Meta Ads, Google Ads, web sitesi formları ve açılış sayfalarına bağlanır. Her gönderim anında kişiselleştirilmiş bir yanıtı tetikler — gecikme yok, toplu gönderim yok."
+        },
+        {
+          "title": "Yapay zekâ ile kişiselleştirilmiş ilk mesaj",
+          "description": "Sıradan bir otomatik yanıt değil. LeadFire potansiyel müşterinin talebini, adını ve geldiği kaynağı okur ve insan gibi hissettiren, konuya uygun bir açılış mesajı yazar."
+        },
+        {
+          "title": "Akıllı değerlendirme soruları",
+          "description": "Yapay zekâ bütçe, zamanlama, özel gereksinimler ve satın alma aşaması hakkında sorular sorar — ardından talebi puanlar ve doğru yere yönlendirir."
+        },
+        {
+          "title": "Otomatik takvim randevusu",
+          "description": "Nitelikli potansiyel müşterilere doğrudan ekibinizin takvimine bağlı bir randevu bağlantısı sunulur. Randevular onaylanır, hatırlatmalar gönderilir ve gelmeyenler takip edilir."
+        },
+        {
+          "title": "Gerçek zamanlı ekip bildirimleri",
+          "description": "Satış ekibiniz, bir talep nitelikli hale geldiği anda Slack, e-posta veya SMS ile tüm bağlamıyla bilgilendirilir — böylece görüşmeye hazırlıklı gelir."
+        },
+        {
+          "title": "WhatsApp, e-posta ve SMS'te çalışır",
+          "description": "LeadFire potansiyel müşterilere tercih ettikleri kanaldan ulaşır ve belirli bir süre yanıt gelmezse kanal değiştirir."
+        },
+        {
+          "title": "CRM senkronizasyonu",
+          "description": "Her talep, konuşma ve sonuç otomatik olarak CRM'inize kaydedilir — manuel veri girişi gerekmez."
+        },
+        {
+          "title": "Mesai dışı kapsama",
+          "description": "LeadFire 7/24 çalışır. Gece yarısı gelen talepler, sabah 9'da gelenlerle aynı anlık yanıtı alır — fazla mesai maliyeti olmadan."
+        }
       ],
       "features": [
         "Her form ve reklam talebine anında yanıt",
@@ -51,304 +120,24 @@
         "7/24 mesai dışı kapsama"
       ],
       "whoItsFor": [
-        { "industry": "Reklam veren her işletme", "useCase": "Rakipleriniz yanıt vermeden önce her reklam tıklamasını anında bir konuşmaya dönüştürün." },
-        { "industry": "Online talep alan klinikler", "useCase": "Her hasta talebine saniyeler içinde yanıt verin ve konsültasyon randevularını otomatik oluşturun." },
-        { "industry": "Emlak ofisleri", "useCase": "Her mülk talebine anında ulaşın ve gösterimleri otomatik pilotta planlayın." },
-        { "industry": "Finans ve hukuk büroları", "useCase": "Talepleri gönderildikleri anda değerlendirin ve doğru danışmana yönlendirin." }
+        {
+          "industry": "Reklam veren her işletme",
+          "useCase": "Rakipleriniz yanıt vermeden önce her reklam tıklamasını anında bir konuşmaya dönüştürün."
+        },
+        {
+          "industry": "Online talep alan klinikler",
+          "useCase": "Her hasta talebine saniyeler içinde yanıt verin ve konsültasyon randevularını otomatik oluşturun."
+        },
+        {
+          "industry": "Emlak ofisleri",
+          "useCase": "Her mülk talebine anında ulaşın ve gösterimleri otomatik pilotta planlayın."
+        },
+        {
+          "industry": "Finans ve hukuk büroları",
+          "useCase": "Talepleri gönderildikleri anda değerlendirin ve doğru danışmana yönlendirin."
+        }
       ],
       "ctaHeadline": "Yavaş Yanıtlar Yüzünden Müşteri Kaybetmeyi Bırakın."
-    },
-
-    "nurtureloop": {
-      "tagline": "Hiçbir potansiyel müşterinin ilgisi bir daha soğumasın.",
-      "heroBrief": "Çoğu potansiyel müşterinin ilgisi, kimse doğru zamanda takip etmediği için soğur. NurtureLoop e-posta, SMS ve WhatsApp üzerinden akıllı, çok kanallı takip dizilerini otomatik olarak yürütür — ve kişi yanıt verdiği ya da randevu aldığı anda durur.",
-      "results": [
-        { "value": "3 kanal", "label": "E-posta, SMS ve WhatsApp", "context": "Potansiyel müşteri yanıt vermediğinde kanal değiştirir" },
-        { "value": "Otomatik durma", "label": "Yanıt veya randevu geldiğinde", "context": "Zaten dönüşmüş kişilere takip mesajı gitmez" },
-        { "value": "Otomatik", "label": "Her takip", "context": "Diziler, personel müdahalesi olmadan bir takvime göre çalışır" }
-      ],
-      "problemParagraphs": [
-        "Çoğu satış birkaç takip gerektirir. Çoğu işletme ise bir ya da iki denemeden sonra vazgeçer. Emek verip kazandığınız — ve elde etmek için para ödediğiniz — potansiyel müşteriler, kimsenin takip etmeye vakti olmadığı için CRM'inizde soğuyup duruyor.",
-        "Manuel takip tutarsızdır, zaman alır ve tamamen ekibinizin hatırlamasına bağlıdır. İşler yoğunlaştığında ilk aksayan şey hep takiptir. Bu da potansiyel müşteri veritabanınızın büyük bir kısmının soğumasına yol açar.",
-        "NurtureLoop insana bağımlılığı tamamen ortadan kaldırır. Her potansiyel müşteri, yanıt verene, randevu alana ya da listeden çıkana kadar doğru zamanda ve doğru kanalda otomatik olarak takip edilir. Ekibiniz yalnızca hazır olan kişilerle konuşur."
-      ],
-      "howItWorksSteps": [
-        { "title": "Potansiyel Müşterilerinizi Aktarın", "description": "CRM'inizi bağlayın, bir tablo içe aktarın ya da LeadFire'ın doğrudan NurtureLoop'u beslemesine izin verin. Her yeni potansiyel müşteri, nereden geldiğine ve ne sorduğuna göre otomatik olarak doğru diziye eklenir." },
-        { "title": "Diziler Otomatik Çalışır", "description": "NurtureLoop size özel bir takvimle e-posta, SMS ve WhatsApp üzerinden kişiselleştirilmiş mesajlar gönderir. Bir kanalda yanıt gelmezse diğerine geçer. Mesajlar davranışa — açılmalara, tıklamalara, yanıtlara — göre uyarlanır." },
-        { "title": "İlgili Müşteriler Öne Çıkar", "description": "Bir potansiyel müşteri yanıt verdiği, tıkladığı ya da randevu aldığı anda NurtureLoop diziyi durdurur ve ekibinizi bilgilendirir. Yalnızca ilgi gösteren kişilerle konuşursunuz — elle peşinden koştuğunuz soğuk kişilerle değil." }
-      ],
-      "scenario": {
-        "heading": "NurtureLoop'u iş başında görün: bir estetik cerrahi kliniğine gelen burun estetiği talebi",
-        "description": "Ahmad burun estetiği hakkında bilgi istiyor. Klinik ekibi mevcut hastalarına odaklanırken NurtureLoop'un 9 gün boyunca otomatik olarak yürütecek şekilde tasarlandığı takip dizisi şöyle:",
-        "steps": [
-          { "time": "1. gün · 14:00", "event": "Ahmad talebini gönderir", "detail": "Ahmad kliniğin iletişim formunu doldurur: 'Burun estetiğiyle ilgileniyorum — ilk kez, burun küçültme. Konsültasyon istiyorum.' Ahmad Dubai'de. Klinik İstanbul'da." },
-          { "time": "1. gün · 14:01", "event": "Bilgi paketiyle anında yanıt", "detail": "NurtureLoop; kliniğin burun estetiği özetini, öncesi/sonrası galerisini, fiyat rehberini ve bir konsültasyon randevu bağlantısını içeren bir e-posta gönderir. Ahmad'ın talebine göre kişiselleştirilmiştir." },
-          { "time": "3. gün · 10:00", "event": "Takip e-postası — sosyal kanıt", "detail": "Henüz yanıt yok. NurtureLoop şunu gönderir: 'Merhaba Ahmad, burun estetiği talebinizle ilgili tekrar yazıyorum. İşte operasyonu için seyahat eden birkaç hastanın hikâyesi, iyileşme deneyimleri dahil.'" },
-          { "time": "5. gün · 11:00", "event": "WhatsApp mesajı — doğrudan ve kişisel", "detail": "Hâlâ yanıt yok. NurtureLoop kanal değiştirir: 'Merhaba Ahmad, size burun estetiğiyle ilgili gönderdiğimiz bilgilere göz atma fırsatınız oldu mu? Sorularınızı memnuniyetle yanıtlarız ya da cerrahımızla ücretsiz bir online konsültasyon ayarlayabilirim.'" },
-          { "time": "7. gün · 09:00", "event": "Konsültasyon saati öneren e-posta", "detail": "NurtureLoop şunu gönderir: 'Merhaba Ahmad, bu Perşembe cerrahımızla online konsültasyon için bir saat açıldı. Sizin için ayırmamı ister misiniz? Herhangi bir taahhüt gerekmez.'" },
-          { "time": "9. gün · 15:15", "event": "Ahmad yanıt verir ve randevu alır", "detail": "Ahmad 7. gün e-postasına yanıt verir: 'Evet, Perşembe uygun — lütfen randevumu oluşturun.' NurtureLoop diziyi hemen durdurur, bir takvim etkinliği oluşturur, klinik ekibini bilgilendirir ve Ahmad'a bir onay gönderir." }
-        ]
-      },
-      "featureDetails": [
-        { "title": "Çok kanallı diziler", "description": "Mesajlar size özel bir takvimle e-posta, SMS ve WhatsApp üzerinden gönderilir. Her kanal stratejik olarak kullanılır — bilgi yoğun içerik için e-posta, doğrudan ve kişisel takip için WhatsApp ve SMS." },
-        { "title": "Otomatik kanal değiştirme", "description": "Bir potansiyel müşteri belirli sayıda denemeden sonra e-postayı açmaz ya da yanıt vermezse NurtureLoop otomatik olarak WhatsApp'a veya SMS'e geçer — kişiye mesajlarını gerçekten kontrol ettiği yerden ulaşır." },
-        { "title": "Davranışa dayalı mesajlaşma", "description": "NurtureLoop, potansiyel müşterinin bir e-postayı açıp açmadığını, bir bağlantıya tıklayıp tıklamadığını ya da bir sayfayı ziyaret edip etmediğini izler ve bir sonraki mesajı buna göre ayarlar. Fiyat sayfasına mı tıkladı? Bir sonraki mesaj bütçe kaygılarına değinir." },
-        { "title": "Potansiyel müşteri yanıt verdiğinde otomatik durur", "description": "Potansiyel müşteri yanıt verdiği, bir randevu bağlantısına tıkladığı ya da randevu aldığı anda dizi hemen durur. Zaten dönüşmüş birine tuhaf takip mesajları gitmez." },
-        { "title": "Yapay zekâ ile kişiselleştirilmiş mesajlar", "description": "Her mesaj, potansiyel müşterinin adı, ilk talebi ve durumuna uygun içerikle kişiselleştirilir — toplu e-posta gibi okunan sıradan bir şablon değil." },
-        { "title": "Mevcut CRM'inizle çalışır", "description": "HubSpot, Salesforce, GoHighLevel veya API üzerinden herhangi bir CRM ile senkronize olur. CRM'inize eklenen yeni potansiyel müşteriler otomatik olarak doğru diziye kaydedilir. Dönüşümler CRM'e geri işlenir." },
-        { "title": "Eksiksiz dönüşüm takibi", "description": "Her dizi için açılma, yanıt, tıklama oranlarını ve randevu dönüşümlerini kanala, mesaj adımına ve talep kaynağına göre görün. Neyin işe yaradığını tam olarak bilin." },
-        { "title": "Size özel dizi oluşturucu", "description": "Dizilerinizi satış döngünüze, iş değerine ve sektörünüze göre kurarız. 3 aylık karar döngüsü olan bir saç ekimi kliniği, sözleşme taleplerini yöneten bir hukuk bürosundan farklı diziler alır." }
-      ],
-      "features": [
-        "E-posta, SMS ve WhatsApp üzerinden diziler",
-        "Potansiyel müşteri yanıt vermezse kanal değiştirir",
-        "Davranışa göre mesaj uyarlama",
-        "Her potansiyel müşteri için yapay zekâ ile kişiselleştirilmiş mesajlar",
-        "Yanıt veya randevu geldiğinde otomatik durur",
-        "Açılma, yanıt ve dönüşüm oranlarını izler",
-        "Mevcut CRM'inizle çalışır",
-        "Satış döngünüze özel dizi oluşturucu"
-      ],
-      "whoItsFor": [
-        { "industry": "Satış süreci olan her işletme", "useCase": "Her takibi otomatikleştirin, satış hattınız hiç soğumasın." },
-        { "industry": "Karar süreci uzun klinikler", "useCase": "Haftalar ya da aylar boyunca tedavi düşünen hastaların aklında kalın." },
-        { "industry": "Finans ve hukuk büroları", "useCase": "Manuel çaba harcamadan her teklifi ve talebi takip edin." },
-        { "industry": "Emlak ofisleri", "useCase": "Aylarca süren satış döngüsü boyunca her alıcıyı ve satıcıyı ilgili tutun." }
-      ],
-      "ctaHeadline": "Potansiyel Müşterileriniz Unutulmaktan Daha İyisini Hak Ediyor."
-    },
-
-    "reviveiq": {
-      "tagline": "Eski potansiyel müşterileriniz bir altın madeni. Hadi kazalım.",
-      "heroBrief": "Elinizde zaten kullanılmadan bekleyen eski potansiyel müşteriler, geçmiş müşteriler ya da soğuk kişilerden oluşan bir liste var. ReviveIQ yapay zekâ ile kişiselleştirilmiş yeniden etkinleştirme mesajları gönderir ve şu anda satın almaya hazır olanları size geri teslim eder. Ek reklam bütçesi gerekmez.",
-      "results": [
-        { "value": "Her liste", "label": "CRM dışa aktarımı, tablo veya CSV", "context": "Hiçbir şey gönderilmeden önce temizlenir, tekrarlar ayıklanır ve segmentlere ayrılır" },
-        { "value": "0 €", "label": "Ek reklam bütçesi", "context": "Zaten sahip olduğunuz kişilerle çalışır" },
-        { "value": "3 kanal", "label": "E-posta, SMS ve WhatsApp", "context": "Yanıt vermeyenler başka bir kanaldan takip edilir" }
-      ],
-      "problemParagraphs": [
-        "Çoğu işletmenin, ilgilenmedikleri için değil, kimse takip etmediği için soğuyan binlerce eski kişisi vardır. Bu kişileri kazanmak size para kazandı. Onlar bir tabloda bekleyen bir altın madeni.",
-        "Pek çok işletmenin mevcut veritabanında fark ettiğinden daha fazla gelir potansiyeli vardır. Bir yeniden etkinleştirme kampanyası hâlâ ilgili olan kişileri ortaya çıkarmak için tasarlanır: bilgi isteyen, araştıran ve sadece dikkati dağılan insanlar.",
-        "ReviveIQ bu listeyi yeniden işe koşmak için tasarlandı. Listenizi segmentlere ayırır, her mesajı kişinin kim olduğuna ve daha önce ne sorduğuna göre kişiselleştirir ve ilgili potansiyel müşterileri doğrudan satış ekibinize iletiriz — hiçbir manuel çaba olmadan."
-      ],
-      "howItWorksSteps": [
-        { "title": "Kişi Listenizi Yükleyin", "description": "Eski CRM kişilerinizi, tablonuzu ya da veritabanınızı dışa aktarın ve bize teslim edin. Her format olur — temizliği, tekrarların ayıklanmasını ve segmentlemeyi biz yaparız. Eksik verili dağınık listeler bile sorun değil." },
-        { "title": "Yapay Zekâ Segmentler ve Mesaj Gönderir", "description": "ReviveIQ listenizi talep türüne, süreçte ne kadar ilerlediklerine ve ne zamandır soğuk olduklarına göre segmentlere ayırır. Her segment farklı, kişiselleştirilmiş bir yeniden etkinleştirme mesajı alır — e-posta, SMS ve WhatsApp üzerinden." },
-        { "title": "İlgili Müşteriler Teslim Edilir", "description": "Yanıt veren, tıklayan ya da ilgi gösteren her kişi ilgili potansiyel müşteri olarak işaretlenir. Ekibiniz, kişinin kim olduğu ve daha önce ne sorduğuyla ilgili tüm bağlamla bilgilendirilir — böylece her konuşma bilgili başlar." }
-      ],
-      "scenario": {
-        "heading": "ReviveIQ'yu iş başında görün: bir saç ekimi kliniği 3.000 eski potansiyel müşteriye yeniden ulaşıyor",
-        "description": "Klinikte 2023–2024'te saç ekimi hakkında bilgi isteyen ama hiç randevu almayan 3.000 kişi var. 18 aydır bir tabloda bekliyorlar.",
-        "steps": [
-          { "time": "1. gün · Kurulum", "event": "Kişi listesi yüklenir ve segmentlere ayrılır", "detail": "ReviveIQ 3.000 kişilik tabloyu alır. Verileri temizler ve üç segment oluşturur: 400 'ilgili' (bir noktada daha önce yanıt vermiş), 1.800 'soğuk talep' (yalnızca form doldurmuş, hiç yanıt vermemiş) ve 800 'geçmiş ziyaretçi' (web sitesi sohbet talepleri)." },
-          { "time": "1. gün · Öğleden sonra", "event": "İlgili segment ilk mesajı alır", "detail": "Daha önce etkileşime geçmiş 400 kişi bir WhatsApp mesajı alır: 'Merhaba Marco, 2024'te saç ekimi talebiniz için sizinle iletişime geçmiştik. Cerrahımızla ücretsiz bir online değerlendirme ister misiniz?'" },
-          { "time": "3. gün", "event": "Soğuk talep segmenti e-posta alır", "detail": "1.800 soğuk kişi, güncel fiyat seçeneklerinden ve online konsültasyon teklifinden bahseden farklı bir mesaj alır. Mümkün olduğunda adları ve ilk talep ayrıntılarıyla kişiselleştirilmiştir." },
-          { "time": "5. gün", "event": "Yanıt vermeyenlere WhatsApp ile takip", "detail": "E-postaya yanıt vermeyen kişiler kısa bir WhatsApp mesajı alır: 'Merhaba, ücretsiz online saç değerlendirmesiyle ilgili mesajımızı gördünüz mü? 15 dakika sürer ve hiçbir taahhüt gerektirmez.'" },
-          { "time": "14. gün · Kapanış", "event": "Kampanya tamamlandı: ilgili potansiyel müşteriler teslim edildi", "detail": "Her yanıt sıcak, ılık veya soğuk olarak puanlanır. Klinik ekibi sıcak ve ılık kişileri tüm bağlamıyla alır; ayrıca gönderilen mesajları, kanala göre yanıtları ve oluşturulan konsültasyon randevularını gösteren bir rapor alır." }
-        ]
-      },
-      "featureDetails": [
-        { "title": "Her kişi listesini içe aktarın", "description": "CRM dışa aktarımlarını, tabloları veya ham CSV dosyalarını her formatta yükleyin. ReviveIQ, mesaj gönderilmeden önce verileri temizler, tekrarları kaldırır ve mümkün olduğunda eksik alanları doldurur." },
-        { "title": "Akıllı liste segmentleme", "description": "Kişiler; daha önce ne kadar etkileşimde bulunduklarına, ne sorduklarına, ne zamandır soğuk olduklarına ve hangi eylemi yaptıklarına (form, telefon, e-posta, sohbet) göre otomatik olarak ayrılır. Her segment farklı bir mesaj stratejisi alır." },
-        { "title": "Tamamen kişiselleştirilmiş mesajlar", "description": "Her mesaj kişinin adına, ilk talebine ve ilgili ayrıntılara atıfta bulunur — spam gibi okunan sıradan bir toplu gönderim değil." },
-        { "title": "Çok kanallı gönderim", "description": "Yeniden etkinleştirme mesajları e-posta, WhatsApp ve SMS üzerinden gider. Bir kanalda yanıt vermeyen kişiler başka bir kanaldan takip edilir — yeniden etkileşim şansını en üst düzeye çıkarır." },
-        { "title": "Puanlama ve işaretleme", "description": "Her yanıt otomatik olarak sınıflandırılır: sıcak (randevuya hazır), ılık (ilgili ama daha fazla bilgiye ihtiyacı var) veya soğuk (ilgilenmiyor). Ekibiniz yalnızca sıcak ve ılık kişilerle ilgilenir." },
-        { "title": "Tek seferlik veya düzenli", "description": "ReviveIQ'yu tek seferlik bir yeniden etkinleştirme kampanyası olarak çalıştırın ya da büyüyen soğuk kişi listenizi kalıcı olarak pasifleşmeden önce sürekli işlemek için üç ayda bir planlayın." },
-        { "title": "Eksiksiz kampanya raporu", "description": "Her kampanyanın sonunda eksiksiz bir rapor alırsınız: gönderilen mesajlar, açılma oranları, kanala göre yanıt oranları, yeniden etkinleşen potansiyel müşteriler, oluşturulan konsültasyon randevuları ve tahmini geri kazanılan gelir." },
-        { "title": "Abonelikten çıkma kurallarına uygun", "description": "Tüm mesajlar kurallara uygun abonelikten çıkma seçenekleri içerir. Abonelikten çıkan herkes gelecekteki kampanyalardan kalıcı olarak çıkarılır ve CRM'inizde işaretlenir." }
-      ],
-      "features": [
-        "Her CRM dışa aktarımını, tabloyu veya kişi listesini içe aktarın",
-        "Yapay zekâ kişi başına segmentler ve mesajları kişiselleştirir",
-        "E-posta, SMS ve WhatsApp üzerinden çalışır",
-        "Sıcak potansiyel müşterileri belirlemek için yanıtları puanlar",
-        "Tek seferlik kampanya veya üç ayda bir düzenli olarak kullanılabilir",
-        "Yanıtlar ve yeniden etkileşime geçen kişiler hakkında eksiksiz rapor",
-        "Puanlama ve otomatik işaretleme",
-        "Tüm kanallarda abonelikten çıkma kurallarına uygun"
-      ],
-      "whoItsFor": [
-        { "industry": "Eski hasta listeleri olan klinikler", "useCase": "Bilgi isteyip hiç randevu almayan hastaları yeniden kazanın — birçoğu hâlâ ilgili." },
-        { "industry": "Kaybedilen müşterileri olan e-ticaret", "useCase": "6–12 aydır alışveriş yapmayan müşterileri kişiselleştirilmiş tekliflerle geri kazanın." },
-        { "industry": "Finans ve hukuk büroları", "useCase": "Teklif alıp hiç dönüşmeyen soğuk adayları yeniden canlandırın." },
-        { "industry": "Veritabanı olan her işletme", "useCase": "Sıfır manuel iletişimle pasif kişileri aktif satış hattına dönüştürün." }
-      ],
-      "ctaHeadline": "İhtiyacınız Olan Gelir Zaten Veritabanınızda."
-    },
-
-    "cleardesk": {
-      "tagline": "İşletme verileriniz, her pazartesi sabahı açıklanmış olarak.",
-      "heroBrief": "ClearDesk her pazartesi saat 08:00'de tüm araçlarınızı — CRM, reklamlar, web sitesi, satış hattı — kapsayan eksiksiz bir performans raporunu sade bir dille sunar. Tablo yok, analist yok, manuel iş yok. Sadece netlik.",
-      "results": [
-        { "value": "Pazartesi 08:00", "label": "Rapor teslimi", "context": "Her hafta — otomatik olarak, kimse bir şey yapmadan" },
-        { "value": "6+ araç", "label": "Tek raporda bağlı", "context": "CRM, Meta Ads, Google Ads, analitik, tablolar ve daha fazlası" },
-        { "value": "Sade dil", "label": "Yazılı özet", "context": "Neyin değiştiği, neden önemli olduğu ve neyin ilginizi gerektirdiği" }
-      ],
-      "problemParagraphs": [
-        "Çoğu işletme sahibi neyin gerçekten işe yaradığını bilmez. Raporlar manuel, geç ve eksiktir — ya da hiç yoktur. Kararlar veriye değil içgüdüye göre verilir ve sorunlar pahalıya patlayana kadar fark edilmez.",
-        "CRM'inizden, reklam platformlarınızdan, web sitesi analitiğinizden ve tablolarınızdan veri çekmek saatler sürer. Rakamlar elinize geçtiğinde hafta çoktan bitmiştir. Ve bunu düzenli yapmaya kimsenin vakti yoktur — ya hiç yapılmaz ya da birine para ödersiniz.",
-        "ClearDesk bunu kalıcı olarak çözer. Her pazartesi, geçen hafta olan her şeyi — neyin arttığını, neyin düştüğünü, neyin ilginizi gerektirdiğini ve neyin yolunda olduğunu — kapsayan sade bir rapor alırsınız; daha ilk kahvenizi içmeden."
-      ],
-      "howItWorksSteps": [
-        { "title": "Araçlarınızı Bağlayın", "description": "ClearDesk CRM'inize, Meta Ads, Google Ads, Google Analytics, WhatsApp, tablolarınıza ve kullandığınız diğer tüm araçlara bağlanır. Tüm entegrasyonları tek bir kurulum oturumunda yaparız — teknik bilgi gerekmez." },
-        { "title": "Yapay Zekâ Her Şeyi Analiz Eder", "description": "ClearDesk her hafta bağlı tüm araçlardan verileri otomatik olarak çeker, eğilimleri belirler, anormallikleri işaretler ve neler olduğunu ve neden önemli olduğunu sade bir dille anlatan bir özet oluşturur." },
-        { "title": "Rapor Pazartesi Sabahı Gelir", "description": "Her pazartesi saat 08:00'de raporunuz gelen kutunuza — ya da ortak bir Slack kanalına veya canlı bir panele — düşer. Açın ve işletmenizin nerede durduğunu, neye odaklanmanız ve neyi düzeltmeniz gerektiğini tam olarak bilin." }
-      ],
-      "scenario": {
-        "heading": "ClearDesk'i iş başında görün: bir kliniğin pazartesi sabahı raporu",
-        "description": "Pazartesi, saat 08:00. Klinik sahibi e-postasını açıyor. İşte ClearDesk'in otomatik olarak hazırlamak üzere tasarlandığı rapor türü:",
-        "steps": [
-          { "time": "Geçen Haftaya Genel Bakış", "event": "Temel rakamlar", "detail": "Tüm kanallardaki yeni talepler, planlanan konsültasyon görüşmeleri, onaylanan tedaviler ve haftanın onaylı geliri; her biri bir önceki haftayla karşılaştırmalı." },
-          { "time": "Reklam Performansı", "event": "Platforma göre harcama ve potansiyel müşteri başına maliyet", "detail": "Meta Ads ve Google Ads yan yana. Bir platformda potansiyel müşteri başına maliyet sıçradıysa rapor bunu belirtir ve ilk olarak neyin kontrol edilmesi gerektiğini önerir; örneğin yenilenmesi gereken bir reklam görseli." },
-          { "time": "Takip", "event": "Geri dönen durgun potansiyel müşteriler", "detail": "Sessizleşmiş potansiyel müşterilerden hangilerinin geçen hafta bir takip mesajına yanıt verdiği ve hangilerinin konsültasyon randevusu aldığı." },
-          { "time": "Gelir Tahmini", "event": "Ayın gidişatı", "detail": "Şimdiye kadarki onaylı gelir, planlanmış ama henüz onaylanmamış konsültasyonların değeri ve son dönüşüm oranınıza dayalı aylık projeksiyon." },
-          { "time": "Bu Haftanın Odağı", "event": "Kısa bir yapılacaklar listesi", "detail": "Örneğin: potansiyel müşteri başına maliyet arttıysa Google Ads görselini gözden geçirin, geçen haftaki konsültasyonlardan tedaviyi henüz onaylamayanları takip edin ve son hastalardan Google yorumu isteyin." }
-        ]
-      },
-      "featureDetails": [
-        { "title": "Tüm araçlarınıza bağlanır", "description": "ClearDesk; HubSpot, Salesforce, GoHighLevel, Meta Ads, Google Ads, Google Analytics, Shopify, WooCommerce, WhatsApp Business ve tablolarla entegre olur. Tüm veriler tek bir yerde, otomatik olarak." },
-        { "title": "Otomatik haftalık ve aylık raporlar", "description": "Raporlar her pazartesi sabahı otomatik olarak oluşturulur. Aylık özet raporlar her ayın 1'inde gönderilir. Planlama yok, manuel veri çekme yok — kendiliğinden olur." },
-        { "title": "Sade dilde yapay zekâ özeti", "description": "Rakamlar tek başına ne yapmanız gerektiğini söylemez. ClearDesk neyin değiştiğini, neden önemli olduğunu ve bu hafta neye odaklanmanız gerektiğini açıkça yazar — veri analisti jargonuyla değil, sade bir dille." },
-        { "title": "Anormallik tespiti ve uyarılar", "description": "Hafta ortasında olağandışı bir şey olursa — potansiyel müşteri başına maliyette ani artış, form gönderimlerinde düşüş, bütçeyi aşan bir kampanya — ClearDesk sizi pazartesiyi beklemeden hemen uyarır." },
-        { "title": "Tüm departmanlarda KPI takibi", "description": "Potansiyel müşterileri, randevuları, geliri, reklam bütçesini, ROAS'ı, web sitesi trafiğini, e-posta açılma oranlarını, WhatsApp yanıt oranlarını ve özel metrikleri tek bir haftalık özette takip edin." },
-        { "title": "E-posta, Slack veya panele teslim", "description": "Raporlar istediğiniz yere gelir: e-posta gelen kutunuza, bir ekip Slack kanalına, istediğiniz zaman bakabileceğiniz canlı bir web paneline ya da üçüne birden." },
-        { "title": "İşletmenize tamamen uyarlanabilir", "description": "ClearDesk'i sizin KPI'larınıza, kullandığınız araçlara ve gerçekten vermeniz gereken kararlara göre kurarız. Sıradan bir şablon değil — size ait raporu alırsınız." },
-        { "title": "Geçmiş eğilim görünümleri", "description": "Her rapor haftadan haftaya ve aydan aya karşılaştırmalar içerir; böylece yalnızca bu hafta olanları tek başına değil, işlerin iyiye mi kötüye mi gittiğini de görürsünüz." }
-      ],
-      "features": [
-        "CRM'inize, reklamlarınıza, web sitesi analitiğinize ve tablolarınıza bağlanır",
-        "Haftalık ve aylık performans raporlarını otomatik oluşturur",
-        "Neyin işe yarayıp neyin yaramadığına dair sade dilde yapay zekâ özeti",
-        "Anormallik tespiti ve hafta ortası uyarıları",
-        "Satış, pazarlama ve operasyonda KPI takibi",
-        "E-posta, Slack veya canlı bir panele teslim",
-        "İşletme metriklerinize tamamen uyarlanabilir",
-        "Geçmiş eğilim görünümleri — haftadan haftaya ve aydan aya"
-      ],
-      "whoItsFor": [
-        { "industry": "Reklam veren her işletme", "useCase": "Her hafta hangi kampanyaların işe yaradığını ve neyin kesilmesi gerektiğini tam olarak görün." },
-        { "industry": "Klinikler ve sağlık", "useCase": "Talepleri, randevuları, dönüşümleri ve geliri tek bir haftalık özette takip edin." },
-        { "industry": "E-ticaret mağazaları", "useCase": "ROAS, LTV, terk edilen sepetler ve dönüşüm oranlarını otomatik olarak izleyin." },
-        { "industry": "Küçük işletme sahipleri", "useCase": "Analist işe almadan tüm işletmenizin basit bir haftalık özetini alın." }
-      ],
-      "ctaHeadline": "İşletmenizi Tahminlerle Değil, Gerçeklerle Yönetin."
-    },
-
-    "documind": {
-      "tagline": "Evrakları saniyeler içinde veriye dönüştürün.",
-      "heroBrief": "Herhangi bir belgeyi yükleyin — fatura, sözleşme, kayıt formu veya tıbbi kayıt. DocuMind onu okur, tüm verileri çıkarır, CRM'inizi doldurur ve eksik olan her şeyi işaretler. Manuel veri girişi saniyeler içinde halledilir.",
-      "results": [
-        { "value": "Geldiği anda", "label": "Belgeler işlenir", "context": "E-posta gelen kutunuzdan, ortak klasörünüzden veya yükleme portalınızdan" },
-        { "value": "İnsan onaylı", "label": "Doğruluk", "context": "Yapay zekâ belirsiz her şeyi incelemeye işaretler" },
-        { "value": "CRM'e hazır", "label": "Yapılandırılmış çıktı", "context": "Çıkarılan veriler CRM'inize, veritabanınıza veya tablonuza aktarılır" }
-      ],
-      "problemParagraphs": [
-        "Personel her hafta saatlerini belgeleri elle işlemeye harcar — faturalar, kayıt formları, sözleşmeler, hasta kayıtları. Bu yavaştır, hataya açıktır ve boşa giden zaman ile kaçan veriler nedeniyle işletmenize para kaybettirir.",
-        "Elle yazılan her belge dakikalarca personel zamanı alır. Bir aylık kayıt formu, fatura ve sözleşme bir araya geldiğinde bu ciddi bir yüke dönüşür — üstelik bu işi hastalara, müşterilere veya daha değerli işlere odaklanması gereken kişiler yapar.",
-        "DocuMind bu manuel işi ekibinizin üzerinden almak için tasarlandı. Aldığınız her belge otomatik olarak okunur, işlenir ve dosyalanır. Eksik veya belirsiz bir şey varsa DocuMind bunu hemen işaretler, böylece hiçbir şey gözden kaçmaz."
-      ],
-      "howItWorksSteps": [
-        { "title": "Belgeler Gelir", "description": "DocuMind e-posta gelen kutunuzu, ortak klasörünüzü veya yükleme portalınızı izler. Yeni bir belge geldiği anda — PDF, Word, tarama ya da fotoğraf — otomatik olarak işlenmek üzere sıraya alınır." },
-        { "title": "Yapay Zekâ Okur ve Çıkarır", "description": "DocuMind belgeyi okur, tüm verileri (adlar, tarihler, tutarlar, belgede yazan tanılar, koşullar vb.) belirler ve bunları temiz, düzenli alanlara yapılandırır." },
-        { "title": "Veriler Ait Olduğu Yere Gider", "description": "Çıkarılan veriler doğrudan CRM'inize, veritabanınıza veya tablonuza aktarılır. Bir alan eksikse ya da belge tamamlanmamışsa DocuMind bunu işaretler ve eksik bilgiyi talep eder." }
-      ],
-      "scenario": {
-        "heading": "DocuMind'ı iş başında görün: bir tüp bebek kliniğinin pazartesi sabahı hasta kaydı",
-        "description": "Yeni bir hasta kayıt paketini e-postayla gönderiyor. Henüz hiçbir personel masasında değilken DocuMind'ın bunu nasıl ele alacak şekilde tasarlandığını görün.",
-        "steps": [
-          { "time": "09:12", "event": "Hasta kayıt paketini e-postayla gönderir", "detail": "Maria, konsültasyonundan önce 6 sayfalık bir kayıt formu PDF'i ve pasaport taraması gönderir. E-posta kliniğin belge gelen kutusuna düşer. Henüz müsait personel yok." },
-          { "time": "09:12 · 8 saniye sonra", "event": "DocuMind belgeleri algılar", "detail": "DocuMind iki ek belirler: yapılandırılmış bir kayıt formu ve bir kimlik belgesi. Her ikisini aynı anda işlemeye başlar." },
-          { "time": "09:12 · 22 saniye sonra", "event": "Kayıt formundan veriler çıkarılır", "detail": "Çıkarılanlar: Ad soyad, doğum tarihi, uyruk (İspanyol), ilgilenilen tedavi (tüp bebek — ilk deneme), önceki doğurganlık tedavisi geçmişi, kullanılan ilaçlar, aile hekimi iletişim bilgileri, acil durum kişisi." },
-          { "time": "09:12 · 28 saniye sonra", "event": "CRM kaydı otomatik oluşturulur", "detail": "Kliniğin CRM'inde tüm alanları doldurulmuş eksiksiz bir hasta profili oluşturulur. Yazma yok, kopyala-yapıştır yok. Kayıt 'Konsültasyon öncesi — Tüp bebek' olarak etiketlenir ve doğru danışmana atanır." },
-          { "time": "09:12 · 30 saniye sonra", "event": "Eksik belge işaretlenir", "detail": "DocuMind adres belgesinin eklenmediğini tespit eder. Maria'ya otomatik olarak kısa bir e-posta gönderir: 'Merhaba Maria, kayıt formunuzu gönderdiğiniz için teşekkür ederiz. Yalnızca bir belgeye daha ihtiyacımız var — adres kanıtı olarak yakın tarihli bir fatura veya banka ekstresi. Bu e-postayı yanıtlayarak gönderebilirsiniz.'" },
-          { "time": "09:30", "event": "Koordinatör güne başlar", "detail": "CRM'i açar ve Maria'nın eksiksiz, yapılandırılmış profilini konsültasyona hazır şekilde görür. Hiç manuel iş yapılmadı. Eksik belge zaten talep edildi." }
-        ]
-      },
-      "featureDetails": [
-        { "title": "Her belge formatını okur", "description": "PDF'ler, taranmış görüntüler, Word belgeleri, Excel dosyaları, kayıt formları, faturalar, sözleşmeler ve tıbbi kayıtlar — DocuMind el yazısı içerik dahil hepsini işler." },
-        { "title": "Verileri otomatik çıkarır ve yapılandırır", "description": "Adlar, tarihler, tutarlar, adresler, tıbbi kodlar, sözleşme koşulları, kalemler — her veri parçası manuel kurallara gerek kalmadan belirlenir, çıkarılır ve doğru alana eşlenir." },
-        { "title": "CRM'inizi veya veritabanınızı otomatik doldurur", "description": "Yapılandırılmış verileri doğrudan mevcut CRM'inize (HubSpot, Salesforce, özel sistemler) veya veritabanınıza aktarır. Manuel kopyala-yapıştır yok, yeniden yazma yok." },
-        { "title": "Eksik veya hatalı bilgileri işaretler", "description": "Zorunlu bir alan eksikse, bir değer hatalı görünüyorsa ya da bir belge okunamıyorsa DocuMind bunu hemen işaretler ve eksik bilgiyi gönderenden otomatik olarak isteyebilir." },
-        { "title": "Belgeleri doğru kişiye yönlendirir", "description": "Belge türüne ve içeriğine göre DocuMind dosyaları doğru ekip üyesine veya departmana yönlendirir — hasta kayıtları danışmanlara, faturalar muhasebeye, sözleşmeler hukuka." },
-        { "title": "Uzun belgeleri ana noktalara özetler", "description": "Sözleşmeler, raporlar veya tıbbi yazılar için DocuMind sade dilde bir özet oluşturur — böylece ekibiniz 20 sayfa okumadan ana noktaları öğrenir." },
-        { "title": "Eksiksiz denetim kaydı", "description": "İşlenen her belge; zaman damgası, neyin çıkarıldığı, neyin oluşturulduğu ve (varsa) neyin işaretlendiği bilgisiyle kaydedilir. Tamamen aranabilir ve denetlenebilir." },
-        { "title": "Çok dilli belge işleme", "description": "DocuMind İngilizce, Almanca, Arapça, Fransızca, Türkçe, İspanyolca ve 40+ dilde daha belgeleri okur ve veri çıkarır." }
-      ],
-      "features": [
-        "PDF'leri, Word belgelerini, formları, faturaları ve sözleşmeleri okur",
-        "Önemli verileri otomatik olarak çıkarır ve yapılandırır",
-        "CRM'inizi veya şirket içi veritabanınızı otomatik doldurur",
-        "Eksik veya hatalı bilgileri işaretler",
-        "Belgeleri doğru kişiye veya departmana yönlendirir",
-        "Uzun belgeleri ana noktalara özetler",
-        "İşlenen her belgenin eksiksiz denetim kaydı",
-        "Çok dilli belge işleme"
-      ],
-      "whoItsFor": [
-        { "industry": "Sağlık ve Klinikler", "useCase": "Hasta kayıt formlarını, sevk yazılarını ve tıbbi kayıtları manuel veri girişi olmadan işleyin." },
-        { "industry": "Finans ve Hukuk", "useCase": "Sözleşmelerden önemli maddeleri çıkarın ve müşteri dosyalarını saniyeler içinde otomatik doldurun." },
-        { "industry": "E-ticaret", "useCase": "Faturaları, satın alma siparişlerini ve tedarikçi belgelerini otomatik olarak işleyin." },
-        { "industry": "Belgeyle çalışan her işletme", "useCase": "Belge yoğun her iş akışında manuel veri girişini ortadan kaldırın." }
-      ],
-      "ctaHeadline": "Yapay Zekânın Okuyabildiğini Yazmaları İçin İnsanlara Para Ödemeyi Bırakın."
-    },
-
-    "seoBlogAi": {
-      "tagline": "SEO içeriğini otomatik pilotta yayınlayın. Her hafta.",
-      "heroBrief": "Çoğu işletme Google'da üst sıralara çıkmak için içeriğe ihtiyaç duyduğunu bilir — ama onu üretmeye hiç vakit bulamaz. SEO Blog AI hedef anahtar kelimeleri araştırır, optimize edilmiş makaleler yazar ve bunları sizin takviminize göre otomatik olarak yayınlar. Siz müşterilerinize odaklanırken siteniz sıralamada yükselir.",
-      "results": [
-        { "value": "30'a kadar", "label": "Aylık yazı", "context": "Takviminize göre otomatik olarak yazılır ve yayınlanır" },
-        { "value": "Haftalık", "label": "Yayın takvimi", "context": "Her yazıyı önce inceleyin ya da otomatik yayınlanmasına izin verin" },
-        { "value": "Sizin CMS'iniz", "label": "Doğrudan yayınlanır", "context": "WordPress, Webflow veya başka bir CMS'e; ardından Google Search Console'a gönderilir" }
-      ],
-      "problemParagraphs": [
-        "Çoğu işletme Google'da üst sıralara çıkmak için içeriğe ihtiyaç duyduğunu bilir — ama içerik üretmek zaman alır, pahalıdır ve ekip yoğunlaştığında ilk ertelenen iştir. Aylardır güncellenmeyen bir blog sıralamalarınıza pek katkı sağlamaz.",
-        "Yazar işe almak pahalıdır. Serbest çalışanlar tutarsızdır. Ve SEO uzmanlığı olmadan iyi yazılmış içerik bile sıralamada yükselmez — Google'da görünmesi için doğru anahtar kelime araştırması, meta etiketler, iç bağlantılar ve konu otoritesi gerekir.",
-        "SEO Blog AI bu üçünü birden halletmek için tasarlandı. Hedef kitlenizin ne aradığını araştırır, tam da bu aramalar için optimize edilmiş kaliteli makaleler yazar ve bunları web sitenizde otomatik olarak yayınlar — düzenli olarak, her hafta, siz parmağınızı bile kıpırdatmadan."
-      ],
-      "howItWorksSteps": [
-        { "title": "Anahtar Kelime Araştırması ve Kurulum", "description": "Web sitenizi ve sektörünüzü inceleyerek en yüksek fırsatı sunan anahtar kelime hedeflerini belirleriz — ideal müşterilerinizin zaten yaptığı aramalar. Konularınızı ve yayın takviminizi belirler, doğrudan CMS'inize (WordPress, Webflow veya başka biri) bağlanırız." },
-        { "title": "Yapay Zekâ Yazar ve Optimize Eder", "description": "SEO Blog AI her hafta seçtiğiniz anahtar kelimeleri hedefleyen makaleler oluşturur — doğru başlık yapısı, meta başlıklar, meta açıklamalar, hizmet sayfalarınıza iç bağlantılar, görsel alt etiketleri ve doğal anahtar kelime yerleşimiyle." },
-        { "title": "Sıralamalar Haftalık Takip Edilir", "description": "Yayınlanan yazılar otomatik olarak Google Search Console'a gönderilir. Anahtar kelime sıralamalarını haftalık takip eder, içerik stratejisini yükselen ve ivme kazanan konulara göre ayarlarız." }
-      ],
-      "scenario": {
-        "heading": "SEO Blog AI'ı iş başında görün: bir saç ekimi kliniğinin ilk altı ayı",
-        "description": "Kliniğin bir web sitesi var ama neredeyse hiç organik trafiği yok. SEO Blog AI'ın ilk 6 ay boyunca nasıl çalışacak şekilde tasarlandığını görün.",
-        "steps": [
-          { "time": "1. hafta · Kurulum", "event": "Anahtar kelime analizi", "detail": "SEO Blog AI kliniğin web sitesini inceler ve potansiyel hastaların Google'a ne yazdığına bakar. 'Türkiye'de en iyi saç ekimi', 'FUE mi DHI mi, hangisi daha iyi', 'Türkiye saç ekimi fiyatı' ve 'saç ekimi sonrası iyileşme sürecinde neler beklenir' gibi anahtar kelime fırsatlarından oluşan bir liste hazırlar." },
-          { "time": "2. hafta", "event": "İlk yazılar otomatik olarak yayınlanır", "detail": "İlk grup WordPress'e gider: Türkiye ile Birleşik Krallık fiyat karşılaştırması, FUE ve DHI rehberi, hafta hafta iyileşme rehberi ve klinik seçme rehberi." },
-          { "time": "2. ay", "event": "Yazılar her hafta yayınlanmaya devam eder", "detail": "Daha fazla makale yayında ve dizine eklenmek üzere Google Search Console'a gönderildi. Anahtar kelime sıralamaları haftalık takip edilir, böylece konu planı ivme kazanan konuları izleyebilir." },
-          { "time": "4. ay", "event": "Strateji yükselen konulara göre ayarlanır", "detail": "Yükselen anahtar kelimeler destekleyici makaleler ve iç bağlantılar alır. Hareket etmeyen konular yeniden ele alınır ya da değiştirilir." },
-          { "time": "6. ay", "event": "Tek raporda takip edilen bir içerik kütüphanesi", "detail": "Her biri kliniğin hizmet sayfalarına bağlantı veren yaklaşık iki düzine makale yayında. Aylık özet, makale başına sıralamaları ve organik trafiği gösterir. Sıralamalar rekabete bağlıdır ve garanti edilmez." }
-        ]
-      },
-      "featureDetails": [
-        { "title": "Anahtar kelime araştırması ve strateji", "description": "İşletmeniz ve pazarınız için en yüksek fırsatı sunan anahtar kelimeleri belirleriz — yalnızca yüksek hacimli terimleri değil, ideal müşterilerinizin gerçekten aradığı, satın alma niyeti taşıyan terimleri." },
-        { "title": "Yapay zekâ ile içerik üretimi", "description": "Her makale gerçekten faydalı ve bilgilendirici olacak şekilde yazılır — anahtar kelimeyle doldurulmuş dolgu metin değil. Google'ın algoritmaları faydalı içeriğe öncelik verir, SEO Blog AI da öyle. Yazılar genellikle 1.200–2.500 kelimedir." },
-        { "title": "Eksiksiz sayfa içi SEO optimizasyonu", "description": "Her yazı optimize edilmiş meta başlık, meta açıklama, H1/H2/H3 yapısı, anahtar kelime yerleşimi, görsel alt etiketleri ve özel bir URL kısa adı içerir. Ek bir SEO eklentisi gerekmez." },
-        { "title": "Otoriteyi artıran iç bağlantılar", "description": "Her makale ana hizmet sayfalarınıza, ürün sayfalarınıza ve ilgili diğer yazılara bağlantı verir — iç bağlantı otoritesi oluşturur ve ziyaretçileri dönüşüm sayfalarına yönlendirir." },
-        { "title": "Otomatik planlama ve yayınlama", "description": "Yazılar önceden belirlenen bir takvimle CMS'inizde otomatik olarak yayınlanır. Yazıları yayına girmeden önce inceleyebilir ya da tamamen otomatik moda alabilirsiniz — seçim sizin." },
-        { "title": "Çok dilli içerik", "description": "Uluslararası kitlelere ulaşmak için birden fazla dilde içerik yayınlayın. Özellikle Almanya, Birleşik Krallık, BAE, Hollanda ve diğer pazarlardan hasta hedefleyen medikal turizm klinikleri için değerlidir." },
-        { "title": "Google Search Console entegrasyonu", "description": "Yayınlanan her yazı dizine eklenmek üzere otomatik olarak Google Search Console'a gönderilir. Sıralamalar haftalık takip edilir ve aylık performans özetinizde raporlanır." },
-        { "title": "Otomatik pilotta ayda 20–30 yazı", "description": "Tam kapasitede SEO Blog AI ayda 30'a kadar optimize edilmiş makale yayınlayabilir." }
-      ],
-      "features": [
-        "Anahtar kelime araştırması ve içerik stratejisi",
-        "Otomatik içerik üretimi (yazı başına 1.200–2.500 kelime)",
-        "Eksiksiz sayfa içi SEO optimizasyonu",
-        "Hizmet ve ürün sayfalarına iç bağlantılar",
-        "CMS'inize otomatik planlama ve yayınlama",
-        "Uluslararası pazarlar için çok dilli içerik",
-        "Google Search Console entegrasyonu ve sıralama takibi",
-        "Otomatik pilotta ayda 20–30 yazı"
-      ],
-      "whoItsFor": [
-        { "industry": "Klinikler ve sağlık", "useCase": "'Türkiye saç ekimi' veya 'İstanbul diş kaplama' gibi satın alma niyeti yüksek aramalarda otomatik olarak sıralamaya girin." },
-        { "industry": "E-ticaret ve Shopify", "useCase": "Otomatik pilotta yayınlanan SEO blog içeriğiyle ürün sayfalarınıza organik trafik çekin." },
-        { "industry": "Finans ve hukuk büroları", "useCase": "Gelen talep oluşturan düzenli uzman içerikle alanınızda otorite kazanın." },
-        { "industry": "Organik trafik isteyen her işletme", "useCase": "Yazar işe almadan ya da içerik üretmeye saatler harcamadan Google'da rekabet edin." }
-      ],
-      "ctaHeadline": "Siz İşinizi Yönetirken Blogunuzu Yapay Zekâ Yazsın."
     }
   }
 }

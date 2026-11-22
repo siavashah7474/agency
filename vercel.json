@@ -74,17 +74,17 @@
     },
     {
       "source": "/services/seo-blog-generator",
-      "destination": "/products/seo-blog-ai",
+      "destination": "/systems",
       "permanent": true
     },
     {
       "source": "/services/seo",
-      "destination": "/products/seo-blog-ai",
+      "destination": "/systems",
       "permanent": true
     },
     {
       "source": "/services/ai-marketing-analyst",
-      "destination": "/products/cleardesk",
+      "destination": "/systems",
       "permanent": true
     },
     {
@@ -180,6 +180,76 @@
     {
       "source": "/blog/ai-automation-revenue-growth-business-2026",
       "destination": "/blog/ai-operations-automation-sme-revenue-2026",
+      "permanent": true
+    },
+    {
+      "source": "/products/nurtureloop",
+      "destination": "/systems",
+      "permanent": true
+    },
+    {
+      "source": "/products/reviveiq",
+      "destination": "/systems",
+      "permanent": true
+    },
+    {
+      "source": "/products/documind",
+      "destination": "/systems",
+      "permanent": true
+    },
+    {
+      "source": "/products/cleardesk",
+      "destination": "/systems",
+      "permanent": true
+    },
+    {
+      "source": "/products/seo-blog-ai",
+      "destination": "/systems",
+      "permanent": true
+    },
+    {
+      "source": "/tr/products/nurtureloop",
+      "destination": "/tr/systems",
+      "permanent": true
+    },
+    {
+      "source": "/tr/products/reviveiq",
+      "destination": "/tr/systems",
+      "permanent": true
+    },
+    {
+      "source": "/tr/products/documind",
+      "destination": "/tr/systems",
+      "permanent": true
+    },
+    {
+      "source": "/tr/products/cleardesk",
+      "destination": "/tr/systems",
+      "permanent": true
+    },
+    {
+      "source": "/tr/products/seo-blog-ai",
+      "destination": "/tr/systems",
+      "permanent": true
+    },
+    {
+      "source": "/clients",
+      "destination": "/case-studies",
+      "permanent": true
+    },
+    {
+      "source": "/book-consultation",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/tr/book-consultation",
+      "destination": "/tr/contact",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/apex-ai-trading-bots",
+      "destination": "/case-studies",
       "permanent": true
     }
   ],

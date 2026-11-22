@@ -97,5 +97,5 @@ Not to start. Mapping and measuring need only paper. Some bottlenecks can be rem
 - Map one workflow, measure where work waits, fix that step, then measure again.
 - Remove or simplify a step before automating it, and keep trust-building conversations with people.
 
-Webimot's [free AI audit](/book-consultation) maps your main workflow and identifies its bottleneck in 3 days. See [the four systems](/systems) and [AI systems for small businesses](/small-business).
+Webimot's [free AI audit](/contact) maps your main workflow and identifies its bottleneck in 3 days. See [the four systems](/systems) and [AI systems for small businesses](/small-business).
 `;

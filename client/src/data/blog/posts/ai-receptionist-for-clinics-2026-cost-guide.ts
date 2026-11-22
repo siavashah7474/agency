@@ -140,5 +140,5 @@ With a managed service the WhatsApp agent itself can be live within 48 hours: yo
 - In the illustrative example (300 enquiries a month, €2,500 average treatment), moving the booking rate from 12% to 18% would be worth roughly €20,000 a month. Run it with your own numbers.
 - Demand native WhatsApp, language detection, photo handling, calendar/CRM write-back, hand-off rules, medical guardrails and weekly reporting.
 
-If you want to see what this would look like on your own WhatsApp number, Webimot offers a free AI audit: within 3 days you receive the top five automation opportunities for your clinic with ROI estimates, and a 30-minute demo of the Capture system running on your actual enquiries. [Book your free AI audit](/book-consultation).
+If you want to see what this would look like on your own WhatsApp number, Webimot offers a free AI audit: within 3 days you receive the top five automation opportunities for your clinic with ROI estimates, and a 30-minute demo of the Capture system running on your actual enquiries. [Book your free AI audit](/contact).
 `;

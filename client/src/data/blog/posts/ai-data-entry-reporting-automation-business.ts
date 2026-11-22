@@ -121,5 +121,5 @@ The fastest path to a return is identifying the one data task that consumes the 
 
 Start there. Automate it thoroughly. Measure the time saved. Then use that confidence to expand.
 
-Want help identifying and automating the highest-impact data entry workflows in your business? [Book a free analysis call with Webimot](/book-consultation) — we will review your current tools and processes and show you exactly where [Webimot's AI automation](/systems) would have the biggest impact. [Get started at webimotagency.com](/book-consultation).
+Want help identifying and automating the highest-impact data entry workflows in your business? [Book a free analysis call with Webimot](/contact) — we will review your current tools and processes and show you exactly where [Webimot's AI automation](/systems) would have the biggest impact. [Get started at webimotagency.com](/contact).
     `;

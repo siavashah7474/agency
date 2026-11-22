@@ -24,7 +24,6 @@
     "contact": "Contacto",
     "aboutUs": "Sobre Nosotros",
     "caseStudies": "Nuestro trabajo",
-    "ourClients": "Trabajo del fundador",
     "allServices": "Todos los Servicios",
     "whatsappUs": "WhatsApp",
     "privacyPolicy": "Política de Privacidad",
@@ -217,7 +216,7 @@
       ]
     },
     "teamTitle": "Nuestro trabajo",
-    "teamP": "Webimot tiene su base en Ámsterdam y Estambul y está dirigida por su fundador, Sia Ahmadi. El trabajo realizado hasta la fecha incluye una colaboración en curso con Gorkem Atsal Clinic (sitio web, CRM, Google Ads y Meta Ads, estrategia de redes sociales y optimización para Google, Bing y Yandex), el sitio web y la puesta en marcha digital de Clinish, colaboraciones freelance con las clínicas Prime Hair, MSB Aesthetic y Estetizm, la aplicación de bots de trading Apex AI y el producto propio de Webimot, WhatsApp AI.",
+    "teamP": "Webimot tiene su base en Ámsterdam y Estambul y está dirigida por su fundador, Sia Ahmadi. El trabajo realizado hasta la fecha incluye una colaboración en curso con Gorkem Atsal Clinic (sitio web, CRM, Google Ads y Meta Ads, estrategia de redes sociales y optimización para Google, Bing y Yandex), el sitio web y la puesta en marcha digital de Clinish, colaboraciones freelance con las clínicas Prime Hair, MSB Aesthetic y Estetizm, y el producto propio de Webimot, WhatsApp AI.",
     "teamCta": "Hablemos de Tus Objetivos",
     "founder": {
       "badge": "Fundador",
@@ -298,65 +297,6 @@
     "ctaTitle": "Háblanos de tu negocio",
     "ctaSubtitle": "Reserva una llamada gratuita y te mostraremos qué automatizaríamos primero.",
     "ctaButton": "Reserva Tu Llamada Estratégica Gratis"
-  },
-  "whyWebimot": {
-    "badge": "Para clínicas",
-    "title": "Ayudamos a Clínicas a Conseguir Más Pacientes",
-    "subtitle": "La mayoría de agencias te traen clics. Nosotros nos centramos en lo que realmente importa para tu clínica — convertir consultas en procedimientos reservados. Con sistemas impulsados por IA construidos específicamente para clínicas de trasplante capilar, dental, estética y FIV.",
-    "coreValues": [
-      {
-        "title": "Convertir Pacientes en Reservas",
-        "description": "No solo te traemos consultas — construimos sistemas que convierten preguntas de pacientes en consultas y procedimientos confirmados.",
-        "stats": "Seguimiento de consulta a reserva"
-      },
-      {
-        "title": "Aumentar Pacientes Internacionales",
-        "description": "Atrae pacientes del Reino Unido, Alemania, EE.UU. y más allá con estrategias de marketing multilingüe construidas para clínicas de turismo médico.",
-        "stats": "Campañas multilingües"
-      },
-      {
-        "title": "Respuesta a Pacientes 24/7",
-        "description": "Nunca pierdas una consulta. Nuestra IA gestiona preguntas de pacientes, recopila las fotos para tus médicos y reserva consultas incluso mientras duermes.",
-        "stats": "Responde en menos de 3 segundos"
-      },
-      {
-        "title": "Seguir Cada Recorrido del Paciente",
-        "description": "Sabe exactamente de dónde vienen tus pacientes, qué campañas funcionan y cómo conseguir más reservas con analítica detallada.",
-        "stats": "Informes de rendimiento semanales"
-      }
-    ],
-    "partnerTitle": "El Socio de Crecimiento de Tu Clínica",
-    "partnerDesc": "Nuestros sistemas están pensados para la forma de trabajar de las clínicas de turismo médico: gestionar consultas de pacientes en árabe, alemán e inglés, recopilar y ordenar las fotos de los pacientes para el médico y acompañar a los pacientes internacionales desde el primer mensaje hasta la consulta reservada.",
-    "partnerItems": [
-      "Comunicación multilingüe con pacientes (EN, DE, AR, RU)",
-      "Preselección de fotos con IA para procedimientos capilares, dentales y estéticos (nunca un diagnóstico)",
-      "Reserva de consultas automatizada y sincronización de calendario",
-      "Seguimiento del recorrido del paciente desde la consulta hasta el procedimiento"
-    ],
-    "processTitle": "Nuestro proceso",
-    "steps": [
-      {
-        "step": "01",
-        "title": "Auditar Tu Clínica",
-        "description": "Analizamos tu flujo de pacientes, sitio web y marketing actual para encontrar oportunidades de crecimiento."
-      },
-      {
-        "step": "02",
-        "title": "Construir Tu Sistema IA",
-        "description": "Agente WhatsApp personalizado, campañas multilingües y reservas automatizadas adaptadas a tu clínica."
-      },
-      {
-        "step": "03",
-        "title": "Lanzar y Monitorear",
-        "description": "Entra en funcionamiento con respuesta a pacientes 24/7 y sigue cada consulta desde el primer mensaje hasta el procedimiento reservado."
-      },
-      {
-        "step": "04",
-        "title": "Escalar Internacionalmente",
-        "description": "Expándete a nuevos mercados — Reino Unido, Alemania, países del Golfo — y aumenta tu base de pacientes internacionales."
-      }
-    ],
-    "cta": "Obtén Tu Plan de Crecimiento Gratis"
   },
   "exitPopup": {
     "title": "¡Espera! No Te Vayas con las Manos Vacías",

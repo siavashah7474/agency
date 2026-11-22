@@ -24,7 +24,6 @@
     "contact": "İletişim",
     "aboutUs": "Hakkımızda",
     "caseStudies": "Çalışmalarımız",
-    "ourClients": "Kurucunun çalışmaları",
     "allServices": "Tüm Hizmetler",
     "whatsappUs": "WhatsApp'tan Yazın",
     "privacyPolicy": "Gizlilik Politikası",
@@ -217,7 +216,7 @@
       ]
     },
     "teamTitle": "Çalışmalarımız",
-    "teamP": "Webimot, Amsterdam ve İstanbul merkezlidir ve kurucusu Sia Ahmadi tarafından yönetilir. Bugüne kadarki çalışmalar arasında Gorkem Atsal Clinic ile süren iş birliği (web sitesi, CRM, Google Ads ve Meta Ads, sosyal medya stratejisi ve Google, Bing ve Yandex için arama optimizasyonu), Clinish için web sitesi ve dijital kurulum, Prime Hair, MSB Aesthetic ve Estetizm klinikleri için serbest çalışmalar, Apex AI alım satım botu uygulaması ve Webimot'un kendi ürünü WhatsApp AI yer alır.",
+    "teamP": "Webimot, Amsterdam ve İstanbul merkezlidir ve kurucusu Sia Ahmadi tarafından yönetilir. Bugüne kadarki çalışmalar arasında Gorkem Atsal Clinic ile süren iş birliği (web sitesi, CRM, Google Ads ve Meta Ads, sosyal medya stratejisi ve Google, Bing ve Yandex için arama optimizasyonu), Clinish için web sitesi ve dijital kurulum, Prime Hair, MSB Aesthetic ve Estetizm klinikleri için serbest çalışmalar ve Webimot'un kendi ürünü WhatsApp AI yer alır.",
     "teamCta": "Hedeflerinizi Konuşalım",
     "founder": {
       "badge": "Kurucu",
@@ -298,65 +297,6 @@
     "ctaTitle": "İşletmenizi Bizimle Konuşun",
     "ctaSubtitle": "Ücretsiz bir görüşme ayarlayın; ilk olarak neyi otomatikleştireceğimizi gösterelim.",
     "ctaButton": "Ücretsiz Strateji Görüşmesi Yapın"
-  },
-  "whyWebimot": {
-    "badge": "Klinikler İçin",
-    "title": "Kliniklerin Daha Fazla Hasta Almasına Yardımcı Oluyoruz",
-    "subtitle": "Çoğu ajans size tıklama getirir. Biz klinik için gerçekten önemli olana odaklanıyoruz — sorguları rezervasyona dönüştürmek. Saç ekimi, diş, estetik ve IVF klinikleri için özel olarak geliştirilmiş AI sistemleriyle.",
-    "coreValues": [
-      {
-        "title": "Hastaları Rezervasyona Dönüştürün",
-        "description": "Sadece sorgu getirmiyoruz — hasta sorularını onaylı konsültasyonlara ve operasyonlara dönüştüren sistemler kuruyoruz.",
-        "stats": "Talepten rezervasyona takip"
-      },
-      {
-        "title": "Uluslararası Hasta Sayısını Artırın",
-        "description": "Tıp turizmi klinikleri için geliştirilmiş çok dilli pazarlama stratejileriyle İngiltere, Almanya, ABD ve ötesinden hasta çekin.",
-        "stats": "Çok dilli kampanyalar"
-      },
-      {
-        "title": "7/24 Hasta Yanıtı",
-        "description": "Artık hiçbir sorguyu kaçırmayın. AI'mız siz uyurken bile hasta sorularını ele alır, fotoğrafları doktorlarınız için toplar ve konsültasyonları kaydeder.",
-        "stats": "3 saniyenin altında yanıt"
-      },
-      {
-        "title": "Her Hasta Yolculuğunu Takip Edin",
-        "description": "Hastalarınızın nereden geldiğini, hangi kampanyaların işe yaradığını ve detaylı analizlerle nasıl daha fazla rezervasyon alabileceğinizi tam olarak bilin.",
-        "stats": "Haftalık performans raporları"
-      }
-    ],
-    "partnerTitle": "Kliniğinizin Büyüme Ortağı",
-    "partnerDesc": "Sistemlerimiz sağlık turizmi kliniklerinin çalışma biçimine göre tasarlanmıştır: Arapça, Almanca ve İngilizce hasta taleplerini yönetmek, hasta fotoğraflarını doktor için toplayıp sınıflandırmak ve uluslararası hastaları ilk mesajdan randevusu alınmış konsültasyona taşımak.",
-    "partnerItems": [
-      "Çok dilli hasta iletişimi (EN, DE, AR, RU)",
-      "Saç, diş ve estetik prosedürler için AI fotoğraf ön değerlendirmesi (asla teşhis değildir)",
-      "Otomatik konsültasyon rezervasyonu & takvim senkronizasyonu",
-      "İlk sorgulardan operasyona kadar hasta yolculuğu takibi"
-    ],
-    "processTitle": "Sürecimiz",
-    "steps": [
-      {
-        "step": "01",
-        "title": "Kliniğinizi Denetleyin",
-        "description": "Büyüme fırsatları bulmak için hasta akışınızı, web sitenizi ve mevcut pazarlama faaliyetlerinizi analiz ediyoruz."
-      },
-      {
-        "step": "02",
-        "title": "AI Sisteminizi Kurun",
-        "description": "Kliniğinize özel WhatsApp ajanı, çok dilli kampanyalar ve otomatik rezervasyon."
-      },
-      {
-        "step": "03",
-        "title": "Başlatın & İzleyin",
-        "description": "7/24 hasta yanıtıyla canlıya alın ve ilk mesajdan rezervasyona kadar her sorguyu takip edin."
-      },
-      {
-        "step": "04",
-        "title": "Uluslararası Ölçeklendirin",
-        "description": "Yeni pazarlara genişleyin — İngiltere, Almanya, Körfez ülkeleri — ve uluslararası hasta tabanınızı büyütün."
-      }
-    ],
-    "cta": "Ücretsiz Büyüme Planınızı Alın"
   },
   "exitPopup": {
     "title": "Bekleyin! Eli Boş Gitmeyin",

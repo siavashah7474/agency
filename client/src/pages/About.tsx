@@ -151,17 +151,6 @@ export default function About() {
                 <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">{t("about.founder.name")}</h2>
                 <p className="text-base text-secondary mb-6">{t("about.founder.role")}</p>
                 <p className="text-lg text-white/70 mb-6">{t("about.founder.p1")}</p>
-                <h3 className="mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.15em] text-white/60">{t("about.founder.specialtiesTitle")}</h3>
-                <ul className="mb-6 grid gap-3 sm:grid-cols-2" data-testid="list-founder-specialties">
-                  {(t("about.founder.specialties", { returnObjects: true }) as { title: string; desc: string }[]).map((item) => (
-                    <li key={item.title} className="rounded-xl border border-white/10 bg-white/5 p-4 last:sm:col-span-2">
-                      <p className="font-semibold text-white">{item.title}</p>
-                      <p className="mt-1 text-sm leading-relaxed text-white/65">{item.desc}</p>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-lg text-white/70 mb-4">{t("about.founder.p2")}</p>
-                <p className="text-lg text-white/70 mb-6">{t("about.founder.p3")}</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-3">
                 <Link
                   href="/sia-ahmadi"

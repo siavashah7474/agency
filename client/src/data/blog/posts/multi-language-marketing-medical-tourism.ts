@@ -124,5 +124,5 @@ Track performance by language/market:
 4. Expand to advertising and content marketing
 5. Continuously optimize based on data
 
-Need help creating a multilingual marketing strategy for your clinic? [Webimot](/) combines AI-powered multilingual WhatsApp agents with full digital marketing — [book a free strategy call at webimotagency.com](/book-consultation) to discuss which markets offer the best opportunities for your services.
+Need help creating a multilingual marketing strategy for your clinic? [Webimot](/) combines AI-powered multilingual WhatsApp agents with full digital marketing — [book a free strategy call at webimotagency.com](/contact) to discuss which markets offer the best opportunities for your services.
     `;

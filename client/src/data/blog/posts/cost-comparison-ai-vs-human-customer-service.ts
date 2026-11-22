@@ -89,5 +89,5 @@ Whether [Webimot AI automation](/systems) pays off for your clinic depends on yo
 - Leads captured during off-hours
 - A more consistent patient experience
 
-Want to work through the comparison for your specific clinic? [Book a free strategy call with Webimot](/book-consultation) to discuss your numbers.
+Want to work through the comparison for your specific clinic? [Book a free strategy call with Webimot](/contact) to discuss your numbers.
     `;

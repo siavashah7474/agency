@@ -75,7 +75,7 @@ If you manage a medical tourism clinic and you're not tracking WhatsApp enquiry-
 
 The numbers are often an eye-opener. And once you see them, the path forward is clear.
 
-If you want to see how AI automation can close this gap for your clinic specifically, see how [Webimot's WhatsApp AI Agent](/products/whatsapp-ai) works: it replies 24/7 in under 3 seconds and goes live within 48 hours after onboarding. Or [book a free consultation](/book-consultation) and we'll walk through your current enquiry flow with you.
+If you want to see how AI automation can close this gap for your clinic specifically, see how [Webimot's WhatsApp AI Agent](/products/whatsapp-ai) works: it replies 24/7 in under 3 seconds and goes live within 48 hours after onboarding. Or [book a free consultation](/contact) and we'll walk through your current enquiry flow with you.
 
 Related reading: [WhatsApp Automation for Medical Tourism](/blog/whatsapp-automation-medical-tourism) and [How to Qualify International Patients Automatically](/blog/qualify-international-patients-automatically).
 `;

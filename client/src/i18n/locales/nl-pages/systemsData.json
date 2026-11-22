@@ -29,7 +29,7 @@
       },
       "convert": {
         "name": "Follow-upsysteem",
-        "productLabel": "NurtureLoop · ReviveIQ",
+        "productLabel": "Follow-upreeksen · Leadreactivatie",
         "headline": "Leads die stilvielen worden opgevolgd — automatisch, tot ze boeken of zich afmelden.",
         "replaces": "Leads die afkoelen",
         "description": "Opvolging in meerdere stappen via WhatsApp, e-mail en sms voor nieuwe leads, plus reactiveringscampagnes voor oude contacten die al in uw CRM of inbox staan. Stopt zodra iemand reageert of boekt.",
@@ -40,18 +40,18 @@
         ],
         "products": [
           {
-            "name": "NurtureLoop",
+            "name": "Follow-upreeksen",
             "oneLiner": "Geautomatiseerde follow-upreeksen voor elke nieuwe lead."
           },
           {
-            "name": "ReviveIQ",
+            "name": "Leadreactivatie",
             "oneLiner": "Reactiveert oude leads en eerdere klanten in uw database."
           }
         ]
       },
       "operate": {
         "name": "Operations-systeem",
-        "productLabel": "DocuMind · AI-agents voor dagelijkse taken",
+        "productLabel": "Documentverwerking · AI-agents voor dagelijkse taken",
         "headline": "Facturen, formulieren en gegevensinvoer afgehandeld door AI-agents in plaats van uw team.",
         "replaces": "Handmatig papierwerk en gegevensinvoer",
         "description": "AI-agents die binnenkomende documenten lezen, de gegevens eruit halen, uw systemen bijwerken en de herinneringen en interne opvolging versturen die uw team nu met de hand doet — facturen, intakeformulieren, contracten, HR-verzoeken.",
@@ -62,7 +62,7 @@
         ],
         "products": [
           {
-            "name": "DocuMind",
+            "name": "Documentverwerking",
             "oneLiner": "Leest documenten en voert de gegevens in waar ze horen."
           },
           {
@@ -73,7 +73,7 @@
       },
       "measure": {
         "name": "Rapportagesysteem",
-        "productLabel": "ClearDesk",
+        "productLabel": "Wekelijks rapport",
         "headline": "Elke maandag een rapport in begrijpelijke taal over leads, sales en teamprestaties.",
         "replaces": "Niet weten wat werkt",
         "description": "AI haalt de cijfers uit uw tools — WhatsApp, CRM, advertenties, agenda, boekhouding — en stuurt een kort weekrapport met wat er is veranderd, wat u moet verbeteren en waar u vol op moet inzetten.",
@@ -84,7 +84,7 @@
         ],
         "products": [
           {
-            "name": "ClearDesk",
+            "name": "Wekelijks rapport",
             "oneLiner": "Wekelijks prestatierapport, elke maandagochtend in uw inbox."
           }
         ]
@@ -100,7 +100,7 @@
         "oneLiner": "Zoekcampagnes voor patiënten die al naar uw behandeling zoeken."
       },
       {
-        "name": "SEO & SEO Blog AI",
+        "name": "SEO & blogartikelen",
         "oneLiner": "Organisch verkeer uit geautomatiseerde, voor zoekmachines geoptimaliseerde artikelen."
       }
     ],

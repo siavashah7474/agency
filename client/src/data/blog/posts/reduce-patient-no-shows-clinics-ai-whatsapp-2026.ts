@@ -62,7 +62,7 @@ Someone still misses. What happens in the next 24 hours decides whether that pat
 
 The data says this group deserves specific attention. A Finnish register study of 2.5 million public dental appointments found that **5% of patients accounted for 21.8% of all no-shows** ([BMC Oral Health](https://pmc.ncbi.nlm.nih.gov/articles/PMC12535098/)). A small group misses repeatedly, so your system should notice the second miss and treat that patient differently, for example by requiring a deposit or offering only short-notice slots.
 
-What the AI does: in Webimot's four-system ladder this is the Follow-up system. [NurtureLoop](/products/nurtureloop) runs the timed sequence for recent no-shows and stops the moment the patient rebooks or opts out; [ReviveIQ](/products/reviveiq) works the longer tail, re-engaging patients who missed months ago and never came back.
+What the AI does: in Webimot's four-system ladder this is the Follow-up system. [Follow-up sequences](/systems#convert) run the timed messages for recent no-shows and stop the moment the patient rebooks or opts out; lead reactivation works the longer tail, re-engaging patients who missed months ago and never came back.
 
 ## Appointment reminder automation: WhatsApp, SMS, email and phone compared
 
@@ -124,5 +124,5 @@ Yes, provided it is connected to live availability in Google Calendar or your cl
 - WhatsApp with an AI agent gives two-way, multilingual reminders that answer questions in under 3 seconds and cost no staff time.
 - Measure the no-show rate by segment every week, and treat the chain from enquiry to attendance as one system.
 
-If you want to know what your clinic's no-show rate is actually costing and which of the five steps would move it most, Webimot's free AI audit works that out from your real booking data within 3 days and shows the Capture and Follow-up systems running on your own WhatsApp number. [Book your free AI audit](/book-consultation).
+If you want to know what your clinic's no-show rate is actually costing and which of the five steps would move it most, Webimot's free AI audit works that out from your real booking data within 3 days and shows the Capture and Follow-up systems running on your own WhatsApp number. [Book your free AI audit](/contact).
 `;

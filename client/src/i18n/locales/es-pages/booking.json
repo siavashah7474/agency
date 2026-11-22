@@ -16,9 +16,9 @@
     },
     "services": {
       "capture": "Sistema de captación (WhatsApp AI · LeadFire)",
-      "convert": "Sistema de seguimiento (NurtureLoop · ReviveIQ)",
-      "operate": "Sistema de operaciones (DocuMind · Agentes de IA para tareas diarias)",
-      "measure": "Sistema de informes (ClearDesk)",
+      "convert": "Sistema de seguimiento (Secuencias de seguimiento · Reactivación de leads)",
+      "operate": "Sistema de operaciones (Procesamiento de documentos · Agentes de IA para tareas diarias)",
+      "measure": "Sistema de informes (Informe semanal)",
       "ads": "Meta / Google Ads",
       "seo": "Complemento de SEO",
       "notSure": "No estoy seguro — ayúdame a elegir"

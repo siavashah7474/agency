@@ -7,7 +7,6 @@
     "/clinics",
     "/small-business",
     "/contact",
-    "/book-consultation",
     "/services/meta-ads",
     "/services/google-ads",
     "/services/ai-ops-autopilot",
@@ -18,12 +17,7 @@
     "/services/reputation-management",
     "/services/shopify-ecommerce-automation",
     "/products/whatsapp-ai",
-    "/products/leadfire",
-    "/products/nurtureloop",
-    "/products/reviveiq",
-    "/products/cleardesk",
-    "/products/documind",
-    "/products/seo-blog-ai"
+    "/products/leadfire"
   ],
   "nl": ["/", "/about", "/sia-ahmadi", "/products/whatsapp-ai"],
   "es": ["/", "/about", "/sia-ahmadi", "/products/whatsapp-ai"],

@@ -56,17 +56,17 @@
       },
       "convert": {
         "name": "Takip sistemi",
-        "productLabel": "NurtureLoop · ReviveIQ",
+        "productLabel": "Takip mesaj dizileri · Eski adayları yeniden kazanma",
         "about": "Takip sistemi hakkında"
       },
       "operate": {
         "name": "Operasyon sistemi",
-        "productLabel": "DocuMind · Günlük işler için AI ajanları",
+        "productLabel": "Belge işleme · Günlük işler için AI ajanları",
         "about": "Operasyon sistemi hakkında"
       },
       "measure": {
         "name": "Raporlama sistemi",
-        "productLabel": "ClearDesk",
+        "productLabel": "Haftalık rapor",
         "about": "Raporlama sistemi hakkında"
       }
     },

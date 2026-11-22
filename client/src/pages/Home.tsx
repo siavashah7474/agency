@@ -3,7 +3,6 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import Footer from "@/components/Footer";
-import WhyWebimotSection from "@/components/WhyWebimotSection";
 import ClientResultsSection from "@/components/ClientResultsSection";
 import FounderSection from "@/components/FounderSection";
 import WhoWeHelpSection from "@/components/WhoWeHelpSection";
@@ -11,9 +10,7 @@ import WhatWeDoSection from "@/components/WhatWeDoSection";
 import SEO from "@/components/SEO";
 import AIOpsHub from "@/components/AIOpsHub";
 import StatsStrip from "@/components/StatsStrip";
-import IntegrationsSection from "@/components/IntegrationsSection";
 import RiskFreeStartSection from "@/components/RiskFreeStartSection";
-import AdsSection from "@/components/AdsSection";
 import {
   Accordion,
   AccordionContent,
@@ -153,13 +150,6 @@ export default function Home() {
 
           {/* 4. Four systems ladder */}
           <WhatWeDoSection />
-
-          {/* Paid ads: Meta and Google, connected to the WhatsApp AI */}
-          <AdsSection />
-
-          {/* 5. Why us + integrations */}
-          <WhyWebimotSection />
-          <IntegrationsSection />
 
           {/* 6. Client work */}
           <ClientResultsSection />

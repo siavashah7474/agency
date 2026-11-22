@@ -3,37 +3,64 @@ import { Bot, Check, Loader2, MessageCircle, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useDir } from "@/i18n/useDir";
 
-// Aria: a guided lead chat on the WhatsApp AI page (no AI, no API key). Three quick questions,
+// Aria: the site's one chat, a guided lead chat (no AI, no API key). Three quick questions,
 // then contact details. The lead is emailed to the team through the same /api/contact endpoint
 // as the contact form, and the visitor can continue on WhatsApp with their answers prefilled.
-// Every other page keeps the scripted Mia chatbot.
+// Clinic pages ask the clinic questions ("clinic"); every other page asks about the business
+// in general ("general").
 
 const WHATSAPP_NUMBER = "31628753175";
 
-const QUESTIONS = [
-  {
-    id: "clinic",
-    text: "What kind of clinic do you run?",
-    options: ["Hair transplant", "Dental", "Cosmetic surgery", "IVF / fertility", "Other"],
-  },
-  {
-    id: "challenge",
-    text: "What is your biggest challenge with international patient enquiries?",
-    options: ["Slow replies", "Too many unqualified leads", "No follow-up", "Too many languages", "Something else"],
-  },
-  {
-    id: "volume",
-    text: "Roughly how many international enquiries do you get per month?",
-    options: ["Under 50", "50–200", "More than 200", "Not sure"],
-  },
-] as const;
+type Variant = "clinic" | "general";
 
-// English labels are what the team receives; the visitor sees the translated ones.
-const SUMMARY_LABELS = ["Clinic type", "Biggest challenge", "Enquiries per month"];
+const VOLUME_OPTIONS = ["Under 50", "50–200", "More than 200", "Not sure"];
+
+const SCRIPTS = {
+  clinic: {
+    // Translation keys stay where they were before the general script existed.
+    keys: "aria",
+    welcome: "Hi! I'm Aria. Answer three quick questions and our team will show you the WhatsApp AI working on your own clinic's enquiries.",
+    questions: [
+      { id: "clinic", text: "What kind of clinic do you run?", options: ["Hair transplant", "Dental", "Cosmetic surgery", "IVF / fertility", "Other"] },
+      {
+        id: "challenge",
+        text: "What is your biggest challenge with international patient enquiries?",
+        options: ["Slow replies", "Too many unqualified leads", "No follow-up", "Too many languages", "Something else"],
+      },
+      { id: "volume", text: "Roughly how many international enquiries do you get per month?", options: VOLUME_OPTIONS },
+    ],
+    // English labels are what the team receives; the visitor sees the translated ones.
+    summaryLabels: ["Clinic type", "Biggest challenge", "Enquiries per month"],
+    askContact: "Thanks. Where can we reach you? We reply within a few hours with times for a 30-minute demo.",
+    company: "Clinic name",
+    submit: "Request my demo",
+    leadTitle: "Lead from the Aria chat (clinic questions)",
+    whatsappIntro: "Hi, I'd like a demo of the WhatsApp AI.",
+  },
+  general: {
+    keys: "aria.general",
+    welcome: "Hi! I'm Aria. Answer three quick questions and our team will tell you which system would pay back fastest for your business.",
+    questions: [
+      { id: "business", text: "What kind of business do you run?", options: ["Clinic or healthcare", "Real estate", "Service business", "Online shop", "Other"] },
+      {
+        id: "goal",
+        text: "What would you most like to fix?",
+        options: ["Slow replies to enquiries", "No follow-up on leads", "Too much manual paperwork", "Not enough leads", "Something else"],
+      },
+      { id: "volume", text: "Roughly how many enquiries do you get per month?", options: VOLUME_OPTIONS },
+    ],
+    summaryLabels: ["Business type", "Wants to fix", "Enquiries per month"],
+    askContact: "Thanks. Where can we reach you? We reply within a few hours with times for a free 30-minute call.",
+    company: "Business name",
+    submit: "Request my free call",
+    leadTitle: "Lead from the Aria chat (general questions)",
+    whatsappIntro: "Hi, I'd like a free AI audit for my business.",
+  },
+} as const;
 
 type Status = "idle" | "sending" | "sent" | "error";
 
-export default function AriaChat() {
+export default function AriaChat({ variant = "general" }: { variant?: Variant }) {
   const { t } = useTranslation();
   const dir = useDir();
   const [open, setOpen] = useState(false);
@@ -43,6 +70,8 @@ export default function AriaChat() {
   const [form, setForm] = useState({ name: "", clinic: "", email: "", phone: "", website: "" });
   const endRef = useRef<HTMLDivElement>(null);
 
+  const script = SCRIPTS[variant];
+  const QUESTIONS = script.questions;
   const step = answers.length;
   const done = step >= QUESTIONS.length;
 
@@ -51,7 +80,7 @@ export default function AriaChat() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Same as Mia: hides the floating WhatsApp button while the chat is open.
+  // Hides the floating WhatsApp button while the chat is open.
   useEffect(() => {
     document.body.classList.toggle("chat-open", open);
     return () => document.body.classList.remove("chat-open");
@@ -69,16 +98,16 @@ export default function AriaChat() {
     endRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
   }, [step, status, open]);
 
-  const question = (i: number) => t(`aria.questions.${i}.text`, QUESTIONS[i].text);
-  const option = (i: number, o: number) => t(`aria.questions.${i}.options.${o}`, QUESTIONS[i].options[o]);
+  const question = (i: number) => t(`${script.keys}.questions.${i}.text`, QUESTIONS[i].text);
+  const option = (i: number, o: number) => t(`${script.keys}.questions.${i}.options.${o}`, QUESTIONS[i].options[o]);
 
   // The team reads the answers in English, whatever language the visitor used.
-  const summary = () => answers.map((o, i) => `${SUMMARY_LABELS[i]}: ${QUESTIONS[i].options[o]}`);
+  const summary = () => answers.map((o, i) => `${script.summaryLabels[i]}: ${QUESTIONS[i].options[o]}`);
 
   const whatsappUrl = () => {
-    const lines = ["Hi, I'd like a demo of the WhatsApp AI.", ...summary()];
+    const lines: string[] = [script.whatsappIntro, ...summary()];
     if (form.name.trim()) lines.push(`Name: ${form.name.trim()}`);
-    if (form.clinic.trim()) lines.push(`Clinic: ${form.clinic.trim()}`);
+    if (form.clinic.trim()) lines.push(`${script.company}: ${form.clinic.trim()}`);
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
 
@@ -96,8 +125,9 @@ export default function AriaChat() {
           phone: form.phone.trim() || undefined,
           website: form.website,
           message: [
-            "Lead from the Aria chat on the WhatsApp AI page",
-            form.clinic.trim() ? `Clinic name: ${form.clinic.trim()}` : null,
+            script.leadTitle,
+            `Page: ${window.location.pathname}`,
+            form.clinic.trim() ? `${script.company}: ${form.clinic.trim()}` : null,
             ...summary(),
             `Page language: ${document.documentElement.lang || "en"}`,
           ]
@@ -155,7 +185,7 @@ export default function AriaChat() {
             </div>
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold leading-none">Aria</p>
-              <p className="mt-1 text-xs opacity-80">{t("aria.subtitle", "Webimot assistant · Book a demo in a minute")}</p>
+              <p className="mt-1 text-xs opacity-80">{t(`${script.keys}.subtitle`, variant === "clinic" ? "Webimot assistant · Book a demo in a minute" : "Webimot assistant · Free AI audit in a minute")}</p>
             </div>
             <button
               type="button"
@@ -169,10 +199,7 @@ export default function AriaChat() {
 
           <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto px-4 py-4" aria-live="polite">
             <AssistantLine>
-              {t(
-                "aria.welcome",
-                "Hi! I'm Aria. Answer three quick questions and our team will show you the WhatsApp AI working on your own clinic's enquiries.",
-              )}
+              {t(`${script.keys}.welcome`, script.welcome)}
             </AssistantLine>
 
             {QUESTIONS.map((q, i) =>
@@ -205,7 +232,7 @@ export default function AriaChat() {
             {done && status !== "sent" && (
               <>
                 <AssistantLine>
-                  {t("aria.askContact", "Thanks. Where can we reach you? We reply within a few hours with times for a 30-minute demo.")}
+                  {t(`${script.keys}.askContact`, script.askContact)}
                 </AssistantLine>
                 <form onSubmit={submit} className="flex flex-col gap-2.5 ps-9" data-testid="form-aria-lead">
                   <input
@@ -224,8 +251,8 @@ export default function AriaChat() {
                     autoComplete="organization"
                     value={form.clinic}
                     onChange={(e) => setForm({ ...form, clinic: e.target.value })}
-                    placeholder={t("aria.form.clinic", "Clinic name")}
-                    aria-label={t("aria.form.clinic", "Clinic name")}
+                    placeholder={t(`${script.keys}.form.clinic`, script.company)}
+                    aria-label={t(`${script.keys}.form.clinic`, script.company)}
                     className={inputClass}
                   />
                   <input
@@ -275,7 +302,7 @@ export default function AriaChat() {
                     data-testid="button-aria-submit"
                   >
                     {status === "sending" && <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />}
-                    {t("aria.form.submit", "Request my demo")}
+                    {t(`${script.keys}.form.submit`, script.submit)}
                   </button>
                   <WhatsAppLink />
                 </form>
@@ -314,7 +341,7 @@ export default function AriaChat() {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        aria-label={open ? t("aria.close", "Close chat") : t("aria.open", "Chat with Aria to book a demo")}
+        aria-label={open ? t("aria.close", "Close chat") : t("aria.open", "Chat with Aria")}
         className="relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary text-white shadow-lg transition-transform hover:scale-105"
         data-testid="button-aria-toggle"
       >

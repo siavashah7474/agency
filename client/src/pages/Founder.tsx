@@ -139,7 +139,6 @@ const TOOLS = ["n8n", "OpenAI API", "WhatsApp Cloud API"];
 const WORK_TEXT: Record<string, string> = {
   "gorkem-atsal-clinic": "Ongoing since November 2023: website, CRM, Google Ads and Meta Ads, social media strategy and search optimisation.",
   "clinish-dental-clinic": "Website, social media, Meta Business Suite and Meta ads set-up, and search optimisation.",
-  "apex-ai-trading-bots": "Current project: an app with customised AI-powered crypto trading bots, built for a private client in the Netherlands.",
   "webimot-whatsapp-ai": "My own product: an AI agent on WhatsApp that answers clinic enquiries, asks qualifying questions and passes warm leads to the sales team.",
   "prime-hair": "Meta and Google ads, website and SEO, sales and patient enquiries, and social media.",
   "msb-aesthetic": "Meta and Google ads, website and SEO, sales and patient enquiries, and social media.",

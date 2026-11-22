@@ -29,7 +29,7 @@
       },
       "convert": {
         "name": "Takip sistemi",
-        "productLabel": "NurtureLoop · ReviveIQ",
+        "productLabel": "Takip mesaj dizileri · Eski adayları yeniden kazanma",
         "headline": "Sessizleşen potansiyel müşteriler, randevu alana ya da vazgeçene kadar otomatik olarak takip edilir.",
         "replaces": "Soğuyan potansiyel müşteriler",
         "description": "Yeni potansiyel müşteriler için WhatsApp, e-posta ve SMS üzerinden çok adımlı takip; ayrıca CRM'inizde veya gelen kutunuzda bulunan eski kişiler için yeniden aktivasyon kampanyaları. Biri yanıt verdiği ya da randevu aldığı anda durur.",
@@ -40,18 +40,18 @@
         ],
         "products": [
           {
-            "name": "NurtureLoop",
+            "name": "Takip mesaj dizileri",
             "oneLiner": "Her yeni potansiyel müşteri için otomatik takip dizileri."
           },
           {
-            "name": "ReviveIQ",
+            "name": "Eski adayları yeniden kazanma",
             "oneLiner": "Veritabanınızdaki eski potansiyel müşterileri ve geçmiş müşterileri yeniden aktive eder."
           }
         ]
       },
       "operate": {
         "name": "Operasyon sistemi",
-        "productLabel": "DocuMind · Günlük işler için AI ajanları",
+        "productLabel": "Belge işleme · Günlük işler için AI ajanları",
         "headline": "Faturalar, formlar ve veri girişi ekibiniz yerine yapay zekâ ajanları tarafından yürütülür.",
         "replaces": "Manuel evrak işleri ve veri girişi",
         "description": "Gelen belgeleri okuyan, verileri çıkaran, sistemlerinizi güncelleyen ve ekibinizin bugün elle yaptığı hatırlatmaları ve şirket içi takipleri gönderen yapay zekâ ajanları — faturalar, kayıt formları, sözleşmeler, İK talepleri.",
@@ -62,7 +62,7 @@
         ],
         "products": [
           {
-            "name": "DocuMind",
+            "name": "Belge işleme",
             "oneLiner": "Belgeleri okur ve verileri ait oldukları yere girer."
           },
           {
@@ -73,7 +73,7 @@
       },
       "measure": {
         "name": "Raporlama sistemi",
-        "productLabel": "ClearDesk",
+        "productLabel": "Haftalık rapor",
         "headline": "Her pazartesi potansiyel müşteriler, satışlar ve ekip performansı hakkında sade dilde bir rapor.",
         "replaces": "Neyin işe yaradığını bilmemek",
         "description": "Yapay zekâ rakamları araçlarınızdan — WhatsApp, CRM, reklamlar, takvim, muhasebe — çeker ve neyin değiştiğini, neyin düzeltilmesi gerektiğini ve nereye daha çok yüklenmeniz gerektiğini gösteren kısa bir haftalık rapor gönderir.",
@@ -84,7 +84,7 @@
         ],
         "products": [
           {
-            "name": "ClearDesk",
+            "name": "Haftalık rapor",
             "oneLiner": "Her pazartesi sabahı gelen haftalık performans raporu."
           }
         ]
@@ -100,7 +100,7 @@
         "oneLiner": "Tedavinizi zaten arayan hastalar için arama kampanyaları."
       },
       {
-        "name": "SEO ve SEO Blog AI",
+        "name": "SEO ve blog yazıları",
         "oneLiner": "Otomatik, arama için optimize edilmiş makalelerle organik trafik."
       }
     ],

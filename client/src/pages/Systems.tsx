@@ -194,27 +194,37 @@ export default function Systems() {
                     {/* Right: product cards */}
                     <div className="min-w-0 lg:col-span-5">
                       <p className={`mb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] ${dark ? "text-white/50" : "text-slate-500"}`}>
-                        {t("systemsPage.productsInSystem", "Products in this system")}
+                        {t("systemsPage.productsInSystem", "What this system includes")}
                       </p>
                       <div className="grid gap-4">
-                        {system.products.map((p) => (
-                          <Link
-                            key={p.href}
-                            href={p.href}
-                            className={`group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${dark ? "focus-visible:ring-offset-slate-950" : ""}`}
-                          >
-                            <div className={`flex h-full items-start gap-4 p-5 ${dark ? "rounded-2xl border border-white/10 bg-slate-900 transition-colors hover:border-secondary/40" : "surface-card-interactive"}`}>
+                        {system.products.map((p) => {
+                          const card = (
+                            <div className={`flex h-full items-start gap-4 p-5 ${dark ? `rounded-2xl border border-white/10 bg-slate-900 ${p.href ? "transition-colors hover:border-secondary/40" : ""}` : p.href ? "surface-card-interactive" : "surface-card"}`}>
                               <span className="text-2xl" aria-hidden="true">{p.emoji}</span>
                               <div className="min-w-0 flex-1">
                                 <h3 className={`font-bold ${dark ? "text-white" : "text-slate-900"}`}>{p.name}</h3>
                                 <p className={`mt-1 text-sm leading-relaxed ${dark ? "text-white/65" : "text-slate-600"}`}>{p.oneLiner}</p>
-                                <span className={`mt-3 inline-flex items-center gap-1 text-sm font-medium ${dark ? "text-white/70 group-hover:text-secondary" : "text-blue-700 group-hover:text-slate-900"}`}>
-                                  {learnMore} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                                </span>
+                                {p.href && (
+                                  <span className={`mt-3 inline-flex items-center gap-1 text-sm font-medium ${dark ? "text-white/70 group-hover:text-secondary" : "text-blue-700 group-hover:text-slate-900"}`}>
+                                    {learnMore} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                                  </span>
+                                )}
                               </div>
                             </div>
-                          </Link>
-                        ))}
+                          );
+                          // Only the parts with a page of their own are links.
+                          return p.href ? (
+                            <Link
+                              key={p.name}
+                              href={p.href}
+                              className={`group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${dark ? "focus-visible:ring-offset-slate-950" : ""}`}
+                            >
+                              {card}
+                            </Link>
+                          ) : (
+                            <div key={p.name}>{card}</div>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
@@ -234,18 +244,27 @@ export default function Systems() {
                 className="mb-12"
               />
               <div className="grid gap-6 md:grid-cols-3">
-                {localized.addOns.map((a) => (
-                  <Link key={a.href} href={a.href} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                    <div className="surface-card-interactive flex h-full flex-col p-6">
+                {localized.addOns.map((a) => {
+                  const card = (
+                    <div className={`${a.href ? "surface-card-interactive" : "surface-card"} flex h-full flex-col p-6`}>
                       <span className="mb-3 text-3xl" aria-hidden="true">{a.emoji}</span>
                       <h3 className="text-lg font-bold text-slate-900">{a.name}</h3>
                       <p className="mt-1 flex-1 text-sm leading-relaxed text-slate-600">{a.oneLiner}</p>
-                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-700 group-hover:text-slate-900">
-                        {learnMore} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                      </span>
+                      {a.href && (
+                        <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-700 group-hover:text-slate-900">
+                          {learnMore} <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                        </span>
+                      )}
                     </div>
-                  </Link>
-                ))}
+                  );
+                  return a.href ? (
+                    <Link key={a.name} href={a.href} className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                      {card}
+                    </Link>
+                  ) : (
+                    <div key={a.name}>{card}</div>
+                  );
+                })}
               </div>
             </div>
           </section>

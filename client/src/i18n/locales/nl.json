@@ -24,7 +24,6 @@
     "contact": "Contact",
     "aboutUs": "Over ons",
     "caseStudies": "Ons werk",
-    "ourClients": "Werk van de oprichter",
     "allServices": "Alle Diensten",
     "whatsappUs": "WhatsApp ons",
     "privacyPolicy": "Privacybeleid",
@@ -217,7 +216,7 @@
       ]
     },
     "teamTitle": "Ons werk",
-    "teamP": "Webimot is gevestigd in Amsterdam en Istanbul en wordt geleid door de oprichter, Sia Ahmadi. Het werk tot nu toe omvat een lopende samenwerking met Gorkem Atsal Clinic (website, CRM, Google Ads en Meta Ads, socialemediastrategie en zoekoptimalisatie voor Google, Bing en Yandex), de website en online inrichting voor Clinish, freelance opdrachten voor de klinieken Prime Hair, MSB Aesthetic en Estetizm, de tradingbot-applicatie Apex AI en Webimots eigen product WhatsApp AI.",
+    "teamP": "Webimot is gevestigd in Amsterdam en Istanbul en wordt geleid door de oprichter, Sia Ahmadi. Het werk tot nu toe omvat een lopende samenwerking met Gorkem Atsal Clinic (website, CRM, Google Ads en Meta Ads, socialemediastrategie en zoekoptimalisatie voor Google, Bing en Yandex), de website en online inrichting voor Clinish, freelance opdrachten voor de klinieken Prime Hair, MSB Aesthetic en Estetizm, en Webimots eigen product WhatsApp AI.",
     "teamCta": "Laten we uw doelen bespreken",
     "founder": {
       "badge": "Oprichter",
@@ -298,65 +297,6 @@
     "ctaTitle": "Vertel ons over uw bedrijf",
     "ctaSubtitle": "Boek een gratis gesprek en we laten zien wat we als eerste zouden automatiseren.",
     "ctaButton": "Boek uw gratis strategiegesprek"
-  },
-  "whyWebimot": {
-    "badge": "Voor klinieken",
-    "title": "Wij helpen klinieken meer patiënten te krijgen",
-    "subtitle": "De meeste bureaus brengen u klikken. Wij focussen op wat echt belangrijk is voor uw kliniek — aanvragen omzetten in geboekte procedures. Met AI-systemen speciaal gebouwd voor haartransplantatie-, tand-, cosmetische en IVF-klinieken.",
-    "coreValues": [
-      {
-        "title": "Patiënten omzetten in boekingen",
-        "description": "Wij brengen u niet alleen aanvragen — wij bouwen systemen die patiëntenvragen omzetten in bevestigde consultaties en procedures.",
-        "stats": "Opvolging van aanvraag tot boeking"
-      },
-      {
-        "title": "Internationale patiënten laten groeien",
-        "description": "Trek patiënten aan uit het VK, Duitsland, VS en verder met meertalige marketingstrategieën gebouwd voor klinieken voor medisch toerisme.",
-        "stats": "Meertalige campagnes"
-      },
-      {
-        "title": "24/7 patiëntrespons",
-        "description": "Mis nooit meer een aanvraag. Onze AI behandelt patiëntenvragen, verzamelt foto's voor uw artsen en boekt consultaties, zelfs terwijl u slaapt.",
-        "stats": "Antwoordt binnen 3 seconden"
-      },
-      {
-        "title": "Volg elke patiëntreis",
-        "description": "Weet precies waar uw patiënten vandaan komen, welke campagnes werken en hoe u meer boekingen kunt krijgen met gedetailleerde analytics.",
-        "stats": "Wekelijkse prestatierapporten"
-      }
-    ],
-    "partnerTitle": "De groeiparter van uw kliniek",
-    "partnerDesc": "Onze systemen zijn gebouwd rond de manier waarop klinieken voor medisch toerisme werken: patiëntenvragen afhandelen in het Arabisch, Duits en Engels, patiëntfoto's verzamelen en sorteren voor de arts, en internationale patiënten begeleiden van het eerste bericht tot een geboekt consult.",
-    "partnerItems": [
-      "Meertalige patiëntcommunicatie (EN, DE, AR, RU)",
-      "AI-voorselectie van foto's voor haar-, tand- & cosmetische procedures (nooit een diagnose)",
-      "Geautomatiseerde consultatieboeking & agendaSync",
-      "Patiëntreistracking van aanvraag tot procedure"
-    ],
-    "processTitle": "Ons proces",
-    "steps": [
-      {
-        "step": "01",
-        "title": "Audit uw kliniek",
-        "description": "We analyseren uw patiëntenstroom, website en huidige marketing om groeikansen te vinden."
-      },
-      {
-        "step": "02",
-        "title": "Bouw uw AI-systeem",
-        "description": "Aangepaste WhatsApp-agent, meertalige campagnes en geautomatiseerde boeking op maat voor uw kliniek."
-      },
-      {
-        "step": "03",
-        "title": "Lanceren & monitoren",
-        "description": "Ga live met 24/7 patiëntrespons en volg elke aanvraag van eerste bericht tot geboekte procedure."
-      },
-      {
-        "step": "04",
-        "title": "Internationaal opschalen",
-        "description": "Uitbreiden naar nieuwe markten — VK, Duitsland, Golfstaten — en uw internationale patiëntenbasis laten groeien."
-      }
-    ],
-    "cta": "Ontvang uw gratis groeiplan"
   },
   "exitPopup": {
     "title": "Wacht! Ga niet met lege handen weg",

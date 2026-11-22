@@ -85,7 +85,7 @@ The top-performing clinics in Istanbul share a consistent operational playbook:
 
 If your clinic is receiving international enquiries but not converting them at the rate you expect, the problem is very often in the response layer, not marketing.
 
-Webimot helps Turkish medical tourism clinics automate WhatsApp responses, pre-qualify leads in 40+ languages, and hand off only serious patients to your coordinators. The AI replies in under 3 seconds, passes every medical question to your team, and is live within 48 hours after onboarding, with no technical work from your team. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/book-consultation).
+Webimot helps Turkish medical tourism clinics automate WhatsApp responses, pre-qualify leads in 40+ languages, and hand off only serious patients to your coordinators. The AI replies in under 3 seconds, passes every medical question to your team, and is live within 48 hours after onboarding, with no technical work from your team. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/contact).
 
 Related reading: [Turkey vs Thailand vs Dubai: Best Medical Tourism Destinations in 2026](/blog/best-medical-tourism-destinations-turkey-thailand-dubai), [Why Hair Transplant Clinics Lose International Leads](/blog/why-clinics-lose-international-leads), [WhatsApp Automation for Medical Tourism](/blog/whatsapp-automation-medical-tourism) and, for the procedure-by-procedure view, [AI Assistants for Plastic Surgery and Hair Transplant Clinics in Turkey](/blog/ai-assistant-plastic-surgery-turkey-guide).
 `;

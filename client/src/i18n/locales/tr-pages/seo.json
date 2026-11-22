@@ -56,10 +56,6 @@
       "title": "Webimot Agency İletişim: Ücretsiz Strateji Görüşmesi",
       "description": "Webimot ile ücretsiz 30 dakikalık strateji görüşmesi planlayın. İşletmenizi en hızlı büyütecek AI otomasyonlarını ve pazarlama stratejilerini belirleyelim."
     },
-    "book-consultation": {
-      "title": "Ücretsiz Yapay Zekâ Analizi ve Strateji Görüşmesi",
-      "description": "Webimot ile ücretsiz strateji görüşmesi: AI'ın nerede zaman ve para kazandıracağını belirler, beklenen getiriyle net yol haritası göndeririz. Taahhüt yok."
-    },
     "about": {
       "title": "Webimot Hakkında | Yapay Zekâ Otomasyon Ajansı",
       "description": "Webimot, Sia Ahmadi'nin kurduğu, Amsterdam ve İstanbul merkezli AI otomasyon ve dijital pazarlama ajansı. Klinikler ve küçük işletmeler için AI sistemleri."
@@ -71,26 +67,6 @@
     "products__leadfire": {
       "title": "LeadFire | Her Talebe 60 Saniyenin Altında Yanıt",
       "description": "Geç yanıtlar müşteriyi daha hızlı rakiplere kaptırır. LeadFire 60 saniyenin altında yanıt verir, her talebi nitelendirir ve görüşmeleri otomatik planlar."
-    },
-    "products__nurtureloop": {
-      "title": "NurtureLoop | Hiçbir Talep Bir Daha Soğumasın",
-      "description": "Çoğu satış birkaç takip gerektirir; çoğu işletme bir iki denemede bırakır. NurtureLoop her takibi e-posta, SMS ve WhatsApp üzerinden otomatik yürütür."
-    },
-    "products__reviveiq": {
-      "title": "ReviveIQ | Eski Müşteri Adaylarınız Bir Altın Madeni",
-      "description": "İşletmelerde binlerce eski kişi atıl bekler. ReviveIQ AI ile kişiselleştirilmiş yeniden aktivasyon mesajları gönderir; satın almaya hazır olanları iletir."
-    },
-    "products__cleardesk": {
-      "title": "ClearDesk | Her Pazartesi İşletme Verileriniz",
-      "description": "Çoğu işletme sahibi neyin işe yaradığını bilmez; raporlar elle, geç ve eksik hazırlanır. ClearDesk her hafta sade dilde performans raporu üretir."
-    },
-    "products__documind": {
-      "title": "DocuMind | Evrakları Saniyeler İçinde Veriye Dönüştürün",
-      "description": "Ekipler her hafta saatlerce fatura, kayıt formu, sözleşme ve hasta kaydı işler. DocuMind belgeyi okur, veriyi çıkarır ve CRM'inizi otomatik doldurur."
-    },
-    "products__seo-blog-ai": {
-      "title": "SEO Blog AI | SEO İçeriğini Otomatik Pilotta Yayınlayın",
-      "description": "SEO Blog AI her hafta SEO odaklı blog yazılarını otomatik yazar, optimize eder ve yayınlar; siteniz Google'da sıralanır, yazar olmadan talep üretir."
     }
   }
 }

@@ -14,7 +14,7 @@ export type SystemId = "capture" | "convert" | "operate" | "measure";
 
 export interface SystemProduct {
   name: string;
-  href: string;
+  href?: string; // only WhatsApp AI, LeadFire and the service pages have a page of their own
   emoji: string;
   oneLiner: string;
 }
@@ -23,7 +23,7 @@ export interface SystemDef {
   id: SystemId;
   step: number;
   name: string; // "Capture system"
-  productLabel: string; // "(WhatsApp AI)" — product names as sub-labels
+  productLabel: string; // what the system includes, as a sub-label
   emoji: string;
   headline: string;
   replaces: string; // the manual work it removes
@@ -53,7 +53,7 @@ export const SYSTEMS: SystemDef[] = [
     id: "convert",
     step: 2,
     name: "Follow-up system",
-    productLabel: "NurtureLoop · ReviveIQ",
+    productLabel: "Follow-up sequences · Lead reactivation",
     emoji: "🔁",
     headline: "Leads that went quiet get followed up — automatically, until they book or opt out.",
     replaces: "Leads that go cold",
@@ -61,15 +61,15 @@ export const SYSTEMS: SystemDef[] = [
       "Multi-step follow-up across WhatsApp, email and SMS for new leads, plus reactivation campaigns for old contacts already in your CRM or inbox. Stops the moment someone replies or books.",
     outcomes: ["No lead forgotten after the first message", "Old contacts re-contacted with a personal message", "Hand-off to your team when a human is needed"],
     products: [
-      { name: "NurtureLoop", href: "/products/nurtureloop", emoji: "🔁", oneLiner: "Automated follow-up sequences for every new lead." },
-      { name: "ReviveIQ", href: "/products/reviveiq", emoji: "💎", oneLiner: "Reactivates old leads and past customers in your database." },
+      { name: "Follow-up sequences", emoji: "🔁", oneLiner: "Automated follow-up sequences for every new lead." },
+      { name: "Lead reactivation", emoji: "💎", oneLiner: "Reactivates old leads and past customers in your database." },
     ],
   },
   {
     id: "operate",
     step: 3,
     name: "Operations system",
-    productLabel: "DocuMind · AI agents for daily tasks",
+    productLabel: "Document processing · AI agents for daily tasks",
     emoji: "📄",
     headline: "Invoices, forms and data entry handled by AI agents instead of your team.",
     replaces: "Manual paperwork and data entry",
@@ -77,7 +77,7 @@ export const SYSTEMS: SystemDef[] = [
       "AI agents that read incoming documents, extract the data, update your systems and send the reminders and internal follow-ups your team does by hand today — invoices, intake forms, contracts, HR requests.",
     outcomes: ["Documents processed the day they arrive", "Human-verified accuracy on what matters", "Less manual data entry for your team"],
     products: [
-      { name: "DocuMind", href: "/products/documind", emoji: "📄", oneLiner: "Reads documents and enters the data where it belongs." },
+      { name: "Document processing", emoji: "📄", oneLiner: "Reads documents and enters the data where it belongs." },
       { name: "AI agents for daily tasks", href: "/services/ai-ops-autopilot", emoji: "🤖", oneLiner: "Reminders, internal follow-ups and routine updates, done automatically." },
     ],
   },
@@ -85,7 +85,7 @@ export const SYSTEMS: SystemDef[] = [
     id: "measure",
     step: 4,
     name: "Reporting system",
-    productLabel: "ClearDesk",
+    productLabel: "Weekly report",
     emoji: "📊",
     headline: "A plain-English report on leads, sales and team performance every Monday.",
     replaces: "Not knowing what's working",
@@ -93,7 +93,7 @@ export const SYSTEMS: SystemDef[] = [
       "AI pulls the numbers from your tools — WhatsApp, CRM, ads, calendar, accounting — and sends a short weekly report with what changed, what to fix and what to double down on.",
     outcomes: ["One weekly report instead of five dashboards", "Response times and conversion tracked for you", "Decisions based on numbers, not guesses"],
     products: [
-      { name: "ClearDesk", href: "/products/cleardesk", emoji: "📊", oneLiner: "Weekly performance report delivered every Monday morning." },
+      { name: "Weekly report", emoji: "📊", oneLiner: "Weekly performance report delivered every Monday morning." },
     ],
   },
 ];
@@ -102,7 +102,7 @@ export const SYSTEMS: SystemDef[] = [
 export const ADD_ONS: SystemProduct[] = [
   { name: "Meta Ads", href: "/services/meta-ads", emoji: "📣", oneLiner: "Facebook and Instagram campaigns for clinics, answered on WhatsApp in seconds." },
   { name: "Google Ads", href: "/services/google-ads", emoji: "🔍", oneLiner: "Search campaigns for patients already looking for your treatment." },
-  { name: "SEO & SEO Blog AI", href: "/products/seo-blog-ai", emoji: "✍️", oneLiner: "Organic traffic from automated, search-optimised articles." },
+  { name: "SEO & blog articles", emoji: "✍️", oneLiner: "Organic traffic from automated, search-optimised articles." },
 ];
 
 export interface AudienceDef {

@@ -3,7 +3,7 @@
     "dialogLabel": "Aria ile sohbet",
     "subtitle": "Webimot asistanı · Bir dakikada demo talep edin",
     "close": "Sohbeti kapat",
-    "open": "Demo talep etmek için Aria ile sohbet edin",
+    "open": "Aria ile sohbet edin",
     "welcome": "Merhaba! Ben Aria. Üç kısa soruyu yanıtlayın; ekibimiz size WhatsApp AI'ın kendi kliniğinizin talepleri üzerinde nasıl çalıştığını göstersin.",
     "questions": [
       {
@@ -49,6 +49,46 @@
     "sentBadge": "Talep gönderildi",
     "continueWhatsapp": "WhatsApp'tan devam edin",
     "skipToWhatsapp": "Ya da hemen WhatsApp'tan yazın",
-    "privacy": "Bilgilerinizi yalnızca bu talebi yanıtlamak için kullanırız."
+    "privacy": "Bilgilerinizi yalnızca bu talebi yanıtlamak için kullanırız.",
+    "general": {
+      "subtitle": "Webimot asistanı · Bir dakikada ücretsiz AI analizi",
+      "welcome": "Merhaba! Ben Aria. Üç kısa soruyu yanıtlayın; ekibimiz işletmeniz için en hızlı karşılığını verecek sistemi söylesin.",
+      "questions": [
+        {
+          "text": "Nasıl bir işletme yönetiyorsunuz?",
+          "options": [
+            "Klinik veya sağlık",
+            "Emlak",
+            "Hizmet işletmesi",
+            "Online mağaza",
+            "Diğer"
+          ]
+        },
+        {
+          "text": "En çok neyi çözmek istersiniz?",
+          "options": [
+            "Taleplere geç yanıt",
+            "Müşteri adaylarına takip yapılmıyor",
+            "Çok fazla elle evrak işi",
+            "Yeterli talep gelmiyor",
+            "Başka bir şey"
+          ]
+        },
+        {
+          "text": "Ayda yaklaşık kaç talep alıyorsunuz?",
+          "options": [
+            "50'den az",
+            "50–200",
+            "200'den fazla",
+            "Emin değilim"
+          ]
+        }
+      ],
+      "askContact": "Teşekkürler. Size nereden ulaşalım? Birkaç saat içinde 30 dakikalık ücretsiz görüşme için uygun saatlerle dönüş yaparız.",
+      "form": {
+        "clinic": "İşletme adı",
+        "submit": "Ücretsiz görüşme talep et"
+      }
+    }
   }
 }

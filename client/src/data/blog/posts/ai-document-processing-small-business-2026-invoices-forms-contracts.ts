@@ -23,7 +23,7 @@ Older tools stopped at OCR: they turned a scan into text and left the rest to yo
 3. **Routing.** The document goes where the workflow says: approved invoices to accounting, intake forms to the CRM, contracts to the signature queue and the client folder, exceptions to a named person with a one-line reason ("total does not match line items by €12.40").
 4. **Sync.** Clean data is written into the system of record — Xero, QuickBooks, Exact, Moneybird, HubSpot, Pipedrive, Google Sheets — and the original is filed with a link back, so an auditor or colleague can find it in seconds.
 
-This is the Operations system in Webimot's four-system ladder, delivered as [DocuMind](/products/documind): it reads the documents and enters the data where it belongs, and it hands a human only the cases that need judgement.
+This is the [Operations system](/systems#operate) in Webimot's four-system ladder: it reads the documents and enters the data where it belongs, and it hands a human only the cases that need judgement.
 
 ## OCR, templates or AI: three ways to automate data entry
 
@@ -80,7 +80,7 @@ If you track only one thing, track hours per week back; but the five below tell 
 - **Cycle time** — from document received to posted in the system of record. Measured in hours, not days.
 - **Hours returned** — the time the three people you timed on day one no longer spend.
 
-Nobody will read a dashboard, which is why Webimot pairs the Operations system with a Reporting system, [ClearDesk](/products/cleardesk): a plain-English report every Monday morning with documents processed, straight-through rate, exceptions by reason, cycle time and hours returned, alongside the lead and sales numbers from the rest of the business. If the straight-through rate dipped last week because a new supplier appeared, you know on Monday, not at year-end.
+Nobody will read a dashboard, which is why Webimot pairs the Operations system with a [Reporting system](/systems#measure): a plain-English report every Monday morning with documents processed, straight-through rate, exceptions by reason, cycle time and hours returned, alongside the lead and sales numbers from the rest of the business. If the straight-through rate dipped last week because a new supplier appeared, you know on Monday, not at year-end.
 
 ## Common mistakes when automating data entry
 
@@ -120,5 +120,5 @@ A focused two-week pilot on one document type gives you measured results on your
 - Run a two-week pilot on one document type against a measured baseline before letting anything post unsupervised.
 - Track straight-through rate, field accuracy, exceptions by reason, cycle time and hours returned — and have them delivered every Monday.
 
-If you want to know which of the seven document types would return the most hours in your business, Webimot's free AI audit works it out from your actual document volumes within three days, including a walkthrough of DocuMind reading your own invoices. [Book your free AI audit](/book-consultation).
+If you want to know which of the seven document types would return the most hours in your business, Webimot's free AI audit works it out from your actual document volumes within three days, including a walkthrough of the system reading your own invoices. [Book your free AI audit](/contact).
 `;

@@ -99,7 +99,7 @@ In practice, the best AI automation systems for medical tourism are fully manage
 
 The system is live within 48 hours after onboarding. From the moment it goes live, every new WhatsApp enquiry gets an answer.
 
-Webimot's WhatsApp AI Agent is an AI-powered WhatsApp system built for medical tourism clinics. We set it up for you, configure it to your procedures and markets, and manage it on an ongoing basis. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/book-consultation).
+Webimot's WhatsApp AI Agent is an AI-powered WhatsApp system built for medical tourism clinics. We set it up for you, configure it to your procedures and markets, and manage it on an ongoing basis. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/contact).
 
 Related reading: [How AI Assistants Guide International Patients from First Enquiry to Booked Consultation](/blog/ai-assistant-medical-tourism-patient-journey), [Why Medical Tourism Clinics Are Replacing Manual Follow-Up with AI](/blog/replace-manual-followup-ai-medical-clinic) and [Turkey Medical Tourism 2026](/blog/turkey-medical-tourism-guide-2026).
 `;

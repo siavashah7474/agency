@@ -159,5 +159,5 @@ Target time: the WhatsApp AI alone is live within 48 hours of onboarding. Allow 
 
 If you want this built, configured, and managed for your business — without your team having to learn new tools or manage the technical setup — [Webimot Agency](https://webimotagency.com) handles it end to end.
 
-[Book a free 30-minute strategy call](https://webimotagency.com/book-consultation) — we'll map your current pipeline, and show you what can be automated before you commit to anything.
+[Book a free 30-minute strategy call](https://webimotagency.com/contact) — we'll map your current pipeline, and show you what can be automated before you commit to anything.
     `;

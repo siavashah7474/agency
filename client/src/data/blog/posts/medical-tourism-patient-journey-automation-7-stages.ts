@@ -99,5 +99,5 @@ Webimot has the WhatsApp AI live within 48 hours of onboarding, including connec
 - Automate messages, photos, reminders and documents. Keep medical judgement and reassurance with people.
 - Measure one number per stage and start with the stage that loses the most patients.
 
-Webimot builds these systems for clinics. The [free AI audit](/book-consultation) takes 3 days and shows which stage to start with. See [AI systems for clinics](/clinics) for how the parts fit together.
+Webimot builds these systems for clinics. The [free AI audit](/contact) takes 3 days and shows which stage to start with. See [AI systems for clinics](/clinics) for how the parts fit together.
 `;

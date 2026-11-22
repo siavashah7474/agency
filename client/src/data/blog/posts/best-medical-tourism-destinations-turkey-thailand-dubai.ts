@@ -118,7 +118,7 @@ Whether your clinic is in Istanbul, Bangkok, Dubai, or Cancún, the operational 
 
 Clinics that put this system in place, whatever the destination, can expect around 60% more booked consultations from the same enquiry volume (not guaranteed).
 
-Webimot's WhatsApp AI is built for medical tourism clinics in Turkey, Thailand, Dubai, and beyond: it replies 24/7 in 40+ languages and is live within 48 hours after onboarding, with no technical work from your team. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/book-consultation).
+Webimot's WhatsApp AI is built for medical tourism clinics in Turkey, Thailand, Dubai, and beyond: it replies 24/7 in 40+ languages and is live within 48 hours after onboarding, with no technical work from your team. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/contact).
 
 Related reading: [Turkey Medical Tourism 2026](/blog/turkey-medical-tourism-guide-2026), [Thailand Medical Tourism 2026](/blog/thailand-medical-tourism-clinics-guide-2026) and [Why Hair Transplant Clinics Lose International Leads](/blog/why-clinics-lose-international-leads).
 `;

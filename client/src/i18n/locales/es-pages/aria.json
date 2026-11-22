@@ -3,7 +3,7 @@
     "dialogLabel": "Chatea con Aria",
     "subtitle": "Asistente de Webimot · Reserva una demo en un minuto",
     "close": "Cerrar chat",
-    "open": "Chatea con Aria para reservar una demo",
+    "open": "Chatea con Aria",
     "welcome": "¡Hola! Soy Aria. Responde tres preguntas rápidas y nuestro equipo te mostrará la IA de WhatsApp funcionando con las consultas de tu propia clínica.",
     "questions": [
       {
@@ -49,6 +49,46 @@
     "sentBadge": "Solicitud enviada",
     "continueWhatsapp": "Continuar por WhatsApp",
     "skipToWhatsapp": "O escríbenos ahora por WhatsApp",
-    "privacy": "Solo usamos tus datos para responder a esta solicitud."
+    "privacy": "Solo usamos tus datos para responder a esta solicitud.",
+    "general": {
+      "subtitle": "Asistente de Webimot · Auditoría de IA gratis en un minuto",
+      "welcome": "¡Hola! Soy Aria. Responde tres preguntas rápidas y nuestro equipo te dirá qué sistema se amortizaría antes en tu negocio.",
+      "questions": [
+        {
+          "text": "¿Qué tipo de negocio tienes?",
+          "options": [
+            "Clínica o salud",
+            "Inmobiliaria",
+            "Empresa de servicios",
+            "Tienda online",
+            "Otro"
+          ]
+        },
+        {
+          "text": "¿Qué te gustaría resolver primero?",
+          "options": [
+            "Respuestas lentas a las consultas",
+            "Sin seguimiento de leads",
+            "Demasiado papeleo manual",
+            "Pocos leads",
+            "Otra cosa"
+          ]
+        },
+        {
+          "text": "¿Cuántas consultas recibes al mes, aproximadamente?",
+          "options": [
+            "Menos de 50",
+            "50–200",
+            "Más de 200",
+            "No lo sé"
+          ]
+        }
+      ],
+      "askContact": "Gracias. ¿Dónde podemos contactarte? Respondemos en pocas horas con horarios para una llamada gratuita de 30 minutos.",
+      "form": {
+        "clinic": "Nombre del negocio",
+        "submit": "Solicitar mi llamada gratuita"
+      }
+    }
   }
 }

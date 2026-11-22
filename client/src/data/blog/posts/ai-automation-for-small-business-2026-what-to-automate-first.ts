@@ -38,7 +38,7 @@ The task: the back-and-forth of finding a slot and the no-shows when people forg
 
 ### 4. Invoices, receipts and supplier documents
 
-The task: reading PDFs and photos of invoices and typing the numbers into accounting software or a spreadsheet. The automation: an AI document agent extracts supplier, amount, date and line items, matches them to orders and pushes them to your accounting tool or Google Sheets, flagging anything unusual for a human. This is the Operations system (DocuMind) in our four-system ladder. The time saved grows with document volume.
+The task: reading PDFs and photos of invoices and typing the numbers into accounting software or a spreadsheet. The automation: an AI document agent extracts supplier, amount, date and line items, matches them to orders and pushes them to your accounting tool or Google Sheets, flagging anything unusual for a human. This is the Operations system in our four-system ladder. The time saved grows with document volume.
 
 ### 5. Intake forms, contracts and onboarding paperwork
 
@@ -46,7 +46,7 @@ The task: new client forms, signed agreements and KYC documents that need to be 
 
 ### 6. Weekly performance reporting
 
-The task: pulling numbers from ads, CRM, WhatsApp, calendar and accounting into a report nobody has time to build. The automation: an AI report every Monday morning in plain English — what changed, what to fix, what to double down on. This is our Reporting system (ClearDesk); see [AI data entry and reporting automation](/blog/ai-data-entry-reporting-automation-business). The point is decisions based on numbers rather than memory.
+The task: pulling numbers from ads, CRM, WhatsApp, calendar and accounting into a report nobody has time to build. The automation: an AI report every Monday morning in plain English — what changed, what to fix, what to double down on. This is our Reporting system; see [AI data entry and reporting automation](/blog/ai-data-entry-reporting-automation-business). The point is decisions based on numbers rather than memory.
 
 ### 7. Review requests and review responses
 
@@ -129,5 +129,5 @@ Pick two numbers before you start: hours per week on the task and the business o
 - Go live with one automation in 14 days, measure against a baseline, then add the next.
 - Leave negotiations, complaints, hiring, liability decisions and broken processes to people.
 
-If you would like the list above turned into a prioritised plan for your own business, Webimot's free AI audit does exactly that: within 3 days you get the top five automation opportunities, the hours they will save and the expected ROI, followed by a 30-minute walkthrough. [Book your free AI audit](/book-consultation) or see how we work with [small businesses](/small-business).
+If you would like the list above turned into a prioritised plan for your own business, Webimot's free AI audit does exactly that: within 3 days you get the top five automation opportunities, the hours they will save and the expected ROI, followed by a 30-minute walkthrough. [Book your free AI audit](/contact) or see how we work with [small businesses](/small-business).
 `;

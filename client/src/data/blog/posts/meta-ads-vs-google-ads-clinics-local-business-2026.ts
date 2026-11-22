@@ -80,9 +80,9 @@ The uncomfortable part: the ad account can be fine while the funnel behind it le
 The principle: the ad's job ends when the patient taps; a system, not a person, should own the next 60 seconds and the next 30 days. In Webimot's four-system approach it looks like this:
 
 - **Capture.** Every lead from a Meta instant form, a Google Ads landing page or a click-to-WhatsApp ad gets an immediate first reply in the patient's language (40+ languages), with qualifying questions and live consultation slots. [LeadFire](/products/leadfire) responds to form and ad leads in under 60 seconds; [WhatsApp AI](/products/whatsapp-ai) answers the WhatsApp conversation itself in under 3 seconds, photos included.
-- **Follow-up.** Leads that go quiet after a quote enter a multi-step sequence across WhatsApp, email and SMS (NurtureLoop) that stops the moment they reply or book. This is the step meant to recover Meta leads that were cold on day one.
+- **Follow-up.** Leads that go quiet after a quote enter a multi-step sequence across WhatsApp, email and SMS that stops the moment they reply or book. This is the step meant to recover Meta leads that were cold on day one.
 - **Attribution.** Every lead carries its source (platform, campaign, ad) into the CRM, and the booked consultation is written back as the conversion both platforms optimise against.
-- **Reporting.** A Monday report (ClearDesk) shows cost per booked consultation by platform and campaign, so the budget decision is a number.
+- **Reporting.** A Monday report shows cost per booked consultation by platform and campaign, so the budget decision is a number.
 
 The WhatsApp AI on its own is live within 48 hours of onboarding; the full four-system setup is typically live in 2–4 weeks. Build it first and the test below measures the real funnel.
 
@@ -148,5 +148,5 @@ Enough for each platform to generate at least 30 leads in 30 days, otherwise the
 - Most wasted spend is lost after the click: slow replies, no follow-up, no attribution.
 - Let speed to lead, lead-to-consultation rate and cost per booked consultation, not cost per lead, decide the budget.
 
-If you cannot say today what each platform costs you per booked consultation, that is the first thing to fix. Webimot's free AI audit reviews your ad accounts, lead response times and follow-up in 3 days and shows where the spend is leaking. [Book your free AI audit](/book-consultation).
+If you cannot say today what each platform costs you per booked consultation, that is the first thing to fix. Webimot's free AI audit reviews your ad accounts, lead response times and follow-up in 3 days and shows where the spend is leaking. [Book your free AI audit](/contact).
 `;

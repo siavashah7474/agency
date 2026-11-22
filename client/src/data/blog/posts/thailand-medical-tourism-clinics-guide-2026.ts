@@ -94,7 +94,7 @@ If you run a clinic in Bangkok, Phuket, or Chiang Mai and you're marketing to in
 
 The clinics winning the international patient market in Thailand in 2026 are not just the ones with the best surgeons. They are the ones that make a patient in London, Sydney, or Dubai feel heard, qualified, and confident from the first WhatsApp message.
 
-Webimot's WhatsApp AI is built for medical tourism clinics: it replies in under 3 seconds, 24/7, in 40+ languages, and is live within 48 hours after onboarding. No technical work required. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/book-consultation).
+Webimot's WhatsApp AI is built for medical tourism clinics: it replies in under 3 seconds, 24/7, in 40+ languages, and is live within 48 hours after onboarding. No technical work required. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/contact).
 
 Related reading: [Turkey vs Thailand vs Dubai: Best Medical Tourism Destinations in 2026](/blog/best-medical-tourism-destinations-turkey-thailand-dubai), [Why Hair Transplant Clinics Lose International Leads](/blog/why-clinics-lose-international-leads) and [How to Qualify International Patients Automatically](/blog/qualify-international-patients-automatically).
 `;

@@ -89,7 +89,7 @@ One dimension of AI patient journeys that is often underestimated is language. M
 
 AI assistants can operate fluently in 40+ languages, including Arabic (with proper right-to-left handling), German, Dutch, French, Italian, Spanish, Turkish, and more. For a patient writing in their native language, receiving a response in that same language builds immediate trust and tends to increase engagement.
 
-Webimot's WhatsApp AI Agent is built for the medical tourism patient journey: from first message to booked consultation, in 40+ languages, 24/7, with every medical question passed to your team. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/book-consultation).
+Webimot's WhatsApp AI Agent is built for the medical tourism patient journey: from first message to booked consultation, in 40+ languages, 24/7, with every medical question passed to your team. [See how Webimot's WhatsApp AI Agent works](/products/whatsapp-ai) or [book a free consultation](/contact).
 
 Related reading: [AI Automation in Medical Tourism](/blog/ai-automation-medical-tourism-clinics), [Why Medical Tourism Clinics Are Replacing Manual Follow-Up with AI](/blog/replace-manual-followup-ai-medical-clinic) and [How to Qualify International Patients Automatically](/blog/qualify-international-patients-automatically).
 `;

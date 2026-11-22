@@ -45,14 +45,10 @@ const importFounder = () => import("@/pages/Founder");
 const Founder = lazyWithPreload(importFounder);
 const importContact = () => import("@/pages/Contact");
 const Contact = lazyWithPreload(importContact);
-const importClients = () => import("@/pages/Clients");
-const Clients = lazyWithPreload(importClients);
 const importBlog = () => import("@/pages/Blog");
 const Blog = lazyWithPreload(importBlog);
 const importBlogPost = () => import("@/pages/BlogPost");
 const BlogPost = lazyWithPreload(importBlogPost);
-const importBookConsultation = () => import("@/pages/BookConsultation");
-const BookConsultation = lazyWithPreload(importBookConsultation);
 const importCaseStudies = () => import("@/pages/CaseStudies");
 const CaseStudies = lazyWithPreload(importCaseStudies);
 const importCaseStudyDetail = () => import("@/pages/CaseStudyDetail");
@@ -65,26 +61,15 @@ const importNotFound = () => import("@/pages/not-found");
 const NotFound = lazyWithPreload(importNotFound);
 const importLeadFirePage = () => import("@/pages/products/LeadFire");
 const LeadFirePage = lazyWithPreload(importLeadFirePage);
-const importDocuMindPage = () => import("@/pages/products/DocuMind");
-const DocuMindPage = lazyWithPreload(importDocuMindPage);
-const importNurtureLoopPage = () => import("@/pages/products/NurtureLoop");
-const NurtureLoopPage = lazyWithPreload(importNurtureLoopPage);
-const importReviveIQPage = () => import("@/pages/products/ReviveIQ");
-const ReviveIQPage = lazyWithPreload(importReviveIQPage);
-const importClearDeskPage = () => import("@/pages/products/ClearDesk");
-const ClearDeskPage = lazyWithPreload(importClearDeskPage);
-const importSEOBlogAIPage = () => import("@/pages/products/SEOBlogAI");
-const SEOBlogAIPage = lazyWithPreload(importSEOBlogAIPage);
 const importWhatsAppAIPage = () => import("@/pages/products/WhatsAppAI");
 const WhatsAppAIPage = lazyWithPreload(importWhatsAppAIPage);
-const importChatbot = () => import("@/components/Chatbot");
-const Chatbot = lazyWithPreload(importChatbot);
 const AriaChat = lazy(() => import("@/components/whatsapp-ai/AriaChat"));
 
-// The WhatsApp AI page gets Aria (a guided lead chat); every other page keeps Mia.
+// One chat on every page: Aria, a guided lead chat. Clinic pages get the clinic questions.
 function SiteChat() {
   const [location] = useLocation();
-  return location === "/products/whatsapp-ai" ? <AriaChat /> : <Chatbot />;
+  const clinic = location === "/products/whatsapp-ai" || location === "/clinics";
+  return <AriaChat key={clinic ? "clinic" : "general"} variant={clinic ? "clinic" : "general"} />;
 }
 const importExitIntentPopup = () => import("@/components/ExitIntentPopup");
 const ExitIntentPopup = lazyWithPreload(importExitIntentPopup);
@@ -101,20 +86,13 @@ const routeImporters: [string, PreloadableComponent][] = [
   ["/about", About],
   ["/sia-ahmadi", Founder],
   ["/contact", Contact],
-  ["/clients", Clients],
   ["/blog", Blog],
   ["/blog/:slug", BlogPost],
-  ["/book-consultation", BookConsultation],
   ["/case-studies", CaseStudies],
   ["/case-studies/:slug", CaseStudyDetail],
   ["/privacy-policy", PrivacyPolicy],
   ["/terms-of-service", TermsOfService],
   ["/products/leadfire", LeadFirePage],
-  ["/products/documind", DocuMindPage],
-  ["/products/nurtureloop", NurtureLoopPage],
-  ["/products/reviveiq", ReviveIQPage],
-  ["/products/cleardesk", ClearDeskPage],
-  ["/products/seo-blog-ai", SEOBlogAIPage],
   ["/products/whatsapp-ai", WhatsAppAIPage],
 ];
 
@@ -155,20 +133,13 @@ function Router() {
         <Route path="/about" component={About} />
         <Route path="/sia-ahmadi" component={Founder} />
         <Route path="/contact" component={Contact} />
-        <Route path="/clients" component={Clients} />
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogPost} />
-        <Route path="/book-consultation" component={BookConsultation} />
         <Route path="/case-studies" component={CaseStudies} />
         <Route path="/case-studies/:slug" component={CaseStudyDetail} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
         <Route path="/products/leadfire" component={LeadFirePage} />
-        <Route path="/products/documind" component={DocuMindPage} />
-        <Route path="/products/nurtureloop" component={NurtureLoopPage} />
-        <Route path="/products/reviveiq" component={ReviveIQPage} />
-        <Route path="/products/cleardesk" component={ClearDeskPage} />
-        <Route path="/products/seo-blog-ai" component={SEOBlogAIPage} />
         <Route path="/products/whatsapp-ai" component={WhatsAppAIPage} />
         <Route component={NotFound} />
       </Switch>

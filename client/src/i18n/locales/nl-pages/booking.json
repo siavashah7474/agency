@@ -16,9 +16,9 @@
     },
     "services": {
       "capture": "Capture-systeem (WhatsApp AI · LeadFire)",
-      "convert": "Follow-upsysteem (NurtureLoop · ReviveIQ)",
-      "operate": "Operations-systeem (DocuMind · AI-agents voor dagelijkse taken)",
-      "measure": "Rapportagesysteem (ClearDesk)",
+      "convert": "Follow-upsysteem (Follow-upreeksen · Leadreactivatie)",
+      "operate": "Operations-systeem (Documentverwerking · AI-agents voor dagelijkse taken)",
+      "measure": "Rapportagesysteem (Wekelijks rapport)",
       "ads": "Meta / Google Ads",
       "seo": "SEO-add-on",
       "notSure": "Weet ik niet zeker — help mij kiezen"

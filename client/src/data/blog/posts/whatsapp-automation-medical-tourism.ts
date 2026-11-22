@@ -103,7 +103,7 @@ The fastest way to see whether WhatsApp automation makes sense for your clinic i
 
 If you're receiving more than 20 enquiries per month and don't have 24/7 coverage, you're leaving patients, and revenue, on the table.
 
-[Webimot's WhatsApp AI Agent](/products/whatsapp-ai) is live within 48 hours after onboarding. See how it works, or [book a free consultation](/book-consultation).
+[Webimot's WhatsApp AI Agent](/products/whatsapp-ai) is live within 48 hours after onboarding. See how it works, or [book a free consultation](/contact).
 
 Related reading: [Why Hair Transplant Clinics Lose International Leads](/blog/why-clinics-lose-international-leads) and [How to Qualify International Patients Automatically](/blog/qualify-international-patients-automatically). Not a clinic? The general guide to [WhatsApp Business automation](/blog/whatsapp-business-automation-2026-complete-guide) covers the six workflows and the technical setup for any business.
 `;
