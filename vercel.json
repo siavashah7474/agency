@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm run build:static",
+  "buildCommand": "echo \"Using prebuilt dist/public (prerendered locally)\"",
   "outputDirectory": "dist/public",
   "rewrites": [
     {
@@ -253,5 +253,6 @@
       "permanent": true
     }
   ],
-  "trailingSlash": false
+  "trailingSlash": false,
+  "installCommand": "npm ci"
 }
