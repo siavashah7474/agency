@@ -11,7 +11,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import { AUDIENCES, SYSTEMS, type SystemId } from "@/data/systemsData";
 
-const CANONICAL = "https://webimotagency.com/small-business";
+const CANONICAL = "https://webimot.com/small-business";
 const audience = AUDIENCES[1];
 
 const CHALLENGES = [
@@ -127,14 +127,14 @@ export default function SmallBusiness() {
         serviceType: "AI Automation",
         areaServed: "Worldwide",
         audience: { "@type": "Audience", audienceType: "Small and medium-sized businesses: real estate, e-commerce, finance, legal and service businesses" },
-        provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimotagency.com" },
+        provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimot.com" },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Four AI automation systems for small businesses",
           itemListElement: SYSTEMS.map((s) => ({
             "@type": "Offer",
             position: s.step,
-            itemOffered: { "@type": "Service", name: s.name, description: LADDER[s.id].title, url: `https://webimotagency.com/systems#${s.id}` },
+            itemOffered: { "@type": "Service", name: s.name, description: LADDER[s.id].title, url: `https://webimot.com/systems#${s.id}` },
           })),
         },
       },

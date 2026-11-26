@@ -13,7 +13,7 @@ import { AUDIENCES, SYSTEMS, type SystemId } from "@/data/systemsData";
 import { caseStudies } from "@/data/caseStudiesData";
 import { FOUNDING_OFFER, foundingOfferBadge, foundingOfferSpots } from "@/data/foundingOffer";
 
-const CANONICAL = "https://webimotagency.com/clinics";
+const CANONICAL = "https://webimot.com/clinics";
 const audience = AUDIENCES[0];
 
 const CHALLENGES = [
@@ -94,14 +94,14 @@ export default function Clinics() {
         serviceType: "AI Automation",
         areaServed: "Worldwide",
         audience: { "@type": "Audience", audienceType: "Clinics, hair transplant, dental, cosmetic surgery, IVF and medical tourism providers" },
-        provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimotagency.com" },
+        provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimot.com" },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Four AI automation systems for clinics",
           itemListElement: SYSTEMS.map((s) => ({
             "@type": "Offer",
             position: s.step,
-            itemOffered: { "@type": "Service", name: s.name, description: LADDER[s.id].title, url: `https://webimotagency.com/systems#${s.id}` },
+            itemOffered: { "@type": "Service", name: s.name, description: LADDER[s.id].title, url: `https://webimot.com/systems#${s.id}` },
           })),
         },
       },

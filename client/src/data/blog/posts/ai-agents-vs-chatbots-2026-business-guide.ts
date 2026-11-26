@@ -92,7 +92,7 @@ A medical tourism clinic running a multi-agent system might have:
 
 Each agent is specialised and fast, and together they cover routine pipeline work around the clock, with people stepping in for the cases that need judgment.
 
-This is the kind of architecture [Webimot Agency](https://webimotagency.com) builds for clinics and service businesses.
+This is the kind of architecture [Webimot Agency](https://webimot.com) builds for clinics and service businesses.
 
 ---
 
@@ -138,5 +138,5 @@ An AI agent works around the clock, converses in many languages, and does not fo
 
 **If your current "AI" only answers questions and your team still does everything else manually, you have a chatbot problem — not an AI solution.**
 
-[Book a free strategy call with Webimot Agency](https://webimotagency.com/contact) to see what an AI agent built specifically for your business would look like.
+[Book a free strategy call with Webimot Agency](https://webimot.com/contact) to see what an AI agent built specifically for your business would look like.
     `;

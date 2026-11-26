@@ -16,10 +16,10 @@ const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/sia-ahmadi/";
 const founderSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  url: "https://webimotagency.com/about",
+  url: "https://webimot.com/about",
   mainEntity: {
     "@type": "Person",
-    "@id": "https://webimotagency.com/about#founder",
+    "@id": "https://webimot.com/about#founder",
     name: "Sia Ahmadi",
     jobTitle: "Founder, entrepreneur and AI automation specialist",
     description:
@@ -41,8 +41,8 @@ const founderSchema = {
       "Digital transformation",
       "Business development",
     ],
-    image: "https://webimotagency.com/sia-ahmadi-1200.jpg",
-    worksFor: { "@id": "https://webimotagency.com/#organization" },
+    image: "https://webimot.com/sia-ahmadi-1200.jpg",
+    worksFor: { "@id": "https://webimot.com/#organization" },
     homeLocation: [
       { "@type": "City", name: "Amsterdam" },
       { "@type": "City", name: "Istanbul" },
@@ -74,7 +74,7 @@ export default function About() {
         title="About Webimot | AI Automation Agency"
         description="Webimot is an AI automation and digital marketing agency founded by Sia Ahmadi, based in Amsterdam and Istanbul. AI systems for clinics and small businesses."
         keywords="AI consultant agency, digital transformation agency, AI consultancy medical tourism, real estate AI consultant, small business digital transformation, AI automation consultancy, Webimot Agency about, AI business transformation"
-        canonicalUrl="https://webimotagency.com/about"
+        canonicalUrl="https://webimot.com/about"
         schema={founderSchema}
       />
       <div className="min-h-screen flex flex-col">

@@ -130,5 +130,5 @@ The implementation process is simpler than most clinic owners expect:
 5. **Go live** — Your [Webimot AI receptionist](/clinics) starts handling inquiries; the WhatsApp AI is live within 48 hours of onboarding, and a larger build across several channels and systems takes 2–4 weeks
 6. **Optimisation** — Ongoing refinement based on real conversation data
 
-Visit [webimotagency.com](/) to see exactly how our AI receptionist works and book a free demo tailored to your clinic's speciality.
+Visit [webimot.com](/) to see exactly how our AI receptionist works and book a free demo tailored to your clinic's speciality.
     `;

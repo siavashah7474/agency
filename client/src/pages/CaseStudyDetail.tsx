@@ -32,7 +32,7 @@ export default function CaseStudyDetail() {
     );
   }
 
-  const canonical = `https://webimotagency.com/case-studies/${study.slug}`;
+  const canonical = `https://webimot.com/case-studies/${study.slug}`;
 
   const schema = {
     "@context": "https://schema.org",
@@ -41,7 +41,7 @@ export default function CaseStudyDetail() {
     description: study.summary,
     url: canonical,
     about: { "@type": "Organization", name: study.client },
-    publisher: { "@type": "Organization", name: "Webimot Agency", url: "https://webimotagency.com" },
+    publisher: { "@type": "Organization", name: "Webimot Agency", url: "https://webimot.com" },
   };
 
   return (

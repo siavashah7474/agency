@@ -1,4 +1,4 @@
-# Webimot Agency — https://webimotagency.com
+# Webimot Agency — https://webimot.com
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -31,8 +31,8 @@ User-agent: YouBot
 Allow: /
 Disallow: /api/
 
-Sitemap: https://webimotagency.com/sitemap.xml
+Sitemap: https://webimot.com/sitemap.xml
 
 # Plain-text summaries for LLMs:
-# https://webimotagency.com/llms.txt
-# https://webimotagency.com/llms-full.txt
+# https://webimot.com/llms.txt
+# https://webimot.com/llms-full.txt

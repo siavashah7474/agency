@@ -46,7 +46,7 @@ import { FOUNDING_OFFER, foundingOfferBadge, foundingOfferSpots } from "@/data/f
 // former standalone site) plus the agency's own WhatsApp AI content. English is inline as t()
 // defaults; Turkish, Dutch and Spanish live in locales/<lng>-pages/whatsappAi.json.
 
-const CANONICAL = "https://webimotagency.com/products/whatsapp-ai";
+const CANONICAL = "https://webimot.com/products/whatsapp-ai";
 const WHATSAPP_LINK = "https://wa.me/31628753175";
 const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/sia-ahmadi/";
 const CAPTURE = systemById("capture");
@@ -235,7 +235,7 @@ const schema = {
       applicationCategory: "BusinessApplication",
       operatingSystem: "WhatsApp Business",
       audience: { "@type": "Audience", audienceType: "Clinics, hair transplant, dental, cosmetic surgery and medical tourism providers" },
-      provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimotagency.com" },
+      provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimot.com" },
       featureList: [...SOLUTIONS, ...EXTRAS].map((f) => f.title),
       offers: [
         {

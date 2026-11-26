@@ -86,7 +86,7 @@ export default function ProductPageLayout(props: ProductPageProps) {
     contentKey ? translateDeep(raw, `productPages.${contentKey}`, t, contentValues) : raw;
   const { openModal } = useBookingModal();
   const [pathname] = useLocation();
-  const canonicalUrl = `https://webimotagency.com${pathname}`;
+  const canonicalUrl = `https://webimot.com${pathname}`;
 
   // One line at the top of the hero placing the product in the ladder; `system` wins if both are set.
   const parentSystem = system ? systemById(system) : addOnFor ? systemById(addOnFor) : undefined;
@@ -114,7 +114,7 @@ export default function ProductPageLayout(props: ProductPageProps) {
     "provider": {
       "@type": "Organization",
       "name": "Webimot Agency",
-      "url": "https://webimotagency.com"
+      "url": "https://webimot.com"
     },
     "featureList": schemaFeatures
   };

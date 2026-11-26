@@ -255,7 +255,7 @@ export default function ServiceDetail() {
         title={service.title}
         description={service.metaDescription}
         keywords={seoKeywords}
-        canonicalUrl={`https://webimotagency.com/services/${slug}`}
+        canonicalUrl={`https://webimot.com/services/${slug}`}
         schema={{
           "@context": "https://schema.org",
           "@type": "Service",
@@ -264,9 +264,9 @@ export default function ServiceDetail() {
           "provider": {
             "@type": "Organization",
             "name": "Webimot Agency",
-            "url": "https://webimotagency.com"
+            "url": "https://webimot.com"
           },
-          "url": `https://webimotagency.com/services/${slug}`,
+          "url": `https://webimot.com/services/${slug}`,
           "areaServed": "Worldwide",
         }}
       />

@@ -16,7 +16,7 @@ import { createHash } from "node:crypto";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(ROOT, "dist", "public");
-const SITE = "https://webimotagency.com";
+const SITE = "https://webimot.com";
 // Crawling starts here and follows internal links. Pages that nothing links to must be
 // listed explicitly or they would silently drop out of the build and the sitemap:
 //  - the parked marketing services stay live (decision 2 in the restructure design doc)

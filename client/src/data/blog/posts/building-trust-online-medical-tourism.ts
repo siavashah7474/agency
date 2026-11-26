@@ -175,5 +175,5 @@ Track these indicators:
 
 Building online trust is a strategic process, not a one-time project. It requires planning, consistent effort, and ongoing management.
 
-Want help developing a trust-building strategy for your clinic? [Webimot](/) pairs reputation management with an [AI WhatsApp agent](/products/whatsapp-ai) that responds so quickly, patients feel attended to from the very first message — which is itself the strongest trust signal. [Visit webimotagency.com](/) to discuss your current situation and opportunities for improvement.
+Want help developing a trust-building strategy for your clinic? [Webimot](/) pairs reputation management with an [AI WhatsApp agent](/products/whatsapp-ai) that responds so quickly, patients feel attended to from the very first message — which is itself the strongest trust signal. [Visit webimot.com](/) to discuss your current situation and opportunities for improvement.
     `;

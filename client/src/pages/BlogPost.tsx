@@ -109,7 +109,7 @@ export default function BlogPost() {
         title={post.seoTitle ?? post.title}
         description={post.excerpt}
         keywords={`${post.category.toLowerCase()}, AI automation, business automation, AI agents, Webimot blog`}
-        canonicalUrl={`https://webimotagency.com/blog/${post.slug}`}
+        canonicalUrl={`https://webimot.com/blog/${post.slug}`}
         ogType="article"
         articlePublishedTime={publishedIso}
         articleAuthor="Sia Ahmadi"
@@ -124,23 +124,23 @@ export default function BlogPost() {
               "datePublished": publishedIso,
               "dateModified": publishedIso,
               "inLanguage": "en",
-              "url": `https://webimotagency.com/blog/${post.slug}`,
-              "mainEntityOfPage": `https://webimotagency.com/blog/${post.slug}`,
-              "image": "https://webimotagency.com/og-image.png",
+              "url": `https://webimot.com/blog/${post.slug}`,
+              "mainEntityOfPage": `https://webimot.com/blog/${post.slug}`,
+              "image": "https://webimot.com/og-image.png",
               "author": {
                 "@type": "Person",
-                "@id": "https://webimotagency.com/about#founder",
+                "@id": "https://webimot.com/about#founder",
                 "name": "Sia Ahmadi",
-                "url": "https://webimotagency.com/sia-ahmadi",
+                "url": "https://webimot.com/sia-ahmadi",
               },
-              "publisher": { "@id": "https://webimotagency.com/#organization" },
+              "publisher": { "@id": "https://webimot.com/#organization" },
             },
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://webimotagency.com/" },
-                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://webimotagency.com/blog" },
-                { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://webimotagency.com/blog/${post.slug}` },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://webimot.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://webimot.com/blog" },
+                { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://webimot.com/blog/${post.slug}` },
               ],
             },
             ...(faqs.length
@@ -428,7 +428,7 @@ function formatContent(content: string): string {
 const LINK_CLASS = 'font-medium underline underline-offset-2 text-primary hover:text-primary/80';
 
 function isInternalLink(href: string): boolean {
-  return href.startsWith('/') || href.startsWith('#') || /^https?:\/\/(www\.)?webimotagency\.com(\/|$)/i.test(href);
+  return href.startsWith('/') || href.startsWith('#') || /^https?:\/\/(www\.)?(webimot|webimotagency)\.com(\/|$)/i.test(href);
 }
 
 function formatInlineMarkdown(text: string): string {
@@ -436,7 +436,7 @@ function formatInlineMarkdown(text: string): string {
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_m, label: string, href: string) => {
       if (isInternalLink(href)) {
         // Internal links: same tab, and strip the absolute domain so wouter can handle them.
-        const path = href.replace(/^https?:\/\/(www\.)?webimotagency\.com/i, '') || '/';
+        const path = href.replace(/^https?:\/\/(www\.)?(webimot|webimotagency)\.com/i, '') || '/';
         return `<a href="${path}" class="${LINK_CLASS}">${label}</a>`;
       }
       return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="${LINK_CLASS}">${label}</a>`;

@@ -90,7 +90,7 @@ const sendVisitorConfirmation = (email: string, name: string, kind: "booking" | 
          : "We'll get back to you within 24 hours."
      }</p>
      <p>Need us sooner? Message us on WhatsApp: <a href="https://wa.me/31628753175">+31 6 2875 3175</a></p>
-     <p>— The Webimot team<br/><a href="https://webimotagency.com">webimotagency.com</a></p>`,
+     <p>— The Webimot team<br/><a href="https://webimot.com">webimot.com</a></p>`,
     REPLY_TO,
   );
 
@@ -137,7 +137,7 @@ app.use((req, res, next) => {
     const origin = req.headers.origin;
     const allowedOrigins = (
       process.env.ALLOWED_ORIGINS ||
-      "https://webimotagency.com,https://www.webimotagency.com"
+      "https://webimot.com,https://www.webimot.com,https://webimotagency.com,https://www.webimotagency.com"
     )
       .split(",")
       .map((o) => o.trim());

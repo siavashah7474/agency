@@ -11,7 +11,7 @@ import { useBookingModal } from "@/hooks/use-booking-modal";
 import { useTranslation } from "react-i18next";
 import { PROMISE, SYSTEMS, useLocalizedSystemsData, type SystemId } from "@/data/systemsData";
 
-const CANONICAL = "https://webimotagency.com/systems";
+const CANONICAL = "https://webimot.com/systems";
 
 // Short labels for the in-page jump row (the full names are "Capture system" etc.).
 const JUMP_LABELS: Record<SystemId, string> = {
@@ -73,7 +73,7 @@ export default function Systems() {
     url: CANONICAL,
     serviceType: "AI Automation",
     areaServed: "Worldwide",
-    provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimotagency.com" },
+    provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimot.com" },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Four AI automation systems",

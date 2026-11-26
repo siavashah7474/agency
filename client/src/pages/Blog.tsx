@@ -30,7 +30,7 @@ export default function Blog() {
         title="AI Automation Blog — Guides for Growing Businesses"
         description="Practical guides on AI agents, business automation, WhatsApp AI and digital transformation for clinics, real estate agencies and growing businesses."
         keywords="medical tourism marketing blog, lead generation tips, clinic marketing strategies, AI automation blog, website design tips, SEO blog, digital marketing blog, medical tourism SEO, clinic lead generation tips, healthcare marketing blog, Turkey medical tourism blog, AI agent blog, blog generator, patient acquisition strategies, medical tourism content marketing"
-        canonicalUrl="https://webimotagency.com/blog"
+        canonicalUrl="https://webimot.com/blog"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

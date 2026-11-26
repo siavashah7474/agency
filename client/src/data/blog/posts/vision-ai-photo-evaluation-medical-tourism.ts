@@ -129,7 +129,7 @@ The AI is a tool that makes doctors more efficient, not obsolete. It introduces 
 
 ### Integration
 - [WhatsApp AI Agent by Webimot](/products/whatsapp-ai) for seamless patient experience
-- Website upload options via [webimotagency.com](/)
+- Website upload options via [webimot.com](/)
 - CRM integration for lead management
 
 ## The Competitive Advantage
@@ -144,5 +144,5 @@ The AI is a tool that makes doctors more efficient, not obsolete. It introduces 
 
 [Webimot's AI photo pre-qualification](/clinics) is something we can set up as part of a clinic's inquiry flow, with your doctors defining what the AI may and may not say.
 
-Interested in adding [Webimot AI](/systems) to your clinic? [Visit webimotagency.com](/) to see how it could work for your specific procedures.
+Interested in adding [Webimot AI](/systems) to your clinic? [Visit webimot.com](/) to see how it could work for your specific procedures.
     `;

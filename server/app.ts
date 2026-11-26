@@ -60,7 +60,7 @@ app.use(
 app.use((req, res, next) => {
   if (["POST", "PUT", "DELETE", "PATCH"].includes(req.method) && process.env.NODE_ENV === "production") {
     const origin = req.headers.origin;
-    const allowedOrigins = (process.env.ALLOWED_ORIGINS || "https://webimotagency.com")
+    const allowedOrigins = (process.env.ALLOWED_ORIGINS || "https://webimot.com,https://www.webimot.com,https://webimotagency.com,https://www.webimotagency.com")
       .split(",")
       .map((o) => o.trim());
     if (origin && !allowedOrigins.includes(origin)) {

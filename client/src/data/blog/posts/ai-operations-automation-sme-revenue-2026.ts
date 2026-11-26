@@ -106,5 +106,5 @@ Start with the first two. They are the quickest to build and the closest to reve
 
 ---
 
-*Webimot Agency designs and deploys AI automation systems for clinics and service businesses, covering lead qualification, SEO content generation, document processing, and internal operations automation. [Book a free strategy call](https://webimotagency.com) to identify which automations make the most sense for your specific business.*
+*Webimot Agency designs and deploys AI automation systems for clinics and service businesses, covering lead qualification, SEO content generation, document processing, and internal operations automation. [Book a free strategy call](https://webimot.com) to identify which automations make the most sense for your specific business.*
     `;

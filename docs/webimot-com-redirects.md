@@ -1,3 +1,7 @@
+> **Superseded (26 Nov 2026):** webimot.com is now the main and only active domain. The site
+> moved from webimotagency.com to webimot.com; webimotagency.com and www.webimotagency.com
+> permanently (308) redirect to webimot.com in Vercel. The plan below is kept for history only.
+
 # webimot.com → webimotagency.com redirects
 
 All of webimot.com's content now lives on webimotagency.com:

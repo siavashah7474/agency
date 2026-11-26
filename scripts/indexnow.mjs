@@ -12,7 +12,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const HOST = "webimotagency.com";
+const HOST = "webimot.com";
 const KEY = "e2fb55b716d7857d88b972158d370695";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const all = process.argv.includes("--all");

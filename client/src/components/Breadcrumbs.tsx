@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { ChevronRight, Home } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-const BASE_URL = "https://webimotagency.com";
+const BASE_URL = "https://webimot.com";
 
 interface BreadcrumbItem {
   label: string;

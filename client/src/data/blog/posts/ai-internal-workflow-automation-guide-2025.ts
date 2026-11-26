@@ -142,5 +142,5 @@ Compare that with the cost of building and running the automation. The payback p
 
 The biggest mistake businesses make is trying to automate everything at once. Start with one workflow, measure the results, then expand.
 
-Want to identify which internal workflows in your specific business are worth automating first? [Book a free strategy call with Webimot](/contact) — we will map your current processes and design an automation roadmap tailored to your team size, tools, and goals. [Start at webimotagency.com](/contact).
+Want to identify which internal workflows in your specific business are worth automating first? [Book a free strategy call with Webimot](/contact) — we will map your current processes and design an automation roadmap tailored to your team size, tools, and goals. [Start at webimot.com](/contact).
     `;

@@ -43,7 +43,7 @@ export default function SEO({
   description,
   keywords,
   canonicalUrl,
-  ogImage = "https://webimotagency.com/og-image.png",
+  ogImage = "https://webimot.com/og-image.png",
   ogType = "website",
   articlePublishedTime,
   articleAuthor,

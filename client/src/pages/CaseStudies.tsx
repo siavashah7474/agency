@@ -8,7 +8,7 @@ import { caseStudies } from "@/data/caseStudiesData";
 import { useBookingModal } from "@/hooks/use-booking-modal";
 import { ArrowRight, Briefcase, CheckCircle } from "lucide-react";
 
-const CANONICAL = "https://webimotagency.com/case-studies";
+const CANONICAL = "https://webimot.com/case-studies";
 
 export default function CaseStudies() {
   const { openModal } = useBookingModal();

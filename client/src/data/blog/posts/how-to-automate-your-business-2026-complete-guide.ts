@@ -144,7 +144,7 @@ Every AI agent should have clear escalation logic. Emotionally sensitive convers
 
 A good first step is a free 30-minute strategy call where you map your current lead pipeline and identify the 2–3 automation opportunities most worth pursuing.
 
-[Webimot Agency](https://webimotagency.com) offers this for free. No commitment required. The aim is that you leave with a clear automation roadmap you can act on.
+[Webimot Agency](https://webimot.com) offers this for free. No commitment required. The aim is that you leave with a clear automation roadmap you can act on.
 
-[Book your free strategy call here](https://webimotagency.com/contact).
+[Book your free strategy call here](https://webimot.com/contact).
     `;

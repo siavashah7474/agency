@@ -16,7 +16,7 @@ The good news: connecting your business systems so data flows automatically is c
 Until recently, automating data entry required dedicated developers, custom integrations, and months of setup. Most small and medium businesses could not justify the cost.
 
 ### The New Reality
-[Webimot's AI automation platform](/systems) — built on Make.com, n8n, and custom AI agents — makes setup much quicker and more affordable than a custom software project. A business with standard cloud tools can automate a large part of its data entry. See [webimotagency.com](/).
+[Webimot's AI automation platform](/systems) — built on Make.com, n8n, and custom AI agents — makes setup much quicker and more affordable than a custom software project. A business with standard cloud tools can automate a large part of its data entry. See [webimot.com](/).
 
 ## The Five Most Common Data Entry Workflows to Eliminate
 
@@ -121,5 +121,5 @@ The fastest path to a return is identifying the one data task that consumes the 
 
 Start there. Automate it thoroughly. Measure the time saved. Then use that confidence to expand.
 
-Want help identifying and automating the highest-impact data entry workflows in your business? [Book a free analysis call with Webimot](/contact) — we will review your current tools and processes and show you exactly where [Webimot's AI automation](/systems) would have the biggest impact. [Get started at webimotagency.com](/contact).
+Want help identifying and automating the highest-impact data entry workflows in your business? [Book a free analysis call with Webimot](/contact) — we will review your current tools and processes and show you exactly where [Webimot's AI automation](/systems) would have the biggest impact. [Get started at webimot.com](/contact).
     `;

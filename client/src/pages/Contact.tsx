@@ -86,7 +86,7 @@ export default function Contact() {
         title="Contact Webimot Agency — Book Your Free Strategy Call"
         description="Book a free 30-minute strategy call with Webimot Agency. We'll map out exactly which AI automations and marketing strategies will grow your business fastest. No fluff, no hard sell."
         keywords="contact AI automation agency, book strategy call, digital marketing consultation, AI automation consultation, free AI audit, Shopify automation consultation, eCommerce marketing help, WhatsApp AI agent setup, SEO consultation, business automation consultation"
-        canonicalUrl="https://webimotagency.com/contact"
+        canonicalUrl="https://webimot.com/contact"
       />
       <div className="min-h-screen flex flex-col">
         <Navigation />

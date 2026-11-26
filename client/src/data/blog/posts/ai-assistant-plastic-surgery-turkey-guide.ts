@@ -49,7 +49,7 @@ Turkish clinics attract patients from many countries. [Webimot's AI](/systems) i
 - **Russian** for patients from Russia, Kazakhstan, Ukraine
 - **French** for patients from France, Belgium, Morocco
 
-No hiring. No training. No overtime pay. [See all features at webimotagency.com](/systems).
+No hiring. No training. No overtime pay. [See all features at webimot.com](/systems).
 
 ### Intelligent Lead Qualification
 Not every inquiry becomes a patient. [Webimot's AI assistant](/clinics) filters and qualifies leads by asking the right questions:
@@ -144,7 +144,7 @@ The clinics that win international patients are not necessarily the largest — 
 
 We handle everything: setup, training the AI on your procedures and pricing, language configuration, and ongoing optimisation.
 
-**Ready to convert more international patients?** Visit [webimotagency.com](/) to book a free strategy call and see how AI automation could work for your clinic's lead handling.
+**Ready to convert more international patients?** Visit [webimot.com](/) to book a free strategy call and see how AI automation could work for your clinic's lead handling.
 
 Related reading: for the market itself (prices, source countries and how patients choose), see [Turkey Medical Tourism 2026](/blog/turkey-medical-tourism-guide-2026).
     `;

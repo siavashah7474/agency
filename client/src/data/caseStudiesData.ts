@@ -126,7 +126,7 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         title: "Product website",
-        description: "Design and build of the product's website and landing page, now the WhatsApp AI page on webimotagency.com.",
+        description: "Design and build of the product's website and landing page, now the WhatsApp AI page on webimot.com.",
       },
     ],
     services: ["WhatsApp AI agent", "n8n", "OpenAI API", "WhatsApp Cloud API", "Product website"],

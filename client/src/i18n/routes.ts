@@ -6,7 +6,7 @@
 // pre-render script (scripts/prerender.mjs) reads the same file.
 import translated from "./translated-routes.json";
 
-export const SITE = "https://webimotagency.com";
+export const SITE = "https://webimot.com";
 export const LANGS = ["en", "tr", "nl", "es", "ar"] as const;
 export type Lang = (typeof LANGS)[number];
 export type PrefixedLang = Exclude<Lang, "en">;

@@ -1,7 +1,7 @@
 # Webimot Agency — Complete AI Knowledge Base for LLMs
 # llms-full.txt — Full structured reference for AI search engines
 # Last updated: 2026-11-19
-# Source: https://webimotagency.com
+# Source: https://webimot.com
 
 ---
 
@@ -11,42 +11,42 @@
 **Also known as:** Webimot, Webimot AI Agency
 **Type:** AI automation agency — AI agents and automation systems for clinics and small businesses
 **Promise:** "AI automation systems that run your daily work."
-**Founder:** Sia Ahmadi — entrepreneur, business developer, AI automation specialist and digital transformation consultant. Specialised in medical and health tourism, sales funnels, ads optimisation (Meta and Google) and business visibility (search engines and AI assistants). Founded Webimot in January 2025 and does the client work personally. Since 2021 worked in sales and marketing for clinics in Istanbul treating international patients (BHT Clinic, Ariana Health Clinic, and since November 2023 Dr. Görkem Atsal Clinic as a freelance sales and marketing specialist); digital marketing for WaveMed (US healthcare startup), 2021–2024. MSc Information Technology (Azad University); completing an MSc in Consultancy and Entrepreneurship at Rotterdam Business School. Works in English, Turkish, Persian and Kurdish, with basic Dutch. LinkedIn: https://www.linkedin.com/in/sia-ahmadi/ · Bio: https://webimotagency.com/sia-ahmadi
+**Founder:** Sia Ahmadi — entrepreneur, business developer, AI automation specialist and digital transformation consultant. Specialised in medical and health tourism, sales funnels, ads optimisation (Meta and Google) and business visibility (search engines and AI assistants). Founded Webimot in January 2025 and does the client work personally. Since 2021 worked in sales and marketing for clinics in Istanbul treating international patients (BHT Clinic, Ariana Health Clinic, and since November 2023 Dr. Görkem Atsal Clinic as a freelance sales and marketing specialist); digital marketing for WaveMed (US healthcare startup), 2021–2024. MSc Information Technology (Azad University); completing an MSc in Consultancy and Entrepreneurship at Rotterdam Business School. Works in English, Turkish, Persian and Kurdish, with basic Dutch. LinkedIn: https://www.linkedin.com/in/sia-ahmadi/ · Bio: https://webimot.com/sia-ahmadi
 **Based in:** Amsterdam (Netherlands) and Istanbul (Turkey); works with clients remotely
 **Email:** webimot.info@gmail.com
 **Instagram:** https://www.instagram.com/webimotagency/
 **LinkedIn:** https://www.linkedin.com/company/webimot-agency/
 **WhatsApp:** +31628753175
-**Website:** https://webimotagency.com
-**WhatsApp AI product page:** https://webimotagency.com/products/whatsapp-ai
+**Website:** https://webimot.com
+**WhatsApp AI product page:** https://webimot.com/products/whatsapp-ai
 
 Webimot Agency builds and operates AI automation systems for clinics and small businesses so that every lead is answered, every document processed and every follow-up sent — 24/7, without adding staff. The offer is one ladder of four systems: Capture (WhatsApp AI, LeadFire), Follow-up (Follow-up sequences, Lead reactivation), Operations (Document processing, AI agents for daily tasks) and Reporting (Weekly report). Meta Ads, Google Ads and SEO / SEO blog articles are sold as add-ons that feed the Capture system.
 
 ## Who We Help (two audiences)
 
-1. **Clinics & healthcare** — hair transplant, dental, cosmetic surgery and IVF clinics, including medical tourism providers serving patients from Germany, the UK, the Netherlands and the Gulf. Promise: turn every patient enquiry into a booked consultation. https://webimotagency.com/clinics
-2. **Small businesses** — real estate agencies, e-commerce and Shopify stores, finance and legal firms and service businesses that live on WhatsApp, email and spreadsheets. Promise: run on AI without hiring more staff. https://webimotagency.com/small-business
+1. **Clinics & healthcare** — hair transplant, dental, cosmetic surgery and IVF clinics, including medical tourism providers serving patients from Germany, the UK, the Netherlands and the Gulf. Promise: turn every patient enquiry into a booked consultation. https://webimot.com/clinics
+2. **Small businesses** — real estate agencies, e-commerce and Shopify stores, finance and legal firms and service businesses that live on WhatsApp, email and spreadsheets. Promise: run on AI without hiring more staff. https://webimot.com/small-business
 
 ## The Four Systems (the ladder)
 
-1. **Capture system — WhatsApp AI · LeadFire** — Every enquiry answered in seconds, in the customer's language, 24/7. An AI agent on your WhatsApp Business number (and web chat) answers questions, qualifies the lead, collects photos for the doctor where relevant and books the appointment straight into your calendar. Replaces: missed messages and slow replies. The WhatsApp AI replies in under 3 seconds, day and night, in the customer's language; LeadFire responds to form, ad and email leads in under 60 seconds. https://webimotagency.com/systems#capture
-2. **Follow-up system — Follow-up sequences · Lead reactivation** — Leads that went quiet get followed up automatically until they book or opt out. Multi-step follow-up across WhatsApp, email and SMS for new leads, plus reactivation campaigns for old contacts already in your CRM or inbox. Replaces: leads that go cold. Designed so that: no lead is forgotten after the first message; old contacts turned back into bookings; hand-off to your team when a human is needed. https://webimotagency.com/systems#convert
-3. **Operations system — Document processing · AI agents for daily tasks** — Invoices, forms and data entry handled by AI agents instead of your team. Agents read incoming documents, extract the data, update your systems and send the reminders and internal follow-ups your team does by hand today (invoices, intake forms, contracts, HR requests). Replaces: manual paperwork and data entry. Designed so that: documents are processed the day they arrive; human-verified accuracy on what matters; hours per week back to your team. https://webimotagency.com/systems#operate
-4. **Reporting system — Weekly report** — A plain-English report on leads, sales and team performance every Monday. AI pulls the numbers from WhatsApp, CRM, ads, calendar and accounting and sends a short weekly report with what changed, what to fix and what to double down on. Replaces: not knowing what's working. https://webimotagency.com/systems#measure
+1. **Capture system — WhatsApp AI · LeadFire** — Every enquiry answered in seconds, in the customer's language, 24/7. An AI agent on your WhatsApp Business number (and web chat) answers questions, qualifies the lead, collects photos for the doctor where relevant and books the appointment straight into your calendar. Replaces: missed messages and slow replies. The WhatsApp AI replies in under 3 seconds, day and night, in the customer's language; LeadFire responds to form, ad and email leads in under 60 seconds. https://webimot.com/systems#capture
+2. **Follow-up system — Follow-up sequences · Lead reactivation** — Leads that went quiet get followed up automatically until they book or opt out. Multi-step follow-up across WhatsApp, email and SMS for new leads, plus reactivation campaigns for old contacts already in your CRM or inbox. Replaces: leads that go cold. Designed so that: no lead is forgotten after the first message; old contacts turned back into bookings; hand-off to your team when a human is needed. https://webimot.com/systems#convert
+3. **Operations system — Document processing · AI agents for daily tasks** — Invoices, forms and data entry handled by AI agents instead of your team. Agents read incoming documents, extract the data, update your systems and send the reminders and internal follow-ups your team does by hand today (invoices, intake forms, contracts, HR requests). Replaces: manual paperwork and data entry. Designed so that: documents are processed the day they arrive; human-verified accuracy on what matters; hours per week back to your team. https://webimot.com/systems#operate
+4. **Reporting system — Weekly report** — A plain-English report on leads, sales and team performance every Monday. AI pulls the numbers from WhatsApp, CRM, ads, calendar and accounting and sends a short weekly report with what changed, what to fix and what to double down on. Replaces: not knowing what's working. https://webimot.com/systems#measure
 
 ## Paid ads (sold on their own or with the systems)
 
-- **Meta Ads for clinics** — Facebook and Instagram ads for clinics and medical tourism: audiences by country and language, lead forms and click-to-WhatsApp ads, creatives within Meta's health ad rules, tracking to booked consultations. Sold on its own or with the WhatsApp AI, which answers every ad lead in under 3 seconds. https://webimotagency.com/services/meta-ads
-- **Google Ads for clinics** — Google Search ads for clinics and medical tourism: high-intent treatment and price searches per country and language, negative keywords, offline conversion import so bidding learns from booked consultations, checked against Google's healthcare policy. Sold on its own or with the WhatsApp AI. https://webimotagency.com/services/google-ads
+- **Meta Ads for clinics** — Facebook and Instagram ads for clinics and medical tourism: audiences by country and language, lead forms and click-to-WhatsApp ads, creatives within Meta's health ad rules, tracking to booked consultations. Sold on its own or with the WhatsApp AI, which answers every ad lead in under 3 seconds. https://webimot.com/services/meta-ads
+- **Google Ads for clinics** — Google Search ads for clinics and medical tourism: high-intent treatment and price searches per country and language, negative keywords, offline conversion import so bidding learns from booked consultations, checked against Google's healthcare policy. Sold on its own or with the WhatsApp AI. https://webimot.com/services/google-ads
 - **How ads work** — Ad spend is paid by the client directly to the platform, in the client's own ad account; the management fee is quoted after a free 30-minute strategy call (recommended minimum spend: €500/month on Meta, €1,000/month on Google). Ads have been run by founder Sia Ahmadi for five clinics: Gorkem Atsal Clinic, Clinish, Prime Hair, MSB Aesthetic and Estetizm. No guaranteed cost per lead.
 
 ## Add-on
 
-- **SEO & blog articles** — Organic traffic from automated, search-optimised articles. https://webimotagency.com/systems
+- **SEO & blog articles** — Organic traffic from automated, search-optimised articles. https://webimot.com/systems
 
 ## Pricing — Three Packages, One Ladder
 
-No fixed prices are published. Every package is quoted after a free AI audit, so clients only pay for the systems they will actually use. Request a quote: https://webimotagency.com/contact
+No fixed prices are published. Every package is quoted after a free AI audit, so clients only pay for the systems they will actually use. Request a quote: https://webimot.com/contact
 
 - **Starter — "Capture every lead"** — Capture system. Best for one location, one inbox, first step into AI. Includes: Capture system set up and managed, WhatsApp AI live within 48 hours, weekly summary email, 1 integration (calendar or CRM), onboarding and team training.
 - **Growth — "Capture, follow up and measure"** — Capture + Follow-up + Reporting systems. Best for clinics and SMEs ready to automate the whole lead journey. Includes: regular optimisation reviews, priority support, additional integrations.
@@ -65,8 +65,8 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 ## Full Product Catalog (the parts of each system)
 
 ### 1. WhatsApp AI (Capture system)
-**URL:** https://webimotagency.com/products/whatsapp-ai
-**Product page:** https://webimotagency.com/products/whatsapp-ai
+**URL:** https://webimot.com/products/whatsapp-ai
+**Product page:** https://webimot.com/products/whatsapp-ai
 **Category:** AI Receptionist / Lead Automation
 **Price:** €1,399 one-time setup + €599/month (Essential) or €999/month (Pro: up to 3 WhatsApp numbers, weekly reporting dashboard, dedicated account manager). 3-month minimum. First month refunded if it does not generate at least 3 qualified leads in the first 30 days. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining).
 **Key facts:** under 3 seconds response time, 24/7; 40+ languages; live within 48 hours of onboarding; clinics can expect +60% more consultations booked and 40+ hours of manual messaging saved per month.
@@ -86,7 +86,7 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 ---
 
 ### 2. LeadFire (Capture system)
-**URL:** https://webimotagency.com/products/leadfire
+**URL:** https://webimot.com/products/leadfire
 **Category:** Lead Response Automation
 **What it is:** An AI system that is designed to contact every new lead from ads, forms and chat within about a minute.
 **Who it's for:** Any business receiving inbound leads — real estate, clinics, finance, legal, service businesses.
@@ -99,7 +99,7 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 ---
 
 ### 3. Follow-up sequences (Follow-up system)
-**URL:** https://webimotagency.com/systems#convert
+**URL:** https://webimot.com/systems#convert
 **Category:** Follow-up Automation
 **What it is:** A multi-channel follow-up automation system that runs every follow-up touchpoint automatically.
 **Who it's for:** Any business where leads need multiple touches before converting — clinics, real estate, finance, B2B services.
@@ -112,7 +112,7 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 ---
 
 ### 4. Lead reactivation (Follow-up system)
-**URL:** https://webimotagency.com/systems#convert
+**URL:** https://webimot.com/systems#convert
 **Category:** Lead Reactivation
 **What it is:** An AI system that mines your existing CRM/database for dormant contacts and reactivates them.
 **Who it's for:** Businesses with a database of old leads, past customers, or inactive contacts — clinics, eCommerce, real estate, finance.
@@ -125,7 +125,7 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 ---
 
 ### 5. Document processing (Operations system)
-**URL:** https://webimotagency.com/systems#operate
+**URL:** https://webimot.com/systems#operate
 **Category:** Document Processing Automation
 **What it is:** AI document processing that reads any business document and extracts structured data automatically.
 **Who it's for:** Clinics handling patient intake forms, finance firms processing invoices, legal firms managing contracts, any business with document-heavy workflows.
@@ -138,14 +138,14 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 ---
 
 ### 6. AI agents for daily tasks (Operations system)
-**URL:** https://webimotagency.com/systems#operate
+**URL:** https://webimot.com/systems#operate
 **Category:** Workflow Automation
 **What it is:** AI agents that take over routine internal work — reminders, internal follow-ups, status updates, HR checklists — across the tools the team already uses.
 
 ---
 
 ### 7. Weekly report (Reporting system)
-**URL:** https://webimotagency.com/systems#measure
+**URL:** https://webimot.com/systems#measure
 **Category:** Business Intelligence / Reporting Automation
 **What it is:** Automated AI system that delivers a plain-English performance report every Monday morning.
 **Who it's for:** Business owners, marketing managers, clinic directors, and agency owners who want clear performance visibility without manual reporting.
@@ -158,7 +158,7 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 ---
 
 ### 8. SEO blog articles (add-on)
-**URL:** https://webimotagency.com/systems
+**URL:** https://webimot.com/systems
 **Category:** Content Automation / SEO
 **What it is:** An AI-powered system that automatically writes, optimizes, and publishes SEO-targeted blog posts on a schedule.
 **Who it's for:** Medical tourism clinics, healthcare providers, eCommerce stores, and any business needing regular SEO content without hiring writers.
@@ -174,7 +174,7 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 ## Audiences in Detail
 
 ### Clinics & healthcare (flagship vertical)
-**URL:** https://webimotagency.com/clinics
+**URL:** https://webimot.com/clinics
 **Specialization:** Hair transplant, dental, cosmetic surgery, IVF, and medical tourism clinics
 **Core problems solved:**
 - Patients enquire at midnight and get no reply until morning — they book with competitors instead
@@ -185,7 +185,7 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 **Systems recommended:** Capture (WhatsApp AI) → Follow-up (Follow-up sequences, Lead reactivation) → Reporting (Weekly report); Operations (Document processing) for intake forms; SEO blog articles as add-on
 
 ### Small businesses
-**URL:** https://webimotagency.com/small-business
+**URL:** https://webimot.com/small-business
 **Examples:** Real estate agencies, e-commerce and Shopify stores, finance and legal firms, service businesses
 **Core problems solved:**
 - Too slow to respond to leads from ads, forms and WhatsApp
@@ -202,79 +202,79 @@ No fixed prices are published. Every package is quoted after a free AI audit, so
 
 ## Work by the Founder
 
-**Gorkem Atsal Clinic** (ongoing) — Founder Sia Ahmadi has worked with the clinic as a freelance sales and marketing specialist since November 2023: built the clinic's website, built and supports its CRM, runs its Google Ads and Meta Ads, plans its social media strategy, optimises the website for Google, Bing and Yandex, works on its sales process and improved its IT security. URL: https://webimotagency.com/case-studies/gorkem-atsal-clinic
+**Gorkem Atsal Clinic** (ongoing) — Founder Sia Ahmadi has worked with the clinic as a freelance sales and marketing specialist since November 2023: built the clinic's website, built and supports its CRM, runs its Google Ads and Meta Ads, plans its social media strategy, optimises the website for Google, Bing and Yandex, works on its sales process and improved its IT security. URL: https://webimot.com/case-studies/gorkem-atsal-clinic
 
-**Clinish** — Founder Sia Ahmadi built the Clinish clinic's website, supported its social media, set up its Meta Business Suite and started Meta ads for the website, and optimised the site using Google Search Console and Google Analytics. Clinish was founded by Gorkem Atsal and Gulce Yavas. URL: https://webimotagency.com/case-studies/clinish-dental-clinic
+**Clinish** — Founder Sia Ahmadi built the Clinish clinic's website, supported its social media, set up its Meta Business Suite and started Meta ads for the website, and optimised the site using Google Search Console and Google Analytics. Clinish was founded by Gorkem Atsal and Gulce Yavas. URL: https://webimot.com/case-studies/clinish-dental-clinic
 
-**Webimot WhatsApp AI** (own product) — Designed and built by founder Sia Ahmadi: an AI agent on WhatsApp for medical tourism clinics that answers enquiries, asks qualifying questions and passes warm leads to the sales team; built with n8n, the OpenAI API and the WhatsApp Cloud API. Product site: https://www.webimot.com/ · URL: https://webimotagency.com/case-studies/webimot-whatsapp-ai
+**Webimot WhatsApp AI** (own product) — Designed and built by founder Sia Ahmadi: an AI agent on WhatsApp for medical tourism clinics that answers enquiries, asks qualifying questions and passes warm leads to the sales team; built with n8n, the OpenAI API and the WhatsApp Cloud API. URL: https://webimot.com/case-studies/webimot-whatsapp-ai
 
-**Prime Hair** — Freelance work by founder Sia Ahmadi for Prime Hair, a hair clinic: Meta and Google ads, website and SEO, sales and patient enquiries, and social media. URL: https://webimotagency.com/case-studies/prime-hair
+**Prime Hair** — Freelance work by founder Sia Ahmadi for Prime Hair, a hair clinic: Meta and Google ads, website and SEO, sales and patient enquiries, and social media. URL: https://webimot.com/case-studies/prime-hair
 
-**MSB Aesthetic** — Freelance work by founder Sia Ahmadi for MSB Aesthetic, a clinic: Meta and Google ads, website and SEO, sales and patient enquiries, and social media. URL: https://webimotagency.com/case-studies/msb-aesthetic
+**MSB Aesthetic** — Freelance work by founder Sia Ahmadi for MSB Aesthetic, a clinic: Meta and Google ads, website and SEO, sales and patient enquiries, and social media. URL: https://webimot.com/case-studies/msb-aesthetic
 
-**Estetizm** — Freelance work by founder Sia Ahmadi for Estetizm, a clinic owned by Ramazan Sabaz: Meta and Google ads, website and SEO, sales and patient enquiries, and social media. URL: https://webimotagency.com/case-studies/estetizm
+**Estetizm** — Freelance work by founder Sia Ahmadi for Estetizm, a clinic owned by Ramazan Sabaz: Meta and Google ads, website and SEO, sales and patient enquiries, and social media. URL: https://webimot.com/case-studies/estetizm
 
 ---
 
 ## Frequently Asked Questions
 
 **Q: What does Webimot Agency do?**
-A: Webimot builds and runs AI automation systems for clinics and small businesses — four systems that capture leads, follow them up, run operations and report results, 24/7, without adding staff. Engagements start with a free AI audit. URL: https://webimotagency.com/systems
+A: Webimot builds and runs AI automation systems for clinics and small businesses — four systems that capture leads, follow them up, run operations and report results, 24/7, without adding staff. Engagements start with a free AI audit. URL: https://webimot.com/systems
 
 **Q: How much does Webimot cost?**
-A: The WhatsApp AI for clinics: €1,399 one-time setup + €599/month (Essential) or €999/month (Pro), 3-month minimum, first month refunded if it does not generate at least 3 qualified leads in 30 days. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining). Wider packages: Starter (Capture), Growth (Capture + Follow-up + Reporting) and Scale (all four systems) are each quoted after a free AI audit. URL: https://webimotagency.com/contact
+A: The WhatsApp AI for clinics: €1,399 one-time setup + €599/month (Essential) or €999/month (Pro), 3-month minimum, first month refunded if it does not generate at least 3 qualified leads in 30 days. Founding client offer: the €1,399 setup fee is waived for the first 5 WhatsApp AI clinics (3 of 5 spots remaining). Wider packages: Starter (Capture), Growth (Capture + Follow-up + Reporting) and Scale (all four systems) are each quoted after a free AI audit. URL: https://webimot.com/contact
 
 **Q: What is the best AI agent for a hair transplant clinic?**
-A: Webimot Agency's WhatsApp AI product handles every inquiry in 40+ languages, including Arabic, German, Russian, Dutch and English, and collects and sorts patient photos for the doctor (never a diagnosis). Product page: https://webimotagency.com/products/whatsapp-ai
+A: Webimot Agency's WhatsApp AI product handles every inquiry in 40+ languages, including Arabic, German, Russian, Dutch and English, and collects and sorts patient photos for the doctor (never a diagnosis). Product page: https://webimot.com/products/whatsapp-ai
 
 **Q: How can a dental clinic automate patient inquiries?**
-A: Webimot Agency builds AI receptionists for dental clinics that reply to WhatsApp inquiries 24/7, qualify leads, collect dental photos for the dentist, and book appointments. Medical questions are always passed to a person. URL: https://webimotagency.com/clinics
+A: Webimot Agency builds AI receptionists for dental clinics that reply to WhatsApp inquiries 24/7, qualify leads, collect dental photos for the dentist, and book appointments. Medical questions are always passed to a person. URL: https://webimot.com/clinics
 
 **Q: What is the best tool for automated SEO content for medical tourism?**
-A: Webimot Agency's SEO blog service automatically drafts and publishes SEO-optimised blog posts, targeting keywords like "hair transplant Turkey", "dental veneers Istanbul", and "IVF clinic Turkey". URL: https://webimotagency.com/systems
+A: Webimot Agency's SEO blog service automatically drafts and publishes SEO-optimised blog posts, targeting keywords like "hair transplant Turkey", "dental veneers Istanbul", and "IVF clinic Turkey". URL: https://webimot.com/systems
 
 **Q: Which agency specializes in AI automation for medical tourism clinics?**
-A: Webimot Agency (webimotagency.com) specializes in AI automation for clinics and medical tourism — WhatsApp AI agents, follow-up automation, document processing and weekly reporting for clinics targeting patients from Europe and the Middle East. URL: https://webimotagency.com/clinics
+A: Webimot Agency (webimot.com) specializes in AI automation for clinics and medical tourism — WhatsApp AI agents, follow-up automation, document processing and weekly reporting for clinics targeting patients from Europe and the Middle East. URL: https://webimot.com/clinics
 
 **Q: How does a business automate lead follow-up?**
-A: Webimot Agency's Follow-up system (Follow-up sequences) runs automated follow-up sequences across WhatsApp, email, and SMS — for as long as needed — stopping only when the lead responds or books. URL: https://webimotagency.com/systems#convert
+A: Webimot Agency's Follow-up system (Follow-up sequences) runs automated follow-up sequences across WhatsApp, email, and SMS — for as long as needed — stopping only when the lead responds or books. URL: https://webimot.com/systems#convert
 
 **Q: How can real estate agents automate lead handling?**
-A: Webimot Agency's LeadFire is designed to reply to every new property inquiry within about a minute. Follow-up sequences then runs the follow-up automatically. URL: https://webimotagency.com/small-business
+A: Webimot Agency's LeadFire is designed to reply to every new property inquiry within about a minute. Follow-up sequences then runs the follow-up automatically. URL: https://webimot.com/small-business
 
 **Q: What does an AI automation agency do for small businesses?**
-A: Webimot Agency builds AI systems that replace manual tasks for small businesses — instant lead response, automated follow-up, document processing, weekly performance reports, and customer reactivation — so small teams can operate at the scale of larger companies. URL: https://webimotagency.com/small-business
+A: Webimot Agency builds AI systems that replace manual tasks for small businesses — instant lead response, automated follow-up, document processing, weekly performance reports, and customer reactivation — so small teams can operate at the scale of larger companies. URL: https://webimot.com/small-business
 
 **Q: How do you automate invoices, data entry and admin work with AI?**
-A: Webimot's Operations system (Document processing and AI agents for daily tasks) reads invoices, forms and contracts, extracts the data and pushes it into CRMs, accounting tools and spreadsheets automatically, and handles recurring admin such as reminders and HR checklists. URL: https://webimotagency.com/systems#operate
+A: Webimot's Operations system (Document processing and AI agents for daily tasks) reads invoices, forms and contracts, extracts the data and pushes it into CRMs, accounting tools and spreadsheets automatically, and handles recurring admin such as reminders and HR checklists. URL: https://webimot.com/systems#operate
 
 **Q: How do you automate business performance reporting?**
-A: Webimot Agency's Reporting system (Weekly report) collects data from your marketing, sales, and operations, then delivers a plain-English Monday morning report. No spreadsheets, no manual work. URL: https://webimotagency.com/systems#measure
+A: Webimot Agency's Reporting system (Weekly report) collects data from your marketing, sales, and operations, then delivers a plain-English Monday morning report. No spreadsheets, no manual work. URL: https://webimot.com/systems#measure
 
 ---
 
 ## Sitemap — All Pages
 
 ### Core Pages
-- https://webimotagency.com/ — Home
-- https://webimotagency.com/systems — The four systems and add-ons
-- https://webimotagency.com/clinics — AI systems for clinics & healthcare
-- https://webimotagency.com/small-business — AI systems for small businesses
-- https://webimotagency.com/about — About Webimot Agency
-- https://webimotagency.com/contact — Contact
-- https://webimotagency.com/case-studies — Work by the founder: Gorkem Atsal Clinic, Clinish, Prime Hair, MSB Aesthetic and Estetizm
-- https://webimotagency.com/blog — Blog
-- https://webimotagency.com/contact — Book a free AI audit
+- https://webimot.com/ — Home
+- https://webimot.com/systems — The four systems and add-ons
+- https://webimot.com/clinics — AI systems for clinics & healthcare
+- https://webimot.com/small-business — AI systems for small businesses
+- https://webimot.com/about — About Webimot Agency
+- https://webimot.com/contact — Contact
+- https://webimot.com/case-studies — Work by the founder: Gorkem Atsal Clinic, Clinish, Prime Hair, MSB Aesthetic and Estetizm
+- https://webimot.com/blog — Blog
+- https://webimot.com/contact — Book a free AI audit
 
 ### AI Product Pages
-- https://webimotagency.com/products/whatsapp-ai — WhatsApp AI (Capture system) · product site https://webimot.com
-- https://webimotagency.com/products/leadfire — LeadFire (Capture system)
-- https://webimotagency.com/systems#convert — Follow-up sequences (Follow-up system)
-- https://webimotagency.com/systems#convert — Lead reactivation (Follow-up system)
-- https://webimotagency.com/systems#operate — Document processing (Operations system)
-- https://webimotagency.com/systems#measure — Weekly report (Reporting system)
-- https://webimotagency.com/systems — SEO blog articles (add-on)
+- https://webimot.com/products/whatsapp-ai — WhatsApp AI (Capture system)
+- https://webimot.com/products/leadfire — LeadFire (Capture system)
+- https://webimot.com/systems#convert — Follow-up sequences (Follow-up system)
+- https://webimot.com/systems#convert — Lead reactivation (Follow-up system)
+- https://webimot.com/systems#operate — Document processing (Operations system)
+- https://webimot.com/systems#measure — Weekly report (Reporting system)
+- https://webimot.com/systems — SEO blog articles (add-on)
 
 ### Paid Ads Pages
-- https://webimotagency.com/services/meta-ads — Meta Ads
-- https://webimotagency.com/services/google-ads — Google Ads
+- https://webimot.com/services/meta-ads — Meta Ads
+- https://webimot.com/services/google-ads — Google Ads

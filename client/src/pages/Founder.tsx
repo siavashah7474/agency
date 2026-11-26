@@ -14,7 +14,7 @@ import { useBookingModal } from "@/hooks/use-booking-modal";
 import { useDir } from "@/i18n/useDir";
 import { caseStudies } from "@/data/caseStudiesData";
 
-const CANONICAL = "https://webimotagency.com/sia-ahmadi";
+const CANONICAL = "https://webimot.com/sia-ahmadi";
 const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/sia-ahmadi/";
 const WHATSAPP_LINK = "https://wa.me/31628753175";
 
@@ -30,10 +30,10 @@ const profileSchema = {
   name: "Sia Ahmadi",
   mainEntity: {
     "@type": "Person",
-    "@id": "https://webimotagency.com/about#founder",
+    "@id": "https://webimot.com/about#founder",
     name: "Sia Ahmadi",
     url: CANONICAL,
-    image: "https://webimotagency.com/sia-ahmadi-1200.jpg",
+    image: "https://webimot.com/sia-ahmadi-1200.jpg",
     jobTitle: "Entrepreneur, business developer, AI automation specialist and digital transformation consultant",
     description:
       "Entrepreneur, business developer, AI automation specialist and digital transformation consultant, specialised in medical and health tourism, sales funnels, ads optimisation (Meta and Google) and business visibility in search engines and AI assistants. Founder of Webimot Agency.",
@@ -55,7 +55,7 @@ const profileSchema = {
       "Business development",
       "WhatsApp AI agents",
     ],
-    worksFor: { "@type": "Organization", "@id": "https://webimotagency.com/#organization", name: "Webimot Agency", url: "https://webimotagency.com/" },
+    worksFor: { "@type": "Organization", "@id": "https://webimot.com/#organization", name: "Webimot Agency", url: "https://webimot.com/" },
     homeLocation: [
       { "@type": "City", name: "Amsterdam" },
       { "@type": "City", name: "Istanbul" },

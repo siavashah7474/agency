@@ -64,7 +64,7 @@ export default function AdsService() {
     t(`adsPage.hero.checks.${i}`, item),
   );
   const { openModal } = useBookingModal();
-  const canonical = `https://webimotagency.com/services/${slug}`;
+  const canonical = `https://webimot.com/services/${slug}`;
 
   const projects = caseStudies.filter((cs) =>
     cs.services.some((s) => s.toLowerCase().includes(`${page.caseStudyService.toLowerCase()} ads`)),
@@ -81,7 +81,7 @@ export default function AdsService() {
         serviceType: `${page.platform} Ads management`,
         areaServed: "Worldwide",
         audience: { "@type": "Audience", audienceType: "Clinics, hair transplant, dental, cosmetic surgery, IVF and medical tourism providers" },
-        provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimotagency.com" },
+        provider: { "@type": "Organization", name: "Webimot Agency", url: "https://webimot.com" },
       },
       {
         "@type": "FAQPage",

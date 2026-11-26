@@ -23,7 +23,7 @@ import { useTranslation } from "react-i18next";
 import { useDir } from "@/i18n/useDir";
 import { PROMISE, SYSTEMS } from "@/data/systemsData";
 
-const SITE_URL = "https://webimotagency.com";
+const SITE_URL = "https://webimot.com";
 
 export default function Home() {
   const { openModal } = useBookingModal();

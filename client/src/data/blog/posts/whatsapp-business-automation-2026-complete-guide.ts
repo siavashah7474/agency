@@ -133,7 +133,7 @@ Here is an example scenario (illustrative, not a client result). A hair transpla
 - Replies take hours, longer overnight
 - Working hours are 9 AM – 6 PM Istanbul time, so evening enquiries from abroad wait until morning
 
-After a full WhatsApp automation stack is in place with [Webimot Agency](https://webimotagency.com):
+After a full WhatsApp automation stack is in place with [Webimot Agency](https://webimot.com):
 
 - Every enquiry gets a reply in under 3 seconds
 - Coordinators handle complex cases and confirmed bookings instead of first-contact questions
@@ -157,7 +157,7 @@ The fastest way to get your WhatsApp pipeline automated:
 
 Target time: the WhatsApp AI alone is live within 48 hours of onboarding. Allow 2–4 weeks only for a larger build that connects several systems or needs custom integrations.
 
-If you want this built, configured, and managed for your business — without your team having to learn new tools or manage the technical setup — [Webimot Agency](https://webimotagency.com) handles it end to end.
+If you want this built, configured, and managed for your business — without your team having to learn new tools or manage the technical setup — [Webimot Agency](https://webimot.com) handles it end to end.
 
-[Book a free 30-minute strategy call](https://webimotagency.com/contact) — we'll map your current pipeline, and show you what can be automated before you commit to anything.
+[Book a free 30-minute strategy call](https://webimot.com/contact) — we'll map your current pipeline, and show you what can be automated before you commit to anything.
     `;

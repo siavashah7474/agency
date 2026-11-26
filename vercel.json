@@ -50,10 +50,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.webimotagency.com"
+          "value": "www.webimot.com"
         }
       ],
-      "destination": "https://webimotagency.com/:path*",
+      "destination": "https://webimot.com/:path*",
       "permanent": true
     },
     {
@@ -61,10 +61,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.webimotagency.com"
+          "value": "www.webimot.com"
         }
       ],
-      "destination": "https://webimotagency.com/",
+      "destination": "https://webimot.com/",
       "permanent": true
     },
     {
